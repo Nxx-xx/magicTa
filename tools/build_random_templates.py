@@ -65,16 +65,16 @@ def build():
     recipes = {
         "return_guard": {"gate": "enemy", "enemy_pool": ["knight"], "guardian": True,
                          "reward": "chest", "item_pool": ["sovereign_ring"], "gold": [25,35], "objective": True},
-        "starter_armor": {"gate": "door", "reward": "chest", "item_pool": ["iron_armor","tower_shield"], "gold": [0,5]},
+        "starter_armor": {"gate": "door", "key_kind": "copper", "reward": "chest", "item_pool": ["iron_armor","tower_shield"], "gold": [0,5]},
         "small_fight": {"gate": "enemy", "enemy_pool": ["slime","skeleton"], "reward": "gold", "amount": [20,35]},
         "healing_branch": {"gate": "none", "reward": "potion", "amount": [30,45]},
         "weapon_trial": {"gate": "enemy", "enemy_pool": ["slime"], "reward": "chest",
                          "item_pool": ["dawn_spear"], "gold": [0,5]},
-        "armor_trial": {"gate": "door", "reward": "chest", "item_pool": ["knight_plate"], "gold": [0,5]},
+        "armor_trial": {"gate": "door", "key_kind": "silver", "reward": "chest", "item_pool": ["knight_plate"], "gold": [0,5]},
         "relic_fight": {"gate": "enemy", "enemy_pool": ["bat","sentinel"], "reward": "chest",
                         "item_pool": ["wolf_fang","blood_sword","stone_heart","gold_sword"], "gold": [20,35]},
         "gold_fight": {"gate": "enemy", "enemy_pool": ["slime","skeleton"], "reward": "gold", "amount": [35,50]},
-        "treasure_vault": {"gate": "door", "reward": "chest", "item_pool": ["hunter_bow","tower_shield","sun_emblem"], "gold": [15,25]},
+        "treasure_vault": {"gate": "door", "key_kind": "gold", "reward": "chest", "item_pool": ["hunter_bow","tower_shield","sun_emblem"], "gold": [15,25]},
         "open_chest": {"gate": "none", "reward": "chest", "item_pool": ["heart_pendant","duelist_gloves"], "gold": [5,15]},
     }
     themes = {
@@ -87,7 +87,7 @@ def build():
         "shop": {"name": "商店层", "description": "商人在入口附近的安全通路，三件商品随机；支路可赚金币、找装备。",
                  "recipes": ["weapon_trial","armor_trial","gold_fight","healing_branch"]},
     }
-    return {"version": 1, "size": 11, "max_attempts": 12, "templates": templates,
+    return {"version": 2, "size": 11, "max_attempts": 12, "templates": templates,
             "recipes": recipes, "themes": themes,
             "shop_pools": [["buy_sword","buy_bow"],["buy_armor","buy_shield"],["buy_potion","buy_key"]],
             "safe_gold": [8,15], "safe_heal": [15,25]}

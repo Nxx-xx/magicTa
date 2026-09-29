@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "relic_choices": ["wolf_fang", "stone_heart", "spring_seed", "blood_sword", "gold_sword", "lucky_coin"],
+  "direct_relics": ["wolf_fang", "stone_heart", "spring_seed"],
+  "vault_choices": ["hunter_bow", "tower_shield", "sun_emblem"],
+  "event_pool": ["altar", "forge", "well", "library", "vault", "hermit", "armory", "bargain", "echo"],
+  "shop_supply": ["buy_potion", "buy_pendant"],
+  "rest_options": [
+    {"name": "休息", "description": "恢复 40 HP", "effects": {"heal": 40}},
+    {"name": "磨砺", "description": "攻击 +3，防御 +1", "effects": {"attack": 3, "defense": 1}}
+  ]
+}

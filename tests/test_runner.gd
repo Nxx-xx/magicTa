@@ -6,6 +6,8 @@ const DB = preload("res://scripts/core/content_db.gd")
 const Combat = preload("res://scripts/core/combat.gd")
 const Core = preload("res://scripts/core/run_engine.gd")
 const Store = preload("res://scripts/core/save_store.gd")
+const Enemies = preload("res://scripts/core/enemy_rules.gd")
+const SavedData = preload("res://tests/saved_data.gd")
 var failures := 0
 var checks := 0
 var db = DB.new()
@@ -13,6 +15,7 @@ var test_path := "user://tower_test_%d.json" % OS.get_process_id()
 
 func _initialize() -> void:
 	_test_combat()
+	_test_monster_progression()
 	_test_content()
 	_test_economy_and_rooms()
 	_test_determinism()
@@ -94,6 +97,34 @@ func _test_content() -> void:
 	_check(db.data.events.size() == 10 and db.data.shop.size() == 10, "10 events and shop products")
 	for event in db.data.events.values():
 		_check(event.options.size() == 2, "event has two options: " + str(event.name))
+	var counts := {"normal": 0, "elite": 0, "boss": 0}
+	for enemy in db.data.enemies.values():
+		_check(Enemies.valid_definition(enemy), "monster metadata valid: " + str(enemy.id))
+		counts[enemy.rank] += 1
+	_check(counts == {"normal": 6, "elite": 2, "boss": 2}, "monster identities match the design")
+	_check(Enemies.classification(db.enemy("knight")) == "普通 · Ⅲ档 · 高阶", "return knight remains a normal high-tier monster")
+	_check(Enemies.badge(db.enemy("knight"), {"guardian": true}) == "回", "return guardian has a text badge")
+	_check(Enemies.classification(db.enemy("minotaur")) == "Boss · 第 5 层", "boss uses its stage instead of a normal tier")
+
+func _test_monster_progression() -> void:
+	var early_losses := {"slime": 6, "skeleton": 25, "bat": 24}
+	var late_losses := {"slime": 0, "skeleton": 2, "bat": 4, "sentinel": 12, "warlock": 30, "knight": 77}
+	for id in late_losses:
+		var initial := _player(100, 10, 5)
+		var report: Dictionary = Combat.simulate(initial, db.enemy(id), db.player_stats(initial))
+		if early_losses.has(id):
+			_check(report.won and report.loss == early_losses[id], "entry combat cost: " + id)
+		else:
+			_check(report.lethal and report.gold_reward == 0, "strong monster starts lethal: " + id)
+		initial.equipment_ids = ["dawn_spear", "knight_plate"]
+		report = Combat.simulate(initial, db.enemy(id), db.player_stats(initial))
+		_check(report.won and report.loss == late_losses[id], "equipment lowers combat cost: " + id)
+	var player := _player(100, 10, 5)
+	var trial: Dictionary = Combat.simulate(player, db.enemy("slime"), db.player_stats(player))
+	player.hp = trial.hp_after
+	player.equipment_ids = ["dawn_spear", "knight_plate"]
+	var returning: Dictionary = Combat.simulate(player, db.enemy("knight"), db.player_stats(player))
+	_check(returning.won and returning.hp_after == 17, "100 HP growth route survives without additional supplies")
 
 func _test_economy_and_rooms() -> void:
 	var core = _core()
@@ -185,7 +216,7 @@ func _test_save() -> void:
 	original.enter_room(0)
 	var restored = Core.new(test_path)
 	restored.load_game()
-	_check(restored.run.phase == "shop" and restored.run.selected_room == original.run.selected_room, "resume inside pending shop")
+	_check(restored.run.phase == "shop" and SavedData.equal(restored.run.selected_room, original.run.selected_room), "resume inside pending shop")
 	_check(restored.rng.state == original.rng.state, "64-bit RNG state survives JSON")
 	original.leave_shop()
 	restored.leave_shop()

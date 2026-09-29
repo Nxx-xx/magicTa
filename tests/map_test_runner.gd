@@ -1,6 +1,7 @@
 extends SceneTree
 ## Calls production map/combat/save code. Does not replace engine execution.
 const Core = preload("res://scripts/core/map_engine.gd")
+const SavedData = preload("res://tests/saved_data.gd")
 var checks := 0
 var failures := 0
 var path := "user://map_test_%d.json" % OS.get_process_id()
@@ -25,7 +26,7 @@ func _check(value: bool, label: String) -> void:
 func _new_game(seed_text: String = "42"):
 	var core = Core.new(path)
 	core.persistence_enabled = false
-	core.start(seed_text)
+	core.start(seed_text, false)
 	return core
 
 func _walk(core, target: Vector2i) -> void:
@@ -58,7 +59,7 @@ func _walk(core, target: Vector2i) -> void:
 		_check(result.is_empty(), "movement accepted at " + str(cell))
 		if not core.state.pending.is_empty() and cell != target:
 			var entity: Dictionary = core.entity_at(core.pending_cell())
-			_check(entity.get("type", "") == "shop", "only an en-route shop may interrupt path")
+			_check(entity.get("type", "") in ["shop", "potion", "choice", "event", "rest"], "optional supply interaction may interrupt path")
 			core.cancel_pending()
 
 func _ascend(core, theme_id: String) -> void:
@@ -122,6 +123,8 @@ func _test_return_trip() -> void:
 func _test_shop() -> void:
 	var core = _new_game()
 	_ascend(core, "shop")
+	# Approach along the southern corridor without collecting the gold at (1, 7).
+	_walk(core, Vector2i(3, 9))
 	_walk(core, Vector2i(9, 7))
 	_check(core.position() == Vector2i(9, 7), "merchant tile is passable while trade opens")
 	_check(not core.buy(0).is_empty(), "insufficient gold does not buy")
@@ -152,7 +155,10 @@ func _test_treasure() -> void:
 	_check(core.entity_at(Vector2i(1, 1)).is_empty(), "treasure chest collected")
 	_walk(core, Vector2i(1, 3))
 	_check(core.state.player.keys == 1, "treasure branch refunds a key after opening")
+	core.state.player.hp = 60
 	_walk(core, Vector2i(1, 5))
+	_check(core.state.player.hp == 60, "fountain waits for confirmation")
+	core.confirm_interaction()
 	var health := int(core.state.player.hp)
 	_walk(core, Vector2i(1, 6))
 	_walk(core, Vector2i(1, 5))
@@ -167,7 +173,7 @@ func _test_save_and_seed() -> void:
 	_check(restored.state.pending.kind == "floor_choice" and restored.state.floors.size() == 1, "reload keeps pending first-ascent choice")
 	original.choose_floor("battle")
 	restored.choose_floor("battle")
-	_check(original.state.floors == restored.state.floors and original.rng.state == restored.rng.state, "same seed and saved RNG create identical theme contents")
+	_check(SavedData.equal(original.state.floors, restored.state.floors) and original.rng.state == restored.rng.state, "same seed and saved RNG create identical theme contents")
 	_walk(original, Vector2i(3, 9))
 	_walk(original, Vector2i(1, 9))
 	original.confirm_interaction()

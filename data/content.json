@@ -1,15 +1,15 @@
 {
   "enemies": {
-    "slime": {"id":"slime","name":"苔原史莱姆","hp":24,"attack":8,"defense":2,"gold_reward":18,"ability_id":"","description":"缓慢的绿色影子，吞下了旅人的零钱。"},
-    "skeleton": {"id":"skeleton","name":"锈剑骷髅","hp":34,"attack":10,"defense":4,"gold_reward":24,"ability_id":"","description":"旧王朝的守兵，仍在等待换岗。"},
-    "bat": {"id":"bat","name":"赤翼蝠","hp":30,"attack":13,"defense":2,"gold_reward":26,"ability_id":"","description":"薄翼之下，藏着锋利的獠牙。"},
-    "sentinel": {"id":"sentinel","name":"石壳卫兵","hp":48,"attack":13,"defense":8,"gold_reward":34,"ability_id":"","description":"厚重石甲让每一击都需要耐心。"},
-    "warlock": {"id":"warlock","name":"余烬术士","hp":52,"attack":19,"defense":5,"gold_reward":40,"ability_id":"","description":"所有攻击仍遵循普通攻防规则。"},
-    "knight": {"id":"knight","name":"空心骑士","hp":72,"attack":20,"defense":10,"gold_reward":48,"ability_id":"","description":"盔甲中空无一人，剑却从不迟疑。"},
-    "berserker": {"id":"berserker","name":"精英 · 血斧狂徒","hp":65,"attack":18,"defense":4,"gold_reward":40,"ability_id":"","description":"高攻击的精英，胜利后可选一件遗物。"},
-    "warden": {"id":"warden","name":"精英 · 黑铁典狱长","hp":95,"attack":20,"defense":12,"gold_reward":58,"ability_id":"","description":"高防御的精英，胜利后可选一件遗物。"},
-    "minotaur": {"id":"minotaur","name":"牛头守卫","hp":120,"attack":18,"defense":8,"gold_reward":65,"ability_id":"rage","description":"每完成 3 次玩家攻击，攻击永久 +2；当回合反击立即生效。最后一击不触发反击。"},
-    "golem": {"id":"golem","name":"深渊魔像","hp":250,"attack":22,"defense":14,"gold_reward":120,"ability_id":"stone_armor","description":"每累计失去 50 HP，防御 +2；受到攻击后更新，可一次跨越多个阈值。"}
+    "slime": {"id":"slime","name":"苔原史莱姆","rank":"normal","tier":1,"combat_hint":"低威胁；适合先尝试战斗，取得早期装备。","hp":24,"attack":8,"defense":2,"gold_reward":18,"ability_id":"","description":"缓慢的绿色影子，吞下了旅人的零钱。"},
+    "skeleton": {"id":"skeleton","name":"锈剑骷髅","rank":"normal","tier":1,"combat_hint":"攻防均衡；先拿装备，再比较这条支路的收益。","hp":34,"attack":10,"defense":4,"gold_reward":24,"ability_id":"","description":"旧王朝的守兵，仍在等待换岗。"},
+    "bat": {"id":"bat","name":"赤翼蝠","rank":"normal","tier":1,"combat_hint":"低防高攻；提高攻击、减少反击次数很有效。没有闪避。","hp":30,"attack":13,"defense":2,"gold_reward":26,"ability_id":"","description":"薄翼之下，藏着锋利的獠牙。"},
+    "sentinel": {"id":"sentinel","name":"石壳卫兵","rank":"normal","tier":2,"combat_hint":"厚甲；攻击不足时损失很高，可以先找武器。","hp":48,"attack":13,"defense":8,"gold_reward":34,"ability_id":"","description":"厚重石甲让每一击都需要耐心。"},
+    "warlock": {"id":"warlock","name":"余烬术士","rank":"normal","tier":2,"combat_hint":"高攻击；护甲能减少伤害，攻击仍遵循普通攻防规则。","hp":52,"attack":19,"defense":5,"gold_reward":40,"ability_id":"","description":"所有攻击仍遵循普通攻防规则。"},
+    "knight": {"id":"knight","name":"空心骑士","rank":"normal","tier":3,"combat_hint":"高血厚甲；先探索其他支路或楼层，取得武器与护甲再来。","hp":72,"attack":20,"defense":10,"gold_reward":48,"ability_id":"","description":"盔甲中空无一人，剑却从不迟疑。"},
+    "berserker": {"id":"berserker","name":"精英 · 血斧狂徒","rank":"elite","tier":2,"combat_hint":"高攻低防；提高攻击能更快结束战斗。","hp":65,"attack":18,"defense":4,"gold_reward":40,"ability_id":"","description":"高攻击的精英，胜利后可选一件遗物。"},
+    "warden": {"id":"warden","name":"精英 · 黑铁典狱长","rank":"elite","tier":3,"combat_hint":"高血厚甲；准备足够的攻击与生命再挑战。","hp":95,"attack":20,"defense":12,"gold_reward":58,"ability_id":"","description":"高防御的精英，胜利后可选一件遗物。"},
+    "minotaur": {"id":"minotaur","name":"牛头守卫","rank":"boss","boss_floor":5,"combat_hint":"狂怒会逐步提高反击伤害；缩短战斗可减少损失。","hp":120,"attack":18,"defense":8,"gold_reward":65,"ability_id":"rage","description":"每完成 3 次玩家攻击，攻击永久 +2；当回合反击立即生效。最后一击不触发反击。"},
+    "golem": {"id":"golem","name":"深渊魔像","rank":"boss","boss_floor":10,"combat_hint":"受伤后石甲变厚；提高攻击，应对后半段的防御。","hp":250,"attack":22,"defense":14,"gold_reward":120,"ability_id":"stone_armor","description":"每累计失去 50 HP，防御 +2；受到攻击后更新，可一次跨越多个阈值。"}
   },
   "items": {
     "iron_sword": {"id":"iron_sword","name":"铁剑","kind":"equipment","tier":1,"price":20,"effects":{"attack":3},"description":"攻击 +3"},

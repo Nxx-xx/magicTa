@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "size": 11,
   "max_attempts": 12,
   "templates": [
@@ -524,7 +524,8 @@
       "gold": [
         0,
         5
-      ]
+      ],
+      "key_kind": "copper"
     },
     "small_fight": {
       "gate": "enemy",
@@ -569,7 +570,8 @@
       "gold": [
         0,
         5
-      ]
+      ],
+      "key_kind": "silver"
     },
     "relic_fight": {
       "gate": "enemy",
@@ -612,7 +614,8 @@
       "gold": [
         15,
         25
-      ]
+      ],
+      "key_kind": "gold"
     },
     "open_chest": {
       "gate": "none",

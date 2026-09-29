@@ -3,7 +3,10 @@ extends Control
 signal cell_selected(cell: Vector2i)
 
 const FONT = preload("res://assets/fonts/ui_font.tres")
+const Keys = preload("res://scripts/core/map_keys.gd")
+const Monsters = preload("res://scripts/ui/monster_art.gd")
 var map: Dictionary = {}
+var enemies: Dictionary = {}
 var hero := Vector2i(1, 9)
 var selected := Vector2i(-1, -1)
 var alive := true
@@ -13,8 +16,9 @@ func _ready() -> void:
 	mouse_default_cursor_shape = Control.CURSOR_POINTING_HAND
 	resized.connect(queue_redraw)
 
-func setup(floor_state: Dictionary, player_position: Vector2i, selection: Vector2i, is_alive: bool) -> void:
+func setup(floor_state: Dictionary, player_position: Vector2i, selection: Vector2i, is_alive: bool, enemy_definitions: Dictionary = {}) -> void:
 	map = floor_state
+	enemies = enemy_definitions
 	hero = player_position
 	selected = selection
 	alive = is_alive
@@ -64,25 +68,37 @@ func _draw_entity(entity: Dictionary, center: Vector2, tile: float) -> void:
 	draw_set_transform(center, 0, Vector2.ONE * s)
 	match str(entity.type):
 		"enemy":
-			var color := Color("df797e") if not entity.get("guardian", false) else Color("b590d9")
-			draw_colored_polygon(PackedVector2Array([Vector2(-13, 12), Vector2(-13, -6), Vector2(-9, -14), Vector2(-4, -8), Vector2(4, -8), Vector2(9, -14), Vector2(13, -6), Vector2(13, 12)]), color)
-			draw_rect(Rect2(-8, -2, 5, 4), Color("182131"))
-			draw_rect(Rect2(3, -2, 5, 4), Color("182131"))
-			draw_line(Vector2(-4, 7), Vector2(4, 7), Color("182131"), 2)
+			Monsters.draw(self, enemies.get(str(entity.enemy_id), {"id": entity.enemy_id}), entity)
 		"door":
-			draw_rect(Rect2(-13, -17, 26, 34), Color("b28c5c"))
-			draw_rect(Rect2(-10, -14, 20, 28), Color("594c3c"))
-			draw_line(Vector2(0, -14), Vector2(0, 14), Color("c6a56e"), 2)
-			draw_circle(Vector2(0, 0), 4, Color("ecc878"))
+			var key_kind := Keys.kind(entity)
+			var tint: Color = Keys.COLORS.get(key_kind, Keys.COLORS.copper)
+			draw_rect(Rect2(-13, -17, 26, 34), tint)
+			draw_rect(Rect2(-10, -14, 20, 28), tint.darkened(0.55))
+			draw_line(Vector2(0, -14), Vector2(0, 14), tint, 2)
+			draw_circle(Vector2(0, 0), 4, tint.lightened(0.15))
+			_key_badge(key_kind)
 		"key":
-			draw_arc(Vector2(-5, -6), 6, 0, TAU, 20, Color("ead08c"), 3, true)
-			draw_line(Vector2(-1, -1), Vector2(10, 12), Color("ead08c"), 3, true)
-			draw_line(Vector2(5, 6), Vector2(10, 2), Color("ead08c"), 3, true)
-		"chest":
+			var key_kind := Keys.kind(entity)
+			var tint: Color = Keys.COLORS.get(key_kind, Keys.COLORS.copper)
+			draw_arc(Vector2(-5, -6), 6, 0, TAU, 20, tint, 3, true)
+			draw_line(Vector2(-1, -1), Vector2(10, 12), tint, 3, true)
+			draw_line(Vector2(5, 6), Vector2(10, 2), tint, 3, true)
+			_key_badge(key_kind)
+		"chest", "choice":
 			var color := Color("e4c883") if not entity.get("objective", false) else Color("cfaae8")
 			draw_rect(Rect2(-14, -10, 28, 24), color)
 			draw_line(Vector2(-14, -1), Vector2(14, -1), Color("604f34"), 2)
 			draw_rect(Rect2(-3, -4, 6, 9), Color("604f34"))
+			if entity.type == "choice":
+				_text("选", Color("493e2e"))
+		"event":
+			draw_rect(Rect2(-13, -16, 26, 32), Color("ba9cd9"))
+			draw_line(Vector2(-8, -8), Vector2(8, -8), Color("544263"), 2)
+			_text("事", Color("372e44"))
+		"rest":
+			draw_line(Vector2(-13, 14), Vector2(13, 14), Color("c89b70"), 4)
+			draw_colored_polygon(PackedVector2Array([Vector2(-12,10),Vector2(0,-17),Vector2(12,10)]), Color("e2ac6d"))
+			_text("休", Color("4e392c"))
 		"gold":
 			draw_circle(Vector2.ZERO, 12, Color("e5c573"))
 			draw_arc(Vector2.ZERO, 8, 0, TAU, 24, Color("967541"), 2, true)
@@ -101,6 +117,10 @@ func _draw_entity(entity: Dictionary, center: Vector2, tile: float) -> void:
 			var text := {"up": "上", "down": "下", "summit": "终", "camp": "营"}
 			_text(text[entity.type], Color("a7d9de"))
 	draw_set_transform(Vector2.ZERO)
+
+func _key_badge(key_kind: String) -> void:
+	draw_rect(Rect2(3, 3, 18, 17), Color("101925"))
+	draw_string(FONT, Vector2(5, 16), str(Keys.LABELS.get(key_kind, "?")), HORIZONTAL_ALIGNMENT_LEFT, -1, 13, Keys.COLORS.get(key_kind, Color.WHITE))
 
 func _text(text: String, color: Color) -> void:
 	draw_string(FONT, Vector2(-10, 7), text, HORIZONTAL_ALIGNMENT_LEFT, -1, 20, color)

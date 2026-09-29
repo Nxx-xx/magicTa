@@ -5,6 +5,9 @@ extends RefCounted
 
 const SIZE := 11
 const DB = preload("res://scripts/core/content_db.gd")
+const Keys = preload("res://scripts/core/map_keys.gd")
+const Enemies = preload("res://scripts/core/enemy_rules.gd")
+const Rewards = preload("res://scripts/core/rewards.gd")
 var db = DB.new()
 
 func validate(floor_state: Dictionary) -> Array[String]:
@@ -41,28 +44,62 @@ func validate(floor_state: Dictionary) -> Array[String]:
 	if not floor_state.entities is Dictionary:
 		return ["实体列表无效。"]
 	var blockers: Dictionary = {}
-	var key_count := 0
-	var door_cost := 0
+	var enemy_count := 0
+	var roles: Dictionary = {}
+	var key_count := {"copper": 0, "silver": 0, "gold": 0}
+	var door_cost := {"copper": 0, "silver": 0, "gold": 0}
 	for cell in floor_state.entities:
 		var entity: Dictionary = floor_state.entities[cell]
 		if not valid_position(entity.get("pos", [])) or cell != key(point(entity.pos)) or not walkable.has(cell):
 			problems.append("物件坐标无效：" + str(cell))
 			continue
+		var role := str(entity.get("role", ""))
+		if roles.has(role):
+			problems.append("地图用途标签重复：" + role)
+		roles[role] = entity
 		match str(entity.get("type", "")):
 			"enemy":
+				enemy_count += 1
 				blockers[cell] = true
 				if not db.data.enemies.has(str(entity.get("enemy_id", ""))):
 					problems.append("未知敌人。")
+				elif not Enemies.valid_placement(db.enemy(str(entity.enemy_id)), entity):
+					problems.append("怪物与支路职责或强度档不匹配：" + role)
 			"door":
 				blockers[cell] = true
-				door_cost += int(entity.get("cost", 0))
+				var key_kind := Keys.kind(entity)
+				if key_kind not in Keys.TYPES:
+					problems.append("未知门类型。")
+				else:
+					door_cost[key_kind] += int(entity.get("cost", 0))
 				if int(entity.get("cost", 0)) != 1:
 					problems.append("当前版本的门应消耗一把钥匙。")
 			"key":
-				key_count += int(entity.get("amount", 0))
+				var key_kind := Keys.kind(entity)
+				if key_kind not in Keys.TYPES:
+					problems.append("未知钥匙类型。")
+				elif int(entity.get("amount", 0)) <= 0:
+					problems.append("钥匙数量必须大于零。")
+				else:
+					key_count[key_kind] += int(entity.get("amount", 0))
 			"chest":
 				if not db.data.items.has(str(entity.get("item_id", ""))):
 					problems.append("未知宝箱奖励。")
+			"choice":
+				var choices: Array = entity.get("choices", [])
+				if choices.size() != 2 or choices[0] == choices[1]:
+					problems.append("奖励需要两个不同候选。")
+				for id in choices:
+					if not db.data.items.has(str(id)):
+						problems.append("未知选择奖励。")
+				if not Rewards._count(entity.get("gold", -1)):
+					problems.append("奖励金币无效。")
+			"event":
+				if not db.data.events.has(str(entity.get("event_id", ""))):
+					problems.append("未知事件。")
+			"rest":
+				if not entity.get("options") is Array or entity.options.size() != 2:
+					problems.append("休息点选项无效。")
 			"shop":
 				var offers: Array = entity.get("offers", [])
 				var unique: Dictionary = {}
@@ -79,11 +116,25 @@ func validate(floor_state: Dictionary) -> Array[String]:
 				pass
 			_:
 				problems.append("未知地图物件。")
+	var theme_id := str(floor_state.get("theme", ""))
+	if enemy_count != int(Enemies.THEME_COUNTS.get(theme_id, -1)):
+		problems.append("怪物数量不符合当前楼层主题。")
+	if theme_id == "entrance":
+		if roles.get("return_guard_gate", {}).get("enemy_id", "") != "knight":
+			problems.append("入口层必须保留回溯骑士。")
+		if roles.get("return_guard_reward", {}).get("item_id", "") != "sovereign_ring" or not roles.get("return_guard_reward", {}).get("objective", false):
+			problems.append("回溯骑士必须守护试炼目标宝箱。")
+	else:
+		if roles.get("weapon_trial_gate", {}).get("enemy_id", "") != "slime" or roles.get("weapon_trial_reward", {}).get("item_id", "") != "dawn_spear":
+			problems.append("第二层必须保留史莱姆守护的成长长枪。")
+		if roles.get("armor_trial_gate", {}).get("type", "") != "door" or roles.get("armor_trial_reward", {}).get("item_id", "") != "knight_plate":
+			problems.append("第二层必须保留锁门板甲支路。")
 	var safe := flood(floor_state, blockers)
 	if not safe.has(exit_key):
 		problems.append("普通层的楼梯路线被怪物或门堵住。")
-	if key_count < door_cost:
-		problems.append("本层可用钥匙不足以打开本层所有门。")
+	for key_kind in Keys.TYPES:
+		if int(key_count[key_kind]) < int(door_cost[key_kind]):
+			problems.append("本层%s数量不足，无法开启对应的门。" % Keys.key_name(key_kind))
 	for cell in floor_state.entities:
 		var entity: Dictionary = floor_state.entities[cell]
 		if entity.get("type", "") in ["key", "shop"] and not safe.has(cell):
@@ -102,6 +153,9 @@ func validate(floor_state: Dictionary) -> Array[String]:
 		linked_gates[gate_key] = true
 		if not blockers.has(gate_key) or not floor_state.entities.has(reward_key):
 			problems.append("守卫与奖励的关联丢失。")
+		var role := str(link.get("role", ""))
+		if floor_state.entities.get(gate_key, {}).get("role", "") != role + "_gate" or floor_state.entities.get(reward_key, {}).get("role", "") != role + "_reward":
+			problems.append("守卫与奖励必须属于同一支路。")
 		if flood(floor_state, {gate_key: true}).has(reward_key):
 			problems.append("可以绕过守卫直接领取奖励。")
 	if linked_gates.size() != blockers.size():

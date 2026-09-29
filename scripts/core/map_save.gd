@@ -1,5 +1,6 @@
 extends "res://scripts/core/save_store.gd"
 ## Separate schema and path keep the original card-mode save untouched.
+const Keys = preload("res://scripts/core/map_keys.gd")
 
 func _valid(value: Variant) -> bool:
 	if not value is Dictionary or value.get("version", 0) != 1:
@@ -26,6 +27,16 @@ func _valid(value: Variant) -> bool:
 			return false
 	if not state.player.equipment_ids is Array or not state.player.relic_ids is Array:
 		return false
+	if state.has("reward_content"):
+		if not state.reward_content is Dictionary:
+			return false
+		for category in ["items", "shop", "events"]:
+			if not state.reward_content.get(category) is Dictionary:
+				return false
+	for field in Keys.FIELDS.values():
+		# Older saves have only `keys`; new counters are supplied after loading.
+		if state.player.has(field) and not _valid_count(state.player[field]):
+			return false
 	if not _position_valid(state.position) or not state.floors.has(str(int(state.floor))):
 		return false
 	for id in state.floors:
@@ -50,6 +61,8 @@ func _valid(value: Variant) -> bool:
 				return false
 			if not entity.has("name") or not entity.has("type"):
 				return false
+			if entity.type in ["door", "key"] and Keys.kind(entity) not in Keys.TYPES:
+				return false
 			match str(entity.type):
 				"enemy":
 					if not entity.has("enemy_id"):
@@ -57,11 +70,30 @@ func _valid(value: Variant) -> bool:
 				"chest":
 					if not entity.has("item_id") or not entity.has("gold"):
 						return false
+				"choice":
+					if not entity.get("choices") is Array or entity.choices.size() != 2:
+						return false
+					if entity.choices[0] == entity.choices[1] or not _valid_count(entity.get("gold", -1)):
+						return false
+					for item_id in entity.choices:
+						if not item_id is String or item_id.is_empty():
+							return false
+				"event":
+					if not entity.get("event_id") is String or entity.event_id.is_empty():
+						return false
+				"rest":
+					if not entity.get("options") is Array or entity.options.size() != 2:
+						return false
+					for option in entity.options:
+						if not option is Dictionary or not option.get("effects") is Dictionary or not option.get("name") is String:
+							return false
 				"gold", "key", "potion":
 					if not entity.has("amount"):
 						return false
+					if entity.type == "key" and (not _valid_count(entity.amount) or int(entity.amount) == 0):
+						return false
 				"door":
-					if not entity.has("cost"):
+					if not entity.has("cost") or not _valid_count(entity.cost) or int(entity.cost) == 0:
 						return false
 				"shop":
 					if not entity.get("offers") is Array or not entity.has("purchased"):
@@ -83,3 +115,6 @@ func _valid(value: Variant) -> bool:
 
 func _position_valid(value: Variant) -> bool:
 	return value is Array and value.size() == 2 and int(value[0]) >= 0 and int(value[0]) < 11 and int(value[1]) >= 0 and int(value[1]) < 11
+
+func _valid_count(value: Variant) -> bool:
+	return (value is int or value is float) and is_finite(float(value)) and float(value) >= 0 and float(value) == floorf(float(value))

@@ -1,6 +1,7 @@
 class_name ContentDB
 extends RefCounted
 ## Content is immutable; callers duplicate enemy/room dictionaries before modifying them.
+const Enemies = preload("res://scripts/core/enemy_rules.gd")
 
 var data: Dictionary = {}
 var errors: Array[String] = []
@@ -18,6 +19,9 @@ func _init() -> void:
 	for category in ["enemies", "items", "events", "shop", "floor_pools"]:
 		if not data.has(category):
 			errors.append("内容缺少：" + category)
+	for id in data.get("enemies", {}):
+		if not Enemies.valid_definition(data.enemies[id]):
+			errors.append("怪物身份或档次配置无效：" + str(id))
 
 func enemy(id: String) -> Dictionary:
 	return data.get("enemies", {}).get(id, {}).duplicate(true)

@@ -4,9 +4,12 @@ extends RefCounted
 ## never consume this RNG. Persist the returned map, never regenerate on re-entry.
 
 const Validator = preload("res://scripts/core/map_validator.gd")
-const VERSION := 1
+const Keys = preload("res://scripts/core/map_keys.gd")
+const VERSION := 3
+const SUPPORTED_VERSIONS := [1, 2, 3]
 const SIZE := 11
 var config: Dictionary = {}
+var reward_config: Dictionary = {}
 var errors: Array[String] = []
 var last_error := ""
 var validator = Validator.new()
@@ -26,13 +29,47 @@ func _init() -> void:
 			errors.append("随机配置缺少字段：" + field)
 	if not errors.is_empty():
 		return
-	if int(config.version) != VERSION or int(config.size) != SIZE or config.templates.is_empty():
+	if int(config.version) != 2 or int(config.size) != SIZE or config.templates.is_empty():
 		errors.append("不支持的随机地图版本或尺寸。")
+	var reward_file := FileAccess.open("res://data/reward_rules.json", FileAccess.READ)
+	if reward_file == null:
+		errors.append("无法读取奖励配置。")
+		return
+	var rewards = JSON.parse_string(reward_file.get_as_text())
+	if not rewards is Dictionary:
+		errors.append("奖励配置格式错误。")
+		return
+	reward_config = rewards
+	for field in ["relic_choices", "direct_relics", "vault_choices", "event_pool", "shop_supply", "rest_options"]:
+		if not reward_config.get(field) is Array or reward_config[field].is_empty():
+			errors.append("奖励配置缺少有效列表：" + field)
+	if not errors.is_empty():
+		return
+	for field in ["relic_choices", "direct_relics", "vault_choices"]:
+		var unique: Dictionary = {}
+		for id in reward_config[field]:
+			unique[id] = true
+			if not validator.db.data.items.has(str(id)):
+				errors.append("未知奖励物品：" + str(id))
+		if unique.size() != reward_config[field].size() or unique.size() < 2:
+			errors.append("奖励候选不足或重复：" + field)
+	for id in reward_config.direct_relics:
+		if id not in reward_config.relic_choices:
+			errors.append("直接属性遗物必须属于遗物候选池。")
+	for id in reward_config.event_pool:
+		if not validator.db.data.events.has(str(id)):
+			errors.append("未知奖励事件。")
+	for id in reward_config.shop_supply:
+		if not validator.db.data.shop.has(str(id)):
+			errors.append("未知补给商品。")
 
-func generate(run_seed: String, floor_number: int, theme_id: String) -> Dictionary:
+func generate(run_seed: String, floor_number: int, theme_id: String, generation_version: int = VERSION) -> Dictionary:
 	last_error = ""
 	if not errors.is_empty():
 		last_error = "\n".join(errors)
+		return {}
+	if generation_version not in SUPPORTED_VERSIONS:
+		last_error = "不支持的地图生成器版本。"
 		return {}
 	if floor_number not in [1, 2] or not config.themes.has(theme_id):
 		last_error = "当前生成器只用于两层地图原型。"
@@ -41,27 +78,28 @@ func generate(run_seed: String, floor_number: int, theme_id: String) -> Dictiona
 		last_error = "楼层与主题不匹配。"
 		return {}
 	var random := RandomNumberGenerator.new()
-	var seed_value := floor_seed(run_seed, floor_number, theme_id)
+	var seed_value := floor_seed(run_seed, floor_number, theme_id, generation_version)
 	random.seed = seed_value
 	var attempts := clampi(int(config.max_attempts), 1, 32)
 	for attempt in attempts:
 		var template: Dictionary = _pick(config.templates, random)
 		var symmetry := random.randi_range(0, 7)
-		var candidate := _build(template, floor_number, theme_id, symmetry, random)
+		var candidate := _build(template, floor_number, theme_id, symmetry, random, generation_version)
 		if candidate.is_empty():
 			continue
 		var problems: Array[String] = validator.validate(candidate)
 		if problems.is_empty():
-			candidate.generator = {"version": VERSION, "seed": str(seed_value),
+			last_error = ""
+			candidate.generator = {"version": generation_version, "seed": str(seed_value),
 				"template": template.id, "symmetry": symmetry, "attempt": attempt + 1}
 			return candidate
 		last_error = "；".join(problems)
 	last_error = "随机地图未通过检查（%d 次）：%s" % [attempts, last_error]
 	return {}
 
-static func floor_seed(run_seed: String, number: int, theme_id: String) -> int:
+static func floor_seed(run_seed: String, number: int, theme_id: String, generation_version: int = VERSION) -> int:
 	# Explicit 31-bit hash; no floating point or process-randomized hash function.
-	var text := "%d|%s|%d|%s" % [VERSION, run_seed, number, theme_id]
+	var text := "%d|%s|%d|%s" % [generation_version, run_seed, number, theme_id]
 	var value: int = 17
 	for index in text.length():
 		value = (value * 131 + text.unicode_at(index)) % 2147483647
@@ -78,7 +116,7 @@ static func transform(cell: Array, symmetry: int) -> Array:
 		y = previous_x
 	return [x, y]
 
-func _build(template: Dictionary, number: int, theme_id: String, symmetry: int, random: RandomNumberGenerator) -> Dictionary:
+func _build(template: Dictionary, number: int, theme_id: String, symmetry: int, random: RandomNumberGenerator, generation_version: int) -> Dictionary:
 	var theme: Dictionary = config.themes[theme_id]
 	var result := {"rows": _transform_rows(template.rows, symmetry), "entities": {},
 		"floor": number, "theme": theme_id, "name": theme.name + " · " + template.name,
@@ -95,7 +133,7 @@ func _build(template: Dictionary, number: int, theme_id: String, symmetry: int, 
 	if branches.size() != recipes.size():
 		last_error = "支路数量与主题配方不符。"
 		return {}
-	var needed_keys := 0
+	var needed_keys: Array[String] = []
 	for index in recipes.size():
 		var role := str(recipes[index])
 		var recipe: Dictionary = config.recipes[role]
@@ -104,8 +142,15 @@ func _build(template: Dictionary, number: int, theme_id: String, symmetry: int, 
 		var reward_pos: Array = _pick(branch.rewards, random)
 		var gate: Dictionary = {}
 		if recipe.gate == "door":
+			var key_kind := str(recipe.get("key_kind", "copper")) if generation_version >= 2 else "copper"
+			if key_kind not in Keys.TYPES:
+				last_error = "未知钥匙类型：" + key_kind
+				return {}
 			gate = {"type": "door", "name": "支路铜锁门", "cost": 1}
-			needed_keys += 1
+			if generation_version >= 2:
+				gate.key_kind = key_kind
+				gate.name = Keys.door_name(key_kind)
+			needed_keys.append(key_kind)
 		elif recipe.gate == "enemy":
 			gate = {"type": "enemy", "name": "回溯强敌" if recipe.get("guardian", false) else "支路守卫",
 				"enemy_id": _pick(recipe.enemy_pool, random), "guardian": recipe.get("guardian", false)}
@@ -135,12 +180,15 @@ func _build(template: Dictionary, number: int, theme_id: String, symmetry: int, 
 		if not _place(result, {"type": "shop", "name": "烛火商人", "role": "merchant",
 			"offers": offers, "purchased": false}, shop_pos, symmetry):
 			return {}
-	if safe_slots.size() < needed_keys + 2:
+	if safe_slots.size() < needed_keys.size() + 2:
 		last_error = "安全补给位置不足。"
 		return {}
-	for index in needed_keys:
-		if not _place(result, {"type": "key", "name": "通用钥匙", "amount": 1,
-			"role": "safe_key_%d" % index}, safe_slots.pop_back(), symmetry):
+	for index in needed_keys.size():
+		var key_entity := {"type": "key", "name": "通用钥匙", "amount": 1, "role": "safe_key_%d" % index}
+		if generation_version >= 2:
+			key_entity.key_kind = needed_keys[index]
+			key_entity.name = Keys.key_name(needed_keys[index])
+		if not _place(result, key_entity, safe_slots.pop_back(), symmetry):
 			return {}
 	if not _place(result, {"type": "gold", "name": "散落钱币", "role": "safe_gold",
 		"amount": _roll(config.safe_gold, random)}, safe_slots.pop_back(), symmetry):
@@ -148,7 +196,37 @@ func _build(template: Dictionary, number: int, theme_id: String, symmetry: int, 
 	if not _place(result, {"type": "potion", "name": "小型药剂", "role": "safe_potion",
 		"amount": _roll(config.safe_heal, random)}, safe_slots.pop_back(), symmetry):
 		return {}
+	if generation_version >= 3:
+		_upgrade_rewards(result, random)
 	return result
+
+func _upgrade_rewards(result: Dictionary, random: RandomNumberGenerator) -> void:
+	# Apply after legacy placement so versions 1/2 retain their exact draw order.
+	for entity in result.entities.values():
+		match str(entity.get("role", "")):
+			"relic_fight_reward", "treasure_vault_reward":
+				var pool: Array = reward_config.relic_choices if entity.role == "relic_fight_reward" else reward_config.vault_choices
+				var first: String = str(_pick(reward_config.direct_relics if entity.role == "relic_fight_reward" else pool, random))
+				var remaining := pool.duplicate()
+				remaining.erase(first)
+				entity.type = "choice"
+				entity.name = "遗物二选一" if entity.role == "relic_fight_reward" else "宝库二选一"
+				entity.choices = [first, _pick(remaining, random)]
+				entity.erase("item_id")
+			"open_chest_reward":
+				entity.type = "event"
+				entity.event_id = _pick(reward_config.event_pool, random)
+				entity.name = validator.db.event(entity.event_id).get("name", "未知事件")
+				entity.erase("item_id")
+				entity.erase("gold")
+			"healing_branch_reward":
+				if result.theme == "shop":
+					entity.type = "rest"
+					entity.name = "旅人休息点"
+					entity.options = reward_config.rest_options.duplicate(true)
+					entity.erase("amount")
+			"merchant":
+				entity.offers[2] = _pick(reward_config.shop_supply, random)
 
 func _place(result: Dictionary, entity: Dictionary, cell: Array, symmetry: int) -> bool:
 	var pos := transform(cell, symmetry)

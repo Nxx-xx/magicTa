@@ -2,6 +2,10 @@ extends Control
 
 const Core = preload("res://scripts/core/map_engine.gd")
 const Board = preload("res://scripts/ui/grid_board.gd")
+const Keys = preload("res://scripts/core/map_keys.gd")
+const Enemies = preload("res://scripts/core/enemy_rules.gd")
+const Rewards = preload("res://scripts/core/rewards.gd")
+const ItemIcon = preload("res://scripts/ui/item_icon.gd")
 const FONT = preload("res://assets/fonts/ui_font.tres")
 const GOLD := Color("e0bf80")
 const TEAL := Color("83d5bf")
@@ -19,6 +23,7 @@ var seed_input: LineEdit
 var generation := 0
 var modal_open := false
 var show_log := false
+var show_inventory := true
 
 func _ready() -> void:
 	var ui_theme := Theme.new()
@@ -89,6 +94,7 @@ func _text(parent: Node, text: String, size_px: int = 16, color: Color = Color("
 func _button(parent: Node, text: String, action: Callable, disabled: bool = false) -> Button:
 	var button := Button.new()
 	button.text = text
+	button.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 	button.custom_minimum_size.y = 48
 	button.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	button.disabled = disabled
@@ -131,10 +137,12 @@ func _render(reset_scroll: bool = false) -> void:
 	shell.add_child(row)
 	_text(row, "塔境 / 地图试炼", 25, GOLD)
 	if page == "map":
-		_button(row, "营地", func():
+		var camp_button := _button(row, "营地", func():
 			page = "menu"
 			_render(true)
-		).size_flags_horizontal = Control.SIZE_SHRINK_END
+		)
+		camp_button.size_flags_horizontal = Control.SIZE_SHRINK_END
+		camp_button.custom_minimum_size.x = 64
 	if page == "map" and not game.state.is_empty():
 		_hud()
 	scroll = ScrollContainer.new()
@@ -170,8 +178,9 @@ func _menu() -> void:
 	_text(body, "在方格地图里走动、开门、拾取奖励。\n一层的骑士现在很强；二层的补给会改变这场战斗。", 18)
 	var info := _panel(body)
 	_text(info, "本次地图设计", 21, TEAL)
-	_text(info, "两层均为 11×11 格，手工设计主路与支路。首次上楼可选战斗、宝藏或商店主题，支路内容按种子抽取一次。", 15, MUTED)
+	_text(info, "两层均为 11×11 格。每局随机布局方向、支路与物件位置；首次上楼可选战斗、宝藏或商店主题，生成后永久保存。", 15, MUTED)
 	_text(info, "怪物被击败后不刷新；开过的门、拿过的宝箱、商店售出记录都会保留。", 15, MUTED)
+	_text(info, "普通怪分入门、进阶、高阶三档。先看当前战斗损失，再决定是否挑战；标有“回”的守卫适合变强后回来。", 15, MUTED)
 	if not game.state.is_empty():
 		_button(body, "继续探索 · 第 %d 层" % int(game.state.floor) if game.active() else "查看上次探索", _open_map)
 	seed_input = LineEdit.new()
@@ -186,14 +195,18 @@ func _menu() -> void:
 			_start(seed_text)
 	)
 	_text(body, "操作：方向键 / WASD / 下方方向按钮移动；点击相邻格也可移动，点击远处目标可查看属性。战斗和开门先预览再确认。", 14, MUTED)
-	_text(body, "这是地图玩法原型，暂不连接十层随机迷宫和灵魂升级。完成回溯目标后仍能继续探索。", 13, MUTED)
+	_text(body, "这是两层随机地图原型，暂不连接十层流程和灵魂升级。完成回溯目标后仍能继续探索。旧存档保留原来的布局。", 13, MUTED)
 	_button(body, "打开旧版十层卡片原型", func():
 		game.save_game()
 		get_tree().change_scene_to_file("res://scenes/main.tscn")
 	)
 
 func _start(seed_text: String) -> void:
-	game.start(seed_text)
+	var result: String = game.start(seed_text)
+	if not result.is_empty():
+		notice = result
+		_render(true)
+		return
 	selected = Vector2i(-1, -1)
 	notice = ""
 	show_log = false
@@ -208,7 +221,11 @@ func _hud() -> void:
 	var stats: Dictionary = game.stats()
 	_text(shell, "第 %d 层 · %s" % [game.state.floor, game.floor_data().name], 17, TEAL)
 	_text(shell, "生命 %d/%d    攻击 %d    防御 %d" % [player.hp, stats.max_hp, stats.attack, stats.defense], 17)
-	_text(shell, "金币 %d    钥匙 %d    已探索 %d / 2 层" % [player.gold, player.keys, game.state.floors.size()], 14, GOLD)
+	_text(shell, "金币 %d    已探索 %d / 2 层" % [player.gold, game.state.floors.size()], 14, GOLD)
+	var key_row := HBoxContainer.new()
+	shell.add_child(key_row)
+	for key_kind in Keys.TYPES:
+		_text(key_row, "%s %d" % [Keys.key_name(key_kind), Keys.count(player, key_kind)], 14, Keys.COLORS[key_kind])
 
 func _map_view() -> void:
 	if not game.active():
@@ -226,22 +243,33 @@ func _map_view() -> void:
 	body.add_child(square)
 	var board = Board.new()
 	square.add_child(board)
-	board.setup(game.floor_data(), game.position(), selected, game.active())
+	board.setup(game.floor_data(), game.position(), selected, game.active(), game.db.data.enemies)
 	board.cell_selected.connect(_select_cell)
-	_text(body, "青色人物＝你　红怪／紫色强敌　金箱　铜门　钥匙　绿色药剂", 11, MUTED)
+	_text(body, "青色人物＝你　怪物角标 1／2／3＝强度档，“回”＝回溯守卫\n门与钥匙标有铜／银／金，只能同类匹配", 11, MUTED)
 	if game.inside(selected):
 		var box := _panel(body)
 		_describe(box, selected)
 	else:
 		_text(body, "点击格子查看。主路无需战斗即可到楼梯，支路奖励可以稍后回来拿。", 13, MUTED)
 	var inventory := _panel(body)
-	_text(inventory, "行囊", 17, GOLD)
+	_text(inventory, "装备与遗物", 17, GOLD)
+	_text(inventory, "获得即生效，同名副本叠加。药剂留在地图，可稍后使用。", 12, MUTED)
 	var ids: Array = game.state.player.equipment_ids + game.state.player.relic_ids
 	if ids.is_empty():
 		_text(inventory, "尚未获得装备。", 13, MUTED)
+	var counts: Dictionary = {}
 	for id in ids:
-		var item: Dictionary = game.db.item(str(id))
-		_text(inventory, "%s · %s" % [item.name, item.description], 13, MUTED)
+		counts[id] = int(counts.get(id, 0)) + 1
+	if not ids.is_empty():
+		_button(inventory, "收起行囊" if show_inventory else "展开行囊 · %d 件" % ids.size(), func():
+			show_inventory = not show_inventory
+			_render()
+		)
+		var current: Dictionary = game.stats()
+		_text(inventory, "击杀恢复 %d HP · 击杀额外金币 %d" % [current.kill_heal, current.gold_bonus], 13, TEAL)
+	if show_inventory:
+		for id in counts:
+			_item_card(inventory, str(id), int(counts[id]))
 	if not game.state.last_report.is_empty():
 		_button(body, "收起战斗记录" if show_log else "最近一次战斗记录", func():
 			show_log = not show_log
@@ -260,38 +288,80 @@ func _describe(parent: Node, cell: Vector2i) -> void:
 	if entity.is_empty():
 		_text(parent, "通路（%d, %d）" % [cell.x, cell.y], 16, MUTED)
 		return
-	_text(parent, str(entity.name), 19, GOLD)
+	var title := str(entity.name)
+	if entity.type == "key":
+		title = Keys.key_name(Keys.kind(entity))
+	elif entity.type == "door":
+		title = Keys.door_name(Keys.kind(entity))
+	elif entity.type == "enemy":
+		title = str(game.db.enemy(entity.enemy_id).name)
+	_text(parent, title, 19, GOLD)
 	match str(entity.type):
 		"enemy":
 			var enemy: Dictionary = game.db.enemy(entity.enemy_id)
 			var report: Dictionary = game.preview(cell)
-			_text(parent, "%s · 生命 %d / 攻击 %d / 防御 %d" % [enemy.name, enemy.hp, enemy.attack, enemy.defense], 14, MUTED)
-			_text(parent, "当前挑战会死亡，可以变强后再来。" if report.lethal else "预计净损失 %d HP，胜利获得 %d 金币。" % [report.loss, report.gold_reward], 16, RED if report.lethal else TEAL)
+			_text(parent, Enemies.classification(enemy) + " · " + Enemies.map_role(entity), 14, GOLD)
+			_text(parent, "生命 %d / 攻击 %d / 防御 %d" % [enemy.hp, enemy.attack, enemy.defense], 14, MUTED)
+			_text(parent, str(enemy.get("combat_hint", "")), 14, MUTED)
+			if not str(enemy.get("ability_id", "")).is_empty():
+				_text(parent, "机制：" + str(enemy.description), 14, MUTED)
+			var cost := "预计净损失 %d HP。" % int(report.loss) if int(report.loss) >= 0 else "预计净恢复 %d HP。" % -int(report.loss)
+			_text(parent, "当前挑战会死亡，可以变强后再来。" if report.lethal else cost, 16, RED if report.lethal else TEAL)
+			_text(parent, "实际受伤 %d · 击杀恢复 %d · 战中最低生命 %d" % [report.incoming, report.healing, int(report.hp_after) - int(report.healing)], 13, MUTED)
+			_text(parent, "击杀奖励：%d 金币。" % (int(enemy.gold_reward) + int(game.stats().gold_bonus)), 14, GOLD)
 		"door":
-			_text(parent, "开启消耗 %d 把钥匙，之后永久畅通。" % int(entity.cost), 15, MUTED)
+			var key_kind := Keys.kind(entity)
+			_text(parent, "消耗 %d 把%s（持有 %d）。其他钥匙不能替代，开门后永久畅通。" % [int(entity.cost), Keys.key_name(key_kind), Keys.count(game.state.player, key_kind)], 15, Keys.COLORS[key_kind])
 		"chest":
 			var item: Dictionary = game.db.item(entity.item_id)
 			_text(parent, "%s · %s；额外 %d 金币。" % [item.name, item.description, entity.gold], 15, TEAL)
+			_text(parent, Rewards.summary(Rewards.resolve(game.db, game.state.player, game.collection_reward(entity))), 13, MUTED)
 		"potion":
-			_text(parent, "恢复至多 %d HP，走到格子即消耗（满血也会拾取）。" % int(entity.amount), 15, TEAL)
-		"gold", "key":
-			_text(parent, "获得 %d %s，拾取后不会刷新。" % [entity.amount, "金币" if entity.type == "gold" else "把钥匙"], 15, GOLD)
+			var result := Rewards.resolve(game.db, game.state.player, game.collection_reward(entity))
+			_text(parent, "恢复至多 %d HP；本次实际恢复 %d，溢出 %d。\n确认使用才会消耗，满血经过会保留。" % [int(entity.amount), result.healing, result.overflow], 15, TEAL)
+		"choice", "event", "rest":
+			_text(parent, "只能选择一项；可以离开再回来，候选不会改变。", 14, MUTED)
+			if entity.type == "event":
+				_text(parent, str(game.db.event(entity.event_id).get("description", "")), 14, MUTED)
+			for option in game.reward_options(entity):
+				_text(parent, "%s · %s" % [option.name, option.get("description", "")], 14, TEAL)
+			if int(entity.get("gold", 0)) > 0:
+				_text(parent, "选取任一物品后，另获 %d 金币。" % int(entity.gold), 14, GOLD)
+		"gold":
+			_text(parent, "获得 %d 金币，拾取后不会刷新。" % int(entity.amount), 15, GOLD)
+		"key":
+			var key_kind := Keys.kind(entity)
+			_text(parent, "获得 %d 把%s，仅用于%s。拾取后不会刷新。" % [entity.amount, Keys.key_name(key_kind), Keys.door_name(key_kind)], 15, Keys.COLORS[key_kind])
 		"shop":
 			_text(parent, "已售出一件商品，本局不再补货。" if entity.purchased else "三件商品选购一件。不买可以离开，下次回来仍可购买。", 15, MUTED)
 			for id in entity.offers:
-				var offer: Dictionary = game.db.shop_item(id)
+				var offer: Dictionary = game.shop_offer(str(id))
 				_text(parent, "%s · %s · %d 金币" % [offer.name, offer.description, offer.price], 13, GOLD)
 		_:
 			_text(parent, str(entity.get("description", "")), 14, MUTED)
+	if entity.type in ["enemy", "door"]:
+		for link in game.floor_data().get("guard_links", []):
+			if int(link.gate[0]) != cell.x or int(link.gate[1]) != cell.y:
+				continue
+			var reward: Dictionary = game.entity_at(Vector2i(int(link.reward[0]), int(link.reward[1])))
+			if reward.get("type", "") == "chest":
+				var item: Dictionary = game.db.item(reward.item_id)
+				_text(parent, "守护奖励：%s（%s），金币 +%d。" % [item.name, item.description, reward.gold], 14, GOLD)
+			elif reward.get("type", "") == "choice":
+				_text(parent, "守护奖励（二选一，另获 %d 金币）：" % int(reward.gold), 14, GOLD)
+				for option in game.reward_options(reward):
+					_text(parent, "%s · %s" % [option.name, option.description], 14, TEAL)
+			elif reward.get("type", "") == "gold":
+				_text(parent, "守护奖励：%d 金币。" % int(reward.amount), 14, GOLD)
 
 func _pending_panel() -> void:
 	var box := _panel(body)
 	var pending: Dictionary = game.state.pending
 	if pending.kind == "floor_choice":
 		_text(box, "第二层 · 选择地图主题", 23, GOLD)
-		_text(box, "只选择一次。三种主题均有长枪、板甲和泉水补给；以后往返不再重选。", 14, MUTED)
+		_text(box, "只选择一次。装备位于支路，先查看守卫与钥匙成本；以后往返不再重选。" if int(game.state.get("generator_version", 0)) > 0 else "旧版布局：三种主题均有长枪、板甲和泉水补给，往返不重选。", 14, MUTED)
 		for id in Core.THEMES:
-			var choice: Dictionary = game.layouts.themes[id]
+			var choice: Dictionary = game.floor_choices()[id]
 			_text(box, choice.name + "：" + choice.description, 14)
 			_button(box, "进入" + choice.name, func(): _act(func(): return game.choose_floor(id)))
 	elif pending.kind == "stairs":
@@ -304,10 +374,26 @@ func _pending_panel() -> void:
 		_describe(box, cell)
 		if entity.get("type", "") == "shop":
 			for index in entity.offers.size():
-				var offer: Dictionary = game.db.shop_item(entity.offers[index])
-				_button(box, "购买 %s · %d 金币" % [offer.name, offer.price], func(): _act(func(): return game.buy(index)), entity.purchased or int(game.state.player.gold) < int(offer.price))
+				var offer: Dictionary = game.shop_offer(str(entity.offers[index]))
+				var result: Dictionary = game.shop_preview(str(entity.offers[index]))
+				if offer.has("item_id"):
+					_item_card(box, str(offer.item_id))
+				_text(box, Rewards.summary(result).replace("领取后", "购买后"), 13, TEAL if result.ok else MUTED)
+				_button(box, "购买 %s · %d 金币" % [offer.name, offer.price], func(): _act(func(): return game.buy(index)), entity.purchased or not result.ok)
+		elif entity.get("type", "") in ["choice", "event", "rest"]:
+			var options: Array = game.reward_options(entity)
+			for index in options.size():
+				var result := Rewards.resolve(game.db, game.state.player, options[index])
+				if options[index].has("item_id"):
+					_item_card(box, str(options[index].item_id))
+				_text(box, Rewards.summary(result), 13, TEAL if result.ok else RED)
+				_button(box, "选择 · " + str(options[index].name), func(): _act(func(): return game.choose_reward(index)), not result.ok)
+		elif entity.get("type", "") == "potion":
+			_button(box, "使用药剂", func(): _act(game.confirm_interaction), int(game.state.player.hp) >= int(game.stats().max_hp))
 		elif entity.get("type", "") == "door":
-			_button(box, "消耗钥匙开门", func(): _act(game.confirm_interaction), int(game.state.player.keys) < int(entity.cost))
+			var key_kind := Keys.kind(entity)
+			var enough := Keys.count(game.state.player, key_kind) >= int(entity.cost)
+			_button(box, "消耗 %d 把%s开门" % [int(entity.cost), Keys.key_name(key_kind)] if enough else Keys.key_name(key_kind) + "不足", func(): _act(game.confirm_interaction), not enough)
 		else:
 			_button(box, "确认挑战", _fight)
 	_button(box, "暂时离开 · 返回地图", func():
@@ -315,6 +401,21 @@ func _pending_panel() -> void:
 		notice = ""
 		_render(true)
 	)
+
+func _item_card(parent: Node, id: String, count: int = 1) -> void:
+	var item: Dictionary = game.db.item(id)
+	var row := HBoxContainer.new()
+	parent.add_child(row)
+	var icon = ItemIcon.new()
+	icon.item = item
+	icon.custom_minimum_size = Vector2(44, 48)
+	row.add_child(icon)
+	var copy := VBoxContainer.new()
+	copy.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	row.add_child(copy)
+	var kind := "遗物" if item.get("kind", "") == "relic" else "装备"
+	_text(copy, "%s ×%d · %s %d阶" % [item.get("name", id), count, kind, int(item.get("tier", 1))], 14, GOLD)
+	_text(copy, str(item.get("description", "")), 12, MUTED)
 
 func _fight() -> void:
 	var result: String = game.confirm_interaction()

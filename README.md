@@ -2,22 +2,32 @@
 
 **当前默认入口已改为两层可往返的方格地图原型。** 原来的十层卡片模式仍保留，在地图原型菜单中点击“打开旧版十层卡片原型”即可进入，两种模式使用独立存档。
 
-地图设计见 [`docs/MAP_DESIGN.md`](docs/MAP_DESIGN.md)，布局图见 [`docs/map_design.png`](docs/map_design.png)。地图源码入口为 `scenes/map_prototype.tscn`。
+当前随机生成器说明见 [`docs/RANDOM_MAPS.md`](docs/RANDOM_MAPS.md)。历史手工地图设计见 [`docs/MAP_DESIGN.md`](docs/MAP_DESIGN.md)，旧布局图见 [`docs/map_design.png`](docs/map_design.png)。地图源码入口为 `scenes/map_prototype.tscn`。
+
+怪物方案已接入当前原型，详见 [`docs/MONSTER_DESIGN.md`](docs/MONSTER_DESIGN.md) 和 [引擎渲染的怪物图标](docs/monster_preview.png)。6 种普通怪分三档，另有 2 种精英和 2 个 Boss；地图详情显示身份、档次、特点、预计损失与分开的击杀 / 守护奖励。角标 1 / 2 / 3 表示普通怪档次，“回”标记回溯守卫；精英和 Boss 尚未投放到两层地图。
+
+完整方案见[`奖励设计`](docs/REWARD_DESIGN.md)，当前已接入的范围见[`奖励系统使用说明`](docs/REWARDS.md)。两层地图已支持奖励二选一、事件、休息点、治疗确认、装备行囊与交易实际属性预览；十层投放额度、地图 Boss 与灵魂属于后续阶段。
+
+局外成长方案见[灵魂与火种设计](docs/META_PROGRESSION.md)：三条有限永久升级、局后免费重置、结算流程与存档规则。该方案待正式十层地图接入，当前两层试炼不产出灵魂。
 
 ## 新版地图原型
 
-- 两层都是 11×11 格；一层教学主路 / 钥匙门 / 强敌奖励支路，二层共同补给 / 主题支路。
+- 两层都是 11×11 格；新开局随机选取三套模板之一并旋转 / 镜像，随机分配支路、守卫、奖励、钥匙与补给位置。
 - 方向键、WASD、屏幕方向按钮或点击相邻格移动；远处格子只检查、不自动寻路。
-- 撞怪先看损失再确认，致死挑战额外确认；开门扣钥匙，物品走到格子自动拾取。
+- 撞怪先看损失再确认，致死挑战额外确认；开门扣钥匙，金币、钥匙与普通装备箱走到格子自动拾取。
+- 药剂确认后才消耗，满血可以经过并保留；离开后可再来。装备与遗物自动叠加，行囊显示图标、阶级、同名数量和击杀加成。
+- 新开局的战斗层提供遗物二选一；宝藏层金门后提供宝库二选一，开放支路改为一次性事件；商店层治疗支路改为“恢复40HP / 攻击+3、防御+1”休息点。
+- 商店第三格从药剂 / 生命吊坠中抽取；购买预览会扣除金币再重算金币遗物攻击，满血不能购买纯治疗。领取、取消和读档不会重新抽取奖励。
+- 铜、银、金三种钥匙分别开启对应的门，每扇消耗一把，不能互相替代。地图图标以颜色和文字区分，界面分别显示三种库存。
 - 首次从一层上楼选择战斗、宝藏、商店主题；已访问楼层只显示普通楼梯确认。
 - 返回原楼层时，未击败的怪物仍在，已拿奖励不刷新，开门状态与商店交易记录保留。
 - 未购买时可以反复返回商店；每位商人一局只售出一件，购买后不补货；可以穿过商人格继续探索。
-- 三种二层主题均提供破晓长枪（攻击 +10）、骑士板甲（防御 +4）、泉水，支持变强后回打一层骑士。
-- 初始 100 HP / 10 攻 / 5 防，一层骑士初始致死；仅取得上述两件装备后，满血对战预计损失 77 HP。西侧锁门护甲可进一步降低损失。
+- 三种二层主题均有史莱姆守护破晓长枪（攻击 +10）、银门守护骑士板甲（防御 +4），支持变强后回打一层骑士；一层护甲支路使用铜门，宝藏层额外宝库使用金门。生成器会在安全可达位置放置足够的对应钥匙。
+- 初始 100 HP / 10 攻 / 5 防，一层骑士初始致死；仅取得上述两件装备后，满血对战预计损失 77 HP。一层锁门护甲可进一步降低损失。
 - 取得一层骑士身后的王权指环宝箱即达成地图原型目标，之后仍可自由探索。
 - 默认菜单、地图中的占位人物 / 格子 / 怪物 / 门 / 道具均由代码绘制。整层可见，没有战争迷雾。
 
-**当前是两层手工布局 + 按种子抽取部分主题怪物 / 奖励。墙体、格子和所有物件的位置尚未随机化，也尚未连接完整十层流程、Boss 与灵魂成长。** 先验证往返体验，再扩展受控随机地图；这不是已经完成的随机迷宫版本。
+**当前是两层模板随机地图：3 套模板、8 种旋转 / 镜像、18 种不同地形，加上支路分配、位置、怪物与奖励抽取。** 每层使用独立种子，只有首次进入时生成。尚未连接完整十层流程、Boss 与灵魂成长，也没有做完全自由挖墙的迷宫生成。新开局使用第 3 版生成器；旧存档保留手工布局或第 1 / 2 版随机地图，未访问楼层也沿用原生成规则。所有版本共用新版药剂确认与交易预览。新开局会保存本局装备、商品和事件定义快照，保证续玩时奖励效果与价格稳定。
 
 地图独立存档：`user://tower_map_save.json`，备份为 `.bak`。楼层集合、人物坐标、共享属性、待确认交互和 RNG 状态一起保存，每次移动和资源结算后提交。旧模式的 `user://tower_save.json` 不会被转换或覆盖。
 
@@ -26,12 +36,19 @@
 ```powershell
 python tools/check_project.py
 python tools/check_maps.py
-# 安装 Godot 后再执行（目前尚未执行引擎验收）：
+python tools/check_random_maps.py
+# 以下已使用 Godot 4.5.1 执行通过：
 godot --headless --path . --editor --import
+godot --headless --path . --script tests/test_runner.gd
 godot --headless --path . --script tests/map_test_runner.gd
+godot --headless --path . --script tests/random_map_test_runner.gd
+godot --headless --path . --script tests/keys_test_runner.gd
+godot --headless --path . --script tests/monster_ui_test_runner.gd
+godot --headless --path . --script tests/reward_test_runner.gd
+godot --headless --path . --script tests/reward_ui_test_runner.gd
 ```
 
-新增关键文件：`scripts/core/map_engine.gd`（移动 / 楼层 / 结算）、`scripts/core/map_save.gd`（地图存档验证）、`scripts/ui/map_screen.gd`（地图界面）、`scripts/ui/grid_board.gd`（绘制与格子点击）、`data/map_layouts.json`（两层地图与主题内容）。`tools/build_map_design.py` 是布局与设计图的生成源，执行时需要 Pillow，游戏运行不依赖 Python。
+关键文件：`scripts/core/map_generator.gd`（随机生成）、`scripts/core/map_validator.gd`（新生成地图检查）、`scripts/core/map_keys.gd`（钥匙类型 / 库存 / 配色）、`data/random_maps.json`（模板与随机规则）、`scripts/core/map_engine.gd`（移动 / 楼层 / 结算）、`scripts/core/map_save.gd`（地图存档验证）、`scripts/ui/map_screen.gd`（地图界面）、`scripts/ui/grid_board.gd`（绘制与格子点击）。历史布局 `data/map_layouts.json` 继续用于旧存档与回归测试。游戏运行不依赖 Python。
 
 ---
 
@@ -39,7 +56,7 @@ godot --headless --path . --script tests/map_test_runner.gd
 
 根据《肉鸽魔塔 V0.1 游戏设计与开发计划》编写的 Godot 项目。中文、竖屏优先、点击房间推进，使用 GDScript 与占位矢量美术。当前交付为代码、场景、内容数据与资源文件，不包含已编译的游戏。
 
-**验证状态：内容、资源引用、中文字体覆盖及 GDScript 静态语法已检查；尚未使用 Godot 导入、编译、运行、截图验收或导出。不能保证首次打开没有引擎级问题，也尚未证明平衡性与 20～40 分钟局时目标。** 详见 `docs/VALIDATION.md`。
+**验证状态：内容、资源引用、字体与静态语法检查通过；已使用 Godot 4.5.1 导入并通过五组测试，检查了地图和怪物界面的实际渲染。尚未验证浏览器 / 手机触控、导出、完整十层地图平衡与 20～40 分钟局时目标。** 详见 `docs/VALIDATION.md`。
 
 ## 之后如何运行
 
