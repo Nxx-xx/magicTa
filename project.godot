@@ -1,0 +1,29 @@
+; 塔境 — Godot 4 / GDScript
+config_version=5
+
+[application]
+config/name="塔境 · 肉鸽魔塔"
+config/description="方格探索、跨层回溯、上楼三选一。两层地图试炼与旧版十层卡片原型。"
+run/main_scene="res://scenes/map_prototype.tscn"
+config/features=PackedStringArray("4.3", "GL Compatibility")
+config/icon="res://assets/icon.svg"
+
+[display]
+window/size/viewport_width=540
+window/size/viewport_height=960
+window/size/window_width_override=540
+window/size/window_height_override=960
+window/size/min_width=360
+window/size/min_height=640
+window/stretch/mode="canvas_items"
+window/handheld/orientation=1
+
+[rendering]
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/default_filters/use_nearest_mipmap_filter=false
+environment/defaults/default_clear_color=Color(0.035, 0.047, 0.075, 1)
+
+[input_devices]
+pointing/emulate_touch_from_mouse=true
+

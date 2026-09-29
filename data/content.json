@@ -1,0 +1,72 @@
+{
+  "enemies": {
+    "slime": {"id":"slime","name":"苔原史莱姆","hp":24,"attack":8,"defense":2,"gold_reward":18,"ability_id":"","description":"缓慢的绿色影子，吞下了旅人的零钱。"},
+    "skeleton": {"id":"skeleton","name":"锈剑骷髅","hp":34,"attack":10,"defense":4,"gold_reward":24,"ability_id":"","description":"旧王朝的守兵，仍在等待换岗。"},
+    "bat": {"id":"bat","name":"赤翼蝠","hp":30,"attack":13,"defense":2,"gold_reward":26,"ability_id":"","description":"薄翼之下，藏着锋利的獠牙。"},
+    "sentinel": {"id":"sentinel","name":"石壳卫兵","hp":48,"attack":13,"defense":8,"gold_reward":34,"ability_id":"","description":"厚重石甲让每一击都需要耐心。"},
+    "warlock": {"id":"warlock","name":"余烬术士","hp":52,"attack":19,"defense":5,"gold_reward":40,"ability_id":"","description":"所有攻击仍遵循普通攻防规则。"},
+    "knight": {"id":"knight","name":"空心骑士","hp":72,"attack":20,"defense":10,"gold_reward":48,"ability_id":"","description":"盔甲中空无一人，剑却从不迟疑。"},
+    "berserker": {"id":"berserker","name":"精英 · 血斧狂徒","hp":65,"attack":18,"defense":4,"gold_reward":40,"ability_id":"","description":"高攻击的精英，胜利后可选一件遗物。"},
+    "warden": {"id":"warden","name":"精英 · 黑铁典狱长","hp":95,"attack":20,"defense":12,"gold_reward":58,"ability_id":"","description":"高防御的精英，胜利后可选一件遗物。"},
+    "minotaur": {"id":"minotaur","name":"牛头守卫","hp":120,"attack":18,"defense":8,"gold_reward":65,"ability_id":"rage","description":"每完成 3 次玩家攻击，攻击永久 +2；当回合反击立即生效。最后一击不触发反击。"},
+    "golem": {"id":"golem","name":"深渊魔像","hp":250,"attack":22,"defense":14,"gold_reward":120,"ability_id":"stone_armor","description":"每累计失去 50 HP，防御 +2；受到攻击后更新，可一次跨越多个阈值。"}
+  },
+  "items": {
+    "iron_sword": {"id":"iron_sword","name":"铁剑","kind":"equipment","tier":1,"price":20,"effects":{"attack":3},"description":"攻击 +3"},
+    "iron_armor": {"id":"iron_armor","name":"铁甲","kind":"equipment","tier":1,"price":20,"effects":{"defense":2},"description":"防御 +2"},
+    "hunter_bow": {"id":"hunter_bow","name":"猎人长弓","kind":"equipment","tier":1,"price":30,"effects":{"attack":5},"description":"攻击 +5"},
+    "tower_shield": {"id":"tower_shield","name":"塔盾","kind":"equipment","tier":1,"price":30,"effects":{"defense":3},"description":"防御 +3"},
+    "heart_pendant": {"id":"heart_pendant","name":"生命吊坠","kind":"equipment","tier":1,"price":22,"effects":{"max_hp":25},"description":"最大生命 +25，获得时恢复 25 HP"},
+    "duelist_gloves": {"id":"duelist_gloves","name":"决斗手套","kind":"equipment","tier":1,"price":32,"effects":{"attack":3,"defense":1},"description":"攻击 +3，防御 +1"},
+    "steel_blade": {"id":"steel_blade","name":"淬钢刃","kind":"equipment","tier":2,"price":42,"effects":{"attack":7},"description":"攻击 +7"},
+    "knight_plate": {"id":"knight_plate","name":"骑士板甲","kind":"equipment","tier":2,"price":42,"effects":{"defense":4},"description":"防御 +4"},
+    "vital_crown": {"id":"vital_crown","name":"翠玉冠","kind":"equipment","tier":2,"price":38,"effects":{"max_hp":40,"defense":1},"description":"最大生命 +40，防御 +1，获得时恢复 40 HP"},
+    "dawn_spear": {"id":"dawn_spear","name":"破晓长枪","kind":"equipment","tier":3,"price":60,"effects":{"attack":10},"description":"攻击 +10"},
+    "obsidian_mail": {"id":"obsidian_mail","name":"黑曜战甲","kind":"equipment","tier":3,"price":60,"effects":{"defense":6},"description":"防御 +6"},
+    "sovereign_ring": {"id":"sovereign_ring","name":"王权指环","kind":"equipment","tier":3,"price":65,"effects":{"attack":5,"defense":3,"max_hp":20},"description":"攻击 +5，防御 +3，最大生命 +20，获得时恢复 20 HP"},
+    "blood_sword": {"id":"blood_sword","name":"嗜血剑","kind":"relic","tier":1,"price":45,"effects":{"kill_heal":3},"description":"每次击杀后恢复 3 HP；不能在死亡后触发"},
+    "gold_sword": {"id":"gold_sword","name":"黄金剑","kind":"relic","tier":1,"price":45,"effects":{"gold_attack_step":50},"description":"当前每持有 50 金币，攻击 +1；花钱后重新计算"},
+    "wolf_fang": {"id":"wolf_fang","name":"狼牙","kind":"relic","tier":1,"price":40,"effects":{"attack":4},"description":"攻击 +4"},
+    "stone_heart": {"id":"stone_heart","name":"岩心","kind":"relic","tier":1,"price":40,"effects":{"defense":3},"description":"防御 +3"},
+    "spring_seed": {"id":"spring_seed","name":"泉种","kind":"relic","tier":1,"price":40,"effects":{"max_hp":30},"description":"最大生命 +30，获得时恢复 30 HP"},
+    "lucky_coin": {"id":"lucky_coin","name":"幸运古币","kind":"relic","tier":1,"price":35,"effects":{"gold_bonus":12},"description":"每次击杀额外获得 12 金币"},
+    "crimson_chalice": {"id":"crimson_chalice","name":"绯红圣杯","kind":"relic","tier":2,"price":55,"effects":{"kill_heal":8},"description":"每次击杀后恢复 8 HP"},
+    "merchant_seal": {"id":"merchant_seal","name":"商王印记","kind":"relic","tier":2,"price":55,"effects":{"gold_attack_step":25},"description":"当前每持有 25 金币，攻击 +1"},
+    "sun_emblem": {"id":"sun_emblem","name":"日轮徽记","kind":"relic","tier":2,"price":55,"effects":{"attack":5,"max_hp":15},"description":"攻击 +5，最大生命 +15，获得时恢复 15 HP"},
+    "guardian_oath": {"id":"guardian_oath","name":"守护誓约","kind":"relic","tier":2,"price":55,"effects":{"defense":3,"kill_heal":4},"description":"防御 +3，击杀后恢复 4 HP"}
+  },
+  "shop": {
+    "buy_sword":{"name":"铁剑","price":20,"item_id":"iron_sword","description":"攻击 +3","min_floor":1},
+    "buy_armor":{"name":"铁甲","price":20,"item_id":"iron_armor","description":"防御 +2","min_floor":1},
+    "buy_bow":{"name":"猎人长弓","price":30,"item_id":"hunter_bow","description":"攻击 +5","min_floor":1},
+    "buy_shield":{"name":"塔盾","price":30,"item_id":"tower_shield","description":"防御 +3","min_floor":1},
+    "buy_pendant":{"name":"生命吊坠","price":22,"item_id":"heart_pendant","description":"最大生命 +25，恢复 25 HP","min_floor":1},
+    "buy_potion":{"name":"疗愈药剂","price":16,"effects":{"heal":45},"description":"恢复 45 HP","min_floor":1},
+    "buy_key":{"name":"通用钥匙","price":12,"effects":{"keys":1},"description":"钥匙 +1","min_floor":1},
+    "buy_steel":{"name":"淬钢刃","price":42,"item_id":"steel_blade","description":"攻击 +7","min_floor":6},
+    "buy_plate":{"name":"骑士板甲","price":42,"item_id":"knight_plate","description":"防御 +4","min_floor":6},
+    "buy_chalice":{"name":"绯红圣杯","price":55,"item_id":"crimson_chalice","description":"击杀后恢复 8 HP","min_floor":6}
+  },
+  "events": {
+    "altar":{"name":"血色祭坛","description":"石台上留下两个字：等价。","options":[{"name":"献祭","description":"失去 20 HP，攻击 +4（至少保留 1 HP）","cost":{"hp":20},"effects":{"attack":4}},{"name":"绕行","description":"恢复 5 HP","effects":{"heal":5}}]},
+    "forge":{"name":"遗落熔炉","description":"炉火未熄，你只能重铸一次。","options":[{"name":"重铸锋刃","description":"支付 20 金币，攻击 +6","cost":{"gold":20},"effects":{"attack":6}},{"name":"拾起炉渣","description":"获得 10 金币","effects":{"gold":10}}]},
+    "well":{"name":"双面泉井","description":"井底倒映着两种未来。","options":[{"name":"饮下泉水","description":"恢复 35 HP","effects":{"heal":35}},{"name":"凝结泉石","description":"防御 +2","effects":{"defense":2}}]},
+    "traveler":{"name":"迷路旅人","description":"他的地图已经烧毁，行囊里还有一把钥匙。","options":[{"name":"交换补给","description":"支付 10 金币，获得 2 把钥匙","cost":{"gold":10},"effects":{"keys":2}},{"name":"指明来路","description":"获得 8 金币","effects":{"gold":8}}]},
+    "library":{"name":"无字书库","description":"书页上出现了你握剑的姿态。","options":[{"name":"进击之章","description":"攻击 +3","effects":{"attack":3}},{"name":"守御之章","description":"防御 +2","effects":{"defense":2}}]},
+    "vault":{"name":"遗忘金库","description":"金库之门已经裂开，里面传来细微的呼吸。","options":[{"name":"探入裂缝","description":"失去 15 HP，获得 45 金币（至少保留 1 HP）","cost":{"hp":15},"effects":{"gold":45}},{"name":"收集散落钱币","description":"获得 12 金币","effects":{"gold":12}}]},
+    "hermit":{"name":"守灯隐士","description":"老人递来一盏灯，问你最缺少什么。","options":[{"name":"一口喘息","description":"恢复 30 HP","effects":{"heal":30}},{"name":"更长的路","description":"最大生命 +20，并恢复 20 HP","effects":{"max_hp":20,"heal":20}}]},
+    "armory":{"name":"旧日武库","description":"锈蚀的武器中，仍有两件保留着光。","options":[{"name":"取走铁剑","description":"获得铁剑：攻击 +3","item_id":"iron_sword","effects":{}},{"name":"取走铁甲","description":"获得铁甲：防御 +2","item_id":"iron_armor","effects":{}}]},
+    "bargain":{"name":"影子交易","description":"影子不索要生命，只索要你未花出的财富。","options":[{"name":"签下契约","description":"支付 30 金币，获得黄金剑","cost":{"gold":30},"item_id":"gold_sword","effects":{}},{"name":"拒绝交易","description":"获得 5 金币","effects":{"gold":5}}]},
+    "echo":{"name":"英雄回声","description":"墙上刻着无名登塔者最后的誓言。","options":[{"name":"继承勇气","description":"失去 10 HP，攻击 +2，防御 +1（至少保留 1 HP）","cost":{"hp":10},"effects":{"attack":2,"defense":1}},{"name":"默念名字","description":"恢复 15 HP","effects":{"heal":15}}]}
+  },
+  "floor_pools": {
+    "1":{"normal":["slime"],"elite":["berserker"],"tier":1,"events":["library","armory","well"]},
+    "2":{"normal":["slime","skeleton"],"elite":["berserker"],"tier":1,"events":["altar","traveler","hermit","echo"]},
+    "3":{"normal":["skeleton","bat"],"elite":["berserker"],"tier":1,"events":["forge","vault","bargain","armory"]},
+    "4":{"normal":["bat","sentinel"],"elite":["berserker"],"tier":2,"events":["library","well","altar","hermit"]},
+    "6":{"normal":["sentinel","warlock"],"elite":["warden"],"tier":2,"events":["forge","traveler","bargain","echo"]},
+    "7":{"normal":["warlock","knight"],"elite":["warden"],"tier":2,"events":["well","vault","armory","hermit"]},
+    "8":{"normal":["warlock","knight"],"elite":["warden"],"tier":3,"events":["forge","library","bargain","altar"]},
+    "9":{"normal":["knight"],"elite":["warden"],"tier":3,"events":["well","hermit","echo","library"]}
+  }
+}

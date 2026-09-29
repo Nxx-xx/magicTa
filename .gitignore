@@ -1,0 +1,12 @@
+.godot/
+build/
+*.tmp
+__pycache__/
+.DS_Store
+
+# Local secrets and Godot export credentials
+.env
+.env.*
+!.env.example
+export_credentials.cfg
+

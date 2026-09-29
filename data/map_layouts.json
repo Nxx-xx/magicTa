@@ -1,0 +1,389 @@
+{
+  "size": 11,
+  "prototype_floors": 2,
+  "floor_1": {
+    "name": "回声前厅",
+    "theme": "entrance",
+    "entry": [
+      1,
+      9
+    ],
+    "exit": [
+      9,
+      1
+    ],
+    "rows": [
+      "###########",
+      "#...###...#",
+      "#.#####.###",
+      "#.#####...#",
+      "#.#####.#.#",
+      "#.......#.#",
+      "#.###.###.#",
+      "#...#.##..#",
+      "#.###.#####",
+      "#.###...###",
+      "###########"
+    ],
+    "entities": [
+      {
+        "pos": [
+          1,
+          9
+        ],
+        "type": "camp",
+        "name": "入口营地",
+        "description": "原型从这里开始。往上探索，可随时回来。"
+      },
+      {
+        "pos": [
+          9,
+          1
+        ],
+        "type": "up",
+        "name": "通往第二层",
+        "description": "首次上楼选择下一层类型，之后自由往返。"
+      },
+      {
+        "pos": [
+          2,
+          5
+        ],
+        "type": "key",
+        "name": "铜钥匙",
+        "amount": 1
+      },
+      {
+        "pos": [
+          1,
+          3
+        ],
+        "type": "door",
+        "name": "铜锁门",
+        "cost": 1
+      },
+      {
+        "pos": [
+          3,
+          1
+        ],
+        "type": "chest",
+        "name": "锁门后的护甲",
+        "item_id": "iron_armor",
+        "gold": 0
+      },
+      {
+        "pos": [
+          2,
+          7
+        ],
+        "type": "enemy",
+        "name": "金币守卫",
+        "enemy_id": "slime"
+      },
+      {
+        "pos": [
+          3,
+          7
+        ],
+        "type": "gold",
+        "name": "旅人钱袋",
+        "amount": 30
+      },
+      {
+        "pos": [
+          5,
+          7
+        ],
+        "type": "enemy",
+        "name": "留待归来的强敌",
+        "enemy_id": "knight",
+        "guardian": true
+      },
+      {
+        "pos": [
+          7,
+          9
+        ],
+        "type": "chest",
+        "name": "回溯试炼宝箱",
+        "item_id": "sovereign_ring",
+        "gold": 30,
+        "objective": true
+      },
+      {
+        "pos": [
+          9,
+          5
+        ],
+        "type": "enemy",
+        "name": "泉边骷髅",
+        "enemy_id": "skeleton"
+      },
+      {
+        "pos": [
+          8,
+          7
+        ],
+        "type": "potion",
+        "name": "疗愈药水",
+        "amount": 35
+      }
+    ],
+    "notes": [
+      "主路无需战斗即可上楼",
+      "先取钥匙，再开西侧锁门",
+      "南侧骑士守宝箱，二层变强后返回"
+    ]
+  },
+  "floor_2": {
+    "name": "分岔回廊",
+    "entry": [
+      1,
+      9
+    ],
+    "exit": [
+      9,
+      1
+    ],
+    "rows": [
+      "###########",
+      "#.....###.#",
+      "#.###.###.#",
+      "#.###.###.#",
+      "#####.###.#",
+      "#.........#",
+      "#.###.###.#",
+      "#.###.###.#",
+      "#.###.###.#",
+      "#.....#...#",
+      "###########"
+    ],
+    "entities": [
+      {
+        "pos": [
+          1,
+          9
+        ],
+        "type": "down",
+        "name": "返回第一层",
+        "description": "回到第一层上行楼梯，已清理的内容不会刷新。"
+      },
+      {
+        "pos": [
+          9,
+          1
+        ],
+        "type": "summit",
+        "name": "未完的阶梯",
+        "description": "两层地图原型到此。可以回到第一层挑战骑士、领取试炼宝箱。"
+      },
+      {
+        "pos": [
+          3,
+          9
+        ],
+        "type": "chest",
+        "name": "回溯补给 · 长枪",
+        "item_id": "dawn_spear",
+        "gold": 0
+      },
+      {
+        "pos": [
+          5,
+          7
+        ],
+        "type": "chest",
+        "name": "回溯补给 · 板甲",
+        "item_id": "knight_plate",
+        "gold": 0
+      },
+      {
+        "pos": [
+          1,
+          5
+        ],
+        "type": "potion",
+        "name": "静谧泉水",
+        "amount": 45
+      },
+      {
+        "pos": [
+          1,
+          7
+        ],
+        "type": "gold",
+        "name": "商旅遗金",
+        "amount": 30
+      }
+    ],
+    "notes": [
+      "三类主题共用相同尺寸与通路",
+      "枪、甲、泉水为三主题共有补给",
+      "主题支路一次生成，回访不刷新"
+    ]
+  },
+  "themes": {
+    "battle": {
+      "name": "战斗层",
+      "description": "两条支路有怪物守卫，胜利可取金币与遗物。共有补给无须战斗。",
+      "entities": [
+        {
+          "pos": [
+            5,
+            3
+          ],
+          "type": "enemy",
+          "name": "北侧守卫",
+          "enemy_pool": [
+            "skeleton",
+            "bat"
+          ]
+        },
+        {
+          "pos": [
+            1,
+            1
+          ],
+          "type": "chest",
+          "name": "战利品箱",
+          "item_pool": [
+            "wolf_fang",
+            "blood_sword"
+          ],
+          "gold": 25
+        },
+        {
+          "pos": [
+            9,
+            7
+          ],
+          "type": "enemy",
+          "name": "东侧守卫",
+          "enemy_pool": [
+            "slime",
+            "skeleton"
+          ]
+        },
+        {
+          "pos": [
+            7,
+            9
+          ],
+          "type": "gold",
+          "name": "守卫积蓄",
+          "amount": 45
+        }
+      ]
+    },
+    "treasure": {
+      "name": "宝藏层",
+      "description": "支路以奖励为主。北侧锁门消耗钥匙，东侧宝箱可直接领取。",
+      "entities": [
+        {
+          "pos": [
+            5,
+            3
+          ],
+          "type": "door",
+          "name": "宝库铜门",
+          "cost": 1
+        },
+        {
+          "pos": [
+            1,
+            3
+          ],
+          "type": "key",
+          "name": "备用钥匙",
+          "amount": 1
+        },
+        {
+          "pos": [
+            1,
+            1
+          ],
+          "type": "chest",
+          "name": "北侧宝库",
+          "item_pool": [
+            "hunter_bow",
+            "tower_shield"
+          ],
+          "gold": 20
+        },
+        {
+          "pos": [
+            9,
+            7
+          ],
+          "type": "key",
+          "name": "宝库钥匙",
+          "amount": 1
+        },
+        {
+          "pos": [
+            7,
+            9
+          ],
+          "type": "chest",
+          "name": "东侧宝箱",
+          "item_pool": [
+            "heart_pendant",
+            "duelist_gloves"
+          ],
+          "gold": 15
+        }
+      ]
+    },
+    "shop": {
+      "name": "商店层",
+      "description": "东侧商人提供三件商品，每位商人最多售出一件；没钱可先离开再回来。",
+      "entities": [
+        {
+          "pos": [
+            5,
+            3
+          ],
+          "type": "enemy",
+          "name": "钱袋守卫",
+          "enemy_pool": [
+            "slime",
+            "skeleton"
+          ]
+        },
+        {
+          "pos": [
+            1,
+            1
+          ],
+          "type": "gold",
+          "name": "北侧钱袋",
+          "amount": 35
+        },
+        {
+          "pos": [
+            9,
+            7
+          ],
+          "type": "shop",
+          "name": "烛火商人",
+          "offers": [
+            "buy_bow",
+            "buy_shield",
+            "buy_potion"
+          ],
+          "purchased": false
+        },
+        {
+          "pos": [
+            7,
+            9
+          ],
+          "type": "key",
+          "name": "商路钥匙",
+          "amount": 1
+        }
+      ]
+    }
+  }
+}
