@@ -1,0 +1,86 @@
+{
+  "berserker": {
+    "anchor": [
+      128,
+      224
+    ],
+    "body": [
+      27,
+      16,
+      201,
+      208
+    ],
+    "canvas": [
+      256,
+      256
+    ],
+    "source_size": [
+      1254,
+      1254
+    ],
+    "texture": "res://assets/monsters/phase2/textures/berserker.png"
+  },
+  "golem": {
+    "anchor": [
+      128,
+      224
+    ],
+    "body": [
+      26,
+      16,
+      204,
+      208
+    ],
+    "canvas": [
+      256,
+      256
+    ],
+    "source_size": [
+      1254,
+      1254
+    ],
+    "texture": "res://assets/monsters/phase2/textures/golem.png"
+  },
+  "minotaur": {
+    "anchor": [
+      128,
+      224
+    ],
+    "body": [
+      21,
+      16,
+      214,
+      208
+    ],
+    "canvas": [
+      256,
+      256
+    ],
+    "source_size": [
+      1254,
+      1254
+    ],
+    "texture": "res://assets/monsters/phase2/textures/minotaur.png"
+  },
+  "warden": {
+    "anchor": [
+      128,
+      224
+    ],
+    "body": [
+      24,
+      16,
+      208,
+      208
+    ],
+    "canvas": [
+      256,
+      256
+    ],
+    "source_size": [
+      1254,
+      1254
+    ],
+    "texture": "res://assets/monsters/phase2/textures/warden.png"
+  }
+}

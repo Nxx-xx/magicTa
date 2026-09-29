@@ -1,0 +1,12 @@
+[
+  {
+    "name": "floor_v02",
+    "path": "floor",
+    "prompt": "Edit target: this dungeon floor texture. Simplify only its pattern density to make ONE 32x32 game tile, not a texture sheet: the entire square contains exactly ONE large dark blue charcoal flagstone slab occupying almost all the image, with one or two short tiny cracks and a narrow dark mortar seam along all four image borders of equal thickness. No internal grid of small bricks. Keep flat top-down view, full opaque coverage, darkness and blue charcoal colors. Hard chunky low resolution pixel style. Only 4 solid colors without any gradient or texture noise. The tile should tile with itself horizontally and vertically. No text or decorations. The important change is one broad slab instead of the many stones in the reference."
+  },
+  {
+    "name": "wall_v02",
+    "path": "wall",
+    "prompt": "Edit target: this dungeon wall masonry texture. Simplify only pattern density. This must be ONE game tile, not a texture sheet. Across the ENTIRE square image there must be EXACTLY TWO horizontal courses of stone: top half is ONE single wide bluish grey stone block, bottom half is TWO half-width stone blocks. Only three blocks total in the whole image. Dark thin mortar seam at the perimeter, between the two courses and at the middle of the lower course. Use only 5 solid colors, tiny restrained upper-left highlights and darker bottom edge. Keep full opaque coverage and existing lighter blue-grey wall palette, flat front-facing orthographic surface. No texture noise, gradients, cracks, text or decorations. Oversized chunky pixels. Designed to repeat in both directions. Critical: three large blocks in the entire image, NOT multiple repeating rows."
+  }
+]

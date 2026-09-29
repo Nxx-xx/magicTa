@@ -1,0 +1,80 @@
+{
+	"assets": {
+		"floor": {
+			"bounds": "[P: (0, 0), S: (32, 32)]",
+			"distinct_rgba": 98,
+			"mean_linear_luminance": 0.0356704011483089,
+			"partial_alpha_pixels": 0,
+			"size": [
+				32,
+				32
+			],
+			"source_size": [
+				1254,
+				1254
+			],
+			"transparent_pixels": 0
+		},
+		"key_copper": {
+			"bounds": "[P: (6, 6), S: (19, 20)]",
+			"distinct_rgba": 95,
+			"mean_linear_luminance": 0.0200844024802791,
+			"partial_alpha_pixels": 105,
+			"size": [
+				32,
+				32
+			],
+			"source_size": [
+				1254,
+				1254
+			],
+			"transparent_pixels": 919
+		},
+		"player_front": {
+			"bounds": "[P: (6, 0), S: (22, 30)]",
+			"distinct_rgba": 321,
+			"mean_linear_luminance": 0.062891577360233,
+			"partial_alpha_pixels": 389,
+			"size": [
+				32,
+				32
+			],
+			"source_size": [
+				1254,
+				1254
+			],
+			"transparent_pixels": 632
+		},
+		"slime": {
+			"bounds": "[P: (5, 8), S: (22, 16)]",
+			"distinct_rgba": 174,
+			"mean_linear_luminance": 0.051660537304997,
+			"partial_alpha_pixels": 272,
+			"size": [
+				32,
+				32
+			],
+			"source_size": [
+				1254,
+				1254
+			],
+			"transparent_pixels": 752
+		},
+		"wall": {
+			"bounds": "[P: (0, 0), S: (32, 32)]",
+			"distinct_rgba": 203,
+			"mean_linear_luminance": 0.10732332067164,
+			"partial_alpha_pixels": 0,
+			"size": [
+				32,
+				32
+			],
+			"source_size": [
+				1254,
+				1254
+			],
+			"transparent_pixels": 0
+		}
+	},
+	"method": "Godot Image.resize(32,32,INTERPOLATE_NEAREST); no artistic retouch or alpha threshold"
+}

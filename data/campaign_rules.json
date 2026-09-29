@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "enemy_overrides": {"golem":{"name":"魔王 · 深渊魔像","attack":28}},
+  "floor_names": ["旧王庭入口", "回声回廊", "灰烬集市", "封印前庭", "牛头关隘", "断誓兵库", "镜影回廊", "黑铁监区", "黎明前室", "魔王观星台"],
+  "normal_templates": ["straight_gallery", "upper_ring", "double_ring", "central_ring", "outer_gallery", "bent_gallery"],
+  "fixed_equipment": {"1":["iron_sword","iron_armor"], "3":["steel_blade"], "4":["knight_plate"], "7":["vital_crown"]},
+  "merchant_floors": [3,8],
+  "rest_floors": [4,9],
+  "event_floors": {"2":"library", "6":"forge", "9":"hermit"},
+  "elite_floors": {"4":"berserker", "8":"warden"},
+  "budget": {"equipment_opportunities":14, "relic_opportunities":17, "merchants":2, "rests":2, "events":3},
+  "floor_budgets": [[3,2],[2,2],[3,0],[1,2],[2,0],[1,4],[1,2],[1,3],[0,2],[0,0]],
+  "theme_relic_floors": [2,6,9],
+  "themes": {
+    "battle":{"name":"战斗层","description":"额外守卫与进攻／恢复遗物，击杀积累金币。"},
+    "treasure":{"name":"宝藏层","description":"三色钥匙开启宝库，偏向财富与防御。"},
+    "shop":{"name":"补给层","description":"金币与生命补给；固定商人在三层与八层。"}
+  }
+}

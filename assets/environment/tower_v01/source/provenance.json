@@ -1,0 +1,54 @@
+[
+  {
+    "date": "2026-09-29",
+    "height": 1254,
+    "sha256": "92A9B8C0BB3778C3AE811B72C68D437A1744999D63B7CBC63BE8F39382A3792A",
+    "status": "floors used; irregular wall sprites retained as source only",
+    "reference": "assets/art_concepts/tower_character_map_v01.png",
+    "file": "terrain_generated.png",
+    "generated_path": "generated_images/01a0ed18-b3fc-7110-848d-aa3c798fbf39/exec-e581e50f-392f-440b-b4d2-0d108abdb120.png",
+    "prompt": "prompts.json#terrain",
+    "tool": "OpenAI built-in image_gen",
+    "original": "exec-e581e50f-392f-440b-b4d2-0d108abdb120.png",
+    "width": 1254
+  },
+  {
+    "date": "2026-09-29",
+    "height": 1024,
+    "sha256": "60C326890EC10311A5E4B7213E4C14173AFE41FAE8172FB823B5780E44044C0F",
+    "status": "used",
+    "reference": "assets/art_concepts/tower_character_map_v01.png",
+    "file": "doors_generated.png",
+    "generated_path": "generated_images/01a0ed18-b3fc-7110-848d-aa3c798fbf39/exec-7f54c513-fb9a-43ee-9a68-29a689dcbec6.png",
+    "prompt": "prompts.json#doors",
+    "tool": "OpenAI built-in image_gen",
+    "original": "exec-7f54c513-fb9a-43ee-9a68-29a689dcbec6.png",
+    "width": 1536
+  },
+  {
+    "date": "2026-09-29",
+    "height": 1024,
+    "sha256": "4E039A86B1E48CF4B702F13AB20065F282DF0A13E139589C8B03D2EF8949D1D8",
+    "status": "used; inspected row gutters",
+    "reference": "assets/art_concepts/tower_character_map_v01.png",
+    "file": "props_generated.png",
+    "generated_path": "generated_images/01a0ed18-b3fc-7110-848d-aa3c798fbf39/exec-3163fec2-62a6-48da-a33b-d72c752fd1a6.png",
+    "prompt": "prompts.json#props",
+    "tool": "OpenAI built-in image_gen",
+    "original": "exec-3163fec2-62a6-48da-a33b-d72c752fd1a6.png",
+    "width": 1536
+  },
+  {
+    "date": "2026-09-29",
+    "height": 1254,
+    "sha256": "85DCC3600A14039B59B7EAEA26C0F45B9EFDF539D3F49B0D866A8931B51F16ED",
+    "status": "used for final wall masks",
+    "reference": "assets/art_concepts/tower_character_map_v01.png",
+    "file": "wall_master_generated.png",
+    "generated_path": "generated_images/01a0ed18-b3fc-7110-848d-aa3c798fbf39/exec-d8da9672-e3c3-4c22-96c2-aa689331c49c.png",
+    "prompt": "wall_prompt.json#wall",
+    "tool": "OpenAI built-in image_gen",
+    "original": "exec-d8da9672-e3c3-4c22-96c2-aa689331c49c.png",
+    "width": 1254
+  }
+]

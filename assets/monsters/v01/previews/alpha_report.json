@@ -1,0 +1,116 @@
+{
+	"bat": {
+		"all_canvas_edges_transparent": true,
+		"no_source_clipping": true,
+		"opaque_pixels": 738,
+		"partial_alpha_pixels": 17169,
+		"retained_fringe_source_pixels": 4,
+		"source_alpha_bounds": [
+			169,
+			199,
+			919,
+			702
+		],
+		"source_size": [
+			1254,
+			1254
+		],
+		"transparent_pixels": 47629,
+		"trim_threshold_alpha": 0.05
+	},
+	"knight": {
+		"all_canvas_edges_transparent": true,
+		"no_source_clipping": true,
+		"opaque_pixels": 846,
+		"partial_alpha_pixels": 17049,
+		"retained_fringe_source_pixels": 4,
+		"source_alpha_bounds": [
+			247,
+			91,
+			732,
+			1072
+		],
+		"source_size": [
+			1254,
+			1254
+		],
+		"transparent_pixels": 47641,
+		"trim_threshold_alpha": 0.05
+	},
+	"sentinel": {
+		"all_canvas_edges_transparent": true,
+		"no_source_clipping": true,
+		"opaque_pixels": 896,
+		"partial_alpha_pixels": 31192,
+		"retained_fringe_source_pixels": 4,
+		"source_alpha_bounds": [
+			78,
+			121,
+			1111,
+			1024
+		],
+		"source_size": [
+			1254,
+			1254
+		],
+		"transparent_pixels": 33448,
+		"trim_threshold_alpha": 0.05
+	},
+	"skeleton": {
+		"all_canvas_edges_transparent": true,
+		"no_source_clipping": true,
+		"opaque_pixels": 989,
+		"partial_alpha_pixels": 14885,
+		"retained_fringe_source_pixels": 4,
+		"source_alpha_bounds": [
+			226,
+			89,
+			816,
+			1080
+		],
+		"source_size": [
+			1254,
+			1254
+		],
+		"transparent_pixels": 49662,
+		"trim_threshold_alpha": 0.05
+	},
+	"slime": {
+		"all_canvas_edges_transparent": true,
+		"no_source_clipping": true,
+		"opaque_pixels": 316,
+		"partial_alpha_pixels": 11027,
+		"retained_fringe_source_pixels": 4,
+		"source_alpha_bounds": [
+			137,
+			257,
+			994,
+			817
+		],
+		"source_size": [
+			1254,
+			1254
+		],
+		"transparent_pixels": 54193,
+		"trim_threshold_alpha": 0.05
+	},
+	"warlock": {
+		"all_canvas_edges_transparent": true,
+		"no_source_clipping": true,
+		"opaque_pixels": 640,
+		"partial_alpha_pixels": 14961,
+		"retained_fringe_source_pixels": 4,
+		"source_alpha_bounds": [
+			329,
+			102,
+			605,
+			1054
+		],
+		"source_size": [
+			1254,
+			1254
+		],
+		"transparent_pixels": 49935,
+		"trim_threshold_alpha": 0.05
+	}
+}

@@ -16,7 +16,7 @@ func _init() -> void:
 		errors.append("内容 JSON 格式错误")
 		return
 	data = parsed
-	for category in ["enemies", "items", "events", "shop", "floor_pools"]:
+	for category in ["enemies", "items", "events", "shop"]:
 		if not data.has(category):
 			errors.append("内容缺少：" + category)
 	for id in data.get("enemies", {}):

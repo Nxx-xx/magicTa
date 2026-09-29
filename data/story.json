@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "characters": {"公主": {"adult": true}, "王子": {"adult": true}, "魔王": {}},
+  "events": {
+    "intro": {"title":"归途灯亮起", "audio_cue":"", "lines":[{"speaker":"旁白","text":"公主提起归途灯，独自走入魔塔。塔顶囚禁着王子，魔王想借他的王室印记打开地下封印。"},{"speaker":"魔王","text":"想救王子，就登上我的——"},{"speaker":"王子（远处）","text":"十层！他住十层！"},{"speaker":"公主","text":"听见了。你先别惹他。"},{"speaker":"王子","text":"我正在非常礼貌地拖延时间。你的灯会在战败时送你回去，但魔王也会察觉，再给我一次回声咒。"},{"speaker":"公主","text":"先找装备，算清代价。打不过的守卫，等我回来。"}]},
+    "retry": {"title":"再次出发", "audio_cue":"", "lines":[{"speaker":"公主","text":"灯已经点好了。这次换条更稳的路线。"},{"speaker":"王子（远处）","text":"我还在这里，也一直在想办法。"}]},
+    "floor_2": {"title":"回声回廊", "audio_cue":"", "lines":[{"speaker":"王子","text":"守卫说，下层有一枚王权指环。"},{"speaker":"公主","text":"我看见守着它的骑士了。"},{"speaker":"王子","text":"等你有把握再回去。它是助力，不是救我的条件。"}]},
+    "floor_3": {"title":"灰烬集市", "audio_cue":"", "lines":[{"speaker":"商人","text":"塔里搬货贵。每位商人一趟只售出一件，挑你最需要的。"}]},
+    "floor_4": {"title":"封印的两面", "audio_cue":"", "lines":[{"speaker":"王子","text":"他要的是王室印记。我的印记在封印上，你的灯在封印外。"},{"speaker":"公主","text":"所以得里外一起拆。"},{"speaker":"王子","text":"对。我负责里面，你负责那个很大的牛头。"}]},
+    "mid_boss": {"title":"外环封印破碎", "audio_cue":"mid_victory", "lines":[{"speaker":"魔王","text":"你打碎的，只是我最外层的防线。"},{"speaker":"公主","text":"很好。那就说明我没有走错。"},{"speaker":"王子","text":"塔顶的锁松了一道。我也开始动手。"}]},
+    "floor_6": {"title":"断誓兵库", "audio_cue":"", "lines":[{"speaker":"王子","text":"上层有一间旧兵库，那里还有你没选的另一件装备。守卫以为没人知道。"},{"speaker":"公主","text":"你怎么知道的？"},{"speaker":"王子","text":"他每天都在门口抱怨自己的值班路线。"}]},
+    "floor_7": {"title":"隔墙的默契", "audio_cue":"", "lines":[{"speaker":"王子","text":"我已经松开了两道内锁。你那边怎么样？"},{"speaker":"公主","text":"还在挑路线。必要的话，我会先回下层补齐装备。"},{"speaker":"王子","text":"好。我守着我们的出口。"}]},
+    "floor_8": {"title":"石像的秘密", "audio_cue":"", "lines":[{"speaker":"王子","text":"魔王把力量灌进了一尊石像。外壳越破，剩下的部分越硬。"},{"speaker":"公主","text":"我会先算清楚能不能打完。"}]},
+    "floor_9": {"title":"黎明前室", "audio_cue":"", "lines":[{"speaker":"王子","text":"我能打开里面的锁，但要等你打碎外壳。"},{"speaker":"公主","text":"我准备好了就上去。补给不够，我会回去拿。"},{"speaker":"王子","text":"好。这次我等你的信号。"}]},
+    "floor_10": {"title":"魔王观星台", "audio_cue":"", "lines":[{"speaker":"魔王","text":"你终于站在了我的面前。"},{"speaker":"公主","text":"把人还给我。"},{"speaker":"王子","text":"还有我的外套。那也是我的。"}]},
+    "first_equipment": {"title":"先变强，再回来", "audio_cue":"", "lines":[{"speaker":"公主","text":"新装备到手。再看看之前那个守卫的损失预览。"}]},
+    "ring": {"title":"王权指环", "audio_cue":"", "lines":[{"speaker":"公主","text":"指环拿到了。接下来，去塔顶把人带回来。"}]},
+    "victory": {"title":"把人带回家", "audio_cue":"rescue", "lines":[{"speaker":"旁白","text":"石壳裂开，王室印记的光从塔顶熄灭。"},{"speaker":"王子","text":"里面的锁，开了。"},{"speaker":"公主","text":"走。回家。"},{"speaker":"王子","text":"下次出门，我们能不能先问问有没有楼梯以外的路？"}]},
+    "death_1": {"title":"塔顶的回声", "audio_cue":"echo_1", "lines":[{"speaker":"旁白","text":"归途灯把公主送回营地。魔王施下一次短促的回声咒，塔顶传来王子的惨叫：啊——！"},{"speaker":"王子（远处）","text":"你回营地了？我这边听见灯响了！"},{"speaker":"公主","text":"抱歉。我先换条路。"}]},
+    "death_2": {"title":"塔顶的回声", "audio_cue":"echo_2", "lines":[{"speaker":"旁白","text":"咒光掠过塔顶，远处传来王子短促的一声惊叫。"},{"speaker":"王子（远处）","text":"那个守卫是不是还站在那里？"},{"speaker":"公主","text":"站着。但下次倒下的不会是我。"}]},
+    "death_3": {"title":"塔顶的回声", "audio_cue":"echo_3", "lines":[{"speaker":"旁白","text":"归途灯再次亮起，一声惨叫从高高的塔顶传来。"},{"speaker":"魔王（远处）","text":"这，就是挑战我的代价！"},{"speaker":"王子","text":"你的台词能不能也换一句！"},{"speaker":"公主","text":"等着。我这次把补给带齐。"}]},
+    "death_4": {"title":"塔顶的回声", "audio_cue":"echo_1", "lines":[{"speaker":"旁白","text":"远处咒光一闪。王子惊叫一声后，又凑近了传声石。"},{"speaker":"王子","text":"我又记下了一条守卫路线。我们都有进展，对吧？"}]},
+    "death_5": {"title":"塔顶的回声", "audio_cue":"echo_2", "lines":[{"speaker":"旁白","text":"塔顶传来短促的惨叫，随后是魔王刻意放大的声音。"},{"speaker":"魔王","text":"她不可能再来！"},{"speaker":"公主","text":"灯已经点好了。"}]}
+  }
+}

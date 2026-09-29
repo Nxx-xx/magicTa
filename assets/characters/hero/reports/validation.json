@@ -1,0 +1,170 @@
+{
+	"checks": 25,
+	"engine": "4.7.2-stable (official)",
+	"failures": 0,
+	"records": [
+		{
+			"check": "Only four idle animations released; no rejected walk clips",
+			"data": {},
+			"passed": true
+		},
+		{
+			"check": "idle_down resource",
+			"data": {},
+			"passed": true
+		},
+		{
+			"check": "idle_down 128x128",
+			"data": {},
+			"passed": true
+		},
+		{
+			"check": "idle_down true transparent alpha",
+			"data": {
+				"fully_transparent_pixels": 11809,
+				"partial_pixels": 4267
+			},
+			"passed": true
+		},
+		{
+			"check": "idle_down transparent 3px perimeter prevents adjacent texture leakage",
+			"data": {},
+			"passed": true
+		},
+		{
+			"check": "idle_down registered sole baseline",
+			"data": {
+				"solid_end_y": 116,
+				"target": 116
+			},
+			"passed": true
+		},
+		{
+			"check": "idle_left resource",
+			"data": {},
+			"passed": true
+		},
+		{
+			"check": "idle_left 128x128",
+			"data": {},
+			"passed": true
+		},
+		{
+			"check": "idle_left true transparent alpha",
+			"data": {
+				"fully_transparent_pixels": 12568,
+				"partial_pixels": 3516
+			},
+			"passed": true
+		},
+		{
+			"check": "idle_left transparent 3px perimeter prevents adjacent texture leakage",
+			"data": {},
+			"passed": true
+		},
+		{
+			"check": "idle_left registered sole baseline",
+			"data": {
+				"solid_end_y": 116,
+				"target": 116
+			},
+			"passed": true
+		},
+		{
+			"check": "idle_up resource",
+			"data": {},
+			"passed": true
+		},
+		{
+			"check": "idle_up 128x128",
+			"data": {},
+			"passed": true
+		},
+		{
+			"check": "idle_up true transparent alpha",
+			"data": {
+				"fully_transparent_pixels": 11740,
+				"partial_pixels": 4293
+			},
+			"passed": true
+		},
+		{
+			"check": "idle_up transparent 3px perimeter prevents adjacent texture leakage",
+			"data": {},
+			"passed": true
+		},
+		{
+			"check": "idle_up registered sole baseline",
+			"data": {
+				"solid_end_y": 116,
+				"target": 116
+			},
+			"passed": true
+		},
+		{
+			"check": "idle_right resource",
+			"data": {},
+			"passed": true
+		},
+		{
+			"check": "idle_right 128x128",
+			"data": {},
+			"passed": true
+		},
+		{
+			"check": "idle_right true transparent alpha",
+			"data": {
+				"fully_transparent_pixels": 12777,
+				"partial_pixels": 3333
+			},
+			"passed": true
+		},
+		{
+			"check": "idle_right transparent 3px perimeter prevents adjacent texture leakage",
+			"data": {},
+			"passed": true
+		},
+		{
+			"check": "idle_right registered sole baseline",
+			"data": {
+				"solid_end_y": 116,
+				"target": 116
+			},
+			"passed": true
+		},
+		{
+			"check": "Source and QA images excluded from Godot imports",
+			"data": {},
+			"passed": true
+		},
+		{
+			"check": "Actual grid_board at (540, 960)",
+			"data": {
+				"board": "(516.0, 516.0)",
+				"tile": 46.9090909090909,
+				"viewport": "(540, 960)"
+			},
+			"passed": true
+		},
+		{
+			"check": "Actual grid_board at (384, 720)",
+			"data": {
+				"board": "(360.0, 360.0)",
+				"tile": 32.7272727272727,
+				"viewport": "(384, 720)"
+			},
+			"passed": true
+		},
+		{
+			"check": "Actual grid_board at (360, 640)",
+			"data": {
+				"board": "(288.0, 288.0)",
+				"tile": 26.1818181818182,
+				"viewport": "(360, 640)"
+			},
+			"passed": true
+		}
+	],
+	"user_data": "./build/verification/hero/appdata/Godot/app_userdata/塔境 · 肉鸽魔塔",
+	"walk_status": "REJECTED: repeated leading leg, incomplete passing poses, unstable local registration"
+}

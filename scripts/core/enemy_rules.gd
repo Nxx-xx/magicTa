@@ -28,6 +28,8 @@ static func classification(enemy: Dictionary) -> String:
 	return "%s · %s" % [RANK_NAMES.get(rank, "未知"), TIER_NAMES.get(int(enemy.get("tier", 1)), "未知档次")]
 
 static func map_role(entity: Dictionary) -> String:
+	if entity.get("campaign_boss", false):
+		return "楼层首领"
 	if entity.get("guardian", false):
 		return "回溯守卫"
 	match str(entity.get("role", "")):

@@ -58,15 +58,5 @@
     "armory":{"name":"旧日武库","description":"锈蚀的武器中，仍有两件保留着光。","options":[{"name":"取走铁剑","description":"获得铁剑：攻击 +3","item_id":"iron_sword","effects":{}},{"name":"取走铁甲","description":"获得铁甲：防御 +2","item_id":"iron_armor","effects":{}}]},
     "bargain":{"name":"影子交易","description":"影子不索要生命，只索要你未花出的财富。","options":[{"name":"签下契约","description":"支付 30 金币，获得黄金剑","cost":{"gold":30},"item_id":"gold_sword","effects":{}},{"name":"拒绝交易","description":"获得 5 金币","effects":{"gold":5}}]},
     "echo":{"name":"英雄回声","description":"墙上刻着无名登塔者最后的誓言。","options":[{"name":"继承勇气","description":"失去 10 HP，攻击 +2，防御 +1（至少保留 1 HP）","cost":{"hp":10},"effects":{"attack":2,"defense":1}},{"name":"默念名字","description":"恢复 15 HP","effects":{"heal":15}}]}
-  },
-  "floor_pools": {
-    "1":{"normal":["slime"],"elite":["berserker"],"tier":1,"events":["library","armory","well"]},
-    "2":{"normal":["slime","skeleton"],"elite":["berserker"],"tier":1,"events":["altar","traveler","hermit","echo"]},
-    "3":{"normal":["skeleton","bat"],"elite":["berserker"],"tier":1,"events":["forge","vault","bargain","armory"]},
-    "4":{"normal":["bat","sentinel"],"elite":["berserker"],"tier":2,"events":["library","well","altar","hermit"]},
-    "6":{"normal":["sentinel","warlock"],"elite":["warden"],"tier":2,"events":["forge","traveler","bargain","echo"]},
-    "7":{"normal":["warlock","knight"],"elite":["warden"],"tier":2,"events":["well","vault","armory","hermit"]},
-    "8":{"normal":["warlock","knight"],"elite":["warden"],"tier":3,"events":["forge","library","bargain","altar"]},
-    "9":{"normal":["knight"],"elite":["warden"],"tier":3,"events":["well","hermit","echo","library"]}
   }
 }

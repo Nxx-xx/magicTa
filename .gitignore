@@ -1,5 +1,9 @@
 .godot/
-build/
+build/*
+!build/android/
+build/android/*
+!build/android/TowerRealm-Android.apk
+!build/android/SHA256.txt
 *.tmp
 __pycache__/
 .DS_Store

@@ -1,0 +1,146 @@
+{
+	"bat": {
+		"canvas": [
+			256,
+			256
+		],
+		"file": "textures/bat.png",
+		"ground_anchor": [
+			128,
+			224
+		],
+		"hover_lift": 34,
+		"map_draw": "one square canvas per cell; linear mipmap filtering; no upscaling beyond cell",
+		"normalized_ground_anchor": [
+			0.5,
+			0.875
+		],
+		"random_pool_active": true,
+		"visible_rect": [
+			26,
+			34,
+			204,
+			156
+		]
+	},
+	"knight": {
+		"canvas": [
+			256,
+			256
+		],
+		"file": "textures/knight.png",
+		"ground_anchor": [
+			128,
+			224
+		],
+		"hover_lift": 0,
+		"map_draw": "one square canvas per cell; linear mipmap filtering; no upscaling beyond cell",
+		"normalized_ground_anchor": [
+			0.5,
+			0.875
+		],
+		"random_pool_active": true,
+		"visible_rect": [
+			55,
+			12,
+			145,
+			212
+		]
+	},
+	"sentinel": {
+		"canvas": [
+			256,
+			256
+		],
+		"file": "textures/sentinel.png",
+		"ground_anchor": [
+			128,
+			224
+		],
+		"hover_lift": 0,
+		"map_draw": "one square canvas per cell; linear mipmap filtering; no upscaling beyond cell",
+		"normalized_ground_anchor": [
+			0.5,
+			0.875
+		],
+		"random_pool_active": true,
+		"visible_rect": [
+			19,
+			23,
+			218,
+			201
+		]
+	},
+	"skeleton": {
+		"canvas": [
+			256,
+			256
+		],
+		"file": "textures/skeleton.png",
+		"ground_anchor": [
+			128,
+			224
+		],
+		"hover_lift": 0,
+		"map_draw": "one square canvas per cell; linear mipmap filtering; no upscaling beyond cell",
+		"normalized_ground_anchor": [
+			0.5,
+			0.875
+		],
+		"random_pool_active": true,
+		"visible_rect": [
+			51,
+			20,
+			154,
+			204
+		]
+	},
+	"slime": {
+		"canvas": [
+			256,
+			256
+		],
+		"file": "textures/slime.png",
+		"ground_anchor": [
+			128,
+			224
+		],
+		"hover_lift": 0,
+		"map_draw": "one square canvas per cell; linear mipmap filtering; no upscaling beyond cell",
+		"normalized_ground_anchor": [
+			0.5,
+			0.875
+		],
+		"random_pool_active": true,
+		"visible_rect": [
+			57,
+			108,
+			141,
+			116
+		]
+	},
+	"warlock": {
+		"canvas": [
+			256,
+			256
+		],
+		"file": "textures/warlock.png",
+		"ground_anchor": [
+			128,
+			224
+		],
+		"hover_lift": 0,
+		"map_draw": "one square canvas per cell; linear mipmap filtering; no upscaling beyond cell",
+		"normalized_ground_anchor": [
+			0.5,
+			0.875
+		],
+		"random_pool_active": false,
+		"visible_rect": [
+			70,
+			22,
+			116,
+			202
+		]
+	}
+}

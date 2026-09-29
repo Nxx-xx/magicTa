@@ -1,29 +1,44 @@
-; 塔境 — Godot 4 / GDScript
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
 config_version=5
 
+[animation]
+
+compatibility/default_parent_skeleton_in_mesh_instance_3d=true
+
 [application]
+
 config/name="塔境 · 肉鸽魔塔"
-config/description="方格探索、跨层回溯、上楼三选一。两层地图试炼与旧版十层卡片原型。"
+config/description="公主救援记：十层魔塔、跨层回溯、确定性战斗与归途灯。保留两层试炼。"
 run/main_scene="res://scenes/map_prototype.tscn"
-config/features=PackedStringArray("4.3", "GL Compatibility")
+config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://assets/icon.svg"
 
 [display]
+
 window/size/viewport_width=540
 window/size/viewport_height=960
 window/size/window_width_override=540
 window/size/window_height_override=960
-window/size/min_width=360
-window/size/min_height=640
 window/stretch/mode="canvas_items"
 window/handheld/orientation=1
-
-[rendering]
-renderer/rendering_method="gl_compatibility"
-renderer/rendering_method.mobile="gl_compatibility"
-textures/default_filters/use_nearest_mipmap_filter=false
-environment/defaults/default_clear_color=Color(0.035, 0.047, 0.075, 1)
+window/size/min_width=360
+window/size/min_height=640
 
 [input_devices]
-pointing/emulate_touch_from_mouse=true
 
+pointing/emulate_touch_from_mouse=true
+pointing/emulate_mouse_from_touch=true
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/vram_compression/import_etc2_astc=true
+environment/defaults/default_clear_color=Color(0.035, 0.047, 0.075, 1)

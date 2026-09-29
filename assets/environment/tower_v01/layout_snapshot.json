@@ -1,0 +1,198 @@
+{
+	"entities": {
+		"1,1": {
+			"description": "已探索的地图永久保存，可以自由往返。",
+			"name": "入口营地",
+			"pos": [
+				1,
+				1
+			],
+			"role": "entry",
+			"type": "camp"
+		},
+		"1,3": {
+			"gold": 28,
+			"item_id": "sovereign_ring",
+			"name": "回溯试炼宝箱",
+			"objective": true,
+			"pos": [
+				1,
+				3
+			],
+			"role": "return_guard_reward",
+			"type": "chest"
+		},
+		"1,9": {
+			"description": "首次上楼选择主题。",
+			"name": "通往第二层",
+			"pos": [
+				1,
+				9
+			],
+			"role": "exit",
+			"type": "up"
+		},
+		"3,3": {
+			"enemy_id": "knight",
+			"guardian": true,
+			"name": "回溯强敌",
+			"pos": [
+				3,
+				3
+			],
+			"role": "return_guard_gate",
+			"type": "enemy"
+		},
+		"3,8": {
+			"cost": 1,
+			"key_kind": "copper",
+			"name": "铜门",
+			"pos": [
+				3,
+				8
+			],
+			"role": "starter_armor_gate",
+			"type": "door"
+		},
+		"5,9": {
+			"gold": 3,
+			"item_id": "iron_armor",
+			"name": "支路宝箱",
+			"objective": false,
+			"pos": [
+				5,
+				9
+			],
+			"role": "starter_armor_reward",
+			"type": "chest"
+		},
+		"6,1": {
+			"amount": 23,
+			"name": "小型药剂",
+			"pos": [
+				6,
+				1
+			],
+			"role": "safe_potion",
+			"type": "potion"
+		},
+		"6,3": {
+			"amount": 45,
+			"name": "疗愈药剂",
+			"pos": [
+				6,
+				3
+			],
+			"role": "healing_branch_reward",
+			"type": "potion"
+		},
+		"7,8": {
+			"enemy_id": "skeleton",
+			"guardian": false,
+			"name": "支路守卫",
+			"pos": [
+				7,
+				8
+			],
+			"role": "small_fight_gate",
+			"type": "enemy"
+		},
+		"8,1": {
+			"amount": 1,
+			"key_kind": "copper",
+			"name": "铜钥匙",
+			"pos": [
+				8,
+				1
+			],
+			"role": "safe_key_0",
+			"type": "key"
+		},
+		"8,5": {
+			"amount": 10,
+			"name": "散落钱币",
+			"pos": [
+				8,
+				5
+			],
+			"role": "safe_gold",
+			"type": "gold"
+		},
+		"8,9": {
+			"amount": 31,
+			"name": "守卫钱袋",
+			"pos": [
+				8,
+				9
+			],
+			"role": "small_fight_reward",
+			"type": "gold"
+		}
+	},
+	"entry": [
+		1,
+		1
+	],
+	"exit": [
+		1,
+		9
+	],
+	"floor": 1,
+	"generator": {
+		"attempt": 1,
+		"seed": "1904022979",
+		"symmetry": 6,
+		"template": "winding_hall",
+		"version": 3
+	},
+	"guard_links": [
+		{
+			"gate": [
+				3,
+				3
+			],
+			"reward": [
+				1,
+				3
+			],
+			"role": "return_guard"
+		},
+		{
+			"gate": [
+				3,
+				8
+			],
+			"reward": [
+				5,
+				9
+			],
+			"role": "starter_armor"
+		},
+		{
+			"gate": [
+				7,
+				8
+			],
+			"reward": [
+				8,
+				9
+			],
+			"role": "small_fight"
+		}
+	],
+	"name": "回声前厅 · 曲径回廊",
+	"rows": [
+		"###########",
+		"#.........#",
+		"###.###.#.#",
+		"#...#...#.#",
+		"#########.#",
+		"#.........#",
+		"#.#.###.###",
+		"#.#.###.###",
+		"#.#.###.###",
+		"#.#...#...#",
+		"###########"
+	],
+	"theme": "entrance"
+}

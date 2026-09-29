@@ -1,0 +1,228 @@
+{
+	"art_tool": "built-in image_gen",
+	"draft_walk": [
+		{
+			"name": "down_0",
+			"registration": "raw generated cell",
+			"status": "rejected"
+		},
+		{
+			"name": "down_1",
+			"registration": "raw generated cell",
+			"status": "rejected"
+		},
+		{
+			"name": "down_2",
+			"registration": "raw generated cell",
+			"status": "rejected"
+		},
+		{
+			"name": "down_3",
+			"registration": "raw generated cell",
+			"status": "rejected"
+		},
+		{
+			"name": "left_0",
+			"registration": "raw generated cell",
+			"status": "rejected"
+		},
+		{
+			"name": "left_1",
+			"registration": "raw generated cell",
+			"status": "rejected"
+		},
+		{
+			"name": "left_2",
+			"registration": "raw generated cell",
+			"status": "rejected"
+		},
+		{
+			"name": "left_3",
+			"registration": "raw generated cell",
+			"status": "rejected"
+		},
+		{
+			"name": "up_0",
+			"registration": "raw generated cell",
+			"status": "rejected"
+		},
+		{
+			"name": "up_1",
+			"registration": "raw generated cell",
+			"status": "rejected"
+		},
+		{
+			"name": "up_2",
+			"registration": "raw generated cell",
+			"status": "rejected"
+		},
+		{
+			"name": "up_3",
+			"registration": "raw generated cell",
+			"status": "rejected"
+		},
+		{
+			"name": "right_0",
+			"registration": "raw generated cell",
+			"status": "rejected"
+		},
+		{
+			"name": "right_1",
+			"registration": "raw generated cell",
+			"status": "rejected"
+		},
+		{
+			"name": "right_2",
+			"registration": "raw generated cell",
+			"status": "rejected"
+		},
+		{
+			"name": "right_3",
+			"registration": "raw generated cell",
+			"status": "rejected"
+		}
+	],
+	"idle": [
+		{
+			"bounds": [
+				0,
+				21,
+				611,
+				597
+			],
+			"export_position": [
+				11,
+				22
+			],
+			"export_size": [
+				218,
+				213
+			],
+			"input_size": [
+				627,
+				627
+			],
+			"master_anchor": [
+				128,
+				232
+			],
+			"master_visible_height": 208,
+			"name": "down",
+			"partial_alpha_pixels": 135736,
+			"scale": 0.356164383561644,
+			"solid_height": 584,
+			"source_foot": [
+				327.5,
+				612
+			],
+			"transparent_pixels": 257173
+		},
+		{
+			"bounds": [
+				7,
+				33,
+				598,
+				590
+			],
+			"export_position": [
+				15,
+				22
+			],
+			"export_size": [
+				216,
+				213
+			],
+			"input_size": [
+				627,
+				627
+			],
+			"master_anchor": [
+				128,
+				232
+			],
+			"master_visible_height": 208,
+			"name": "left",
+			"partial_alpha_pixels": 110891,
+			"scale": 0.360485268630849,
+			"solid_height": 577,
+			"source_foot": [
+				320.0,
+				616
+			],
+			"transparent_pixels": 282082
+		},
+		{
+			"bounds": [
+				0,
+				12,
+				625,
+				615
+			],
+			"export_position": [
+				10,
+				23
+			],
+			"export_size": [
+				226,
+				222
+			],
+			"input_size": [
+				627,
+				627
+			],
+			"master_anchor": [
+				128,
+				232
+			],
+			"master_visible_height": 208,
+			"name": "up",
+			"partial_alpha_pixels": 135783,
+			"scale": 0.361111111111111,
+			"solid_height": 576,
+			"source_foot": [
+				326.5,
+				592
+			],
+			"transparent_pixels": 257101
+		},
+		{
+			"bounds": [
+				1,
+				1,
+				608,
+				608
+			],
+			"export_position": [
+				21,
+				18
+			],
+			"export_size": [
+				218,
+				218
+			],
+			"input_size": [
+				627,
+				627
+			],
+			"master_anchor": [
+				128,
+				232
+			],
+			"master_visible_height": 208,
+			"name": "right",
+			"partial_alpha_pixels": 107725,
+			"scale": 0.358003442340792,
+			"solid_height": 581,
+			"source_foot": [
+				300.5,
+				600
+			],
+			"transparent_pixels": 285241
+		}
+	],
+	"source_has_alpha": true,
+	"source_size": [
+		1254,
+		1254
+	]
+}

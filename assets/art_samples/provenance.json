@@ -1,0 +1,69 @@
+{
+  "sources": [
+    {
+      "file": "source/floor_concept_v01.png",
+      "tool": "OpenAI image_gen built-in",
+      "date": "2026-09-29",
+      "generated_path": "generated_images/01a0ece5-3b69-7c30-bcd1-be0d404181ee/exec-d4de4958-969a-4025-8f69-559585f893b3.png",
+      "prompt_file": "prompts.json",
+      "prompt_id": "floor",
+      "sha256": "5B9E31E186B70F4E2008565A4F717E7CBE531E1F2CA3EE3BD0DABF643CB1D1B4"
+    },
+    {
+      "file": "source/wall_concept_v01.png",
+      "tool": "OpenAI image_gen built-in",
+      "date": "2026-09-29",
+      "generated_path": "generated_images/01a0ece5-3b69-7c30-bcd1-be0d404181ee/exec-d145e89c-0949-4887-88f8-9770912df8b8.png",
+      "prompt_file": "prompts.json",
+      "prompt_id": "wall",
+      "sha256": "63EE0009CE93C45EBDCF617E358FDB73A6B6D3CBDEB91B1D57C6A821EE777F86"
+    },
+    {
+      "file": "source/player_front_concept_v01.png",
+      "tool": "OpenAI image_gen built-in",
+      "date": "2026-09-29",
+      "generated_path": "generated_images/01a0ece5-3b69-7c30-bcd1-be0d404181ee/exec-d45fc358-fbfe-4080-b4be-5888216a189c.png",
+      "prompt_file": "prompts.json",
+      "prompt_id": "player_front",
+      "sha256": "4E1E8068E79EEC4D29C5F65FF262D4CB1FE9B8A8F0AC999C5FF8AECDE8D2E373"
+    },
+    {
+      "file": "source/slime_concept_v01.png",
+      "tool": "OpenAI image_gen built-in",
+      "date": "2026-09-29",
+      "generated_path": "generated_images/01a0ece5-3b69-7c30-bcd1-be0d404181ee/exec-6c6e86cd-8d88-4e60-b3be-e77f910226ad.png",
+      "prompt_file": "prompts.json",
+      "prompt_id": "slime",
+      "sha256": "3786DE712C676E2384946BC50999ADA80DD48AD38ECAAC451DFCAB8204E8BE56"
+    },
+    {
+      "file": "source/key_copper_concept_v01.png",
+      "tool": "OpenAI image_gen built-in",
+      "date": "2026-09-29",
+      "generated_path": "generated_images/01a0ece5-3b69-7c30-bcd1-be0d404181ee/exec-1d51b9dc-1a54-457d-91a5-7e7d480864a8.png",
+      "prompt_file": "prompts.json",
+      "prompt_id": "key_copper",
+      "sha256": "1C9D99930767299C1D0A2564350DA71996B60B2F9B4BFF8C1E42039B01A29FF1"
+    },
+    {
+      "file": "source/floor_concept_v02.png",
+      "tool": "OpenAI image_gen built-in edit",
+      "date": "2026-09-29",
+      "generated_path": "generated_images/01a0ece5-3b69-7c30-bcd1-be0d404181ee/exec-6cb14e7d-502e-42a6-8875-b846c567f460.png",
+      "prompt_file": "edit_prompts.json",
+      "prompt_id": "floor_v02",
+      "input": "source/floor_concept_v01.png",
+      "sha256": "C01DA040062A394AFA817DEAB5FBF006FD909AEDD40D56817142AA7DB0195BA4"
+    },
+    {
+      "file": "source/wall_concept_v02.png",
+      "tool": "OpenAI image_gen built-in edit",
+      "date": "2026-09-29",
+      "generated_path": "generated_images/01a0ece5-3b69-7c30-bcd1-be0d404181ee/exec-528df99c-0d57-4dda-9512-4f467a119291.png",
+      "prompt_file": "edit_prompts.json",
+      "prompt_id": "wall_v02",
+      "input": "source/wall_concept_v01.png",
+      "sha256": "78814F99AD4F64DB0951AFE44ED330513C9341E0C772D66E6041768C219FD6FE"
+    }
+  ]
+}

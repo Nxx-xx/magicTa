@@ -1,0 +1,420 @@
+{
+	"banner": {
+		"anchor": [
+			64,
+			64
+		],
+		"file": "textures/banner.png",
+		"size": [
+			128,
+			128
+		]
+	},
+	"chest": {
+		"anchor": [
+			64,
+			64
+		],
+		"file": "textures/chest.png",
+		"size": [
+			128,
+			128
+		]
+	},
+	"coins": {
+		"anchor": [
+			64,
+			64
+		],
+		"file": "textures/coins.png",
+		"size": [
+			128,
+			128
+		]
+	},
+	"door_copper_closed": {
+		"anchor": [
+			64,
+			64
+		],
+		"file": "textures/door_copper_closed.png",
+		"size": [
+			128,
+			128
+		]
+	},
+	"door_copper_open": {
+		"anchor": [
+			64,
+			64
+		],
+		"file": "textures/door_copper_open.png",
+		"size": [
+			128,
+			128
+		]
+	},
+	"door_gold_closed": {
+		"anchor": [
+			64,
+			64
+		],
+		"file": "textures/door_gold_closed.png",
+		"size": [
+			128,
+			128
+		]
+	},
+	"door_gold_open": {
+		"anchor": [
+			64,
+			64
+		],
+		"file": "textures/door_gold_open.png",
+		"size": [
+			128,
+			128
+		]
+	},
+	"door_silver_closed": {
+		"anchor": [
+			64,
+			64
+		],
+		"file": "textures/door_silver_closed.png",
+		"size": [
+			128,
+			128
+		]
+	},
+	"door_silver_open": {
+		"anchor": [
+			64,
+			64
+		],
+		"file": "textures/door_silver_open.png",
+		"size": [
+			128,
+			128
+		]
+	},
+	"floor_0": {
+		"anchor": [
+			64,
+			64
+		],
+		"file": "textures/floor_0.png",
+		"size": [
+			128,
+			128
+		]
+	},
+	"floor_1": {
+		"anchor": [
+			64,
+			64
+		],
+		"file": "textures/floor_1.png",
+		"size": [
+			128,
+			128
+		]
+	},
+	"floor_2": {
+		"anchor": [
+			64,
+			64
+		],
+		"file": "textures/floor_2.png",
+		"size": [
+			128,
+			128
+		]
+	},
+	"floor_3": {
+		"anchor": [
+			64,
+			64
+		],
+		"file": "textures/floor_3.png",
+		"size": [
+			128,
+			128
+		]
+	},
+	"key_copper": {
+		"anchor": [
+			64,
+			64
+		],
+		"file": "textures/key_copper.png",
+		"size": [
+			128,
+			128
+		]
+	},
+	"key_gold": {
+		"anchor": [
+			64,
+			64
+		],
+		"file": "textures/key_gold.png",
+		"size": [
+			128,
+			128
+		]
+	},
+	"key_silver": {
+		"anchor": [
+			64,
+			64
+		],
+		"file": "textures/key_silver.png",
+		"size": [
+			128,
+			128
+		]
+	},
+	"pillar": {
+		"anchor": [
+			64,
+			64
+		],
+		"file": "textures/pillar.png",
+		"size": [
+			128,
+			128
+		]
+	},
+	"potion": {
+		"anchor": [
+			64,
+			64
+		],
+		"file": "textures/potion.png",
+		"size": [
+			128,
+			128
+		]
+	},
+	"rubble": {
+		"anchor": [
+			64,
+			64
+		],
+		"file": "textures/rubble.png",
+		"size": [
+			128,
+			128
+		]
+	},
+	"stairs_down": {
+		"anchor": [
+			64,
+			64
+		],
+		"file": "textures/stairs_down.png",
+		"size": [
+			128,
+			128
+		]
+	},
+	"stairs_up": {
+		"anchor": [
+			64,
+			64
+		],
+		"file": "textures/stairs_up.png",
+		"size": [
+			128,
+			128
+		]
+	},
+	"torch": {
+		"anchor": [
+			64,
+			64
+		],
+		"file": "textures/torch.png",
+		"size": [
+			128,
+			128
+		]
+	},
+	"wall_00": {
+		"anchor": [
+			64,
+			64
+		],
+		"file": "textures/wall_00.png",
+		"size": [
+			128,
+			128
+		]
+	},
+	"wall_01": {
+		"anchor": [
+			64,
+			64
+		],
+		"file": "textures/wall_01.png",
+		"size": [
+			128,
+			128
+		]
+	},
+	"wall_02": {
+		"anchor": [
+			64,
+			64
+		],
+		"file": "textures/wall_02.png",
+		"size": [
+			128,
+			128
+		]
+	},
+	"wall_03": {
+		"anchor": [
+			64,
+			64
+		],
+		"file": "textures/wall_03.png",
+		"size": [
+			128,
+			128
+		]
+	},
+	"wall_04": {
+		"anchor": [
+			64,
+			64
+		],
+		"file": "textures/wall_04.png",
+		"size": [
+			128,
+			128
+		]
+	},
+	"wall_05": {
+		"anchor": [
+			64,
+			64
+		],
+		"file": "textures/wall_05.png",
+		"size": [
+			128,
+			128
+		]
+	},
+	"wall_06": {
+		"anchor": [
+			64,
+			64
+		],
+		"file": "textures/wall_06.png",
+		"size": [
+			128,
+			128
+		]
+	},
+	"wall_07": {
+		"anchor": [
+			64,
+			64
+		],
+		"file": "textures/wall_07.png",
+		"size": [
+			128,
+			128
+		]
+	},
+	"wall_08": {
+		"anchor": [
+			64,
+			64
+		],
+		"file": "textures/wall_08.png",
+		"size": [
+			128,
+			128
+		]
+	},
+	"wall_09": {
+		"anchor": [
+			64,
+			64
+		],
+		"file": "textures/wall_09.png",
+		"size": [
+			128,
+			128
+		]
+	},
+	"wall_10": {
+		"anchor": [
+			64,
+			64
+		],
+		"file": "textures/wall_10.png",
+		"size": [
+			128,
+			128
+		]
+	},
+	"wall_11": {
+		"anchor": [
+			64,
+			64
+		],
+		"file": "textures/wall_11.png",
+		"size": [
+			128,
+			128
+		]
+	},
+	"wall_12": {
+		"anchor": [
+			64,
+			64
+		],
+		"file": "textures/wall_12.png",
+		"size": [
+			128,
+			128
+		]
+	},
+	"wall_13": {
+		"anchor": [
+			64,
+			64
+		],
+		"file": "textures/wall_13.png",
+		"size": [
+			128,
+			128
+		]
+	},
+	"wall_14": {
+		"anchor": [
+			64,
+			64
+		],
+		"file": "textures/wall_14.png",
+		"size": [
+			128,
+			128
+		]
+	},
+	"wall_15": {
+		"anchor": [
+			64,
+			64
+		],
+		"file": "textures/wall_15.png",
+		"size": [
+			128,
+			128
+		]
+	}
+}

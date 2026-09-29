@@ -1,0 +1,352 @@
+{
+	"banner": {
+		"size": [
+			128,
+			128
+		],
+		"transparent_pixels": 11772,
+		"visible_border_pixels": 0,
+		"visible_pixels": 4285
+	},
+	"chest": {
+		"size": [
+			128,
+			128
+		],
+		"transparent_pixels": 8183,
+		"visible_border_pixels": 0,
+		"visible_pixels": 7900
+	},
+	"coins": {
+		"size": [
+			128,
+			128
+		],
+		"transparent_pixels": 10959,
+		"visible_border_pixels": 0,
+		"visible_pixels": 5163
+	},
+	"door_copper_closed": {
+		"size": [
+			128,
+			128
+		],
+		"transparent_pixels": 5506,
+		"visible_border_pixels": 0,
+		"visible_pixels": 10401
+	},
+	"door_copper_open": {
+		"size": [
+			128,
+			128
+		],
+		"transparent_pixels": 8177,
+		"visible_border_pixels": 0,
+		"visible_pixels": 7456
+	},
+	"door_gold_closed": {
+		"size": [
+			128,
+			128
+		],
+		"transparent_pixels": 5535,
+		"visible_border_pixels": 0,
+		"visible_pixels": 10407
+	},
+	"door_gold_open": {
+		"size": [
+			128,
+			128
+		],
+		"transparent_pixels": 8287,
+		"visible_border_pixels": 0,
+		"visible_pixels": 7370
+	},
+	"door_silver_closed": {
+		"size": [
+			128,
+			128
+		],
+		"transparent_pixels": 5652,
+		"visible_border_pixels": 0,
+		"visible_pixels": 10304
+	},
+	"door_silver_open": {
+		"size": [
+			128,
+			128
+		],
+		"transparent_pixels": 8376,
+		"visible_border_pixels": 0,
+		"visible_pixels": 7243
+	},
+	"floor_0": {
+		"size": [
+			128,
+			128
+		],
+		"transparent_pixels": 0,
+		"visible_border_pixels": 508,
+		"visible_pixels": 16384
+	},
+	"floor_1": {
+		"size": [
+			128,
+			128
+		],
+		"transparent_pixels": 0,
+		"visible_border_pixels": 508,
+		"visible_pixels": 16384
+	},
+	"floor_2": {
+		"size": [
+			128,
+			128
+		],
+		"transparent_pixels": 0,
+		"visible_border_pixels": 508,
+		"visible_pixels": 16384
+	},
+	"floor_3": {
+		"size": [
+			128,
+			128
+		],
+		"transparent_pixels": 0,
+		"visible_border_pixels": 508,
+		"visible_pixels": 16384
+	},
+	"key_copper": {
+		"size": [
+			128,
+			128
+		],
+		"transparent_pixels": 13920,
+		"visible_border_pixels": 0,
+		"visible_pixels": 2109
+	},
+	"key_gold": {
+		"size": [
+			128,
+			128
+		],
+		"transparent_pixels": 13921,
+		"visible_border_pixels": 0,
+		"visible_pixels": 2099
+	},
+	"key_silver": {
+		"size": [
+			128,
+			128
+		],
+		"transparent_pixels": 14218,
+		"visible_border_pixels": 0,
+		"visible_pixels": 1854
+	},
+	"pillar": {
+		"size": [
+			128,
+			128
+		],
+		"transparent_pixels": 12272,
+		"visible_border_pixels": 0,
+		"visible_pixels": 3860
+	},
+	"potion": {
+		"size": [
+			128,
+			128
+		],
+		"transparent_pixels": 12105,
+		"visible_border_pixels": 0,
+		"visible_pixels": 4010
+	},
+	"rubble": {
+		"size": [
+			128,
+			128
+		],
+		"transparent_pixels": 12215,
+		"visible_border_pixels": 0,
+		"visible_pixels": 3740
+	},
+	"stairs_down": {
+		"size": [
+			128,
+			128
+		],
+		"transparent_pixels": 7262,
+		"visible_border_pixels": 0,
+		"visible_pixels": 8827
+	},
+	"stairs_up": {
+		"size": [
+			128,
+			128
+		],
+		"transparent_pixels": 7272,
+		"visible_border_pixels": 0,
+		"visible_pixels": 8746
+	},
+	"torch": {
+		"size": [
+			128,
+			128
+		],
+		"transparent_pixels": 13550,
+		"visible_border_pixels": 0,
+		"visible_pixels": 2460
+	},
+	"validation": {
+		"opaque_floors": 4,
+		"open_centers_verified": 3,
+		"result": "PASS",
+		"textures": 38,
+		"transparent_objects": 18,
+		"wall_masks": 16
+	},
+	"wall_00": {
+		"size": [
+			128,
+			128
+		],
+		"transparent_pixels": 16,
+		"visible_border_pixels": 496,
+		"visible_pixels": 16368
+	},
+	"wall_01": {
+		"size": [
+			128,
+			128
+		],
+		"transparent_pixels": 16,
+		"visible_border_pixels": 496,
+		"visible_pixels": 16368
+	},
+	"wall_02": {
+		"size": [
+			128,
+			128
+		],
+		"transparent_pixels": 16,
+		"visible_border_pixels": 496,
+		"visible_pixels": 16368
+	},
+	"wall_03": {
+		"size": [
+			128,
+			128
+		],
+		"transparent_pixels": 16,
+		"visible_border_pixels": 496,
+		"visible_pixels": 16368
+	},
+	"wall_04": {
+		"size": [
+			128,
+			128
+		],
+		"transparent_pixels": 16,
+		"visible_border_pixels": 496,
+		"visible_pixels": 16368
+	},
+	"wall_05": {
+		"size": [
+			128,
+			128
+		],
+		"transparent_pixels": 16,
+		"visible_border_pixels": 496,
+		"visible_pixels": 16368
+	},
+	"wall_06": {
+		"size": [
+			128,
+			128
+		],
+		"transparent_pixels": 16,
+		"visible_border_pixels": 496,
+		"visible_pixels": 16368
+	},
+	"wall_07": {
+		"size": [
+			128,
+			128
+		],
+		"transparent_pixels": 16,
+		"visible_border_pixels": 496,
+		"visible_pixels": 16368
+	},
+	"wall_08": {
+		"size": [
+			128,
+			128
+		],
+		"transparent_pixels": 16,
+		"visible_border_pixels": 496,
+		"visible_pixels": 16368
+	},
+	"wall_09": {
+		"size": [
+			128,
+			128
+		],
+		"transparent_pixels": 16,
+		"visible_border_pixels": 496,
+		"visible_pixels": 16368
+	},
+	"wall_10": {
+		"size": [
+			128,
+			128
+		],
+		"transparent_pixels": 16,
+		"visible_border_pixels": 496,
+		"visible_pixels": 16368
+	},
+	"wall_11": {
+		"size": [
+			128,
+			128
+		],
+		"transparent_pixels": 16,
+		"visible_border_pixels": 496,
+		"visible_pixels": 16368
+	},
+	"wall_12": {
+		"size": [
+			128,
+			128
+		],
+		"transparent_pixels": 16,
+		"visible_border_pixels": 496,
+		"visible_pixels": 16368
+	},
+	"wall_13": {
+		"size": [
+			128,
+			128
+		],
+		"transparent_pixels": 16,
+		"visible_border_pixels": 496,
+		"visible_pixels": 16368
+	},
+	"wall_14": {
+		"size": [
+			128,
+			128
+		],
+		"transparent_pixels": 16,
+		"visible_border_pixels": 496,
+		"visible_pixels": 16368
+	},
+	"wall_15": {
+		"size": [
+			128,
+			128
+		],
+		"transparent_pixels": 0,
+		"visible_border_pixels": 508,
+		"visible_pixels": 16384
+	}
+}

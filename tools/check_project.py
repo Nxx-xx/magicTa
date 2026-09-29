@@ -16,6 +16,12 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 
 
+def is_project_source(path: Path) -> bool:
+    if any(part in {".git", ".godot", "build"} for part in path.relative_to(ROOT).parts):
+        return False
+    return not any((parent / ".gdignore").exists() for parent in path.parents if parent != ROOT and ROOT in parent.parents)
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--gdtoolkit-path", type=Path)
@@ -58,14 +64,7 @@ def main() -> None:
         assert ("item_id" in offer) != ("effects" in offer)
         if "item_id" in offer:
             assert offer["item_id"] in items
-    assert set(data["floor_pools"]) == {str(n) for n in range(1, 11) if n not in (5, 10)}
-    for pool in data["floor_pools"].values():
-        assert pool["normal"] and pool["elite"] and pool["events"]
-        assert all(key in enemies for key in pool["normal"] + pool["elite"])
-        assert all(enemies[key]["rank"] == "normal" for key in pool["normal"])
-        assert all(enemies[key]["rank"] == "elite" for key in pool["elite"])
-        assert all(key in events for key in pool["events"])
-    print("PASS content counts, effect schemas, event exits, floor pools, item/enemy references")
+    print("PASS content counts, effect schemas, event exits, item/enemy references")
 
     rewards = json.loads((ROOT / "data/reward_rules.json").read_text(encoding="utf-8"))
     assert rewards["version"] == 1
@@ -82,12 +81,23 @@ def main() -> None:
         assert all(isinstance(n, int) and n >= 0 for n in option["effects"].values())
     print("PASS reward choices, event pool, shop supply and rest configuration")
 
-    scripts = sorted(ROOT.rglob("*.gd"))
-    sources = scripts + [ROOT / "project.godot"] + sorted(ROOT.rglob("*.tscn")) + sorted(ROOT.rglob("*.tres"))
+    scripts = sorted(path for path in ROOT.rglob("*.gd") if is_project_source(path))
+    sources = scripts + [ROOT / "project.godot"] + sorted(path for ext in ("*.tscn", "*.tres") for path in ROOT.rglob(ext) if is_project_source(path))
     for path in sources:
         source = path.read_text(encoding="utf-8")
         for resource in re.findall(r'res://([^"\s]+)', source):
-            assert (ROOT / resource).is_file(), f"Missing resource in {path}: {resource}"
+            # Test captures are generated outputs, not required input resources.
+            # Production code must never depend on an ignored build artifact.
+            if resource.startswith("build/") and path.relative_to(ROOT).parts[0] == "tests":
+                continue
+            target = ROOT / resource
+            # Preview/packing scripts also use res:// directory constants as
+            # path prefixes. Only an explicit trailing slash denotes a directory;
+            # missing file references must still fail instead of being masked.
+            if resource.endswith("/"):
+                assert target.is_dir(), f"Missing resource directory in {path}: {resource}"
+            else:
+                assert target.is_file(), f"Missing resource in {path}: {resource}"
     ET.parse(ROOT / "assets/icon.svg")
     assert "SIL OPEN FONT LICENSE" in (ROOT / "assets/fonts/OFL.txt").read_text(encoding="utf-8")
     print(f"PASS resource references ({len(sources)} files), SVG XML, bundled font license")
@@ -100,8 +110,7 @@ def main() -> None:
         cmap = font.getBestCmap()
         text = "".join(p.read_text(encoding="utf-8") for p in sources)
         text += json.dumps(data, ensure_ascii=False)
-        text += (ROOT / "data/map_layouts.json").read_text(encoding="utf-8")
-        text += (ROOT / "data/random_maps.json").read_text(encoding="utf-8")
+        text += "".join(p.read_text(encoding="utf-8") for p in (ROOT / "data").glob("*.json"))
         han = {ord(c) for c in text if "\u3400" <= c <= "\u9fff"}
         assert han <= cmap.keys(), f"Missing glyphs: {sorted(han - cmap.keys())}"
         print(f"PASS bundled Chinese font covers all {len(han)} Han characters in game content")

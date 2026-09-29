@@ -1,0 +1,11 @@
+{
+	"crop": "waist/upper hips",
+	"expression": "neutral warm smile",
+	"has_alpha": true,
+	"height": 1536,
+	"opaque_pixels": 0,
+	"partial_alpha_pixels": 1129570,
+	"source": "built-in image_gen",
+	"transparent_pixels": 443294,
+	"width": 1024
+}
