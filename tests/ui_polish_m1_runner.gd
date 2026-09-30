@@ -34,7 +34,7 @@ func _error_visible(screen, label: String) -> void:
 	_check(screen.save_error_panel.get_global_rect().end.y <= screen.board.position.y, "error does not overlap map " + label)
 	_check(screen.save_error_panel.get_global_rect().end.y <= screen.overlay_panel.position.y, "error does not overlap sheet " + label)
 	_check(screen.save_error_label.size.x <= screen.save_error_scroll.size.x, "error wraps without horizontal overflow " + label)
-	_check(screen.board.size.x == screen.board.size.y and screen.board.size.x >= 180, "complete map retained " + label)
+	_check(screen.board.size.x >= 180 and screen.board.size.y >= 180, "map viewport retained " + label)
 	_check(screen.controls.get_global_rect().end.y <= screen.size.y, "error leaves controls on screen " + label)
 	if screen.overlay.visible and screen.overlay_close.visible:
 		_check(screen.overlay_close.get_global_rect().end.y <= screen.size.y, "error leaves cancel on screen " + label)
@@ -111,7 +111,7 @@ func _save_error_regression(screen) -> void:
 		screen._render(true)
 		await _frames()
 		_error_visible(screen, "selected enemy " + suffix)
-		_check(screen.detail_copy.text.contains("净损失"), "save error does not replace combat cost " + suffix)
+		_check(screen.detail_copy.text.contains("攻击"), "save error does not replace enemy attributes " + suffix)
 		await _capture("save_error_selected_" + suffix)
 		screen._open_overlay("target")
 		await _frames()
@@ -174,8 +174,8 @@ func _run() -> void:
 		await _frames()
 		var suffix := "%dx%d" % [dimensions.x, dimensions.y]
 		print("LAYOUT ", suffix, " hud=", screen.hud.get_global_rect(), " board=", screen.board.get_global_rect(), " detail=", screen.detail_panel.get_global_rect(), " controls=", screen.controls.get_global_rect())
-		_check(screen.board.size.x == screen.board.size.y, "square map " + suffix)
-		_check(screen.board.get_global_rect().end.y <= screen.detail_panel.position.y, "map does not overlap details " + suffix)
+		_check(screen.board.size.y >= screen.size.y * 0.65, "map fills available height " + suffix)
+		_check(screen.board.get_global_rect().encloses(screen.detail_panel.get_global_rect()), "summary floats within map " + suffix)
 		_check(screen.hud.get_global_rect().end.y <= screen.board.position.y, "HUD clear of map " + suffix)
 		_check(screen.detail_panel.get_global_rect().end.y <= screen.controls.position.y, "details clear of controls " + suffix)
 		_check(screen.controls.get_global_rect().end.y <= screen.size.y, "controls within screen " + suffix)
@@ -216,21 +216,16 @@ func _run() -> void:
 		screen.game.floor_data().entities[Core.cell_key(cell)].guardian = true
 		screen._render(true)
 		await _frames()
-		_check(screen.detail_copy.text.contains("会死亡"), "lethal explicitly stated " + suffix)
+		_check(screen.detail_copy.text.contains("攻击") and not screen.detail_copy.text.contains("会死亡"), "enemy facts without outcome " + suffix)
 		await _capture("lethal_selected_" + suffix)
 		screen.game.interact(cell)
 		screen._render(true)
 		await _frames()
 		await _capture("lethal_preview_" + suffix)
-		screen._fight()
-		await _frames()
-		_check(screen.modal_open and screen.game.active(), "lethal requires extra confirmation " + suffix)
-		for child in screen.get_children():
-			if child is ConfirmationDialog:
-				child.canceled.emit()
-		await _frames()
-		_check(not screen.modal_open and screen.game.active(), "cancel lethal keeps run alive " + suffix)
+		var hp_before: int = screen.game.state.player.hp
 		screen._close_overlay()
+		await _frames()
+		_check(not screen.modal_open and screen.game.active() and screen.game.state.player.hp == hp_before, "leaving encounter preserves health " + suffix)
 		screen._open_overlay("inventory")
 		_check(screen.direction_buttons[0].disabled, "inventory blocks movement " + suffix)
 		screen._close_overlay()
@@ -251,16 +246,18 @@ func _run() -> void:
 			break
 	_check(screen.game.state.player.gold == before_gold + int(expected.gold_reward), "double activation grants combat reward once")
 	_check(screen.game.state.player.hp == expected.hp_after and screen.game.state.pending.is_empty(), "button uses exact combat preview")
-	_check(not screen.overlay.visible, "successful fight returns to map")
+	_check(not screen.overlay.visible and is_instance_valid(screen.combat_view), "successful fight opens combat presentation")
+	screen.combat_view.settle()
+	screen.combat_view.primary.pressed.emit()
+	_check(screen.overlay_kind == "", "continue returns to map")
 	screen.game.state.player.hp = 1
 	screen.game.floor_data().entities[Core.cell_key(cell)] = {"type": "enemy", "name": "骑士", "enemy_id": "knight", "pos": [cell.x, cell.y]}
 	screen.game.interact(cell)
 	screen._render(true)
 	screen._fight()
-	for child in screen.get_children():
-		if child is ConfirmationDialog:
-			child.confirmed.emit()
-	_check(not screen.game.active() and screen.overlay_kind == "result", "lethal confirmation opens result")
+	screen.combat_view.settle()
+	screen.combat_view.primary.pressed.emit()
+	_check(not screen.modal_open and not screen.game.active() and screen.overlay_kind == "result", "one challenge confirmation resolves defeat without prediction")
 	screen._start("42")
 	_check(screen.game.active() and not screen.overlay.visible, "restart clears result sheet")
 	screen.page = "menu"

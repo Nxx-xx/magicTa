@@ -233,7 +233,7 @@ func _settle(result: String) -> String:
 	state = candidate.state
 	meta = candidate.meta
 	match result:
-		"victory": state.last_message = "魔王的封印已破。公主救出了王子，两人一同离开魔塔。"
+		"victory": state.last_message = "魔王已被击败。王子却熄灭归途灯，从背后刺穿公主，显露怪物真身，宣称自己将成为这个国家的主宰。"
 		"death": state.last_message = "提灯将公主送回营地。远处传来回声咒与王子的惨叫；本次失败只记录一次。"
 		"abandoned": state.last_message = "公主暂时返回营地。主动撤离不记战败，也不发放灵魂。"
 	return "" if save_game() else save_error

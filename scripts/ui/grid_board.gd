@@ -1,6 +1,7 @@
 extends Control
 ## Runtime art with readable semantic badges and a vector fallback for missing assets.
 signal cell_selected(cell: Vector2i)
+signal view_changed
 
 const FONT = preload("res://assets/fonts/ui_font.tres")
 const Keys = preload("res://scripts/core/map_keys.gd")
@@ -17,11 +18,22 @@ var marked_cells: Array = []
 var reduce_motion := false
 var hero_visual := Vector2(1,9)
 var move_tween: Tween
+var exploration := false
+var overview := false
+var following := true
+var safe_top := 12.0
+var safe_bottom := 164.0
+var camera_center := Vector2(5.5, 5.5)
+var camera_target := Vector2(5.5, 5.5)
+var pointer_down := false
+var dragging := false
+var press_position := Vector2.ZERO
 
 func _ready() -> void:
 	mouse_filter = Control.MOUSE_FILTER_STOP
 	mouse_default_cursor_shape = Control.CURSOR_POINTING_HAND
 	texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS
+	clip_contents = true
 	resized.connect(queue_redraw)
 
 func setup(floor_state: Dictionary, player_position: Vector2i, selection: Vector2i, is_alive: bool, enemy_definitions: Dictionary = {}) -> void:
@@ -32,6 +44,10 @@ func setup(floor_state: Dictionary, player_position: Vector2i, selection: Vector
 	if absi(delta.x) + absi(delta.y) == 1:
 		facing = "right" if delta.x > 0 else ("left" if delta.x < 0 else ("down" if delta.y > 0 else "up"))
 	hero = player_position
+	if not same_floor:
+		recenter()
+	elif following:
+		_follow_hero()
 	if is_instance_valid(move_tween):
 		move_tween.kill()
 	if not reduce_motion and same_floor and absi(delta.x) + absi(delta.y) == 1 and is_inside_tree():
@@ -44,18 +60,88 @@ func setup(floor_state: Dictionary, player_position: Vector2i, selection: Vector
 	queue_redraw()
 
 func _cell_size() -> float:
+	if exploration and not overview:
+		return clampf(size.x / 7.5, 44.0, 80.0)
 	return minf(size.x, size.y) / 11.0
 
 func _origin() -> Vector2:
+	if exploration and not overview:
+		return _safe_rect().get_center() - camera_center * _cell_size()
 	return (size - Vector2.ONE * _cell_size() * 11.0) * 0.5
 
+func _safe_rect() -> Rect2:
+	return Rect2(Vector2(8, safe_top), Vector2(maxf(1, size.x - 16), maxf(44, size.y - safe_top - safe_bottom)))
+
+func _bounded_center(value: Vector2) -> Vector2:
+	if not exploration or size.x <= 0 or size.y <= 0:
+		return Vector2(5.5, 5.5)
+	var half := _safe_rect().size / _cell_size() * 0.5
+	return Vector2(clampf(value.x, minf(half.x, 5.5), maxf(11 - half.x, 5.5)), clampf(value.y, minf(half.y, 5.5), maxf(11 - half.y, 5.5)))
+
+func recenter() -> void:
+	following = true
+	cancel_pointer()
+	camera_target = _bounded_center(Vector2(hero) + Vector2.ONE * 0.5)
+	camera_center = camera_target
+	view_changed.emit()
+	queue_redraw()
+
+func set_overview(value: bool) -> void:
+	overview = value
+	recenter()
+
+func refit_view() -> void:
+	if following:
+		_follow_hero()
+	camera_target = _bounded_center(camera_target)
+	camera_center = _bounded_center(camera_center)
+	queue_redraw()
+
+func _follow_hero() -> void:
+	var target := Vector2(hero) + Vector2.ONE * 0.5
+	# A small dead zone avoids moving the camera on every grid step.
+	var dead_zone := Vector2.ONE * 0.7
+	camera_target = _bounded_center(Vector2(clampf(camera_target.x, target.x - dead_zone.x, target.x + dead_zone.x), clampf(camera_target.y, target.y - dead_zone.y, target.y + dead_zone.y)))
+
+func _process(delta: float) -> void:
+	if not exploration or overview or camera_center.is_equal_approx(camera_target):
+		return
+	camera_center = camera_target if reduce_motion else camera_center.lerp(camera_target, 1.0 - exp(-18.0 * delta))
+	queue_redraw()
+
+func cancel_pointer() -> void:
+	pointer_down = false
+	dragging = false
+
+func _emit_cell(position: Vector2) -> void:
+	var local := position - _origin()
+	var tile := _cell_size()
+	if tile > 0 and Rect2(Vector2.ZERO, Vector2.ONE * tile * 11).has_point(local):
+		cell_selected.emit(Vector2i(int(local.x / tile), int(local.y / tile)))
+
 func _gui_input(event: InputEvent) -> void:
-	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
-		var local: Vector2 = event.position - _origin()
-		var tile := _cell_size()
-		if tile > 0 and local.x >= 0 and local.y >= 0 and local.x < tile * 11 and local.y < tile * 11:
-			cell_selected.emit(Vector2i(int(local.x / tile), int(local.y / tile)))
-			accept_event()
+	# The project emulates mouse events from touch. Use one path to avoid double steps.
+	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
+		if event.pressed:
+			pointer_down = true
+			dragging = false
+			press_position = event.position
+		elif pointer_down:
+			var was_dragging := dragging
+			cancel_pointer()
+			if not was_dragging and Rect2(Vector2.ZERO, size).has_point(event.position):
+				_emit_cell(event.position)
+		accept_event()
+	elif event is InputEventMouseMotion and pointer_down and exploration and not overview:
+		if not dragging and event.position.distance_to(press_position) > 10:
+			dragging = true
+			following = false
+			view_changed.emit()
+		if dragging:
+			camera_center = _bounded_center(camera_center - event.relative / _cell_size())
+			camera_target = camera_center
+			queue_redraw()
+		accept_event()
 
 func _draw() -> void:
 	if map.is_empty():

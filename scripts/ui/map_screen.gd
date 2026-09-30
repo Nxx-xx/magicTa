@@ -4,6 +4,7 @@ const Core = preload("res://scripts/core/campaign_engine.gd")
 const CampaignPanels = preload("res://scripts/ui/campaign_panels.gd")
 const Preferences = preload("res://scripts/ui/presentation_settings.gd")
 const AudioFeedback = preload("res://scripts/ui/audio_feedback.gd")
+const CombatPresentation = preload("res://scripts/ui/combat_presentation.gd")
 const Board = preload("res://scripts/ui/grid_board.gd")
 const Keys = preload("res://scripts/core/map_keys.gd")
 const Enemies = preload("res://scripts/core/enemy_rules.gd")
@@ -39,6 +40,10 @@ var detail_title: Label
 var detail_hint: Label
 var detail_button: Button
 var controls: VBoxContainer
+var floating_controls: Control
+var overview_button: Button
+var recenter_button: Button
+var map_notice: Label
 var direction_buttons: Array[Button] = []
 var overlay: Control
 var overlay_panel: PanelContainer
@@ -64,6 +69,9 @@ var index_floor := -1
 var overlay_next: Button
 var save_retry: Button
 var feedback_tween: Tween
+var camp_sections: Dictionary = {}
+var combat_view: Control
+var combat_context: Dictionary = {}
 
 func _exit_tree() -> void:
 	audio.stop()
@@ -89,12 +97,23 @@ func _notification(what: int) -> void:
 	if what == NOTIFICATION_WM_CLOSE_REQUEST:
 		_request_quit()
 	elif what in [NOTIFICATION_APPLICATION_PAUSED, NOTIFICATION_APPLICATION_FOCUS_OUT]:
+		if is_instance_valid(board):
+			board.cancel_pointer()
 		game.save_game()
+		if _transaction_pending() and is_instance_valid(combat_view):
+			combat_view.queue_free()
+			combat_view = null
+			_render(true)
 		# Background autosaves do not otherwise refresh the map or its open sheet.
 		if is_instance_valid(map_root):
 			_refresh_save_error()
 
 func _input(event: InputEvent) -> void:
+	if is_instance_valid(combat_view):
+		if event is InputEventKey and event.pressed and not event.echo and event.keycode == KEY_ESCAPE:
+			combat_view.escape()
+			get_viewport().set_input_as_handled()
+		return
 	if page == "map" and event is InputEventKey and event.pressed and event.keycode == KEY_ESCAPE and not modal_open and overlay_kind != "":
 		_close_overlay()
 		get_viewport().set_input_as_handled()
@@ -111,7 +130,8 @@ func _input(event: InputEvent) -> void:
 		KEY_D, KEY_RIGHT: direction = Vector2i.RIGHT
 	if direction != Vector2i.ZERO:
 		get_viewport().set_input_as_handled()
-		_act(func(): return game.step(direction))
+		if not board.overview:
+			_move_from_pad(direction)
 
 func _box(fill: Color, border: Color) -> StyleBoxFlat:
 	var box := StyleBoxFlat.new()
@@ -167,6 +187,8 @@ func _render(reset_scroll: bool = false) -> void:
 		_refresh_map(reset_scroll)
 		return
 	map_root = null
+	combat_view = null
+	combat_context = {}
 	overlay_kind = ""
 	var previous_scroll := scroll.scroll_vertical if is_instance_valid(scroll) and not reset_scroll else 0
 	for child in get_children():
@@ -283,11 +305,17 @@ func _build_map_shell() -> void:
 	map_root.add_child(board_frame)
 	board = Board.new()
 	board.name = "PersistentBoard"
+	board.exploration = true
 	map_root.add_child(board)
 	board.cell_selected.connect(_select_cell)
+	board.view_changed.connect(_refresh_view_controls)
 	detail_panel = PanelContainer.new()
 	detail_panel.name = "TargetSummary"
 	detail_panel.theme_type_variation = "TargetPanel"
+	var summary_style := _box(Color(0.04, 0.08, 0.12, 0.92), Color("526777"))
+	summary_style.content_margin_top = 4
+	summary_style.content_margin_bottom = 4
+	detail_panel.add_theme_stylebox_override("panel", summary_style)
 	map_root.add_child(detail_panel)
 	var details := VBoxContainer.new()
 	details.add_theme_constant_override("separation", 4)
@@ -295,29 +323,63 @@ func _build_map_shell() -> void:
 	var detail_row := HBoxContainer.new()
 	details.add_child(detail_row)
 	detail_title = _text(detail_row, "", 17, GOLD)
+	detail_title.custom_minimum_size.y = 22
 	detail_button = _button(detail_row, "详情", func(): _open_overlay("target"))
 	detail_button.size_flags_horizontal = Control.SIZE_SHRINK_END
 	detail_button.custom_minimum_size = Vector2(64, 44)
 	detail_copy = _text(details, "", 15, TEAL)
+	detail_copy.custom_minimum_size.y = 22
 	detail_hint = _text(details, "", 13, MUTED)
+	map_notice = _text(map_root, "", 13, GOLD)
+	map_notice.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	map_notice.max_lines_visible = 1
+	map_notice.text_overrun_behavior = TextServer.OVERRUN_TRIM_ELLIPSIS
+	map_notice.add_theme_color_override("font_shadow_color", Color.BLACK)
+	map_notice.add_theme_constant_override("shadow_offset_x", 1)
+	map_notice.add_theme_constant_override("shadow_offset_y", 1)
+	floating_controls = Control.new()
+	floating_controls.name = "FloatingDirections"
+	floating_controls.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	map_root.add_child(floating_controls)
+	var directions := [Vector2i.LEFT, Vector2i.UP, Vector2i.DOWN, Vector2i.RIGHT]
+	var labels := ["←", "↑", "↓", "→"]
+	var positions := [Vector2(0, 52), Vector2(52, 0), Vector2(52, 104), Vector2(104, 52)]
+	for index in 4:
+		var direction: Vector2i = directions[index]
+		var button := _button(floating_controls, labels[index], func(): _move_from_pad(direction))
+		button.name = ["Left", "Up", "Down", "Right"][index]
+		button.tooltip_text = ["向左移动", "向上移动", "向下移动", "向右移动"][index]
+		button.custom_minimum_size = Vector2(48, 48)
+		button.size = Vector2(48, 48)
+		button.position = positions[index]
+		button.add_theme_font_size_override("font_size", 24)
+		for state_name in ["normal", "hover", "pressed", "disabled", "focus"]:
+			var fill := Color(0.05, 0.10, 0.14, 0.68)
+			if state_name in ["pressed", "hover"]:
+				fill = Color(0.12, 0.26, 0.28, 0.94)
+			if state_name == "focus":
+				fill = Color.TRANSPARENT
+			var style := _box(fill, TEAL if state_name in ["pressed", "focus"] else Color(0.58, 0.70, 0.72, 0.55))
+			style.set_corner_radius_all(16)
+			style.content_margin_left = 0
+			style.content_margin_right = 0
+			style.content_margin_top = 0
+			style.content_margin_bottom = 0
+			button.add_theme_stylebox_override(state_name, style)
+		direction_buttons.append(button)
+	recenter_button = _button(map_root, "回到角色", func(): board.recenter(), false, "QuietButton")
+	recenter_button.custom_minimum_size = Vector2(104, 44)
 	controls = VBoxContainer.new()
 	controls.name = "FixedControls"
 	controls.add_theme_constant_override("separation", 8)
 	map_root.add_child(controls)
-	var row := HBoxContainer.new()
-	controls.add_child(row)
-	var directions := [Vector2i.LEFT, Vector2i.UP, Vector2i.DOWN, Vector2i.RIGHT]
-	var labels := ["← 左", "↑ 上", "↓ 下", "→ 右"]
-	for index in 4:
-		var button := _button(row, labels[index], func(): _act(func(): return game.step(directions[index])))
-		button.theme_type_variation = "DirectionButton"
-		button.custom_minimum_size.y = 44
-		direction_buttons.append(button)
 	var tools_row := HBoxContainer.new()
 	controls.add_child(tools_row)
 	_button(tools_row, "行囊", func(): _open_overlay("inventory"), false, "QuietButton").custom_minimum_size.y = 44
 	_button(tools_row, "楼层", func(): _open_overlay("floors"), false, "QuietButton").custom_minimum_size.y = 44
 	_button(tools_row, "记录", func(): _open_overlay("log"), false, "QuietButton").custom_minimum_size.y = 44
+	overview_button = _button(tools_row, "全图", _toggle_overview, false, "QuietButton")
+	overview_button.custom_minimum_size.y = 44
 	overlay = Control.new()
 	overlay.name = "DetailSheet"
 	map_root.add_child(overlay)
@@ -378,6 +440,8 @@ func _build_map_shell() -> void:
 	save_error_label.text = game.save_error
 	hud.minimum_size_changed.connect(_queue_layout)
 	detail_panel.minimum_size_changed.connect(_queue_layout)
+	# Sheet text wraps asynchronously; refit after its temporary minimum size settles.
+	overlay_panel.minimum_size_changed.connect(_queue_layout)
 	_layout_map()
 	_queue_layout()
 
@@ -394,36 +458,66 @@ func _refit_map() -> void:
 
 func _layout_map() -> void:
 	compact = size.y < 800 or size.x < 400
-	var width := minf(size.x - 24, 600)
+	var width := minf(size.x - 16, 760)
 	var left := (size.x - width) * 0.5
-	var header_height := 118.0
+	var header_height := maxf(104.0, hud.get_combined_minimum_size().y)
 	var error_height := maxf(84.0, save_error_panel.get_combined_minimum_size().y)
 	var error_space := error_height + 8.0 if save_error_panel.visible else 0.0
-	var detail_height := 90.0 if compact else 166.0
-	var controls_height := 96.0
-	var board_size := minf(width, size.y - header_height - error_space - detail_height - controls_height - 48)
-	board_size = maxf(100, board_size)
-	hud.position = Vector2(left, 8)
+	var controls_height := 44.0
+	hud.position = Vector2(left, 4)
 	hud.size = Vector2(width, header_height)
 	hud_back.position = Vector2(left - 6, 3)
 	hud_back.size = Vector2(width + 12, header_height + 4)
-	save_error_panel.position = Vector2(left, 124)
+	save_error_panel.position = Vector2(left, header_height + 8)
 	save_error_panel.size = Vector2(width, error_height)
-	board.position = Vector2((size.x - board_size) * 0.5, header_height + error_space + 12)
-	board.size = Vector2.ONE * board_size
+	board.position = Vector2(left, header_height + error_space + 12)
+	board.size = Vector2(width, maxf(160, size.y - board.position.y - controls_height - 16))
 	board_frame.position = board.position - Vector2(3, 3)
 	board_frame.size = board.size + Vector2(6, 6)
-	controls.position = Vector2(left, size.y - controls_height - 12)
+	controls.position = Vector2(left, size.y - controls_height - 6)
 	controls.size = Vector2(width, controls_height)
-	detail_panel.position = Vector2(left, header_height + error_space + board_size + 20)
-	detail_panel.size = Vector2(width, controls.position.y - detail_panel.position.y - 8)
+	detail_panel.position = board.position + Vector2(6, 6)
+	detail_panel.size = Vector2(width - 12, 80)
+	detail_panel.visible = not game.entity_at(selected).is_empty() and not board.overview
 	detail_copy.visible = true
-	detail_hint.visible = not compact
-	detail_title.add_theme_font_size_override("font_size", 15 if compact else 17)
-	var sheet_top := 124.0 + error_space
+	detail_hint.visible = false
+	detail_title.add_theme_font_size_override("font_size", 15)
+	map_notice.position = board.position + Vector2(10, 8)
+	map_notice.size = Vector2(width - 20, 24)
+	map_notice.text = notice
+	map_notice.visible = not detail_panel.visible and not notice.is_empty() and not board.overview
+	floating_controls.position = Vector2(left + 10, board.get_rect().end.y - 164)
+	floating_controls.size = Vector2(152, 152)
+	recenter_button.position = Vector2(left + width - 114, board.get_rect().end.y - 56)
+	recenter_button.size = Vector2(104, 44)
+	board.safe_top = 94.0 if detail_panel.visible else 32.0
+	board.refit_view()
+	_refresh_view_controls()
+	var sheet_top := header_height + 12.0 + error_space
 	overlay_panel.position = Vector2(left, sheet_top)
 	overlay_panel.size = Vector2(width, size.y - sheet_top - 12)
+	if is_instance_valid(combat_view):
+		combat_view.position = Vector2(left, sheet_top)
+		combat_view.size = Vector2(width, maxf(1, size.y - sheet_top - 6))
 	_refresh_summary()
+
+func _move_from_pad(direction: Vector2i) -> void:
+	if overlay_kind != "" or modal_open or _transaction_pending() or not game.active() or not game.state.pending.is_empty():
+		return
+	if not board.following:
+		board.recenter()
+	_act(func(): return game.step(direction))
+
+func _toggle_overview() -> void:
+	board.set_overview(not board.overview)
+	_layout_map()
+
+func _refresh_view_controls() -> void:
+	if not is_instance_valid(overview_button):
+		return
+	overview_button.text = "探索" if board.overview else "全图"
+	floating_controls.visible = not board.overview and overlay_kind == "" and not modal_open
+	recenter_button.visible = not board.overview and not board.following and overlay_kind == "" and not modal_open
 
 func _refresh_map(reset_scroll: bool = false) -> void:
 	_refresh_save_error()
@@ -449,6 +543,8 @@ func _refresh_map(reset_scroll: bool = false) -> void:
 		next_overlay = ""
 	if _transaction_pending():
 		next_overlay = "save_blocked"
+	elif not combat_context.is_empty():
+		next_overlay = "combat"
 	elif game.state.pending.is_empty() and not _story_event().is_empty():
 		next_overlay = "story"
 	elif not game.active() and not next_overlay in ["floors", "inventory", "log", "settings"]:
@@ -465,7 +561,7 @@ func _refresh_map(reset_scroll: bool = false) -> void:
 	if key.is_empty() or key != sheet_cache_key:
 		_populate_sheet()
 		sheet_cache_key = key
-	overlay.visible = overlay_kind != ""
+	overlay.visible = overlay_kind != "" and overlay_kind != "combat"
 	overlay_close.text = "暂时离开 · 返回地图" if overlay_kind == "pending" else ("跳过对白" if overlay_kind == "story" else ("返回结算" if not game.active() else "返回地图"))
 	overlay_close.visible = not overlay_kind in ["result", "save_blocked"]
 	overlay_next.visible = overlay_kind == "story"
@@ -498,6 +594,8 @@ func _refresh_save_error() -> void:
 	_queue_layout()
 
 func _populate_sheet() -> void:
+	if overlay_kind == "combat":
+		return
 	_clear(body)
 	match overlay_kind:
 		"story":
@@ -523,14 +621,14 @@ func _populate_sheet() -> void:
 			_button(body, "重试保存", _retry_save, false, "PrimaryButton")
 			_button(body, "退出游戏", _request_quit, false, "QuietButton")
 		"pending":
-			overlay_title.text = "待确认 · 查看成本后行动"
+			overlay_title.text = "遭遇敌人 · 查看情报" if game.entity_at(game.pending_cell()).get("type", "") == "enemy" else "待确认 · 查看成本后行动"
 			_pending_panel()
 		"target":
 			overlay_title.text = "查看目标 · 不会远程执行"
 			if game.inside(selected):
 				_describe(body, selected)
 			else:
-				_text(body, "点击相邻格移动或交互，点击远处目标查看属性。方向键 / WASD 与下方按钮均可移动。", 16)
+				_text(body, "点击相邻格移动或交互，点击远处目标查看属性。拖动地图查看远处，点击“回到角色”恢复跟随。方向键 / WASD 与浮动十字键均可移动；全图模式只选择目标。", 16)
 			if game.inside(selected) and not game.entity_at(selected).is_empty():
 				_button(body, "取消目标标记" if _floor_pins(int(game.state.floor)).has(Core.cell_key(selected)) else "标记目标 · 留待回溯", _toggle_pin)
 			_text(body, "怪物 1 / 2 / 3 表示强度档，“回”表示回溯守卫。铜 / 银 / 金门只消耗同类钥匙。", 14, MUTED)
@@ -568,11 +666,10 @@ func _refresh_summary() -> void:
 			title = "石墙 · 无法通过"
 		elif entity.get("type", "") == "enemy":
 			var enemy: Dictionary = game.db.enemy(entity.enemy_id)
-			var report: Dictionary = game.preview(selected)
 			title = str(enemy.name) + " · " + Enemies.classification(enemy)
-			copy = "当前挑战会死亡" if report.lethal else ("预计净损失 %d HP" % int(report.loss) if int(report.loss) >= 0 else "预计净恢复 %d HP" % -int(report.loss))
-			tint = RED if report.lethal else TEAL
-			hint = "实际受伤 %d · 击杀恢复 %d\n击杀奖励 %d 金币" % [report.incoming, report.healing, int(enemy.gold_reward) + int(game.stats().gold_bonus)]
+			copy = "生命 %d · 攻击 %d · 防御 %d" % [enemy.hp, enemy.attack, enemy.defense]
+			tint = MUTED
+			hint = "%s\n击杀奖励 %d 金币" % [enemy.get("combat_hint", ""), int(enemy.gold_reward) + int(game.stats().gold_bonus)]
 			for link in game.floor_data().get("guard_links", []):
 				if Vector2i(int(link.gate[0]), int(link.gate[1])) == selected:
 					hint += " · 守护奖励见详情"
@@ -585,12 +682,12 @@ func _refresh_summary() -> void:
 		hint = "回溯试炼完成！可以继续探索。"
 	if not notice.is_empty() and game.entity_at(selected).get("type", "") != "enemy":
 		hint = notice
-	# Keep cost on its own full-width row: a long classification must never hide it.
+	# Keep enemy attributes on their own row so long classifications cannot hide them.
 	detail_title.text = title
 	detail_title.max_lines_visible = 1
 	detail_title.text_overrun_behavior = TextServer.OVERRUN_TRIM_ELLIPSIS
 	detail_copy.text = hint if compact and game.entity_at(selected).get("type", "") != "enemy" else copy
-	detail_copy.max_lines_visible = 1 if compact else 2
+	detail_copy.max_lines_visible = 1
 	detail_copy.text_overrun_behavior = TextServer.OVERRUN_TRIM_ELLIPSIS
 	detail_copy.add_theme_color_override("font_color", tint)
 	detail_title.add_theme_color_override("font_color", tint if compact else GOLD)
@@ -612,12 +709,18 @@ func _inventory_content() -> void:
 	_text(body, "种子 %s · %s" % [game.state.seed, game.floor_data().name], 13, MUTED)
 
 func _open_overlay(kind: String) -> void:
+	if not combat_context.is_empty():
+		return
 	return_focus = get_viewport().gui_get_focus_owner()
 	overlay_kind = kind
 	_refresh_map(true)
 	_restore_focus.call_deferred(overlay_close)
 
 func _close_overlay() -> void:
+	if not combat_context.is_empty():
+		if is_instance_valid(combat_view):
+			combat_view.escape()
+		return
 	if overlay_kind == "story":
 		_finish_story()
 		return
@@ -632,6 +735,9 @@ func _close_overlay() -> void:
 		_restore_focus.call_deferred(return_focus)
 
 func _restore_focus(control: Control) -> void:
+	if is_instance_valid(combat_view) and (not is_instance_valid(control) or not combat_view.is_ancestor_of(control)):
+		combat_view.primary.grab_focus()
+		return
 	if is_instance_valid(control) and control.is_inside_tree() and control.is_visible_in_tree():
 		if not control is BaseButton or not control.disabled:
 			control.grab_focus()
@@ -639,9 +745,11 @@ func _restore_focus(control: Control) -> void:
 func _set_map_input() -> void:
 	var blocked: bool = overlay_kind != "" or modal_open or _transaction_pending() or not game.active() or not game.state.pending.is_empty()
 	board.mouse_filter = Control.MOUSE_FILTER_IGNORE if blocked else Control.MOUSE_FILTER_STOP
+	if blocked:
+		board.cancel_pointer()
 	for button in direction_buttons:
 		button.disabled = blocked
-	for region in [hud, detail_panel, controls]:
+	for region in [hud, detail_panel, controls, floating_controls]:
 		for button in region.find_children("*", "Button", true, false):
 			if not button in direction_buttons:
 				button.disabled = overlay_kind != "" or modal_open
@@ -650,33 +758,79 @@ func _set_map_input() -> void:
 			if not button.has_meta("map_focus_mode"):
 				button.set_meta("map_focus_mode", button.focus_mode)
 			button.focus_mode = Control.FOCUS_NONE if button.disabled else int(button.get_meta("map_focus_mode"))
+	recenter_button.disabled = blocked
+	recenter_button.focus_mode = Control.FOCUS_NONE if blocked else Control.FOCUS_ALL
+	_refresh_view_controls()
+
+func _camp_section(id: String, title: String, summary: String) -> VBoxContainer:
+	var card := _panel(body)
+	card.get_parent().name = "Camp_" + id
+	var content := VBoxContainer.new()
+	content.name = "Content"
+	content.visible = camp_sections.get(id, false)
+	content.add_theme_constant_override("separation", 10)
+	var heading := _button(card, title + ("  −" if content.visible else "  ＋"), func():
+		content.visible = not content.visible
+		camp_sections[id] = content.visible
+	)
+	heading.alignment = HORIZONTAL_ALIGNMENT_LEFT
+	heading.add_theme_font_size_override("font_size", 19)
+	heading.add_theme_color_override("font_color", GOLD)
+	heading.tooltip_text = "展开或收起" + title
+	content.visibility_changed.connect(func():
+		heading.text = title + ("  −" if content.visible else "  ＋")
+	)
+	if not summary.is_empty():
+		_text(card, summary, 14, MUTED)
+	card.add_child(content)
+	return content
 
 func _menu() -> void:
+	body.add_theme_constant_override("separation", 14)
 	var intro := _panel(body, "SheetPanel")
 	_text(intro, "营地 · 公主救援记", 14, TEAL)
 	_text(intro, "先绕行，再归来。", 28, GOLD)
-	_text(intro, "王子被困在十层塔顶。\n点亮归途灯，选择路线，把他带回家。", 16)
-	if not game.state.is_empty():
-		_button(body, "继续探索 · 第 %d 层" % int(game.state.floor) if game.active() else "查看上次探索", _open_map, false, "PrimaryButton")
+	_text(intro, "点亮归途灯，登上十层塔顶，把王子带回家。", 15)
+	var departure := _panel(body)
+	departure.get_parent().name = "Camp_departure"
+	_text(departure, "出发探索", 21, GOLD)
+	if not game.state.is_empty() and game.active():
+		_button(departure, "继续探索 · 第 %d 层" % int(game.state.floor), _open_map, false, "PrimaryButton")
 	if _transaction_pending():
-		_text(body, "有操作等待保存。重试成功前不能开始新旅程。", 16, RED)
-		_button(body, "重试保存", _retry_save, false, "PrimaryButton")
+		_text(departure, "有操作等待保存。重试成功前不能开始新旅程。", 16, RED)
+		_button(departure, "重试保存", _retry_save, false, "PrimaryButton")
+	_button(departure, "营救王子 · 十层旅程", func(): _request_start(seed_input.text.strip_edges(), true), _transaction_pending(), "" if game.active() else "PrimaryButton")
+	var options := VBoxContainer.new()
+	options.visible = camp_sections.get("options", false)
+	var options_button := _button(departure, "出发选项 · 种子 / 两层试炼", func():
+		options.visible = not options.visible
+		camp_sections["options"] = options.visible
+	)
+	options_button.text += "  −" if options.visible else "  ＋"
+	options.visibility_changed.connect(func():
+		options_button.text = "出发选项 · 种子 / 两层试炼" + ("  −" if options.visible else "  ＋")
+	)
+	departure.add_child(options)
 	seed_input = LineEdit.new()
 	seed_input.custom_minimum_size.y = 48
 	seed_input.placeholder_text = "地图种子（留空随机）"
-	body.add_child(seed_input)
-	_button(body, "营救王子 · 十层旅程", func(): _request_start(seed_input.text.strip_edges(), true), _transaction_pending(), "PrimaryButton")
-	_button(body, "开始两层地图试炼", func(): _request_start(seed_input.text.strip_edges(), false), _transaction_pending())
+	options.add_child(seed_input)
+	_button(options, "开始两层地图试炼", func(): _request_start(seed_input.text.strip_edges(), false), _transaction_pending())
+	_text(options, "试炼用于练习回溯，不产出灵魂，也不应用火种。", 13, MUTED)
 	if game.has_method("purchase_upgrade"):
 		CampaignPanels.upgrades(self)
-	CampaignPanels.settings(self, body)
-	var info := _panel(body)
-	_text(info, "探索指引", 19, GOLD)
+		CampaignPanels.records(self)
+	CampaignPanels.settings(self, body, true)
+	var info := _camp_section("guide", "探索指引", "移动操作 · 路线选择 · 回溯规则")
+	_text(info, "十层营救", 17, GOLD)
+	_text(info, "第五层和第十层挑战 Boss；击败魔王，救出王子。火种加成在新旅程出发时生效。", 15, MUTED)
+	_text(info, "两层试炼", 17, GOLD)
 	_text(info, "两层均为 11×11 格。每局随机布局方向、支路与物件位置；首次上楼可选战斗、宝藏或商店主题，生成后永久保存。", 15, MUTED)
+	_text(info, "探索与回溯", 17, GOLD)
 	_text(info, "怪物被击败后不刷新；开过的门、拿过的宝箱、商店售出记录都会保留。", 15, MUTED)
-	_text(info, "普通怪分入门、进阶、高阶三档。先看当前战斗损失，再决定是否挑战；标有“回”的守卫适合变强后回来。", 15, MUTED)
-	_text(body, "操作：方向键 / WASD / 下方方向按钮移动；点击相邻格也可移动，点击远处目标可查看属性。战斗和开门先预览再确认。", 14, MUTED)
-	_text(body, "两层试炼用于练习回溯，不产出灵魂。十层旅程在第五层和第十层挑战 Boss，营地火种只在新旅程生效。", 13, MUTED)
+	_text(info, "普通怪分入门、进阶、高阶三档。比较双方生命、攻防与怪物机制，自行决定是否挑战；标有“回”的守卫适合变强后回来。", 15, MUTED)
+	_text(info, "操作方式", 17, GOLD)
+	_text(info, "方向键 / WASD / 下方方向按钮移动；点击相邻格也可移动，点击远处目标可查看属性。遇敌先查看情报，确认挑战后立即战斗；开门前确认钥匙消耗。", 14, MUTED)
 
 func _start(seed_text: String) -> void:
 	var result: String = game.start(seed_text)
@@ -692,6 +846,8 @@ func _start(seed_text: String) -> void:
 func _open_map() -> void:
 	page = "map"
 	_render(true)
+	board.set_overview(false)
+	_layout_map()
 
 func _describe(parent: Node, cell: Vector2i, include_options: bool = true) -> void:
 	var entity: Dictionary = game.entity_at(cell)
@@ -712,16 +868,15 @@ func _describe(parent: Node, cell: Vector2i, include_options: bool = true) -> vo
 	match str(entity.type):
 		"enemy":
 			var enemy: Dictionary = game.db.enemy(entity.enemy_id)
-			var report: Dictionary = game.preview(cell)
+			var stats: Dictionary = game.stats()
 			_text(parent, Enemies.classification(enemy) + " · " + Enemies.map_role(entity), 14, GOLD)
-			_text(parent, "生命 %d / 攻击 %d / 防御 %d" % [enemy.hp, enemy.attack, enemy.defense], 14, MUTED)
+			_text(parent, "敌方：生命 %d / 攻击 %d / 防御 %d" % [enemy.hp, enemy.attack, enemy.defense], 14, MUTED)
+			_text(parent, "我方：生命 %d / %d · 攻击 %d / 防御 %d" % [game.state.player.hp, stats.max_hp, stats.attack, stats.defense], 14, MUTED)
 			_text(parent, str(enemy.get("combat_hint", "")), 14, MUTED)
 			if not str(enemy.get("ability_id", "")).is_empty():
 				_text(parent, "机制：" + str(enemy.description), 14, MUTED)
-			var cost := "预计净损失 %d HP。" % int(report.loss) if int(report.loss) >= 0 else "预计净恢复 %d HP。" % -int(report.loss)
-			var cost_box := _panel(parent, "TargetPanel")
-			_text(cost_box, "当前挑战会死亡，可以变强后再来。" if report.lethal else cost, 18, RED if report.lethal else TEAL)
-			_text(parent, "实际受伤 %d · 击杀恢复 %d · 战中最低生命 %d" % [report.incoming, report.healing, int(report.hp_after) - int(report.healing)], 13, MUTED)
+			_text(parent, "你先攻击，敌人存活时反击。每击伤害为攻击减防御：你至少造成 1 点，敌人最低造成 0 点。", 13, MUTED)
+			_text(parent, "击杀后恢复至多 %d HP，不超过生命上限。" % int(stats.kill_heal), 13, MUTED)
 			_text(parent, "击杀奖励：%d 金币。" % (int(enemy.gold_reward) + int(game.stats().gold_bonus)), 14, GOLD)
 		"door":
 			var key_kind := Keys.kind(entity)
@@ -822,7 +977,7 @@ func _pending_panel() -> void:
 			var enough := Keys.count(game.state.player, key_kind) >= int(entity.cost)
 			_button(box, "消耗 %d 把%s开门" % [int(entity.cost), Keys.key_name(key_kind)] if enough else Keys.key_name(key_kind) + "不足", func(): _act(game.confirm_interaction), not enough, "PrimaryButton")
 		else:
-			_button(box, "确认挑战", _fight, false, "DangerButton" if game.preview(cell).get("lethal", false) else "PrimaryButton")
+			_button(box, "确认挑战", _fight, false, "PrimaryButton")
 
 func _item_card(parent: Node, id: String, count: int = 1) -> void:
 	var item: Dictionary = game.db.item(id)
@@ -840,23 +995,59 @@ func _item_card(parent: Node, id: String, count: int = 1) -> void:
 	_text(copy, str(item.get("description", "")), 14, MUTED)
 
 func _fight() -> void:
-	if _transaction_pending():
+	if _transaction_pending() or not combat_context.is_empty():
 		return
-	var hp_before := int(game.state.player.hp)
-	var result: String = game.confirm_interaction()
-	if result == "confirm_lethal":
-		_confirm("这场战斗会死亡", "可以先去其他楼层变强，再回来。仍要挑战并结束本次探索吗？", func(): _act(func(): return game.confirm_interaction(true)))
-	else:
-		notice = result
+	var entity: Dictionary = game.entity_at(game.pending_cell())
+	if entity.get("type", "") != "enemy" or game.state.pending.is_empty():
+		return
+	combat_context = {"enemy":game.db.enemy(entity.enemy_id).duplicate(true), "enemy_id":str(entity.enemy_id)}
+	# The player chooses from the displayed facts; confirmation never reveals the outcome.
+	notice = game.confirm_interaction(true)
+	if not notice.is_empty() and not _transaction_pending():
+		combat_context = {}
+	_render(true)
+	_present_combat()
+
+func _present_combat() -> void:
+	if combat_context.is_empty() or _transaction_pending() or is_instance_valid(combat_view):
+		return
+	if game.state.last_report.is_empty():
+		combat_context = {}
 		_render(true)
-		if int(game.state.player.hp) < hp_before and not _transaction_pending():
-			audio.play(get_tree(), "hit", settings)
-			_flash_board(RED)
+		return
+	combat_context.report = game.state.last_report.duplicate(true)
+	combat_context.final_hp = int(game.state.player.hp)
+	combat_context.max_hp = int(game.stats().max_hp)
+	combat_context.run_ended = not game.active()
+	notice = ""
+	combat_view = CombatPresentation.new()
+	combat_view.configure(combat_context, settings.reduce_motion)
+	combat_view.dismissed.connect(_finish_combat)
+	combat_view.cue_requested.connect(func(cue: String): audio.play(get_tree(), cue, settings))
+	map_root.add_child(combat_view)
+	map_root.move_child(combat_view, save_error_panel.get_index())
+	_layout_map()
+	_set_map_input()
+
+func _finish_combat() -> void:
+	if is_instance_valid(combat_view):
+		map_root.remove_child(combat_view)
+		combat_view.queue_free()
+	combat_view = null
+	combat_context = {}
+	overlay_kind = ""
+	selected = game.position()
+	_render(true)
+	if overlay_kind == "":
+		_restore_focus.call_deferred(overview_button)
 
 func _select_cell(cell: Vector2i) -> void:
 	if _transaction_pending() or modal_open or overlay_kind != "" or not game.state.pending.is_empty():
 		return
 	selected = cell
+	if board.overview:
+		_open_overlay("target")
+		return
 	var delta: Vector2i = cell - game.position()
 	if game.active() and game.state.pending.is_empty() and absi(delta.x) + absi(delta.y) <= 1:
 		_act(func(): return game.interact(cell))
@@ -999,6 +1190,7 @@ func _retry_save() -> void:
 	else:
 		game.save_game()
 	_render(true)
+	_present_combat()
 
 func _save_preferences() -> void:
 	if not settings.write():
@@ -1023,7 +1215,7 @@ func _toggle_pin() -> void:
 		pins.erase(key)
 	else:
 		var entity: Dictionary = game.entity_at(selected)
-		pins[key] = {"name": str(entity.get("name", "目标")), "loss": int(game.preview(selected).get("loss", 0))}
+		pins[key] = {"name": str(entity.get("name", "目标"))}
 	_save_preferences()
 	_refresh_map()
 

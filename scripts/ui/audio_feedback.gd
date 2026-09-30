@@ -71,7 +71,7 @@ static func _tone(cue: String) -> AudioStreamWAV:
 			duration = 0.13
 			frequency = 82.0
 		"victory", "rescue", "midpoint":
-			duration = 0.5
+			duration = 0.85
 			frequency = 440.0
 		"echo", "echo_curse", "failure", "failure_1", "failure_2", "failure_3":
 			duration = 0.8
@@ -83,6 +83,16 @@ static func _tone(cue: String) -> AudioStreamWAV:
 		var t := float(i) / 22050.0
 		var envelope := sin(PI * float(i) / samples) * exp(-t * 4.0)
 		var value := sin(TAU * frequency * t + sin(t * 19.0) * 0.6) * envelope * 0.35
+		if cue == "victory":
+			# Rising major arpeggio with a gentle sustained final chord.
+			var notes := [523.25, 659.25, 783.99, 1046.5]
+			var note_index := mini(3, int(t / 0.14))
+			var local_time := t - note_index * 0.14
+			var attack := minf(1, local_time / 0.012)
+			value = sin(TAU * notes[note_index] * local_time) * attack * exp(-local_time * 4) * 0.3
+			if note_index == 3:
+				value += (sin(TAU * 659.25 * local_time) + sin(TAU * 783.99 * local_time)) * attack * exp(-local_time * 5) * 0.09
+			value *= clampf((duration - t) / 0.08, 0, 1)
 		data.encode_s16(i * 2, int(value * 32767))
 	var stream := AudioStreamWAV.new()
 	stream.format = AudioStreamWAV.FORMAT_16_BITS

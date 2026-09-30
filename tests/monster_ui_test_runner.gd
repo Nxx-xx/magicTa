@@ -74,8 +74,19 @@ func _run() -> void:
 		var text := _labels(details)
 		_check(text.contains(str(enemy.name)) and text.contains(Enemies.classification(enemy)), "name and rank visible: " + str(enemy.id))
 		_check(text.contains(str(enemy.combat_hint)) and text.contains("击杀奖励：%d 金币" % int(enemy.gold_reward)), "tactics and independent reward visible: " + str(enemy.id))
+		_check(text.contains("敌方：生命 %d / 攻击 %d / 防御 %d" % [enemy.hp, enemy.attack, enemy.defense]) and text.contains("我方：生命"), "both sides visible: " + str(enemy.id))
+		_check(not text.contains("会死亡") and not text.contains("预计净") and not text.contains("战中最低生命") and not text.contains("实际受伤"), "details do not reveal outcome: " + str(enemy.id))
+		screen.selected = cell
+		screen._refresh_summary()
+		var summary: String = screen.detail_copy.text
+		var tint: Color = screen.detail_copy.get_theme_color("font_color")
+		var hp: int = screen.game.state.player.hp
+		screen.game.state.player.hp = 1
+		screen._refresh_summary()
+		_check(screen.detail_copy.text == summary and screen.detail_copy.get_theme_color("font_color") == tint, "summary does not signal survival: " + str(enemy.id))
+		screen.game.state.player.hp = hp
 		if enemy.id == "knight":
-			_check(text.contains("回溯守卫") and text.contains("会死亡"), "return guard can be recognized without color")
+			_check(text.contains("回溯守卫"), "return guard can be recognized without color")
 		if not str(enemy.ability_id).is_empty():
 			_check(text.contains(str(enemy.description)), "boss mechanic visible: " + str(enemy.id))
 		details.free()

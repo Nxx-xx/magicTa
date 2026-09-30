@@ -84,7 +84,7 @@ func _run() -> void:
 			screen._finish_story()
 		await _frames()
 		_check(screen.overlay_kind == "", "skip clears story queue")
-		_check(screen.board.size.x == screen.board.size.y, "square board")
+		_check(screen.board.size.y >= screen.size.y * 0.65, "map occupies most of the viewport")
 		_check(screen.controls.get_global_rect().end.y <= screen.size.y + 1, "controls fit")
 		await _capture("map_%dx%d" % [dimensions.x, dimensions.y])
 		for cell in screen.game.floor_data().entities:
@@ -129,7 +129,7 @@ func _run() -> void:
 		screen.game.save_error = ""
 		screen.game.state.completed = true
 		screen.game.state.result = "victory"
-		screen.game.state.last_message = "王子打开了内部的锁。公主与王子一起离开魔塔。"
+		screen.game.state.last_message = "魔王已被击败。王子却熄灭归途灯，从背后刺穿公主，显露怪物真身，宣称自己将成为这个国家的主宰。"
 		screen._refresh_map()
 		await _frames()
 		_check(screen.overlay_kind == "result", "victory sheet")
@@ -181,9 +181,14 @@ func _run() -> void:
 			break
 	screen.game.state.player.hp = 1
 	screen.game.interact(target)
-	screen._act(func(): return screen.game.confirm_interaction(true))
+	screen._fight()
 	await _frames()
+	_check(not screen.modal_open, "campaign challenge resolves without outcome warning")
 	_check(screen.game.state.result == "death" and screen.game.meta.failure_count == 1, "real fatal combat settles once")
+	_check(is_instance_valid(screen.combat_view), "fatal combat plays before story")
+	screen.combat_view.settle()
+	screen.combat_view.primary.pressed.emit()
+	await _frames()
 	_check(screen.overlay_kind == "story" and screen.audio.last_cue.begins_with("echo"), "failure story plays its first cue")
 	if ResourceLoader.exists("res://assets/audio/phase2/prince_cry_1.wav"):
 		_check(is_instance_valid(screen.audio.player) and screen.audio.player.stream.resource_path.ends_with("prince_cry_1.wav"), "first failure uses imported synthetic voice")
@@ -198,11 +203,21 @@ func _run() -> void:
 	screen.page = "menu"
 	screen._render(true)
 	await _frames()
+	_check(not screen.seed_input.is_visible_in_tree(), "camp hides optional seed until requested")
+	var upgrade_section: Node = screen.body.get_node("Camp_upgrades")
+	var upgrade_content: Node = upgrade_section.find_child("Content", true, false)
+	_check(not upgrade_content.is_visible_in_tree(), "camp upgrade summary starts collapsed")
+	for button in upgrade_section.find_children("*", "Button", true, false):
+		if button.text.begins_with("归途火种"):
+			button.pressed.emit()
+			break
+	_check(upgrade_content.is_visible_in_tree(), "camp upgrade header reveals purchase controls")
 	for button in screen.body.find_children("*", "Button", true, false):
 		if button.text.begins_with("消耗 8 灵魂"):
 			button.pressed.emit()
 			break
 	_check(screen.game.meta.upgrades.hp == 1 and screen.game.meta.souls == 24, "purchase button buys one level")
+	_check(screen.body.get_node("Camp_upgrades").find_child("Content", true, false).is_visible_in_tree(), "purchase refresh preserves expanded upgrade section")
 	_check(screen.game.state.player.hp == 100 and screen.game.state.player.max_hp == 100, "camp upgrade during trial leaves trial stats unchanged")
 	for button in screen.body.find_children("*", "Button", true, false):
 		if button.text.begins_with("免费重置"):

@@ -1,9 +1,9 @@
 extends RefCounted
 ## Campaign-specific sheets use the host's established accessible widgets.
 const Art = preload("res://scripts/ui/runtime_art.gd")
-const Combat = preload("res://scripts/core/combat.gd")
 const Progress = preload("res://scripts/core/campaign_progress.gd")
 const Board = preload("res://scripts/ui/grid_board.gd")
+const ENDING_REVEAL := "res://assets/story/phase2/prince_monster_reveal_v01.png"
 
 static func story(ui, event: Dictionary) -> void:
 	var lines: Array = event.get("lines", [])
@@ -12,26 +12,30 @@ static func story(ui, event: Dictionary) -> void:
 		return
 	var line: Dictionary = lines[mini(ui.story_line, lines.size() - 1)]
 	var speaker := str(line.get("speaker", "旁白"))
-	var path := ""
-	if "公主" in speaker:
-		path = "res://assets/characters/hero/dialogue/textures/hero_dialogue_neutral_v01.png"
-	elif "王子" in speaker:
-		path = "res://assets/story/phase2/prince_dialogue.png"
-	elif "魔王" in speaker:
-		path = "res://assets/story/phase2/demon_dialogue.png"
+	var path := str(line.get("illustration", ""))
+	if path.is_empty():
+		if "公主" in speaker:
+			path = "res://assets/characters/hero/dialogue/textures/hero_dialogue_neutral_v01.png"
+		elif "王子" in speaker:
+			path = "res://assets/story/phase2/prince_dialogue.png"
+		elif "魔王" in speaker:
+			path = "res://assets/story/phase2/demon_dialogue.png"
+	_illustration(ui, path, line.has("illustration"))
+	ui._text(ui.body, "%s  ·  %d / %d" % [speaker, ui.story_line + 1, lines.size()], 17, ui.GOLD)
+	ui._text(ui.body, str(line.get("text", "")), 19)
+	if event.get("static_summary", false):
+		ui._text(ui.body, "上次旅程的回声 · 仅回顾，不重复结算", 13, ui.MUTED)
+
+static func _illustration(ui, path: String, scene: bool = false) -> void:
 	var texture: Texture2D = Art.texture(path) if not path.is_empty() else null
 	if texture != null:
 		var portrait := TextureRect.new()
 		portrait.texture = texture
 		portrait.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 		portrait.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
-		portrait.custom_minimum_size.y = 160 if ui.compact else 300
+		portrait.custom_minimum_size.y = (200 if ui.compact else 340) if scene else (160 if ui.compact else 300)
 		portrait.mouse_filter = Control.MOUSE_FILTER_IGNORE
 		ui.body.add_child(portrait)
-	ui._text(ui.body, "%s  ·  %d / %d" % [speaker, ui.story_line + 1, lines.size()], 17, ui.GOLD)
-	ui._text(ui.body, str(line.get("text", "")), 19)
-	if event.get("static_summary", false):
-		ui._text(ui.body, "上次旅程的回声 · 仅回顾，不重复结算", 13, ui.MUTED)
 
 static func floor_index(ui) -> void:
 	ui._text(ui.body, "登上第十层，击败魔王并救出王子。" if ui._is_campaign() else "取得王权指环，完成两层回溯试炼。", 17, ui.GOLD)
@@ -67,8 +71,8 @@ static func floor_index(ui) -> void:
 			if not entity.is_empty():
 				copy = "尚未领取"
 				if entity.get("type", "") == "enemy":
-					var report := Combat.simulate(ui.game.state.player, ui.game.db.enemy(entity.enemy_id), ui.game.stats())
-					copy = "当前致死" if report.lethal else "损失 %d → %d HP" % [int(pin.get("loss", report.loss)), int(report.loss)]
+					var enemy: Dictionary = ui.game.db.enemy(entity.enemy_id)
+					copy = "生命 %d · 攻击 %d · 防御 %d" % [enemy.hp, enemy.attack, enemy.defense]
 			ui._text(card, "◆ %s (%s) · %s" % [pin.get("name", "目标"), key, copy], 14, ui.TEAL)
 		ui._button(card, "查看本层地图" if ui.index_floor != number else "收起地图", func():
 			ui.index_floor = -1 if ui.index_floor == number else number
@@ -85,16 +89,9 @@ static func floor_index(ui) -> void:
 
 static func result(ui) -> void:
 	var result_id := str(ui.game.state.get("result", "death"))
-	ui.overlay_title.text = {"victory":"营救成功 · 一起回家", "death":"归途灯亮了", "abandoned":"旅程已结束"}.get(result_id, "旅程回顾")
+	ui.overlay_title.text = {"victory":"终章 · 新的主宰", "death":"归途灯亮了", "abandoned":"旅程已结束"}.get(result_id, "旅程回顾")
 	if result_id == "victory":
-		var texture := Art.texture("res://assets/story/phase2/rescue_ending.png")
-		if texture != null:
-			var illustration := TextureRect.new()
-			illustration.texture = texture
-			illustration.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-			illustration.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
-			illustration.custom_minimum_size.y = 140 if ui.compact else 240
-			ui.body.add_child(illustration)
+		_illustration(ui, ENDING_REVEAL, true)
 	ui._text(ui.body, str(ui.game.state.last_message), 17, ui.TEAL)
 	var settlement: Dictionary = ui.game.state.get("settlement", {})
 	if not settlement.is_empty():
@@ -120,12 +117,9 @@ static func result(ui) -> void:
 
 static func upgrades(ui) -> void:
 	var meta: Dictionary = ui.game.meta
-	var card = ui._panel(ui.body)
-	ui._text(card, "归途火种 · 灵魂 %d" % meta.get("souls", 0), 21, ui.GOLD)
-	ui._text(card, "旅程结束后可调整，下一次十层旅程生效。两层试炼不应用火种。", 14, ui.MUTED)
-	ui._text(card, "王子回声记录 %d 次 · 营救成功 %d 次" % [meta.get("failure_count", 0), meta.get("wins", 0)], 14, ui.TEAL)
 	var initial: Dictionary = Progress.initial_player(meta)
-	ui._text(card, "下次出发：生命 %d · 攻击 %d · 防御 %d · 金币 %d" % [initial.hp, initial.attack, initial.defense, initial.gold], 14)
+	var card = ui._camp_section("upgrades", "归途火种 · 灵魂 %d" % meta.get("souls", 0), "下次出发：生命 %d · 攻击 %d · 防御 %d · 金币 %d" % [initial.hp, initial.attack, initial.defense, initial.gold])
+	ui._text(card, "旅程结束后可调整，下一次十层旅程生效。两层试炼不应用火种。", 14, ui.MUTED)
 	var blocked: bool = (ui._is_campaign() and ui.game.active()) or ui._transaction_pending()
 	if ui._is_campaign() and ui.game.active():
 		ui._text(card, "本局进行中，结束后可购买或重置。", 14, ui.GOLD)
@@ -146,17 +140,26 @@ static func upgrades(ui) -> void:
 			ui._render(true)
 		)
 	, blocked or refund == 0)
+
+static func records(ui) -> void:
+	var meta: Dictionary = ui.game.meta
+	var card = ui._camp_section("records", "旅程记录", "通关 %d 次 · 王子回声 %d 次" % [meta.get("wins", 0), meta.get("failure_count", 0)])
+	if not ui.game.state.is_empty() and not ui.game.active():
+		ui._button(card, "查看上次探索", ui._open_map)
 	var records: Array = meta.get("records", [])
-	if not records.is_empty():
+	if records.is_empty():
+		ui._text(card, "暂无已结束的十层旅程。出发营救后，在这里回顾你的足迹。", 14, ui.MUTED)
+	else:
 		ui._text(card, "最近旅程", 17, ui.GOLD)
 		for index in range(records.size() - 1, maxi(-1, records.size() - 6), -1):
 			var record: Dictionary = records[index]
-			var label: String = {"victory":"营救成功", "death":"战败归营", "abandoned":"主动放弃"}.get(str(record.get("result", "")), "旅程结束")
+			var label: String = {"victory":"已通关", "death":"战败归营", "abandoned":"主动放弃"}.get(str(record.get("result", "")), "旅程结束")
 			ui._text(card, "%s · 第 %d 层 · 灵魂 +%d\n种子 %s" % [label, record.get("floor", 1), record.get("souls", 0), record.get("seed", "")], 13, ui.MUTED)
 
-static func settings(ui, parent: Node) -> void:
-	var card = ui._panel(parent)
-	ui._text(card, "声音与显示", 19, ui.GOLD)
+static func settings(ui, parent: Node, collapsible: bool = false) -> void:
+	var card = ui._camp_section("settings", "声音与显示", "音量 · 语音 · 动效偏好") if collapsible else ui._panel(parent)
+	if not collapsible:
+		ui._text(card, "声音与显示", 19, ui.GOLD)
 	_toggle(ui, card, "全部静音", "muted")
 	_toggle(ui, card, "播放受罚语音", "punishment_voice")
 	_toggle(ui, card, "减少动效", "reduce_motion")

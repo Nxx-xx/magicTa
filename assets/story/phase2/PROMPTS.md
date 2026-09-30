@@ -1,5 +1,13 @@
 # 第二阶段剧情素材提示词
 
+## 王子怪物揭露 prince_monster_reveal_v01.png
+
+生成于 2026-09-30，使用 Codex 内置 image_gen。参考输入：`prince_dialogue.png`（身份与服装）、`rescue_ending.png`（画风与环境）。输出为独立新场景，未覆盖参考图。最终完整提示词：
+
+Use case: illustration-story. Asset type: final monster-reveal cutscene illustration for the fantasy RPG Tower Realm, landscape 1536x1024. Input image 1 is the exact ADULT prince identity and costume reference; image 2 is a rendering-style and dawn/tower environment reference, not a composition to copy. Create a NEW single cohesive scene revealing that this SAME blond prince has transformed into a monstrous usurper. Preserve recognizable tousled honey-blond hair, facial structure, small antique-gold circlet, navy and ivory high-collared royal coat, ornate gold embroidery and brass clasps. His body is now larger and imposing but still fully clothed in that recognizable royal costume; two sweeping black horns grow from his forehead around the displaced circlet, charcoal scale-like skin and branching black magical markings spread across his face and neck, eyes glow amber, both hands have long unmistakable dark claws. His expression is a cold triumphant sneer, not a roaring animal. Give the face enough remaining human identity that the betrayal is recognizable. Frame him from horns to below knees in the center, low camera angle, complete horns and both claw hands fully in frame with generous margins, very readable at small mobile size. One hand lifted slightly, the other lowered and visibly clawed; no sword needed. He stands on the ruined stone tower summit beside broken prison chains; an extinguished brass lantern lies in the foreground. Through a broken stone arch behind him, a distant royal city is bathed in pale gold sunrise. Cool teal and charcoal foreground, refined antique-gold highlights, menacing shadow contrasting the apparently peaceful dawn. Match the references' polished hand-painted Japanese fantasy game illustration, dimensional fabric, delicate linework, detailed yet readable silhouette. Full painted background, no transparency. Focus on the transformed prince only: no other figures, no heroine, no corpse, no blood, no injury detail, no sexual content. No captions, letters, UI, frame, logo or watermark. This is a final reveal still, not a multi-panel or before-and-after collage.
+
+原始输出：`generated_images/01a0f050-5c3d-7a93-8f52-4a85b9b59340/exec-e6db61c4-9af4-4102-b202-8361d59f2c15.png`。已原样复制至本目录，未另行裁剪或加工。
+
 生成：Codex 内置 image_gen，2026-09-29。参考现有主角立绘作为画风输入。角色为成年人，原始 PNG 保留 alpha，不重绘或替换既有主角。
 
 ## 营救结尾 rescue_ending.png

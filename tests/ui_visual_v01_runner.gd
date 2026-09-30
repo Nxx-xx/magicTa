@@ -128,13 +128,15 @@ func _visual_states() -> void:
 		await _capture("inventory_" + suffix)
 		screen._close_overlay()
 		_fixture(screen, {"type": "enemy", "name": "骑士", "enemy_id": "knight"})
-		screen._fight()
+		# General confirmation dialogs still need focus/layout coverage; encounters
+		# now resolve after the single challenge button without forecasting defeat.
+		screen._confirm("返回营地", "是否返回营地？", func(): pass)
 		await _frames()
 		var dialog: ConfirmationDialog
 		for child in screen.get_children():
 			if child is ConfirmationDialog:
 				dialog = child
-		_check(is_instance_valid(dialog) and screen.modal_open, "lethal dialog exists " + suffix)
+		_check(is_instance_valid(dialog) and screen.modal_open, "confirmation dialog exists " + suffix)
 		if is_instance_valid(dialog):
 			_check(dialog.get_cancel_button().has_focus(), "dialog defaults to cancel " + suffix)
 			_check(dialog.size.x <= dimensions.x and dialog.size.y <= dimensions.y, "dialog fits window " + suffix)
@@ -175,6 +177,9 @@ func _visual_states() -> void:
 		_button_named(screen.hud, "营地").pressed.emit()
 		await _frames()
 		await _capture("menu_" + suffix)
+		if not screen.seed_input.is_visible_in_tree():
+			_button_named(screen.body, "出发选项").pressed.emit()
+		_check(screen.seed_input.is_visible_in_tree(), "departure options expose seed " + suffix)
 		screen.seed_input.text = "84"
 		_button_named(screen.body, "开始两层地图试炼").pressed.emit()
 		await _frames()
