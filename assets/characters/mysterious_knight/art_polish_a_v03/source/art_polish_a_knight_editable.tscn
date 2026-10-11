@@ -1,0 +1,82 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" path="res://assets/characters/mysterious_knight/art_polish_a_v03/source/art_polish_a_Cape.res" id="1_ijstn"]
+[ext_resource type="Texture2D" path="res://assets/characters/mysterious_knight/art_polish_a_v03/source/art_polish_a_BodySwordHandsFeet.res" id="2_56fln"]
+[ext_resource type="Texture2D" path="res://assets/characters/mysterious_knight/art_polish_a_v03/source/art_polish_a_Head.res" id="3_y54yv"]
+
+[sub_resource type="Animation" id="Animation_q3j4l"]
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Head:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875, 1, 1.125, 1.25, 1.375, 1.5, 1.625, 1.75, 1.875, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.0034441508912858077, 0.006363961030678927, 0.00831491579260158, 0.009, 0.00831491579260158, 0.006363961030678928, 0.0034441508912858086, 1.1021457184401395e-18, -0.003444150891285807, -0.006363961030678927, -0.008314915792601577, -0.009, -0.008314915792601579, -0.006363961030678929, -0.0034441508912858134, -2.204291436880279e-18]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Cape:skew")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875, 1, 1.125, 1.25, 1.375, 1.5, 1.625, 1.75, 1.875, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, -0.0009134456098645592, -0.0035147186257614292, -0.007407798811618922, -0.011999999999999999, -0.016592201188381075, -0.020485281374238568, -0.02308655439013544, -0.024, -0.023086554390135443, -0.02048528137423857, -0.016592201188381082, -0.012000000000000004, -0.00740779881161892, -0.003514718625761432, -0.0009134456098645618, 0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Cape:scale:x")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875, 1, 1.125, 1.25, 1.375, 1.5, 1.625, 1.75, 1.875, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [1.0, 1.003444150891286, 1.006363961030679, 1.0083149157926017, 1.009, 1.0083149157926017, 1.006363961030679, 1.003444150891286, 1.0, 0.9965558491087142, 0.9936360389693211, 0.9916850842073984, 0.991, 0.9916850842073984, 0.9936360389693211, 0.9965558491087142, 1.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_6smyy"]
+_data = {
+&"idle": SubResource("Animation_q3j4l")
+}
+
+[node name="ArtPolishAKnight" type="Node2D" unique_id=1416805693]
+
+[node name="Cape" type="Node2D" parent="." unique_id=1849461083]
+position = Vector2(256, 151)
+
+[node name="Paint" type="Sprite2D" parent="Cape" unique_id=495047355]
+position = Vector2(-99, -8)
+scale = Vector2(0.37, 0.47)
+texture = ExtResource("1_ijstn")
+centered = false
+
+[node name="BodySwordHandsFeet" type="Node2D" parent="." unique_id=349851064]
+
+[node name="Paint" type="Sprite2D" parent="BodySwordHandsFeet" unique_id=791968416]
+position = Vector2(174, 136)
+scale = Vector2(0.45, 0.446)
+texture = ExtResource("2_56fln")
+centered = false
+
+[node name="Head" type="Node2D" parent="." unique_id=334483952]
+position = Vector2(256, 157)
+
+[node name="Paint" type="Sprite2D" parent="Head" unique_id=950319973]
+position = Vector2(-60, -135)
+scale = Vector2(0.34, 0.34)
+texture = ExtResource("3_y54yv")
+centered = false
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=2004368855]
+libraries/ = SubResource("AnimationLibrary_6smyy")
+autoplay = &"idle"

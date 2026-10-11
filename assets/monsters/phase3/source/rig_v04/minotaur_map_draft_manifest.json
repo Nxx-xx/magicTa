@@ -1,0 +1,68 @@
+{
+	"actions": {
+		"idle": {
+			"events": {},
+			"fps": 6.0,
+			"frames": [
+				"minotaur_map_frames/idle/00.png",
+				"minotaur_map_frames/idle/01.png",
+				"minotaur_map_frames/idle/02.png",
+				"minotaur_map_frames/idle/03.png"
+			],
+			"loop": true,
+			"metrics": [
+				{
+					"bounds": [
+						68,
+						34,
+						117,
+						184
+					],
+					"edge_touch": false,
+					"frame": 0
+				},
+				{
+					"bounds": [
+						67,
+						33,
+						118,
+						185
+					],
+					"edge_touch": false,
+					"frame": 1
+				},
+				{
+					"bounds": [
+						67,
+						33,
+						118,
+						185
+					],
+					"edge_touch": false,
+					"frame": 2
+				},
+				{
+					"bounds": [
+						68,
+						34,
+						117,
+						184
+					],
+					"edge_touch": false,
+					"frame": 3
+				}
+			],
+			"pose_holds": {}
+		}
+	},
+	"anchor": [
+		128.0,
+		224.0
+	],
+	"size": [
+		256.0,
+		256.0
+	],
+	"source": "res://assets/monsters/phase3/source/rig_v04/minotaur_map_rig.json",
+	"status": "draft"
+}

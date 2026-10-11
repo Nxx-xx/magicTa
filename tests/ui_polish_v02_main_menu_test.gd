@@ -1,0 +1,173 @@
+extends SceneTree
+const Screen = preload("res://scripts/ui/map_screen.gd")
+const Core = preload("res://scripts/core/campaign_engine.gd")
+const Contract = preload("res://scripts/core/phase3_contract.gd")
+const OUT := "res://build/verification/ui-polish-v02/"
+var failures := 0
+var checks := 0
+var capture := false
+
+class RejectStore:
+	extends RefCounted
+	var last_error := "test return-to-camp save failure"
+	func write(_state: Dictionary, _meta: Dictionary) -> bool: return false
+
+func confirm(ui) -> void:
+	for child in ui.get_children():
+		if child is ConfirmationDialog and not child.is_queued_for_deletion():
+			child.confirmed.emit()
+			return
+
+func _initialize() -> void: _run.call_deferred()
+
+func check(ok: bool, label: String) -> void:
+	checks += 1
+	if not ok:
+		failures += 1
+		push_error("FAIL " + label)
+
+func frames() -> void:
+	for i in 8: await process_frame
+
+func shot(label: String) -> void:
+	if not capture: return
+	await RenderingServer.frame_post_draw
+	check(root.get_texture().get_image().save_png(OUT + label + ".png") == OK, "capture " + label)
+
+func _run() -> void:
+	if not ProjectSettings.globalize_path("user://").replace("\\", "/").contains("phase3/08-parallel/ui-polish-v02/"):
+		quit(2)
+		return
+	DirAccess.make_dir_recursive_absolute(OUT)
+	capture = "--capture" in OS.get_cmdline_user_args()
+	root.min_size = Vector2i(320, 640)
+	for dimensions in [Vector2i(360,640), Vector2i(540,960), Vector2i(900,960), Vector2i(320,640)]:
+		root.size = dimensions
+		var ui = Screen.new()
+		var save_path := "user://menu_%d_%d.json" % [dimensions.x, Time.get_ticks_usec()]
+		ui.game = Core.new(save_path)
+		root.add_child(ui)
+		ui.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+		await frames()
+		ui.settings.muted = true
+		check(ui.page == "title" and ui.find_child("MainMenu",true,false) != null, "startup shows main menu")
+		check(ui.find_child("TitleIllustration",true,false).texture != null, "illustration imported")
+		check(ui.find_child("ContinueGame",true,false).disabled, "empty save disables continue")
+		check(ui.scroll.get_h_scroll_bar().max_value <= ui.scroll.size.x + 1, "no horizontal overflow")
+		check(ui.scroll.get_v_scroll_bar().max_value <= ui.scroll.size.y + 1, "all main menu actions fit")
+		await shot("title_%d" % dimensions.x)
+		for section in ["records", "settings", "codex"]:
+			ui._open_section(section)
+			await frames()
+			check(ui.page == section and ui.find_child("CampMap",true,false) == null, "secondary page isolates " + section)
+			check(ui.scroll.get_h_scroll_bar().max_value <= ui.scroll.size.x + 1, "secondary fits " + section)
+			if dimensions.x == 540: await shot(section)
+			ui._back_section()
+			await frames()
+			check(ui.page == "title", "secondary returns to title")
+		ui.find_child("StartGame",true,false).pressed.emit()
+		await frames()
+		check(ui.page == "menu" and ui.camp_view.is_empty() and ui.game.state.is_empty(), "start opens camp without mutating run")
+		check(is_instance_valid(ui.camp_map), "start shows walkable camp map")
+		check(ui.find_child("CampHome",true,false).size.x >= 84, "camp home label has usable width")
+		for removed in ["Camp_records", "Camp_guide", "Camp_settings"]:
+			check(ui.find_child(removed,true,false) == null, "camp has no expanded section " + removed)
+		ui._open_section("records")
+		ui._back_section()
+		await frames()
+		check(ui.page == "menu" and is_instance_valid(ui.camp_map), "secondary returns to originating camp")
+		if dimensions.x == 540: await shot("camp")
+		ui._start_phase3("MENU-RESUME")
+		await frames()
+		var before: Dictionary = ui.game.state.duplicate(true)
+		var resumed = Core.new(save_path)
+		resumed.load_game()
+		check(resumed.active() and resumed.state.run_id == before.run_id, "current journey reloads from disk")
+		ui._show_title()
+		await frames()
+		check(not ui.find_child("ContinueGame",true,false).disabled, "active run enables continue")
+		ui.find_child("ContinueGame",true,false).pressed.emit()
+		await frames()
+		check(ui.page == "map" and ui.overlay_kind == "story", "continue preserves pending story")
+		check(Contract.same_json(before, ui.game.state), "continue does not replace saved run")
+		ui._show_title()
+		ui.find_child("StartGame",true,false).pressed.emit()
+		await frames()
+		check(ui.page == "title" and ui.modal_open, "new game confirms ending active journey")
+		check(Contract.same_json(before, ui.game.state), "new game preserves journey until confirmed")
+		await frames()
+		for child in ui.get_children():
+			if child is ConfirmationDialog:
+				check(child.get_label().get_line_count() > 3, "confirmation body wraps")
+				var original_lines: int = child.get_label().get_line_count()
+				child.dialog_text += "\n" + "1234567890".repeat(8)
+				await frames()
+				check(child.get_label().get_line_count() >= original_lines + 2, "80 digits add multiple visible lines")
+				root.size = Vector2i(320, 640)
+				await frames()
+				check(child.position.x >= 0 and child.position.x + child.size.x <= root.size.x, "open confirmation fits after window narrows")
+				check(child.get_label().get_visible_line_count() == child.get_label().get_line_count(), "confirmation text fully visible")
+				check(child.get_label().get_rect().end.y <= child.get_ok_button().get_global_rect().position.y, "wrapped text stays above confirmation buttons")
+				child.canceled.emit()
+		root.size = dimensions
+		await frames()
+		check(not ui.modal_open and Contract.same_json(before, ui.game.state), "cancel keeps existing run")
+		ui.find_child("StartGame",true,false).pressed.emit()
+		confirm(ui)
+		await frames()
+		check(ui.page == "menu" and not ui.game.active() and ui.game.state.result == "abandoned", "new game ends old run before camp preparation")
+		var ended = Core.new(save_path)
+		ended.load_game()
+		check(not ended.active() and ended.state.result == "abandoned", "ended journey cannot resume after reload")
+		ui._camp_interact("tower")
+		ui.find_child("CampStartJourney",true,false).pressed.emit()
+		await frames()
+		check(ui.game.active() and ui.game.state.run_id != before.run_id and ui.game.state.seed != before.seed, "departure generates a fresh journey and seed")
+		check(ui.game.state.floor == 1 and ui.game.state.floors.size() == 1 and ui.game.state.defeated_entities.is_empty(), "new tower starts at first floor with no old kills")
+		while not ui.game.story_event().is_empty(): ui.game.acknowledge_story()
+		ui._render(true)
+		await frames()
+		var active: Dictionary = ui.game.state.duplicate(true)
+		ui.find_child("ReturnToCamp",true,false).pressed.emit()
+		check(ui.modal_open and Contract.same_json(active, ui.game.state), "map return asks before ending journey")
+		for child in ui.get_children():
+			if child is ConfirmationDialog and not child.is_queued_for_deletion(): child.canceled.emit()
+		await frames()
+		check(ui.game.active() and ui.page == "map", "cancel return keeps exploring")
+		# Explicit funded-account fixture verifies growth after a failed return save.
+		ui.game.meta.souls = 16
+		ui.game.meta.souls_earned_total = 16
+		check(ui.game.save_game(), "funded return fixture saved")
+		var original_store = ui.game.store
+		var runs_before := int(ui.game.meta.runs)
+		ui.game.store = RejectStore.new()
+		ui.find_child("ReturnToCamp",true,false).pressed.emit()
+		confirm(ui)
+		await frames()
+		check(ui.game.transaction_pending and ui.page == "map" and ui.game.meta.runs == runs_before, "failed return save retains committed journey and blocks camp")
+		ui.game.store = original_store
+		ui._retry_save()
+		await frames()
+		check(ui.page == "menu" and not ui.game.active() and ui.game.meta.runs == runs_before+1, "retry completes return and settles exactly once")
+		check(ui.game.meta.souls == 16 and ui.game.state.settlement.souls == 0, "voluntary return preserves banked souls without awarding run souls")
+		ui._camp_interact("knight")
+		ui.camp_view = "growth"
+		ui._render(true)
+		ui.find_child("GrowthNode_attack_1",true,false).pressed.emit()
+		check(not ui.find_child("GrowthDetail",true,false)._action.disabled, "returned player can light knight ember")
+		ui._camp_purchase("attack")
+		check(ui.game.meta.upgrades.attack == 1 and ui.game.meta.souls == 8, "ember purchase succeeds after returning")
+		ui._show_title()
+		check(ui.find_child("ContinueGame",true,false).disabled, "returned run is not offered for continuation")
+		ui.game.transaction_pending = true
+		ui.game.save_error = "测试保存失败"
+		ui._show_title()
+		await frames()
+		check(ui.find_child("StartGame",true,false).disabled, "save failure blocks new run")
+		ui.game.transaction_pending = false
+		ui.game.save_error = ""
+		root.remove_child(ui)
+		ui.free()
+		await frames()
+	print("Main menu: %d checks, %d failures" % [checks, failures])
+	quit(1 if failures else 0)

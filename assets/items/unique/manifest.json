@@ -1,0 +1,510 @@
+{
+  "assets": [
+    {
+      "icon": "res://assets/items/unique/icons/iron_sword.png",
+      "icon_sha256": "ac9aba98d038049d9d4aae9d514c26954ddf4ee33a2036ab9543fdd1bf43f26f",
+      "id": "iron_sword",
+      "kind": "equipment",
+      "name": "铁剑",
+      "retained": false,
+      "runtime_size": 128,
+      "safe_edge": 14,
+      "source": "res://assets/items/source/painted_v02/iron_sword.png",
+      "source_bounds": [
+        80,
+        33,
+        1142,
+        1185
+      ],
+      "source_sha256": "81fc6bfd9d78a06b20a431bd8885323e0e36fcf2541d0bca6d5614702b644891"
+    },
+    {
+      "icon": "res://assets/items/unique/icons/iron_armor.png",
+      "icon_sha256": "a96347208204324d0e531db5a4e6adcdc67de34e35ff95d8cd74f6e33f31cfe2",
+      "id": "iron_armor",
+      "kind": "equipment",
+      "name": "铁甲",
+      "retained": false,
+      "runtime_size": 128,
+      "safe_edge": 14,
+      "source": "res://assets/items/source/painted_v02/iron_armor.png",
+      "source_bounds": [
+        0,
+        51,
+        1234,
+        1177
+      ],
+      "source_sha256": "92c376288a891eaa4f5fec0e7104cf2009ab1c1fc7160b2c1bf8abee79910692"
+    },
+    {
+      "icon": "res://assets/items/unique/icons/hunter_bow.png",
+      "icon_sha256": "dc6fe3c40f609e050f1c84689c2d02f71b969db32edcf5a5ab3aa18bbcb7c7e9",
+      "id": "hunter_bow",
+      "kind": "equipment",
+      "name": "猎人长弓",
+      "retained": false,
+      "runtime_size": 128,
+      "safe_edge": 14,
+      "source": "res://assets/items/source/painted_v02/hunter_bow.png",
+      "source_bounds": [
+        97,
+        15,
+        1113,
+        1224
+      ],
+      "source_sha256": "eb39b52014ab22d283293a92f349641bdfb2461757798d0d012e2e1da2fcab43"
+    },
+    {
+      "icon": "res://assets/items/unique/icons/tower_shield.png",
+      "icon_sha256": "c0c7c6efffd31246e04599054a1337f6b8eb07bf8786f44789a4601e5efc5d0d",
+      "id": "tower_shield",
+      "kind": "equipment",
+      "name": "塔盾",
+      "retained": false,
+      "runtime_size": 128,
+      "safe_edge": 14,
+      "source": "res://assets/items/source/painted_v02/tower_shield.png",
+      "source_bounds": [
+        146,
+        15,
+        852,
+        1221
+      ],
+      "source_sha256": "b3ff5a9beb0e92c72f42182dcb2d86c86508500007c4fbb36e79641359571a5c"
+    },
+    {
+      "icon": "res://assets/items/unique/icons/heart_pendant.png",
+      "icon_sha256": "a7bdc6ead9575fc9396af1267e2f28ff53067d2664efdee623ac6382a041373c",
+      "id": "heart_pendant",
+      "kind": "equipment",
+      "name": "生命吊坠",
+      "retained": false,
+      "runtime_size": 128,
+      "safe_edge": 14,
+      "source": "res://assets/items/source/painted_v02/heart_pendant.png",
+      "source_bounds": [
+        91,
+        32,
+        1119,
+        1182
+      ],
+      "source_sha256": "42dd284d560862ee175cad8a89a7cdbaee89edb1843f0176fb77b2b112544aa8"
+    },
+    {
+      "icon": "res://assets/items/unique/icons/duelist_gloves.png",
+      "icon_sha256": "5dffbbc6c5cfafc2eecb25013f1c4824ca40af41bd3663380b8f61feec333584",
+      "id": "duelist_gloves",
+      "kind": "equipment",
+      "name": "决斗手套",
+      "retained": false,
+      "runtime_size": 128,
+      "safe_edge": 14,
+      "source": "res://assets/items/source/painted_v02/duelist_gloves.png",
+      "source_bounds": [
+        97,
+        16,
+        1113,
+        1198
+      ],
+      "source_sha256": "2357164670154ed83c7bb1461d01490c7bbc0fed138596abb1dc86434c9cbd44"
+    },
+    {
+      "icon": "res://assets/items/unique/icons/steel_blade.png",
+      "icon_sha256": "25bb8b8cddceb87252b218b1227aa7bdb6180754636af937d915a530c440a9c1",
+      "id": "steel_blade",
+      "kind": "equipment",
+      "name": "淬钢刃",
+      "retained": false,
+      "runtime_size": 128,
+      "safe_edge": 14,
+      "source": "res://assets/items/source/painted_v02/steel_blade.png",
+      "source_bounds": [
+        35,
+        31,
+        1196,
+        1183
+      ],
+      "source_sha256": "ebcd495cc026e46fbac78fc4765df6b42781ab28c088f0366eacc46e732a0bde"
+    },
+    {
+      "icon": "res://assets/items/unique/icons/knight_plate.png",
+      "icon_sha256": "c75d5f91496c6e210ef41fa5a4788eb4bb1aaf95896993f919d097486ca96320",
+      "id": "knight_plate",
+      "kind": "equipment",
+      "name": "骑士板甲",
+      "retained": false,
+      "runtime_size": 128,
+      "safe_edge": 14,
+      "source": "res://assets/items/source/painted_v02/knight_plate.png",
+      "source_bounds": [
+        19,
+        21,
+        1217,
+        1207
+      ],
+      "source_sha256": "1ed258a008b3b7c1dfb021ebf1a16132bf5d7fd4e5b24bd0091f15e401d94c89"
+    },
+    {
+      "icon": "res://assets/items/unique/icons/vital_crown.png",
+      "icon_sha256": "0bac9398b52eaf29e3e65f493072c304278462e22b46522addc94b391709037e",
+      "id": "vital_crown",
+      "kind": "equipment",
+      "name": "翠玉冠",
+      "retained": false,
+      "runtime_size": 128,
+      "safe_edge": 14,
+      "source": "res://assets/items/source/painted_v02/vital_crown.png",
+      "source_bounds": [
+        0,
+        40,
+        1237,
+        1214
+      ],
+      "source_sha256": "0437d2bc0477ccf1a57fdcb03b454d5e520346f44b7e46ba24a1e34403efd16f"
+    },
+    {
+      "icon": "res://assets/items/unique/icons/dawn_spear.png",
+      "icon_sha256": "f002a83800a10faa694cac7bcf706a18d00903d7fcf5b2434d8514aed86b27ac",
+      "id": "dawn_spear",
+      "kind": "equipment",
+      "name": "破晓长枪",
+      "retained": false,
+      "runtime_size": 128,
+      "safe_edge": 14,
+      "source": "res://assets/items/source/painted_v02/dawn_spear.png",
+      "source_bounds": [
+        49,
+        41,
+        1160,
+        1169
+      ],
+      "source_sha256": "c6daecb45b1ad56899d43df10e11d91db0508d25b6f582f5234e917f250324d9"
+    },
+    {
+      "icon": "res://assets/items/unique/icons/obsidian_mail.png",
+      "icon_sha256": "84afbfcd554f22a8aa71067e7ff11fe61ad07f717184b2e4d0b36d035a3e5e03",
+      "id": "obsidian_mail",
+      "kind": "equipment",
+      "name": "黑曜战甲",
+      "retained": false,
+      "runtime_size": 128,
+      "safe_edge": 14,
+      "source": "res://assets/items/source/painted_v02/obsidian_mail.png",
+      "source_bounds": [
+        21,
+        16,
+        1200,
+        1222
+      ],
+      "source_sha256": "c8d10f2ca9134bef7effa1049663c3e507da53a072db2901fd21b6b04f20f50e"
+    },
+    {
+      "icon": "res://assets/items/unique/icons/sovereign_ring.png",
+      "icon_sha256": "b27e5a6b3f796099d13a77c8325972a455945889539263db02ad4cbe2e25096a",
+      "id": "sovereign_ring",
+      "kind": "equipment",
+      "name": "王权指环",
+      "retained": false,
+      "runtime_size": 128,
+      "safe_edge": 14,
+      "source": "res://assets/items/source/painted_v02/sovereign_ring.png",
+      "source_bounds": [
+        0,
+        22,
+        1240,
+        1203
+      ],
+      "source_sha256": "8b3a8deb1d96c37cabb7b05a7567a741c98195b15f1333e28366879a57fb0961"
+    },
+    {
+      "icon": "res://assets/items/unique/icons/blood_sword.png",
+      "icon_sha256": "195b2bea0068b7c90429e737e40b81e5c26afa21c304c19952f1d39df2a91b5a",
+      "id": "blood_sword",
+      "kind": "relic",
+      "name": "嗜血剑",
+      "retained": false,
+      "runtime_size": 128,
+      "safe_edge": 14,
+      "source": "res://assets/items/source/painted_v02/blood_sword.png",
+      "source_bounds": [
+        36,
+        47,
+        1187,
+        1168
+      ],
+      "source_sha256": "45620c337d382714c3771c24a74b3b99de17cb07ec95d6105f99544d514c1f1a"
+    },
+    {
+      "icon": "res://assets/items/unique/icons/gold_sword.png",
+      "icon_sha256": "8a342f90ab18301579e9ecc1001c3364aa632154ee7a3174a1bd6166a64a3bac",
+      "id": "gold_sword",
+      "kind": "relic",
+      "name": "黄金剑",
+      "retained": false,
+      "runtime_size": 128,
+      "safe_edge": 14,
+      "source": "res://assets/items/source/painted_v02/gold_sword.png",
+      "source_bounds": [
+        63,
+        33,
+        1153,
+        1213
+      ],
+      "source_sha256": "c6e01c4e64d9dc64899b825a2a889f4bc6ce62d22e4cd039fdd6cb1e5a2cc844"
+    },
+    {
+      "icon": "res://assets/items/unique/icons/wolf_fang.png",
+      "icon_sha256": "1408b4750195a7251cc62b474545aa1b9d8c11737e3eb7a83cc57f6742fc6b46",
+      "id": "wolf_fang",
+      "kind": "relic",
+      "name": "狼牙",
+      "retained": false,
+      "runtime_size": 128,
+      "safe_edge": 14,
+      "source": "res://assets/items/source/painted_v02/wolf_fang.png",
+      "source_bounds": [
+        39,
+        14,
+        1161,
+        1228
+      ],
+      "source_sha256": "2234bab40ba45eff89925b0dac5cc713ad4ed6ded4eadaab387c6d092a322fe4"
+    },
+    {
+      "icon": "res://assets/items/unique/icons/stone_heart.png",
+      "icon_sha256": "b8e89216feaa321f97bffb39323f402e16f6a9c8df803513dc0bbb722aa48af6",
+      "id": "stone_heart",
+      "kind": "relic",
+      "name": "岩心",
+      "retained": false,
+      "runtime_size": 128,
+      "safe_edge": 14,
+      "source": "res://assets/items/source/painted_v02/stone_heart.png",
+      "source_bounds": [
+        62,
+        64,
+        1130,
+        1169
+      ],
+      "source_sha256": "ce3fd597827e65e128222d54f2a961cfc9eac0f68ad3433c0901960c8708e453"
+    },
+    {
+      "icon": "res://assets/items/unique/icons/spring_seed.png",
+      "icon_sha256": "3cb8bebd4ed2b146b50cbb76fb816e07238b5ee1156b578035d6a775fe6a4e43",
+      "id": "spring_seed",
+      "kind": "relic",
+      "name": "泉种",
+      "retained": false,
+      "runtime_size": 128,
+      "safe_edge": 14,
+      "source": "res://assets/items/source/painted_v02/spring_seed.png",
+      "source_bounds": [
+        0,
+        20,
+        1253,
+        1234
+      ],
+      "source_sha256": "e257c0e83863a08a3e98e7532c2deee2162b4610f0a0e9eec525ea9fb181de4c"
+    },
+    {
+      "icon": "res://assets/items/unique/icons/lucky_coin.png",
+      "icon_sha256": "e5d0e7189f5ee427b3fbc949a27b1b9a4eab2fc5caccad3aa1c77b77a7aa1430",
+      "id": "lucky_coin",
+      "kind": "relic",
+      "name": "幸运古币",
+      "retained": false,
+      "runtime_size": 128,
+      "safe_edge": 14,
+      "source": "res://assets/items/source/painted_v02/lucky_coin.png",
+      "source_bounds": [
+        0,
+        0,
+        1222,
+        1254
+      ],
+      "source_sha256": "d7742bd374abf45af8c235f1f7578c8e42ac7979c0571dba49de2a9c67d022bb"
+    },
+    {
+      "icon": "res://assets/items/unique/icons/crimson_chalice.png",
+      "icon_sha256": "d37c540973194a9e5243c77d2677ce5a08c22401c2d1501093e76632cae8fc2a",
+      "id": "crimson_chalice",
+      "kind": "relic",
+      "name": "绯红圣杯",
+      "retained": false,
+      "runtime_size": 128,
+      "safe_edge": 14,
+      "source": "res://assets/items/source/painted_v02/crimson_chalice.png",
+      "source_bounds": [
+        0,
+        72,
+        1240,
+        1182
+      ],
+      "source_sha256": "59a40459ee65da806e3d829a08b87e21c027a0fc8156e16246311cbf285417b9"
+    },
+    {
+      "icon": "res://assets/items/unique/icons/merchant_seal.png",
+      "icon_sha256": "ce0cf62538c6de295b46937254f86b094778d667b92c5a2a65ada9434ca0c049",
+      "id": "merchant_seal",
+      "kind": "relic",
+      "name": "商王印记",
+      "retained": false,
+      "runtime_size": 128,
+      "safe_edge": 14,
+      "source": "res://assets/items/source/painted_v02/merchant_seal.png",
+      "source_bounds": [
+        0,
+        9,
+        1230,
+        1231
+      ],
+      "source_sha256": "f1a613b0d41102c508c42cb44f18b2d822a031ded94fc76c6e096a989e9688e1"
+    },
+    {
+      "icon": "res://assets/items/unique/icons/sun_emblem.png",
+      "icon_sha256": "1af8a8847bef8a023b01faa80e4b341b1d043b62d7b2868be55e145efdc6edf1",
+      "id": "sun_emblem",
+      "kind": "relic",
+      "name": "日轮徽记",
+      "retained": false,
+      "runtime_size": 128,
+      "safe_edge": 14,
+      "source": "res://assets/items/source/painted_v02/sun_emblem.png",
+      "source_bounds": [
+        0,
+        8,
+        1220,
+        1246
+      ],
+      "source_sha256": "219ca656e1b62232fb7183a8320e80091448f1b6bbbd52560b806dd3d00efa24"
+    },
+    {
+      "icon": "res://assets/items/unique/icons/guardian_oath.png",
+      "icon_sha256": "aaa2489847f64b660dcc58b4fe0447857e8c89aef7da28cd8f1b069e6ce405cb",
+      "id": "guardian_oath",
+      "kind": "relic",
+      "name": "守护誓约",
+      "retained": false,
+      "runtime_size": 128,
+      "safe_edge": 14,
+      "source": "res://assets/items/source/painted_v02/guardian_oath.png",
+      "source_bounds": [
+        0,
+        39,
+        1202,
+        1199
+      ],
+      "source_sha256": "7cb2d9215b3fad29fc3f8ecf173b9cf5d16244fcdfbb703237571d7074564c1c"
+    },
+    {
+      "icon": "res://assets/items/phase3/icons/p3_dawn_sigil.png",
+      "icon_sha256": "a14d29840068a636ce7f2d20067fb98d8abdc950bd015e348eccf89155327ba5",
+      "id": "p3_dawn_sigil",
+      "kind": "relic",
+      "name": "破晓剑印",
+      "retained": false,
+      "runtime_size": 128,
+      "safe_edge": 14,
+      "source": "res://assets/items/source/painted_v02/p3_dawn_sigil.png",
+      "source_bounds": [
+        0,
+        16,
+        1222,
+        1190
+      ],
+      "source_sha256": "53241a5dcadfa2fd5bb97a4e4cf426b49e082c8ef922d1a733a614014f349401"
+    },
+    {
+      "icon": "res://assets/items/phase3/icons/p3_lantern_aegis.png",
+      "icon_sha256": "f3d2464550b2f14746c23dc8399d1fe15cd2e191ee12c9c104a85ccf33e90e87",
+      "id": "p3_lantern_aegis",
+      "kind": "relic",
+      "name": "提灯护符",
+      "retained": false,
+      "runtime_size": 128,
+      "safe_edge": 14,
+      "source": "res://assets/items/source/painted_v02/p3_lantern_aegis.png",
+      "source_bounds": [
+        97,
+        21,
+        1113,
+        1233
+      ],
+      "source_sha256": "dd7a15a310ad30ba4b656526ea3cf72abd55ac68d7bbbc0a19bab2e38a146d6d"
+    },
+    {
+      "icon": "res://assets/items/phase3/icons/p3_bounty_ledger.png",
+      "icon_sha256": "14252c147e9bd6d92ebcd454767d32500e8c7e1e6ca905251db9f39e75efdb10",
+      "id": "p3_bounty_ledger",
+      "kind": "relic",
+      "name": "赏金账簿",
+      "retained": false,
+      "runtime_size": 128,
+      "safe_edge": 14,
+      "source": "res://assets/items/source/painted_v02/p3_bounty_ledger.png",
+      "source_bounds": [
+        0,
+        14,
+        1224,
+        1240
+      ],
+      "source_sha256": "808608727aa97b68e5ce4218fcdfa3623f25d3bc9eba6654917404f2d22e2121"
+    },
+    {
+      "icon": "res://assets/items/phase3/icons/p3_rhythm_blade.png",
+      "icon_sha256": "3bd0835cee652f29bd50dd0d45d949c0012674fc6b8658d4b3894a9da1408b52",
+      "id": "p3_rhythm_blade",
+      "kind": "relic",
+      "name": "三拍剑穗",
+      "retained": false,
+      "runtime_size": 128,
+      "safe_edge": 14,
+      "source": "res://assets/items/source/painted_v02/p3_rhythm_blade.png",
+      "source_bounds": [
+        33,
+        0,
+        1197,
+        1254
+      ],
+      "source_sha256": "9a2ba0ca9668e312845e38fc254fcf2b6825d257cc680f09c15fb634b9c502a9"
+    },
+    {
+      "icon": "res://assets/items/phase3/icons/p3_thorn_clasp.png",
+      "icon_sha256": "f4bb1d9895a0c8347c49531128bbb40f72f6281e9cfe7e20a5189a2ed47e7133",
+      "id": "p3_thorn_clasp",
+      "kind": "relic",
+      "name": "荆棘扣",
+      "retained": false,
+      "runtime_size": 128,
+      "safe_edge": 14,
+      "source": "res://assets/items/source/painted_v02/p3_thorn_clasp.png",
+      "source_bounds": [
+        0,
+        0,
+        1248,
+        1254
+      ],
+      "source_sha256": "4d4a380c7ec79a00529d0ee28730394bd59a25926a64aae301a31770da2003f6"
+    },
+    {
+      "icon": "res://assets/items/phase3/icons/p3_gilded_lantern.png",
+      "icon_sha256": "527fd2f7e9a08c83c5eed6a17e8d0e5512751c1f4719d0ab6d7aeb03eb4362f5",
+      "id": "p3_gilded_lantern",
+      "kind": "relic",
+      "name": "鎏金灯芯",
+      "retained": false,
+      "runtime_size": 128,
+      "safe_edge": 14,
+      "source": "res://assets/items/source/painted_v02/p3_gilded_lantern.png",
+      "source_bounds": [
+        49,
+        21,
+        1165,
+        1193
+      ],
+      "source_sha256": "da8554b1d61f475b14acd90ff2eddb2921b44b329141f71db486e26c373dab6d"
+    }
+  ],
+  "method": "built-in image_gen painted_v02; original v01 manifests archived in source/baseline_v01",
+  "version": 2
+}

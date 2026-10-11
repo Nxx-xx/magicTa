@@ -1,0 +1,228 @@
+{
+  "version": 1,
+  "status": "draft",
+  "entity": "minotaur_map",
+  "canvas": 512,
+  "runtime_size": 256,
+  "anchor": [
+    256,
+    448
+  ],
+  "rest_scale": 0.88,
+  "source": "minotaur_map_components.png",
+  "layers": [
+    {
+      "name": "far_leg",
+      "parent": "root",
+      "pivot": [
+        300,
+        340
+      ],
+      "crop": [
+        510,
+        850,
+        300,
+        375
+      ],
+      "image_pivot": [
+        108,
+        60
+      ],
+      "scale": 0.3,
+      "z": -5
+    },
+    {
+      "name": "near_leg",
+      "parent": "root",
+      "pivot": [
+        205,
+        340
+      ],
+      "crop": [
+        80,
+        840,
+        330,
+        375
+      ],
+      "image_pivot": [
+        190,
+        65
+      ],
+      "scale": 0.31,
+      "z": -3
+    },
+    {
+      "name": "far_arm",
+      "parent": "torso",
+      "pivot": [
+        325,
+        195
+      ],
+      "crop": [
+        940,
+        490,
+        280,
+        420
+      ],
+      "image_pivot": [
+        110,
+        75
+      ],
+      "scale": 0.38,
+      "z": -2
+    },
+    {
+      "name": "torso",
+      "parent": "root",
+      "pivot": [
+        256,
+        350
+      ],
+      "crop": [
+        430,
+        30,
+        400,
+        470
+      ],
+      "image_pivot": [
+        200,
+        450
+      ],
+      "scale": 0.62,
+      "z": 0
+    },
+    {
+      "name": "head",
+      "parent": "torso",
+      "pivot": [
+        253,
+        130
+      ],
+      "crop": [
+        10,
+        20,
+        390,
+        390
+      ],
+      "image_pivot": [
+        205,
+        310
+      ],
+      "scale": 0.4,
+      "z": 2
+    },
+    {
+      "name": "near_upper_arm",
+      "parent": "torso",
+      "pivot": [
+        155,
+        190
+      ],
+      "crop": [
+        170,
+        650,
+        180,
+        145
+      ],
+      "image_pivot": [
+        50,
+        20
+      ],
+      "scale": 0.37,
+      "z": 1
+    },
+    {
+      "name": "near_forearm",
+      "parent": "near_upper_arm",
+      "pivot": [
+        176,
+        255
+      ],
+      "crop": [
+        500,
+        530,
+        240,
+        310
+      ],
+      "image_pivot": [
+        70,
+        70
+      ],
+      "scale": 0.35,
+      "z": 3
+    },
+    {
+      "name": "axe",
+      "parent": "near_forearm",
+      "pivot": [
+        179.5,
+        319.75
+      ],
+      "crop": [
+        890,
+        35,
+        350,
+        465
+      ],
+      "image_pivot": [
+        180,
+        205
+      ],
+      "scale": 0.32,
+      "z": 2
+    }
+  ],
+  "actions": {
+    "idle": {
+      "fps": 6,
+      "loop": true,
+      "poses": [
+        {},
+        {
+          "head": {
+            "r": -0.7
+          },
+          "near_upper_arm": {
+            "r": 0.5
+          },
+          "near_forearm": {
+            "r": -0.5
+          },
+          "far_arm": {
+            "r": -0.5
+          }
+        },
+        {
+          "head": {
+            "r": -1.2
+          },
+          "near_upper_arm": {
+            "r": 0.8
+          },
+          "near_forearm": {
+            "r": -0.8
+          },
+          "far_arm": {
+            "r": -0.8
+          }
+        },
+        {
+          "head": {
+            "r": 0.5
+          },
+          "near_upper_arm": {
+            "r": -0.4
+          },
+          "near_forearm": {
+            "r": 0.4
+          },
+          "far_arm": {
+            "r": 0.4
+          }
+        }
+      ],
+      "events": {}
+    }
+  },
+  "acceptance": "Independent front/elevated map camera; inspect at 26/33/47 px before publishing"
+}

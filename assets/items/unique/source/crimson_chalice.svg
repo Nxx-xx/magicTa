@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+<defs>
+<linearGradient id="steel" x2=".8" y2="1"><stop stop-color="#e2f1ed"/><stop offset=".48" stop-color="#91b1b8"/><stop offset="1" stop-color="#416478"/></linearGradient>
+<linearGradient id="gold" x2=".7" y2="1"><stop stop-color="#fff0bd"/><stop offset=".5" stop-color="#dfb76f"/><stop offset="1" stop-color="#9b633c"/></linearGradient>
+<linearGradient id="leather" x2=".8" y2="1"><stop stop-color="#c59364"/><stop offset="1" stop-color="#634333"/></linearGradient>
+<linearGradient id="jade" x2=".7" y2="1"><stop stop-color="#bbf1d6"/><stop offset="1" stop-color="#398886"/></linearGradient>
+<linearGradient id="onyx" x2=".8" y2="1"><stop stop-color="#8e91ab"/><stop offset=".45" stop-color="#46516e"/><stop offset="1" stop-color="#272d45"/></linearGradient>
+<linearGradient id="red" x2=".8" y2="1"><stop stop-color="#ffb49a"/><stop offset=".5" stop-color="#bd5260"/><stop offset="1" stop-color="#6a354e"/></linearGradient>
+</defs>
+<g stroke="#222d40" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"><path d="M83 83H51V111Q51 145 99 140M173 83H205V111Q205 145 157 140" fill="none" stroke="#dfb578" stroke-width="13"/><path d="M73 63H183L173 122Q167 151 139 157V188L177 204V218H79V204L117 188V157Q89 151 83 122Z" fill="url(#gold)" /><ellipse cx="128" cy="66" rx="55" ry="17" fill="url(#red)"/><path d="M128 94L142 118L128 140L114 118Z" fill="url(#red)" /><path d="M94 91L100 120" fill="none" stroke="#fff0bd" stroke-width="6"/></g></svg>

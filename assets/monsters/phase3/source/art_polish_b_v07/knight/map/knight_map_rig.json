@@ -1,0 +1,520 @@
+{
+  "version": 1,
+  "status": "draft",
+  "entity": "knight_map",
+  "canvas": 512,
+  "runtime_size": 256,
+  "anchor": [
+    256,
+    448
+  ],
+  "rest_scale": 1.0,
+  "source": "knight_map_components.png",
+  "layers": [
+    {
+      "name": "right_leg",
+      "parent": "root",
+      "pivot": [
+        215,
+        338
+      ],
+      "crop": [
+        163,
+        835,
+        144,
+        397
+      ],
+      "image_pivot": [
+        72.0,
+        0
+      ],
+      "scale": 0.2770780856423174,
+      "z": -4,
+      "art_scale": [
+        1.0,
+        1.0
+      ],
+      "art_material": {
+        "shadow_lift": 0.026,
+        "cool_mix": 0.1
+      }
+    },
+    {
+      "name": "right_hip",
+      "parent": "right_leg",
+      "pivot": [
+        215,
+        338
+      ],
+      "z": 0,
+      "joint_only": true
+    },
+    {
+      "name": "right_knee",
+      "parent": "right_leg",
+      "pivot": [
+        215,
+        387
+      ],
+      "z": 0,
+      "joint_only": true
+    },
+    {
+      "name": "right_ankle",
+      "parent": "right_leg",
+      "pivot": [
+        215,
+        433
+      ],
+      "z": 0,
+      "joint_only": true
+    },
+    {
+      "name": "left_leg",
+      "parent": "root",
+      "pivot": [
+        297,
+        338
+      ],
+      "crop": [
+        553,
+        835,
+        145,
+        397
+      ],
+      "image_pivot": [
+        72.5,
+        0
+      ],
+      "scale": 0.2770780856423174,
+      "z": -4,
+      "art_scale": [
+        1.0,
+        1.0
+      ],
+      "art_material": {
+        "shadow_lift": 0.026,
+        "cool_mix": 0.1
+      }
+    },
+    {
+      "name": "left_hip",
+      "parent": "left_leg",
+      "pivot": [
+        297,
+        338
+      ],
+      "z": 0,
+      "joint_only": true
+    },
+    {
+      "name": "left_knee",
+      "parent": "left_leg",
+      "pivot": [
+        297,
+        387
+      ],
+      "z": 0,
+      "joint_only": true
+    },
+    {
+      "name": "left_ankle",
+      "parent": "left_leg",
+      "pivot": [
+        297,
+        433
+      ],
+      "z": 0,
+      "joint_only": true
+    },
+    {
+      "name": "cape",
+      "parent": "root",
+      "pivot": [
+        256,
+        218
+      ],
+      "crop": [
+        875,
+        31,
+        360,
+        378
+      ],
+      "image_pivot": [
+        180.0,
+        22.68
+      ],
+      "scale": 0.4666666666666667,
+      "z": -5,
+      "art_scale": [
+        1.0,
+        1.0
+      ],
+      "art_material": {
+        "shadow_lift": 0.026,
+        "cool_mix": 0.1
+      }
+    },
+    {
+      "name": "torso",
+      "parent": "root",
+      "pivot": [
+        256,
+        350
+      ],
+      "crop": [
+        474,
+        4,
+        307,
+        406
+      ],
+      "image_pivot": [
+        153.5,
+        365.40000000000003
+      ],
+      "scale": 0.5928338762214984,
+      "z": 0,
+      "art_scale": [
+        1.045,
+        1.0
+      ],
+      "art_material": {
+        "shadow_lift": 0.026,
+        "cool_mix": 0.1
+      }
+    },
+    {
+      "name": "head",
+      "parent": "torso",
+      "pivot": [
+        256,
+        195
+      ],
+      "crop": [
+        114,
+        33,
+        237,
+        360
+      ],
+      "image_pivot": [
+        118.5,
+        309.6
+      ],
+      "scale": 0.5485232067510548,
+      "z": 4,
+      "art_scale": [
+        1.1,
+        1.0
+      ],
+      "art_material": {
+        "shadow_lift": 0.026,
+        "cool_mix": 0.1
+      }
+    },
+    {
+      "name": "right_arm",
+      "parent": "torso",
+      "pivot": [
+        174,
+        202
+      ],
+      "crop": [
+        144,
+        428,
+        151,
+        387
+      ],
+      "image_pivot": [
+        75.5,
+        27.090000000000003
+      ],
+      "scale": 0.45695364238410596,
+      "z": 2,
+      "art_scale": [
+        1.0,
+        1.0
+      ],
+      "art_material": {
+        "shadow_lift": 0.026,
+        "cool_mix": 0.1
+      }
+    },
+    {
+      "name": "left_arm",
+      "parent": "torso",
+      "pivot": [
+        338,
+        202
+      ],
+      "crop": [
+        961,
+        428,
+        149,
+        387
+      ],
+      "image_pivot": [
+        74.5,
+        30.96
+      ],
+      "scale": 0.46308724832214765,
+      "z": 1,
+      "art_scale": [
+        1.0,
+        1.0
+      ],
+      "art_material": {
+        "shadow_lift": 0.026,
+        "cool_mix": 0.1
+      }
+    },
+    {
+      "name": "right_elbow",
+      "parent": "right_arm",
+      "pivot": [
+        175,
+        275
+      ],
+      "z": 0,
+      "joint_only": true
+    },
+    {
+      "name": "right_wrist",
+      "parent": "right_arm",
+      "pivot": [
+        174,
+        337
+      ],
+      "z": 0,
+      "joint_only": true
+    },
+    {
+      "name": "weapon_grip",
+      "parent": "right_wrist",
+      "pivot": [
+        174,
+        340
+      ],
+      "z": 0,
+      "joint_only": true
+    },
+    {
+      "name": "left_elbow",
+      "parent": "left_arm",
+      "pivot": [
+        338,
+        258
+      ],
+      "z": 0,
+      "joint_only": true
+    },
+    {
+      "name": "left_wrist",
+      "parent": "left_arm",
+      "pivot": [
+        338,
+        315
+      ],
+      "z": 0,
+      "joint_only": true
+    },
+    {
+      "name": "left_grip",
+      "parent": "left_wrist",
+      "pivot": [
+        338,
+        319
+      ],
+      "z": 0,
+      "joint_only": true
+    },
+    {
+      "name": "weapon",
+      "parent": "weapon_grip",
+      "pivot": [
+        174,
+        340
+      ],
+      "crop": [
+        554,
+        426,
+        148,
+        393
+      ],
+      "image_pivot": [
+        74.0,
+        90.39
+      ],
+      "scale": 0.30405405405405406,
+      "z": 3
+    },
+    {
+      "name": "ornament",
+      "parent": "left_grip",
+      "pivot": [
+        342,
+        318
+      ],
+      "crop": [
+        927,
+        828,
+        253,
+        400
+      ],
+      "image_pivot": [
+        126.5,
+        140.0
+      ],
+      "scale": 0.4189723320158103,
+      "z": 5
+    }
+  ],
+  "actions": {
+    "idle": {
+      "fps": 6,
+      "loop": true,
+      "poses": [
+        {
+          "torso": {
+            "p": [
+              0,
+              0
+            ]
+          },
+          "head": {
+            "r": 0
+          },
+          "right_arm": {
+            "r": 0
+          },
+          "left_arm": {
+            "r": 0
+          },
+          "cape": {
+            "r": 0
+          }
+        },
+        {
+          "torso": {
+            "p": [
+              0,
+              -1.4
+            ]
+          },
+          "head": {
+            "r": -0.6
+          },
+          "right_arm": {
+            "r": 0.65
+          },
+          "left_arm": {
+            "r": -0.65
+          },
+          "cape": {
+            "r": 0.5
+          }
+        },
+        {
+          "torso": {
+            "p": [
+              0,
+              -2.3
+            ]
+          },
+          "head": {
+            "r": -1.1
+          },
+          "right_arm": {
+            "r": 1.1
+          },
+          "left_arm": {
+            "r": -1.0
+          },
+          "cape": {
+            "r": 0.9
+          }
+        },
+        {
+          "torso": {
+            "p": [
+              0,
+              -0.7
+            ]
+          },
+          "head": {
+            "r": 0.4
+          },
+          "right_arm": {
+            "r": -0.4
+          },
+          "left_arm": {
+            "r": 0.35
+          },
+          "cape": {
+            "r": -0.3
+          }
+        }
+      ],
+      "events": {}
+    }
+  },
+  "pose_holds": {},
+  "contacts": {
+    "idle": [
+      {
+        "right_foot": [
+          215,
+          448
+        ],
+        "left_foot": [
+          297,
+          448
+        ]
+      },
+      {
+        "right_foot": [
+          215,
+          448
+        ],
+        "left_foot": [
+          297,
+          448
+        ]
+      },
+      {
+        "right_foot": [
+          215,
+          448
+        ],
+        "left_foot": [
+          297,
+          448
+        ]
+      },
+      {
+        "right_foot": [
+          215,
+          448
+        ],
+        "left_foot": [
+          297,
+          448
+        ]
+      }
+    ]
+  },
+  "acceptance": "Independent elevated FRONT map original. Fixed root and planted feet. Agent visual review required; production publish belongs to coordinator.",
+  "art_polish": {
+    "baseline_source": "res://assets/monsters/phase3/source/parallel_v05/map/knight/knight_map_rig.json",
+    "description": "Local painted component width and material separation; unchanged bone pivots, contact paths, root, action poses/events/timing and physical accessories.",
+    "changed_components": [
+      "right_leg",
+      "left_leg",
+      "cape",
+      "torso",
+      "head",
+      "right_arm",
+      "left_arm"
+    ],
+    "human_signoff": false
+  }
+}

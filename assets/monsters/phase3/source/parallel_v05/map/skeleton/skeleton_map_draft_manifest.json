@@ -1,0 +1,68 @@
+{
+	"actions": {
+		"idle": {
+			"events": {},
+			"fps": 6.0,
+			"frames": [
+				"skeleton_map_frames/idle/00.png",
+				"skeleton_map_frames/idle/01.png",
+				"skeleton_map_frames/idle/02.png",
+				"skeleton_map_frames/idle/03.png"
+			],
+			"loop": true,
+			"metrics": [
+				{
+					"bounds": [
+						61,
+						8,
+						130,
+						218
+					],
+					"edge_touch": false,
+					"frame": 0
+				},
+				{
+					"bounds": [
+						61,
+						8,
+						130,
+						218
+					],
+					"edge_touch": false,
+					"frame": 1
+				},
+				{
+					"bounds": [
+						61,
+						7,
+						130,
+						219
+					],
+					"edge_touch": false,
+					"frame": 2
+				},
+				{
+					"bounds": [
+						62,
+						8,
+						129,
+						218
+					],
+					"edge_touch": false,
+					"frame": 3
+				}
+			],
+			"pose_holds": {}
+		}
+	},
+	"anchor": [
+		128.0,
+		224.0
+	],
+	"size": [
+		256.0,
+		256.0
+	],
+	"source": "res://assets/monsters/phase3/source/parallel_v05/map/skeleton/skeleton_map_rig.json",
+	"status": "draft"
+}

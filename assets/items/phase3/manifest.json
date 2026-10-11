@@ -1,0 +1,114 @@
+{
+  "assets": [
+    {
+      "icon": "res://assets/items/phase3/icons/p3_dawn_sigil.png",
+      "icon_sha256": "a14d29840068a636ce7f2d20067fb98d8abdc950bd015e348eccf89155327ba5",
+      "id": "p3_dawn_sigil",
+      "kind": "relic",
+      "name": "破晓剑印",
+      "retained": false,
+      "runtime_size": 128,
+      "safe_edge": 14,
+      "source": "res://assets/items/source/painted_v02/p3_dawn_sigil.png",
+      "source_bounds": [
+        0,
+        16,
+        1222,
+        1190
+      ],
+      "source_sha256": "53241a5dcadfa2fd5bb97a4e4cf426b49e082c8ef922d1a733a614014f349401"
+    },
+    {
+      "icon": "res://assets/items/phase3/icons/p3_lantern_aegis.png",
+      "icon_sha256": "f3d2464550b2f14746c23dc8399d1fe15cd2e191ee12c9c104a85ccf33e90e87",
+      "id": "p3_lantern_aegis",
+      "kind": "relic",
+      "name": "提灯护符",
+      "retained": false,
+      "runtime_size": 128,
+      "safe_edge": 14,
+      "source": "res://assets/items/source/painted_v02/p3_lantern_aegis.png",
+      "source_bounds": [
+        97,
+        21,
+        1113,
+        1233
+      ],
+      "source_sha256": "dd7a15a310ad30ba4b656526ea3cf72abd55ac68d7bbbc0a19bab2e38a146d6d"
+    },
+    {
+      "icon": "res://assets/items/phase3/icons/p3_bounty_ledger.png",
+      "icon_sha256": "14252c147e9bd6d92ebcd454767d32500e8c7e1e6ca905251db9f39e75efdb10",
+      "id": "p3_bounty_ledger",
+      "kind": "relic",
+      "name": "赏金账簿",
+      "retained": false,
+      "runtime_size": 128,
+      "safe_edge": 14,
+      "source": "res://assets/items/source/painted_v02/p3_bounty_ledger.png",
+      "source_bounds": [
+        0,
+        14,
+        1224,
+        1240
+      ],
+      "source_sha256": "808608727aa97b68e5ce4218fcdfa3623f25d3bc9eba6654917404f2d22e2121"
+    },
+    {
+      "icon": "res://assets/items/phase3/icons/p3_rhythm_blade.png",
+      "icon_sha256": "3bd0835cee652f29bd50dd0d45d949c0012674fc6b8658d4b3894a9da1408b52",
+      "id": "p3_rhythm_blade",
+      "kind": "relic",
+      "name": "三拍剑穗",
+      "retained": false,
+      "runtime_size": 128,
+      "safe_edge": 14,
+      "source": "res://assets/items/source/painted_v02/p3_rhythm_blade.png",
+      "source_bounds": [
+        33,
+        0,
+        1197,
+        1254
+      ],
+      "source_sha256": "9a2ba0ca9668e312845e38fc254fcf2b6825d257cc680f09c15fb634b9c502a9"
+    },
+    {
+      "icon": "res://assets/items/phase3/icons/p3_thorn_clasp.png",
+      "icon_sha256": "f4bb1d9895a0c8347c49531128bbb40f72f6281e9cfe7e20a5189a2ed47e7133",
+      "id": "p3_thorn_clasp",
+      "kind": "relic",
+      "name": "荆棘扣",
+      "retained": false,
+      "runtime_size": 128,
+      "safe_edge": 14,
+      "source": "res://assets/items/source/painted_v02/p3_thorn_clasp.png",
+      "source_bounds": [
+        0,
+        0,
+        1248,
+        1254
+      ],
+      "source_sha256": "4d4a380c7ec79a00529d0ee28730394bd59a25926a64aae301a31770da2003f6"
+    },
+    {
+      "icon": "res://assets/items/phase3/icons/p3_gilded_lantern.png",
+      "icon_sha256": "527fd2f7e9a08c83c5eed6a17e8d0e5512751c1f4719d0ab6d7aeb03eb4362f5",
+      "id": "p3_gilded_lantern",
+      "kind": "relic",
+      "name": "鎏金灯芯",
+      "retained": false,
+      "runtime_size": 128,
+      "safe_edge": 14,
+      "source": "res://assets/items/source/painted_v02/p3_gilded_lantern.png",
+      "source_bounds": [
+        49,
+        21,
+        1165,
+        1193
+      ],
+      "source_sha256": "da8554b1d61f475b14acd90ff2eddb2921b44b329141f71db486e26c373dab6d"
+    }
+  ],
+  "method": "built-in image_gen painted_v02; original v01 manifests archived in source/baseline_v01",
+  "version": 2
+}

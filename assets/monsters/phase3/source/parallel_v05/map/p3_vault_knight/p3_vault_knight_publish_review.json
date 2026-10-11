@@ -1,0 +1,34 @@
+{
+  "entity": "p3_vault_knight",
+  "date": "2026-10-02",
+  "review_method": "contact sheets plus native/browser playback; agent visual review",
+  "human_signoff": false,
+  "new_imagegen_originals": 1,
+  "actions": {
+    "map_idle": {
+      "decision": "accepted",
+      "draft_manifest": "p3_vault_knight_map_draft_manifest.json",
+      "source_action": "idle",
+      "frame_slots": 4,
+      "pose_holds": {},
+      "notes": "已实际看四姿态contact、原速/.25、暂停逐帧0-3及26/33/47px；三钥齿冠、方锁塔盾与钥匙孔在小尺寸保持独立实体特征，区别于普通骑士尖盾，未依赖调色或光效。锁肩在俯视镜头简化为钥匙孔肩板，47px可辨；手中剑与盾握点稳定，头肩相连，双脚固定，无裁切。",
+      "frame_sha256": [
+        "ece7ee47fae7d2988dc034715b98ad30816cca815f63c7cc58a5cf02ca8132d0",
+        "f5faeba22961ff6fac618a460e043fc3929d99d15acf059c581ee96703c4ac89",
+        "c43eff43c219105503ffa02e4343c7b3bb222def77d970ae7198b7a16d8fdf7b",
+        "1b8f07629e3223cc92828a8f4d861346b3837f7aebd78ec620bca4c8e2fcb65c"
+      ]
+    }
+  },
+  "visual_checks": [
+    "all four contact-sheet poses",
+    "browser original speed",
+    "browser 0.25 speed",
+    "paused next-frame 0 through 3",
+    "26px / 33px / 47px silhouettes",
+    "independent effect off if present"
+  ],
+  "source_status": "draft",
+  "publication_owner": "coordinator",
+  "battle_actions_reviewed": []
+}

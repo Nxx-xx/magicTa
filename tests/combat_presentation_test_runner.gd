@@ -1,6 +1,6 @@
 extends SceneTree
 const Screen = preload("res://scripts/ui/map_screen.gd")
-const Core = preload("res://scripts/core/campaign_engine.gd")
+const Core = preload("res://tests/legacy_map_core_fixture.gd")
 var checks := 0
 var failures := 0
 var capture := false
@@ -42,6 +42,9 @@ func _fixture(screen, lethal: bool = false) -> void:
 	screen.game.db.data.enemies.knight.hp = 45
 	screen.game.db.data.enemies.knight.attack = 11
 	screen.game.db.data.enemies.knight.defense = 2
+	# Full result/report controls are retained for elite fights; ordinary auto-close
+	# is covered by encounter_ui_test_runner.
+	screen.game.db.data.enemies.knight.rank = "elite"
 	screen.game.state.player.hp = 1 if lethal else 100
 	screen.game.state.pending = {"kind":"entity", "pos":[6,5]}
 	screen.game.save_game()
@@ -74,12 +77,12 @@ func _run() -> void:
 		await _frames()
 		var view = screen.combat_view
 		_check(is_instance_valid(view) and screen.overlay_kind == "combat", "fight opens playback")
-		_check(not screen.overlay.visible and screen.direction_buttons[0].disabled, "background blocked")
+		_check(not screen.overlay.visible and not screen._can_walk(), "background blocked")
 		_check(int(screen.game.state.player.gold) == gold_before + int(expected.gold_reward), "one committed reward")
 		_check(int(screen.game.state.player.hp) == int(expected.hp_after), "real HP committed before playback")
 		var committed: Dictionary = screen.game.state.duplicate(true)
 		screen._fight()
-		screen._move_from_pad(Vector2i.LEFT)
+		screen._move_direction(Vector2i.LEFT)
 		screen._select_cell(Vector2i(4,5))
 		_check(screen.game.state == committed, "repeat challenge and movement blocked")
 		view.set_process(false)

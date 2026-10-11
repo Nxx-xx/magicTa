@@ -1,0 +1,98 @@
+{
+  "entity": "bat",
+  "date": "2026-10-02",
+  "review_method": "Agent visual review of all final action contact sheets, 26/33/47px frames, and actual native AnimationPlayer timed samples at 1x and .25x; not uninterrupted video or browser viewing",
+  "human_signoff": false,
+  "new_imagegen_originals": 1,
+  "view": "battle_left",
+  "playback_review_complete": true,
+  "playback_review_scope": "timestamped native samples",
+  "actions": {
+    "attack": {
+      "decision": "accepted",
+      "draft_manifest": "bat_draft_manifest.json",
+      "source_action": "attack",
+      "frame_slots": 6,
+      "pose_holds": {
+        "5": 0.0
+      },
+      "notes": "Raised anticipation, left dive contact frame 3, independent optional swoosh and return hold 5->0.",
+      "frame_sha256": [
+        "8570face9a51da24d59aaf88a475f6c78b565fd92cf320ef4d02e3ee064a5d29",
+        "a2f53cda48c3a5c681772f8c10a79e390c35755725270322bdbe615392a7a797",
+        "6a4803384f3d14724d07d6891218241b99c7837e8fdd919b6d49e6cfe5d76814",
+        "e52d6846bed847dbb365e8ccb6f9044eba6ea9127c01f41fecf9178a761cfd4c",
+        "42250f228ec48dd5bbd138060329ef77d350b74730bcfbaec374f139bede12b0",
+        "8570face9a51da24d59aaf88a475f6c78b565fd92cf320ef4d02e3ee064a5d29"
+      ],
+      "native_review_evidence": [
+        "build/verification/phase3/08-parallel/base_a/bat_native_1x_contact.png",
+        "build/verification/phase3/08-parallel/base_a/bat_native_0.25x_contact.png"
+      ],
+      "effects_sha256": [
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "b071d50bda514991009b64e3a327284b96665e5532b9497f328e9cc88a06706f",
+        "1d0b4342ceebbe386a8d9df345e296cacd818d0b4f06f1b212810c960ee35233",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de"
+      ]
+    },
+    "defeat": {
+      "decision": "accepted",
+      "draft_manifest": "bat_draft_manifest.json",
+      "source_action": "defeat",
+      "frame_slots": 6,
+      "pose_holds": {
+        "5": 4.0
+      },
+      "notes": "Loses lift, folds wing tips inward, settles on ground; fixed initial flying silhouette and lower-edge contact, final hold 5->4.",
+      "frame_sha256": [
+        "7aaeade549bfc983b5b4fb1bba57135f94c985b1c9c0562797a61f168739c1d4",
+        "cf5448acc2ab8d413a9dce3264c04f6f44c7978962f1f5f6dca97474218473c2",
+        "e81c1cbdc11853c0b19f0ceeaa85fd5dac062deb76f91ab2c1fc6c133f18cecc",
+        "c07ac259e5c57814a87eb98721a1b3da1f769df53fcab70aa98c49f290e77a01",
+        "ff9124d8d3abf5595e672601764aa54c763856dfb38d036b0d86aeecbc647664",
+        "ff9124d8d3abf5595e672601764aa54c763856dfb38d036b0d86aeecbc647664"
+      ],
+      "native_review_evidence": [
+        "build/verification/phase3/08-parallel/base_a/bat_native_1x_contact.png",
+        "build/verification/phase3/08-parallel/base_a/bat_native_0.25x_contact.png"
+      ]
+    },
+    "hit": {
+      "decision": "accepted",
+      "draft_manifest": "bat_draft_manifest.json",
+      "source_action": "hit",
+      "frame_slots": 2,
+      "pose_holds": {},
+      "notes": "Asymmetric spread/recoil then recovery; wings remain attached.",
+      "frame_sha256": [
+        "6109d00af82d32f922f72d609459fb49f4bd063882b61b1041a23013f61cd478",
+        "8570face9a51da24d59aaf88a475f6c78b565fd92cf320ef4d02e3ee064a5d29"
+      ],
+      "native_review_evidence": [
+        "build/verification/phase3/08-parallel/base_a/bat_native_1x_contact.png",
+        "build/verification/phase3/08-parallel/base_a/bat_native_0.25x_contact.png"
+      ]
+    },
+    "idle": {
+      "decision": "accepted",
+      "draft_manifest": "bat_draft_manifest.json",
+      "source_action": "idle",
+      "frame_slots": 4,
+      "pose_holds": {},
+      "notes": "Separate wing-root and wingtip flaps; 4/8 FPS, stable furry head/torso identity and fixed root.",
+      "frame_sha256": [
+        "8570face9a51da24d59aaf88a475f6c78b565fd92cf320ef4d02e3ee064a5d29",
+        "b7c6dbed2aeb83f097b07b04a49c98c74b92305cc997df99a7510f810e2c4de3",
+        "9ec5933421c26422d48cc6f1bd864b377bb939d84989553f214f9f3a8fd42bc6",
+        "29bae70fbeac916584af233efa2b36df7d098e842732cac9fbdc2fe2e53fcf2e"
+      ],
+      "native_review_evidence": [
+        "build/verification/phase3/08-parallel/base_a/bat_native_1x_contact.png",
+        "build/verification/phase3/08-parallel/base_a/bat_native_0.25x_contact.png"
+      ]
+    }
+  }
+}

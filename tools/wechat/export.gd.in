@@ -1,0 +1,26 @@
+extends SceneTree
+
+func _initialize() -> void:
+	call_deferred("_export_game")
+
+func _export_game() -> void:
+	var args := OS.get_cmdline_user_args()
+	if args.size() != 2:
+		quit(2)
+		return
+	var exporter = load("res://addons/godot_mini_game/exporter.gd").new()
+	exporter.log_callback = func(message: String): print(message)
+	var result: int = await exporter.export_mini_game("wechat", args[0], "portrait", "WeChat", args[1])
+	if result == OK:
+		var native_path: String = args[1].path_join("audio/native")
+		DirAccess.make_dir_recursive_absolute(native_path)
+		var audio = load("res://scripts/ui/audio_feedback.gd")
+		for cue in ["step", "step_alt", "pickup", "door", "hit", "victory", "rescue", "midpoint", "echo", "echo_curse", "failure", "failure_1", "failure_2", "failure_3"]:
+			if audio._tone(cue).save_to_wav(native_path.path_join(cue + ".wav")) != OK:
+				quit(3)
+				return
+		for cue in audio.VOICES:
+			if DirAccess.copy_absolute(audio.VOICES[cue], native_path.path_join(cue + ".wav")) != OK:
+				quit(4)
+				return
+	quit(0 if result == OK else 1)

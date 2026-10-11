@@ -110,7 +110,7 @@ func _run() -> void:
 		screen._refresh_map()
 		await _frames()
 		_check(screen.overlay_kind == "save_blocked", "transaction blocks play")
-		_check(screen.direction_buttons[0].disabled and not screen.overlay_close.visible, "blocked save cannot escape into play")
+		_check(not screen._can_walk() and not screen.overlay_close.visible, "blocked save cannot escape into play")
 		_check(screen.save_retry.is_visible_in_tree(), "retry remains visible")
 		_check(screen.save_error_panel.get_global_rect().end.y <= screen.overlay_panel.position.y, "error banner never covers sheet title")
 		await _capture("save_blocked_%dx%d" % [dimensions.x, dimensions.y])
@@ -199,28 +199,23 @@ func _run() -> void:
 	screen._finish_story()
 	_check(screen.overlay_kind == "result" and screen.game.meta.failure_count == 1, "skip enters settled result")
 	screen.game.meta.souls = 32
-	screen._start("UI-UPGRADE-TRIAL")
+	var ended_run: Dictionary = screen.game.state.duplicate(true)
 	screen.page = "menu"
 	screen._render(true)
 	await _frames()
-	_check(not screen.seed_input.is_visible_in_tree(), "camp hides optional seed until requested")
-	var upgrade_section: Node = screen.body.get_node("Camp_upgrades")
-	var upgrade_content: Node = upgrade_section.find_child("Content", true, false)
-	_check(not upgrade_content.is_visible_in_tree(), "camp upgrade summary starts collapsed")
-	for button in upgrade_section.find_children("*", "Button", true, false):
-		if button.text.begins_with("归途火种"):
-			button.pressed.emit()
-			break
-	_check(upgrade_content.is_visible_in_tree(), "camp upgrade header reveals purchase controls")
-	for button in screen.body.find_children("*", "Button", true, false):
-		if button.text.begins_with("消耗 8 灵魂"):
-			button.pressed.emit()
-			break
+	_check(not is_instance_valid(screen.seed_input), "camp does not build departure settings before talking to Death")
+	_check(screen.find_child("Camp_upgrades",true,false) == null, "camp growth starts behind NPC dialogue")
+	screen._camp_interact("knight")
+	screen.find_child("CampKnightDialogue",true,false).option_button("growth").pressed.emit()
+	_check(screen.find_child("GrowthTree",true,false) != null, "knight dialogue reveals icon growth paths")
+	screen.find_child("GrowthNode_hp_1",true,false).pressed.emit()
+	screen.find_child("GrowthDetail",true,false)._action.pressed.emit()
 	_check(screen.game.meta.upgrades.hp == 1 and screen.game.meta.souls == 24, "purchase button buys one level")
-	_check(screen.body.get_node("Camp_upgrades").find_child("Content", true, false).is_visible_in_tree(), "purchase refresh preserves expanded upgrade section")
-	_check(screen.game.state.player.hp == 100 and screen.game.state.player.max_hp == 100, "camp upgrade during trial leaves trial stats unchanged")
+	_check(screen.camp_view == "growth" and screen.find_child("GrowthDetail",true,false)._action.disabled, "purchase refresh preserves knight growth page")
+	_check(screen.game.state == ended_run, "camp upgrade preserves ended journey")
+	screen.find_child("GrowthDetail",true,false).back_to_overview()
 	for button in screen.body.find_children("*", "Button", true, false):
-		if button.text.begins_with("免费重置"):
+		if button.text.begins_with("重置火种"):
 			button.pressed.emit()
 			break
 	for child in screen.get_children():

@@ -138,7 +138,7 @@ func _test_validation() -> void:
 	file.close()
 	var recovered: Dictionary = store.read()
 	_check(not recovered.is_empty() and recovered.run.last_message != "second save" and not store.last_error.is_empty(), "valid JSON corrupt primary restores entire backup")
-	_check(Equal.equal(recovered.meta, core.meta), "backup account and run remain paired")
+	_check(Equal.equal(recovered.meta, preload("res://scripts/core/phase3_progress.gd").migrate_meta(core.meta)), "backup account and run remain paired after schema2 migration")
 	_check(store.write(recovered.run, recovered.meta), "save after recovery preserves good backup")
 	file = FileAccess.open(path, FileAccess.WRITE)
 	file.store_string("{\"version\":1}")
@@ -146,7 +146,7 @@ func _test_validation() -> void:
 	_check(not store.read().is_empty(), "second corruption still recovers last good backup")
 	var empty := {"version":1,"run":{},"meta":Progress.default_meta()}
 	_check(store._valid(empty), "account-only save is valid")
-	var trial = Core.new(path)
+	var trial = preload("res://tests/legacy_map_core_fixture.gd").new(path)
 	trial.persistence_enabled = false
 	trial.start("42", false)
 	_check(store._valid({"version":1,"run":trial.state,"meta":{}}), "legacy two-floor save accepted")

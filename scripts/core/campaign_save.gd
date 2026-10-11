@@ -2,11 +2,14 @@ extends "res://scripts/core/map_save.gd"
 ## Whole-envelope recovery: a backup never mixes another run with a newer account.
 const Progress = preload("res://scripts/core/campaign_progress.gd")
 const Story = preload("res://scripts/core/story_state.gd")
+const P3Progress = preload("res://scripts/core/phase3_progress.gd")
+const Contract = preload("res://scripts/core/phase3_contract.gd")
 
 func read() -> Dictionary:
 	var saved := super.read()
 	if saved.is_empty(): return saved
 	if saved.meta.is_empty(): saved.meta = Progress.default_meta()
+	saved.meta = P3Progress.migrate_meta(saved.meta)
 	if saved.run.get("mode", "") == "grid_prototype_v1":
 		saved.run.campaign_kind = "trial_2f"
 		saved.run.meta_snapshot = {"upgrades": {"hp":0,"attack":0,"gold":0}, "version":1}
@@ -15,23 +18,41 @@ func read() -> Dictionary:
 	return saved
 
 func write(run: Dictionary, meta: Dictionary) -> bool:
-	if not _valid({"version":1,"run":run,"meta":meta}):
+	# Only validated legacy accounts may be migrated; never repair a malformed schema2 silently.
+	if not (meta.is_empty() and run.get("mode", "") == "grid_prototype_v1") and not _valid_meta(meta):
+		last_error = "账户校验失败；原存档和备份未修改。"
+		return false
+	var account := P3Progress.migrate_meta(Progress.default_meta() if meta.is_empty() else meta)
+	if not _valid({"version":2,"run":run,"meta":account}):
 		last_error = "存档状态校验失败；原存档和备份未修改。"
 		return false
-	return super.write(run, meta)
+	return super.write(run, account)
+
+func _envelope_version() -> int:
+	return 2
 
 func _valid(value: Variant) -> bool:
-	if not value is Dictionary or value.get("version", 0) != 1 or not value.get("run") is Dictionary or not value.get("meta") is Dictionary:
+	if not value is Dictionary or not _integer(value.get("version"), 1, 2) or not value.get("run") is Dictionary or not value.get("meta") is Dictionary:
 		return false
 	var state: Dictionary = value.run
+	var classified := Contract.classify(state)
+	if not classified.ok: return false
+	var phase3: bool = classified.kind == "phase3_campaign"
+	var rules_version := 2 if phase3 else 1
+	if not phase3:
+		for field in ["challenge_snapshot", "start_config_snapshot", "progress_rules_snapshot", "ruin_definitions_snapshot", "phase3_contract_version"]:
+			if state.has(field): return false
+	if value.version == 1 and phase3: return false
+	if value.version == 2 and not P3Progress.validate_meta_extensions(value.meta).ok: return false
 	if state.get("mode", "") == "grid_prototype_v1":
-		return super._valid(value) and (value.meta.is_empty() or _valid_meta(value.meta))
+		return _valid_state(state, 2) and (value.meta.is_empty() or _valid_meta(value.meta))
 	if not _valid_meta(value.meta): return false
 	if state.is_empty(): return true
 	if state.get("mode", "") != "tower_campaign_v1" or state.get("campaign_kind", "") != "tower_10f" or not _text(state.get("run_id")):
 		return false
-	if not _valid_state(state, 10) or not state.get("reward_content", {}).get("enemies") is Dictionary:
+	if not _valid_state(state, 10, rules_version) or not state.get("reward_content", {}).get("enemies") is Dictionary:
 		return false
+	if phase3 and not Phase3Validation.valid_run(state, value.meta): return false
 	if state.get("result", "invalid") not in ["", "death", "victory", "abandoned"]:
 		return false
 	if not state.get("meta_snapshot") is Dictionary or not _levels(state.meta_snapshot.get("upgrades")):
@@ -40,9 +61,9 @@ func _valid(value: Variant) -> bool:
 		return false
 	for key in Progress.RULES:
 		if state.meta_rules_snapshot.get(key, -1) != Progress.RULES[key]: return false
-	if not _valid_story(state.get("story")) or not _valid_plan(state.get("campaign_plan"), state.reward_content.items):
+	if not _valid_story(state.get("story")) or not _valid_plan(state.get("campaign_plan"), state.reward_content.items, rules_version):
 		return false
-	if not _valid_campaign_rules(state.get("campaign_rules_snapshot"), state.reward_content, state.campaign_plan): return false
+	if not _valid_campaign_rules(state.get("campaign_rules_snapshot"), state.reward_content, state.campaign_plan, rules_version, state.get("challenge_snapshot", {})): return false
 	if not state.get("side_objective_complete") is bool: return false
 	if state.objective_complete != (state.result == "victory"): return false
 	if state.side_objective_complete != ("sovereign_ring" in state.player.equipment_ids): return false
@@ -63,7 +84,7 @@ func _valid(value: Variant) -> bool:
 	var mid_reward_count := 0
 	for floor_id in state.floors:
 		var data: Dictionary = state.floors[floor_id]
-		if not _integer(data.get("floor"), int(floor_id), int(floor_id)) or data.get("generator_version", -1) != 1 or not _text(data.get("floor_seed")) or not data.get("boss_floor") is bool:
+		if not _integer(data.get("floor"), int(floor_id), int(floor_id)) or not _integer(data.get("generator_version"), rules_version, rules_version) or not _text(data.get("floor_seed")) or not data.get("boss_floor") is bool:
 			return false
 		if data.boss_floor != (int(floor_id) in [5,10]): return false
 		if int(floor_id) > 1 and not state.floors.has(str(int(floor_id) - 1)): return false
@@ -71,6 +92,8 @@ func _valid(value: Variant) -> bool:
 		if data.floor_seed != recipe.floor_seed: return false
 		if data.boss_floor:
 			if data.get("template_id") != ("boss_gate" if int(floor_id) == 5 else "boss_seal"): return false
+		elif phase3 and data.get("template_id") is String:
+			if not Phase3Validation.valid_template(data): return false
 		elif not _integer(data.get("template_id"),0,5) or int(data.template_id) != int(recipe.template_id): return false
 		if int(floor_id) > 5 and state.boss_rewards_claimed.is_empty(): return false
 		for entity in data.entities.values():
@@ -133,6 +156,12 @@ func _valid(value: Variant) -> bool:
 	return record.run_id == state.run_id and record.result == state.result and int(record.souls) == earned and int(record.floor) == int(state.floor)
 
 func _valid_meta(meta: Dictionary) -> bool:
+	if meta.has("meta_schema_version"):
+		if not _integer(meta.meta_schema_version, 1, 2): return false
+		if meta.meta_schema_version == 2 and not Phase3Validation.valid_meta(meta): return false
+	if meta.get("meta_schema_version", 1) == 1:
+		for key in P3Progress.default_extensions():
+			if key != "meta_schema_version" and meta.has(key): return false
 	for key in ["souls","souls_earned_total","failure_count","runs","wins","best_floor"]:
 		if not _valid_count(meta.get(key)): return false
 	if int(meta.best_floor) > 10 or int(meta.wins) + int(meta.failure_count) > int(meta.runs): return false
@@ -158,6 +187,7 @@ func _valid_meta(meta: Dictionary) -> bool:
 	var previous_failure := -1
 	for record in meta.records:
 		if not record is Dictionary or not _text(record.get("run_id")) or ids.has(record.run_id) or record.get("result", "") not in ["death","victory","abandoned"]: return false
+		if record.has("relic_story_id") and (not _text(record.relic_story_id) or record.relic_story_id.length() > 64): return false
 		if not _integer(record.get("floor"),1,10) or not record.get("seed") is String or not record.seed.is_valid_int(): return false
 		for key in ["souls","kills","failure_count"]:
 			if not _valid_count(record.get(key)): return false
@@ -195,8 +225,8 @@ func _valid_story(value: Variant) -> bool:
 			if not line is Dictionary or not line.get("speaker") is String or not line.get("text") is String: return false
 	return true
 
-func _valid_plan(value: Variant, items: Dictionary) -> bool:
-	if not value is Dictionary or value.get("version", -1) != 1 or not value.get("floors") is Dictionary or value.floors.size() != 10 or not value.get("budget") is Dictionary: return false
+func _valid_plan(value: Variant, items: Dictionary, rules_version: int = 1) -> bool:
+	if not value is Dictionary or not _integer(value.get("version"), rules_version, rules_version) or not value.get("floors") is Dictionary or value.floors.size() != 10 or not value.get("budget") is Dictionary: return false
 	for key in ["equipment_opportunities","relic_opportunities","merchants","rests","events"]:
 		if not _valid_count(value.budget.get(key)): return false
 	for number in range(1,11):
@@ -207,8 +237,8 @@ func _valid_plan(value: Variant, items: Dictionary) -> bool:
 			if not id is String or not items.has(id): return false
 	return true
 
-func _valid_campaign_rules(value: Variant, content: Dictionary, plan: Dictionary) -> bool:
-	if not value is Dictionary or value.get("version", -1) != 1: return false
+func _valid_campaign_rules(value: Variant, content: Dictionary, plan: Dictionary, rules_version: int = 1, challenge: Dictionary = {}) -> bool:
+	if not value is Dictionary or not _integer(value.get("version"), rules_version, rules_version): return false
 	if not value.get("floor_names") is Array or value.floor_names.size() != 10: return false
 	for name in value.floor_names:
 		if not _text(name): return false
@@ -256,7 +286,16 @@ func _valid_campaign_rules(value: Variant, content: Dictionary, plan: Dictionary
 		if not id is String or not content.enemies.has(id) or not value.enemy_overrides[id] is Dictionary: return false
 		for field in value.enemy_overrides[id]:
 			if field not in ["name","hp","attack","defense","gold_reward"]: return false
-			if value.enemy_overrides[id][field] != content.enemies[id].get(field): return false
+			var expected: Variant = value.enemy_overrides[id][field]
+			if field == "name" and not expected is String: return false
+			if field != "name" and not _valid_count(expected): return false
+			if rules_version == 2 and field in ["hp", "attack"]:
+				if not _valid_count(expected): return false
+				var boss: bool = content.enemies[id].rank == "boss"
+				if field == "hp":
+					expected = ceili(float(expected) * float(challenge.get("boss_hp_percent" if boss else "normal_hp_percent", 0)) / 100.0)
+				else: expected += int(challenge.get("boss_attack" if boss else "normal_attack", -1))
+			if expected != content.enemies[id].get(field): return false
 	return true
 
 func _budget_pair(value: Variant) -> bool:

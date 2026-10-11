@@ -1,0 +1,19 @@
+extends Control
+
+# All game ScrollContainers share scripts/ui/touch_scroll.gd on both platforms.
+
+func _ready() -> void:
+	resized.connect(_fit)
+	call_deferred("_fit")
+
+func _fit() -> void:
+	var top := 0.0
+	var bottom := 0.0
+	if OS.has_feature("web"):
+		var bridge = JavaScriptBridge.get_interface("__towerPersistence")
+		if bridge != null:
+			top = float(bridge.safeTop())
+			bottom = float(bridge.safeBottom())
+	$Game.offset_top = top
+	$Game.offset_bottom = -bottom
+	print("[TowerLayout] safe area: ", top, ", ", bottom)

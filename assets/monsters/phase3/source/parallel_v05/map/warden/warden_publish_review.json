@@ -1,0 +1,34 @@
+{
+  "entity": "warden",
+  "date": "2026-10-02",
+  "review_method": "contact sheets plus native/browser playback; agent visual review",
+  "human_signoff": false,
+  "new_imagegen_originals": 1,
+  "actions": {
+    "map_idle": {
+      "decision": "accepted",
+      "draft_manifest": "warden_map_draft_manifest.json",
+      "source_action": "idle",
+      "frame_slots": 4,
+      "pose_holds": {},
+      "notes": "已实际看四姿态contact、原速/.25、暂停逐帧0-3和26/33/47px；面罩完整、双臂连续、狼牙锤增大并外倾后可辨，盾牌紫底月星与双脚稳定，锁链随胸衣层呼吸且不越出轮廓。失败狼牙锤辨识度联系图保留。",
+      "frame_sha256": [
+        "e94f86283d73453bb9de8826e2fc8151e4a1d6889b09409fe7058109543705b2",
+        "ca0e861ee871d14cc370a47737aa24c9194829b6e39b889cfd276cb2fb1c9eff",
+        "70d808af150ce2a76561f1893e641f8a471d444d1f6d2bac38964d26dc9b149d",
+        "232ea3c92e1493e360603e6b63b4e98b1f6718db8d82768ac65980696db1074a"
+      ]
+    }
+  },
+  "visual_checks": [
+    "all four contact-sheet poses",
+    "browser original speed",
+    "browser 0.25 speed",
+    "paused next-frame 0 through 3",
+    "26px / 33px / 47px silhouettes",
+    "independent effect off if present"
+  ],
+  "source_status": "draft",
+  "publication_owner": "coordinator",
+  "battle_actions_reviewed": []
+}

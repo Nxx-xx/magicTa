@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+<defs>
+<linearGradient id="steel" x2=".8" y2="1"><stop stop-color="#e2f1ed"/><stop offset=".48" stop-color="#91b1b8"/><stop offset="1" stop-color="#416478"/></linearGradient>
+<linearGradient id="gold" x2=".7" y2="1"><stop stop-color="#fff0bd"/><stop offset=".5" stop-color="#dfb76f"/><stop offset="1" stop-color="#9b633c"/></linearGradient>
+<linearGradient id="leather" x2=".8" y2="1"><stop stop-color="#c59364"/><stop offset="1" stop-color="#634333"/></linearGradient>
+<linearGradient id="jade" x2=".7" y2="1"><stop stop-color="#bbf1d6"/><stop offset="1" stop-color="#398886"/></linearGradient>
+<linearGradient id="onyx" x2=".8" y2="1"><stop stop-color="#8e91ab"/><stop offset=".45" stop-color="#46516e"/><stop offset="1" stop-color="#272d45"/></linearGradient>
+<linearGradient id="red" x2=".8" y2="1"><stop stop-color="#ffb49a"/><stop offset=".5" stop-color="#bd5260"/><stop offset="1" stop-color="#6a354e"/></linearGradient>
+</defs>
+<g stroke="#222d40" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"><path d="M66 39Q66 90 118 120M190 39Q190 90 138 120" fill="none" stroke="#e5c385" stroke-width="9"/><circle cx="128" cy="120" r="13" fill="url(#gold)" /><path d="M128 157C88 112 52 150 74 179L128 220L182 179C204 150 168 112 128 157Z" fill="url(#gold)" /><path d="M128 170C98 137 76 155 91 176L128 202L165 176C180 155 158 137 128 170Z" fill="url(#red)" /><path d="M95 158L103 152" fill="none" stroke="#ffe9d2" stroke-width="6"/></g></svg>

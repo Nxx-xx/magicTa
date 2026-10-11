@@ -1,0 +1,506 @@
+{
+  "version": 1,
+  "status": "draft",
+  "entity": "warlock_map",
+  "canvas": 512,
+  "runtime_size": 256,
+  "anchor": [
+    256,
+    448
+  ],
+  "rest_scale": 1.0,
+  "source": "warlock_map_components.png",
+  "layers": [
+    {
+      "name": "right_leg",
+      "parent": "root",
+      "pivot": [
+        215,
+        338
+      ],
+      "crop": [
+        171,
+        856,
+        151,
+        337
+      ],
+      "image_pivot": [
+        75.5,
+        0
+      ],
+      "scale": 0.3264094955489614,
+      "z": -4
+    },
+    {
+      "name": "right_hip",
+      "parent": "right_leg",
+      "pivot": [
+        215,
+        338
+      ],
+      "z": 0,
+      "joint_only": true
+    },
+    {
+      "name": "right_knee",
+      "parent": "right_leg",
+      "pivot": [
+        215,
+        387
+      ],
+      "z": 0,
+      "joint_only": true
+    },
+    {
+      "name": "right_ankle",
+      "parent": "right_leg",
+      "pivot": [
+        215,
+        433
+      ],
+      "z": 0,
+      "joint_only": true
+    },
+    {
+      "name": "left_leg",
+      "parent": "root",
+      "pivot": [
+        297,
+        338
+      ],
+      "crop": [
+        553,
+        856,
+        154,
+        337
+      ],
+      "image_pivot": [
+        77.0,
+        0
+      ],
+      "scale": 0.3264094955489614,
+      "z": -4
+    },
+    {
+      "name": "left_hip",
+      "parent": "left_leg",
+      "pivot": [
+        297,
+        338
+      ],
+      "z": 0,
+      "joint_only": true
+    },
+    {
+      "name": "left_knee",
+      "parent": "left_leg",
+      "pivot": [
+        297,
+        387
+      ],
+      "z": 0,
+      "joint_only": true
+    },
+    {
+      "name": "left_ankle",
+      "parent": "left_leg",
+      "pivot": [
+        297,
+        433
+      ],
+      "z": 0,
+      "joint_only": true
+    },
+    {
+      "name": "cape",
+      "parent": "root",
+      "pivot": [
+        256,
+        218
+      ],
+      "crop": [
+        873,
+        57,
+        311,
+        346
+      ],
+      "image_pivot": [
+        155.5,
+        20.759999999999998
+      ],
+      "scale": 0.5401929260450161,
+      "z": -5,
+      "art_scale": [
+        1.0,
+        1.0
+      ],
+      "art_material": {
+        "shadow_lift": 0.065,
+        "cool_mix": 0.12
+      }
+    },
+    {
+      "name": "torso",
+      "parent": "root",
+      "pivot": [
+        256,
+        350
+      ],
+      "crop": [
+        490,
+        49,
+        275,
+        353
+      ],
+      "image_pivot": [
+        137.5,
+        317.7
+      ],
+      "scale": 0.8290909090909091,
+      "z": 0,
+      "art_scale": [
+        1.1,
+        1.0
+      ],
+      "art_material": {
+        "shadow_lift": 0.065,
+        "cool_mix": 0.12
+      }
+    },
+    {
+      "name": "head",
+      "parent": "torso",
+      "pivot": [
+        256,
+        201
+      ],
+      "crop": [
+        81,
+        63,
+        309,
+        336
+      ],
+      "image_pivot": [
+        154.5,
+        288.96
+      ],
+      "scale": 0.459546925566343,
+      "z": 4,
+      "art_scale": [
+        1.1,
+        1.0
+      ],
+      "art_material": {
+        "shadow_lift": 0.0,
+        "cool_mix": 0.0
+      }
+    },
+    {
+      "name": "right_arm",
+      "parent": "torso",
+      "pivot": [
+        174,
+        235
+      ],
+      "crop": [
+        119,
+        449,
+        170,
+        372
+      ],
+      "image_pivot": [
+        85.0,
+        26.040000000000003
+      ],
+      "scale": 0.3941176470588235,
+      "z": 2
+    },
+    {
+      "name": "left_arm",
+      "parent": "torso",
+      "pivot": [
+        338,
+        235
+      ],
+      "crop": [
+        522,
+        449,
+        295,
+        350
+      ],
+      "image_pivot": [
+        76.7,
+        28.0
+      ],
+      "scale": 0.33559322033898303,
+      "z": 1
+    },
+    {
+      "name": "right_elbow",
+      "parent": "right_arm",
+      "pivot": [
+        175,
+        275
+      ],
+      "z": 0,
+      "joint_only": true
+    },
+    {
+      "name": "right_wrist",
+      "parent": "right_arm",
+      "pivot": [
+        174,
+        349
+      ],
+      "z": 0,
+      "joint_only": true
+    },
+    {
+      "name": "weapon_grip",
+      "parent": "right_wrist",
+      "pivot": [
+        174,
+        352
+      ],
+      "z": 0,
+      "joint_only": true
+    },
+    {
+      "name": "left_elbow",
+      "parent": "left_arm",
+      "pivot": [
+        338,
+        258
+      ],
+      "z": 0,
+      "joint_only": true
+    },
+    {
+      "name": "left_wrist",
+      "parent": "left_arm",
+      "pivot": [
+        357,
+        299
+      ],
+      "z": 0,
+      "joint_only": true
+    },
+    {
+      "name": "left_grip",
+      "parent": "left_wrist",
+      "pivot": [
+        357,
+        299
+      ],
+      "z": 0,
+      "joint_only": true
+    },
+    {
+      "name": "weapon",
+      "parent": "weapon_grip",
+      "pivot": [
+        174,
+        352
+      ],
+      "crop": [
+        978,
+        399,
+        85,
+        447
+      ],
+      "image_pivot": [
+        42.5,
+        281.61
+      ],
+      "scale": 0.47058823529411764,
+      "z": 3
+    },
+    {
+      "name": "ornament",
+      "parent": "left_grip",
+      "pivot": [
+        357,
+        281
+      ],
+      "crop": [
+        927,
+        885,
+        200,
+        290
+      ],
+      "image_pivot": [
+        100.0,
+        220.4
+      ],
+      "scale": 0.24,
+      "z": 5
+    }
+  ],
+  "actions": {
+    "idle": {
+      "fps": 6,
+      "loop": true,
+      "poses": [
+        {
+          "torso": {
+            "p": [
+              0,
+              0
+            ]
+          },
+          "head": {
+            "r": 0
+          },
+          "right_arm": {
+            "r": 0
+          },
+          "left_arm": {
+            "r": 0
+          },
+          "cape": {
+            "r": 0
+          },
+          "ornament": {
+            "r": 0,
+            "a": 0.87
+          }
+        },
+        {
+          "torso": {
+            "p": [
+              0,
+              -1.4
+            ]
+          },
+          "head": {
+            "r": -0.6
+          },
+          "right_arm": {
+            "r": 0.65
+          },
+          "left_arm": {
+            "r": -0.65
+          },
+          "cape": {
+            "r": 0.5
+          },
+          "ornament": {
+            "r": 3,
+            "a": 1
+          }
+        },
+        {
+          "torso": {
+            "p": [
+              0,
+              -2.3
+            ]
+          },
+          "head": {
+            "r": -1.1
+          },
+          "right_arm": {
+            "r": 1.1
+          },
+          "left_arm": {
+            "r": -1.0
+          },
+          "cape": {
+            "r": 0.9
+          },
+          "ornament": {
+            "r": -2,
+            "a": 0.92
+          }
+        },
+        {
+          "torso": {
+            "p": [
+              0,
+              -0.7
+            ]
+          },
+          "head": {
+            "r": 0.4
+          },
+          "right_arm": {
+            "r": -0.4
+          },
+          "left_arm": {
+            "r": 0.35
+          },
+          "cape": {
+            "r": -0.3
+          },
+          "ornament": {
+            "r": -4,
+            "a": 0.78
+          }
+        }
+      ],
+      "events": {}
+    }
+  },
+  "pose_holds": {},
+  "contacts": {
+    "idle": [
+      {
+        "right_foot": [
+          215,
+          448
+        ],
+        "left_foot": [
+          297,
+          448
+        ]
+      },
+      {
+        "right_foot": [
+          215,
+          448
+        ],
+        "left_foot": [
+          297,
+          448
+        ]
+      },
+      {
+        "right_foot": [
+          215,
+          448
+        ],
+        "left_foot": [
+          297,
+          448
+        ]
+      },
+      {
+        "right_foot": [
+          215,
+          448
+        ],
+        "left_foot": [
+          297,
+          448
+        ]
+      }
+    ]
+  },
+  "acceptance": "Independent elevated FRONT map original. Fixed root and planted feet. Agent visual review required; production publish belongs to coordinator.",
+  "effect_layers": [
+    "ornament"
+  ],
+  "effect_actions": [
+    "idle"
+  ],
+  "art_polish": {
+    "baseline_source": "res://assets/monsters/phase3/source/parallel_v05/map/warlock/warlock_map_rig.json",
+    "description": "Local painted component width and material separation; unchanged bone pivots, contact paths, root, action poses/events/timing and physical accessories.",
+    "changed_components": [
+      "cape",
+      "torso",
+      "head"
+    ],
+    "human_signoff": false
+  }
+}

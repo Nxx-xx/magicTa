@@ -1,0 +1,198 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1640" height="1450" viewBox="0 0 1640 1450" role="img">
+<title>遗迹规划 / 每次选择都能看清代价</title>
+<desc>三处设施替换第 2 / 6 / 9 层事件；不会额外增加装备或遗物机会。地图为拓扑样板。</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#72d4c4"/></marker></defs>
+<rect width="1640" height="1450" fill="#101923"/>
+<text x="48" y="58" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="32" text-anchor="start">遗迹规划 / 每次选择都能看清代价</text>
+<text x="48" y="94" fill="#a9bfcc" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="17" text-anchor="start">三处设施替换第 2 / 6 / 9 层事件；不会额外增加装备或遗物机会。地图为拓扑样板。</text>
+<rect x="48" y="140" width="730" height="172" rx="12" fill="#1b2937" stroke="#344a5a"/>
+<rect x="48" y="140" width="5" height="172" rx="2" fill="#72d4c4" stroke="#72d4c4"/>
+<text x="70" y="176" fill="#72d4c4" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="23" text-anchor="start">2F · R1 誓约遗迹</text>
+<text x="70" y="210" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">锋刃：生命 −12 → 攻击 +2（须保留 1 HP）</text>
+<text x="70" y="240" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">守御：金币 −15 → 防御 +1；搜寻：免费获得 8 金币</text>
+<text x="70" y="270" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">三项互斥；稍后再来不消耗遗迹</text>
+<rect x="816" y="140" width="776" height="172" rx="12" fill="#1b2937" stroke="#344a5a"/>
+<rect x="816" y="140" width="5" height="172" rx="2" fill="#edca85" stroke="#edca85"/>
+<text x="838" y="176" fill="#edca85" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="23" text-anchor="start">6F · R2 断誓锻台</text>
+<text x="838" y="210" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">锻造：25 金币 → 攻击 +4</text>
+<text x="838" y="240" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">熔铸：基础最大生命 −10 → 攻击 +4；当前生命按新上限截断</text>
+<text x="838" y="270" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">搜寻：免费获得 15 金币；也可稍后再来</text>
+<rect x="48" y="344" width="730" height="172" rx="12" fill="#1b2937" stroke="#344a5a"/>
+<rect x="48" y="344" width="5" height="172" rx="2" fill="#72d4c4" stroke="#72d4c4"/>
+<text x="70" y="380" fill="#72d4c4" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="23" text-anchor="start">9F · R3 守灯圣所</text>
+<text x="70" y="414" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">恢复 35 HP / 防御 +2 / 生命 −12 换 30 金币</text>
+<text x="70" y="444" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">三选一；满血禁用治疗，费用不足显示原因</text>
+<text x="70" y="474" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">本层休息点是另一实体，两者状态分别保存</text>
+<rect x="816" y="344" width="776" height="172" rx="12" fill="#1b2937" stroke="#344a5a"/>
+<rect x="816" y="344" width="5" height="172" rx="2" fill="#edca85" stroke="#edca85"/>
+<text x="838" y="380" fill="#edca85" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="23" text-anchor="start">机会与强度账本</text>
+<text x="838" y="414" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">遗迹只改资源与基础属性，不产出新物品</text>
+<text x="838" y="444" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">三处事件 = 三次收益；离开、读档、重试不刷新</text>
+<text x="838" y="474" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">直接收益另列预算；全部路径须用整塔模拟验证</text>
+<text x="48" y="564" fill="#72d4c4" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="24" text-anchor="start">R1 提交路径 / 任何结果都先预览</text>
+<rect x="48" y="595" width="260" height="122" rx="12" fill="#1b2937" stroke="#344a5a"/>
+<rect x="48" y="595" width="5" height="122" rx="2" fill="#72d4c4" stroke="#72d4c4"/>
+<text x="70" y="631" fill="#72d4c4" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="23" text-anchor="start">查看遗迹</text>
+<text x="70" y="665" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">读取本局冻结选项</text>
+<rect x="360" y="595" width="340" height="122" rx="12" fill="#1b2937" stroke="#344a5a"/>
+<rect x="360" y="595" width="5" height="122" rx="2" fill="#72d4c4" stroke="#72d4c4"/>
+<text x="382" y="631" fill="#72d4c4" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="23" text-anchor="start">选择与费用校验</text>
+<text x="382" y="665" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">HP ≥13 / 金币 ≥15</text>
+<rect x="752" y="595" width="330" height="122" rx="12" fill="#1b2937" stroke="#344a5a"/>
+<rect x="752" y="595" width="5" height="122" rx="2" fill="#72d4c4" stroke="#72d4c4"/>
+<text x="774" y="631" fill="#72d4c4" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="23" text-anchor="start">确认候选事务</text>
+<text x="774" y="665" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">费用＋收益＋耗尽标记</text>
+<rect x="1134" y="595" width="458" height="122" rx="12" fill="#1b2937" stroke="#344a5a"/>
+<rect x="1134" y="595" width="5" height="122" rx="2" fill="#72d4c4" stroke="#72d4c4"/>
+<text x="1156" y="631" fill="#72d4c4" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="23" text-anchor="start">保存成功 → 展示结果</text>
+<text x="1156" y="665" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">保存失败保持旧状态并重试</text>
+<polyline points="308,655 356,655" fill="none" stroke="#72d4c4" stroke-width="2.4" marker-end="url(#arrow)"/>
+<polyline points="700,655 748,655" fill="none" stroke="#72d4c4" stroke-width="2.4" marker-end="url(#arrow)"/>
+<polyline points="1082,655 1130,655" fill="none" stroke="#72d4c4" stroke-width="2.4" marker-end="url(#arrow)"/>
+<text x="365" y="751" fill="#a9bfcc" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="19" text-anchor="start">费用不足：不提交。稍后再来：保留 available。已领取：仅查看铭文。</text>
+<text x="48" y="811" fill="#edca85" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="24" text-anchor="start">11×11 地图布局样板</text>
+<rect x="48" y="842" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="91" y="842" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="134" y="842" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="177" y="842" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="220" y="842" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="263" y="842" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="306" y="842" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="349" y="842" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="392" y="842" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="435" y="842" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="478" y="842" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="48" y="885" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="91" y="885" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="134" y="885" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="177" y="885" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="220" y="885" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="263" y="885" width="40" height="40" rx="3" fill="#72d4c4" stroke="#101923"/>
+<text x="283" y="913" fill="#101923" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="23" text-anchor="middle">U</text>
+<rect x="306" y="885" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="349" y="885" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="392" y="885" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="435" y="885" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="478" y="885" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="48" y="928" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="91" y="928" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="134" y="928" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="177" y="928" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="220" y="928" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="263" y="928" width="40" height="40" rx="3" fill="#527082" stroke="#101923"/>
+<rect x="306" y="928" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="349" y="928" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="392" y="928" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="435" y="928" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="478" y="928" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="48" y="971" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="91" y="971" width="40" height="40" rx="3" fill="#edca85" stroke="#101923"/>
+<text x="111" y="999" fill="#101923" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="23" text-anchor="middle">R</text>
+<rect x="134" y="971" width="40" height="40" rx="3" fill="#527082" stroke="#101923"/>
+<rect x="177" y="971" width="40" height="40" rx="3" fill="#527082" stroke="#101923"/>
+<rect x="220" y="971" width="40" height="40" rx="3" fill="#527082" stroke="#101923"/>
+<rect x="263" y="971" width="40" height="40" rx="3" fill="#527082" stroke="#101923"/>
+<rect x="306" y="971" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="349" y="971" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="392" y="971" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="435" y="971" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="478" y="971" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="48" y="1014" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="91" y="1014" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="134" y="1014" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="177" y="1014" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="220" y="1014" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="263" y="1014" width="40" height="40" rx="3" fill="#527082" stroke="#101923"/>
+<rect x="306" y="1014" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="349" y="1014" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="392" y="1014" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="435" y="1014" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="478" y="1014" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="48" y="1057" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="91" y="1057" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="134" y="1057" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="177" y="1057" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="220" y="1057" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="263" y="1057" width="40" height="40" rx="3" fill="#527082" stroke="#101923"/>
+<rect x="306" y="1057" width="40" height="40" rx="3" fill="#527082" stroke="#101923"/>
+<rect x="349" y="1057" width="40" height="40" rx="3" fill="#efa59d" stroke="#101923"/>
+<text x="369" y="1085" fill="#101923" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="23" text-anchor="middle">G</text>
+<rect x="392" y="1057" width="40" height="40" rx="3" fill="#527082" stroke="#101923"/>
+<rect x="435" y="1057" width="40" height="40" rx="3" fill="#aab4ee" stroke="#101923"/>
+<text x="455" y="1085" fill="#101923" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="23" text-anchor="middle">T</text>
+<rect x="478" y="1057" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="48" y="1100" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="91" y="1100" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="134" y="1100" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="177" y="1100" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="220" y="1100" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="263" y="1100" width="40" height="40" rx="3" fill="#527082" stroke="#101923"/>
+<rect x="306" y="1100" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="349" y="1100" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="392" y="1100" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="435" y="1100" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="478" y="1100" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="48" y="1143" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="91" y="1143" width="40" height="40" rx="3" fill="#89bded" stroke="#101923"/>
+<text x="111" y="1171" fill="#101923" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="23" text-anchor="middle">P</text>
+<rect x="134" y="1143" width="40" height="40" rx="3" fill="#527082" stroke="#101923"/>
+<rect x="177" y="1143" width="40" height="40" rx="3" fill="#527082" stroke="#101923"/>
+<rect x="220" y="1143" width="40" height="40" rx="3" fill="#527082" stroke="#101923"/>
+<rect x="263" y="1143" width="40" height="40" rx="3" fill="#527082" stroke="#101923"/>
+<rect x="306" y="1143" width="40" height="40" rx="3" fill="#527082" stroke="#101923"/>
+<rect x="349" y="1143" width="40" height="40" rx="3" fill="#527082" stroke="#101923"/>
+<rect x="392" y="1143" width="40" height="40" rx="3" fill="#527082" stroke="#101923"/>
+<rect x="435" y="1143" width="40" height="40" rx="3" fill="#aab4ee" stroke="#101923"/>
+<text x="455" y="1171" fill="#101923" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="23" text-anchor="middle">K</text>
+<rect x="478" y="1143" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="48" y="1186" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="91" y="1186" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="134" y="1186" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="177" y="1186" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="220" y="1186" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="263" y="1186" width="40" height="40" rx="3" fill="#527082" stroke="#101923"/>
+<rect x="306" y="1186" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="349" y="1186" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="392" y="1186" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="435" y="1186" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="478" y="1186" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="48" y="1229" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="91" y="1229" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="134" y="1229" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="177" y="1229" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="220" y="1229" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="263" y="1229" width="40" height="40" rx="3" fill="#72d4c4" stroke="#101923"/>
+<text x="283" y="1257" fill="#101923" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="23" text-anchor="middle">D</text>
+<rect x="306" y="1229" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="349" y="1229" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="392" y="1229" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="435" y="1229" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="478" y="1229" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="48" y="1272" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="91" y="1272" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="134" y="1272" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="177" y="1272" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="220" y="1272" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="263" y="1272" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="306" y="1272" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="349" y="1272" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="392" y="1272" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="435" y="1272" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="478" y="1272" width="40" height="40" rx="3" fill="#243443" stroke="#101923"/>
+<rect x="568" y="842" width="1024" height="192" rx="12" fill="#1b2937" stroke="#344a5a"/>
+<rect x="568" y="842" width="5" height="192" rx="2" fill="#edca85" stroke="#edca85"/>
+<text x="590" y="878" fill="#edca85" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="23" text-anchor="start">图例与访问规则</text>
+<text x="590" y="912" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">D 来路 / U 去路：中轴安全通道，不要求使用遗迹</text>
+<text x="590" y="942" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">R 遗迹：单格入口＋选项面板；G 守卫：不可绕过后取 T 奖励</text>
+<text x="590" y="972" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">P 补给 / K 固定成长占位：沿用原关卡条件与预算</text>
+<text x="590" y="1002" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">实际生成时另预留商人、休息、钥匙槽，不覆盖既有实体</text>
+<rect x="568" y="1066" width="1024" height="222" rx="12" fill="#1b2937" stroke="#344a5a"/>
+<rect x="568" y="1066" width="5" height="222" rx="2" fill="#72d4c4" stroke="#72d4c4"/>
+<text x="590" y="1102" fill="#72d4c4" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="23" text-anchor="start">遗迹资源制作与状态</text>
+<text x="590" y="1136" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">R1 石台：断剑、灯座、符文；R2 锻台：铁砧、炉心、烟</text>
+<text x="590" y="1166" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">R3 圣所：石灯、火芯与光路；可用与耗尽有不同轮廓/标识</text>
+<text x="590" y="1196" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">三设施共 35 帧位：12 待机＋20 解决＋3 耗尽静态</text>
+<text x="590" y="1226" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">主体单格；光晕最多 1.2 格；不得遮挡邻格门、钥匙和提示</text>
+<text x="590" y="1256" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">以脚底锚点注册图像，不用自动裁切中心定位</text>
+<text x="48" y="1426" fill="#a9bfcc" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="15" text-anchor="start">第三阶段设计稿 v0.1 · 2026-10-01 · 规划图，不代表功能已实现；详细规则以对应正文为准。</text>
+</svg>

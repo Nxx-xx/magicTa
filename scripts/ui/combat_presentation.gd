@@ -2,6 +2,7 @@ extends Control
 ## Read-only replay of an already committed combat. No resource or save mutations.
 signal dismissed
 signal cue_requested(cue: String)
+const Stage = preload("res://scripts/ui/art_polish_c_stage.gd")
 const Art = preload("res://scripts/ui/runtime_art.gd")
 const FONT = preload("res://assets/ui/visual_v01/body_font.tres")
 const TITLE = preload("res://assets/ui/visual_v01/title_font.tres")
@@ -156,6 +157,7 @@ func settle() -> void:
 	if reduce_motion:
 		set_process(false)
 	_layout()
+	if context.get("auto_close", false): _primary.call_deferred()
 
 func _primary() -> void:
 	if showing_log:
@@ -212,6 +214,7 @@ func _draw() -> void:
 	if showing_log:
 		return
 	draw_set_transform(stage_origin, 0, Vector2.ONE * stage_scale)
+	Stage.draw_environment(self,Vector2(540,680),Vector2(-100,-100) if settled else Vector2(164,606),Vector2(-100,-100) if settled else Vector2(375,496),Stage.select_environment(str(context.get("enemy_id","")),str(enemy.get("rank","normal"))))
 	if settled:
 		_draw_result()
 	else:

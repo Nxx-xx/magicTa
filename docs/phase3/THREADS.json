@@ -1,0 +1,33 @@
+{
+  "started": "2026-10-01",
+  "coordinator_thread_id": "01a0f6bd-d760-7bb3-84c7-7fad9b50779e",
+  "workspace": ".",
+  "mode": "shared-directory-exclusive-file-ownership",
+  "threads": [
+    {
+      "title": "第三阶段① · 构筑与物品",
+      "threadId": "01a0f6e8-dbfd-7ac0-8433-e6e81e33bce3",
+      "hostId": "local"
+    },
+    {
+      "title": "第三阶段② · 地图与遗迹",
+      "threadId": "01a0f6e8-f0c9-73b3-b179-72b5976c1ed2",
+      "hostId": "local"
+    },
+    {
+      "title": "第三阶段③ · 敌人与首领",
+      "threadId": "01a0f6e9-04c0-7961-8af2-26bbac233c76",
+      "hostId": "local"
+    },
+    {
+      "title": "第三阶段④ · 挑战与解锁",
+      "threadId": "01a0f6e9-2e8d-7061-8040-46e6bfb111b7",
+      "hostId": "local"
+    },
+    {
+      "title": "第三阶段⑤ · 引导与模型动画",
+      "threadId": "01a0f6e9-413a-7a40-8470-d39b4f27ccb1",
+      "hostId": "local"
+    }
+  ]
+}

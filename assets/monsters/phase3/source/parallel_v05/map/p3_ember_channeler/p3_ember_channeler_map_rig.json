@@ -1,0 +1,506 @@
+{
+  "version": 1,
+  "status": "draft",
+  "entity": "p3_ember_channeler_map",
+  "canvas": 512,
+  "runtime_size": 256,
+  "anchor": [
+    256,
+    448
+  ],
+  "rest_scale": 1.0,
+  "source": "p3_ember_channeler_map_components.png",
+  "layers": [
+    {
+      "name": "right_leg",
+      "parent": "root",
+      "pivot": [
+        215,
+        338
+      ],
+      "crop": [
+        108,
+        849,
+        202,
+        344
+      ],
+      "image_pivot": [
+        101.0,
+        0
+      ],
+      "scale": 0.31976744186046513,
+      "z": -4
+    },
+    {
+      "name": "right_hip",
+      "parent": "right_leg",
+      "pivot": [
+        215,
+        338
+      ],
+      "z": 0,
+      "joint_only": true
+    },
+    {
+      "name": "right_knee",
+      "parent": "right_leg",
+      "pivot": [
+        215,
+        387
+      ],
+      "z": 0,
+      "joint_only": true
+    },
+    {
+      "name": "right_ankle",
+      "parent": "right_leg",
+      "pivot": [
+        215,
+        433
+      ],
+      "z": 0,
+      "joint_only": true
+    },
+    {
+      "name": "left_leg",
+      "parent": "root",
+      "pivot": [
+        297,
+        338
+      ],
+      "crop": [
+        560,
+        842,
+        201,
+        351
+      ],
+      "image_pivot": [
+        100.5,
+        0
+      ],
+      "scale": 0.31339031339031337,
+      "z": -4
+    },
+    {
+      "name": "left_hip",
+      "parent": "left_leg",
+      "pivot": [
+        297,
+        338
+      ],
+      "z": 0,
+      "joint_only": true
+    },
+    {
+      "name": "left_knee",
+      "parent": "left_leg",
+      "pivot": [
+        297,
+        387
+      ],
+      "z": 0,
+      "joint_only": true
+    },
+    {
+      "name": "left_ankle",
+      "parent": "left_leg",
+      "pivot": [
+        297,
+        433
+      ],
+      "z": 0,
+      "joint_only": true
+    },
+    {
+      "name": "cape",
+      "parent": "root",
+      "pivot": [
+        256,
+        218
+      ],
+      "crop": [
+        846,
+        8,
+        359,
+        386
+      ],
+      "image_pivot": [
+        179.5,
+        23.16
+      ],
+      "scale": 0.467966573816156,
+      "z": -5
+    },
+    {
+      "name": "torso",
+      "parent": "root",
+      "pivot": [
+        256,
+        350
+      ],
+      "crop": [
+        450,
+        11,
+        362,
+        409
+      ],
+      "image_pivot": [
+        181.0,
+        368.1
+      ],
+      "scale": 0.6298342541436464,
+      "z": 0
+    },
+    {
+      "name": "head",
+      "parent": "torso",
+      "pivot": [
+        256,
+        201
+      ],
+      "crop": [
+        80,
+        23,
+        334,
+        378
+      ],
+      "image_pivot": [
+        167.0,
+        325.08
+      ],
+      "scale": 0.4251497005988024,
+      "z": 4
+    },
+    {
+      "name": "right_arm",
+      "parent": "torso",
+      "pivot": [
+        174,
+        235
+      ],
+      "crop": [
+        140,
+        437,
+        196,
+        370
+      ],
+      "image_pivot": [
+        98.0,
+        25.900000000000002
+      ],
+      "scale": 0.34183673469387754,
+      "z": 2
+    },
+    {
+      "name": "left_arm",
+      "parent": "torso",
+      "pivot": [
+        338,
+        235
+      ],
+      "crop": [
+        529,
+        437,
+        292,
+        370
+      ],
+      "image_pivot": [
+        75.92,
+        29.6
+      ],
+      "scale": 0.339041095890411,
+      "z": 1
+    },
+    {
+      "name": "right_elbow",
+      "parent": "right_arm",
+      "pivot": [
+        175,
+        275
+      ],
+      "z": 0,
+      "joint_only": true
+    },
+    {
+      "name": "right_wrist",
+      "parent": "right_arm",
+      "pivot": [
+        174,
+        349
+      ],
+      "z": 0,
+      "joint_only": true
+    },
+    {
+      "name": "weapon_grip",
+      "parent": "right_wrist",
+      "pivot": [
+        174,
+        352
+      ],
+      "z": 0,
+      "joint_only": true
+    },
+    {
+      "name": "left_elbow",
+      "parent": "left_arm",
+      "pivot": [
+        338,
+        258
+      ],
+      "z": 0,
+      "joint_only": true
+    },
+    {
+      "name": "left_wrist",
+      "parent": "left_arm",
+      "pivot": [
+        357,
+        299
+      ],
+      "z": 0,
+      "joint_only": true
+    },
+    {
+      "name": "left_grip",
+      "parent": "left_wrist",
+      "pivot": [
+        357,
+        299
+      ],
+      "z": 0,
+      "joint_only": true
+    },
+    {
+      "name": "weapon",
+      "parent": "weapon_grip",
+      "pivot": [
+        174,
+        352
+      ],
+      "crop": [
+        923,
+        394,
+        204,
+        457
+      ],
+      "image_pivot": [
+        102.0,
+        287.91
+      ],
+      "scale": 0.4068627450980392,
+      "z": 3
+    },
+    {
+      "name": "ornament",
+      "parent": "left_grip",
+      "pivot": [
+        385,
+        293
+      ],
+      "crop": [
+        22,
+        185,
+        846,
+        846
+      ],
+      "image_pivot": [
+        423.0,
+        719.1
+      ],
+      "scale": 0.0933806146572104,
+      "z": 5,
+      "source": "p3_ember_channeler_map_furnace_flame.png"
+    },
+    {
+      "name": "furnace_flame",
+      "parent": "ornament",
+      "pivot": [
+        385,
+        268
+      ],
+      "crop": [
+        919,
+        256,
+        314,
+        717
+      ],
+      "source": "p3_ember_channeler_map_furnace_flame.png",
+      "image_pivot": [
+        157.0,
+        501.9
+      ],
+      "scale": 0.10509554140127389,
+      "z": 6
+    }
+  ],
+  "actions": {
+    "idle": {
+      "fps": 6,
+      "loop": true,
+      "poses": [
+        {
+          "torso": {
+            "p": [
+              0,
+              0
+            ]
+          },
+          "head": {
+            "r": 0
+          },
+          "right_arm": {
+            "r": 0
+          },
+          "left_arm": {
+            "r": 0
+          },
+          "cape": {
+            "r": 0
+          },
+          "ornament": {
+            "r": 0
+          },
+          "furnace_flame": {
+            "r": 0,
+            "a": 0.8
+          }
+        },
+        {
+          "torso": {
+            "p": [
+              0,
+              -1.4
+            ]
+          },
+          "head": {
+            "r": -0.6
+          },
+          "right_arm": {
+            "r": 0.65
+          },
+          "left_arm": {
+            "r": -0.65
+          },
+          "cape": {
+            "r": 0.5
+          },
+          "ornament": {
+            "r": 0.5
+          },
+          "furnace_flame": {
+            "r": 3,
+            "a": 1
+          }
+        },
+        {
+          "torso": {
+            "p": [
+              0,
+              -2.3
+            ]
+          },
+          "head": {
+            "r": -1.1
+          },
+          "right_arm": {
+            "r": 1.1
+          },
+          "left_arm": {
+            "r": -1.0
+          },
+          "cape": {
+            "r": 0.9
+          },
+          "ornament": {
+            "r": 1
+          },
+          "furnace_flame": {
+            "r": -2,
+            "a": 0.91
+          }
+        },
+        {
+          "torso": {
+            "p": [
+              0,
+              -0.7
+            ]
+          },
+          "head": {
+            "r": 0.4
+          },
+          "right_arm": {
+            "r": -0.4
+          },
+          "left_arm": {
+            "r": 0.35
+          },
+          "cape": {
+            "r": -0.3
+          },
+          "ornament": {
+            "r": -0.3
+          },
+          "furnace_flame": {
+            "r": -4,
+            "a": 0.7
+          }
+        }
+      ],
+      "events": {}
+    }
+  },
+  "pose_holds": {},
+  "contacts": {
+    "idle": [
+      {
+        "right_foot": [
+          215,
+          448
+        ],
+        "left_foot": [
+          297,
+          448
+        ]
+      },
+      {
+        "right_foot": [
+          215,
+          448
+        ],
+        "left_foot": [
+          297,
+          448
+        ]
+      },
+      {
+        "right_foot": [
+          215,
+          448
+        ],
+        "left_foot": [
+          297,
+          448
+        ]
+      },
+      {
+        "right_foot": [
+          215,
+          448
+        ],
+        "left_foot": [
+          297,
+          448
+        ]
+      }
+    ]
+  },
+  "acceptance": "Independent elevated FRONT map original. Fixed root and planted feet. Agent visual review required; production publish belongs to coordinator.",
+  "effect_layers": [
+    "furnace_flame"
+  ],
+  "effect_actions": [
+    "idle"
+  ]
+}

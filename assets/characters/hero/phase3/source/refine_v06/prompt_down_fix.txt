@@ -1,0 +1,1 @@
+Precise-object-edit: correct ONLY the third row third cell of this 5x5 transparent component atlas. Remove the entire brass ring from the left glove. Keep a clean isolated curled gripping gloved hand only, with no ring, no metal and no attached accessory. Keep the other 24 cells, positions, size and style unchanged. Maintain true transparent alpha, no text or background.

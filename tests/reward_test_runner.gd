@@ -92,7 +92,8 @@ func _test_purchase_preview() -> void:
 	_check(core.buy(0).is_empty() and core.state.player == result.player, "purchase equals exact preview")
 	core.interact(cell)
 	var snapshot: Dictionary = core.state.player.duplicate(true)
-	_check(not core.buy(2).is_empty() and core.state.player == snapshot, "merchant sells one total item")
+	_check(not core.buy(0).is_empty() and core.state.player == snapshot, "sold item cannot be purchased twice")
+	_check(core.buy(2).is_empty() and not core.entity_at(cell).purchased, "merchant sells another item and retains remaining stock")
 	cell = _place_fixture(core, {"type": "shop", "offers": ["buy_sword"], "purchased": false})
 	core.state.player.gold = 19
 	core.interact(cell)

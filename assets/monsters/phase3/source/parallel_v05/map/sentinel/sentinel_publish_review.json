@@ -1,0 +1,34 @@
+{
+  "entity": "sentinel",
+  "date": "2026-10-02",
+  "human_signoff": false,
+  "new_imagegen_originals": 1,
+  "review_method": "Agent viewed final body/combined contacts, original and quarter browser playback, four selected poses at large and 26/33/47px, effect off/on",
+  "actions": {
+    "map_idle": {
+      "decision": "accepted",
+      "draft_manifest": "sentinel_map_draft_manifest.json",
+      "source_action": "idle",
+      "frame_slots": 4,
+      "fps": 6,
+      "loop": true,
+      "size": [256,256],
+      "anchor": [128,224],
+      "events": {},
+      "pose_holds": {},
+      "notes": "Independent elevated front map mother art. Heavy stone chest, teal recessed head, stone fist and fused shield arm remain clear without optional grooves. Head and arms breathe independently over planted leg layers. Neighbor atlas crumbs removed and feet registered. Body plus weak separately baked chest grooves reviewed; no visible seam/canvas clipping in final four poses.",
+      "frame_sha256": [
+        "e410b28a331d976a99cc043ccefd5bc380f343819bebca3149c2392ac2d62f09",
+        "f7a627af30f0668301365596784df3de4b851d704ca517d0beceaa7821658853",
+        "41e747378c009e2ac8dceb3bb8fe3d99cc6d656b7dcd59125ee564f20c419920",
+        "af71d09f068c9ab7984a8209a0ab4c316f196f46fbccf1e3664f31c990d1f050"
+      ],
+      "effects_sha256": [
+        "9ac79a14f169f4a7a86c480329dd10bb63a062c13bb221910067ce93eb77a48f",
+        "31e9b039c25e3dbe1b388fbb87232d178a1a5981d24625076adff02e90468b4d",
+        "f540b670e55168a08a21ffd9d1048a5d1a288af39108dc65d859f4bde4e6ee13",
+        "cb42b381f6ff40e28ac10f5c12c8b04514e1de4f78ba3d61f538138e7a48e875"
+      ]
+    }
+  }
+}

@@ -1,0 +1,417 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" path="res://assets/environment/ruins/phase3/source/layered_v02/sanctuary_base.res" id="1_5j5nl"]
+
+[sub_resource type="Animation" id="Animation_ce3wa"]
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("LanternFlame:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25, 0.5, 0.75),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.35), Color(1, 1, 1, 0.47), Color(1, 1, 1, 0.59), Color(1, 1, 1, 0.35)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("LanternFlame:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.25, 0.5, 0.75),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1.063, 0.99), Vector2(1.0846, 1.038), Vector2(1.1062, 1.086), Vector2(1.063, 0.99)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("ChosenResultGlyph:polygon")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.25, 0.5, 0.75),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [PackedVector2Array(24, 0, 22.173107, 9.184402, 16.970562, 16.970562, 9.184402, 22.173107, 1.4695276e-15, 24, -9.184402, 22.173107, -16.970562, 16.970562, -22.173107, 9.184402, -24, 2.9390552e-15, -22.173107, -9.184402, -16.970562, -16.970562, -9.184402, -22.173107, -4.408583e-15, -24, 9.184402, -22.173107, 16.970562, -16.970562, 22.173107, -9.184402), PackedVector2Array(24, 0, 22.173107, 9.184402, 16.970562, 16.970562, 9.184402, 22.173107, 1.4695276e-15, 24, -9.184402, 22.173107, -16.970562, 16.970562, -22.173107, 9.184402, -24, 2.9390552e-15, -22.173107, -9.184402, -16.970562, -16.970562, -9.184402, -22.173107, -4.408583e-15, -24, 9.184402, -22.173107, 16.970562, -16.970562, 22.173107, -9.184402), PackedVector2Array(24, 0, 22.173107, 9.184402, 16.970562, 16.970562, 9.184402, 22.173107, 1.4695276e-15, 24, -9.184402, 22.173107, -16.970562, 16.970562, -22.173107, 9.184402, -24, 2.9390552e-15, -22.173107, -9.184402, -16.970562, -16.970562, -9.184402, -22.173107, -4.408583e-15, -24, 9.184402, -22.173107, 16.970562, -16.970562, 22.173107, -9.184402), PackedVector2Array(24, 0, 22.173107, 9.184402, 16.970562, 16.970562, 9.184402, 22.173107, 1.4695276e-15, 24, -9.184402, 22.173107, -16.970562, 16.970562, -22.173107, 9.184402, -24, 2.9390552e-15, -22.173107, -9.184402, -16.970562, -16.970562, -9.184402, -22.173107, -4.408583e-15, -24, 9.184402, -22.173107, 16.970562, -16.970562, 22.173107, -9.184402)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("ChosenResultGlyph:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.25, 0.5, 0.75),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("ActivationRing:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.25, 0.5, 0.75),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 0)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("FixedStoneBase:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.25, 0.5, 0.75),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_vuujf"]
+length = 0.6
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("LanternFlame:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0.58778524), Color(1, 1, 1, 0.95105654), Color(1, 1, 1, 0.95105654), Color(1, 1, 1, 0.58778524), Color(1, 1, 1, 1.2246064e-16)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("LanternFlame:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 0.85), Vector2(1.1058013, 1.0851141), Vector2(1.1711901, 1.2304226), Vector2(1.1711901, 1.2304226), Vector2(1.1058013, 1.0851141), Vector2(1, 0.85)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("ChosenResultGlyph:polygon")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [PackedVector2Array(24, 0, 22.173107, 9.184402, 16.970562, 16.970562, 9.184402, 22.173107, 1.4695276e-15, 24, -9.184402, 22.173107, -16.970562, 16.970562, -22.173107, 9.184402, -24, 2.9390552e-15, -22.173107, -9.184402, -16.970562, -16.970562, -9.184402, -22.173107, -4.408583e-15, -24, 9.184402, -22.173107, 16.970562, -16.970562, 22.173107, -9.184402), PackedVector2Array(24, 0, 22.173107, 9.184402, 16.970562, 16.970562, 9.184402, 22.173107, 1.4695276e-15, 24, -9.184402, 22.173107, -16.970562, 16.970562, -22.173107, 9.184402, -24, 2.9390552e-15, -22.173107, -9.184402, -16.970562, -16.970562, -9.184402, -22.173107, -4.408583e-15, -24, 9.184402, -22.173107, 16.970562, -16.970562, 22.173107, -9.184402), PackedVector2Array(24, 0, 22.173107, 9.184402, 16.970562, 16.970562, 9.184402, 22.173107, 1.4695276e-15, 24, -9.184402, 22.173107, -16.970562, 16.970562, -22.173107, 9.184402, -24, 2.9390552e-15, -22.173107, -9.184402, -16.970562, -16.970562, -9.184402, -22.173107, -4.408583e-15, -24, 9.184402, -22.173107, 16.970562, -16.970562, 22.173107, -9.184402), PackedVector2Array(24, 0, 22.173107, 9.184402, 16.970562, 16.970562, 9.184402, 22.173107, 1.4695276e-15, 24, -9.184402, 22.173107, -16.970562, 16.970562, -22.173107, 9.184402, -24, 2.9390552e-15, -22.173107, -9.184402, -16.970562, -16.970562, -9.184402, -22.173107, -4.408583e-15, -24, 9.184402, -22.173107, 16.970562, -16.970562, 22.173107, -9.184402), PackedVector2Array(24, 0, 22.173107, 9.184402, 16.970562, 16.970562, 9.184402, 22.173107, 1.4695276e-15, 24, -9.184402, 22.173107, -16.970562, 16.970562, -22.173107, 9.184402, -24, 2.9390552e-15, -22.173107, -9.184402, -16.970562, -16.970562, -9.184402, -22.173107, -4.408583e-15, -24, 9.184402, -22.173107, 16.970562, -16.970562, 22.173107, -9.184402), PackedVector2Array(24, 0, 22.173107, 9.184402, 16.970562, 16.970562, 9.184402, 22.173107, 1.4695276e-15, 24, -9.184402, 22.173107, -16.970562, 16.970562, -22.173107, 9.184402, -24, 2.9390552e-15, -22.173107, -9.184402, -16.970562, -16.970562, -9.184402, -22.173107, -4.408583e-15, -24, 9.184402, -22.173107, 16.970562, -16.970562, 22.173107, -9.184402)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("ChosenResultGlyph:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0.58778524), Color(1, 1, 1, 0.95105654), Color(1, 1, 1, 0.95105654), Color(1, 1, 1, 0.58778524), Color(1, 1, 1, 1.2246064e-16)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("ActivationRing:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0.35267115), Color(1, 1, 1, 0.5706339), Color(1, 1, 1, 0.5706339), Color(1, 1, 1, 0.35267115), Color(1, 1, 1, 7.347638e-17)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("FixedStoneBase:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_rhvfq"]
+length = 0.6
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("LanternFlame:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0.58778524), Color(1, 1, 1, 0.95105654), Color(1, 1, 1, 0.95105654), Color(1, 1, 1, 0.58778524), Color(1, 1, 1, 1.2246064e-16)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("LanternFlame:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 0.85), Vector2(1.1058013, 1.0851141), Vector2(1.1711901, 1.2304226), Vector2(1.1711901, 1.2304226), Vector2(1.1058013, 1.0851141), Vector2(1, 0.85)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("ChosenResultGlyph:polygon")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [PackedVector2Array(-8, -27, 8, -27, 8, -8, 27, -8, 27, 8, 8, 8, 8, 27, -8, 27, -8, 8, -27, 8, -27, -8, -8, -8), PackedVector2Array(-8, -27, 8, -27, 8, -8, 27, -8, 27, 8, 8, 8, 8, 27, -8, 27, -8, 8, -27, 8, -27, -8, -8, -8), PackedVector2Array(-8, -27, 8, -27, 8, -8, 27, -8, 27, 8, 8, 8, 8, 27, -8, 27, -8, 8, -27, 8, -27, -8, -8, -8), PackedVector2Array(-8, -27, 8, -27, 8, -8, 27, -8, 27, 8, 8, 8, 8, 27, -8, 27, -8, 8, -27, 8, -27, -8, -8, -8), PackedVector2Array(-8, -27, 8, -27, 8, -8, 27, -8, 27, 8, 8, 8, 8, 27, -8, 27, -8, 8, -27, 8, -27, -8, -8, -8), PackedVector2Array(-8, -27, 8, -27, 8, -8, 27, -8, 27, 8, 8, 8, 8, 27, -8, 27, -8, 8, -27, 8, -27, -8, -8, -8)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("ChosenResultGlyph:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0.58778524), Color(1, 1, 1, 0.95105654), Color(1, 1, 1, 0.95105654), Color(1, 1, 1, 0.58778524), Color(1, 1, 1, 1.2246064e-16)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("ActivationRing:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0.35267115), Color(1, 1, 1, 0.5706339), Color(1, 1, 1, 0.5706339), Color(1, 1, 1, 0.35267115), Color(1, 1, 1, 7.347638e-17)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("FixedStoneBase:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_r7dw0"]
+length = 0.6
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("LanternFlame:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0.58778524), Color(1, 1, 1, 0.95105654), Color(1, 1, 1, 0.95105654), Color(1, 1, 1, 0.58778524), Color(1, 1, 1, 1.2246064e-16)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("LanternFlame:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 0.85), Vector2(1.1058013, 1.0851141), Vector2(1.1711901, 1.2304226), Vector2(1.1711901, 1.2304226), Vector2(1.1058013, 1.0851141), Vector2(1, 0.85)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("ChosenResultGlyph:polygon")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [PackedVector2Array(-25, -24, 25, -24, 21, 10, 0, 32, -21, 10), PackedVector2Array(-25, -24, 25, -24, 21, 10, 0, 32, -21, 10), PackedVector2Array(-25, -24, 25, -24, 21, 10, 0, 32, -21, 10), PackedVector2Array(-25, -24, 25, -24, 21, 10, 0, 32, -21, 10), PackedVector2Array(-25, -24, 25, -24, 21, 10, 0, 32, -21, 10), PackedVector2Array(-25, -24, 25, -24, 21, 10, 0, 32, -21, 10)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("ChosenResultGlyph:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0.58778524), Color(1, 1, 1, 0.95105654), Color(1, 1, 1, 0.95105654), Color(1, 1, 1, 0.58778524), Color(1, 1, 1, 1.2246064e-16)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("ActivationRing:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0.35267115), Color(1, 1, 1, 0.5706339), Color(1, 1, 1, 0.5706339), Color(1, 1, 1, 0.35267115), Color(1, 1, 1, 7.347638e-17)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("FixedStoneBase:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_q21wy"]
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("LanternFlame:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("LanternFlame:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 0.85)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("ChosenResultGlyph:polygon")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [PackedVector2Array(24, 0, 22.173107, 9.184402, 16.970562, 16.970562, 9.184402, 22.173107, 1.4695276e-15, 24, -9.184402, 22.173107, -16.970562, 16.970562, -22.173107, 9.184402, -24, 2.9390552e-15, -22.173107, -9.184402, -16.970562, -16.970562, -9.184402, -22.173107, -4.408583e-15, -24, 9.184402, -22.173107, 16.970562, -16.970562, 22.173107, -9.184402)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("ChosenResultGlyph:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("ActivationRing:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("FixedStoneBase:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.62, 0.68, 0.72, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_tder4"]
+_data = {
+&"idle": SubResource("Animation_ce3wa"),
+&"resolve_reserve": SubResource("Animation_vuujf"),
+&"resolve_restore": SubResource("Animation_rhvfq"),
+&"resolve_ward": SubResource("Animation_r7dw0"),
+&"spent": SubResource("Animation_q21wy")
+}
+
+[node name="SanctuaryRuin" type="Node2D" unique_id=1649761607]
+
+[node name="FixedStoneBase" type="Sprite2D" parent="." unique_id=87553718]
+position = Vector2(64.300896, 38)
+scale = Vector2(0.3325223, 0.3325223)
+texture = ExtResource("1_5j5nl")
+centered = false
+
+[node name="LanternFlame" type="Polygon2D" parent="." unique_id=2043544450]
+modulate = Color(1, 1, 1, 1.2246064e-16)
+position = Vector2(256, 276)
+scale = Vector2(1, 0.85)
+color = Color(0.4745098, 0.8666667, 0.7921569, 1)
+polygon = PackedVector2Array(-12, 4, -18, -7, -7, -25, 0, -46, 10, -21, 17, -6, 9, 6)
+
+[node name="ChosenResultGlyph" type="Polygon2D" parent="." unique_id=1251271831]
+modulate = Color(1, 1, 1, 1.2246064e-16)
+position = Vector2(256, 185)
+color = Color(1, 0.8901961, 0.63529414, 1)
+polygon = PackedVector2Array(24, 0, 22.173107, 9.184402, 16.970562, 16.970562, 9.184402, 22.173107, 1.4695276e-15, 24, -9.184402, 22.173107, -16.970562, 16.970562, -22.173107, 9.184402, -24, 2.9390552e-15, -22.173107, -9.184402, -16.970562, -16.970562, -9.184402, -22.173107, -4.408583e-15, -24, 9.184402, -22.173107, 16.970562, -16.970562, 22.173107, -9.184402)
+
+[node name="ActivationRing" type="Line2D" parent="." unique_id=1651805721]
+modulate = Color(1, 1, 1, 7.347638e-17)
+position = Vector2(256, 348)
+points = PackedVector2Array(150, 0, 147.1178, 7.8036127, 138.58192, 15.307338, 124.72044, 22.222809, 106.06602, 28.284271, 83.33553, 33.258785, 57.402515, 36.95518, 29.263548, 39.23141, 9.184548e-15, 40, -29.263548, 39.23141, -57.402515, 36.95518, -83.33553, 33.258785, -106.06602, 28.284271, -124.72044, 22.222809, -138.58192, 15.307338, -147.1178, 7.8036127, -150, 4.8984254e-15, -147.1178, -7.8036127, -138.58192, -15.307338, -124.72044, -22.222809, -106.06602, -28.284271, -83.33553, -33.258785, -57.402515, -36.95518, -29.263548, -39.23141, -2.7553643e-14, -40, 29.263548, -39.23141, 57.402515, -36.95518, 83.33553, -33.258785, 106.06602, -28.284271, 124.72044, -22.222809, 138.58192, -15.307338, 147.1178, -7.8036127, 150, -9.796851e-15)
+width = 4.0
+default_color = Color(0.70980394, 0.8784314, 0.78431374, 1)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1549718464]
+libraries/ = SubResource("AnimationLibrary_tder4")

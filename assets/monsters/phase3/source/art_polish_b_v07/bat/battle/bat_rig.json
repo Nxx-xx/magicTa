@@ -1,0 +1,1084 @@
+{
+  "version": 1,
+  "status": "draft",
+  "entity": "bat",
+  "view": "battle_left",
+  "canvas": 512,
+  "runtime_size": 256,
+  "anchor": [
+    256,
+    448
+  ],
+  "rest_scale": 0.93,
+  "source": "bat_components.png",
+  "layers": [
+    {
+      "name": "body",
+      "parent": "root",
+      "pivot": [
+        273,
+        298
+      ],
+      "crop": [
+        480,
+        155,
+        325,
+        300
+      ],
+      "image_pivot": [
+        160,
+        148
+      ],
+      "scale": 0.29,
+      "z": 2,
+      "art_scale": [
+        1.045,
+        1.0
+      ],
+      "art_material": {
+        "shadow_lift": 0.0,
+        "cool_mix": 0.0
+      }
+    },
+    {
+      "name": "head",
+      "parent": "body",
+      "pivot": [
+        250,
+        271
+      ],
+      "crop": [
+        105,
+        50,
+        305,
+        390
+      ],
+      "image_pivot": [
+        150,
+        295
+      ],
+      "scale": 0.27,
+      "z": 5,
+      "art_scale": [
+        1.1,
+        1.0
+      ],
+      "art_material": {
+        "shadow_lift": 0.0,
+        "cool_mix": 0.0
+      }
+    },
+    {
+      "name": "near_wing",
+      "parent": "body",
+      "pivot": [
+        255,
+        280
+      ],
+      "crop": [
+        855,
+        85,
+        380,
+        355
+      ],
+      "image_pivot": [
+        317,
+        233
+      ],
+      "scale": 0.23,
+      "z": 1,
+      "art_scale": [
+        1.0,
+        1.0
+      ],
+      "art_material": {
+        "shadow_lift": 0.0,
+        "cool_mix": 0.065
+      }
+    },
+    {
+      "name": "near_tip",
+      "parent": "near_wing",
+      "pivot": [
+        201,
+        237
+      ],
+      "crop": [
+        15,
+        480,
+        400,
+        350
+      ],
+      "image_pivot": [
+        372,
+        163
+      ],
+      "scale": 0.29,
+      "z": 0,
+      "art_scale": [
+        1.0,
+        1.0
+      ],
+      "art_material": {
+        "shadow_lift": 0.0,
+        "cool_mix": 0.065
+      }
+    },
+    {
+      "name": "far_wing",
+      "parent": "body",
+      "pivot": [
+        298,
+        277
+      ],
+      "crop": [
+        455,
+        480,
+        370,
+        355
+      ],
+      "image_pivot": [
+        57,
+        218
+      ],
+      "scale": 0.21,
+      "z": -3,
+      "art_scale": [
+        1.0,
+        1.0
+      ],
+      "art_material": {
+        "shadow_lift": 0.0,
+        "cool_mix": 0.065
+      }
+    },
+    {
+      "name": "far_tip",
+      "parent": "far_wing",
+      "pivot": [
+        348,
+        237
+      ],
+      "crop": [
+        855,
+        480,
+        380,
+        355
+      ],
+      "image_pivot": [
+        40,
+        159
+      ],
+      "scale": 0.26,
+      "z": -4,
+      "art_scale": [
+        1.0,
+        1.0
+      ],
+      "art_material": {
+        "shadow_lift": 0.0,
+        "cool_mix": 0.065
+      }
+    },
+    {
+      "name": "talons",
+      "parent": "body",
+      "pivot": [
+        278,
+        339
+      ],
+      "crop": [
+        120,
+        920,
+        220,
+        250
+      ],
+      "image_pivot": [
+        110,
+        70
+      ],
+      "scale": 0.19,
+      "z": 3
+    },
+    {
+      "name": "shadow",
+      "parent": "root",
+      "pivot": [
+        270,
+        448
+      ],
+      "crop": [
+        465,
+        920,
+        365,
+        300
+      ],
+      "image_pivot": [
+        182,
+        150
+      ],
+      "scale": 0.37,
+      "z": -8
+    },
+    {
+      "name": "swoosh",
+      "parent": "root",
+      "pivot": [
+        158,
+        285
+      ],
+      "crop": [
+        865,
+        880,
+        385,
+        330
+      ],
+      "image_pivot": [
+        190,
+        165
+      ],
+      "scale": 0.48,
+      "z": 6
+    },
+    {
+      "name": "near_wrist",
+      "parent": "near_wing",
+      "pivot": [
+        201,
+        237
+      ],
+      "joint_only": true,
+      "z": 0
+    },
+    {
+      "name": "far_wrist",
+      "parent": "far_wing",
+      "pivot": [
+        348,
+        237
+      ],
+      "joint_only": true,
+      "z": -4
+    }
+  ],
+  "actions": {
+    "idle": {
+      "fps": 8,
+      "loop": true,
+      "events": {},
+      "poses": [
+        {
+          "body": {
+            "p": [
+              0,
+              0
+            ],
+            "r": 0
+          },
+          "head": {
+            "r": 0
+          },
+          "near_wing": {
+            "r": 22,
+            "p": [
+              0,
+              0
+            ]
+          },
+          "far_wing": {
+            "r": -20,
+            "p": [
+              0,
+              0
+            ]
+          },
+          "near_tip": {
+            "r": 10
+          },
+          "far_tip": {
+            "r": -9
+          },
+          "talons": {
+            "r": 0
+          },
+          "swoosh": {
+            "a": 0,
+            "r": 180
+          },
+          "shadow": {
+            "a": 0.35
+          }
+        },
+        {
+          "body": {
+            "p": [
+              0,
+              -6
+            ],
+            "r": 0
+          },
+          "head": {
+            "r": -2
+          },
+          "near_wing": {
+            "r": 48,
+            "p": [
+              0,
+              0
+            ]
+          },
+          "far_wing": {
+            "r": -44,
+            "p": [
+              0,
+              0
+            ]
+          },
+          "near_tip": {
+            "r": 22
+          },
+          "far_tip": {
+            "r": -20
+          },
+          "talons": {
+            "r": 5
+          },
+          "swoosh": {
+            "a": 0,
+            "r": 180
+          },
+          "shadow": {
+            "a": 0.35
+          }
+        },
+        {
+          "body": {
+            "p": [
+              0,
+              -2
+            ],
+            "r": 0
+          },
+          "head": {
+            "r": 1
+          },
+          "near_wing": {
+            "r": -32,
+            "p": [
+              0,
+              0
+            ]
+          },
+          "far_wing": {
+            "r": 30,
+            "p": [
+              0,
+              0
+            ]
+          },
+          "near_tip": {
+            "r": -8
+          },
+          "far_tip": {
+            "r": 6
+          },
+          "talons": {
+            "r": -3
+          },
+          "swoosh": {
+            "a": 0,
+            "r": 180
+          },
+          "shadow": {
+            "a": 0.35
+          }
+        },
+        {
+          "body": {
+            "p": [
+              0,
+              5
+            ],
+            "r": 0
+          },
+          "head": {
+            "r": 2
+          },
+          "near_wing": {
+            "r": -12,
+            "p": [
+              0,
+              0
+            ]
+          },
+          "far_wing": {
+            "r": 10,
+            "p": [
+              0,
+              0
+            ]
+          },
+          "near_tip": {
+            "r": 3
+          },
+          "far_tip": {
+            "r": -3
+          },
+          "talons": {
+            "r": -5
+          },
+          "swoosh": {
+            "a": 0,
+            "r": 180
+          },
+          "shadow": {
+            "a": 0.35
+          }
+        }
+      ]
+    },
+    "attack": {
+      "fps": 12,
+      "loop": false,
+      "events": {
+        "hit": 3
+      },
+      "poses": [
+        {
+          "body": {
+            "p": [
+              0,
+              0
+            ],
+            "r": 0
+          },
+          "head": {
+            "r": 0
+          },
+          "near_wing": {
+            "r": 22,
+            "p": [
+              0,
+              0
+            ]
+          },
+          "far_wing": {
+            "r": -20,
+            "p": [
+              0,
+              0
+            ]
+          },
+          "near_tip": {
+            "r": 10
+          },
+          "far_tip": {
+            "r": -9
+          },
+          "talons": {
+            "r": 0
+          },
+          "swoosh": {
+            "a": 0,
+            "r": 180
+          },
+          "shadow": {
+            "a": 0.35
+          }
+        },
+        {
+          "body": {
+            "p": [
+              9,
+              -8
+            ],
+            "r": 8
+          },
+          "head": {
+            "r": -6
+          },
+          "near_wing": {
+            "r": 55,
+            "p": [
+              0,
+              0
+            ]
+          },
+          "far_wing": {
+            "r": -50,
+            "p": [
+              0,
+              0
+            ]
+          },
+          "near_tip": {
+            "r": 24
+          },
+          "far_tip": {
+            "r": -18
+          },
+          "talons": {
+            "r": 12
+          },
+          "swoosh": {
+            "a": 0,
+            "r": 180
+          },
+          "shadow": {
+            "a": 0.35
+          }
+        },
+        {
+          "body": {
+            "p": [
+              -13,
+              -2
+            ],
+            "r": -9
+          },
+          "head": {
+            "r": 3
+          },
+          "near_wing": {
+            "r": -30,
+            "p": [
+              0,
+              0
+            ]
+          },
+          "far_wing": {
+            "r": 32,
+            "p": [
+              0,
+              0
+            ]
+          },
+          "near_tip": {
+            "r": -8
+          },
+          "far_tip": {
+            "r": 8
+          },
+          "talons": {
+            "r": 0
+          },
+          "swoosh": {
+            "a": 0,
+            "r": 180
+          },
+          "shadow": {
+            "a": 0.35
+          }
+        },
+        {
+          "body": {
+            "p": [
+              -38,
+              14
+            ],
+            "r": -18
+          },
+          "head": {
+            "r": -4
+          },
+          "near_wing": {
+            "r": -48,
+            "p": [
+              0,
+              0
+            ]
+          },
+          "far_wing": {
+            "r": 45,
+            "p": [
+              0,
+              0
+            ]
+          },
+          "near_tip": {
+            "r": 12
+          },
+          "far_tip": {
+            "r": -12
+          },
+          "talons": {
+            "r": 22
+          },
+          "swoosh": {
+            "a": 0.7,
+            "r": 180
+          },
+          "shadow": {
+            "a": 0.35
+          }
+        },
+        {
+          "body": {
+            "p": [
+              -15,
+              6
+            ],
+            "r": -6
+          },
+          "head": {
+            "r": 1
+          },
+          "near_wing": {
+            "r": 5,
+            "p": [
+              0,
+              0
+            ]
+          },
+          "far_wing": {
+            "r": -4,
+            "p": [
+              0,
+              0
+            ]
+          },
+          "near_tip": {
+            "r": 10
+          },
+          "far_tip": {
+            "r": -8
+          },
+          "talons": {
+            "r": 0
+          },
+          "swoosh": {
+            "a": 0.2,
+            "r": 180
+          },
+          "shadow": {
+            "a": 0.35
+          }
+        },
+        {
+          "body": {
+            "p": [
+              0,
+              0
+            ],
+            "r": 0
+          },
+          "head": {
+            "r": 0
+          },
+          "near_wing": {
+            "r": 22,
+            "p": [
+              0,
+              0
+            ]
+          },
+          "far_wing": {
+            "r": -20,
+            "p": [
+              0,
+              0
+            ]
+          },
+          "near_tip": {
+            "r": 10
+          },
+          "far_tip": {
+            "r": -9
+          },
+          "talons": {
+            "r": 0
+          },
+          "swoosh": {
+            "a": 0,
+            "r": 180
+          },
+          "shadow": {
+            "a": 0.35
+          }
+        }
+      ]
+    },
+    "hit": {
+      "fps": 12,
+      "loop": false,
+      "events": {
+        "recoil": 0
+      },
+      "poses": [
+        {
+          "body": {
+            "p": [
+              16,
+              8
+            ],
+            "r": 18
+          },
+          "head": {
+            "r": 12
+          },
+          "near_wing": {
+            "r": -25,
+            "p": [
+              0,
+              0
+            ]
+          },
+          "far_wing": {
+            "r": 8,
+            "p": [
+              0,
+              0
+            ]
+          },
+          "near_tip": {
+            "r": 30
+          },
+          "far_tip": {
+            "r": -30
+          },
+          "talons": {
+            "r": -20
+          },
+          "swoosh": {
+            "a": 0,
+            "r": 180
+          },
+          "shadow": {
+            "a": 0.35
+          }
+        },
+        {
+          "body": {
+            "p": [
+              0,
+              0
+            ],
+            "r": 0
+          },
+          "head": {
+            "r": 0
+          },
+          "near_wing": {
+            "r": 22,
+            "p": [
+              0,
+              0
+            ]
+          },
+          "far_wing": {
+            "r": -20,
+            "p": [
+              0,
+              0
+            ]
+          },
+          "near_tip": {
+            "r": 10
+          },
+          "far_tip": {
+            "r": -9
+          },
+          "talons": {
+            "r": 0
+          },
+          "swoosh": {
+            "a": 0,
+            "r": 180
+          },
+          "shadow": {
+            "a": 0.35
+          }
+        }
+      ]
+    },
+    "defeat": {
+      "fps": 10,
+      "loop": false,
+      "events": {
+        "ground": 3,
+        "settle": 4
+      },
+      "poses": [
+        {
+          "body": {
+            "p": [
+              5,
+              10
+            ],
+            "r": 12
+          },
+          "head": {
+            "r": 10
+          },
+          "near_wing": {
+            "r": -30,
+            "p": [
+              0,
+              0
+            ]
+          },
+          "far_wing": {
+            "r": 35,
+            "p": [
+              0,
+              0
+            ]
+          },
+          "near_tip": {
+            "r": 22
+          },
+          "far_tip": {
+            "r": -20
+          },
+          "talons": {
+            "r": 0
+          },
+          "swoosh": {
+            "a": 0,
+            "r": 180
+          },
+          "shadow": {
+            "a": 0.35
+          }
+        },
+        {
+          "body": {
+            "p": [
+              8,
+              32
+            ],
+            "r": 18
+          },
+          "head": {
+            "r": 8
+          },
+          "near_wing": {
+            "r": -46,
+            "p": [
+              0,
+              0
+            ]
+          },
+          "far_wing": {
+            "r": 50,
+            "p": [
+              0,
+              0
+            ]
+          },
+          "near_tip": {
+            "r": 0
+          },
+          "far_tip": {
+            "r": 5
+          },
+          "talons": {
+            "r": -12
+          },
+          "swoosh": {
+            "a": 0,
+            "r": 180
+          },
+          "shadow": {
+            "a": 0.35
+          }
+        },
+        {
+          "body": {
+            "p": [
+              3,
+              65
+            ],
+            "r": -9
+          },
+          "head": {
+            "r": -10
+          },
+          "near_wing": {
+            "r": -65,
+            "p": [
+              0,
+              -6.6
+            ]
+          },
+          "far_wing": {
+            "r": 72,
+            "p": [
+              0,
+              -6.6
+            ]
+          },
+          "near_tip": {
+            "r": -25
+          },
+          "far_tip": {
+            "r": 40
+          },
+          "talons": {
+            "r": -30
+          },
+          "swoosh": {
+            "a": 0,
+            "r": 180
+          },
+          "shadow": {
+            "a": 0.35
+          }
+        },
+        {
+          "body": {
+            "p": [
+              -4,
+              90
+            ],
+            "r": -32
+          },
+          "head": {
+            "r": -20
+          },
+          "near_wing": {
+            "r": -82,
+            "p": [
+              0,
+              -15.399999999999999
+            ]
+          },
+          "far_wing": {
+            "r": 92,
+            "p": [
+              0,
+              -15.399999999999999
+            ]
+          },
+          "near_tip": {
+            "r": -80
+          },
+          "far_tip": {
+            "r": 130
+          },
+          "talons": {
+            "r": -45
+          },
+          "swoosh": {
+            "a": 0,
+            "r": 180
+          },
+          "shadow": {
+            "a": 0.35
+          }
+        },
+        {
+          "body": {
+            "p": [
+              -7,
+              112
+            ],
+            "r": -45
+          },
+          "head": {
+            "r": -28
+          },
+          "near_wing": {
+            "r": -90,
+            "p": [
+              0,
+              -22
+            ]
+          },
+          "far_wing": {
+            "r": 100,
+            "p": [
+              0,
+              -22
+            ]
+          },
+          "near_tip": {
+            "r": -95
+          },
+          "far_tip": {
+            "r": 160
+          },
+          "talons": {
+            "r": -55
+          },
+          "swoosh": {
+            "a": 0,
+            "r": 180
+          },
+          "shadow": {
+            "a": 0.35
+          }
+        },
+        {
+          "body": {
+            "p": [
+              -7,
+              112
+            ],
+            "r": -45
+          },
+          "head": {
+            "r": -28
+          },
+          "near_wing": {
+            "r": -90,
+            "p": [
+              0,
+              -22
+            ]
+          },
+          "far_wing": {
+            "r": 100,
+            "p": [
+              0,
+              -22
+            ]
+          },
+          "near_tip": {
+            "r": -95
+          },
+          "far_tip": {
+            "r": 160
+          },
+          "talons": {
+            "r": -55
+          },
+          "swoosh": {
+            "a": 0,
+            "r": 180
+          },
+          "shadow": {
+            "a": 0.35
+          }
+        }
+      ]
+    }
+  },
+  "pose_holds": {
+    "attack": {
+      "5": 0
+    },
+    "defeat": {
+      "5": 4
+    }
+  },
+  "effect_layers": [
+    "swoosh"
+  ],
+  "effect_actions": [
+    "attack"
+  ],
+  "art_polish": {
+    "baseline_source": "res://assets/monsters/phase3/source/parallel_v05/battle/bat/bat_rig.json",
+    "description": "Local painted component width and material separation; unchanged bone pivots, contact paths, root, action poses/events/timing and physical accessories.",
+    "changed_components": [
+      "body",
+      "head",
+      "near_wing",
+      "near_tip",
+      "far_wing",
+      "far_tip"
+    ],
+    "human_signoff": false
+  }
+}

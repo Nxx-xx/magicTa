@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "items": {
+    "p3_dawn_sigil": {
+      "id": "p3_dawn_sigil", "name": "破晓剑印", "kind": "relic", "tier": 1, "price": 40,
+      "effects": {}, "build_tags": ["assault"], "unique_per_run": true,
+      "combat_effects": [{"id": "first_hit_bonus", "amount": 4}],
+      "description": "每场首次攻击最终伤害 +4；仅触发一次，额外伤害不再减防。",
+      "icon": "res://assets/items/phase3/icons/p3_dawn_sigil.png",
+      "initially_available": true, "candidate_floor": 2, "candidate_themes": ["battle"]
+    },
+    "p3_lantern_aegis": {
+      "id": "p3_lantern_aegis", "name": "提灯护符", "kind": "relic", "tier": 1, "price": 40,
+      "effects": {}, "build_tags": ["guard"], "unique_per_run": true,
+      "combat_effects": [{"id": "counter_guard", "amount": 2, "charges": 2}],
+      "description": "每场前 2 次敌人反击各减伤 2，最低 0；零伤反击也消耗次数。",
+      "icon": "res://assets/items/phase3/icons/p3_lantern_aegis.png",
+      "initially_available": true, "candidate_floor": 2, "candidate_themes": ["treasure"]
+    },
+    "p3_bounty_ledger": {
+      "id": "p3_bounty_ledger", "name": "赏金账簿", "kind": "relic", "tier": 1, "price": 40,
+      "effects": {}, "build_tags": ["wealth"], "unique_per_run": true,
+      "combat_effects": [{"id": "rank_gold_bonus", "elite": 10, "boss": 20}],
+      "description": "存活击杀精英额外获得 10 金币，Boss 20 金币；普通怪不触发。",
+      "icon": "res://assets/items/phase3/icons/p3_bounty_ledger.png",
+      "initially_available": true, "candidate_floor": 2, "candidate_themes": ["battle", "treasure"]
+    },
+    "p3_rhythm_blade": {
+      "id": "p3_rhythm_blade", "name": "三拍剑穗", "kind": "relic", "tier": 2, "price": 55,
+      "effects": {}, "build_tags": ["assault"], "unique_per_run": true,
+      "combat_effects": [{"id": "periodic_hit_bonus", "amount": 3, "interval": 3}],
+      "description": "第 3、6、9…次攻击最终伤害 +3；额外伤害不再减防。",
+      "icon": "res://assets/items/phase3/icons/p3_rhythm_blade.png",
+      "initially_available": false, "candidate_floor": 6, "candidate_themes": ["battle"]
+    },
+    "p3_thorn_clasp": {
+      "id": "p3_thorn_clasp", "name": "荆棘扣", "kind": "relic", "tier": 2, "price": 55,
+      "effects": {}, "build_tags": ["guard"], "unique_per_run": true,
+      "combat_effects": [{"id": "retaliation", "amount": 2, "charges": 3}],
+      "description": "每场前 3 次反击结束后，若仍存活则反伤 2；零伤反击也触发，致死反击不触发。",
+      "icon": "res://assets/items/phase3/icons/p3_thorn_clasp.png",
+      "initially_available": false, "candidate_floor": 6, "candidate_themes": ["treasure"]
+    },
+    "p3_gilded_lantern": {
+      "id": "p3_gilded_lantern", "name": "鎏金灯芯", "kind": "relic", "tier": 2, "price": 55,
+      "effects": {}, "build_tags": ["wealth"], "unique_per_run": true, "combat_effects": [],
+      "conditional_effects": [{"id": "gold_defense_threshold", "threshold": 100, "amount": 2}],
+      "description": "战前金币至少 100 时本场防御 +2；战中固定，战后金币不追溯生效。",
+      "icon": "res://assets/items/phase3/icons/p3_gilded_lantern.png",
+      "initially_available": false, "candidate_floor": 6, "candidate_themes": ["battle", "treasure"]
+    }
+  }
+}

@@ -1,0 +1,243 @@
+{
+  "version": 1,
+  "status": "draft",
+  "entity": "slime_map",
+  "canvas": 512,
+  "runtime_size": 256,
+  "anchor": [
+    256,
+    448
+  ],
+  "rest_scale": 1,
+  "source": "slime_map_components.png",
+  "layers": [
+    {
+      "name": "membrane",
+      "parent": "root",
+      "pivot": [
+        256,
+        448
+      ],
+      "crop": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "image_pivot": [
+        256,
+        448
+      ],
+      "scale": 0.82,
+      "z": 0
+    },
+    {
+      "name": "core",
+      "parent": "membrane",
+      "pivot": [
+        256,
+        330
+      ],
+      "crop": [
+        586,
+        594,
+        359,
+        290
+      ],
+      "image_pivot": [
+        179.5,
+        145.0
+      ],
+      "scale": 0.29,
+      "z": -1
+    },
+    {
+      "name": "face",
+      "parent": "membrane",
+      "pivot": [
+        256,
+        340
+      ],
+      "crop": [
+        1118,
+        671,
+        283,
+        146
+      ],
+      "image_pivot": [
+        141.5,
+        73.0
+      ],
+      "scale": 0.42,
+      "z": 2,
+      "art_scale": [
+        1.09,
+        1.04
+      ]
+    }
+  ],
+  "shape_layers": {
+    "membrane": [
+      {
+        "source": "slime_map_components.png",
+        "crop": [
+          42,
+          164,
+          461,
+          297
+        ],
+        "canvas": [
+          512,
+          512
+        ],
+        "offset": [
+          26,
+          151
+        ]
+      },
+      {
+        "source": "slime_map_components.png",
+        "crop": [
+          546,
+          146,
+          446,
+          315
+        ],
+        "canvas": [
+          512,
+          512
+        ],
+        "offset": [
+          33,
+          133
+        ]
+      },
+      {
+        "source": "slime_map_components.png",
+        "crop": [
+          1034,
+          220,
+          468,
+          242
+        ],
+        "canvas": [
+          512,
+          512
+        ],
+        "offset": [
+          22,
+          206
+        ]
+      },
+      {
+        "source": "slime_map_components.png",
+        "crop": [
+          44,
+          626,
+          458,
+          272
+        ],
+        "canvas": [
+          512,
+          512
+        ],
+        "offset": [
+          27,
+          176
+        ]
+      }
+    ]
+  },
+  "actions": {
+    "idle": {
+      "fps": 6,
+      "loop": true,
+      "poses": [
+        {
+          "membrane": {
+            "shape": 0
+          }
+        },
+        {
+          "membrane": {
+            "shape": 1
+          },
+          "core": {
+            "p": [
+              0,
+              -3
+            ]
+          },
+          "face": {
+            "p": [
+              0,
+              -2
+            ]
+          }
+        },
+        {
+          "membrane": {
+            "shape": 0
+          },
+          "core": {
+            "p": [
+              1,
+              1
+            ]
+          },
+          "face": {
+            "p": [
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "membrane": {
+            "shape": 0
+          },
+          "core": {
+            "p": [
+              -1,
+              2
+            ]
+          },
+          "face": {
+            "p": [
+              0,
+              2
+            ]
+          }
+        }
+      ],
+      "events": {}
+    }
+  },
+  "effect_layers": [],
+  "effect_actions": [],
+  "pose_holds": {},
+  "camera": "Independent elevated front orthographic map camera, 30 degrees",
+  "joints": {
+    "base_contact": [
+      256,
+      448
+    ],
+    "core_suspension": [
+      256,
+      330
+    ],
+    "face_attachment": [
+      256,
+      340
+    ]
+  },
+  "acceptance": "Draft requires contact, playback, slow/step and 26/33/47px visual review",
+  "art_polish": {
+    "baseline_source": "res://assets/monsters/phase3/source/parallel_v05/map/slime/slime_map_rig.json",
+    "description": "Local painted component width and material separation; unchanged bone pivots, contact paths, root, action poses/events/timing and physical accessories.",
+    "changed_components": [
+      "face"
+    ],
+    "human_signoff": false
+  }
+}

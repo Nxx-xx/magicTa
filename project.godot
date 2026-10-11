@@ -15,10 +15,10 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 [application]
 
 config/name="塔境 · 肉鸽魔塔"
-config/description="公主救援记：十层魔塔、跨层回溯、确定性战斗与归途灯。保留两层试炼。"
+config/description="公主救援记：十层魔塔、跨层回溯、确定性战斗与归途灯。"
 run/main_scene="res://scenes/map_prototype.tscn"
 config/features=PackedStringArray("4.7", "GL Compatibility")
-config/icon="res://assets/icon.svg"
+config/icon="res://assets/icon.png"
 
 [display]
 
@@ -34,7 +34,6 @@ window/size/min_height=640
 [input_devices]
 
 pointing/emulate_touch_from_mouse=true
-pointing/emulate_mouse_from_touch=true
 
 [rendering]
 

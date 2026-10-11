@@ -1,0 +1,402 @@
+{
+  "version": 1,
+  "status": "draft",
+  "entity": "skeleton_map",
+  "canvas": 512,
+  "runtime_size": 256,
+  "anchor": [
+    256,
+    448
+  ],
+  "rest_scale": 1,
+  "source": "skeleton_map_components.png",
+  "layers": [
+    {
+      "name": "left_leg",
+      "parent": "root",
+      "pivot": [
+        227,
+        325.6
+      ],
+      "crop": [
+        0,
+        0,
+        169,
+        418
+      ],
+      "image_pivot": [
+        92.95,
+        10
+      ],
+      "scale": 0.3,
+      "z": -4,
+      "source": "skeleton_map_parts/left_leg.png"
+    },
+    {
+      "name": "right_leg",
+      "parent": "root",
+      "pivot": [
+        291,
+        323.8
+      ],
+      "crop": [
+        0,
+        0,
+        164,
+        424
+      ],
+      "image_pivot": [
+        73.8,
+        10
+      ],
+      "scale": 0.3,
+      "z": -3,
+      "source": "skeleton_map_parts/right_leg.png"
+    },
+    {
+      "name": "pelvis",
+      "parent": "root",
+      "pivot": [
+        256,
+        316
+      ],
+      "crop": [
+        0,
+        0,
+        325,
+        318
+      ],
+      "image_pivot": [
+        162.5,
+        127.2
+      ],
+      "scale": 0.3,
+      "z": -1,
+      "source": "skeleton_map_parts/pelvis.png"
+    },
+    {
+      "name": "torso",
+      "parent": "root",
+      "pivot": [
+        256,
+        294
+      ],
+      "crop": [
+        0,
+        0,
+        338,
+        328
+      ],
+      "image_pivot": [
+        169.0,
+        318
+      ],
+      "scale": 0.44,
+      "z": 0,
+      "source": "skeleton_map_parts/torso.png"
+    },
+    {
+      "name": "head",
+      "parent": "torso",
+      "pivot": [
+        256,
+        168
+      ],
+      "crop": [
+        0,
+        0,
+        264,
+        374
+      ],
+      "image_pivot": [
+        132.0,
+        368
+      ],
+      "scale": 0.4,
+      "z": 3,
+      "source": "skeleton_map_parts/head.png"
+    },
+    {
+      "name": "left_arm",
+      "parent": "torso",
+      "pivot": [
+        184,
+        173
+      ],
+      "crop": [
+        0,
+        0,
+        236,
+        369
+      ],
+      "image_pivot": [
+        158.12,
+        18
+      ],
+      "scale": 0.36,
+      "z": 4,
+      "source": "skeleton_map_parts/left_arm.png"
+    },
+    {
+      "name": "right_arm",
+      "parent": "torso",
+      "pivot": [
+        328,
+        173
+      ],
+      "crop": [
+        0,
+        0,
+        210,
+        362
+      ],
+      "image_pivot": [
+        69.3,
+        18
+      ],
+      "scale": 0.36,
+      "z": 1,
+      "source": "skeleton_map_parts/right_arm.png"
+    },
+    {
+      "name": "sword_grip",
+      "parent": "left_arm",
+      "pivot": [
+        193,
+        280
+      ],
+      "joint_only": true,
+      "z": 2
+    },
+    {
+      "name": "shield_grip",
+      "parent": "right_arm",
+      "pivot": [
+        299,
+        291
+      ],
+      "joint_only": true,
+      "z": 2
+    },
+    {
+      "name": "sword",
+      "parent": "sword_grip",
+      "pivot": [
+        193,
+        280
+      ],
+      "crop": [
+        0,
+        0,
+        186,
+        404
+      ],
+      "image_pivot": [
+        93.0,
+        343.4
+      ],
+      "scale": 0.4,
+      "z": 2,
+      "source": "skeleton_map_parts/weapon.png"
+    },
+    {
+      "name": "shield",
+      "parent": "shield_grip",
+      "pivot": [
+        310,
+        307
+      ],
+      "crop": [
+        0,
+        0,
+        359,
+        386
+      ],
+      "image_pivot": [
+        179.5,
+        193.0
+      ],
+      "scale": 0.28,
+      "z": 5,
+      "source": "skeleton_map_parts/shield.png"
+    },
+    {
+      "name": "left_elbow",
+      "parent": "left_arm",
+      "pivot": [
+        140,
+        228
+      ],
+      "joint_only": true,
+      "z": 0
+    },
+    {
+      "name": "left_knee",
+      "parent": "left_leg",
+      "pivot": [
+        227,
+        385.6
+      ],
+      "joint_only": true,
+      "z": 0
+    },
+    {
+      "name": "left_ground_contact",
+      "parent": "root",
+      "pivot": [
+        227,
+        448
+      ],
+      "joint_only": true,
+      "z": 0
+    },
+    {
+      "name": "right_elbow",
+      "parent": "right_arm",
+      "pivot": [
+        366,
+        227
+      ],
+      "joint_only": true,
+      "z": 0
+    },
+    {
+      "name": "right_knee",
+      "parent": "right_leg",
+      "pivot": [
+        291,
+        383.8
+      ],
+      "joint_only": true,
+      "z": 0
+    },
+    {
+      "name": "right_ground_contact",
+      "parent": "root",
+      "pivot": [
+        291,
+        448
+      ],
+      "joint_only": true,
+      "z": 0
+    }
+  ],
+  "actions": {
+    "idle": {
+      "fps": 6,
+      "loop": true,
+      "poses": [
+        {},
+        {
+          "head": {
+            "r": -0.65
+          },
+          "torso": {
+            "p": [
+              0,
+              -1
+            ]
+          },
+          "left_arm": {
+            "r": 0.7
+          },
+          "right_arm": {
+            "r": -0.45
+          }
+        },
+        {
+          "head": {
+            "r": -1.1
+          },
+          "torso": {
+            "p": [
+              0,
+              -2
+            ]
+          },
+          "left_arm": {
+            "r": 1.1
+          },
+          "right_arm": {
+            "r": -0.7
+          }
+        },
+        {
+          "head": {
+            "r": 0.35
+          },
+          "left_arm": {
+            "r": -0.45
+          },
+          "right_arm": {
+            "r": 0.3
+          }
+        }
+      ],
+      "events": {}
+    }
+  },
+  "pose_holds": {},
+  "camera": "Independent elevated front orthographic map camera, 30 degrees",
+  "joints": {
+    "left_leg": [
+      227,
+      325.6
+    ],
+    "right_leg": [
+      291,
+      323.8
+    ],
+    "head": [
+      256,
+      168
+    ],
+    "left_arm": [
+      184,
+      173
+    ],
+    "right_arm": [
+      328,
+      173
+    ],
+    "sword_grip": [
+      193,
+      280
+    ],
+    "shield_grip": [
+      299,
+      291
+    ],
+    "left_elbow": [
+      140,
+      228
+    ],
+    "left_knee": [
+      227,
+      385.6
+    ],
+    "left_ground_contact": [
+      227,
+      448
+    ],
+    "right_elbow": [
+      366,
+      227
+    ],
+    "right_knee": [
+      291,
+      383.8
+    ],
+    "right_ground_contact": [
+      291,
+      448
+    ],
+    "ground_anchor": [
+      256,
+      448
+    ]
+  },
+  "acceptance": "Draft requires separate visual inspection and exact hash approval",
+  "effect_layers": [],
+  "effect_actions": []
+}

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+<defs>
+<linearGradient id="steel" x2=".8" y2="1"><stop stop-color="#e2f1ed"/><stop offset=".48" stop-color="#91b1b8"/><stop offset="1" stop-color="#416478"/></linearGradient>
+<linearGradient id="gold" x2=".7" y2="1"><stop stop-color="#fff0bd"/><stop offset=".5" stop-color="#dfb76f"/><stop offset="1" stop-color="#9b633c"/></linearGradient>
+<linearGradient id="leather" x2=".8" y2="1"><stop stop-color="#c59364"/><stop offset="1" stop-color="#634333"/></linearGradient>
+<linearGradient id="jade" x2=".7" y2="1"><stop stop-color="#bbf1d6"/><stop offset="1" stop-color="#398886"/></linearGradient>
+<linearGradient id="onyx" x2=".8" y2="1"><stop stop-color="#8e91ab"/><stop offset=".45" stop-color="#46516e"/><stop offset="1" stop-color="#272d45"/></linearGradient>
+<linearGradient id="red" x2=".8" y2="1"><stop stop-color="#ffb49a"/><stop offset=".5" stop-color="#bd5260"/><stop offset="1" stop-color="#6a354e"/></linearGradient>
+</defs>
+<g stroke="#222d40" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"><ellipse cx="132" cy="134" rx="83" ry="86" fill="url(#gold)"/><circle cx="123" cy="124" r="77" fill="url(#gold)"/><circle cx="123" cy="124" r="58" fill="#a7794c" stroke="#f9d893" stroke-width="5"/><path d="M107 107H139V141H107Z" fill="url(#onyx)" /><path d="M83 84L94 92M151 84L144 92M83 162L93 153M151 162L143 153" fill="none" stroke="#ffe8a9" stroke-width="7"/><path d="M173 177L184 189M188 151L201 158" fill="none" stroke="#81573e" stroke-width="5"/></g></svg>

@@ -1,0 +1,305 @@
+{
+	"actions": {
+		"attack": {
+			"events": {
+				"hit": 4.0
+			},
+			"fps": 12.0,
+			"frames": [
+				"minotaur_frames/attack/00.png",
+				"minotaur_frames/attack/01.png",
+				"minotaur_frames/attack/02.png",
+				"minotaur_frames/attack/03.png",
+				"minotaur_frames/attack/04.png",
+				"minotaur_frames/attack/05.png",
+				"minotaur_frames/attack/06.png",
+				"minotaur_frames/attack/07.png"
+			],
+			"loop": false,
+			"metrics": [
+				{
+					"bounds": [
+						78,
+						104,
+						181,
+						248
+					],
+					"edge_touch": false,
+					"frame": 0
+				},
+				{
+					"bounds": [
+						25,
+						104,
+						234,
+						231
+					],
+					"edge_touch": false,
+					"frame": 1
+				},
+				{
+					"bounds": [
+						16,
+						104,
+						243,
+						231
+					],
+					"edge_touch": false,
+					"frame": 2
+				},
+				{
+					"bounds": [
+						56,
+						70,
+						203,
+						265
+					],
+					"edge_touch": false,
+					"frame": 3
+				},
+				{
+					"bounds": [
+						132,
+						104,
+						127,
+						258
+					],
+					"edge_touch": false,
+					"frame": 4
+				},
+				{
+					"bounds": [
+						131,
+						104,
+						128,
+						263
+					],
+					"edge_touch": false,
+					"frame": 5
+				},
+				{
+					"bounds": [
+						98,
+						104,
+						161,
+						257
+					],
+					"edge_touch": false,
+					"frame": 6
+				},
+				{
+					"bounds": [
+						78,
+						104,
+						181,
+						248
+					],
+					"edge_touch": false,
+					"frame": 7
+				}
+			]
+		},
+		"hit": {
+			"events": {},
+			"fps": 12.0,
+			"frames": [
+				"minotaur_frames/hit/00.png",
+				"minotaur_frames/hit/01.png",
+				"minotaur_frames/hit/02.png"
+			],
+			"loop": false,
+			"metrics": [
+				{
+					"bounds": [
+						75,
+						101,
+						186,
+						243
+					],
+					"edge_touch": false,
+					"frame": 0
+				},
+				{
+					"bounds": [
+						76,
+						104,
+						184,
+						245
+					],
+					"edge_touch": false,
+					"frame": 1
+				},
+				{
+					"bounds": [
+						78,
+						104,
+						181,
+						248
+					],
+					"edge_touch": false,
+					"frame": 2
+				}
+			]
+		},
+		"idle": {
+			"events": {},
+			"fps": 6.0,
+			"frames": [
+				"minotaur_frames/idle/00.png",
+				"minotaur_frames/idle/01.png",
+				"minotaur_frames/idle/02.png",
+				"minotaur_frames/idle/03.png",
+				"minotaur_frames/idle/04.png",
+				"minotaur_frames/idle/05.png"
+			],
+			"loop": true,
+			"metrics": [
+				{
+					"bounds": [
+						78,
+						104,
+						181,
+						248
+					],
+					"edge_touch": false,
+					"frame": 0
+				},
+				{
+					"bounds": [
+						78,
+						104,
+						181,
+						248
+					],
+					"edge_touch": false,
+					"frame": 1
+				},
+				{
+					"bounds": [
+						78,
+						104,
+						181,
+						248
+					],
+					"edge_touch": false,
+					"frame": 2
+				},
+				{
+					"bounds": [
+						78,
+						104,
+						181,
+						248
+					],
+					"edge_touch": false,
+					"frame": 3
+				},
+				{
+					"bounds": [
+						78,
+						104,
+						181,
+						248
+					],
+					"edge_touch": false,
+					"frame": 4
+				},
+				{
+					"bounds": [
+						78,
+						105,
+						181,
+						247
+					],
+					"edge_touch": false,
+					"frame": 5
+				}
+			]
+		},
+		"rage": {
+			"events": {},
+			"fps": 12.0,
+			"frames": [
+				"minotaur_frames/rage/00.png",
+				"minotaur_frames/rage/01.png",
+				"minotaur_frames/rage/02.png",
+				"minotaur_frames/rage/03.png",
+				"minotaur_frames/rage/04.png",
+				"minotaur_frames/rage/05.png"
+			],
+			"loop": false,
+			"metrics": [
+				{
+					"bounds": [
+						78,
+						104,
+						181,
+						248
+					],
+					"edge_touch": false,
+					"frame": 0
+				},
+				{
+					"bounds": [
+						78,
+						104,
+						181,
+						248
+					],
+					"edge_touch": false,
+					"frame": 1
+				},
+				{
+					"bounds": [
+						78,
+						104,
+						181,
+						248
+					],
+					"edge_touch": false,
+					"frame": 2
+				},
+				{
+					"bounds": [
+						78,
+						104,
+						181,
+						248
+					],
+					"edge_touch": false,
+					"frame": 3
+				},
+				{
+					"bounds": [
+						78,
+						104,
+						181,
+						248
+					],
+					"edge_touch": false,
+					"frame": 4
+				},
+				{
+					"bounds": [
+						78,
+						104,
+						181,
+						248
+					],
+					"edge_touch": false,
+					"frame": 5
+				}
+			]
+		}
+	},
+	"anchor": [
+		192.0,
+		336.0
+	],
+	"size": [
+		384.0,
+		384.0
+	],
+	"source": "res://assets/monsters/phase3/source/rig_v02/minotaur_rig.json",
+	"status": "draft"
+}

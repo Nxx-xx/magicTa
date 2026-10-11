@@ -1,0 +1,629 @@
+{
+	"actions": {
+		"combat_attack": {
+			"anchor": [
+				192,
+				348
+			],
+			"bounds": [
+				[
+					135,
+					60,
+					249,
+					353
+				],
+				[
+					111,
+					59,
+					233,
+					353
+				],
+				[
+					64,
+					62,
+					226,
+					353
+				],
+				[
+					164,
+					72,
+					371,
+					353
+				],
+				[
+					169,
+					72,
+					357,
+					353
+				],
+				[
+					154,
+					67,
+					294,
+					353
+				],
+				[
+					141,
+					62,
+					254,
+					353
+				],
+				[
+					135,
+					60,
+					249,
+					353
+				]
+			],
+			"effects_frames": [
+				"res://assets/characters/hero/phase3/source/motion_v07/effects/combat_attack/00.png",
+				"res://assets/characters/hero/phase3/source/motion_v07/effects/combat_attack/01.png",
+				"res://assets/characters/hero/phase3/source/motion_v07/effects/combat_attack/02.png",
+				"res://assets/characters/hero/phase3/source/motion_v07/effects/combat_attack/03.png",
+				"res://assets/characters/hero/phase3/source/motion_v07/effects/combat_attack/04.png",
+				"res://assets/characters/hero/phase3/source/motion_v07/effects/combat_attack/05.png",
+				"res://assets/characters/hero/phase3/source/motion_v07/effects/combat_attack/06.png",
+				"res://assets/characters/hero/phase3/source/motion_v07/effects/combat_attack/07.png"
+			],
+			"events": {
+				"hit": 3
+			},
+			"foot_contacts_map_px": [
+				{
+					"left": [
+						61.5,
+						116.0
+					],
+					"right": [
+						66.5,
+						116.0
+					]
+				},
+				{
+					"left": [
+						61.5,
+						116.0
+					],
+					"right": [
+						66.5,
+						116.0
+					]
+				},
+				{
+					"left": [
+						61.5,
+						116.0
+					],
+					"right": [
+						66.5,
+						116.0
+					]
+				},
+				{
+					"left": [
+						61.5,
+						116.0
+					],
+					"right": [
+						66.5,
+						116.0
+					]
+				},
+				{
+					"left": [
+						61.5,
+						116.0
+					],
+					"right": [
+						66.5,
+						116.0
+					]
+				},
+				{
+					"left": [
+						61.5,
+						116.0
+					],
+					"right": [
+						66.5,
+						116.0
+					]
+				},
+				{
+					"left": [
+						61.5,
+						116.0
+					],
+					"right": [
+						66.5,
+						116.0
+					]
+				},
+				{
+					"left": [
+						61.5,
+						116.0
+					],
+					"right": [
+						66.5,
+						116.0
+					]
+				}
+			],
+			"fps": 16,
+			"frames": [
+				"res://assets/characters/hero/phase3/source/motion_v07/frames/combat_attack/00.png",
+				"res://assets/characters/hero/phase3/source/motion_v07/frames/combat_attack/01.png",
+				"res://assets/characters/hero/phase3/source/motion_v07/frames/combat_attack/02.png",
+				"res://assets/characters/hero/phase3/source/motion_v07/frames/combat_attack/03.png",
+				"res://assets/characters/hero/phase3/source/motion_v07/frames/combat_attack/04.png",
+				"res://assets/characters/hero/phase3/source/motion_v07/frames/combat_attack/05.png",
+				"res://assets/characters/hero/phase3/source/motion_v07/frames/combat_attack/06.png",
+				"res://assets/characters/hero/phase3/source/motion_v07/frames/combat_attack/07.png"
+			],
+			"grip_errors_source_px": [
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				}
+			],
+			"loop": false,
+			"pose_holds": {},
+			"review": "source/motion_v07/REVIEW.md",
+			"size": [
+				384,
+				384
+			],
+			"source": "source/motion_v07/hero_right_editable.tscn",
+			"status": "draft"
+		},
+		"combat_guard": {
+			"anchor": [
+				192,
+				348
+			],
+			"bounds": [
+				[
+					122,
+					62,
+					244,
+					353
+				],
+				[
+					116,
+					67,
+					280,
+					353
+				],
+				[
+					111,
+					70,
+					291,
+					353
+				],
+				[
+					126,
+					63,
+					254,
+					353
+				]
+			],
+			"effects_frames": [
+				"res://assets/characters/hero/phase3/source/motion_v07/effects/combat_guard/00.png",
+				"res://assets/characters/hero/phase3/source/motion_v07/effects/combat_guard/01.png",
+				"res://assets/characters/hero/phase3/source/motion_v07/effects/combat_guard/02.png",
+				"res://assets/characters/hero/phase3/source/motion_v07/effects/combat_guard/03.png"
+			],
+			"events": {},
+			"foot_contacts_map_px": [
+				{
+					"left": [
+						61.5,
+						116.0
+					],
+					"right": [
+						66.5,
+						116.0
+					]
+				},
+				{
+					"left": [
+						61.5,
+						116.0
+					],
+					"right": [
+						66.5,
+						116.0
+					]
+				},
+				{
+					"left": [
+						61.5,
+						116.0
+					],
+					"right": [
+						66.5,
+						116.0
+					]
+				},
+				{
+					"left": [
+						61.5,
+						116.0
+					],
+					"right": [
+						66.5,
+						116.0
+					]
+				}
+			],
+			"fps": 12,
+			"frames": [
+				"res://assets/characters/hero/phase3/source/motion_v07/frames/combat_guard/00.png",
+				"res://assets/characters/hero/phase3/source/motion_v07/frames/combat_guard/01.png",
+				"res://assets/characters/hero/phase3/source/motion_v07/frames/combat_guard/02.png",
+				"res://assets/characters/hero/phase3/source/motion_v07/frames/combat_guard/03.png"
+			],
+			"grip_errors_source_px": [
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				}
+			],
+			"loop": false,
+			"pose_holds": {},
+			"review": "source/motion_v07/REVIEW.md",
+			"size": [
+				384,
+				384
+			],
+			"source": "source/motion_v07/hero_right_editable.tscn",
+			"status": "draft"
+		},
+		"combat_hit": {
+			"anchor": [
+				192,
+				348
+			],
+			"bounds": [
+				[
+					115,
+					62,
+					231,
+					353
+				],
+				[
+					85,
+					68,
+					227,
+					353
+				],
+				[
+					128,
+					60,
+					253,
+					353
+				]
+			],
+			"effects_frames": [
+				"res://assets/characters/hero/phase3/source/motion_v07/effects/combat_hit/00.png",
+				"res://assets/characters/hero/phase3/source/motion_v07/effects/combat_hit/01.png",
+				"res://assets/characters/hero/phase3/source/motion_v07/effects/combat_hit/02.png"
+			],
+			"events": {},
+			"foot_contacts_map_px": [
+				{
+					"left": [
+						61.5,
+						116.0
+					],
+					"right": [
+						66.5,
+						116.0
+					]
+				},
+				{
+					"left": [
+						61.5000038146973,
+						116.0
+					],
+					"right": [
+						66.5000076293945,
+						116.0
+					]
+				},
+				{
+					"left": [
+						61.5,
+						116.0
+					],
+					"right": [
+						66.5,
+						116.0
+					]
+				}
+			],
+			"fps": 12,
+			"frames": [
+				"res://assets/characters/hero/phase3/source/motion_v07/frames/combat_hit/00.png",
+				"res://assets/characters/hero/phase3/source/motion_v07/frames/combat_hit/01.png",
+				"res://assets/characters/hero/phase3/source/motion_v07/frames/combat_hit/02.png"
+			],
+			"grip_errors_source_px": [
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				}
+			],
+			"loop": false,
+			"pose_holds": {},
+			"review": "source/motion_v07/REVIEW.md",
+			"size": [
+				384,
+				384
+			],
+			"source": "source/motion_v07/hero_right_editable.tscn",
+			"status": "draft"
+		},
+		"combat_victory": {
+			"anchor": [
+				192,
+				348
+			],
+			"bounds": [
+				[
+					135,
+					62,
+					249,
+					353
+				],
+				[
+					129,
+					60,
+					247,
+					353
+				],
+				[
+					131,
+					58,
+					250,
+					353
+				],
+				[
+					126,
+					55,
+					254,
+					353
+				],
+				[
+					122,
+					53,
+					249,
+					353
+				],
+				[
+					121,
+					53,
+					246,
+					353
+				],
+				[
+					121,
+					53,
+					245,
+					353
+				],
+				[
+					122,
+					53,
+					244,
+					353
+				]
+			],
+			"effects_frames": [
+				"res://assets/characters/hero/phase3/source/motion_v07/effects/combat_victory/00.png",
+				"res://assets/characters/hero/phase3/source/motion_v07/effects/combat_victory/01.png",
+				"res://assets/characters/hero/phase3/source/motion_v07/effects/combat_victory/02.png",
+				"res://assets/characters/hero/phase3/source/motion_v07/effects/combat_victory/03.png",
+				"res://assets/characters/hero/phase3/source/motion_v07/effects/combat_victory/04.png",
+				"res://assets/characters/hero/phase3/source/motion_v07/effects/combat_victory/05.png",
+				"res://assets/characters/hero/phase3/source/motion_v07/effects/combat_victory/06.png",
+				"res://assets/characters/hero/phase3/source/motion_v07/effects/combat_victory/07.png"
+			],
+			"events": {},
+			"foot_contacts_map_px": [
+				{
+					"left": [
+						61.5,
+						116.0
+					],
+					"right": [
+						66.5,
+						116.0
+					]
+				},
+				{
+					"left": [
+						61.5,
+						116.0
+					],
+					"right": [
+						66.5,
+						116.0
+					]
+				},
+				{
+					"left": [
+						61.5,
+						116.0
+					],
+					"right": [
+						66.5,
+						116.0
+					]
+				},
+				{
+					"left": [
+						61.5,
+						116.0
+					],
+					"right": [
+						66.5,
+						116.0
+					]
+				},
+				{
+					"left": [
+						61.5,
+						116.0
+					],
+					"right": [
+						66.5,
+						116.0
+					]
+				},
+				{
+					"left": [
+						61.5,
+						116.0
+					],
+					"right": [
+						66.5,
+						116.0
+					]
+				},
+				{
+					"left": [
+						61.5,
+						116.0
+					],
+					"right": [
+						66.5,
+						116.0
+					]
+				},
+				{
+					"left": [
+						61.5,
+						116.0
+					],
+					"right": [
+						66.5,
+						116.0
+					]
+				}
+			],
+			"fps": 12,
+			"frames": [
+				"res://assets/characters/hero/phase3/source/motion_v07/frames/combat_victory/00.png",
+				"res://assets/characters/hero/phase3/source/motion_v07/frames/combat_victory/01.png",
+				"res://assets/characters/hero/phase3/source/motion_v07/frames/combat_victory/02.png",
+				"res://assets/characters/hero/phase3/source/motion_v07/frames/combat_victory/03.png",
+				"res://assets/characters/hero/phase3/source/motion_v07/frames/combat_victory/04.png",
+				"res://assets/characters/hero/phase3/source/motion_v07/frames/combat_victory/05.png",
+				"res://assets/characters/hero/phase3/source/motion_v07/frames/combat_victory/06.png",
+				"res://assets/characters/hero/phase3/source/motion_v07/frames/combat_victory/07.png"
+			],
+			"grip_errors_source_px": [
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				}
+			],
+			"loop": false,
+			"pose_holds": {},
+			"review": "source/motion_v07/REVIEW.md",
+			"size": [
+				384,
+				384
+			],
+			"source": "source/motion_v07/hero_right_editable.tscn",
+			"status": "draft"
+		}
+	},
+	"handedness": "right_sword_left_lantern",
+	"human_signoff": false,
+	"mirrored": false,
+	"source_canvas": [
+		768,
+		768
+	],
+	"status": "draft",
+	"version": 1
+}

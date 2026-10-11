@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "challenges": {
+    "p3_c0": {"id":"p3_c0","name":"标准旅程","description":"敌人与补给保持基线。","normal_hp_percent":100,"normal_attack":0,"boss_hp_percent":100,"boss_attack":0,"heal_percent":100,"icon":"p3_c0"},
+    "p3_c1": {"id":"p3_c1","name":"深塔回响","description":"普通与精英生命 ×1.10、攻击 +1；首领攻击 +2。","normal_hp_percent":110,"normal_attack":1,"boss_hp_percent":100,"boss_attack":2,"heal_percent":100,"icon":"p3_c1","requires":"p3_c0_clear"},
+    "p3_c2": {"id":"p3_c2","name":"余烬试炼","description":"普通与精英生命 ×1.15、攻击 +2；首领生命 ×1.10、攻击 +3。地图药剂与休息显式治疗 ×0.80，向下取整，正值至少 1。","normal_hp_percent":115,"normal_attack":2,"boss_hp_percent":110,"boss_attack":3,"heal_percent":80,"icon":"p3_c2","requires":"p3_c1_clear"}
+  },
+  "start_configs": {
+    "default":{"id":"default","name":"提灯旅人","description":"均衡的提灯起点。","hp_delta":0,"attack_delta":0,"defense_delta":0,"gold_delta":0,"icon":"default"},
+    "p3_vanguard":{"id":"p3_vanguard","name":"先遣剑士","description":"攻击 +2，防御 -1。","hp_delta":0,"attack_delta":2,"defense_delta":-1,"gold_delta":0,"icon":"p3_vanguard","requires":"p3_first_midboss"},
+    "p3_keeper":{"id":"p3_keeper","name":"守灯人","description":"生命 +10，攻击 -2，防御 +1。","hp_delta":10,"attack_delta":-2,"defense_delta":1,"gold_delta":0,"icon":"p3_keeper","requires":"p3_sustain_20"},
+    "p3_trader":{"id":"p3_trader","name":"行商护卫","description":"生命 -10，初始金币 +20。","hp_delta":-10,"attack_delta":0,"defense_delta":0,"gold_delta":20,"icon":"p3_trader","requires":"p3_shop_30"}
+  }
+}

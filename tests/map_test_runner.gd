@@ -64,9 +64,14 @@ func _walk(core, target: Vector2i) -> void:
 
 func _ascend(core, theme_id: String) -> void:
 	_walk(core, Vector2i(9, 1))
-	_check(core.state.pending.get("kind", "") == "floor_choice", "first ascent shows three choices")
-	core.choose_floor(theme_id)
+	_check(core.state.pending.get("kind", "") == "stairs", "first ascent uses stairs without theme selection")
+	_enter_fixture_theme(core, theme_id)
 	_check(core.state.floor == 2 and core.position() == Vector2i(1, 9), "ascent arrives on downstairs without bouncing")
+
+func _enter_fixture_theme(core, theme_id: String) -> void:
+	# Explicit recipes keep theme-specific branch coverage independent of automatic selection.
+	core.state.floors["2"] = core._generate_floor(2, theme_id)
+	core.confirm_interaction()
 
 func _test_return_trip() -> void:
 	var core = _new_game()
@@ -135,7 +140,7 @@ func _test_shop() -> void:
 	_check(core.state.player.gold == 30, "collect money then return to merchant")
 	_walk(core, Vector2i(9, 7))
 	core.buy(0)
-	_check(core.state.player.gold == 0 and core.entity_at(Vector2i(9, 7)).purchased, "purchase persists and charges once")
+	_check(core.state.player.gold == 0 and core.entity_at(Vector2i(9, 7)).purchased_ids.size() == 1, "purchase persists and charges once")
 	core.interact(core.position())
 	_check(not core.buy(0).is_empty() and core.state.player.gold == 0, "merchant cannot sell again")
 	core.cancel_pending()
@@ -143,7 +148,7 @@ func _test_shop() -> void:
 	core.confirm_interaction()
 	core.interact(core.position())
 	core.confirm_interaction()
-	_check(core.entity_at(Vector2i(9, 7)).purchased, "merchant purchase persists across floors")
+	_check(core.entity_at(Vector2i(9, 7)).purchased_ids.size() == 1, "merchant purchase persists across floors")
 
 func _test_treasure() -> void:
 	var core = _new_game()
@@ -170,9 +175,9 @@ func _test_save_and_seed() -> void:
 	_walk(original, Vector2i(9, 1))
 	var restored = Core.new(path)
 	restored.load_game()
-	_check(restored.state.pending.kind == "floor_choice" and restored.state.floors.size() == 1, "reload keeps pending first-ascent choice")
-	original.choose_floor("battle")
-	restored.choose_floor("battle")
+	_check(restored.state.pending.kind == "stairs" and restored.state.floors.size() == 1, "reload keeps pending first-ascent stairs")
+	original.confirm_interaction()
+	restored.confirm_interaction()
 	_check(SavedData.equal(original.state.floors, restored.state.floors) and original.rng.state == restored.rng.state, "same seed and saved RNG create identical theme contents")
 	_walk(original, Vector2i(3, 9))
 	_walk(original, Vector2i(1, 9))

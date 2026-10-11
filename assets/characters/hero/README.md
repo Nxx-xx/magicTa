@@ -1,5 +1,7 @@
 # 主角四向素材 V01
 
+> 2026-10-01 更新：V01 继续作为旧局和缺失资源回退；第三阶段新局已接入四向分层与完整 91 帧位目录，见 [v03 审阅](phase3/source/rig_v03/REVIEW.md)。本文下述“行走尚未完成”仅描述历史 V01，不代表当前第三阶段运行状态。
+
 制作日期：2026-09-29。美术由 **Codex 内置 image_gen** 生成，身份与风格来源为用户批准的 `assets/art_concepts/hero_design_v01.png`，整体风格另参考 `tower_character_map_v01.png`。没有直接裁切带背景设定图作为游戏素材，没有镜像人物，没有脚本绘制替代人物。
 
 **交付状态：四向静态可用；基础行走尚未完成。** 两轮各 16 帧的行走生成均未通过步态审查，只保留为明确标记的草稿。正式 SpriteFrames 仅包含四个单帧 idle，不包含 walk。主游戏入口、绘制路径、地图和玩法均未修改。
@@ -66,3 +68,9 @@ Godot **4.7.2 stable** 验证结果：**25 项通过，0 项失败**。检查包
 实际 GPU 渲染：OpenGL Compatibility / NVIDIA GeForce RTX 5070，已生成并目视检视 `reports/idle_godot.png` 和 `reports/walk_rejected_phase_0.png`，另保存草稿 phase 1–3 截图。深浅棋盘背景未见矩形底色或明显白边。正式素材放大预览使用运行时 128px 纹理，会比 256px 母版柔和，符合运行时过滤行为。
 
 机器报告：`reports/validation.json`、`reports/texture_metrics.json`。引擎启动输出过系统根证书库读取告警；本任务无联网依赖，离线导出、资源加载和 GPU 截图均成功。未提交、推送或重置 Git；项目原有改动与其他并行工作保留。
+
+## 2026-10-01 主地图运行时行走
+
+主地图现使用 `scripts/ui/hero_walk.gd` 的纹理网格与 CanvasItem shader，在上述四张正式 idle 素材上实时表现交替迈腿、身体起伏和斗篷轻摆；原 PNG、静态 SpriteFrames 和未通过的生成草稿均未改动。此为运行时形变动画，不是新增手绘 walk 帧序列。`grid_board.gd` 以连续插值衔接移动，朝向在步段交界切换，落脚发出脚步事件。减少动效关闭姿态起伏但保留平滑位移。
+
+`tests/walking_test_runner.gd` 验证持续输入、跨格连续性、转向、停步及音频；实际 OpenGL 录屏见 `build/verification/walking/continuous-walk.gif`。这是主地图集成更新，以上早期静态素材交付记录保留。

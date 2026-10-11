@@ -1,0 +1,11 @@
+# Warden battle draft review
+
+23 battle frame slots: idle 4/6 loop, attack 8/12 (shield bash 3, hit 4), hit 3/12, defeat 8/12 (mace release 3, ground 5, knee contact 6). 512 master to 256 RGBA, combat anchor (128,237). Attack 7→0 return hold and defeat 7→6 terminal kneeling hold are explicit; 21 non-hold body poses. Independent map camera belongs to map_b.
+
+One sixteen-part built-in imagegen identity sheet and the shared slash/spark original used by both elites. Exact prompts and unchanged originals are in this folder. Helmet/chest/waist, four arm segments, six leg segments, shield, mace and short U-shaped chain are independent painted layers. Named near/far wrists, shield grip, chain endpoints; two-bone leg contact solver; fixed root. Impact spark is separately baked/switched for attack; the physical chain stays part of body art.
+
+Actually reviewed all four contact sheets, browser original and 0.25 speed, paused step hit frame 4 and terminal frame 7, impact effect off, and 26/33/47px silhouettes. Helmet faces left, front shield opens then drives left, torso recoils; defeat lowers chest and knees behind the planted shield, with separate mace release. Shield/helmet/purple cloth are readable at small sizes; individual chain links and rivets are not expected to remain readable at 26px. Large shield naturally occludes parts of the far arm/mace path; the attack reads primarily as a shield bash.
+
+Short chain remains below belt across every action. Preview includes a sample -19 at top of character canvas (review fixture only, not combat calculation). Native chain-only exports in qa_chain were checked across all 23 frame slots against reserved runtime text rectangle (80,10,105,53): zero alpha pixels overlap. Evidence: build/verification/phase3/08-parallel/base_c/warden_chain_text_zone.json. This verifies the declared text zone; coordinator must preserve that zone and check actual UI text placement during integration.
+
+Final native scene reload succeeds and all frame bounds avoid edges. Exact body/effect hashes in warden_publish_review.json bind this agent visual decision; human_signoff=false and all sources remain draft. Original/quarter lossless WebP, small strips, contact sheets, native logs are in build/verification/phase3/08-parallel/base_c/warden_*. Production release and real game UI acceptance remain coordinator responsibilities.

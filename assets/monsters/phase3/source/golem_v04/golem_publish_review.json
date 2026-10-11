@@ -1,0 +1,122 @@
+{
+  "entity": "golem",
+  "date": "2026-10-01",
+  "review_method": "contact sheets plus native/browser playback; agent visual review",
+  "human_signoff": false,
+  "new_imagegen_originals": 3,
+  "actions": {
+    "idle": {
+      "decision": "accepted",
+      "draft_manifest": "golem_draft_manifest.json",
+      "source_action": "idle",
+      "frame_slots": 6,
+      "pose_holds": {},
+      "notes": "Head/shoulder breathing; independent planted feet and fixed root.",
+      "frame_sha256": [
+        "621274271019485014711767ea2f631ea02747b118b11cfc847060fad8842e37",
+        "116617f3ae381a9004b921949f955539ec41e2d6689e9a9a5107b7b5549b7d6d",
+        "c31e6bb3053fdc3676fe9f4d538503b188cca39be30d30b38a16c2ab7838a64d",
+        "0bd84c3c855a49d596100ecf8072e42406be8cddc634d27752df68e40f6fd615",
+        "691ce1f7208ca8a02d027bced1e7ffe2e507ffd878a449487e613353622b816f",
+        "a34de8c05271089017333be244c389224893211c732e24217910ef72a2e40b41"
+      ]
+    },
+    "attack": {
+      "decision": "accepted",
+      "draft_manifest": "golem_draft_manifest.json",
+      "source_action": "attack",
+      "frame_slots": 10,
+      "pose_holds": {
+        "9": 0.0
+      },
+      "notes": "Shoulder/elbow lift, leftward contact at frame 5, recovery and declared hold; no clipping.",
+      "frame_sha256": [
+        "621274271019485014711767ea2f631ea02747b118b11cfc847060fad8842e37",
+        "edc6e136b7dd08b68cffa65178923a997a1447c568d6caa5848295b7f34dc5f6",
+        "756ecb84472e4c8d0404e6c93fc55e452ba96dc7be561de73fae5a3160cee399",
+        "21a0d044a23d6814d99b835c2ed97bba6c914f70dbcc0ce33d6cfa62fab742d8",
+        "93d1705beb1ec05679cf53cd1af841680ff4574e3a41155976b8f020660a6bb0",
+        "e5ba755ecc470791c69eb7f92af9d8fb2f73a384e31d1dda2eb85591e29a1d56",
+        "257167f56300bf2f2698800091c4b38eee91efe3cbccd2061b26572868b3f3cb",
+        "ba063dec600927e39be9e06457ac263faef73e7d8d63fb7a97d870526e458370",
+        "7b8c16ae9274a8e0225120eb64a4f6a0d2ff4e8a5d5a21b2bb12c4202d1cf621",
+        "621274271019485014711767ea2f631ea02747b118b11cfc847060fad8842e37"
+      ]
+    },
+    "hit": {
+      "decision": "accepted",
+      "draft_manifest": "golem_draft_manifest.json",
+      "source_action": "hit",
+      "frame_slots": 3,
+      "pose_holds": {},
+      "notes": "Chest/head recoil followed by neutral recovery.",
+      "frame_sha256": [
+        "7df561db8150037bc34daf8bc293da2ea911923d271dd535cfdb5bc5abeeeb88",
+        "8d085c7a0bced69b56e7b678d32a775f9e3110d9b3a0104076e790c460043f19",
+        "621274271019485014711767ea2f631ea02747b118b11cfc847060fad8842e37"
+      ]
+    },
+    "armor": {
+      "decision": "accepted",
+      "draft_manifest": "golem_draft_manifest.json",
+      "source_action": "armor",
+      "frame_slots": 6,
+      "pose_holds": {},
+      "notes": "Independent chest halves close; rune can be disabled without changing plate pose.",
+      "frame_sha256": [
+        "8722a628da5b5c3897c3d72a519482ab7a18739d37dcffb34fbffb3521b10146",
+        "f169de47cdb199aaf1326d4cb564161185192e8b86a8b49674702e69ceba348c",
+        "f0ef088001d879e6d6821ca0ebabe32ffb2b64e047dc005a5a291eea7c144e78",
+        "38b05da6d58562f9c5f6750e0704277b90d712c7c203ad661fb3e553fa4684d8",
+        "78740147a1aefaa30ace6ff52d2369cc191666618d5433f11cdc14a6f5194147",
+        "5e04087fd7886dd39c760d19140d69a5ad1a2eee06cca5f543744da278b239b2"
+      ],
+      "effects_sha256": [
+        "49ad5c7c390f6ffa1cd9406b9b0a278e9ff64a4f83cea27288c3673236fb76ac",
+        "a7d9e6f4770275859b01e150fc93d331b0b08417606c938262a6ee630e90d630",
+        "dc22e7ba9f59520731df299333ad691b84e6859630dd618495a6d89e2403635d",
+        "8b1604d4f2572ba3cd23aae6f09faf8e249a32f74f414140a00270a5866757a4",
+        "a4ddde7939588e2585db06f1d7ef5336afe725440075d544a78130f3388b7a1d",
+        "091ff4359a51711cee100af37328b7615df3294e69a50a8701dbdda605d45c14"
+      ]
+    },
+    "defeat": {
+      "decision": "accepted",
+      "draft_manifest": "golem_draft_manifest.json",
+      "source_action": "defeat",
+      "frame_slots": 12,
+      "pose_holds": {
+        "11": 10.0
+      },
+      "notes": "Core dims, separate head/shoulder/limb rock trajectories collapse into bounded rubble; final hold declared.",
+      "frame_sha256": [
+        "2cd712e6d97e93b0cbf59d6a931efbe04bf36690e8ec9a09785e42c5c36a55a4",
+        "389384b2c2dad3a38bec40356559c36502c60c9dbf0d9f8c74c98647bf5637dc",
+        "86abbbf01365143b0212d0a79a49d7af3bb524de6535d05715a9962e9b8e20f4",
+        "fea191ed86e2e05df0432becfb53e088d612708374be50fcf710cc0d6e16f1a1",
+        "f2228a8a86defb6c7a028bd6bef5d4dab0ae549dd10c48e7e41ab14b1b869d37",
+        "d69fbdf21d68b257cb1a86d8e39b18a1ecf60d1c3e6b59f8730b95f5a758c5d3",
+        "064263a20ffa53c6f519f8ca2dc05eaabc701744d9848db9c3f487a3e9de1a7e",
+        "72b9f09ab6bc8e4de7698d8ceb1de0391675ec0c7395fd8c48a2c502daf4b2ac",
+        "668a4be46edd1c714545017983cf2d5ad6601f68d1e76442c1ac18b9ad92d896",
+        "afca95012d1462f259524b520a950f3cc1bb307b246bea4eefb541a3d84e8d1f",
+        "677a0a62647414fad32929789321a76c45784fff7094e72eb74d100d39b0b3a6",
+        "677a0a62647414fad32929789321a76c45784fff7094e72eb74d100d39b0b3a6"
+      ]
+    },
+    "map_idle": {
+      "decision": "accepted",
+      "draft_manifest": "golem_map_draft_manifest.json",
+      "source_action": "idle",
+      "frame_slots": 4,
+      "pose_holds": {},
+      "notes": "Independent frontal elevated map anatomy, no mirrored combat art or atlas neighbor fragments. Reviewed larger fixed map framing to match boss cell readability; anchor and foot contacts retained.",
+      "frame_sha256": [
+        "64cdaa972f6e3bfc363e0b9a2bb1cc46292495e1c46590d63f077991bbbb23d2",
+        "cf51aaf296c0b263612ec06cc21858dd3a78c99413f97ed2bcedfd8af402b3e3",
+        "4b1d0d9aa7acd5b9eee8741a1e015ff5132ac0b22f522f0f03fec769124e7196",
+        "e5ebee318f4123723fe4bd7cd17c48d2f79b2c0118797397a769bc8a1da6ad4e"
+      ]
+    }
+  }
+}

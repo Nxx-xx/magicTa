@@ -1,0 +1,325 @@
+{
+  "version": 1,
+  "status": "draft",
+  "entity": "bat_map",
+  "canvas": 512,
+  "runtime_size": 256,
+  "anchor": [
+    256,
+    448
+  ],
+  "rest_scale": 1,
+  "source": "bat_map_components.png",
+  "layers": [
+    {
+      "name": "left_wing",
+      "parent": "body",
+      "pivot": [
+        223,
+        220
+      ],
+      "crop": [
+        0,
+        0,
+        479,
+        323
+      ],
+      "image_pivot": [
+        457,
+        162
+      ],
+      "scale": 0.32,
+      "z": -2,
+      "source": "bat_map_parts/left_inner.png",
+      "art_scale": [
+        1.0,
+        1.0
+      ],
+      "art_material": {
+        "shadow_lift": 0.0,
+        "cool_mix": 0.065
+      }
+    },
+    {
+      "name": "left_wingtip",
+      "parent": "left_wing",
+      "pivot": [
+        159.64,
+        172.32
+      ],
+      "crop": [
+        0,
+        0,
+        479,
+        323
+      ],
+      "image_pivot": [
+        259,
+        13
+      ],
+      "scale": 0.32,
+      "z": -3,
+      "source": "bat_map_parts/left_tip.png",
+      "art_scale": [
+        1.0,
+        1.0
+      ],
+      "art_material": {
+        "shadow_lift": 0.0,
+        "cool_mix": 0.065
+      }
+    },
+    {
+      "name": "right_wing",
+      "parent": "body",
+      "pivot": [
+        289,
+        220
+      ],
+      "crop": [
+        0,
+        0,
+        479,
+        323
+      ],
+      "image_pivot": [
+        22,
+        162
+      ],
+      "scale": 0.32,
+      "z": -2,
+      "source": "bat_map_parts/right_inner.png",
+      "art_scale": [
+        1.0,
+        1.0
+      ],
+      "art_material": {
+        "shadow_lift": 0.0,
+        "cool_mix": 0.065
+      }
+    },
+    {
+      "name": "right_wingtip",
+      "parent": "right_wing",
+      "pivot": [
+        352.36,
+        172.32
+      ],
+      "crop": [
+        0,
+        0,
+        479,
+        323
+      ],
+      "image_pivot": [
+        220,
+        13
+      ],
+      "scale": 0.32,
+      "z": -3,
+      "source": "bat_map_parts/right_tip.png",
+      "art_scale": [
+        1.0,
+        1.0
+      ],
+      "art_material": {
+        "shadow_lift": 0.0,
+        "cool_mix": 0.065
+      }
+    },
+    {
+      "name": "body",
+      "parent": "root",
+      "pivot": [
+        256,
+        280
+      ],
+      "crop": [
+        0,
+        0,
+        384,
+        431
+      ],
+      "image_pivot": [
+        192.0,
+        284.46000000000004
+      ],
+      "scale": 0.43,
+      "z": 2,
+      "source": "bat_map_parts/body.png",
+      "art_scale": [
+        1.045,
+        1.0
+      ],
+      "art_material": {
+        "shadow_lift": 0.0,
+        "cool_mix": 0.0
+      }
+    },
+    {
+      "name": "feet",
+      "parent": "body",
+      "pivot": [
+        256,
+        334
+      ],
+      "crop": [
+        0,
+        0,
+        249,
+        135
+      ],
+      "image_pivot": [
+        124.5,
+        0
+      ],
+      "scale": 0.3,
+      "z": 1,
+      "source": "bat_map_parts/feet.png"
+    }
+  ],
+  "actions": {
+    "idle": {
+      "fps": 8,
+      "loop": true,
+      "poses": [
+        {
+          "body": {
+            "p": [
+              0,
+              0
+            ]
+          },
+          "left_wing": {
+            "r": -6
+          },
+          "right_wing": {
+            "r": 6
+          },
+          "left_wingtip": {
+            "r": -5
+          },
+          "right_wingtip": {
+            "r": 5
+          },
+          "feet": {
+            "r": -0.6000000000000001
+          }
+        },
+        {
+          "body": {
+            "p": [
+              0,
+              -3
+            ]
+          },
+          "left_wing": {
+            "r": 18
+          },
+          "right_wing": {
+            "r": -18
+          },
+          "left_wingtip": {
+            "r": 12
+          },
+          "right_wingtip": {
+            "r": -12
+          },
+          "feet": {
+            "r": 1.8
+          }
+        },
+        {
+          "body": {
+            "p": [
+              0,
+              -5
+            ]
+          },
+          "left_wing": {
+            "r": 5
+          },
+          "right_wing": {
+            "r": -5
+          },
+          "left_wingtip": {
+            "r": 2
+          },
+          "right_wingtip": {
+            "r": -2
+          },
+          "feet": {
+            "r": 0.5
+          }
+        },
+        {
+          "body": {
+            "p": [
+              0,
+              -1
+            ]
+          },
+          "left_wing": {
+            "r": -19
+          },
+          "right_wing": {
+            "r": 19
+          },
+          "left_wingtip": {
+            "r": -12
+          },
+          "right_wingtip": {
+            "r": 12
+          },
+          "feet": {
+            "r": -1.9000000000000001
+          }
+        }
+      ],
+      "events": {}
+    }
+  },
+  "effect_actions": [],
+  "effect_layers": [],
+  "pose_holds": {},
+  "joints": {
+    "left_shoulder": [
+      223,
+      220
+    ],
+    "right_shoulder": [
+      289,
+      220
+    ],
+    "left_elbow": [
+      159.64,
+      172.32
+    ],
+    "right_elbow": [
+      352.36,
+      172.32
+    ],
+    "toe_attachment": [
+      256,
+      334
+    ],
+    "ground_projection": [
+      256,
+      448
+    ]
+  },
+  "camera": "Independent elevated front orthographic map camera, 30 degrees",
+  "acceptance": "Inspect wing joints, all four poses, original/quarter and small sizes",
+  "art_polish": {
+    "baseline_source": "res://assets/monsters/phase3/source/parallel_v05/map/bat/bat_map_rig.json",
+    "description": "Local painted component width and material separation; unchanged bone pivots, contact paths, root, action poses/events/timing and physical accessories.",
+    "changed_components": [
+      "left_wing",
+      "left_wingtip",
+      "right_wing",
+      "right_wingtip",
+      "body"
+    ],
+    "human_signoff": false
+  }
+}

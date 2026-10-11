@@ -1,0 +1,138 @@
+{
+  "assets": [
+    {
+      "bounds": [
+        32,
+        31,
+        174,
+        189
+      ],
+      "icon_sha256": "b71d436d3779be87e584a14f663f58f5dd45895b5ec867b18e6675c03affc485",
+      "icon_size": [
+        128,
+        128
+      ],
+      "id": "p3_dawn_sigil",
+      "master_sha256": "fdb9a15a86fc764f509f95c5f2904de6810363c01f0fd87bafe80456369d5ddc",
+      "master_size": [
+        256,
+        256
+      ],
+      "rgba": true,
+      "source_sha256": "a5721f5c709c3e6497370235bde6cb89f9ee6e8cb24857ea9991dbe8ca982941",
+      "transparent": true
+    },
+    {
+      "bounds": [
+        51,
+        33,
+        154,
+        191
+      ],
+      "icon_sha256": "bc68b94b40a56892347e6a22cae077b450075fe74943fedbc1fac01db41a7c7b",
+      "icon_size": [
+        128,
+        128
+      ],
+      "id": "p3_lantern_aegis",
+      "master_sha256": "dd33c4e57c3d03a1bfb6d5d6ba945c66eb24fe59edeb9fa50b9d8f85b66b8130",
+      "master_size": [
+        256,
+        256
+      ],
+      "rgba": true,
+      "source_sha256": "ebb2505df97a90f25285e525a8d8f3d9f6cd91c754bc57f5cc918acec8411194",
+      "transparent": true
+    },
+    {
+      "bounds": [
+        42,
+        31,
+        170,
+        193
+      ],
+      "icon_sha256": "294359bc10faa4764dfc24b47669f5a36208079b04db2819163a721f79f7eb2d",
+      "icon_size": [
+        128,
+        128
+      ],
+      "id": "p3_bounty_ledger",
+      "master_sha256": "4e6f40758fd275b0f874037e4400f0abfd185fab53bf3ee1b8c82a31b86bc309",
+      "master_size": [
+        256,
+        256
+      ],
+      "rgba": true,
+      "source_sha256": "44276d14e109c9e22da40fa9eed546064c29e3a3caca3c1a2f03b4f47dee3a65",
+      "transparent": true
+    },
+    {
+      "bounds": [
+        64,
+        32,
+        128,
+        192
+      ],
+      "icon_sha256": "a13b1c05f07712d03bd5d41c29a8a2ac734df051ba0ed65f0f30e02df37f55cd",
+      "icon_size": [
+        128,
+        128
+      ],
+      "id": "p3_rhythm_blade",
+      "master_sha256": "f2db1fb9ecc9b1de95e001aab1b3b9d26871e1d8298cf671440a7d0ed2028834",
+      "master_size": [
+        256,
+        256
+      ],
+      "rgba": true,
+      "source_sha256": "fe24b59c844978d4c87e3e29169089e008de7a6fc7456cf508578aa9883e2c64",
+      "transparent": true
+    },
+    {
+      "bounds": [
+        32,
+        32,
+        192,
+        192
+      ],
+      "icon_sha256": "97ac0474b741c2415de9f112afcdc3cff7e87498725e4a75f8f30c6d5fe8b555",
+      "icon_size": [
+        128,
+        128
+      ],
+      "id": "p3_thorn_clasp",
+      "master_sha256": "ddfe933f01a727176a70c068219bab16051eb49de2eed9e3f852e9be942826c6",
+      "master_size": [
+        256,
+        256
+      ],
+      "rgba": true,
+      "source_sha256": "793be13796dd53e9d4808173540efa7c01df9e65795744a53545b498813ac741",
+      "transparent": true
+    },
+    {
+      "bounds": [
+        33,
+        31,
+        163,
+        192
+      ],
+      "icon_sha256": "09372b503fb77a8ec8169a0125218c41bb28539be60d12ff85adf02e7195b78c",
+      "icon_size": [
+        128,
+        128
+      ],
+      "id": "p3_gilded_lantern",
+      "master_sha256": "92c4a565e290d0b63a21e7d2db8a6978b5dede14c8ef835ec3db9e4a1c57fd5c",
+      "master_size": [
+        256,
+        256
+      ],
+      "rgba": true,
+      "source_sha256": "32028429016db096c0d9137e84739048d6b0a402c7b7f4ccf0bbf103767bd1b4",
+      "transparent": true
+    }
+  ],
+  "source": "Original repo-native SVG by Codex, 2026-10-01",
+  "version": 1
+}

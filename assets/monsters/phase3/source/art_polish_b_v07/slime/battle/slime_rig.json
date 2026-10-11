@@ -1,0 +1,560 @@
+{
+  "version": 1,
+  "status": "draft",
+  "entity": "slime",
+  "canvas": 512,
+  "runtime_size": 256,
+  "anchor": [
+    256,
+    448
+  ],
+  "rest_scale": 1,
+  "source": "slime_components_draft.png",
+  "layers": [
+    {
+      "name": "membrane",
+      "parent": "root",
+      "pivot": [
+        256,
+        448
+      ],
+      "crop": [
+        20,
+        120,
+        665,
+        545
+      ],
+      "image_pivot": [
+        256,
+        480
+      ],
+      "scale": 0.8,
+      "z": 0
+    },
+    {
+      "name": "core",
+      "parent": "membrane",
+      "pivot": [
+        260,
+        320
+      ],
+      "crop": [
+        150,
+        750,
+        390,
+        370
+      ],
+      "image_pivot": [
+        195,
+        185
+      ],
+      "scale": 0.35,
+      "z": -1
+    },
+    {
+      "name": "face",
+      "parent": "membrane",
+      "pivot": [
+        230,
+        335
+      ],
+      "crop": [
+        820,
+        340,
+        290,
+        190
+      ],
+      "image_pivot": [
+        140,
+        100
+      ],
+      "scale": 0.55,
+      "z": 2,
+      "art_scale": [
+        1.09,
+        1.04
+      ]
+    }
+  ],
+  "actions": {
+    "idle": {
+      "fps": 6,
+      "loop": true,
+      "poses": [
+        {
+          "membrane": {
+            "shape": 0
+          }
+        },
+        {
+          "membrane": {
+            "shape": 5
+          },
+          "face": {
+            "p": [
+              0,
+              -2
+            ]
+          },
+          "core": {
+            "p": [
+              0,
+              -3
+            ]
+          }
+        },
+        {
+          "membrane": {
+            "shape": 0
+          },
+          "face": {
+            "p": [
+              0,
+              1
+            ]
+          },
+          "core": {
+            "p": [
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "membrane": {
+            "shape": 5
+          },
+          "face": {
+            "p": [
+              0,
+              1
+            ]
+          },
+          "core": {
+            "p": [
+              0,
+              2
+            ]
+          }
+        }
+      ],
+      "events": {}
+    },
+    "hit": {
+      "fps": 12,
+      "loop": false,
+      "poses": [
+        {
+          "membrane": {
+            "shape": 1
+          },
+          "face": {
+            "p": [
+              10,
+              35
+            ]
+          },
+          "core": {
+            "p": [
+              0,
+              50
+            ]
+          }
+        },
+        {
+          "membrane": {
+            "shape": 0
+          }
+        }
+      ],
+      "events": {}
+    },
+    "attack": {
+      "fps": 12,
+      "loop": false,
+      "poses": [
+        {
+          "membrane": {
+            "shape": 0
+          }
+        },
+        {
+          "membrane": {
+            "shape": 1
+          },
+          "face": {
+            "p": [
+              10,
+              35
+            ]
+          },
+          "core": {
+            "p": [
+              0,
+              60
+            ]
+          }
+        },
+        {
+          "membrane": {
+            "shape": 2
+          },
+          "face": {
+            "p": [
+              -20,
+              -12
+            ]
+          }
+        },
+        {
+          "membrane": {
+            "shape": 3
+          },
+          "face": {
+            "p": [
+              -75,
+              -65
+            ]
+          },
+          "core": {
+            "p": [
+              45,
+              -20
+            ]
+          }
+        },
+        {
+          "membrane": {
+            "shape": 4
+          },
+          "face": {
+            "p": [
+              -35,
+              -60
+            ]
+          },
+          "core": {
+            "p": [
+              20,
+              15
+            ]
+          }
+        },
+        {
+          "membrane": {
+            "shape": 5
+          }
+        }
+      ],
+      "events": {
+        "hit": 3
+      }
+    },
+    "defeat": {
+      "fps": 10,
+      "loop": false,
+      "events": {},
+      "poses": [
+        {
+          "membrane": {
+            "shape": 0
+          },
+          "face": {
+            "p": [
+              0,
+              0
+            ],
+            "a": 1.0
+          },
+          "core": {
+            "p": [
+              0,
+              0
+            ],
+            "a": 1.0
+          }
+        },
+        {
+          "membrane": {
+            "shape": 7
+          },
+          "face": {
+            "p": [
+              0,
+              22
+            ],
+            "a": 0.4
+          },
+          "core": {
+            "p": [
+              0,
+              35
+            ],
+            "a": 0.4
+          }
+        },
+        {
+          "membrane": {
+            "shape": 8
+          },
+          "face": {
+            "p": [
+              0,
+              44
+            ],
+            "a": 0
+          },
+          "core": {
+            "p": [
+              0,
+              70
+            ],
+            "a": 0
+          }
+        },
+        {
+          "membrane": {
+            "shape": 9
+          },
+          "face": {
+            "p": [
+              0,
+              44
+            ],
+            "a": 0
+          },
+          "core": {
+            "p": [
+              0,
+              105
+            ],
+            "a": 0
+          }
+        },
+        {
+          "membrane": {
+            "shape": 10
+          },
+          "face": {
+            "p": [
+              0,
+              44
+            ],
+            "a": 0
+          },
+          "core": {
+            "p": [
+              0,
+              140
+            ],
+            "a": 0
+          }
+        },
+        {
+          "membrane": {
+            "shape": 11
+          },
+          "face": {
+            "p": [
+              0,
+              44
+            ],
+            "a": 0
+          },
+          "core": {
+            "p": [
+              0,
+              175
+            ],
+            "a": 0
+          }
+        }
+      ]
+    }
+  },
+  "acceptance": "v03 source, inspect baked poses before production promotion",
+  "shape_layers": {
+    "membrane": [
+      {
+        "source": "slime_shapes_cleanup_draft.png",
+        "crop": [
+          0,
+          0,
+          512,
+          512
+        ]
+      },
+      {
+        "source": "slime_shapes_cleanup_draft.png",
+        "crop": [
+          512,
+          0,
+          512,
+          512
+        ]
+      },
+      {
+        "source": "slime_shapes_cleanup_draft.png",
+        "crop": [
+          1024,
+          0,
+          512,
+          512
+        ]
+      },
+      {
+        "source": "slime_shapes_cleanup_draft.png",
+        "crop": [
+          0,
+          512,
+          536,
+          512
+        ]
+      },
+      {
+        "source": "slime_shapes_cleanup_draft.png",
+        "crop": [
+          536,
+          512,
+          488,
+          512
+        ],
+        "canvas": [
+          512,
+          512
+        ],
+        "offset": [
+          24,
+          0
+        ]
+      },
+      {
+        "source": "slime_shapes_cleanup_draft.png",
+        "crop": [
+          1024,
+          512,
+          512,
+          512
+        ],
+        "canvas": [
+          512,
+          512
+        ],
+        "offset": [
+          0,
+          52
+        ]
+      },
+      {
+        "source": "slime_defeat_cleanup.png",
+        "crop": [
+          0,
+          0,
+          512,
+          512
+        ],
+        "canvas": [
+          512,
+          512
+        ],
+        "offset": [
+          0,
+          -16
+        ]
+      },
+      {
+        "source": "slime_defeat_cleanup.png",
+        "crop": [
+          512,
+          0,
+          512,
+          512
+        ],
+        "canvas": [
+          512,
+          512
+        ],
+        "offset": [
+          0,
+          -16
+        ]
+      },
+      {
+        "source": "slime_defeat_cleanup.png",
+        "crop": [
+          1024,
+          0,
+          512,
+          512
+        ],
+        "canvas": [
+          512,
+          512
+        ],
+        "offset": [
+          0,
+          -16
+        ]
+      },
+      {
+        "source": "slime_defeat_cleanup.png",
+        "crop": [
+          0,
+          512,
+          512,
+          512
+        ],
+        "canvas": [
+          512,
+          512
+        ],
+        "offset": [
+          0,
+          42
+        ]
+      },
+      {
+        "source": "slime_defeat_cleanup.png",
+        "crop": [
+          512,
+          512,
+          512,
+          512
+        ],
+        "canvas": [
+          512,
+          512
+        ],
+        "offset": [
+          0,
+          42
+        ]
+      },
+      {
+        "source": "slime_defeat_cleanup.png",
+        "crop": [
+          1024,
+          512,
+          512,
+          512
+        ],
+        "canvas": [
+          512,
+          512
+        ],
+        "offset": [
+          0,
+          42
+        ]
+      }
+    ]
+  },
+  "art_polish": {
+    "baseline_source": "res://assets/monsters/phase3/source/rig_v03/slime_rig.json",
+    "description": "Local painted component width and material separation; unchanged bone pivots, contact paths, root, action poses/events/timing and physical accessories.",
+    "changed_components": [
+      "face"
+    ],
+    "human_signoff": false
+  }
+}

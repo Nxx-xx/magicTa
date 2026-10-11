@@ -1,0 +1,4 @@
+Use case: precise-object-edit
+Edit target: the supplied four-quadrant stone material atlas.
+Change ONLY the TOP RIGHT quarter of the image: replace the craggy rocky texture with a QUIET, FLAT, HONED aged dark blue-grey slate wall-top material. Very broad smooth stone planes, subtle mottled patina and a few extremely shallow worn natural hairlines. Flat, solid masonry cap seen from directly overhead. NO deep fissures, NO protruding rock flakes, NO rubble, NO holes, NO jagged rocky relief. Approximate luminance of this quadrant should remain dark but vary only gently. It must tile in both directions without a border and have no painted light or shadow gradients.
+Preserve every pixel of the other THREE quadrants if possible: top-left grey flagstones, bottom-left ashlar facade, bottom-right pale teal stone. Preserve the exact square dimensions and the four equal quadrant layout. No text, no labels, no dividers. Opaque image.

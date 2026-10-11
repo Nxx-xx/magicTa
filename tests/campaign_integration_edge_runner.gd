@@ -78,12 +78,12 @@ func _mode_switch_rollback() -> void:
 	var before_enemy: Dictionary = core.db.enemy("golem")
 	core.store = FailStore.new()
 	error = core.start("legacy_random_seed", false)
-	_check(not error.is_empty(), "trial start must report its persistence failure")
-	_check(core.transaction_pending and Equal.equal(before_state,core.state) and Equal.equal(before_meta,core.meta), "trial creation interruption restores ended campaign and account")
+	_check(not error.is_empty(), "retired trial start rejected before persistence")
+	_check(not core.transaction_pending and Equal.equal(before_state,core.state) and Equal.equal(before_meta,core.meta), "rejected trial preserves ended campaign and account")
 	_check(str(core.rng.state) == before_rng and Equal.equal(core.db.enemy("golem"),before_enemy), "rollback restores RNG and frozen combat database")
 	core.store = Store.new(path)
-	_check(core.retry_save() and not core.is_campaign() and int(core.state.player.attack) == 10, "retry installs trial without campaign modifiers")
-	_check(core.start_campaign("next_campaign").is_empty(), "trial to campaign creates another distinct journey")
+	_check(core.retry_save() and core.is_campaign() and Equal.equal(before_state,core.state), "retry cannot install retired trial")
+	_check(core.start_campaign("next_campaign").is_empty(), "next campaign creates another distinct journey")
 	_check(core.state.run_id != before_state.run_id and core.meta.runs == 1, "mode switches retain account without duplicating settlement")
 
 func _account_only_and_repeated_load() -> void:
@@ -101,13 +101,13 @@ func _account_only_and_repeated_load() -> void:
 	second.start_campaign("snapshot")
 	var snapshot_attack: int = int(second.db.enemy("golem").attack)
 	_check(snapshot_attack != int(DB.new().enemy("golem").attack), "campaign catalog differs from baseline for pollution test")
-	var trial = Core.new(path)
+	var trial = preload("res://tests/legacy_map_core_fixture.gd").new(path)
 	trial.persistence_enabled = false
 	trial.start("old",false)
 	trial.state.erase("reward_content")
 	_check(store.write(trial.state,account), "legacy no-snapshot trial fixture persists")
 	second.load_game()
-	_check(not second.is_campaign() and Equal.equal(second.db.enemy("golem"),DB.new().enemy("golem")), "repeated load resets catalog before overlaying legacy state")
+	_check(second.state.is_empty() and Equal.equal(second.db.enemy("golem"),DB.new().enemy("golem")), "retired save load resets catalog and clears playable run")
 
 func _frozen_budget() -> void:
 	var core = _new()

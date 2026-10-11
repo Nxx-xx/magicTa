@@ -1,0 +1,39 @@
+{
+  "version":1,
+  "status":"draft_not_accepted",
+  "gameplay_enabled":false,
+  "source":"Built-in image_gen, 2026-10-01; prompts recorded in PROMPTS.md",
+  "requested_master_frame_px":512,
+  "target_runtime_frame_px":256,
+  "anchor_normalized":[0.5,0.85],
+  "anchor_status":"proposed_not_measured_per_frame",
+  "body_max_tiles":1.0,
+  "halo_max_tiles":1.2,
+  "ruins":{
+    "p3_oath_ruin":{
+      "atlas":"res://assets/environment/ruins/phase3/r1-atlas-draft.png",
+      "source_size":[1448,1086],"grid":[4,3],
+      "idle":{"frames":[0,1,2,3],"fps":4},
+      "resolve":{"frames":[4,5,6,7,8,9],"fps":10},
+      "spent":{"frames":[10],"fps":1},
+      "acceptance":"draft; stone edge and anchor drift, missing editable layered master"
+    },
+    "p3_oath_forge":{
+      "atlas":"res://assets/environment/ruins/phase3/r2-atlas-draft.png",
+      "source_size":[1261,1247],"grid":[4,4],
+      "idle":{"frames":[0,1,2,3],"fps":4},
+      "resolve":{"frames":[4,5,6,7,8,9,10,11],"fps":12},
+      "spent":{"frames":[12],"fps":1},
+      "acceptance":"draft; source does not divide into square cells, smoke bleeds near cell boundaries, spent silhouette changes"
+    },
+    "p3_lantern_sanctuary":{
+      "atlas":"res://assets/environment/ruins/phase3/r3-atlas-draft.png",
+      "source_size":[1448,1086],"grid":[4,3],
+      "idle":{"frames":[0,1,2,3],"fps":4},
+      "resolve":{"frames":[4,5,6,7,8,9],"fps":10},
+      "spent":{"frames":[10],"fps":1},
+      "acceptance":"draft; pedestal and lantern topology drift, healing/shield frames require option-specific sequences"
+    }
+  },
+  "remaining":["512px editable layered master","stable anchors and geometry across frames","256px runtime export","48px readability and neighboring-key occlusion acceptance","separate restore/ward result animation","backtrack marker two-frame asset"]
+}

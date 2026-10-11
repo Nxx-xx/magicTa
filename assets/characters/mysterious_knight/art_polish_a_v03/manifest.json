@@ -1,0 +1,27 @@
+{
+  "anchor": [
+    128,
+    217.389022827148
+  ],
+  "events": {},
+  "fps": 4,
+  "frames": [
+    "textures/idle_00.png",
+    "textures/idle_01.png",
+    "textures/idle_02.png",
+    "textures/idle_03.png",
+    "textures/idle_04.png",
+    "textures/idle_05.png",
+    "textures/idle_06.png",
+    "textures/idle_07.png"
+  ],
+  "human_signoff": false,
+  "loop": true,
+  "size": [
+    256,
+    256
+  ],
+  "source": "source/art_polish_a_knight_editable.tscn",
+  "status": "accepted",
+  "review_sha256": "66b9424a498896d13c6b36daf37c7e0489253ed4605b24cfd194acbb7419f9bb"
+}

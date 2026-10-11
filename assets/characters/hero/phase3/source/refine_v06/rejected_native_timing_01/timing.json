@@ -1,0 +1,1471 @@
+{
+	"author_sha256": "a46f6d4375096e8a6887dde6265ef8660513357911f1bb05c75b7b18c2a9f22f",
+	"capture_sha256": "957b625a243aaa25d19594886aaca8c53b0d04744544551fa912f8b347ce5868",
+	"draft": "res://assets/characters/hero/phase3/source/refine_v06/draft_manifest.json",
+	"draft_sha256": "1be3badc12fcae626bdf03b8136a1f888a1e684abb00ae0d65027bbe12998d62",
+	"observations": [
+		{
+			"action": "combat_attack",
+			"animation_seconds": 0.1,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/combat_attack_1.0/00.png",
+			"sample": 0,
+			"speed": 1.0,
+			"wall_seconds": 0.03775
+		},
+		{
+			"action": "combat_attack",
+			"animation_seconds": 0.15,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/combat_attack_1.0/01.png",
+			"sample": 1,
+			"speed": 1.0,
+			"wall_seconds": 0.091238
+		},
+		{
+			"action": "combat_attack",
+			"animation_seconds": 0.225710333333333,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/combat_attack_1.0/02.png",
+			"sample": 2,
+			"speed": 1.0,
+			"wall_seconds": 0.153677
+		},
+		{
+			"action": "combat_attack",
+			"animation_seconds": 0.288240333333333,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/combat_attack_1.0/03.png",
+			"sample": 3,
+			"speed": 1.0,
+			"wall_seconds": 0.216711
+		},
+		{
+			"action": "combat_attack",
+			"animation_seconds": 0.350361545454546,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/combat_attack_1.0/04.png",
+			"sample": 4,
+			"speed": 1.0,
+			"wall_seconds": 0.279829
+		},
+		{
+			"action": "combat_attack",
+			"animation_seconds": 0.413213333333333,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/combat_attack_1.0/05.png",
+			"sample": 5,
+			"speed": 1.0,
+			"wall_seconds": 0.340684
+		},
+		{
+			"action": "combat_attack",
+			"animation_seconds": 0.474242424242424,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/combat_attack_1.0/06.png",
+			"sample": 6,
+			"speed": 1.0,
+			"wall_seconds": 0.403697
+		},
+		{
+			"action": "combat_attack",
+			"animation_seconds": 0.5,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/combat_attack_1.0/07.png",
+			"sample": 7,
+			"speed": 1.0,
+			"wall_seconds": 0.466016
+		},
+		{
+			"action": "combat_attack",
+			"animation_seconds": 0.00898877272727272,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/combat_attack_0.25/00.png",
+			"sample": 0,
+			"speed": 0.25,
+			"wall_seconds": 0.041177
+		},
+		{
+			"action": "combat_attack",
+			"animation_seconds": 0.0728937777777777,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/combat_attack_0.25/01.png",
+			"sample": 1,
+			"speed": 0.25,
+			"wall_seconds": 0.291521
+		},
+		{
+			"action": "combat_attack",
+			"animation_seconds": 0.133830944444444,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/combat_attack_0.25/02.png",
+			"sample": 2,
+			"speed": 0.25,
+			"wall_seconds": 0.541201
+		},
+		{
+			"action": "combat_attack",
+			"animation_seconds": 0.197895833333333,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/combat_attack_0.25/03.png",
+			"sample": 3,
+			"speed": 0.25,
+			"wall_seconds": 0.793735
+		},
+		{
+			"action": "combat_attack",
+			"animation_seconds": 0.258830944444444,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/combat_attack_0.25/04.png",
+			"sample": 4,
+			"speed": 0.25,
+			"wall_seconds": 1.043046
+		},
+		{
+			"action": "combat_attack",
+			"animation_seconds": 0.321849194444443,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/combat_attack_0.25/05.png",
+			"sample": 5,
+			"speed": 0.25,
+			"wall_seconds": 1.292803
+		},
+		{
+			"action": "combat_attack",
+			"animation_seconds": 0.383136499999999,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/combat_attack_0.25/06.png",
+			"sample": 6,
+			"speed": 0.25,
+			"wall_seconds": 1.542907
+		},
+		{
+			"action": "combat_attack",
+			"animation_seconds": 0.447890527777777,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/combat_attack_0.25/07.png",
+			"sample": 7,
+			"speed": 0.25,
+			"wall_seconds": 1.791386
+		},
+		{
+			"action": "combat_defeat",
+			"animation_seconds": 0.0292029682539683,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/combat_defeat_1.0/00.png",
+			"sample": 0,
+			"speed": 1.0,
+			"wall_seconds": 0.036436
+		},
+		{
+			"action": "combat_defeat",
+			"animation_seconds": 0.12491246031746,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/combat_defeat_1.0/01.png",
+			"sample": 1,
+			"speed": 1.0,
+			"wall_seconds": 0.131665
+		},
+		{
+			"action": "combat_defeat",
+			"animation_seconds": 0.236817222222222,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/combat_defeat_1.0/02.png",
+			"sample": 2,
+			"speed": 1.0,
+			"wall_seconds": 0.23503
+		},
+		{
+			"action": "combat_defeat",
+			"animation_seconds": 0.333340777777778,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/combat_defeat_1.0/03.png",
+			"sample": 3,
+			"speed": 1.0,
+			"wall_seconds": 0.332552
+		},
+		{
+			"action": "combat_defeat",
+			"animation_seconds": 0.424283968253968,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/combat_defeat_1.0/04.png",
+			"sample": 4,
+			"speed": 1.0,
+			"wall_seconds": 0.429972
+		},
+		{
+			"action": "combat_defeat",
+			"animation_seconds": 0.534739888888889,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/combat_defeat_1.0/05.png",
+			"sample": 5,
+			"speed": 1.0,
+			"wall_seconds": 0.534414
+		},
+		{
+			"action": "combat_defeat",
+			"animation_seconds": 0.0110895423280423,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/combat_defeat_0.25/00.png",
+			"sample": 0,
+			"speed": 0.25,
+			"wall_seconds": 0.048126
+		},
+		{
+			"action": "combat_defeat",
+			"animation_seconds": 0.111162964285714,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/combat_defeat_0.25/01.png",
+			"sample": 1,
+			"speed": 0.25,
+			"wall_seconds": 0.443367
+		},
+		{
+			"action": "combat_defeat",
+			"animation_seconds": 0.211798222222222,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/combat_defeat_0.25/02.png",
+			"sample": 2,
+			"speed": 0.25,
+			"wall_seconds": 0.847829
+		},
+		{
+			"action": "combat_defeat",
+			"animation_seconds": 0.310935999999999,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/combat_defeat_0.25/03.png",
+			"sample": 3,
+			"speed": 0.25,
+			"wall_seconds": 1.248827
+		},
+		{
+			"action": "combat_defeat",
+			"animation_seconds": 0.411456499999999,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/combat_defeat_0.25/04.png",
+			"sample": 4,
+			"speed": 0.25,
+			"wall_seconds": 1.644728
+		},
+		{
+			"action": "combat_defeat",
+			"animation_seconds": 0.512147999999999,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/combat_defeat_0.25/05.png",
+			"sample": 5,
+			"speed": 0.25,
+			"wall_seconds": 2.047754
+		},
+		{
+			"action": "combat_guard",
+			"animation_seconds": 0.0291580793650794,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/combat_guard_1.0/00.png",
+			"sample": 0,
+			"speed": 1.0,
+			"wall_seconds": 0.034005
+		},
+		{
+			"action": "combat_guard",
+			"animation_seconds": 0.110892740740741,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/combat_guard_1.0/01.png",
+			"sample": 1,
+			"speed": 1.0,
+			"wall_seconds": 0.119043
+		},
+		{
+			"action": "combat_guard",
+			"animation_seconds": 0.201459,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/combat_guard_1.0/02.png",
+			"sample": 2,
+			"speed": 1.0,
+			"wall_seconds": 0.200635
+		},
+		{
+			"action": "combat_guard",
+			"animation_seconds": 0.284705,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/combat_guard_1.0/03.png",
+			"sample": 3,
+			"speed": 1.0,
+			"wall_seconds": 0.284332
+		},
+		{
+			"action": "combat_guard",
+			"animation_seconds": 0.00984848484848485,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/combat_guard_0.25/00.png",
+			"sample": 0,
+			"speed": 0.25,
+			"wall_seconds": 0.040664
+		},
+		{
+			"action": "combat_guard",
+			"animation_seconds": 0.093747611111111,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/combat_guard_0.25/01.png",
+			"sample": 1,
+			"speed": 0.25,
+			"wall_seconds": 0.374856
+		},
+		{
+			"action": "combat_guard",
+			"animation_seconds": 0.175528416666666,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/combat_guard_0.25/02.png",
+			"sample": 2,
+			"speed": 0.25,
+			"wall_seconds": 0.70776
+		},
+		{
+			"action": "combat_guard",
+			"animation_seconds": 0.258572999999999,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/combat_guard_0.25/03.png",
+			"sample": 3,
+			"speed": 0.25,
+			"wall_seconds": 1.040992
+		},
+		{
+			"action": "combat_hit",
+			"animation_seconds": 0.0321073809523809,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/combat_hit_1.0/00.png",
+			"sample": 0,
+			"speed": 1.0,
+			"wall_seconds": 0.03368
+		},
+		{
+			"action": "combat_hit",
+			"animation_seconds": 0.112266111111111,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/combat_hit_1.0/01.png",
+			"sample": 1,
+			"speed": 1.0,
+			"wall_seconds": 0.11721
+		},
+		{
+			"action": "combat_hit",
+			"animation_seconds": 0.196659121212121,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/combat_hit_1.0/02.png",
+			"sample": 2,
+			"speed": 1.0,
+			"wall_seconds": 0.200423
+		},
+		{
+			"action": "combat_hit",
+			"animation_seconds": 0.00945730303030302,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/combat_hit_0.25/00.png",
+			"sample": 0,
+			"speed": 0.25,
+			"wall_seconds": 0.045056
+		},
+		{
+			"action": "combat_hit",
+			"animation_seconds": 0.0966429419191918,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/combat_hit_0.25/01.png",
+			"sample": 1,
+			"speed": 0.25,
+			"wall_seconds": 0.374558
+		},
+		{
+			"action": "combat_hit",
+			"animation_seconds": 0.178554525252525,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/combat_hit_0.25/02.png",
+			"sample": 2,
+			"speed": 0.25,
+			"wall_seconds": 0.70777
+		},
+		{
+			"action": "combat_idle",
+			"animation_seconds": 0.0287483756613757,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/combat_idle_1.0/00.png",
+			"sample": 0,
+			"speed": 1.0,
+			"wall_seconds": 0.034691
+		},
+		{
+			"action": "combat_idle",
+			"animation_seconds": 0.207604222222222,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/combat_idle_1.0/01.png",
+			"sample": 1,
+			"speed": 1.0,
+			"wall_seconds": 0.201085
+		},
+		{
+			"action": "combat_idle",
+			"animation_seconds": 0.368055555555555,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/combat_idle_1.0/02.png",
+			"sample": 2,
+			"speed": 1.0,
+			"wall_seconds": 0.367625
+		},
+		{
+			"action": "combat_idle",
+			"animation_seconds": 0.533040301587301,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/combat_idle_1.0/03.png",
+			"sample": 3,
+			"speed": 1.0,
+			"wall_seconds": 0.537074
+		},
+		{
+			"action": "combat_idle",
+			"animation_seconds": 0.701557239057238,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/combat_idle_1.0/04.png",
+			"sample": 4,
+			"speed": 1.0,
+			"wall_seconds": 0.700841
+		},
+		{
+			"action": "combat_idle",
+			"animation_seconds": 0.87361111111111,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/combat_idle_1.0/05.png",
+			"sample": 5,
+			"speed": 1.0,
+			"wall_seconds": 0.867459
+		},
+		{
+			"action": "combat_idle",
+			"animation_seconds": 0.0151790505050505,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/combat_idle_0.25/00.png",
+			"sample": 0,
+			"speed": 0.25,
+			"wall_seconds": 0.062095
+		},
+		{
+			"action": "combat_idle",
+			"animation_seconds": 0.182448638888889,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/combat_idle_0.25/01.png",
+			"sample": 1,
+			"speed": 0.25,
+			"wall_seconds": 0.728927
+		},
+		{
+			"action": "combat_idle",
+			"animation_seconds": 0.347569444444444,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/combat_idle_0.25/02.png",
+			"sample": 2,
+			"speed": 0.25,
+			"wall_seconds": 1.395113
+		},
+		{
+			"action": "combat_idle",
+			"animation_seconds": 0.515778722222221,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/combat_idle_0.25/03.png",
+			"sample": 3,
+			"speed": 0.25,
+			"wall_seconds": 2.062112
+		},
+		{
+			"action": "combat_idle",
+			"animation_seconds": 0.680902777777781,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/combat_idle_0.25/04.png",
+			"sample": 4,
+			"speed": 0.25,
+			"wall_seconds": 2.728825
+		},
+		{
+			"action": "combat_idle",
+			"animation_seconds": 0.849110472222229,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/combat_idle_0.25/05.png",
+			"sample": 5,
+			"speed": 0.25,
+			"wall_seconds": 3.394991
+		},
+		{
+			"action": "combat_victory",
+			"animation_seconds": 0.0288108571428571,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/combat_victory_1.0/00.png",
+			"sample": 0,
+			"speed": 1.0,
+			"wall_seconds": 0.034711
+		},
+		{
+			"action": "combat_victory",
+			"animation_seconds": 0.103558111111111,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/combat_victory_1.0/01.png",
+			"sample": 1,
+			"speed": 1.0,
+			"wall_seconds": 0.110594
+		},
+		{
+			"action": "combat_victory",
+			"animation_seconds": 0.192447,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/combat_victory_1.0/02.png",
+			"sample": 2,
+			"speed": 1.0,
+			"wall_seconds": 0.201338
+		},
+		{
+			"action": "combat_victory",
+			"animation_seconds": 0.284746777777778,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/combat_victory_1.0/03.png",
+			"sample": 3,
+			"speed": 1.0,
+			"wall_seconds": 0.285085
+		},
+		{
+			"action": "combat_victory",
+			"animation_seconds": 0.368700535353535,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/combat_victory_1.0/04.png",
+			"sample": 4,
+			"speed": 1.0,
+			"wall_seconds": 0.368059
+		},
+		{
+			"action": "combat_victory",
+			"animation_seconds": 0.445516505050505,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/combat_victory_1.0/05.png",
+			"sample": 5,
+			"speed": 1.0,
+			"wall_seconds": 0.445098
+		},
+		{
+			"action": "combat_victory",
+			"animation_seconds": 0.534732777777778,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/combat_victory_1.0/06.png",
+			"sample": 6,
+			"speed": 1.0,
+			"wall_seconds": 0.534556
+		},
+		{
+			"action": "combat_victory",
+			"animation_seconds": 0.616590535353535,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/combat_victory_1.0/07.png",
+			"sample": 7,
+			"speed": 1.0,
+			"wall_seconds": 0.619001
+		},
+		{
+			"action": "combat_victory",
+			"animation_seconds": 0.0120292407407407,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/combat_victory_0.25/00.png",
+			"sample": 0,
+			"speed": 0.25,
+			"wall_seconds": 0.046847
+		},
+		{
+			"action": "combat_victory",
+			"animation_seconds": 0.0958513106060605,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/combat_victory_0.25/01.png",
+			"sample": 1,
+			"speed": 0.25,
+			"wall_seconds": 0.382222
+		},
+		{
+			"action": "combat_victory",
+			"animation_seconds": 0.177644671717171,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/combat_victory_0.25/02.png",
+			"sample": 2,
+			"speed": 0.25,
+			"wall_seconds": 0.713254
+		},
+		{
+			"action": "combat_victory",
+			"animation_seconds": 0.262511616161616,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/combat_victory_0.25/03.png",
+			"sample": 3,
+			"speed": 0.25,
+			"wall_seconds": 1.047244
+		},
+		{
+			"action": "combat_victory",
+			"animation_seconds": 0.344311338383837,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/combat_victory_0.25/04.png",
+			"sample": 4,
+			"speed": 0.25,
+			"wall_seconds": 1.380367
+		},
+		{
+			"action": "combat_victory",
+			"animation_seconds": 0.42918181060606,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/combat_victory_0.25/05.png",
+			"sample": 5,
+			"speed": 0.25,
+			"wall_seconds": 1.714394
+		},
+		{
+			"action": "combat_victory",
+			"animation_seconds": 0.511364727272726,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/combat_victory_0.25/06.png",
+			"sample": 6,
+			"speed": 0.25,
+			"wall_seconds": 2.046852
+		},
+		{
+			"action": "combat_victory",
+			"animation_seconds": 0.595293298701297,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/combat_victory_0.25/07.png",
+			"sample": 7,
+			"speed": 0.25,
+			"wall_seconds": 2.380452
+		},
+		{
+			"action": "map_idle_right",
+			"animation_seconds": 0.0285714285714286,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_idle_right_1.0/00.png",
+			"sample": 0,
+			"speed": 1.0,
+			"wall_seconds": 0.027725
+		},
+		{
+			"action": "map_idle_right",
+			"animation_seconds": 0.200436095238095,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_idle_right_1.0/01.png",
+			"sample": 1,
+			"speed": 1.0,
+			"wall_seconds": 0.193938
+		},
+		{
+			"action": "map_idle_right",
+			"animation_seconds": 0.371864666666666,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_idle_right_1.0/02.png",
+			"sample": 2,
+			"speed": 1.0,
+			"wall_seconds": 0.361942
+		},
+		{
+			"action": "map_idle_right",
+			"animation_seconds": 0.53682438095238,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_idle_right_1.0/03.png",
+			"sample": 3,
+			"speed": 1.0,
+			"wall_seconds": 0.527096
+		},
+		{
+			"action": "map_idle_right",
+			"animation_seconds": 0.0134230555555555,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_idle_right_0.25/00.png",
+			"sample": 0,
+			"speed": 0.25,
+			"wall_seconds": 0.055326
+		},
+		{
+			"action": "map_idle_right",
+			"animation_seconds": 0.183216333333333,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_idle_right_0.25/01.png",
+			"sample": 1,
+			"speed": 0.25,
+			"wall_seconds": 0.722563
+		},
+		{
+			"action": "map_idle_right",
+			"animation_seconds": 0.353071833333333,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_idle_right_0.25/02.png",
+			"sample": 2,
+			"speed": 0.25,
+			"wall_seconds": 1.388572
+		},
+		{
+			"action": "map_idle_right",
+			"animation_seconds": 0.524479833333332,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_idle_right_0.25/03.png",
+			"sample": 3,
+			"speed": 0.25,
+			"wall_seconds": 2.055063
+		},
+		{
+			"action": "map_interact_right",
+			"animation_seconds": 0.0279753333333333,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_interact_right_1.0/00.png",
+			"sample": 0,
+			"speed": 1.0,
+			"wall_seconds": 0.027163
+		},
+		{
+			"action": "map_interact_right",
+			"animation_seconds": 0.118882111111111,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_interact_right_1.0/01.png",
+			"sample": 1,
+			"speed": 1.0,
+			"wall_seconds": 0.124315
+		},
+		{
+			"action": "map_interact_right",
+			"animation_seconds": 0.218882111111111,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_interact_right_1.0/02.png",
+			"sample": 2,
+			"speed": 1.0,
+			"wall_seconds": 0.22876
+		},
+		{
+			"action": "map_interact_right",
+			"animation_seconds": 0.312215444444444,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_interact_right_1.0/03.png",
+			"sample": 3,
+			"speed": 1.0,
+			"wall_seconds": 0.326211
+		},
+		{
+			"action": "map_interact_right",
+			"animation_seconds": 0.0101406111111111,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_interact_right_0.25/00.png",
+			"sample": 0,
+			"speed": 0.25,
+			"wall_seconds": 0.041026
+		},
+		{
+			"action": "map_interact_right",
+			"animation_seconds": 0.110152055555555,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_interact_right_0.25/01.png",
+			"sample": 1,
+			"speed": 0.25,
+			"wall_seconds": 0.443485
+		},
+		{
+			"action": "map_interact_right",
+			"animation_seconds": 0.211405527777777,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_interact_right_0.25/02.png",
+			"sample": 2,
+			"speed": 0.25,
+			"wall_seconds": 0.840752
+		},
+		{
+			"action": "map_interact_right",
+			"animation_seconds": 0.312327853174602,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_interact_right_0.25/03.png",
+			"sample": 3,
+			"speed": 0.25,
+			"wall_seconds": 1.242292
+		},
+		{
+			"action": "map_walk_right",
+			"animation_seconds": 0.0300265555555555,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_walk_right_1.0/00.png",
+			"sample": 0,
+			"speed": 1.0,
+			"wall_seconds": 0.027395
+		},
+		{
+			"action": "map_walk_right",
+			"animation_seconds": 0.113690476190476,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_walk_right_1.0/01.png",
+			"sample": 1,
+			"speed": 1.0,
+			"wall_seconds": 0.114187
+		},
+		{
+			"action": "map_walk_right",
+			"animation_seconds": 0.192857142857143,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_walk_right_1.0/02.png",
+			"sample": 2,
+			"speed": 1.0,
+			"wall_seconds": 0.197172
+		},
+		{
+			"action": "map_walk_right",
+			"animation_seconds": 0.271428571428571,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_walk_right_1.0/03.png",
+			"sample": 3,
+			"speed": 1.0,
+			"wall_seconds": 0.277434
+		},
+		{
+			"action": "map_walk_right",
+			"animation_seconds": 0.367857142857143,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_walk_right_1.0/04.png",
+			"sample": 4,
+			"speed": 1.0,
+			"wall_seconds": 0.360205
+		},
+		{
+			"action": "map_walk_right",
+			"animation_seconds": 0.451773142857142,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_walk_right_1.0/05.png",
+			"sample": 5,
+			"speed": 1.0,
+			"wall_seconds": 0.444012
+		},
+		{
+			"action": "map_walk_right",
+			"animation_seconds": 0.0104049166666667,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_walk_right_0.25/00.png",
+			"sample": 0,
+			"speed": 0.25,
+			"wall_seconds": 0.041032
+		},
+		{
+			"action": "map_walk_right",
+			"animation_seconds": 0.0916654999999999,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_walk_right_0.25/01.png",
+			"sample": 1,
+			"speed": 0.25,
+			"wall_seconds": 0.378869
+		},
+		{
+			"action": "map_walk_right",
+			"animation_seconds": 0.175120527777777,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_walk_right_0.25/02.png",
+			"sample": 2,
+			"speed": 0.25,
+			"wall_seconds": 0.707628
+		},
+		{
+			"action": "map_walk_right",
+			"animation_seconds": 0.25888211111111,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_walk_right_0.25/03.png",
+			"sample": 3,
+			"speed": 0.25,
+			"wall_seconds": 1.040945
+		},
+		{
+			"action": "map_walk_right",
+			"animation_seconds": 0.342215444444444,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_walk_right_0.25/04.png",
+			"sample": 4,
+			"speed": 0.25,
+			"wall_seconds": 1.374379
+		},
+		{
+			"action": "map_walk_right",
+			"animation_seconds": 0.425548777777777,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_walk_right_0.25/05.png",
+			"sample": 5,
+			"speed": 0.25,
+			"wall_seconds": 1.707379
+		},
+		{
+			"action": "map_idle_down",
+			"animation_seconds": 0.0472222222222222,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_idle_down_1.0/00.png",
+			"sample": 0,
+			"speed": 1.0,
+			"wall_seconds": 0.027049
+		},
+		{
+			"action": "map_idle_down",
+			"animation_seconds": 0.228334222222222,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_idle_down_1.0/01.png",
+			"sample": 1,
+			"speed": 1.0,
+			"wall_seconds": 0.193214
+		},
+		{
+			"action": "map_idle_down",
+			"animation_seconds": 0.395015666666666,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_idle_down_1.0/02.png",
+			"sample": 2,
+			"speed": 1.0,
+			"wall_seconds": 0.359799
+		},
+		{
+			"action": "map_idle_down",
+			"animation_seconds": 0.56165611111111,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_idle_down_1.0/03.png",
+			"sample": 3,
+			"speed": 1.0,
+			"wall_seconds": 0.526272
+		},
+		{
+			"action": "map_idle_down",
+			"animation_seconds": 0.0138805833333333,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_idle_down_0.25/00.png",
+			"sample": 0,
+			"speed": 0.25,
+			"wall_seconds": 0.055122
+		},
+		{
+			"action": "map_idle_down",
+			"animation_seconds": 0.180553111111111,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_idle_down_0.25/01.png",
+			"sample": 1,
+			"speed": 0.25,
+			"wall_seconds": 0.721867
+		},
+		{
+			"action": "map_idle_down",
+			"animation_seconds": 0.347218888888888,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_idle_down_0.25/02.png",
+			"sample": 2,
+			"speed": 0.25,
+			"wall_seconds": 1.388623
+		},
+		{
+			"action": "map_idle_down",
+			"animation_seconds": 0.51388336111111,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_idle_down_0.25/03.png",
+			"sample": 3,
+			"speed": 0.25,
+			"wall_seconds": 2.055147
+		},
+		{
+			"action": "map_interact_down",
+			"animation_seconds": 0.0279761904761905,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_interact_down_1.0/00.png",
+			"sample": 0,
+			"speed": 1.0,
+			"wall_seconds": 0.027112
+		},
+		{
+			"action": "map_interact_down",
+			"animation_seconds": 0.125015111111111,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_interact_down_1.0/01.png",
+			"sample": 1,
+			"speed": 1.0,
+			"wall_seconds": 0.124192
+		},
+		{
+			"action": "map_interact_down",
+			"animation_seconds": 0.229171222222222,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_interact_down_1.0/02.png",
+			"sample": 2,
+			"speed": 1.0,
+			"wall_seconds": 0.229255
+		},
+		{
+			"action": "map_interact_down",
+			"animation_seconds": 0.326374555555555,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_interact_down_1.0/03.png",
+			"sample": 3,
+			"speed": 1.0,
+			"wall_seconds": 0.325117
+		},
+		{
+			"action": "map_interact_down",
+			"animation_seconds": 0.0104287777777778,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_interact_down_0.25/00.png",
+			"sample": 0,
+			"speed": 0.25,
+			"wall_seconds": 0.041314
+		},
+		{
+			"action": "map_interact_down",
+			"animation_seconds": 0.111109138888889,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_interact_down_0.25/01.png",
+			"sample": 1,
+			"speed": 0.25,
+			"wall_seconds": 0.444585
+		},
+		{
+			"action": "map_interact_down",
+			"animation_seconds": 0.210066527777777,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_interact_down_0.25/02.png",
+			"sample": 2,
+			"speed": 0.25,
+			"wall_seconds": 0.840364
+		},
+		{
+			"action": "map_interact_down",
+			"animation_seconds": 0.310765444444444,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_interact_down_0.25/03.png",
+			"sample": 3,
+			"speed": 0.25,
+			"wall_seconds": 1.242786
+		},
+		{
+			"action": "map_walk_down",
+			"animation_seconds": 0.0277447777777778,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_walk_down_1.0/00.png",
+			"sample": 0,
+			"speed": 1.0,
+			"wall_seconds": 0.026935
+		},
+		{
+			"action": "map_walk_down",
+			"animation_seconds": 0.111114333333333,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_walk_down_1.0/01.png",
+			"sample": 1,
+			"speed": 1.0,
+			"wall_seconds": 0.111412
+		},
+		{
+			"action": "map_walk_down",
+			"animation_seconds": 0.194429333333333,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_walk_down_1.0/02.png",
+			"sample": 2,
+			"speed": 1.0,
+			"wall_seconds": 0.193527
+		},
+		{
+			"action": "map_walk_down",
+			"animation_seconds": 0.277784222222222,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_walk_down_1.0/03.png",
+			"sample": 3,
+			"speed": 1.0,
+			"wall_seconds": 0.277255
+		},
+		{
+			"action": "map_walk_down",
+			"animation_seconds": 0.361083333333333,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_walk_down_1.0/04.png",
+			"sample": 4,
+			"speed": 1.0,
+			"wall_seconds": 0.360066
+		},
+		{
+			"action": "map_walk_down",
+			"animation_seconds": 0.444443333333333,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_walk_down_1.0/05.png",
+			"sample": 5,
+			"speed": 1.0,
+			"wall_seconds": 0.447795
+		},
+		{
+			"action": "map_walk_down",
+			"animation_seconds": 0.00894896428571428,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_walk_down_0.25/00.png",
+			"sample": 0,
+			"speed": 0.25,
+			"wall_seconds": 0.03659
+		},
+		{
+			"action": "map_walk_down",
+			"animation_seconds": 0.0917215555555555,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_walk_down_0.25/01.png",
+			"sample": 1,
+			"speed": 0.25,
+			"wall_seconds": 0.370333
+		},
+		{
+			"action": "map_walk_down",
+			"animation_seconds": 0.175566027777777,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_walk_down_0.25/02.png",
+			"sample": 2,
+			"speed": 0.25,
+			"wall_seconds": 0.704082
+		},
+		{
+			"action": "map_walk_down",
+			"animation_seconds": 0.258899361111111,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_walk_down_0.25/03.png",
+			"sample": 3,
+			"speed": 0.25,
+			"wall_seconds": 1.036551
+		},
+		{
+			"action": "map_walk_down",
+			"animation_seconds": 0.342232694444444,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_walk_down_0.25/04.png",
+			"sample": 4,
+			"speed": 0.25,
+			"wall_seconds": 1.370403
+		},
+		{
+			"action": "map_walk_down",
+			"animation_seconds": 0.425566027777777,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_walk_down_0.25/05.png",
+			"sample": 5,
+			"speed": 0.25,
+			"wall_seconds": 1.703473
+		},
+		{
+			"action": "map_idle_up",
+			"animation_seconds": 0.0472222222222222,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_idle_up_1.0/00.png",
+			"sample": 0,
+			"speed": 1.0,
+			"wall_seconds": 0.027143
+		},
+		{
+			"action": "map_idle_up",
+			"animation_seconds": 0.228294333333333,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_idle_up_1.0/01.png",
+			"sample": 1,
+			"speed": 1.0,
+			"wall_seconds": 0.195986
+		},
+		{
+			"action": "map_idle_up",
+			"animation_seconds": 0.394927333333333,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_idle_up_1.0/02.png",
+			"sample": 2,
+			"speed": 1.0,
+			"wall_seconds": 0.360777
+		},
+		{
+			"action": "map_idle_up",
+			"animation_seconds": 0.561575222222221,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_idle_up_1.0/03.png",
+			"sample": 3,
+			"speed": 1.0,
+			"wall_seconds": 0.527111
+		},
+		{
+			"action": "map_idle_up",
+			"animation_seconds": 0.01389675,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_idle_up_0.25/00.png",
+			"sample": 0,
+			"speed": 0.25,
+			"wall_seconds": 0.054855
+		},
+		{
+			"action": "map_idle_up",
+			"animation_seconds": 0.180558972222222,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_idle_up_0.25/01.png",
+			"sample": 1,
+			"speed": 0.25,
+			"wall_seconds": 0.721598
+		},
+		{
+			"action": "map_idle_up",
+			"animation_seconds": 0.344740285714285,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_idle_up_0.25/02.png",
+			"sample": 2,
+			"speed": 0.25,
+			"wall_seconds": 1.389269
+		},
+		{
+			"action": "map_idle_up",
+			"animation_seconds": 0.512036749999999,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_idle_up_0.25/03.png",
+			"sample": 3,
+			"speed": 0.25,
+			"wall_seconds": 2.055866
+		},
+		{
+			"action": "map_interact_up",
+			"animation_seconds": 0.0245737142857143,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_interact_up_1.0/00.png",
+			"sample": 0,
+			"speed": 1.0,
+			"wall_seconds": 0.020738
+		},
+		{
+			"action": "map_interact_up",
+			"animation_seconds": 0.131547619047619,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_interact_up_1.0/01.png",
+			"sample": 1,
+			"speed": 1.0,
+			"wall_seconds": 0.123437
+		},
+		{
+			"action": "map_interact_up",
+			"animation_seconds": 0.236592666666667,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_interact_up_1.0/02.png",
+			"sample": 2,
+			"speed": 1.0,
+			"wall_seconds": 0.227541
+		},
+		{
+			"action": "map_interact_up",
+			"animation_seconds": 0.329166666666667,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_interact_up_1.0/03.png",
+			"sample": 3,
+			"speed": 1.0,
+			"wall_seconds": 0.324558
+		},
+		{
+			"action": "map_interact_up",
+			"animation_seconds": 0.00958333333333333,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_interact_up_0.25/00.png",
+			"sample": 0,
+			"speed": 0.25,
+			"wall_seconds": 0.041695
+		},
+		{
+			"action": "map_interact_up",
+			"animation_seconds": 0.108196388888889,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_interact_up_0.25/01.png",
+			"sample": 1,
+			"speed": 0.25,
+			"wall_seconds": 0.445036
+		},
+		{
+			"action": "map_interact_up",
+			"animation_seconds": 0.207064083333333,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_interact_up_0.25/02.png",
+			"sample": 2,
+			"speed": 0.25,
+			"wall_seconds": 0.839646
+		},
+		{
+			"action": "map_interact_up",
+			"animation_seconds": 0.307784805555555,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_interact_up_0.25/03.png",
+			"sample": 3,
+			"speed": 0.25,
+			"wall_seconds": 1.242794
+		},
+		{
+			"action": "map_walk_up",
+			"animation_seconds": 0.0438351111111111,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_walk_up_1.0/00.png",
+			"sample": 0,
+			"speed": 1.0,
+			"wall_seconds": 0.026507
+		},
+		{
+			"action": "map_walk_up",
+			"animation_seconds": 0.127687777777778,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_walk_up_1.0/01.png",
+			"sample": 1,
+			"speed": 1.0,
+			"wall_seconds": 0.110058
+		},
+		{
+			"action": "map_walk_up",
+			"animation_seconds": 0.211012111111111,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_walk_up_1.0/02.png",
+			"sample": 2,
+			"speed": 1.0,
+			"wall_seconds": 0.193788
+		},
+		{
+			"action": "map_walk_up",
+			"animation_seconds": 0.294337666666667,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_walk_up_1.0/03.png",
+			"sample": 3,
+			"speed": 1.0,
+			"wall_seconds": 0.276609
+		},
+		{
+			"action": "map_walk_up",
+			"animation_seconds": 0.377636777777777,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_walk_up_1.0/04.png",
+			"sample": 4,
+			"speed": 1.0,
+			"wall_seconds": 0.360126
+		},
+		{
+			"action": "map_walk_up",
+			"animation_seconds": 0.460994,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_walk_up_1.0/05.png",
+			"sample": 5,
+			"speed": 1.0,
+			"wall_seconds": 0.446512
+		},
+		{
+			"action": "map_walk_up",
+			"animation_seconds": 0.00891113888888887,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_walk_up_0.25/00.png",
+			"sample": 0,
+			"speed": 0.25,
+			"wall_seconds": 0.037725
+		},
+		{
+			"action": "map_walk_up",
+			"animation_seconds": 0.0923603531746031,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_walk_up_0.25/01.png",
+			"sample": 1,
+			"speed": 0.25,
+			"wall_seconds": 0.372159
+		},
+		{
+			"action": "map_walk_up",
+			"animation_seconds": 0.175925027777777,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_walk_up_0.25/02.png",
+			"sample": 2,
+			"speed": 0.25,
+			"wall_seconds": 0.704613
+		},
+		{
+			"action": "map_walk_up",
+			"animation_seconds": 0.25925836111111,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_walk_up_0.25/03.png",
+			"sample": 3,
+			"speed": 0.25,
+			"wall_seconds": 1.037589
+		},
+		{
+			"action": "map_walk_up",
+			"animation_seconds": 0.342591694444443,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_walk_up_0.25/04.png",
+			"sample": 4,
+			"speed": 0.25,
+			"wall_seconds": 1.371363
+		},
+		{
+			"action": "map_walk_up",
+			"animation_seconds": 0.425925027777777,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_walk_up_0.25/05.png",
+			"sample": 5,
+			"speed": 0.25,
+			"wall_seconds": 1.705072
+		},
+		{
+			"action": "map_idle_left",
+			"animation_seconds": 0.0458333333333333,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_idle_left_1.0/00.png",
+			"sample": 0,
+			"speed": 1.0,
+			"wall_seconds": 0.026317
+		},
+		{
+			"action": "map_idle_left",
+			"animation_seconds": 0.226845666666667,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_idle_left_1.0/01.png",
+			"sample": 1,
+			"speed": 1.0,
+			"wall_seconds": 0.192722
+		},
+		{
+			"action": "map_idle_left",
+			"animation_seconds": 0.393477,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_idle_left_1.0/02.png",
+			"sample": 2,
+			"speed": 1.0,
+			"wall_seconds": 0.359391
+		},
+		{
+			"action": "map_idle_left",
+			"animation_seconds": 0.56015611111111,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_idle_left_1.0/03.png",
+			"sample": 3,
+			"speed": 1.0,
+			"wall_seconds": 0.526372
+		},
+		{
+			"action": "map_idle_left",
+			"animation_seconds": 0.0138826944444444,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_idle_left_0.25/00.png",
+			"sample": 0,
+			"speed": 0.25,
+			"wall_seconds": 0.054754
+		},
+		{
+			"action": "map_idle_left",
+			"animation_seconds": 0.180554694444444,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_idle_left_0.25/01.png",
+			"sample": 1,
+			"speed": 0.25,
+			"wall_seconds": 0.721551
+		},
+		{
+			"action": "map_idle_left",
+			"animation_seconds": 0.347220027777777,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_idle_left_0.25/02.png",
+			"sample": 2,
+			"speed": 0.25,
+			"wall_seconds": 1.387823
+		},
+		{
+			"action": "map_idle_left",
+			"animation_seconds": 0.510006472222221,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_idle_left_0.25/03.png",
+			"sample": 3,
+			"speed": 0.25,
+			"wall_seconds": 2.054503
+		},
+		{
+			"action": "map_interact_left",
+			"animation_seconds": 0.0275957777777777,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_interact_left_1.0/00.png",
+			"sample": 0,
+			"speed": 1.0,
+			"wall_seconds": 0.029372
+		},
+		{
+			"action": "map_interact_left",
+			"animation_seconds": 0.120294,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_interact_left_1.0/01.png",
+			"sample": 1,
+			"speed": 1.0,
+			"wall_seconds": 0.128843
+		},
+		{
+			"action": "map_interact_left",
+			"animation_seconds": 0.212200666666667,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_interact_left_1.0/02.png",
+			"sample": 2,
+			"speed": 1.0,
+			"wall_seconds": 0.228748
+		},
+		{
+			"action": "map_interact_left",
+			"animation_seconds": 0.304434666666666,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_interact_left_1.0/03.png",
+			"sample": 3,
+			"speed": 1.0,
+			"wall_seconds": 0.325681
+		},
+		{
+			"action": "map_interact_left",
+			"animation_seconds": 0.00988749999999998,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_interact_left_0.25/00.png",
+			"sample": 0,
+			"speed": 0.25,
+			"wall_seconds": 0.042173
+		},
+		{
+			"action": "map_interact_left",
+			"animation_seconds": 0.109331944444444,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_interact_left_0.25/01.png",
+			"sample": 1,
+			"speed": 0.25,
+			"wall_seconds": 0.443882
+		},
+		{
+			"action": "map_interact_left",
+			"animation_seconds": 0.206805083333333,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_interact_left_0.25/02.png",
+			"sample": 2,
+			"speed": 0.25,
+			"wall_seconds": 0.839446
+		},
+		{
+			"action": "map_interact_left",
+			"animation_seconds": 0.310200011904761,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_interact_left_0.25/03.png",
+			"sample": 3,
+			"speed": 0.25,
+			"wall_seconds": 1.24282
+		},
+		{
+			"action": "map_walk_left",
+			"animation_seconds": 0.0279761904761905,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_walk_left_1.0/00.png",
+			"sample": 0,
+			"speed": 1.0,
+			"wall_seconds": 0.026573
+		},
+		{
+			"action": "map_walk_left",
+			"animation_seconds": 0.110599396825397,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_walk_left_1.0/01.png",
+			"sample": 1,
+			"speed": 1.0,
+			"wall_seconds": 0.109909
+		},
+		{
+			"action": "map_walk_left",
+			"animation_seconds": 0.19393273015873,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_walk_left_1.0/02.png",
+			"sample": 2,
+			"speed": 1.0,
+			"wall_seconds": 0.193635
+		},
+		{
+			"action": "map_walk_left",
+			"animation_seconds": 0.27242773015873,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_walk_left_1.0/03.png",
+			"sample": 3,
+			"speed": 1.0,
+			"wall_seconds": 0.276969
+		},
+		{
+			"action": "map_walk_left",
+			"animation_seconds": 0.352705507936508,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_walk_left_1.0/04.png",
+			"sample": 4,
+			"speed": 1.0,
+			"wall_seconds": 0.360144
+		},
+		{
+			"action": "map_walk_left",
+			"animation_seconds": 0.43652773015873,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_walk_left_1.0/05.png",
+			"sample": 5,
+			"speed": 1.0,
+			"wall_seconds": 0.443723
+		},
+		{
+			"action": "map_walk_left",
+			"animation_seconds": 0.0104166666666667,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_walk_left_0.25/00.png",
+			"sample": 0,
+			"speed": 0.25,
+			"wall_seconds": 0.04042
+		},
+		{
+			"action": "map_walk_left",
+			"animation_seconds": 0.0929962222222221,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_walk_left_0.25/01.png",
+			"sample": 1,
+			"speed": 0.25,
+			"wall_seconds": 0.373901
+		},
+		{
+			"action": "map_walk_left",
+			"animation_seconds": 0.176527353174603,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_walk_left_0.25/02.png",
+			"sample": 2,
+			"speed": 0.25,
+			"wall_seconds": 0.707144
+		},
+		{
+			"action": "map_walk_left",
+			"animation_seconds": 0.259374999999999,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_walk_left_0.25/03.png",
+			"sample": 3,
+			"speed": 0.25,
+			"wall_seconds": 1.03346
+		},
+		{
+			"action": "map_walk_left",
+			"animation_seconds": 0.344691972222221,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_walk_left_0.25/04.png",
+			"sample": 4,
+			"speed": 0.25,
+			"wall_seconds": 1.378573
+		},
+		{
+			"action": "map_walk_left",
+			"animation_seconds": 0.428620543650793,
+			"path": "res://build/verification/phase3/09-refinement/hero/native/map_walk_left_0.25/05.png",
+			"sample": 5,
+			"speed": 0.25,
+			"wall_seconds": 1.706862
+		}
+	],
+	"scenes": {
+		"res://assets/characters/hero/phase3/source/refine_v06/hero_down_editable.tscn": "0bed06c39ad465bc2a15565daa810edd0924838aca8a75827d1f7e4576a4ba7d",
+		"res://assets/characters/hero/phase3/source/refine_v06/hero_left_editable.tscn": "303e750c97c06d085be9522c958da1fb9c07e04bc6109da5573842fe5e5db0d4",
+		"res://assets/characters/hero/phase3/source/refine_v06/hero_right_editable.tscn": "9edbf270a001a1378a401b5965f1285345ee39a02ee913c2ea4d5b70d57cb1e9",
+		"res://assets/characters/hero/phase3/source/refine_v06/hero_up_editable.tscn": "9886836c10e1327eb8f16ed6ba96f7929f8edd821e05ad17e662c9e3d6fb402d"
+	},
+	"scope": "Actual AnimationPlayer timed original/.25 sampling. No human signoff or continuous video perception claimed."
+}

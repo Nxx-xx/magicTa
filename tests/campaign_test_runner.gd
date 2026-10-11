@@ -27,7 +27,7 @@ func _initialize() -> void:
 	_test_death_transaction()
 	_test_theme_keys()
 	_test_invalid_new_run_preserves_progress()
-	_test_trial_compatibility()
+	_test_trial_removed()
 	print("Campaign reference samples: " + JSON.stringify(summaries))
 	print("Campaign tests: %d checks, %d failures" % [checks,failures])
 	quit(1 if failures else 0)
@@ -208,7 +208,9 @@ func _test_theme_keys() -> void:
 	core.persistence_enabled = false
 	core.start_campaign("keys")
 	_walk(core,Vector2i(5,1))
-	_check(core.choose_floor("treasure").is_empty(), "treasure theme fixed on first visit")
+	# Force treasure only for this key-budget fixture; production stairs choose automatically.
+	core._accept_generated_floor(2, core.campaign_generator.generate(core.state.campaign_plan, 2, "treasure"))
+	_check(core.confirm_interaction().is_empty(), "treasure fixture entered through stairs")
 	var key_pos: Array = core.floor_data().safe_slots.key
 	_walk(core,Vector2i(key_pos[0],key_pos[1]))
 	_check(int(core.state.player.gold_keys) == 1, "second floor reserved gold key collected")
@@ -276,12 +278,12 @@ func _test_death_transaction() -> void:
 	core.abandon_run()
 	_check(int(core.meta.failure_count) == 1, "abandon is not death")
 
-func _test_trial_compatibility() -> void:
+func _test_trial_removed() -> void:
 	var core = Core.new(path)
 	core.persistence_enabled = false
-	_check(core.start("42").is_empty(), "legacy trial API preserved")
-	_check(not core.is_campaign() and core.state.mode == "grid_prototype_v1", "trial retains mode")
-	_check(core.meta.souls == 0 and core.state.player.attack == 10, "trial does not apply meta progression")
+	_check(not core.start("42").is_empty(), "retired trial API rejects creation")
+	_check(core.state.is_empty() and not core.transaction_pending, "rejected trial leaves no run or pending transaction")
+	_check(core.meta.souls == 0, "rejected trial preserves account")
 
 func _test_invalid_new_run_preserves_progress() -> void:
 	var core = InvalidConfigCore.new(path)

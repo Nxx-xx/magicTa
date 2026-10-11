@@ -1,0 +1,162 @@
+{
+  "date": "2026-10-02",
+  "tool": "built-in image_gen",
+  "records": [
+    {
+      "file": "right_components_draft.png",
+      "original_generated_filename": "exec-7be72f38-b4b3-47d4-b708-7814704bddc6.png",
+      "actual_size": [
+        1254,
+        1254
+      ],
+      "sha256": "1742fb629384d1922fef2ceda5e4062542382d0cea31e18eadef1192affac318",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "prompt": "PROMPTS.md#right_components",
+      "reference_images": [
+        "assets/art_concepts/hero_design_v01.png",
+        "assets/characters/hero/phase3/source/rig_v03/components_right.png"
+      ],
+      "imagegen_mode": "built-in",
+      "transparent_background": true
+    },
+    {
+      "file": "components_right.png",
+      "original_generated_filename": "exec-7cccb85c-99b7-4f9c-b435-bcbedb70a87e.png",
+      "actual_size": [
+        1254,
+        1254
+      ],
+      "sha256": "9bd2e59a290a5d93955cb4d9df7459b149e04ffe2f876709bddd6528b3e179f0",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "prompt": "PROMPTS.md#right_fix",
+      "reference_images": [
+        "right_components_draft.png"
+      ],
+      "imagegen_mode": "built-in",
+      "transparent_background": true
+    },
+    {
+      "file": "down_components_draft.png",
+      "original_generated_filename": "exec-ef7ad6c0-a47f-488d-8a9b-a7f3ee49e600.png",
+      "actual_size": [
+        1254,
+        1254
+      ],
+      "sha256": "d1f4371a0a92bf5f922f30fe94bde48cba8ea1622ccb7cf7c98c846fa905dcb1",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "prompt": "prompt_down.txt",
+      "reference_images": [
+        "assets/art_concepts/hero_design_v01.png",
+        "components_right.png"
+      ],
+      "imagegen_mode": "built-in",
+      "transparent_background": true
+    },
+    {
+      "file": "down_components_edge_draft.png",
+      "original_generated_filename": "exec-80c6b46c-4d35-415a-9b79-ce6eebd4ee58.png",
+      "actual_size": [
+        1254,
+        1254
+      ],
+      "sha256": "d0d8a430ce3dad770748f71605776755a598b80b7b8a5c34e30c046cf10f5f7b",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "prompt": "prompt_down_fix.txt",
+      "reference_images": [
+        "down_components_draft.png"
+      ],
+      "imagegen_mode": "built-in",
+      "transparent_background": true
+    },
+    {
+      "file": "components_left.png",
+      "original_generated_filename": "exec-954eb62e-21a6-47a9-bae4-1de2a4441f1a.png",
+      "actual_size": [
+        1254,
+        1254
+      ],
+      "sha256": "982fe9560aa6c33583fdd35a09cd1ed1db153f55e45cc6f82af4a7f36685823f",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "prompt": "prompt_left.txt",
+      "reference_images": [
+        "assets/art_concepts/hero_design_v01.png",
+        "components_right.png"
+      ],
+      "imagegen_mode": "built-in",
+      "transparent_background": true
+    },
+    {
+      "file": "up_components_edge_draft.png",
+      "original_generated_filename": "exec-08fff137-c07c-404d-9d4a-23fa9dd40db2.png",
+      "actual_size": [
+        1254,
+        1254
+      ],
+      "sha256": "5e4ee85a5e6fe9f5549367eab21f5e4baec3571ca4e6652650bc0662ab7be4e5",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "prompt": "prompt_up.txt",
+      "reference_images": [
+        "assets/art_concepts/hero_design_v01.png",
+        "components_right.png"
+      ],
+      "imagegen_mode": "built-in",
+      "transparent_background": true
+    },
+    {
+      "file": "components_down.png",
+      "original_generated_filename": "exec-87dc12e6-d56a-445f-9821-2ab6892c5f5a.png",
+      "actual_size": [
+        1254,
+        1254
+      ],
+      "sha256": "260d92082a132bf79c80dd249639f227c8519959f838977cf5e3d58315eecf28",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "prompt": "prompt_cape_edge_fix.txt",
+      "reference_images": [
+        "down_components_edge_draft.png"
+      ],
+      "imagegen_mode": "built-in",
+      "transparent_background": true
+    },
+    {
+      "file": "components_up.png",
+      "original_generated_filename": "exec-e23ae8aa-a6dd-4bb3-9d56-ffca888c94a4.png",
+      "actual_size": [
+        1254,
+        1254
+      ],
+      "sha256": "0e5b32d232860dd936d01a62a8f4e58d9f5fd64733e286f986e673fd68eef7ec",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "prompt": "prompt_cape_edge_fix.txt",
+      "reference_images": [
+        "up_components_edge_draft.png"
+      ],
+      "imagegen_mode": "built-in",
+      "transparent_background": true
+    }
+  ]
+}

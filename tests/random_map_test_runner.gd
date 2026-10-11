@@ -130,12 +130,12 @@ func _test_generated_return(seed_text: String, theme_id: String) -> void:
 	_check(core.preview(guardian).lethal, "generated return guard starts lethal")
 	var stairs := _find(core, "exit")
 	_activate(core, stairs)
-	_check(core.state.pending.kind == "floor_choice", "first ascent offers themes")
+	_check(core.state.pending.kind == "stairs", "first ascent uses stairs")
 	var pending_snapshot: Dictionary = core.state.duplicate(true)
 	core.cancel_pending()
 	_activate(core, stairs)
 	_check(core.state.floors == pending_snapshot.floors, "cancel does not generate or mutate floors")
-	core.choose_floor(theme_id)
+	_enter_fixture_theme(core, theme_id)
 	_check(core.state.floor == 2, "chosen theme entered")
 	_take_branch(core, "weapon_trial")
 	_take_branch(core, "armor_trial")
@@ -163,9 +163,9 @@ func _test_generated_shop_and_save() -> void:
 	_activate(core, _find(core, "exit"))
 	var loaded = Core.new(path)
 	loaded.load_game()
-	_check(loaded.state.pending.kind == "floor_choice", "random pending choice resumes")
-	core.choose_floor("shop")
-	loaded.choose_floor("shop")
+	_check(loaded.state.pending.kind == "stairs", "random pending stairs resume")
+	_enter_fixture_theme(core, "shop")
+	_enter_fixture_theme(loaded, "shop")
 	_check(SavedData.equal(core.state.floors, loaded.state.floors), "reload produces same unvisited floor")
 	var expected: Dictionary = core.generator.generate(str(core.state.seed), 2, "shop")
 	core.rng.randi()
@@ -182,9 +182,10 @@ func _test_generated_shop_and_save() -> void:
 	core.buy(0)
 	_check(core.state.player.gold == 100 - int(offer.price), "random purchase price charged once")
 	loaded.load_game()
-	_check(loaded.entity_at(merchant).purchased, "random shop sold flag survives reload")
+	_check(loaded.entity_at(merchant).purchased_ids.size() == 1, "random shop sold item survives reload")
 	loaded.interact(loaded.position())
-	_check(not loaded.buy(1).is_empty(), "sold merchant cannot sell a second item after reload")
+	_check(not loaded.buy(0).is_empty(), "sold item cannot be bought again after reload")
+	_check(loaded.buy(1).is_empty(), "another item can be bought after reload")
 
 func _test_failed_generation() -> void:
 	var core = _random_game("2026")
@@ -194,8 +195,8 @@ func _test_failed_generation() -> void:
 	invalid.rows[0] = "..........."
 	core.generator.config.templates = [invalid]
 	core.generator.config.max_attempts = 2
-	_check(not core.choose_floor("battle").is_empty(), "invalid geometry fails after bounded retries")
-	_check(core.state == before, "failed floor generation preserves pending choice and old floor")
+	_check(not core.confirm_interaction().is_empty(), "invalid geometry fails after bounded retries")
+	_check(core.state == before, "failed floor generation preserves pending stairs and old floor")
 	_check(not core.start("bad-new-run").is_empty(), "failed new run returns error")
 	_check(core.state == before, "failed new run preserves previous run")
 
@@ -208,5 +209,5 @@ func _test_legacy_save_compatibility() -> void:
 	loaded.load_game()
 	_check(SavedData.equal(loaded.state.floors, old.state.floors), "existing hand-built floor survives update unchanged")
 	_walk(loaded, Vector2i(9, 1))
-	loaded.choose_floor("battle")
+	loaded.confirm_interaction()
 	_check(not loaded.floor_data().has("generator"), "old saves keep hand-built future floor")

@@ -1,0 +1,34 @@
+{
+  "entity": "knight",
+  "date": "2026-10-02",
+  "review_method": "contact sheets plus native/browser playback; agent visual review",
+  "human_signoff": false,
+  "new_imagegen_originals": 1,
+  "actions": {
+    "map_idle": {
+      "decision": "accepted",
+      "draft_manifest": "knight_map_draft_manifest.json",
+      "source_action": "idle",
+      "frame_slots": 4,
+      "pose_holds": {},
+      "notes": "已实际看4帧联系图、原速/.25、暂停逐帧0-3与26/33/47px；头盔完整、颈肩无缝、剑盾随各自握点小幅摆动、双脚固定。修正第一版头盔顶端裁切；无发光特效附件。",
+      "frame_sha256": [
+        "c4cd18c121d0ea4fc1800f49e902861c2737fb7aaa67a99c837f847637ed5eee",
+        "4a9d0a5fb5b3201d4b241491a5ef29cd7595ee5dc800927182b87005e50dd328",
+        "94a5fe5261671da7acd2abdbb6d29ed8e7bc21fcd358bc11b097dc7ba5c98444",
+        "bc260b8092aed638f2d038c48d3bd3559edbda25aa269c5cc54044a21937e1ac"
+      ]
+    }
+  },
+  "visual_checks": [
+    "all four contact-sheet poses",
+    "browser original speed",
+    "browser 0.25 speed",
+    "paused next-frame 0 through 3",
+    "26px / 33px / 47px silhouettes",
+    "independent effect off if present"
+  ],
+  "source_status": "draft",
+  "publication_owner": "coordinator",
+  "battle_actions_reviewed": []
+}

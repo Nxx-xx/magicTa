@@ -1,0 +1,172 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" path="res://assets/monsters/phase3/source/parallel_v05/map/slime/slime_map_layers/core.res" id="1_y17lp"]
+[ext_resource type="Texture2D" path="res://assets/monsters/phase3/source/parallel_v05/map/slime/slime_map_layers/face.res" id="2_t3cs2"]
+[ext_resource type="Texture2D" path="res://assets/monsters/phase3/source/parallel_v05/map/slime/slime_map_layers/membrane.res" id="3_tvsv7"]
+[ext_resource type="Texture2D" path="res://assets/monsters/phase3/source/parallel_v05/map/slime/slime_map_layers/membrane_shape1.res" id="4_51yr6"]
+
+[sub_resource type="Animation" id="Animation_n16u4"]
+length = 0.6666666666666666
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("membrane/Paint:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.16666667, 0.33333334, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("3_tvsv7"), ExtResource("4_51yr6"), ExtResource("3_tvsv7"), ExtResource("3_tvsv7")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("membrane:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.16666667, 0.33333334, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.0, 0.0, 0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("membrane:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.16666667, 0.33333334, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(256, 448), Vector2(256, 448), Vector2(256, 448), Vector2(256, 448)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("membrane:modulate:a")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.16666667, 0.33333334, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [1.0, 1.0, 1.0, 1.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("membrane/core:rotation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.16666667, 0.33333334, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.0, 0.0, 0.0]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("membrane/core:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.16666667, 0.33333334, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0, -118), Vector2(0, -121), Vector2(1, -117), Vector2(-1, -116)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("membrane/core:modulate:a")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 0.16666667, 0.33333334, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [1.0, 1.0, 1.0, 1.0]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("membrane/face:rotation")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 0.16666667, 0.33333334, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.0, 0.0, 0.0]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("membrane/face:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 0.16666667, 0.33333334, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0, -108), Vector2(0, -110), Vector2(0, -107), Vector2(0, -106)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("membrane/face:modulate:a")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0, 0.16666667, 0.33333334, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [1.0, 1.0, 1.0, 1.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_5g28j"]
+_data = {
+&"idle": SubResource("Animation_n16u4")
+}
+
+[node name="Slime MapDraftRig" type="Node2D" unique_id=1673270621]
+
+[node name="membrane" type="Node2D" parent="." unique_id=505894265]
+z_as_relative = false
+position = Vector2(256, 448)
+
+[node name="core" type="Node2D" parent="membrane" unique_id=2015425830]
+z_index = -1
+z_as_relative = false
+position = Vector2(0, -118)
+
+[node name="Paint" type="Sprite2D" parent="membrane/core" unique_id=450267935]
+position = Vector2(-52.055, -42.05)
+scale = Vector2(0.29, 0.29)
+texture = ExtResource("1_y17lp")
+centered = false
+
+[node name="face" type="Node2D" parent="membrane" unique_id=1511491293]
+z_index = 2
+z_as_relative = false
+position = Vector2(0, -108)
+
+[node name="Paint" type="Sprite2D" parent="membrane/face" unique_id=160040552]
+position = Vector2(-59.429996, -30.66)
+scale = Vector2(0.42, 0.42)
+texture = ExtResource("2_t3cs2")
+centered = false
+
+[node name="Paint" type="Sprite2D" parent="membrane" unique_id=1901796028]
+position = Vector2(-209.92, -367.36)
+scale = Vector2(0.82, 0.82)
+texture = ExtResource("3_tvsv7")
+centered = false
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1946100672]
+libraries/ = SubResource("AnimationLibrary_5g28j")

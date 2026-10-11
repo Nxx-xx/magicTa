@@ -1,0 +1,186 @@
+{
+  "entity": "sentinel",
+  "date": "2026-10-01",
+  "review_method": "Agent viewed every final contact-sheet frame and 26/33/47px stills; dynamic playback pending due browser URL policy rejection.",
+  "human_signoff": false,
+  "approved_for_publish": false,
+  "new_imagegen_originals": 1,
+  "source_sha256": "8fdf0abc95621b1b1d35334fe9e9586a8bc2a040398963bc8e76e061cce035a8",
+  "actions": {
+    "attack": {
+      "decision": "pending_motion_review",
+      "static_visual_decision": "accepted",
+      "draft_manifest": "sentinel_draft_manifest.json",
+      "source_action": "attack",
+      "view": "battle_left",
+      "frame_slots": 6,
+      "fps": 12.0,
+      "loop": false,
+      "events": {
+        "hit": 3.0
+      },
+      "size": [
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        224
+      ],
+      "pose_holds": {
+        "5": 0.0
+      },
+      "notes": "Left punch frame3, shield-arm balance; separate core aura; explicit frame5→0 hold.",
+      "frame_sha256": [
+        "1acbe47994a56a8cce85f7b2735a156000ec50e136a4e082c08c5e91ae7f7e0e",
+        "1dc5770ee4b0bf1a4ec6a910ba68436d471d0578b5fd3db7a019ecb0628b7edc",
+        "cf9dc732d1016e6e30d432fef093f41bd85f342dca514738035dd1e9f5e01a8c",
+        "8a0300db840f369acd9e399ae87fbde7a71cce15058e14004151774274d4608b",
+        "aa68ec2dd8289a3b83befc694810a7fbb817b7290379f94ec63580499e4ad9bf",
+        "1acbe47994a56a8cce85f7b2735a156000ec50e136a4e082c08c5e91ae7f7e0e"
+      ],
+      "reviewed": {
+        "contact_sheet": true,
+        "all_discrete_frames": true,
+        "sizes": [
+          26,
+          33,
+          47
+        ],
+        "original_speed": false,
+        "quarter_speed": false
+      },
+      "remaining": "Coordinator must view original-speed and quarter-speed playback before approval.",
+      "effects_sha256": [
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "e15c438fb5e2936550080c30e387156f7a07842f4a76434e74282b98400d2da0",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de"
+      ]
+    },
+    "defeat": {
+      "decision": "pending_motion_review",
+      "static_visual_decision": "accepted",
+      "draft_manifest": "sentinel_draft_manifest.json",
+      "source_action": "defeat",
+      "view": "battle_left",
+      "frame_slots": 6,
+      "fps": 10.0,
+      "loop": false,
+      "events": {
+        "fracture": 2.0,
+        "ground": 5.0
+      },
+      "size": [
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        224
+      ],
+      "pose_holds": {},
+      "notes": "Independent stone-part collapse and lowered shield; core dims; no edge clipping.",
+      "frame_sha256": [
+        "d3f9f14aad06f95643ebf6e3fdaafac3af5f71b04e84f9b8619a9d71a2f5c670",
+        "a4d750db8aac414a158cebed952bc2810ff87c218548c75e2a863adc6ac407df",
+        "1391e00182cfebe1f84f2c2d27a05c9e3b2d2523fdc3b72c5dd97ee6d86fb522",
+        "074e6cd5e3a729f53ef236efb3cb7a3e80cab522117c88995140e21a35ecec96",
+        "0d7d48a346642428192706da2c589a84732d0cc51f5a7e0a12191823421976b6",
+        "39efaacab9be7650c19d57fe08c7b6f7bb6b98bc5fddcbaf13d3fad3239871bd"
+      ],
+      "reviewed": {
+        "contact_sheet": true,
+        "all_discrete_frames": true,
+        "sizes": [
+          26,
+          33,
+          47
+        ],
+        "original_speed": false,
+        "quarter_speed": false
+      },
+      "remaining": "Coordinator must view original-speed and quarter-speed playback before approval."
+    },
+    "hit": {
+      "decision": "pending_motion_review",
+      "static_visual_decision": "accepted",
+      "draft_manifest": "sentinel_draft_manifest.json",
+      "source_action": "hit",
+      "view": "battle_left",
+      "frame_slots": 2,
+      "fps": 12.0,
+      "loop": false,
+      "events": {
+        "recoil": 0.0
+      },
+      "size": [
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        224
+      ],
+      "pose_holds": {},
+      "notes": "Chest/head recoil and recovery; no detached limb joints.",
+      "frame_sha256": [
+        "7cb7904c7472e589a1aecee4b73cd6e54e3ba82de2aefa5703c3765f4838f893",
+        "4d508d5fb680381e7b79e2dd3c2daf011f74f972a6e309aaa96cce0b0fbc92a6"
+      ],
+      "reviewed": {
+        "contact_sheet": true,
+        "all_discrete_frames": true,
+        "sizes": [
+          26,
+          33,
+          47
+        ],
+        "original_speed": false,
+        "quarter_speed": false
+      },
+      "remaining": "Coordinator must view original-speed and quarter-speed playback before approval."
+    },
+    "idle": {
+      "decision": "pending_motion_review",
+      "static_visual_decision": "accepted",
+      "draft_manifest": "sentinel_draft_manifest.json",
+      "source_action": "idle",
+      "view": "battle_left",
+      "frame_slots": 4,
+      "fps": 6.0,
+      "loop": true,
+      "events": {},
+      "size": [
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        224
+      ],
+      "pose_holds": {},
+      "notes": "Head seated after first-pass correction; planted independent feet; breathing head and arms.",
+      "frame_sha256": [
+        "1acbe47994a56a8cce85f7b2735a156000ec50e136a4e082c08c5e91ae7f7e0e",
+        "e97498bdb763b042f5f336bfac8b471a160ab2925248d31dfbb099608f25715e",
+        "2bd31ea5b52611b0147daabb13bd774fcfe69d31ae94e5aa4a2dbdf927b62c10",
+        "f4937904741df2c9980ba9352ba017d799dce3a102c7d504429956b27bd6129c"
+      ],
+      "reviewed": {
+        "contact_sheet": true,
+        "all_discrete_frames": true,
+        "sizes": [
+          26,
+          33,
+          47
+        ],
+        "original_speed": false,
+        "quarter_speed": false
+      },
+      "remaining": "Coordinator must view original-speed and quarter-speed playback before approval."
+    }
+  }
+}

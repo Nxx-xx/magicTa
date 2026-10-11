@@ -1,0 +1,175 @@
+{
+	"actions": {
+		"attack": {
+			"events": {
+				"hit": 3.0
+			},
+			"fps": 12.0,
+			"frames": [
+				"slime_frames/attack/00.png",
+				"slime_frames/attack/01.png",
+				"slime_frames/attack/02.png",
+				"slime_frames/attack/03.png",
+				"slime_frames/attack/04.png",
+				"slime_frames/attack/05.png"
+			],
+			"loop": false,
+			"metrics": [
+				{
+					"bounds": [
+						49,
+						48,
+						180,
+						177
+					],
+					"edge_touch": false,
+					"frame": 0
+				},
+				{
+					"bounds": [
+						29,
+						55,
+						189,
+						182
+					],
+					"edge_touch": false,
+					"frame": 1
+				},
+				{
+					"bounds": [
+						57,
+						39,
+						147,
+						196
+					],
+					"edge_touch": false,
+					"frame": 2
+				},
+				{
+					"bounds": [
+						37,
+						53,
+						199,
+						174
+					],
+					"edge_touch": false,
+					"frame": 3
+				},
+				{
+					"bounds": [
+						51,
+						82,
+						167,
+						126
+					],
+					"edge_touch": false,
+					"frame": 4
+				},
+				{
+					"bounds": [
+						45,
+						64,
+						160,
+						137
+					],
+					"edge_touch": false,
+					"frame": 5
+				}
+			]
+		},
+		"hit": {
+			"events": {},
+			"fps": 12.0,
+			"frames": [
+				"slime_frames/hit/00.png",
+				"slime_frames/hit/01.png"
+			],
+			"loop": false,
+			"metrics": [
+				{
+					"bounds": [
+						49,
+						48,
+						180,
+						177
+					],
+					"edge_touch": false,
+					"frame": 0
+				},
+				{
+					"bounds": [
+						49,
+						48,
+						180,
+						177
+					],
+					"edge_touch": false,
+					"frame": 1
+				}
+			]
+		},
+		"idle": {
+			"events": {},
+			"fps": 6.0,
+			"frames": [
+				"slime_frames/idle/00.png",
+				"slime_frames/idle/01.png",
+				"slime_frames/idle/02.png",
+				"slime_frames/idle/03.png"
+			],
+			"loop": true,
+			"metrics": [
+				{
+					"bounds": [
+						49,
+						48,
+						180,
+						177
+					],
+					"edge_touch": false,
+					"frame": 0
+				},
+				{
+					"bounds": [
+						49,
+						48,
+						180,
+						177
+					],
+					"edge_touch": false,
+					"frame": 1
+				},
+				{
+					"bounds": [
+						49,
+						48,
+						180,
+						177
+					],
+					"edge_touch": false,
+					"frame": 2
+				},
+				{
+					"bounds": [
+						49,
+						48,
+						180,
+						177
+					],
+					"edge_touch": false,
+					"frame": 3
+				}
+			]
+		}
+	},
+	"anchor": [
+		128.0,
+		224.0
+	],
+	"size": [
+		256.0,
+		256.0
+	],
+	"source": "res://assets/monsters/phase3/source/rig_v02/slime_rig.json",
+	"status": "draft"
+}

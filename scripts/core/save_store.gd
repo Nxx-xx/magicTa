@@ -38,7 +38,7 @@ func write(run: Dictionary, meta: Dictionary) -> bool:
 	if file == null:
 		last_error = "无法写入存档：请检查存储空间或浏览器权限。"
 		return false
-	file.store_string(JSON.stringify({"version": VERSION, "run": run, "meta": meta}))
+	file.store_string(JSON.stringify({"version": _envelope_version(), "run": run, "meta": meta}))
 	file.flush()
 	var write_error := file.get_error()
 	file.close()
@@ -68,7 +68,14 @@ func write(run: Dictionary, meta: Dictionary) -> bool:
 	if DirAccess.rename_absolute(temp_absolute, absolute) != OK:
 		last_error = "无法提交存档；旧进度仍保存在备份中。"
 		return false
+	if not preload("res://scripts/core/platform_persistence.gd").flush():
+		last_error = "微信本地存档写入失败，请检查存储空间后重试。"
+		return false
 	return true
+
+func _envelope_version() -> int:
+	# CampaignSave opts into v2; the original two-floor store remains v1.
+	return VERSION
 
 func _valid(value: Variant) -> bool:
 	# Subclasses validate their mode-specific state; keep the shared envelope stable.

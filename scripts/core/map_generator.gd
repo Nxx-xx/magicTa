@@ -125,7 +125,7 @@ func _build(template: Dictionary, number: int, theme_id: String, symmetry: int, 
 	var incoming := {"type": "camp" if number == 1 else "down", "name": "入口营地" if number == 1 else "返回第一层",
 		"description": "已探索的地图永久保存，可以自由往返。", "role": "entry"}
 	var outgoing := {"type": "up" if number == 1 else "summit", "name": "通往第二层" if number == 1 else "未完的阶梯",
-		"description": "首次上楼选择主题。" if number == 1 else "两层原型到此。可以回一层挑战强敌并领取奖励。", "role": "exit"}
+		"description": "通过楼梯进入下一层，之后可以自由往返。" if number == 1 else "两层原型到此。可以回一层挑战强敌并领取奖励。", "role": "exit"}
 	if not _place(result, incoming, template.entry, symmetry) or not _place(result, outgoing, template.exit, symmetry):
 		return {}
 	var branches := _shuffle(template.branches, random)

@@ -1,0 +1,213 @@
+{
+	"anchor": [
+		128,
+		224
+	],
+	"ruins": {
+		"p3_lantern_sanctuary": {
+			"actions": {
+				"idle": {
+					"fps": 4,
+					"frames": [
+						"res://assets/environment/ruins/phase3/textures/v02/sanctuary/idle/00.png",
+						"res://assets/environment/ruins/phase3/textures/v02/sanctuary/idle/01.png",
+						"res://assets/environment/ruins/phase3/textures/v02/sanctuary/idle/02.png",
+						"res://assets/environment/ruins/phase3/textures/v02/sanctuary/idle/03.png"
+					],
+					"loop": true
+				},
+				"resolve_reserve": {
+					"fps": 10,
+					"frames": [
+						"res://assets/environment/ruins/phase3/textures/v02/sanctuary/resolve_reserve/00.png",
+						"res://assets/environment/ruins/phase3/textures/v02/sanctuary/resolve_reserve/01.png",
+						"res://assets/environment/ruins/phase3/textures/v02/sanctuary/resolve_reserve/02.png",
+						"res://assets/environment/ruins/phase3/textures/v02/sanctuary/resolve_reserve/03.png",
+						"res://assets/environment/ruins/phase3/textures/v02/sanctuary/resolve_reserve/04.png",
+						"res://assets/environment/ruins/phase3/textures/v02/sanctuary/resolve_reserve/05.png"
+					],
+					"loop": false
+				},
+				"resolve_restore": {
+					"fps": 10,
+					"frames": [
+						"res://assets/environment/ruins/phase3/textures/v02/sanctuary/resolve_restore/00.png",
+						"res://assets/environment/ruins/phase3/textures/v02/sanctuary/resolve_restore/01.png",
+						"res://assets/environment/ruins/phase3/textures/v02/sanctuary/resolve_restore/02.png",
+						"res://assets/environment/ruins/phase3/textures/v02/sanctuary/resolve_restore/03.png",
+						"res://assets/environment/ruins/phase3/textures/v02/sanctuary/resolve_restore/04.png",
+						"res://assets/environment/ruins/phase3/textures/v02/sanctuary/resolve_restore/05.png"
+					],
+					"loop": false
+				},
+				"resolve_ward": {
+					"fps": 10,
+					"frames": [
+						"res://assets/environment/ruins/phase3/textures/v02/sanctuary/resolve_ward/00.png",
+						"res://assets/environment/ruins/phase3/textures/v02/sanctuary/resolve_ward/01.png",
+						"res://assets/environment/ruins/phase3/textures/v02/sanctuary/resolve_ward/02.png",
+						"res://assets/environment/ruins/phase3/textures/v02/sanctuary/resolve_ward/03.png",
+						"res://assets/environment/ruins/phase3/textures/v02/sanctuary/resolve_ward/04.png",
+						"res://assets/environment/ruins/phase3/textures/v02/sanctuary/resolve_ward/05.png"
+					],
+					"loop": false
+				},
+				"spent": {
+					"fps": 1,
+					"frames": [
+						"res://assets/environment/ruins/phase3/textures/v02/sanctuary/spent/00.png"
+					],
+					"loop": false
+				}
+			},
+			"base": "res://assets/environment/ruins/phase3/textures/v02/sanctuary/base.png",
+			"source": "res://assets/environment/ruins/phase3/source/polish_v03/sanctuary_editable.tscn",
+			"spent_tint": [
+				0.48,
+				0.54,
+				0.6
+			]
+		},
+		"p3_oath_forge": {
+			"actions": {
+				"idle": {
+					"fps": 4,
+					"frames": [
+						"res://assets/environment/ruins/phase3/textures/v02/forge/idle/00.png",
+						"res://assets/environment/ruins/phase3/textures/v02/forge/idle/01.png",
+						"res://assets/environment/ruins/phase3/textures/v02/forge/idle/02.png",
+						"res://assets/environment/ruins/phase3/textures/v02/forge/idle/03.png"
+					],
+					"loop": true
+				},
+				"resolve_sacrifice": {
+					"fps": 12,
+					"frames": [
+						"res://assets/environment/ruins/phase3/textures/v02/forge/resolve_sacrifice/00.png",
+						"res://assets/environment/ruins/phase3/textures/v02/forge/resolve_sacrifice/01.png",
+						"res://assets/environment/ruins/phase3/textures/v02/forge/resolve_sacrifice/02.png",
+						"res://assets/environment/ruins/phase3/textures/v02/forge/resolve_sacrifice/03.png",
+						"res://assets/environment/ruins/phase3/textures/v02/forge/resolve_sacrifice/04.png",
+						"res://assets/environment/ruins/phase3/textures/v02/forge/resolve_sacrifice/05.png",
+						"res://assets/environment/ruins/phase3/textures/v02/forge/resolve_sacrifice/06.png",
+						"res://assets/environment/ruins/phase3/textures/v02/forge/resolve_sacrifice/07.png"
+					],
+					"loop": false
+				},
+				"resolve_salvage": {
+					"fps": 12,
+					"frames": [
+						"res://assets/environment/ruins/phase3/textures/v02/forge/resolve_salvage/00.png",
+						"res://assets/environment/ruins/phase3/textures/v02/forge/resolve_salvage/01.png",
+						"res://assets/environment/ruins/phase3/textures/v02/forge/resolve_salvage/02.png",
+						"res://assets/environment/ruins/phase3/textures/v02/forge/resolve_salvage/03.png",
+						"res://assets/environment/ruins/phase3/textures/v02/forge/resolve_salvage/04.png",
+						"res://assets/environment/ruins/phase3/textures/v02/forge/resolve_salvage/05.png",
+						"res://assets/environment/ruins/phase3/textures/v02/forge/resolve_salvage/06.png",
+						"res://assets/environment/ruins/phase3/textures/v02/forge/resolve_salvage/07.png"
+					],
+					"loop": false
+				},
+				"resolve_temper": {
+					"fps": 12,
+					"frames": [
+						"res://assets/environment/ruins/phase3/textures/v02/forge/resolve_temper/00.png",
+						"res://assets/environment/ruins/phase3/textures/v02/forge/resolve_temper/01.png",
+						"res://assets/environment/ruins/phase3/textures/v02/forge/resolve_temper/02.png",
+						"res://assets/environment/ruins/phase3/textures/v02/forge/resolve_temper/03.png",
+						"res://assets/environment/ruins/phase3/textures/v02/forge/resolve_temper/04.png",
+						"res://assets/environment/ruins/phase3/textures/v02/forge/resolve_temper/05.png",
+						"res://assets/environment/ruins/phase3/textures/v02/forge/resolve_temper/06.png",
+						"res://assets/environment/ruins/phase3/textures/v02/forge/resolve_temper/07.png"
+					],
+					"loop": false
+				},
+				"spent": {
+					"fps": 1,
+					"frames": [
+						"res://assets/environment/ruins/phase3/textures/v02/forge/spent/00.png"
+					],
+					"loop": false
+				}
+			},
+			"base": "res://assets/environment/ruins/phase3/textures/v02/forge/base.png",
+			"source": "res://assets/environment/ruins/phase3/source/polish_v03/forge_editable.tscn",
+			"spent_tint": [
+				0.48,
+				0.54,
+				0.6
+			]
+		},
+		"p3_oath_ruin": {
+			"actions": {
+				"idle": {
+					"fps": 4,
+					"frames": [
+						"res://assets/environment/ruins/phase3/textures/v02/oath/idle/00.png",
+						"res://assets/environment/ruins/phase3/textures/v02/oath/idle/01.png",
+						"res://assets/environment/ruins/phase3/textures/v02/oath/idle/02.png",
+						"res://assets/environment/ruins/phase3/textures/v02/oath/idle/03.png"
+					],
+					"loop": true
+				},
+				"resolve_edge": {
+					"fps": 10,
+					"frames": [
+						"res://assets/environment/ruins/phase3/textures/v02/oath/resolve_edge/00.png",
+						"res://assets/environment/ruins/phase3/textures/v02/oath/resolve_edge/01.png",
+						"res://assets/environment/ruins/phase3/textures/v02/oath/resolve_edge/02.png",
+						"res://assets/environment/ruins/phase3/textures/v02/oath/resolve_edge/03.png",
+						"res://assets/environment/ruins/phase3/textures/v02/oath/resolve_edge/04.png",
+						"res://assets/environment/ruins/phase3/textures/v02/oath/resolve_edge/05.png"
+					],
+					"loop": false
+				},
+				"resolve_guard": {
+					"fps": 10,
+					"frames": [
+						"res://assets/environment/ruins/phase3/textures/v02/oath/resolve_guard/00.png",
+						"res://assets/environment/ruins/phase3/textures/v02/oath/resolve_guard/01.png",
+						"res://assets/environment/ruins/phase3/textures/v02/oath/resolve_guard/02.png",
+						"res://assets/environment/ruins/phase3/textures/v02/oath/resolve_guard/03.png",
+						"res://assets/environment/ruins/phase3/textures/v02/oath/resolve_guard/04.png",
+						"res://assets/environment/ruins/phase3/textures/v02/oath/resolve_guard/05.png"
+					],
+					"loop": false
+				},
+				"resolve_salvage": {
+					"fps": 10,
+					"frames": [
+						"res://assets/environment/ruins/phase3/textures/v02/oath/resolve_salvage/00.png",
+						"res://assets/environment/ruins/phase3/textures/v02/oath/resolve_salvage/01.png",
+						"res://assets/environment/ruins/phase3/textures/v02/oath/resolve_salvage/02.png",
+						"res://assets/environment/ruins/phase3/textures/v02/oath/resolve_salvage/03.png",
+						"res://assets/environment/ruins/phase3/textures/v02/oath/resolve_salvage/04.png",
+						"res://assets/environment/ruins/phase3/textures/v02/oath/resolve_salvage/05.png"
+					],
+					"loop": false
+				},
+				"spent": {
+					"fps": 1,
+					"frames": [
+						"res://assets/environment/ruins/phase3/textures/v02/oath/spent/00.png"
+					],
+					"loop": false
+				}
+			},
+			"base": "res://assets/environment/ruins/phase3/textures/v02/oath/base.png",
+			"source": "res://assets/environment/ruins/phase3/source/polish_v03/oath_editable.tscn",
+			"spent_tint": [
+				0.48,
+				0.54,
+				0.6
+			]
+		}
+	},
+	"size": [
+		256,
+		256
+	],
+	"status": "accepted",
+	"storage": "shared-base-overlay-v1",
+	"version": 2
+}

@@ -1,10 +1,15 @@
 class_name RewardRules
 extends RefCounted
 ## Pure transaction: previews and commits use exactly the same resource rules.
+const Phase3Items = preload("res://scripts/core/phase3_items.gd")
 const FIELDS := ["attack", "defense", "max_hp", "gold", "keys", "silver_keys", "gold_keys", "heal"]
 const COSTS := ["hp", "gold", "keys", "silver_keys", "gold_keys"]
 
 static func resolve(db, player: Dictionary, reward: Dictionary) -> Dictionary:
+	if db.rules_version == 2:
+		return Phase3Items.resolve(db.data, player, reward)
+	if db.rules_version != 1:
+		return _error("不支持的奖励规则版本：%d" % db.rules_version)
 	var next: Dictionary = player.duplicate(true)
 	var before: Dictionary = db.player_stats(player)
 	var cost: Dictionary = reward.get("cost", {})

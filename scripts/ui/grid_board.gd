@@ -2,6 +2,20 @@ extends Control
 ## Runtime art with readable semantic badges and a vector fallback for missing assets.
 signal cell_selected(cell: Vector2i)
 signal view_changed
+signal arrived
+signal footstep
+signal pan_started
+
+const WALK_SECONDS := 0.22
+const WalkArt = preload("res://scripts/ui/hero_walk.gd")
+const TouchScroll = preload("res://scripts/ui/touch_scroll.gd")
+const HeroCatalog = preload("res://scripts/ui/phase3_animation_catalog.gd")
+const HeroGait = preload("res://scripts/ui/hero_gait.gd")
+const RuinArt = preload("res://scripts/ui/phase3_ruin_art.gd")
+const EnemyMapArt = preload("res://scripts/ui/phase3_enemy_map_art.gd")
+const TowerEnvironment = preload("res://scripts/ui/tower_environment.gd")
+const EncounterArt = preload("res://scripts/ui/encounter_art.gd")
+const RETURN_MARKERS := [preload("res://assets/ui/phase3/return_marker_0.svg"),preload("res://assets/ui/phase3/return_marker_1.svg")]
 
 const FONT = preload("res://assets/fonts/ui_font.tres")
 const Keys = preload("res://scripts/core/map_keys.gd")
@@ -17,27 +31,49 @@ var facing := "down"
 var marked_cells: Array = []
 var reduce_motion := false
 var hero_visual := Vector2(1,9)
-var move_tween: Tween
+var moving := false
+var move_from := Vector2.ZERO
+var move_progress := 0.0
+var walk_phase := 0.0
+var settle_seconds := -1.0
+var hero_idle_started := 0.0
+var walk_art: MeshInstance2D
+var hero_catalog := HeroCatalog.new()
+var idle_seconds := 0.0
+var interaction_started := -1.0
+var ruin_art := RuinArt.new()
+var enemy_map_art := EnemyMapArt.new()
+var tower_environment := TowerEnvironment.new()
 var exploration := false
+var lock_to_hero := false
 var overview := false
 var following := true
 var safe_top := 12.0
-var safe_bottom := 164.0
+var safe_bottom := 12.0
 var camera_center := Vector2(5.5, 5.5)
 var camera_target := Vector2(5.5, 5.5)
 var pointer_down := false
 var dragging := false
 var press_position := Vector2.ZERO
+var pointer_id := -2
+var last_position := Vector2.ZERO
 
 func _ready() -> void:
+	set_meta("map_surface", true)
 	mouse_filter = Control.MOUSE_FILTER_STOP
 	mouse_default_cursor_shape = Control.CURSOR_POINTING_HAND
 	texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS
 	clip_contents = true
 	resized.connect(queue_redraw)
+	walk_art = WalkArt.new()
+	add_child(walk_art)
+	hero_catalog.configure_runtime()
+	HeroGait.warm()
 
 func setup(floor_state: Dictionary, player_position: Vector2i, selection: Vector2i, is_alive: bool, enemy_definitions: Dictionary = {}) -> void:
-	var same_floor := not map.is_empty() and int(map.get("floor", 0)) == int(floor_state.get("floor", 0))
+	var same_floor: bool = not map.is_empty() and int(map.get("floor", 0)) == int(floor_state.get("floor", 0)) and map.get("floor_seed", "") == floor_state.get("floor_seed", "")
+	# Snapshot observation happens only after the host refreshes committed state.
+	ruin_art.observe(floor_state,same_floor,idle_seconds)
 	map = floor_state
 	enemies = enemy_definitions
 	var delta := player_position - hero
@@ -45,23 +81,30 @@ func setup(floor_state: Dictionary, player_position: Vector2i, selection: Vector
 		facing = "right" if delta.x > 0 else ("left" if delta.x < 0 else ("down" if delta.y > 0 else "up"))
 	hero = player_position
 	if not same_floor:
+		enemy_map_art.clear()
+		interaction_started = -1.0
 		recenter()
 	elif following:
 		_follow_hero()
-	if is_instance_valid(move_tween):
-		move_tween.kill()
-	if not reduce_motion and same_floor and absi(delta.x) + absi(delta.y) == 1 and is_inside_tree():
-		move_tween = create_tween()
-		move_tween.tween_method(_set_hero_visual, hero_visual, Vector2(hero), 0.10)
-	else:
+	if same_floor and absi(delta.x) + absi(delta.y) == 1 and is_inside_tree():
+		move_from = hero_visual
+		move_progress = 0.0
+		moving = true
+		settle_seconds = -1.0
+	elif not same_floor or delta != Vector2i.ZERO:
+		moving = false
+		move_progress = 0.0
 		hero_visual = Vector2(hero)
+		walk_phase = 0.0
+		settle_seconds = -1.0
+	# A HUD/selection refresh at the same position must not snap an in-flight walk.
 	selected = selection
 	alive = is_alive
 	queue_redraw()
 
 func _cell_size() -> float:
 	if exploration and not overview:
-		return clampf(size.x / 7.5, 44.0, 80.0)
+		return clampf(size.x / 5.0, 60.0, 144.0) if lock_to_hero else clampf(size.x / 7.5, 44.0, 80.0)
 	return minf(size.x, size.y) / 11.0
 
 func _origin() -> Vector2:
@@ -81,7 +124,8 @@ func _bounded_center(value: Vector2) -> Vector2:
 func recenter() -> void:
 	following = true
 	cancel_pointer()
-	camera_target = _bounded_center(Vector2(hero) + Vector2.ONE * 0.5)
+	camera_target = (hero_visual if moving else Vector2(hero)) + Vector2.ONE * 0.5
+	if not lock_to_hero: camera_target = _bounded_center(camera_target)
 	camera_center = camera_target
 	view_changed.emit()
 	queue_redraw()
@@ -93,25 +137,63 @@ func set_overview(value: bool) -> void:
 func refit_view() -> void:
 	if following:
 		_follow_hero()
-	camera_target = _bounded_center(camera_target)
-	camera_center = _bounded_center(camera_center)
+		if lock_to_hero: camera_center = camera_target
+	if not lock_to_hero:
+		camera_target = _bounded_center(camera_target)
+		camera_center = _bounded_center(camera_center)
 	queue_redraw()
 
 func _follow_hero() -> void:
-	var target := Vector2(hero) + Vector2.ONE * 0.5
-	# A small dead zone avoids moving the camera on every grid step.
-	var dead_zone := Vector2.ONE * 0.7
-	camera_target = _bounded_center(Vector2(clampf(camera_target.x, target.x - dead_zone.x, target.x + dead_zone.x), clampf(camera_target.y, target.y - dead_zone.y, target.y + dead_zone.y)))
+	# Follow the animated position, including at the floor edges. The walk itself
+	# supplies smooth motion; camera lag would move the hero away from the center.
+	var target := hero_visual + Vector2.ONE * 0.5
+	if lock_to_hero:
+		camera_target = target
+	else:
+		var dead_zone := Vector2.ONE * 0.7
+		camera_target = _bounded_center(Vector2(clampf(camera_target.x, target.x - dead_zone.x, target.x + dead_zone.x), clampf(camera_target.y, target.y - dead_zone.y, target.y + dead_zone.y)))
 
 func _process(delta: float) -> void:
-	if not exploration or overview or camera_center.is_equal_approx(camera_target):
-		return
-	camera_center = camera_target if reduce_motion else camera_center.lerp(camera_target, 1.0 - exp(-18.0 * delta))
-	queue_redraw()
+	idle_seconds += minf(delta, .06)
+	if not moving and settle_seconds >= 0:
+		settle_seconds += minf(delta, .06)
+		if settle_seconds >= HeroGait.SETTLE_SECONDS:
+			settle_seconds = -1.0
+			hero_idle_started = idle_seconds
+		queue_redraw()
+	if interaction_started >= 0:
+		queue_redraw()
+		if idle_seconds-interaction_started >= .4: interaction_started = -1.0
+	if not ruin_art.playing.is_empty(): queue_redraw()
+	if not marked_cells.is_empty() and not reduce_motion and int(idle_seconds*2) != int((idle_seconds-minf(delta,.06))*2): queue_redraw()
+	if not moving and not reduce_motion and int(idle_seconds*6) != int((idle_seconds-minf(delta,.06))*6): queue_redraw()
+	# Advance across boundaries in the same frame, retaining fractional time.
+	# Cap only long suspended frames; never fast-forward through the map on resume.
+	var remaining := minf(delta, 0.06)
+	while moving and remaining > 0:
+		var used := minf(remaining, (1.0 - move_progress) * WALK_SECONDS)
+		move_progress = minf(1.0, move_progress + used / WALK_SECONDS)
+		walk_phase += used / WALK_SECONDS * PI
+		hero_visual = move_from.lerp(Vector2(hero), move_progress)
+		remaining -= used
+		if move_progress >= 0.99999:
+			hero_visual = Vector2(hero)
+			moving = false
+			settle_seconds = 0.0
+			footstep.emit()
+			arrived.emit()
+		queue_redraw()
+	if exploration and not overview:
+		if following:
+			_follow_hero()
+		if not camera_center.is_equal_approx(camera_target):
+			camera_center = camera_target if lock_to_hero or reduce_motion else camera_center.lerp(camera_target, 1.0 - exp(-18.0 * delta))
+			queue_redraw()
 
 func cancel_pointer() -> void:
 	pointer_down = false
 	dragging = false
+	pointer_id = -2
 
 func _emit_cell(position: Vector2) -> void:
 	var local := position - _origin()
@@ -119,28 +201,73 @@ func _emit_cell(position: Vector2) -> void:
 	if tile > 0 and Rect2(Vector2.ZERO, Vector2.ONE * tile * 11).has_point(local):
 		cell_selected.emit(Vector2i(int(local.x / tile), int(local.y / tile)))
 
-func _gui_input(event: InputEvent) -> void:
-	# The project emulates mouse events from touch. Use one path to avoid double steps.
-	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
-		if event.pressed:
-			pointer_down = true
-			dragging = false
-			press_position = event.position
-		elif pointer_down:
-			var was_dragging := dragging
-			cancel_pointer()
-			if not was_dragging and Rect2(Vector2.ZERO, size).has_point(event.position):
-				_emit_cell(event.position)
-		accept_event()
-	elif event is InputEventMouseMotion and pointer_down and exploration and not overview:
-		if not dragging and event.position.distance_to(press_position) > 10:
-			dragging = true
+func _begin_pointer(position: Vector2, id: int) -> void:
+	pointer_down = true
+	pointer_id = id
+	dragging = false
+	press_position = position
+	last_position = position
+
+func _drag_pointer(position: Vector2) -> void:
+	if not dragging and position.distance_to(press_position) > 10:
+		dragging = true
+		if exploration and not overview and not lock_to_hero:
 			following = false
-			view_changed.emit()
-		if dragging:
-			camera_center = _bounded_center(camera_center - event.relative / _cell_size())
-			camera_target = camera_center
-			queue_redraw()
+		pan_started.emit()
+		view_changed.emit()
+	if dragging and exploration and not overview and not lock_to_hero:
+		camera_center = _bounded_center(camera_center - (position - last_position) / _cell_size())
+		camera_target = camera_center
+		queue_redraw()
+	# A swipe cancels a tap/route without detaching the exploration camera.
+	# Distant targets remain accessible through the minimap's full-floor view.
+	last_position = position
+
+func _end_pointer(position: Vector2, canceled: bool = false) -> void:
+	var was_dragging := dragging
+	cancel_pointer()
+	if not canceled and not was_dragging and Rect2(Vector2.ZERO, size).has_point(position):
+		_emit_cell(position)
+
+func _pointer_surface_hit(position: Vector2) -> bool:
+	# Include ancestor scroll clipping and overlays outside this board's parent.
+	var input_root: Node = get_parent()
+	while input_root.get_parent() is Control:
+		input_root = input_root.get_parent()
+	return TouchScroll.hit_control(input_root, position) == self
+
+func _input(event: InputEvent) -> void:
+	if event.device == InputEvent.DEVICE_ID_EMULATION or mouse_filter != Control.MOUSE_FILTER_STOP or not is_visible_in_tree():
+		return
+	if event is InputEventScreenTouch:
+		var local: Vector2 = get_global_transform_with_canvas().affine_inverse() * event.position
+		if event.canceled and pointer_down and pointer_id == -1:
+			cancel_pointer()
+			pan_started.emit()
+			get_viewport().set_input_as_handled()
+			return
+		if event.pressed and not event.canceled and not pointer_down and _pointer_surface_hit(event.position):
+			_begin_pointer(local, event.index)
+		elif pointer_down and pointer_id == event.index and (not event.pressed or event.canceled):
+			_end_pointer(local, event.canceled)
+		else:
+			return
+		get_viewport().set_input_as_handled()
+	elif event is InputEventScreenDrag and pointer_down and pointer_id == event.index:
+		_drag_pointer(get_global_transform_with_canvas().affine_inverse() * event.position)
+		get_viewport().set_input_as_handled()
+
+func _gui_input(event: InputEvent) -> void:
+	if event.device == InputEvent.DEVICE_ID_EMULATION:
+		return
+	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
+		if event.pressed and not pointer_down:
+			_begin_pointer(event.position, -1)
+		elif pointer_down and pointer_id == -1 and not event.pressed:
+			_end_pointer(event.position)
+		accept_event()
+	elif event is InputEventMouseMotion and pointer_down and pointer_id == -1:
+		_drag_pointer(event.position)
 		accept_event()
 
 func _draw() -> void:
@@ -148,33 +275,48 @@ func _draw() -> void:
 		return
 	var tile := _cell_size()
 	var origin := _origin()
+	TowerEnvironment.Masonry.terrain(self,map,origin,tile)
+	# Architecture and light sit below every entity, badge and interaction marker.
+	# CampBoard overrides _draw and therefore keeps its painted environment unchanged.
+	tower_environment.draw(self,map,origin,tile,idle_seconds,reduce_motion)
 	for y in 11:
 		for x in 11:
 			var cell := Vector2i(x, y)
 			var rect := Rect2(origin + Vector2(cell) * tile + Vector2.ONE, Vector2.ONE * (tile - 2))
-			var wall := str(map.rows[y]).substr(x, 1) == "#"
-			var tile_rect := Rect2(origin + Vector2(cell) * tile, Vector2.ONE * tile)
-			var texture: Texture2D = Art.environment("wall_%02d" % _wall_mask(cell) if wall else "floor_%d" % (2 if (x + y * 3) % 4 < 2 else (x * 7 + y * 3) % 4))
-			if texture != null:
-				draw_texture_rect(texture, tile_rect, false, (Color("505e74") if int(map.get("floor", 1)) >= 6 else Color("66717c")) if wall else Color.WHITE)
-			else:
-				draw_rect(rect, Color("253346") if wall else Color("14212d"))
-			if not wall and absi(cell.x - hero.x) + absi(cell.y - hero.y) == 1:
-				draw_rect(rect.grow(-1), Color("83d5bf"), false, 1)
 			var entity: Dictionary = map.entities.get("%d,%d" % [x, y], {})
 			if not entity.is_empty():
+				TowerEnvironment.entity_foundation(self,entity,rect.get_center(),tile)
 				_draw_entity(entity, rect.get_center(), tile)
 			if "%d,%d" % [x,y] in marked_cells:
-				draw_circle(rect.position + Vector2(4,4), 3, Color("e0bf80"))
-			if cell == selected:
+				var marker_size := clampf(tile*.36,12,20)
+				var marker_frame := 0 if reduce_motion else int(idle_seconds*2)%2
+				draw_texture_rect(RETURN_MARKERS[marker_frame],Rect2(rect.position,Vector2.ONE*marker_size),false)
+			if cell == selected and cell != hero:
 				draw_rect(rect.grow(-1), Color("f0d596"), false, 2)
 	_draw_hero(origin + (hero_visual + Vector2.ONE * 0.5) * tile, tile)
 
 func _draw_entity(entity: Dictionary, center: Vector2, tile: float) -> void:
 	var s := tile / 44.0
 	draw_set_transform(center, 0, Vector2.ONE * s)
+	if entity.get("type") in ["summit", "camp"]:
+		TowerEnvironment.gateway(self,str(entity.type))
+		draw_rect(Rect2(4, 4, 18, 18), Color("14212d"))
+		draw_string(FONT, Vector2(5, 18), "终" if entity.type == "summit" else "营", HORIZONTAL_ALIGNMENT_LEFT, -1, 13, Color("f3deaa"))
+		draw_set_transform(Vector2.ZERO)
+		return
 	var texture: Texture2D = Art.entity_texture(entity)
+	if entity.get("type") in ["up","down"]:
+		texture = TowerEnvironment.Masonry.staircase(str(entity.type))
+	if entity.has("ruin_id"):
+		texture = ruin_art.texture(entity,idle_seconds,reduce_motion)
+	elif entity.get("type") == "enemy" and map.has("phase3_recipe"):
+		var animated := enemy_map_art.texture(str(entity.enemy_id),idle_seconds,reduce_motion)
+		if animated != null: texture = animated
 	if texture != null:
+		if entity.get("type") in ["event", "rest"] and not entity.has("ruin_id"):
+			EncounterArt.draw(self, str(entity.type), texture, idle_seconds, reduce_motion)
+			draw_set_transform(Vector2.ZERO)
+			return
 		draw_texture_rect(texture, Rect2(-22, -22, 44, 44), false, Color("8a919b") if entity.get("purchased", false) else Color.WHITE)
 		if entity.type == "enemy":
 			var badge := EnemyRules.badge(enemies.get(str(entity.enemy_id), {"id": entity.enemy_id}), entity)
@@ -246,12 +388,43 @@ func _key_badge(key_kind: String) -> void:
 func _text(text: String, color: Color) -> void:
 	draw_string(FONT, Vector2(-10, 7), text, HORIZONTAL_ALIGNMENT_LEFT, -1, 20, color)
 
+func play_interaction() -> void:
+	if map.has("phase3_recipe") and not reduce_motion:
+		interaction_started = idle_seconds
+		queue_redraw()
+
+func hero_pose() -> Dictionary:
+	# Interaction and reduced-motion poses retain the catalog's existing policy.
+	if not reduce_motion and (moving or interaction_started < 0) and hero_catalog.manifest.get("actions", {}).has("map_walk_" + facing):
+		if moving: return HeroGait.pose(facing, walk_phase)
+		if settle_seconds >= 0: return HeroGait.pose(facing, walk_phase, settle_seconds)
+	var action := "map_walk_"+facing if moving and not reduce_motion else "map_idle_"+facing
+	var seconds := walk_phase/TAU*.5 if moving else idle_seconds - hero_idle_started
+	if not moving and not reduce_motion and interaction_started >= 0:
+		action = "map_interact_"+facing
+		seconds = idle_seconds-interaction_started
+	return hero_catalog.frame_at(action,seconds,reduce_motion)
+
 func _draw_hero(center: Vector2, tile: float) -> void:
+	if map.has("phase3_recipe"):
+		# The existing movement clock and interpolation own position and cadence.
+		var frame := hero_pose()
+		if frame.ok and not frame.fallback:
+			walk_art.visible = false
+			draw_circle(center+Vector2(0,tile*.32),tile*.22,Color(0,0,0,.35))
+			var size := Vector2.ONE*tile
+			var foot := center+Vector2(0,tile*.43)
+			draw_texture_rect(frame.texture,Rect2(foot-frame.anchor/128.0*tile,size),false,Color.WHITE if alive else Color("897b85"))
+			return
 	var texture: Texture2D = Art.hero(facing)
 	if texture != null:
 		draw_circle(center + Vector2(0, tile * 0.32), tile * 0.22, Color(0,0,0,0.35))
-		draw_texture_rect(texture, Rect2(center + Vector2(-tile * 0.5, -tile * 0.47625), Vector2.ONE * tile), false, Color.WHITE if alive else Color("897b85"))
+		walk_art.visible = true
+		walk_art.position = center
+		walk_art.scale = Vector2.ONE * tile
+		walk_art.pose(texture, facing, walk_phase, moving and not reduce_motion, alive)
 		return
+	walk_art.visible = false
 	var s := tile / 44.0
 	draw_set_transform(center, 0, Vector2.ONE * s)
 	draw_circle(Vector2(0, 8), 16, Color(0, 0, 0, 0.35))
@@ -272,7 +445,3 @@ func _wall_mask(cell: Vector2i) -> int:
 		if adjacent.x < 0 or adjacent.y < 0 or adjacent.x >= 11 or adjacent.y >= 11 or str(map.rows[adjacent.y]).substr(adjacent.x, 1) == "#":
 			mask |= 1 << index
 	return mask
-
-func _set_hero_visual(value: Vector2) -> void:
-	hero_visual = value
-	queue_redraw()

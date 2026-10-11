@@ -1,0 +1,8 @@
+{
+  "base_entity": "knight",
+  "base_rig": "assets/monsters/phase3/source/parallel_v05/battle/knight/knight_rig.json",
+  "base_rig_sha256": "8778e3e3d2159a41ce9458beb8139d70db74a95f09c2eec15b18fd84c4e9bbd9",
+  "originals": {
+    "knight_components.png": "570c4f7ff2295b5f3561c998e982ce6d64252dd891a94cdc44d3b9b20221ef99"
+  }
+}

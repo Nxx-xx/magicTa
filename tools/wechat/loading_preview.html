@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><title>塔境 · 启动加载预览</title>
+<style>html,body{margin:0;background:#06131b;overflow:hidden}canvas{display:block}</style>
+<canvas id="screen"></canvas>
+<script type="module">
+import {drawLoadingScreen} from './loading_screen.js';
+const query = new URLSearchParams(location.search);
+const width = Number(query.get('w')) || innerWidth;
+const height = Number(query.get('h')) || innerHeight;
+const canvas = document.getElementById('screen');
+canvas.width = width * devicePixelRatio; canvas.height = height * devicePixelRatio;
+canvas.style.width = width + 'px'; canvas.style.height = height + 'px';
+const ctx = canvas.getContext('2d'); ctx.scale(devicePixelRatio, devicePixelRatio);
+const image = new Image(); image.src = './assets/loading-background.jpg';
+await image.decode();
+drawLoadingScreen(ctx, image, width, height, Number(query.get('progress') || 68), {
+  safeArea: {top: Number(query.get('top')) || 0, bottom: height - (Number(query.get('bottom')) || 0)},
+  time: 800, failed: query.has('failed'),
+});
+document.title = 'READY';
+</script></html>

@@ -1,0 +1,195 @@
+{
+  "tool": "built-in image_gen",
+  "date": "2026-10-04",
+  "assets": [
+    {
+      "id": "iron_sword",
+      "generated_path": "generated_images/01a102fe-707f-7163-9874-f1048adf9423/exec-beb5c950-7b10-41f1-9863-4f2d309cf9d1.png",
+      "source": "res://assets/items/source/painted_v02/iron_sword.png",
+      "revision": null
+    },
+    {
+      "id": "duelist_gloves",
+      "generated_path": "generated_images/01a102fe-707f-7163-9874-f1048adf9423/exec-92e7ad7e-4aa7-42d9-8437-fab77c134391.png",
+      "source": "res://assets/items/source/painted_v02/duelist_gloves.png",
+      "revision": null
+    },
+    {
+      "id": "p3_lantern_aegis",
+      "generated_path": "generated_images/01a102fe-707f-7163-9874-f1048adf9423/exec-5d4b9d78-1fa1-4061-a950-b21b0f003f02.png",
+      "source": "res://assets/items/source/painted_v02/p3_lantern_aegis.png",
+      "revision": null
+    },
+    {
+      "id": "iron_armor",
+      "generated_path": "generated_images/01a102fe-707f-7163-9874-f1048adf9423/exec-f446f248-0fe1-4ec2-8f95-5efe5eee9eb1.png",
+      "source": "res://assets/items/source/painted_v02/iron_armor.png",
+      "revision": null
+    },
+    {
+      "id": "hunter_bow",
+      "generated_path": "generated_images/01a102fe-707f-7163-9874-f1048adf9423/exec-7efd5ca0-af49-44d8-9715-7695a2e16bd8.png",
+      "source": "res://assets/items/source/painted_v02/hunter_bow.png",
+      "revision": null
+    },
+    {
+      "id": "tower_shield",
+      "generated_path": "generated_images/01a102fe-707f-7163-9874-f1048adf9423/exec-db4e2b3e-f43a-4016-92b2-33274cd69c85.png",
+      "source": "res://assets/items/source/painted_v02/tower_shield.png",
+      "revision": null
+    },
+    {
+      "id": "heart_pendant",
+      "generated_path": "generated_images/01a102fe-707f-7163-9874-f1048adf9423/exec-4a7fecdc-42d0-48b3-9d29-927f1d5e0f27.png",
+      "source": "res://assets/items/source/painted_v02/heart_pendant.png",
+      "revision": {
+        "generated_path": "generated_images/01a102fe-707f-7163-9874-f1048adf9423/exec-e303e3b6-1b3a-42a1-9381-5896c15f30c7.png",
+        "prompt_file": "heart-pendant-revision.txt"
+      }
+    },
+    {
+      "id": "steel_blade",
+      "generated_path": "generated_images/01a102fe-707f-7163-9874-f1048adf9423/exec-71a6d8fb-27c6-4978-bf19-338983d0cdbb.png",
+      "source": "res://assets/items/source/painted_v02/steel_blade.png",
+      "revision": null
+    },
+    {
+      "id": "knight_plate",
+      "generated_path": "generated_images/01a102fe-707f-7163-9874-f1048adf9423/exec-b4654f48-a38d-4df2-b291-4ebb3c1943ed.png",
+      "source": "res://assets/items/source/painted_v02/knight_plate.png",
+      "revision": null
+    },
+    {
+      "id": "vital_crown",
+      "generated_path": "generated_images/01a102fe-707f-7163-9874-f1048adf9423/exec-bbbde136-b715-43c9-88c3-b2985862fa0c.png",
+      "source": "res://assets/items/source/painted_v02/vital_crown.png",
+      "revision": null
+    },
+    {
+      "id": "dawn_spear",
+      "generated_path": "generated_images/01a102fe-707f-7163-9874-f1048adf9423/exec-c0e959cc-1b34-40ae-a47d-57c8598972d6.png",
+      "source": "res://assets/items/source/painted_v02/dawn_spear.png",
+      "revision": null
+    },
+    {
+      "id": "obsidian_mail",
+      "generated_path": "generated_images/01a102fe-707f-7163-9874-f1048adf9423/exec-615cf774-828e-4708-9d24-33a5f1c61449.png",
+      "source": "res://assets/items/source/painted_v02/obsidian_mail.png",
+      "revision": null
+    },
+    {
+      "id": "sovereign_ring",
+      "generated_path": "generated_images/01a102fe-707f-7163-9874-f1048adf9423/exec-dd8bc744-cfd4-4851-b46f-32a2265fee22.png",
+      "source": "res://assets/items/source/painted_v02/sovereign_ring.png",
+      "revision": null
+    },
+    {
+      "id": "blood_sword",
+      "generated_path": "generated_images/01a102fe-707f-7163-9874-f1048adf9423/exec-cbaec192-a687-4d20-9506-2444257fd23b.png",
+      "source": "res://assets/items/source/painted_v02/blood_sword.png",
+      "revision": null
+    },
+    {
+      "id": "gold_sword",
+      "generated_path": "generated_images/01a102fe-707f-7163-9874-f1048adf9423/exec-ff631978-e6ea-41fe-bea9-0ecfcd1a2acd.png",
+      "source": "res://assets/items/source/painted_v02/gold_sword.png",
+      "revision": null
+    },
+    {
+      "id": "wolf_fang",
+      "generated_path": "generated_images/01a102fe-707f-7163-9874-f1048adf9423/exec-c674b188-e650-4f54-9cf5-ec7af4e235b9.png",
+      "source": "res://assets/items/source/painted_v02/wolf_fang.png",
+      "revision": null
+    },
+    {
+      "id": "stone_heart",
+      "generated_path": "generated_images/01a102fe-707f-7163-9874-f1048adf9423/exec-9ebb531a-4190-4bd1-8d33-9d8c944479de.png",
+      "source": "res://assets/items/source/painted_v02/stone_heart.png",
+      "revision": null
+    },
+    {
+      "id": "spring_seed",
+      "generated_path": "generated_images/01a102fe-707f-7163-9874-f1048adf9423/exec-31622138-93ad-4487-9c9a-a8bfe19d01ba.png",
+      "source": "res://assets/items/source/painted_v02/spring_seed.png",
+      "revision": null
+    },
+    {
+      "id": "lucky_coin",
+      "generated_path": "generated_images/01a102fe-707f-7163-9874-f1048adf9423/exec-6f3f5ad6-0da5-4da8-9a5d-b409bed909b8.png",
+      "source": "res://assets/items/source/painted_v02/lucky_coin.png",
+      "revision": null
+    },
+    {
+      "id": "crimson_chalice",
+      "generated_path": "generated_images/01a102fe-707f-7163-9874-f1048adf9423/exec-71e1f557-17fc-4f24-b2a2-b8853810dd46.png",
+      "source": "res://assets/items/source/painted_v02/crimson_chalice.png",
+      "revision": null
+    },
+    {
+      "id": "merchant_seal",
+      "generated_path": "generated_images/01a102fe-707f-7163-9874-f1048adf9423/exec-6a043c51-365f-4f4a-a8ba-1aa36812a74b.png",
+      "source": "res://assets/items/source/painted_v02/merchant_seal.png",
+      "revision": null
+    },
+    {
+      "id": "sun_emblem",
+      "generated_path": "generated_images/01a102fe-707f-7163-9874-f1048adf9423/exec-917df739-fb84-471d-a7a7-ac93fc92ef3b.png",
+      "source": "res://assets/items/source/painted_v02/sun_emblem.png",
+      "revision": null
+    },
+    {
+      "id": "guardian_oath",
+      "generated_path": "generated_images/01a102fe-707f-7163-9874-f1048adf9423/exec-70f8d258-81fb-40e8-a6dc-65cb457eaaf3.png",
+      "source": "res://assets/items/source/painted_v02/guardian_oath.png",
+      "revision": null
+    },
+    {
+      "id": "p3_dawn_sigil",
+      "generated_path": "generated_images/01a102fe-707f-7163-9874-f1048adf9423/exec-7b28cb89-4747-4acf-8776-8a1bc8b60566.png",
+      "source": "res://assets/items/source/painted_v02/p3_dawn_sigil.png",
+      "revision": null
+    },
+    {
+      "id": "p3_bounty_ledger",
+      "generated_path": "generated_images/01a102fe-707f-7163-9874-f1048adf9423/exec-e51d2cfd-6387-48e0-8861-d4cc63dce4c7.png",
+      "source": "res://assets/items/source/painted_v02/p3_bounty_ledger.png",
+      "revision": null
+    },
+    {
+      "id": "p3_rhythm_blade",
+      "generated_path": "generated_images/01a102fe-707f-7163-9874-f1048adf9423/exec-46f58051-7509-4107-99be-d7ecc63e5ec0.png",
+      "source": "res://assets/items/source/painted_v02/p3_rhythm_blade.png",
+      "revision": null
+    },
+    {
+      "id": "p3_thorn_clasp",
+      "generated_path": "generated_images/01a102fe-707f-7163-9874-f1048adf9423/exec-c4b179c9-4e36-4a50-b3db-c19cd623a463.png",
+      "source": "res://assets/items/source/painted_v02/p3_thorn_clasp.png",
+      "revision": null
+    },
+    {
+      "id": "p3_gilded_lantern",
+      "generated_path": "generated_images/01a102fe-707f-7163-9874-f1048adf9423/exec-838043be-e841-4351-b600-8380ee846821.png",
+      "source": "res://assets/items/source/painted_v02/p3_gilded_lantern.png",
+      "revision": null
+    },
+    {
+      "id": "salvage",
+      "generated_path": "generated_images/01a102fe-707f-7163-9874-f1048adf9423/exec-3c136533-53d2-4851-901e-3fe1cb716754.png",
+      "source": "res://assets/items/source/painted_v02/salvage.png",
+      "revision": null
+    },
+    {
+      "id": "temper",
+      "generated_path": "generated_images/01a102fe-707f-7163-9874-f1048adf9423/exec-7a2bd8cd-7b0b-4de1-95cd-9a928fa73c15.png",
+      "source": "res://assets/items/source/painted_v02/temper.png",
+      "revision": null
+    },
+    {
+      "id": "sacrifice",
+      "generated_path": "generated_images/01a102fe-707f-7163-9874-f1048adf9423/exec-e99cbdc2-6ec5-454f-8d50-6f0d531a763d.png",
+      "source": "res://assets/items/source/painted_v02/sacrifice.png",
+      "revision": null
+    }
+  ]
+}

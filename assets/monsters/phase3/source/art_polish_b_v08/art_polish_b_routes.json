@@ -1,0 +1,14 @@
+{
+  "res://assets/monsters/phase3/source/art_polish_b_v07/berserker/battle/berserker_rig.json": "res://assets/monsters/phase3/source/art_polish_b_v08/berserker/battle/berserker_rig.json",
+  "res://assets/monsters/phase3/source/art_polish_b_v07/berserker/map/berserker_map_rig.json": "res://assets/monsters/phase3/source/art_polish_b_v08/berserker/map/berserker_map_rig.json",
+  "res://assets/monsters/phase3/source/art_polish_b_v07/knight/battle/knight_rig.json": "res://assets/monsters/phase3/source/art_polish_b_v08/knight/battle/knight_rig.json",
+  "res://assets/monsters/phase3/source/art_polish_b_v07/knight/map/knight_map_rig.json": "res://assets/monsters/phase3/source/art_polish_b_v08/knight/map/knight_map_rig.json",
+  "res://assets/monsters/phase3/source/art_polish_b_v07/p3_ember_channeler/battle/p3_ember_channeler_rig.json": "res://assets/monsters/phase3/source/art_polish_b_v08/p3_ember_channeler/battle/p3_ember_channeler_rig.json",
+  "res://assets/monsters/phase3/source/art_polish_b_v07/p3_ember_channeler/map/p3_ember_channeler_map_rig.json": "res://assets/monsters/phase3/source/art_polish_b_v08/p3_ember_channeler/map/p3_ember_channeler_map_rig.json",
+  "res://assets/monsters/phase3/source/art_polish_b_v07/p3_vault_knight/battle/p3_vault_knight_rig.json": "res://assets/monsters/phase3/source/art_polish_b_v08/p3_vault_knight/battle/p3_vault_knight_rig.json",
+  "res://assets/monsters/phase3/source/art_polish_b_v07/p3_vault_knight/map/p3_vault_knight_map_rig.json": "res://assets/monsters/phase3/source/art_polish_b_v08/p3_vault_knight/map/p3_vault_knight_map_rig.json",
+  "res://assets/monsters/phase3/source/art_polish_b_v07/warden/battle/warden_rig.json": "res://assets/monsters/phase3/source/art_polish_b_v08/warden/battle/warden_rig.json",
+  "res://assets/monsters/phase3/source/art_polish_b_v07/warden/map/warden_map_rig.json": "res://assets/monsters/phase3/source/art_polish_b_v08/warden/map/warden_map_rig.json",
+  "res://assets/monsters/phase3/source/art_polish_b_v07/warlock/battle/warlock_rig.json": "res://assets/monsters/phase3/source/art_polish_b_v08/warlock/battle/warlock_rig.json",
+  "res://assets/monsters/phase3/source/art_polish_b_v07/warlock/map/warlock_map_rig.json": "res://assets/monsters/phase3/source/art_polish_b_v08/warlock/map/warlock_map_rig.json"
+}

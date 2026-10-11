@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+<defs><linearGradient id="metal" x2="0.8" y2="1"><stop stop-color="#fff0bd"/><stop offset="1" stop-color="#cc844d"/></linearGradient></defs>
+<g stroke="#222d40" stroke-width="7" stroke-linejoin="round">
+<path d="M128 35L153 62L185 71L181 108L202 137L177 164L167 197L133 194L103 216L78 191L46 182L53 145L36 116L60 90L70 56L104 58Z" fill="url(#metal)"/>
+<circle cx="120" cy="125" r="53" fill="#a64f46" stroke="#ffe7ab" stroke-width="6"/>
+<path d="M150 48L168 73L127 141L107 148L111 127Z" fill="#e6f5f4"/>
+<path d="M116 129L146 82" stroke="#6babb4" stroke-width="5"/>
+<path d="M91 132L131 157" stroke="#fbe3a1" stroke-width="12"/>
+<path d="M111 147L92 177" stroke="#222d40" stroke-width="15"/>
+<path d="M111 147L92 177" stroke="#eed08d" stroke-width="7"/>
+<path d="M82 182L99 190L108 177L91 167Z" fill="#fff0bd"/>
+</g></svg>

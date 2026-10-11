@@ -1,7 +1,7 @@
 extends SceneTree
 ## Headless smoke checks. Add -- --capture with a graphical renderer to save
 ## the actual Godot-drawn monster atlas and map/detail previews under build/.
-const Screen = preload("res://scripts/ui/map_screen.gd")
+const Screen = preload("res://tests/legacy_map_screen_fixture.gd")
 const Core = preload("res://scripts/core/map_engine.gd")
 const Enemies = preload("res://scripts/core/enemy_rules.gd")
 const OUTPUT_DIR := "build/verification"

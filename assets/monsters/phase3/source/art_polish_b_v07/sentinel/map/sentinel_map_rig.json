@@ -1,0 +1,449 @@
+{
+  "version": 1,
+  "status": "draft",
+  "entity": "sentinel_map",
+  "canvas": 512,
+  "runtime_size": 256,
+  "anchor": [
+    256,
+    448
+  ],
+  "rest_scale": 1,
+  "source": "sentinel_map_components.png",
+  "layers": [
+    {
+      "name": "left_leg",
+      "parent": "root",
+      "pivot": [
+        218,
+        330.24
+      ],
+      "crop": [
+        0,
+        0,
+        255,
+        376
+      ],
+      "image_pivot": [
+        147.89999999999998,
+        8
+      ],
+      "scale": 0.32,
+      "z": -5,
+      "source": "sentinel_map_parts/left_leg.png",
+      "art_scale": [
+        1.0,
+        1.0
+      ],
+      "art_material": {
+        "shadow_lift": 0.015,
+        "cool_mix": 0.07
+      }
+    },
+    {
+      "name": "right_leg",
+      "parent": "root",
+      "pivot": [
+        294,
+        329.92
+      ],
+      "crop": [
+        0,
+        0,
+        248,
+        377
+      ],
+      "image_pivot": [
+        104.16,
+        8
+      ],
+      "scale": 0.32,
+      "z": -4,
+      "source": "sentinel_map_parts/right_leg.png",
+      "art_scale": [
+        1.0,
+        1.0
+      ],
+      "art_material": {
+        "shadow_lift": 0.015,
+        "cool_mix": 0.07
+      }
+    },
+    {
+      "name": "pelvis",
+      "parent": "root",
+      "pivot": [
+        256,
+        315
+      ],
+      "crop": [
+        0,
+        0,
+        336,
+        293
+      ],
+      "image_pivot": [
+        168.0,
+        146.5
+      ],
+      "scale": 0.34,
+      "z": -2,
+      "source": "sentinel_map_parts/pelvis.png",
+      "art_scale": [
+        1.045,
+        1.0
+      ],
+      "art_material": {
+        "shadow_lift": 0.015,
+        "cool_mix": 0.07
+      }
+    },
+    {
+      "name": "torso",
+      "parent": "root",
+      "pivot": [
+        256,
+        298
+      ],
+      "crop": [
+        0,
+        0,
+        523,
+        423
+      ],
+      "image_pivot": [
+        261.5,
+        411
+      ],
+      "scale": 0.49,
+      "z": 0,
+      "source": "sentinel_map_parts/torso.png",
+      "art_scale": [
+        1.045,
+        1.0
+      ],
+      "art_material": {
+        "shadow_lift": 0.015,
+        "cool_mix": 0.07
+      }
+    },
+    {
+      "name": "head",
+      "parent": "torso",
+      "pivot": [
+        256,
+        160
+      ],
+      "crop": [
+        0,
+        0,
+        241,
+        265
+      ],
+      "image_pivot": [
+        120.5,
+        261
+      ],
+      "scale": 0.45,
+      "z": 3,
+      "source": "sentinel_map_parts/head.png",
+      "art_scale": [
+        1.1,
+        1.0
+      ],
+      "art_material": {
+        "shadow_lift": 0.015,
+        "cool_mix": 0.07
+      }
+    },
+    {
+      "name": "left_arm",
+      "parent": "torso",
+      "pivot": [
+        152,
+        164
+      ],
+      "crop": [
+        0,
+        0,
+        281,
+        436
+      ],
+      "image_pivot": [
+        174.22,
+        32
+      ],
+      "scale": 0.4,
+      "z": -1,
+      "source": "sentinel_map_parts/left_arm.png",
+      "art_scale": [
+        1.0,
+        1.0
+      ],
+      "art_material": {
+        "shadow_lift": 0.015,
+        "cool_mix": 0.07
+      }
+    },
+    {
+      "name": "right_arm",
+      "parent": "torso",
+      "pivot": [
+        350,
+        164
+      ],
+      "crop": [
+        0,
+        0,
+        335,
+        443
+      ],
+      "image_pivot": [
+        93.80000000000001,
+        32
+      ],
+      "scale": 0.4,
+      "z": 1,
+      "source": "sentinel_map_parts/right_arm.png",
+      "art_scale": [
+        1.0,
+        1.0
+      ],
+      "art_material": {
+        "shadow_lift": 0.015,
+        "cool_mix": 0.07
+      }
+    },
+    {
+      "name": "core",
+      "parent": "torso",
+      "pivot": [
+        256,
+        214
+      ],
+      "crop": [
+        0,
+        0,
+        179,
+        216
+      ],
+      "image_pivot": [
+        89.5,
+        108.0
+      ],
+      "scale": 0.22,
+      "z": 2,
+      "source": "sentinel_map_parts/core.png"
+    },
+    {
+      "name": "teal_grooves",
+      "parent": "torso",
+      "pivot": [
+        256,
+        211
+      ],
+      "crop": [
+        0,
+        0,
+        300,
+        276
+      ],
+      "image_pivot": [
+        150.0,
+        138.0
+      ],
+      "scale": 0.24,
+      "z": 3,
+      "source": "sentinel_map_parts/effect.png"
+    },
+    {
+      "name": "left_elbow",
+      "parent": "left_arm",
+      "pivot": [
+        140,
+        235
+      ],
+      "joint_only": true,
+      "z": 0
+    },
+    {
+      "name": "left_knee",
+      "parent": "left_leg",
+      "pivot": [
+        218,
+        390.24
+      ],
+      "joint_only": true,
+      "z": 0
+    },
+    {
+      "name": "left_ground_contact",
+      "parent": "root",
+      "pivot": [
+        218,
+        448
+      ],
+      "joint_only": true,
+      "z": 0
+    },
+    {
+      "name": "right_elbow",
+      "parent": "right_arm",
+      "pivot": [
+        375,
+        232
+      ],
+      "joint_only": true,
+      "z": 0
+    },
+    {
+      "name": "right_knee",
+      "parent": "right_leg",
+      "pivot": [
+        294,
+        389.92
+      ],
+      "joint_only": true,
+      "z": 0
+    },
+    {
+      "name": "right_ground_contact",
+      "parent": "root",
+      "pivot": [
+        294,
+        448
+      ],
+      "joint_only": true,
+      "z": 0
+    }
+  ],
+  "actions": {
+    "idle": {
+      "fps": 6,
+      "loop": true,
+      "poses": [
+        {
+          "teal_grooves": {
+            "a": 0.12
+          }
+        },
+        {
+          "head": {
+            "r": -0.45
+          },
+          "left_arm": {
+            "r": 0.55
+          },
+          "right_arm": {
+            "r": -0.4
+          },
+          "teal_grooves": {
+            "a": 0.24
+          }
+        },
+        {
+          "head": {
+            "r": -0.8
+          },
+          "left_arm": {
+            "r": 0.9
+          },
+          "right_arm": {
+            "r": -0.7
+          },
+          "teal_grooves": {
+            "a": 0.32
+          }
+        },
+        {
+          "head": {
+            "r": 0.25
+          },
+          "left_arm": {
+            "r": -0.35
+          },
+          "right_arm": {
+            "r": 0.25
+          },
+          "teal_grooves": {
+            "a": 0.18
+          }
+        }
+      ],
+      "events": {}
+    }
+  },
+  "pose_holds": {},
+  "camera": "Independent elevated front orthographic map camera, 30 degrees",
+  "joints": {
+    "left_leg": [
+      218,
+      330.24
+    ],
+    "right_leg": [
+      294,
+      329.92
+    ],
+    "head": [
+      256,
+      160
+    ],
+    "left_arm": [
+      152,
+      164
+    ],
+    "right_arm": [
+      350,
+      164
+    ],
+    "left_elbow": [
+      140,
+      235
+    ],
+    "left_knee": [
+      218,
+      390.24
+    ],
+    "left_ground_contact": [
+      218,
+      448
+    ],
+    "right_elbow": [
+      375,
+      232
+    ],
+    "right_knee": [
+      294,
+      389.92
+    ],
+    "right_ground_contact": [
+      294,
+      448
+    ],
+    "ground_anchor": [
+      256,
+      448
+    ]
+  },
+  "acceptance": "Draft requires separate visual inspection and exact hash approval",
+  "effect_layers": [
+    "teal_grooves"
+  ],
+  "effect_actions": [
+    "idle"
+  ],
+  "art_polish": {
+    "baseline_source": "res://assets/monsters/phase3/source/parallel_v05/map/sentinel/sentinel_map_rig.json",
+    "description": "Local painted component width and material separation; unchanged bone pivots, contact paths, root, action poses/events/timing and physical accessories.",
+    "changed_components": [
+      "left_leg",
+      "right_leg",
+      "pelvis",
+      "torso",
+      "head",
+      "left_arm",
+      "right_arm"
+    ],
+    "human_signoff": false
+  }
+}

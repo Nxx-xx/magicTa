@@ -85,12 +85,28 @@ def main() -> None:
     sources = scripts + [ROOT / "project.godot"] + sorted(path for ext in ("*.tscn", "*.tres") for path in ROOT.rglob(ext) if is_project_source(path))
     for path in sources:
         source = path.read_text(encoding="utf-8")
-        for resource in re.findall(r'res://([^"\s]+)', source):
+        # Negative-path fixtures are data, while literal load/preload dependencies
+        # in tests still must exist. Production strings retain full checking.
+        scope = path.relative_to(ROOT).parts[0]
+        test_fixture = scope == "tests" or (
+            scope == "tools" and path.name.endswith(("_test.gd", "_test_runner.gd"))
+        )
+        pattern = r'\b(?:preload|load)\("res://([^"\s]+)' if test_fixture else r'res://([^"\s]+)'
+        for resource in re.findall(pattern, source):
             # Test captures are generated outputs, not required input resources.
             # Production code must never depend on an ignored build artifact.
-            if resource.startswith("build/") and path.relative_to(ROOT).parts[0] == "tests":
+            if resource.startswith("build/") and scope in {"tests", "tools"}:
+                continue
+            if re.search(r'%0?\d*[sd]', resource):
+                # Runtime format strings are not literal filenames. Require a
+                # matching real asset; runtime suites check the finite ID sets.
+                template = re.sub(r'%0?\d*[sd]', '*', resource)
+                assert any(p.is_file() for p in ROOT.glob(template)), f"No assets match resource template in {path}: {resource}"
                 continue
             target = ROOT / resource
+            if re.search(r'"res://' + re.escape(resource) + r'"\s*\+', source) and not resource.endswith('/'):
+                assert any(p.is_file() for p in target.parent.glob(target.name + '*')), f"No assets match resource prefix in {path}: {resource}"
+                continue
             # Preview/packing scripts also use res:// directory constants as
             # path prefixes. Only an explicit trailing slash denotes a directory;
             # missing file references must still fail instead of being masked.

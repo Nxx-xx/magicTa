@@ -1,0 +1,23 @@
+{
+  "version":1,
+  "unlocks":{
+    "p3_first_midboss":{"name":"穿越封印","description":"击败第五层牛头，最终死亡或通关。","grants":["p3_vanguard"],"icon":"p3_vanguard"},
+    "p3_sustain_20":{"name":"灯火不熄","description":"非放弃结算，实际击杀治疗累计达到 20。","grants":["p3_keeper"],"icon":"p3_keeper"},
+    "p3_shop_30":{"name":"有备而来","description":"非放弃结算，实际商店支出累计达到 30。","grants":["p3_trader"],"icon":"p3_trader"},
+    "p3_short_duel":{"name":"速破守卫","description":"至多 6 次玩家攻击击败第五层牛头，非放弃。","grants":["p3_rhythm_blade"],"icon":"p3_vanguard"},
+    "p3_low_loss_elite":{"name":"从容制胜","description":"获胜的精英战原始总受伤不超过 10，非放弃。","grants":["p3_thorn_clasp"],"icon":"p3_keeper"},
+    "p3_reserve_100":{"name":"百金归途","description":"最高到达至少第 5 层，非放弃结算持有至少 100 金币。","grants":["p3_gilded_lantern"],"icon":"p3_trader"},
+    "p3_c0_clear":{"name":"铜色塔徽","description":"通关标准旅程。","grants":["p3_c1","p3_badge_bronze"],"icon":"p3_c0"},
+    "p3_c1_clear":{"name":"银色塔徽","description":"通关深塔回响。","grants":["p3_c2","p3_badge_silver"],"icon":"p3_c1"},
+    "p3_c2_clear":{"name":"金色塔徽","description":"完成余烬试炼与塔顶故事。","grants":["p3_badge_gold","p3_memorial_page"],"icon":"p3_c2"},
+    "p3_no_embers":{"name":"独灯登塔者","description":"基础起点、零火种通关任意第三阶段难度。","grants":["p3_title_no_embers"],"icon":"default"},
+    "p3_three_ruins":{"name":"誓约见证者","description":"同局实际使用三座遗迹并通关。","grants":["p3_ruin_inscriptions"],"icon":"default"}
+  },
+  "codex_categories":{
+    "enemies":{"name":"守卫图鉴","hidden":"未知守卫 · ？"},
+    "items":{"name":"装备与遗物","hidden":"未发现藏品"},
+    "ruins":{"name":"遗迹铭文","hidden":"未发现遗迹"},
+    "story":{"name":"旅途回声","hidden":"尚未到达的故事"},
+    "achievements":{"name":"旅程成就","hidden":"完成塔顶故事"}
+  }
+}

@@ -1,0 +1,2829 @@
+{
+	"actions": {
+		"armor": {
+			"combined_frames": [
+				"golem_frames/armor/00_combined.png",
+				"golem_frames/armor/01_combined.png",
+				"golem_frames/armor/02_combined.png",
+				"golem_frames/armor/03_combined.png",
+				"golem_frames/armor/04_combined.png",
+				"golem_frames/armor/05_combined.png"
+			],
+			"effects_frames": [
+				"golem_frames/armor/00_effect.png",
+				"golem_frames/armor/01_effect.png",
+				"golem_frames/armor/02_effect.png",
+				"golem_frames/armor/03_effect.png",
+				"golem_frames/armor/04_effect.png",
+				"golem_frames/armor/05_effect.png"
+			],
+			"events": {
+				"closed": 4.0
+			},
+			"fps": 12.0,
+			"frames": [
+				"golem_frames/armor/00.png",
+				"golem_frames/armor/01.png",
+				"golem_frames/armor/02.png",
+				"golem_frames/armor/03.png",
+				"golem_frames/armor/04.png",
+				"golem_frames/armor/05.png"
+			],
+			"loop": false,
+			"metrics": [
+				{
+					"bounds": [
+						57,
+						45,
+						125,
+						183
+					],
+					"edge_touch": false,
+					"frame": 0
+				},
+				{
+					"bounds": [
+						52,
+						47,
+						131,
+						181
+					],
+					"edge_touch": false,
+					"frame": 1
+				},
+				{
+					"bounds": [
+						41,
+						45,
+						143,
+						183
+					],
+					"edge_touch": false,
+					"frame": 2
+				},
+				{
+					"bounds": [
+						43,
+						44,
+						141,
+						184
+					],
+					"edge_touch": false,
+					"frame": 3
+				},
+				{
+					"bounds": [
+						53,
+						43,
+						129,
+						185
+					],
+					"edge_touch": false,
+					"frame": 4
+				},
+				{
+					"bounds": [
+						61,
+						43,
+						120,
+						185
+					],
+					"edge_touch": false,
+					"frame": 5
+				}
+			],
+			"pose_holds": {}
+		},
+		"armor_armor_1": {
+			"combined_frames": [
+				"golem_frames/armor_armor_1/00_combined.png",
+				"golem_frames/armor_armor_1/01_combined.png",
+				"golem_frames/armor_armor_1/02_combined.png",
+				"golem_frames/armor_armor_1/03_combined.png",
+				"golem_frames/armor_armor_1/04_combined.png",
+				"golem_frames/armor_armor_1/05_combined.png"
+			],
+			"effects_frames": [
+				"golem_frames/armor_armor_1/00_effect.png",
+				"golem_frames/armor_armor_1/01_effect.png",
+				"golem_frames/armor_armor_1/02_effect.png",
+				"golem_frames/armor_armor_1/03_effect.png",
+				"golem_frames/armor_armor_1/04_effect.png",
+				"golem_frames/armor_armor_1/05_effect.png"
+			],
+			"events": {
+				"closed": 4.0
+			},
+			"fps": 12.0,
+			"frames": [
+				"golem_frames/armor_armor_1/00.png",
+				"golem_frames/armor_armor_1/01.png",
+				"golem_frames/armor_armor_1/02.png",
+				"golem_frames/armor_armor_1/03.png",
+				"golem_frames/armor_armor_1/04.png",
+				"golem_frames/armor_armor_1/05.png"
+			],
+			"loop": false,
+			"metrics": [
+				{
+					"bounds": [
+						57,
+						45,
+						125,
+						183
+					],
+					"edge_touch": false,
+					"frame": 0
+				},
+				{
+					"bounds": [
+						52,
+						47,
+						131,
+						181
+					],
+					"edge_touch": false,
+					"frame": 1
+				},
+				{
+					"bounds": [
+						41,
+						45,
+						143,
+						183
+					],
+					"edge_touch": false,
+					"frame": 2
+				},
+				{
+					"bounds": [
+						43,
+						44,
+						141,
+						184
+					],
+					"edge_touch": false,
+					"frame": 3
+				},
+				{
+					"bounds": [
+						53,
+						43,
+						129,
+						185
+					],
+					"edge_touch": false,
+					"frame": 4
+				},
+				{
+					"bounds": [
+						61,
+						43,
+						120,
+						185
+					],
+					"edge_touch": false,
+					"frame": 5
+				}
+			],
+			"pose_holds": {}
+		},
+		"armor_armor_2": {
+			"combined_frames": [
+				"golem_frames/armor_armor_2/00_combined.png",
+				"golem_frames/armor_armor_2/01_combined.png",
+				"golem_frames/armor_armor_2/02_combined.png",
+				"golem_frames/armor_armor_2/03_combined.png",
+				"golem_frames/armor_armor_2/04_combined.png",
+				"golem_frames/armor_armor_2/05_combined.png"
+			],
+			"effects_frames": [
+				"golem_frames/armor_armor_2/00_effect.png",
+				"golem_frames/armor_armor_2/01_effect.png",
+				"golem_frames/armor_armor_2/02_effect.png",
+				"golem_frames/armor_armor_2/03_effect.png",
+				"golem_frames/armor_armor_2/04_effect.png",
+				"golem_frames/armor_armor_2/05_effect.png"
+			],
+			"events": {
+				"closed": 4.0
+			},
+			"fps": 12.0,
+			"frames": [
+				"golem_frames/armor_armor_2/00.png",
+				"golem_frames/armor_armor_2/01.png",
+				"golem_frames/armor_armor_2/02.png",
+				"golem_frames/armor_armor_2/03.png",
+				"golem_frames/armor_armor_2/04.png",
+				"golem_frames/armor_armor_2/05.png"
+			],
+			"loop": false,
+			"metrics": [
+				{
+					"bounds": [
+						57,
+						45,
+						125,
+						183
+					],
+					"edge_touch": false,
+					"frame": 0
+				},
+				{
+					"bounds": [
+						52,
+						47,
+						131,
+						181
+					],
+					"edge_touch": false,
+					"frame": 1
+				},
+				{
+					"bounds": [
+						41,
+						45,
+						143,
+						183
+					],
+					"edge_touch": false,
+					"frame": 2
+				},
+				{
+					"bounds": [
+						43,
+						44,
+						141,
+						184
+					],
+					"edge_touch": false,
+					"frame": 3
+				},
+				{
+					"bounds": [
+						53,
+						43,
+						129,
+						185
+					],
+					"edge_touch": false,
+					"frame": 4
+				},
+				{
+					"bounds": [
+						61,
+						43,
+						120,
+						185
+					],
+					"edge_touch": false,
+					"frame": 5
+				}
+			],
+			"pose_holds": {}
+		},
+		"armor_armor_3": {
+			"combined_frames": [
+				"golem_frames/armor_armor_3/00_combined.png",
+				"golem_frames/armor_armor_3/01_combined.png",
+				"golem_frames/armor_armor_3/02_combined.png",
+				"golem_frames/armor_armor_3/03_combined.png",
+				"golem_frames/armor_armor_3/04_combined.png",
+				"golem_frames/armor_armor_3/05_combined.png"
+			],
+			"effects_frames": [
+				"golem_frames/armor_armor_3/00_effect.png",
+				"golem_frames/armor_armor_3/01_effect.png",
+				"golem_frames/armor_armor_3/02_effect.png",
+				"golem_frames/armor_armor_3/03_effect.png",
+				"golem_frames/armor_armor_3/04_effect.png",
+				"golem_frames/armor_armor_3/05_effect.png"
+			],
+			"events": {
+				"closed": 4.0
+			},
+			"fps": 12.0,
+			"frames": [
+				"golem_frames/armor_armor_3/00.png",
+				"golem_frames/armor_armor_3/01.png",
+				"golem_frames/armor_armor_3/02.png",
+				"golem_frames/armor_armor_3/03.png",
+				"golem_frames/armor_armor_3/04.png",
+				"golem_frames/armor_armor_3/05.png"
+			],
+			"loop": false,
+			"metrics": [
+				{
+					"bounds": [
+						57,
+						45,
+						125,
+						183
+					],
+					"edge_touch": false,
+					"frame": 0
+				},
+				{
+					"bounds": [
+						52,
+						47,
+						131,
+						181
+					],
+					"edge_touch": false,
+					"frame": 1
+				},
+				{
+					"bounds": [
+						41,
+						45,
+						143,
+						183
+					],
+					"edge_touch": false,
+					"frame": 2
+				},
+				{
+					"bounds": [
+						43,
+						44,
+						141,
+						184
+					],
+					"edge_touch": false,
+					"frame": 3
+				},
+				{
+					"bounds": [
+						53,
+						43,
+						129,
+						185
+					],
+					"edge_touch": false,
+					"frame": 4
+				},
+				{
+					"bounds": [
+						61,
+						43,
+						120,
+						185
+					],
+					"edge_touch": false,
+					"frame": 5
+				}
+			],
+			"pose_holds": {}
+		},
+		"armor_armor_4": {
+			"combined_frames": [
+				"golem_frames/armor_armor_4/00_combined.png",
+				"golem_frames/armor_armor_4/01_combined.png",
+				"golem_frames/armor_armor_4/02_combined.png",
+				"golem_frames/armor_armor_4/03_combined.png",
+				"golem_frames/armor_armor_4/04_combined.png",
+				"golem_frames/armor_armor_4/05_combined.png"
+			],
+			"effects_frames": [
+				"golem_frames/armor_armor_4/00_effect.png",
+				"golem_frames/armor_armor_4/01_effect.png",
+				"golem_frames/armor_armor_4/02_effect.png",
+				"golem_frames/armor_armor_4/03_effect.png",
+				"golem_frames/armor_armor_4/04_effect.png",
+				"golem_frames/armor_armor_4/05_effect.png"
+			],
+			"events": {
+				"closed": 4.0
+			},
+			"fps": 12.0,
+			"frames": [
+				"golem_frames/armor_armor_4/00.png",
+				"golem_frames/armor_armor_4/01.png",
+				"golem_frames/armor_armor_4/02.png",
+				"golem_frames/armor_armor_4/03.png",
+				"golem_frames/armor_armor_4/04.png",
+				"golem_frames/armor_armor_4/05.png"
+			],
+			"loop": false,
+			"metrics": [
+				{
+					"bounds": [
+						57,
+						45,
+						125,
+						183
+					],
+					"edge_touch": false,
+					"frame": 0
+				},
+				{
+					"bounds": [
+						52,
+						47,
+						131,
+						181
+					],
+					"edge_touch": false,
+					"frame": 1
+				},
+				{
+					"bounds": [
+						41,
+						45,
+						143,
+						183
+					],
+					"edge_touch": false,
+					"frame": 2
+				},
+				{
+					"bounds": [
+						43,
+						44,
+						141,
+						184
+					],
+					"edge_touch": false,
+					"frame": 3
+				},
+				{
+					"bounds": [
+						53,
+						43,
+						129,
+						185
+					],
+					"edge_touch": false,
+					"frame": 4
+				},
+				{
+					"bounds": [
+						61,
+						43,
+						120,
+						185
+					],
+					"edge_touch": false,
+					"frame": 5
+				}
+			],
+			"pose_holds": {}
+		},
+		"attack": {
+			"combined_frames": [
+				"golem_frames/attack/00_combined.png",
+				"golem_frames/attack/01_combined.png",
+				"golem_frames/attack/02_combined.png",
+				"golem_frames/attack/03_combined.png",
+				"golem_frames/attack/04_combined.png",
+				"golem_frames/attack/05_combined.png",
+				"golem_frames/attack/06_combined.png",
+				"golem_frames/attack/07_combined.png",
+				"golem_frames/attack/08_combined.png",
+				"golem_frames/attack/09_combined.png"
+			],
+			"effects_frames": [
+				"golem_frames/attack/00_effect.png",
+				"golem_frames/attack/01_effect.png",
+				"golem_frames/attack/02_effect.png",
+				"golem_frames/attack/03_effect.png",
+				"golem_frames/attack/04_effect.png",
+				"golem_frames/attack/05_effect.png",
+				"golem_frames/attack/06_effect.png",
+				"golem_frames/attack/07_effect.png",
+				"golem_frames/attack/08_effect.png",
+				"golem_frames/attack/09_effect.png"
+			],
+			"events": {
+				"hit": 5.0
+			},
+			"fps": 12.0,
+			"frames": [
+				"golem_frames/attack/00.png",
+				"golem_frames/attack/01.png",
+				"golem_frames/attack/02.png",
+				"golem_frames/attack/03.png",
+				"golem_frames/attack/04.png",
+				"golem_frames/attack/05.png",
+				"golem_frames/attack/06.png",
+				"golem_frames/attack/07.png",
+				"golem_frames/attack/08.png",
+				"golem_frames/attack/09.png"
+			],
+			"loop": false,
+			"metrics": [
+				{
+					"bounds": [
+						62,
+						43,
+						119,
+						185
+					],
+					"edge_touch": false,
+					"frame": 0
+				},
+				{
+					"bounds": [
+						36,
+						45,
+						148,
+						183
+					],
+					"edge_touch": false,
+					"frame": 1
+				},
+				{
+					"bounds": [
+						13,
+						47,
+						174,
+						181
+					],
+					"edge_touch": false,
+					"frame": 2
+				},
+				{
+					"bounds": [
+						12,
+						49,
+						179,
+						179
+					],
+					"edge_touch": false,
+					"frame": 3
+				},
+				{
+					"bounds": [
+						12,
+						46,
+						178,
+						182
+					],
+					"edge_touch": false,
+					"frame": 4
+				},
+				{
+					"bounds": [
+						55,
+						49,
+						118,
+						179
+					],
+					"edge_touch": false,
+					"frame": 5
+				},
+				{
+					"bounds": [
+						66,
+						47,
+						107,
+						181
+					],
+					"edge_touch": false,
+					"frame": 6
+				},
+				{
+					"bounds": [
+						68,
+						46,
+						109,
+						182
+					],
+					"edge_touch": false,
+					"frame": 7
+				},
+				{
+					"bounds": [
+						64,
+						44,
+						115,
+						184
+					],
+					"edge_touch": false,
+					"frame": 8
+				},
+				{
+					"bounds": [
+						62,
+						43,
+						119,
+						185
+					],
+					"edge_touch": false,
+					"frame": 9
+				}
+			],
+			"pose_holds": {
+				"9": 0.0
+			}
+		},
+		"attack_armor_1": {
+			"combined_frames": [
+				"golem_frames/attack_armor_1/00_combined.png",
+				"golem_frames/attack_armor_1/01_combined.png",
+				"golem_frames/attack_armor_1/02_combined.png",
+				"golem_frames/attack_armor_1/03_combined.png",
+				"golem_frames/attack_armor_1/04_combined.png",
+				"golem_frames/attack_armor_1/05_combined.png",
+				"golem_frames/attack_armor_1/06_combined.png",
+				"golem_frames/attack_armor_1/07_combined.png",
+				"golem_frames/attack_armor_1/08_combined.png",
+				"golem_frames/attack_armor_1/09_combined.png"
+			],
+			"effects_frames": [
+				"golem_frames/attack_armor_1/00_effect.png",
+				"golem_frames/attack_armor_1/01_effect.png",
+				"golem_frames/attack_armor_1/02_effect.png",
+				"golem_frames/attack_armor_1/03_effect.png",
+				"golem_frames/attack_armor_1/04_effect.png",
+				"golem_frames/attack_armor_1/05_effect.png",
+				"golem_frames/attack_armor_1/06_effect.png",
+				"golem_frames/attack_armor_1/07_effect.png",
+				"golem_frames/attack_armor_1/08_effect.png",
+				"golem_frames/attack_armor_1/09_effect.png"
+			],
+			"events": {
+				"hit": 5.0
+			},
+			"fps": 12.0,
+			"frames": [
+				"golem_frames/attack_armor_1/00.png",
+				"golem_frames/attack_armor_1/01.png",
+				"golem_frames/attack_armor_1/02.png",
+				"golem_frames/attack_armor_1/03.png",
+				"golem_frames/attack_armor_1/04.png",
+				"golem_frames/attack_armor_1/05.png",
+				"golem_frames/attack_armor_1/06.png",
+				"golem_frames/attack_armor_1/07.png",
+				"golem_frames/attack_armor_1/08.png",
+				"golem_frames/attack_armor_1/09.png"
+			],
+			"loop": false,
+			"metrics": [
+				{
+					"bounds": [
+						62,
+						43,
+						119,
+						185
+					],
+					"edge_touch": false,
+					"frame": 0
+				},
+				{
+					"bounds": [
+						36,
+						45,
+						148,
+						183
+					],
+					"edge_touch": false,
+					"frame": 1
+				},
+				{
+					"bounds": [
+						13,
+						47,
+						174,
+						181
+					],
+					"edge_touch": false,
+					"frame": 2
+				},
+				{
+					"bounds": [
+						12,
+						49,
+						179,
+						179
+					],
+					"edge_touch": false,
+					"frame": 3
+				},
+				{
+					"bounds": [
+						12,
+						46,
+						178,
+						182
+					],
+					"edge_touch": false,
+					"frame": 4
+				},
+				{
+					"bounds": [
+						55,
+						49,
+						118,
+						179
+					],
+					"edge_touch": false,
+					"frame": 5
+				},
+				{
+					"bounds": [
+						66,
+						47,
+						107,
+						181
+					],
+					"edge_touch": false,
+					"frame": 6
+				},
+				{
+					"bounds": [
+						68,
+						46,
+						109,
+						182
+					],
+					"edge_touch": false,
+					"frame": 7
+				},
+				{
+					"bounds": [
+						64,
+						44,
+						115,
+						184
+					],
+					"edge_touch": false,
+					"frame": 8
+				},
+				{
+					"bounds": [
+						62,
+						43,
+						119,
+						185
+					],
+					"edge_touch": false,
+					"frame": 9
+				}
+			],
+			"pose_holds": {
+				"9": 0.0
+			}
+		},
+		"attack_armor_2": {
+			"combined_frames": [
+				"golem_frames/attack_armor_2/00_combined.png",
+				"golem_frames/attack_armor_2/01_combined.png",
+				"golem_frames/attack_armor_2/02_combined.png",
+				"golem_frames/attack_armor_2/03_combined.png",
+				"golem_frames/attack_armor_2/04_combined.png",
+				"golem_frames/attack_armor_2/05_combined.png",
+				"golem_frames/attack_armor_2/06_combined.png",
+				"golem_frames/attack_armor_2/07_combined.png",
+				"golem_frames/attack_armor_2/08_combined.png",
+				"golem_frames/attack_armor_2/09_combined.png"
+			],
+			"effects_frames": [
+				"golem_frames/attack_armor_2/00_effect.png",
+				"golem_frames/attack_armor_2/01_effect.png",
+				"golem_frames/attack_armor_2/02_effect.png",
+				"golem_frames/attack_armor_2/03_effect.png",
+				"golem_frames/attack_armor_2/04_effect.png",
+				"golem_frames/attack_armor_2/05_effect.png",
+				"golem_frames/attack_armor_2/06_effect.png",
+				"golem_frames/attack_armor_2/07_effect.png",
+				"golem_frames/attack_armor_2/08_effect.png",
+				"golem_frames/attack_armor_2/09_effect.png"
+			],
+			"events": {
+				"hit": 5.0
+			},
+			"fps": 12.0,
+			"frames": [
+				"golem_frames/attack_armor_2/00.png",
+				"golem_frames/attack_armor_2/01.png",
+				"golem_frames/attack_armor_2/02.png",
+				"golem_frames/attack_armor_2/03.png",
+				"golem_frames/attack_armor_2/04.png",
+				"golem_frames/attack_armor_2/05.png",
+				"golem_frames/attack_armor_2/06.png",
+				"golem_frames/attack_armor_2/07.png",
+				"golem_frames/attack_armor_2/08.png",
+				"golem_frames/attack_armor_2/09.png"
+			],
+			"loop": false,
+			"metrics": [
+				{
+					"bounds": [
+						62,
+						43,
+						119,
+						185
+					],
+					"edge_touch": false,
+					"frame": 0
+				},
+				{
+					"bounds": [
+						36,
+						45,
+						148,
+						183
+					],
+					"edge_touch": false,
+					"frame": 1
+				},
+				{
+					"bounds": [
+						13,
+						47,
+						174,
+						181
+					],
+					"edge_touch": false,
+					"frame": 2
+				},
+				{
+					"bounds": [
+						12,
+						49,
+						179,
+						179
+					],
+					"edge_touch": false,
+					"frame": 3
+				},
+				{
+					"bounds": [
+						12,
+						46,
+						178,
+						182
+					],
+					"edge_touch": false,
+					"frame": 4
+				},
+				{
+					"bounds": [
+						55,
+						49,
+						118,
+						179
+					],
+					"edge_touch": false,
+					"frame": 5
+				},
+				{
+					"bounds": [
+						66,
+						47,
+						107,
+						181
+					],
+					"edge_touch": false,
+					"frame": 6
+				},
+				{
+					"bounds": [
+						68,
+						46,
+						109,
+						182
+					],
+					"edge_touch": false,
+					"frame": 7
+				},
+				{
+					"bounds": [
+						64,
+						44,
+						115,
+						184
+					],
+					"edge_touch": false,
+					"frame": 8
+				},
+				{
+					"bounds": [
+						62,
+						43,
+						119,
+						185
+					],
+					"edge_touch": false,
+					"frame": 9
+				}
+			],
+			"pose_holds": {
+				"9": 0.0
+			}
+		},
+		"attack_armor_3": {
+			"combined_frames": [
+				"golem_frames/attack_armor_3/00_combined.png",
+				"golem_frames/attack_armor_3/01_combined.png",
+				"golem_frames/attack_armor_3/02_combined.png",
+				"golem_frames/attack_armor_3/03_combined.png",
+				"golem_frames/attack_armor_3/04_combined.png",
+				"golem_frames/attack_armor_3/05_combined.png",
+				"golem_frames/attack_armor_3/06_combined.png",
+				"golem_frames/attack_armor_3/07_combined.png",
+				"golem_frames/attack_armor_3/08_combined.png",
+				"golem_frames/attack_armor_3/09_combined.png"
+			],
+			"effects_frames": [
+				"golem_frames/attack_armor_3/00_effect.png",
+				"golem_frames/attack_armor_3/01_effect.png",
+				"golem_frames/attack_armor_3/02_effect.png",
+				"golem_frames/attack_armor_3/03_effect.png",
+				"golem_frames/attack_armor_3/04_effect.png",
+				"golem_frames/attack_armor_3/05_effect.png",
+				"golem_frames/attack_armor_3/06_effect.png",
+				"golem_frames/attack_armor_3/07_effect.png",
+				"golem_frames/attack_armor_3/08_effect.png",
+				"golem_frames/attack_armor_3/09_effect.png"
+			],
+			"events": {
+				"hit": 5.0
+			},
+			"fps": 12.0,
+			"frames": [
+				"golem_frames/attack_armor_3/00.png",
+				"golem_frames/attack_armor_3/01.png",
+				"golem_frames/attack_armor_3/02.png",
+				"golem_frames/attack_armor_3/03.png",
+				"golem_frames/attack_armor_3/04.png",
+				"golem_frames/attack_armor_3/05.png",
+				"golem_frames/attack_armor_3/06.png",
+				"golem_frames/attack_armor_3/07.png",
+				"golem_frames/attack_armor_3/08.png",
+				"golem_frames/attack_armor_3/09.png"
+			],
+			"loop": false,
+			"metrics": [
+				{
+					"bounds": [
+						62,
+						43,
+						119,
+						185
+					],
+					"edge_touch": false,
+					"frame": 0
+				},
+				{
+					"bounds": [
+						36,
+						45,
+						148,
+						183
+					],
+					"edge_touch": false,
+					"frame": 1
+				},
+				{
+					"bounds": [
+						13,
+						47,
+						174,
+						181
+					],
+					"edge_touch": false,
+					"frame": 2
+				},
+				{
+					"bounds": [
+						12,
+						49,
+						179,
+						179
+					],
+					"edge_touch": false,
+					"frame": 3
+				},
+				{
+					"bounds": [
+						12,
+						46,
+						178,
+						182
+					],
+					"edge_touch": false,
+					"frame": 4
+				},
+				{
+					"bounds": [
+						55,
+						49,
+						118,
+						179
+					],
+					"edge_touch": false,
+					"frame": 5
+				},
+				{
+					"bounds": [
+						66,
+						47,
+						107,
+						181
+					],
+					"edge_touch": false,
+					"frame": 6
+				},
+				{
+					"bounds": [
+						68,
+						46,
+						109,
+						182
+					],
+					"edge_touch": false,
+					"frame": 7
+				},
+				{
+					"bounds": [
+						64,
+						44,
+						115,
+						184
+					],
+					"edge_touch": false,
+					"frame": 8
+				},
+				{
+					"bounds": [
+						62,
+						43,
+						119,
+						185
+					],
+					"edge_touch": false,
+					"frame": 9
+				}
+			],
+			"pose_holds": {
+				"9": 0.0
+			}
+		},
+		"attack_armor_4": {
+			"combined_frames": [
+				"golem_frames/attack_armor_4/00_combined.png",
+				"golem_frames/attack_armor_4/01_combined.png",
+				"golem_frames/attack_armor_4/02_combined.png",
+				"golem_frames/attack_armor_4/03_combined.png",
+				"golem_frames/attack_armor_4/04_combined.png",
+				"golem_frames/attack_armor_4/05_combined.png",
+				"golem_frames/attack_armor_4/06_combined.png",
+				"golem_frames/attack_armor_4/07_combined.png",
+				"golem_frames/attack_armor_4/08_combined.png",
+				"golem_frames/attack_armor_4/09_combined.png"
+			],
+			"effects_frames": [
+				"golem_frames/attack_armor_4/00_effect.png",
+				"golem_frames/attack_armor_4/01_effect.png",
+				"golem_frames/attack_armor_4/02_effect.png",
+				"golem_frames/attack_armor_4/03_effect.png",
+				"golem_frames/attack_armor_4/04_effect.png",
+				"golem_frames/attack_armor_4/05_effect.png",
+				"golem_frames/attack_armor_4/06_effect.png",
+				"golem_frames/attack_armor_4/07_effect.png",
+				"golem_frames/attack_armor_4/08_effect.png",
+				"golem_frames/attack_armor_4/09_effect.png"
+			],
+			"events": {
+				"hit": 5.0
+			},
+			"fps": 12.0,
+			"frames": [
+				"golem_frames/attack_armor_4/00.png",
+				"golem_frames/attack_armor_4/01.png",
+				"golem_frames/attack_armor_4/02.png",
+				"golem_frames/attack_armor_4/03.png",
+				"golem_frames/attack_armor_4/04.png",
+				"golem_frames/attack_armor_4/05.png",
+				"golem_frames/attack_armor_4/06.png",
+				"golem_frames/attack_armor_4/07.png",
+				"golem_frames/attack_armor_4/08.png",
+				"golem_frames/attack_armor_4/09.png"
+			],
+			"loop": false,
+			"metrics": [
+				{
+					"bounds": [
+						62,
+						43,
+						119,
+						185
+					],
+					"edge_touch": false,
+					"frame": 0
+				},
+				{
+					"bounds": [
+						36,
+						45,
+						148,
+						183
+					],
+					"edge_touch": false,
+					"frame": 1
+				},
+				{
+					"bounds": [
+						13,
+						47,
+						174,
+						181
+					],
+					"edge_touch": false,
+					"frame": 2
+				},
+				{
+					"bounds": [
+						12,
+						49,
+						179,
+						179
+					],
+					"edge_touch": false,
+					"frame": 3
+				},
+				{
+					"bounds": [
+						12,
+						46,
+						178,
+						182
+					],
+					"edge_touch": false,
+					"frame": 4
+				},
+				{
+					"bounds": [
+						55,
+						49,
+						118,
+						179
+					],
+					"edge_touch": false,
+					"frame": 5
+				},
+				{
+					"bounds": [
+						66,
+						47,
+						107,
+						181
+					],
+					"edge_touch": false,
+					"frame": 6
+				},
+				{
+					"bounds": [
+						68,
+						46,
+						109,
+						182
+					],
+					"edge_touch": false,
+					"frame": 7
+				},
+				{
+					"bounds": [
+						64,
+						44,
+						115,
+						184
+					],
+					"edge_touch": false,
+					"frame": 8
+				},
+				{
+					"bounds": [
+						62,
+						43,
+						119,
+						185
+					],
+					"edge_touch": false,
+					"frame": 9
+				}
+			],
+			"pose_holds": {
+				"9": 0.0
+			}
+		},
+		"defeat": {
+			"combined_frames": [
+				"golem_frames/defeat/00_combined.png",
+				"golem_frames/defeat/01_combined.png",
+				"golem_frames/defeat/02_combined.png",
+				"golem_frames/defeat/03_combined.png",
+				"golem_frames/defeat/04_combined.png",
+				"golem_frames/defeat/05_combined.png",
+				"golem_frames/defeat/06_combined.png",
+				"golem_frames/defeat/07_combined.png",
+				"golem_frames/defeat/08_combined.png",
+				"golem_frames/defeat/09_combined.png",
+				"golem_frames/defeat/10_combined.png",
+				"golem_frames/defeat/11_combined.png"
+			],
+			"effects_frames": [
+				"golem_frames/defeat/00_effect.png",
+				"golem_frames/defeat/01_effect.png",
+				"golem_frames/defeat/02_effect.png",
+				"golem_frames/defeat/03_effect.png",
+				"golem_frames/defeat/04_effect.png",
+				"golem_frames/defeat/05_effect.png",
+				"golem_frames/defeat/06_effect.png",
+				"golem_frames/defeat/07_effect.png",
+				"golem_frames/defeat/08_effect.png",
+				"golem_frames/defeat/09_effect.png",
+				"golem_frames/defeat/10_effect.png",
+				"golem_frames/defeat/11_effect.png"
+			],
+			"events": {
+				"core_dark": 8.0,
+				"fracture": 3.0,
+				"ground": 10.0
+			},
+			"fps": 12.0,
+			"frames": [
+				"golem_frames/defeat/00.png",
+				"golem_frames/defeat/01.png",
+				"golem_frames/defeat/02.png",
+				"golem_frames/defeat/03.png",
+				"golem_frames/defeat/04.png",
+				"golem_frames/defeat/05.png",
+				"golem_frames/defeat/06.png",
+				"golem_frames/defeat/07.png",
+				"golem_frames/defeat/08.png",
+				"golem_frames/defeat/09.png",
+				"golem_frames/defeat/10.png",
+				"golem_frames/defeat/11.png"
+			],
+			"loop": false,
+			"metrics": [
+				{
+					"bounds": [
+						61,
+						45,
+						121,
+						183
+					],
+					"edge_touch": false,
+					"frame": 0
+				},
+				{
+					"bounds": [
+						59,
+						48,
+						122,
+						180
+					],
+					"edge_touch": false,
+					"frame": 1
+				},
+				{
+					"bounds": [
+						57,
+						50,
+						123,
+						178
+					],
+					"edge_touch": false,
+					"frame": 2
+				},
+				{
+					"bounds": [
+						55,
+						52,
+						124,
+						178
+					],
+					"edge_touch": false,
+					"frame": 3
+				},
+				{
+					"bounds": [
+						49,
+						62,
+						128,
+						172
+					],
+					"edge_touch": false,
+					"frame": 4
+				},
+				{
+					"bounds": [
+						42,
+						76,
+						138,
+						162
+					],
+					"edge_touch": false,
+					"frame": 5
+				},
+				{
+					"bounds": [
+						36,
+						89,
+						147,
+						152
+					],
+					"edge_touch": false,
+					"frame": 6
+				},
+				{
+					"bounds": [
+						30,
+						104,
+						156,
+						138
+					],
+					"edge_touch": false,
+					"frame": 7
+				},
+				{
+					"bounds": [
+						25,
+						121,
+						168,
+						121
+					],
+					"edge_touch": false,
+					"frame": 8
+				},
+				{
+					"bounds": [
+						21,
+						142,
+						180,
+						100
+					],
+					"edge_touch": false,
+					"frame": 9
+				},
+				{
+					"bounds": [
+						18,
+						162,
+						193,
+						77
+					],
+					"edge_touch": false,
+					"frame": 10
+				},
+				{
+					"bounds": [
+						18,
+						162,
+						193,
+						77
+					],
+					"edge_touch": false,
+					"frame": 11
+				}
+			],
+			"pose_holds": {
+				"11": 10.0
+			}
+		},
+		"defeat_armor_1": {
+			"combined_frames": [
+				"golem_frames/defeat_armor_1/00_combined.png",
+				"golem_frames/defeat_armor_1/01_combined.png",
+				"golem_frames/defeat_armor_1/02_combined.png",
+				"golem_frames/defeat_armor_1/03_combined.png",
+				"golem_frames/defeat_armor_1/04_combined.png",
+				"golem_frames/defeat_armor_1/05_combined.png",
+				"golem_frames/defeat_armor_1/06_combined.png",
+				"golem_frames/defeat_armor_1/07_combined.png",
+				"golem_frames/defeat_armor_1/08_combined.png",
+				"golem_frames/defeat_armor_1/09_combined.png",
+				"golem_frames/defeat_armor_1/10_combined.png",
+				"golem_frames/defeat_armor_1/11_combined.png"
+			],
+			"effects_frames": [
+				"golem_frames/defeat_armor_1/00_effect.png",
+				"golem_frames/defeat_armor_1/01_effect.png",
+				"golem_frames/defeat_armor_1/02_effect.png",
+				"golem_frames/defeat_armor_1/03_effect.png",
+				"golem_frames/defeat_armor_1/04_effect.png",
+				"golem_frames/defeat_armor_1/05_effect.png",
+				"golem_frames/defeat_armor_1/06_effect.png",
+				"golem_frames/defeat_armor_1/07_effect.png",
+				"golem_frames/defeat_armor_1/08_effect.png",
+				"golem_frames/defeat_armor_1/09_effect.png",
+				"golem_frames/defeat_armor_1/10_effect.png",
+				"golem_frames/defeat_armor_1/11_effect.png"
+			],
+			"events": {
+				"core_dark": 8.0,
+				"fracture": 3.0,
+				"ground": 10.0
+			},
+			"fps": 12.0,
+			"frames": [
+				"golem_frames/defeat_armor_1/00.png",
+				"golem_frames/defeat_armor_1/01.png",
+				"golem_frames/defeat_armor_1/02.png",
+				"golem_frames/defeat_armor_1/03.png",
+				"golem_frames/defeat_armor_1/04.png",
+				"golem_frames/defeat_armor_1/05.png",
+				"golem_frames/defeat_armor_1/06.png",
+				"golem_frames/defeat_armor_1/07.png",
+				"golem_frames/defeat_armor_1/08.png",
+				"golem_frames/defeat_armor_1/09.png",
+				"golem_frames/defeat_armor_1/10.png",
+				"golem_frames/defeat_armor_1/11.png"
+			],
+			"loop": false,
+			"metrics": [
+				{
+					"bounds": [
+						61,
+						45,
+						121,
+						183
+					],
+					"edge_touch": false,
+					"frame": 0
+				},
+				{
+					"bounds": [
+						59,
+						48,
+						122,
+						180
+					],
+					"edge_touch": false,
+					"frame": 1
+				},
+				{
+					"bounds": [
+						57,
+						50,
+						123,
+						178
+					],
+					"edge_touch": false,
+					"frame": 2
+				},
+				{
+					"bounds": [
+						55,
+						52,
+						124,
+						178
+					],
+					"edge_touch": false,
+					"frame": 3
+				},
+				{
+					"bounds": [
+						49,
+						62,
+						128,
+						172
+					],
+					"edge_touch": false,
+					"frame": 4
+				},
+				{
+					"bounds": [
+						42,
+						76,
+						138,
+						162
+					],
+					"edge_touch": false,
+					"frame": 5
+				},
+				{
+					"bounds": [
+						36,
+						89,
+						147,
+						152
+					],
+					"edge_touch": false,
+					"frame": 6
+				},
+				{
+					"bounds": [
+						30,
+						104,
+						156,
+						138
+					],
+					"edge_touch": false,
+					"frame": 7
+				},
+				{
+					"bounds": [
+						25,
+						121,
+						168,
+						121
+					],
+					"edge_touch": false,
+					"frame": 8
+				},
+				{
+					"bounds": [
+						21,
+						142,
+						180,
+						100
+					],
+					"edge_touch": false,
+					"frame": 9
+				},
+				{
+					"bounds": [
+						18,
+						162,
+						193,
+						77
+					],
+					"edge_touch": false,
+					"frame": 10
+				},
+				{
+					"bounds": [
+						18,
+						162,
+						193,
+						77
+					],
+					"edge_touch": false,
+					"frame": 11
+				}
+			],
+			"pose_holds": {
+				"11": 10.0
+			}
+		},
+		"defeat_armor_2": {
+			"combined_frames": [
+				"golem_frames/defeat_armor_2/00_combined.png",
+				"golem_frames/defeat_armor_2/01_combined.png",
+				"golem_frames/defeat_armor_2/02_combined.png",
+				"golem_frames/defeat_armor_2/03_combined.png",
+				"golem_frames/defeat_armor_2/04_combined.png",
+				"golem_frames/defeat_armor_2/05_combined.png",
+				"golem_frames/defeat_armor_2/06_combined.png",
+				"golem_frames/defeat_armor_2/07_combined.png",
+				"golem_frames/defeat_armor_2/08_combined.png",
+				"golem_frames/defeat_armor_2/09_combined.png",
+				"golem_frames/defeat_armor_2/10_combined.png",
+				"golem_frames/defeat_armor_2/11_combined.png"
+			],
+			"effects_frames": [
+				"golem_frames/defeat_armor_2/00_effect.png",
+				"golem_frames/defeat_armor_2/01_effect.png",
+				"golem_frames/defeat_armor_2/02_effect.png",
+				"golem_frames/defeat_armor_2/03_effect.png",
+				"golem_frames/defeat_armor_2/04_effect.png",
+				"golem_frames/defeat_armor_2/05_effect.png",
+				"golem_frames/defeat_armor_2/06_effect.png",
+				"golem_frames/defeat_armor_2/07_effect.png",
+				"golem_frames/defeat_armor_2/08_effect.png",
+				"golem_frames/defeat_armor_2/09_effect.png",
+				"golem_frames/defeat_armor_2/10_effect.png",
+				"golem_frames/defeat_armor_2/11_effect.png"
+			],
+			"events": {
+				"core_dark": 8.0,
+				"fracture": 3.0,
+				"ground": 10.0
+			},
+			"fps": 12.0,
+			"frames": [
+				"golem_frames/defeat_armor_2/00.png",
+				"golem_frames/defeat_armor_2/01.png",
+				"golem_frames/defeat_armor_2/02.png",
+				"golem_frames/defeat_armor_2/03.png",
+				"golem_frames/defeat_armor_2/04.png",
+				"golem_frames/defeat_armor_2/05.png",
+				"golem_frames/defeat_armor_2/06.png",
+				"golem_frames/defeat_armor_2/07.png",
+				"golem_frames/defeat_armor_2/08.png",
+				"golem_frames/defeat_armor_2/09.png",
+				"golem_frames/defeat_armor_2/10.png",
+				"golem_frames/defeat_armor_2/11.png"
+			],
+			"loop": false,
+			"metrics": [
+				{
+					"bounds": [
+						61,
+						45,
+						121,
+						183
+					],
+					"edge_touch": false,
+					"frame": 0
+				},
+				{
+					"bounds": [
+						59,
+						48,
+						122,
+						180
+					],
+					"edge_touch": false,
+					"frame": 1
+				},
+				{
+					"bounds": [
+						57,
+						50,
+						123,
+						178
+					],
+					"edge_touch": false,
+					"frame": 2
+				},
+				{
+					"bounds": [
+						55,
+						52,
+						124,
+						178
+					],
+					"edge_touch": false,
+					"frame": 3
+				},
+				{
+					"bounds": [
+						49,
+						62,
+						128,
+						172
+					],
+					"edge_touch": false,
+					"frame": 4
+				},
+				{
+					"bounds": [
+						42,
+						76,
+						138,
+						162
+					],
+					"edge_touch": false,
+					"frame": 5
+				},
+				{
+					"bounds": [
+						36,
+						89,
+						147,
+						152
+					],
+					"edge_touch": false,
+					"frame": 6
+				},
+				{
+					"bounds": [
+						30,
+						104,
+						156,
+						138
+					],
+					"edge_touch": false,
+					"frame": 7
+				},
+				{
+					"bounds": [
+						25,
+						121,
+						168,
+						121
+					],
+					"edge_touch": false,
+					"frame": 8
+				},
+				{
+					"bounds": [
+						21,
+						142,
+						180,
+						100
+					],
+					"edge_touch": false,
+					"frame": 9
+				},
+				{
+					"bounds": [
+						18,
+						162,
+						193,
+						77
+					],
+					"edge_touch": false,
+					"frame": 10
+				},
+				{
+					"bounds": [
+						18,
+						162,
+						193,
+						77
+					],
+					"edge_touch": false,
+					"frame": 11
+				}
+			],
+			"pose_holds": {
+				"11": 10.0
+			}
+		},
+		"defeat_armor_3": {
+			"combined_frames": [
+				"golem_frames/defeat_armor_3/00_combined.png",
+				"golem_frames/defeat_armor_3/01_combined.png",
+				"golem_frames/defeat_armor_3/02_combined.png",
+				"golem_frames/defeat_armor_3/03_combined.png",
+				"golem_frames/defeat_armor_3/04_combined.png",
+				"golem_frames/defeat_armor_3/05_combined.png",
+				"golem_frames/defeat_armor_3/06_combined.png",
+				"golem_frames/defeat_armor_3/07_combined.png",
+				"golem_frames/defeat_armor_3/08_combined.png",
+				"golem_frames/defeat_armor_3/09_combined.png",
+				"golem_frames/defeat_armor_3/10_combined.png",
+				"golem_frames/defeat_armor_3/11_combined.png"
+			],
+			"effects_frames": [
+				"golem_frames/defeat_armor_3/00_effect.png",
+				"golem_frames/defeat_armor_3/01_effect.png",
+				"golem_frames/defeat_armor_3/02_effect.png",
+				"golem_frames/defeat_armor_3/03_effect.png",
+				"golem_frames/defeat_armor_3/04_effect.png",
+				"golem_frames/defeat_armor_3/05_effect.png",
+				"golem_frames/defeat_armor_3/06_effect.png",
+				"golem_frames/defeat_armor_3/07_effect.png",
+				"golem_frames/defeat_armor_3/08_effect.png",
+				"golem_frames/defeat_armor_3/09_effect.png",
+				"golem_frames/defeat_armor_3/10_effect.png",
+				"golem_frames/defeat_armor_3/11_effect.png"
+			],
+			"events": {
+				"core_dark": 8.0,
+				"fracture": 3.0,
+				"ground": 10.0
+			},
+			"fps": 12.0,
+			"frames": [
+				"golem_frames/defeat_armor_3/00.png",
+				"golem_frames/defeat_armor_3/01.png",
+				"golem_frames/defeat_armor_3/02.png",
+				"golem_frames/defeat_armor_3/03.png",
+				"golem_frames/defeat_armor_3/04.png",
+				"golem_frames/defeat_armor_3/05.png",
+				"golem_frames/defeat_armor_3/06.png",
+				"golem_frames/defeat_armor_3/07.png",
+				"golem_frames/defeat_armor_3/08.png",
+				"golem_frames/defeat_armor_3/09.png",
+				"golem_frames/defeat_armor_3/10.png",
+				"golem_frames/defeat_armor_3/11.png"
+			],
+			"loop": false,
+			"metrics": [
+				{
+					"bounds": [
+						61,
+						45,
+						121,
+						183
+					],
+					"edge_touch": false,
+					"frame": 0
+				},
+				{
+					"bounds": [
+						59,
+						48,
+						122,
+						180
+					],
+					"edge_touch": false,
+					"frame": 1
+				},
+				{
+					"bounds": [
+						57,
+						50,
+						123,
+						178
+					],
+					"edge_touch": false,
+					"frame": 2
+				},
+				{
+					"bounds": [
+						55,
+						52,
+						124,
+						178
+					],
+					"edge_touch": false,
+					"frame": 3
+				},
+				{
+					"bounds": [
+						49,
+						62,
+						128,
+						172
+					],
+					"edge_touch": false,
+					"frame": 4
+				},
+				{
+					"bounds": [
+						42,
+						76,
+						138,
+						162
+					],
+					"edge_touch": false,
+					"frame": 5
+				},
+				{
+					"bounds": [
+						36,
+						89,
+						147,
+						152
+					],
+					"edge_touch": false,
+					"frame": 6
+				},
+				{
+					"bounds": [
+						30,
+						104,
+						156,
+						138
+					],
+					"edge_touch": false,
+					"frame": 7
+				},
+				{
+					"bounds": [
+						25,
+						121,
+						168,
+						121
+					],
+					"edge_touch": false,
+					"frame": 8
+				},
+				{
+					"bounds": [
+						21,
+						142,
+						180,
+						100
+					],
+					"edge_touch": false,
+					"frame": 9
+				},
+				{
+					"bounds": [
+						18,
+						162,
+						193,
+						77
+					],
+					"edge_touch": false,
+					"frame": 10
+				},
+				{
+					"bounds": [
+						18,
+						162,
+						193,
+						77
+					],
+					"edge_touch": false,
+					"frame": 11
+				}
+			],
+			"pose_holds": {
+				"11": 10.0
+			}
+		},
+		"defeat_armor_4": {
+			"combined_frames": [
+				"golem_frames/defeat_armor_4/00_combined.png",
+				"golem_frames/defeat_armor_4/01_combined.png",
+				"golem_frames/defeat_armor_4/02_combined.png",
+				"golem_frames/defeat_armor_4/03_combined.png",
+				"golem_frames/defeat_armor_4/04_combined.png",
+				"golem_frames/defeat_armor_4/05_combined.png",
+				"golem_frames/defeat_armor_4/06_combined.png",
+				"golem_frames/defeat_armor_4/07_combined.png",
+				"golem_frames/defeat_armor_4/08_combined.png",
+				"golem_frames/defeat_armor_4/09_combined.png",
+				"golem_frames/defeat_armor_4/10_combined.png",
+				"golem_frames/defeat_armor_4/11_combined.png"
+			],
+			"effects_frames": [
+				"golem_frames/defeat_armor_4/00_effect.png",
+				"golem_frames/defeat_armor_4/01_effect.png",
+				"golem_frames/defeat_armor_4/02_effect.png",
+				"golem_frames/defeat_armor_4/03_effect.png",
+				"golem_frames/defeat_armor_4/04_effect.png",
+				"golem_frames/defeat_armor_4/05_effect.png",
+				"golem_frames/defeat_armor_4/06_effect.png",
+				"golem_frames/defeat_armor_4/07_effect.png",
+				"golem_frames/defeat_armor_4/08_effect.png",
+				"golem_frames/defeat_armor_4/09_effect.png",
+				"golem_frames/defeat_armor_4/10_effect.png",
+				"golem_frames/defeat_armor_4/11_effect.png"
+			],
+			"events": {
+				"core_dark": 8.0,
+				"fracture": 3.0,
+				"ground": 10.0
+			},
+			"fps": 12.0,
+			"frames": [
+				"golem_frames/defeat_armor_4/00.png",
+				"golem_frames/defeat_armor_4/01.png",
+				"golem_frames/defeat_armor_4/02.png",
+				"golem_frames/defeat_armor_4/03.png",
+				"golem_frames/defeat_armor_4/04.png",
+				"golem_frames/defeat_armor_4/05.png",
+				"golem_frames/defeat_armor_4/06.png",
+				"golem_frames/defeat_armor_4/07.png",
+				"golem_frames/defeat_armor_4/08.png",
+				"golem_frames/defeat_armor_4/09.png",
+				"golem_frames/defeat_armor_4/10.png",
+				"golem_frames/defeat_armor_4/11.png"
+			],
+			"loop": false,
+			"metrics": [
+				{
+					"bounds": [
+						61,
+						45,
+						121,
+						183
+					],
+					"edge_touch": false,
+					"frame": 0
+				},
+				{
+					"bounds": [
+						59,
+						48,
+						122,
+						180
+					],
+					"edge_touch": false,
+					"frame": 1
+				},
+				{
+					"bounds": [
+						57,
+						50,
+						123,
+						178
+					],
+					"edge_touch": false,
+					"frame": 2
+				},
+				{
+					"bounds": [
+						55,
+						52,
+						124,
+						178
+					],
+					"edge_touch": false,
+					"frame": 3
+				},
+				{
+					"bounds": [
+						49,
+						62,
+						128,
+						172
+					],
+					"edge_touch": false,
+					"frame": 4
+				},
+				{
+					"bounds": [
+						42,
+						76,
+						138,
+						162
+					],
+					"edge_touch": false,
+					"frame": 5
+				},
+				{
+					"bounds": [
+						36,
+						89,
+						147,
+						152
+					],
+					"edge_touch": false,
+					"frame": 6
+				},
+				{
+					"bounds": [
+						30,
+						104,
+						156,
+						138
+					],
+					"edge_touch": false,
+					"frame": 7
+				},
+				{
+					"bounds": [
+						25,
+						121,
+						168,
+						121
+					],
+					"edge_touch": false,
+					"frame": 8
+				},
+				{
+					"bounds": [
+						21,
+						142,
+						180,
+						100
+					],
+					"edge_touch": false,
+					"frame": 9
+				},
+				{
+					"bounds": [
+						18,
+						162,
+						193,
+						77
+					],
+					"edge_touch": false,
+					"frame": 10
+				},
+				{
+					"bounds": [
+						18,
+						162,
+						193,
+						77
+					],
+					"edge_touch": false,
+					"frame": 11
+				}
+			],
+			"pose_holds": {
+				"11": 10.0
+			}
+		},
+		"hit": {
+			"combined_frames": [
+				"golem_frames/hit/00_combined.png",
+				"golem_frames/hit/01_combined.png",
+				"golem_frames/hit/02_combined.png"
+			],
+			"effects_frames": [
+				"golem_frames/hit/00_effect.png",
+				"golem_frames/hit/01_effect.png",
+				"golem_frames/hit/02_effect.png"
+			],
+			"events": {},
+			"fps": 12.0,
+			"frames": [
+				"golem_frames/hit/00.png",
+				"golem_frames/hit/01.png",
+				"golem_frames/hit/02.png"
+			],
+			"loop": false,
+			"metrics": [
+				{
+					"bounds": [
+						60,
+						48,
+						126,
+						180
+					],
+					"edge_touch": false,
+					"frame": 0
+				},
+				{
+					"bounds": [
+						61,
+						46,
+						122,
+						182
+					],
+					"edge_touch": false,
+					"frame": 1
+				},
+				{
+					"bounds": [
+						62,
+						43,
+						119,
+						185
+					],
+					"edge_touch": false,
+					"frame": 2
+				}
+			],
+			"pose_holds": {}
+		},
+		"hit_armor_1": {
+			"combined_frames": [
+				"golem_frames/hit_armor_1/00_combined.png",
+				"golem_frames/hit_armor_1/01_combined.png",
+				"golem_frames/hit_armor_1/02_combined.png"
+			],
+			"effects_frames": [
+				"golem_frames/hit_armor_1/00_effect.png",
+				"golem_frames/hit_armor_1/01_effect.png",
+				"golem_frames/hit_armor_1/02_effect.png"
+			],
+			"events": {},
+			"fps": 12.0,
+			"frames": [
+				"golem_frames/hit_armor_1/00.png",
+				"golem_frames/hit_armor_1/01.png",
+				"golem_frames/hit_armor_1/02.png"
+			],
+			"loop": false,
+			"metrics": [
+				{
+					"bounds": [
+						60,
+						48,
+						126,
+						180
+					],
+					"edge_touch": false,
+					"frame": 0
+				},
+				{
+					"bounds": [
+						61,
+						46,
+						122,
+						182
+					],
+					"edge_touch": false,
+					"frame": 1
+				},
+				{
+					"bounds": [
+						62,
+						43,
+						119,
+						185
+					],
+					"edge_touch": false,
+					"frame": 2
+				}
+			],
+			"pose_holds": {}
+		},
+		"hit_armor_2": {
+			"combined_frames": [
+				"golem_frames/hit_armor_2/00_combined.png",
+				"golem_frames/hit_armor_2/01_combined.png",
+				"golem_frames/hit_armor_2/02_combined.png"
+			],
+			"effects_frames": [
+				"golem_frames/hit_armor_2/00_effect.png",
+				"golem_frames/hit_armor_2/01_effect.png",
+				"golem_frames/hit_armor_2/02_effect.png"
+			],
+			"events": {},
+			"fps": 12.0,
+			"frames": [
+				"golem_frames/hit_armor_2/00.png",
+				"golem_frames/hit_armor_2/01.png",
+				"golem_frames/hit_armor_2/02.png"
+			],
+			"loop": false,
+			"metrics": [
+				{
+					"bounds": [
+						60,
+						48,
+						126,
+						180
+					],
+					"edge_touch": false,
+					"frame": 0
+				},
+				{
+					"bounds": [
+						61,
+						46,
+						122,
+						182
+					],
+					"edge_touch": false,
+					"frame": 1
+				},
+				{
+					"bounds": [
+						62,
+						43,
+						119,
+						185
+					],
+					"edge_touch": false,
+					"frame": 2
+				}
+			],
+			"pose_holds": {}
+		},
+		"hit_armor_3": {
+			"combined_frames": [
+				"golem_frames/hit_armor_3/00_combined.png",
+				"golem_frames/hit_armor_3/01_combined.png",
+				"golem_frames/hit_armor_3/02_combined.png"
+			],
+			"effects_frames": [
+				"golem_frames/hit_armor_3/00_effect.png",
+				"golem_frames/hit_armor_3/01_effect.png",
+				"golem_frames/hit_armor_3/02_effect.png"
+			],
+			"events": {},
+			"fps": 12.0,
+			"frames": [
+				"golem_frames/hit_armor_3/00.png",
+				"golem_frames/hit_armor_3/01.png",
+				"golem_frames/hit_armor_3/02.png"
+			],
+			"loop": false,
+			"metrics": [
+				{
+					"bounds": [
+						60,
+						48,
+						126,
+						180
+					],
+					"edge_touch": false,
+					"frame": 0
+				},
+				{
+					"bounds": [
+						61,
+						46,
+						122,
+						182
+					],
+					"edge_touch": false,
+					"frame": 1
+				},
+				{
+					"bounds": [
+						62,
+						43,
+						119,
+						185
+					],
+					"edge_touch": false,
+					"frame": 2
+				}
+			],
+			"pose_holds": {}
+		},
+		"hit_armor_4": {
+			"combined_frames": [
+				"golem_frames/hit_armor_4/00_combined.png",
+				"golem_frames/hit_armor_4/01_combined.png",
+				"golem_frames/hit_armor_4/02_combined.png"
+			],
+			"effects_frames": [
+				"golem_frames/hit_armor_4/00_effect.png",
+				"golem_frames/hit_armor_4/01_effect.png",
+				"golem_frames/hit_armor_4/02_effect.png"
+			],
+			"events": {},
+			"fps": 12.0,
+			"frames": [
+				"golem_frames/hit_armor_4/00.png",
+				"golem_frames/hit_armor_4/01.png",
+				"golem_frames/hit_armor_4/02.png"
+			],
+			"loop": false,
+			"metrics": [
+				{
+					"bounds": [
+						60,
+						48,
+						126,
+						180
+					],
+					"edge_touch": false,
+					"frame": 0
+				},
+				{
+					"bounds": [
+						61,
+						46,
+						122,
+						182
+					],
+					"edge_touch": false,
+					"frame": 1
+				},
+				{
+					"bounds": [
+						62,
+						43,
+						119,
+						185
+					],
+					"edge_touch": false,
+					"frame": 2
+				}
+			],
+			"pose_holds": {}
+		},
+		"idle": {
+			"combined_frames": [
+				"golem_frames/idle/00_combined.png",
+				"golem_frames/idle/01_combined.png",
+				"golem_frames/idle/02_combined.png",
+				"golem_frames/idle/03_combined.png",
+				"golem_frames/idle/04_combined.png",
+				"golem_frames/idle/05_combined.png"
+			],
+			"effects_frames": [
+				"golem_frames/idle/00_effect.png",
+				"golem_frames/idle/01_effect.png",
+				"golem_frames/idle/02_effect.png",
+				"golem_frames/idle/03_effect.png",
+				"golem_frames/idle/04_effect.png",
+				"golem_frames/idle/05_effect.png"
+			],
+			"events": {},
+			"fps": 6.0,
+			"frames": [
+				"golem_frames/idle/00.png",
+				"golem_frames/idle/01.png",
+				"golem_frames/idle/02.png",
+				"golem_frames/idle/03.png",
+				"golem_frames/idle/04.png",
+				"golem_frames/idle/05.png"
+			],
+			"loop": true,
+			"metrics": [
+				{
+					"bounds": [
+						62,
+						43,
+						119,
+						185
+					],
+					"edge_touch": false,
+					"frame": 0
+				},
+				{
+					"bounds": [
+						61,
+						42,
+						120,
+						186
+					],
+					"edge_touch": false,
+					"frame": 1
+				},
+				{
+					"bounds": [
+						60,
+						42,
+						121,
+						185
+					],
+					"edge_touch": false,
+					"frame": 2
+				},
+				{
+					"bounds": [
+						61,
+						42,
+						120,
+						186
+					],
+					"edge_touch": false,
+					"frame": 3
+				},
+				{
+					"bounds": [
+						63,
+						43,
+						118,
+						185
+					],
+					"edge_touch": false,
+					"frame": 4
+				},
+				{
+					"bounds": [
+						63,
+						43,
+						117,
+						185
+					],
+					"edge_touch": false,
+					"frame": 5
+				}
+			],
+			"pose_holds": {}
+		},
+		"idle_armor_1": {
+			"combined_frames": [
+				"golem_frames/idle_armor_1/00_combined.png",
+				"golem_frames/idle_armor_1/01_combined.png",
+				"golem_frames/idle_armor_1/02_combined.png",
+				"golem_frames/idle_armor_1/03_combined.png",
+				"golem_frames/idle_armor_1/04_combined.png",
+				"golem_frames/idle_armor_1/05_combined.png"
+			],
+			"effects_frames": [
+				"golem_frames/idle_armor_1/00_effect.png",
+				"golem_frames/idle_armor_1/01_effect.png",
+				"golem_frames/idle_armor_1/02_effect.png",
+				"golem_frames/idle_armor_1/03_effect.png",
+				"golem_frames/idle_armor_1/04_effect.png",
+				"golem_frames/idle_armor_1/05_effect.png"
+			],
+			"events": {},
+			"fps": 6.0,
+			"frames": [
+				"golem_frames/idle_armor_1/00.png",
+				"golem_frames/idle_armor_1/01.png",
+				"golem_frames/idle_armor_1/02.png",
+				"golem_frames/idle_armor_1/03.png",
+				"golem_frames/idle_armor_1/04.png",
+				"golem_frames/idle_armor_1/05.png"
+			],
+			"loop": true,
+			"metrics": [
+				{
+					"bounds": [
+						62,
+						43,
+						119,
+						185
+					],
+					"edge_touch": false,
+					"frame": 0
+				},
+				{
+					"bounds": [
+						61,
+						42,
+						120,
+						186
+					],
+					"edge_touch": false,
+					"frame": 1
+				},
+				{
+					"bounds": [
+						60,
+						42,
+						121,
+						185
+					],
+					"edge_touch": false,
+					"frame": 2
+				},
+				{
+					"bounds": [
+						61,
+						42,
+						120,
+						186
+					],
+					"edge_touch": false,
+					"frame": 3
+				},
+				{
+					"bounds": [
+						63,
+						43,
+						118,
+						185
+					],
+					"edge_touch": false,
+					"frame": 4
+				},
+				{
+					"bounds": [
+						63,
+						43,
+						117,
+						185
+					],
+					"edge_touch": false,
+					"frame": 5
+				}
+			],
+			"pose_holds": {}
+		},
+		"idle_armor_2": {
+			"combined_frames": [
+				"golem_frames/idle_armor_2/00_combined.png",
+				"golem_frames/idle_armor_2/01_combined.png",
+				"golem_frames/idle_armor_2/02_combined.png",
+				"golem_frames/idle_armor_2/03_combined.png",
+				"golem_frames/idle_armor_2/04_combined.png",
+				"golem_frames/idle_armor_2/05_combined.png"
+			],
+			"effects_frames": [
+				"golem_frames/idle_armor_2/00_effect.png",
+				"golem_frames/idle_armor_2/01_effect.png",
+				"golem_frames/idle_armor_2/02_effect.png",
+				"golem_frames/idle_armor_2/03_effect.png",
+				"golem_frames/idle_armor_2/04_effect.png",
+				"golem_frames/idle_armor_2/05_effect.png"
+			],
+			"events": {},
+			"fps": 6.0,
+			"frames": [
+				"golem_frames/idle_armor_2/00.png",
+				"golem_frames/idle_armor_2/01.png",
+				"golem_frames/idle_armor_2/02.png",
+				"golem_frames/idle_armor_2/03.png",
+				"golem_frames/idle_armor_2/04.png",
+				"golem_frames/idle_armor_2/05.png"
+			],
+			"loop": true,
+			"metrics": [
+				{
+					"bounds": [
+						62,
+						43,
+						119,
+						185
+					],
+					"edge_touch": false,
+					"frame": 0
+				},
+				{
+					"bounds": [
+						61,
+						42,
+						120,
+						186
+					],
+					"edge_touch": false,
+					"frame": 1
+				},
+				{
+					"bounds": [
+						60,
+						42,
+						121,
+						185
+					],
+					"edge_touch": false,
+					"frame": 2
+				},
+				{
+					"bounds": [
+						61,
+						42,
+						120,
+						186
+					],
+					"edge_touch": false,
+					"frame": 3
+				},
+				{
+					"bounds": [
+						63,
+						43,
+						118,
+						185
+					],
+					"edge_touch": false,
+					"frame": 4
+				},
+				{
+					"bounds": [
+						63,
+						43,
+						117,
+						185
+					],
+					"edge_touch": false,
+					"frame": 5
+				}
+			],
+			"pose_holds": {}
+		},
+		"idle_armor_3": {
+			"combined_frames": [
+				"golem_frames/idle_armor_3/00_combined.png",
+				"golem_frames/idle_armor_3/01_combined.png",
+				"golem_frames/idle_armor_3/02_combined.png",
+				"golem_frames/idle_armor_3/03_combined.png",
+				"golem_frames/idle_armor_3/04_combined.png",
+				"golem_frames/idle_armor_3/05_combined.png"
+			],
+			"effects_frames": [
+				"golem_frames/idle_armor_3/00_effect.png",
+				"golem_frames/idle_armor_3/01_effect.png",
+				"golem_frames/idle_armor_3/02_effect.png",
+				"golem_frames/idle_armor_3/03_effect.png",
+				"golem_frames/idle_armor_3/04_effect.png",
+				"golem_frames/idle_armor_3/05_effect.png"
+			],
+			"events": {},
+			"fps": 6.0,
+			"frames": [
+				"golem_frames/idle_armor_3/00.png",
+				"golem_frames/idle_armor_3/01.png",
+				"golem_frames/idle_armor_3/02.png",
+				"golem_frames/idle_armor_3/03.png",
+				"golem_frames/idle_armor_3/04.png",
+				"golem_frames/idle_armor_3/05.png"
+			],
+			"loop": true,
+			"metrics": [
+				{
+					"bounds": [
+						62,
+						43,
+						119,
+						185
+					],
+					"edge_touch": false,
+					"frame": 0
+				},
+				{
+					"bounds": [
+						61,
+						42,
+						120,
+						186
+					],
+					"edge_touch": false,
+					"frame": 1
+				},
+				{
+					"bounds": [
+						60,
+						42,
+						121,
+						185
+					],
+					"edge_touch": false,
+					"frame": 2
+				},
+				{
+					"bounds": [
+						61,
+						42,
+						120,
+						186
+					],
+					"edge_touch": false,
+					"frame": 3
+				},
+				{
+					"bounds": [
+						63,
+						43,
+						118,
+						185
+					],
+					"edge_touch": false,
+					"frame": 4
+				},
+				{
+					"bounds": [
+						63,
+						43,
+						117,
+						185
+					],
+					"edge_touch": false,
+					"frame": 5
+				}
+			],
+			"pose_holds": {}
+		},
+		"idle_armor_4": {
+			"combined_frames": [
+				"golem_frames/idle_armor_4/00_combined.png",
+				"golem_frames/idle_armor_4/01_combined.png",
+				"golem_frames/idle_armor_4/02_combined.png",
+				"golem_frames/idle_armor_4/03_combined.png",
+				"golem_frames/idle_armor_4/04_combined.png",
+				"golem_frames/idle_armor_4/05_combined.png"
+			],
+			"effects_frames": [
+				"golem_frames/idle_armor_4/00_effect.png",
+				"golem_frames/idle_armor_4/01_effect.png",
+				"golem_frames/idle_armor_4/02_effect.png",
+				"golem_frames/idle_armor_4/03_effect.png",
+				"golem_frames/idle_armor_4/04_effect.png",
+				"golem_frames/idle_armor_4/05_effect.png"
+			],
+			"events": {},
+			"fps": 6.0,
+			"frames": [
+				"golem_frames/idle_armor_4/00.png",
+				"golem_frames/idle_armor_4/01.png",
+				"golem_frames/idle_armor_4/02.png",
+				"golem_frames/idle_armor_4/03.png",
+				"golem_frames/idle_armor_4/04.png",
+				"golem_frames/idle_armor_4/05.png"
+			],
+			"loop": true,
+			"metrics": [
+				{
+					"bounds": [
+						62,
+						43,
+						119,
+						185
+					],
+					"edge_touch": false,
+					"frame": 0
+				},
+				{
+					"bounds": [
+						61,
+						42,
+						120,
+						186
+					],
+					"edge_touch": false,
+					"frame": 1
+				},
+				{
+					"bounds": [
+						60,
+						42,
+						121,
+						185
+					],
+					"edge_touch": false,
+					"frame": 2
+				},
+				{
+					"bounds": [
+						61,
+						42,
+						120,
+						186
+					],
+					"edge_touch": false,
+					"frame": 3
+				},
+				{
+					"bounds": [
+						63,
+						43,
+						118,
+						185
+					],
+					"edge_touch": false,
+					"frame": 4
+				},
+				{
+					"bounds": [
+						63,
+						43,
+						117,
+						185
+					],
+					"edge_touch": false,
+					"frame": 5
+				}
+			],
+			"pose_holds": {}
+		}
+	},
+	"anchor": [
+		128.0,
+		224.0
+	],
+	"size": [
+		256.0,
+		256.0
+	],
+	"source": "res://assets/monsters/phase3/source/golem_v06/golem_rig.json",
+	"status": "draft"
+}

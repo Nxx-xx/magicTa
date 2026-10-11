@@ -12,6 +12,7 @@ const Rewards = preload("res://scripts/core/rewards.gd")
 const SAVE_PATH := "user://tower_map_save.json"
 const SIZE := 11
 const THEMES := ["battle", "treasure", "shop"]
+signal chest_collected(receipt: Dictionary)
 var db = DB.new()
 var generator = Generator.new()
 var rng := RandomNumberGenerator.new()
@@ -153,10 +154,7 @@ func interact(cell: Vector2i) -> String:
 			state.pending = {"kind": "entity", "pos": [cell.x, cell.y]}
 			_move_to(cell)
 		"up":
-			if state.floors.has(str(int(state.floor) + 1)):
-				state.pending = {"kind": "stairs", "pos": [cell.x, cell.y], "destination": int(state.floor) + 1}
-			else:
-				state.pending = {"kind": "floor_choice", "pos": [cell.x, cell.y]}
+			state.pending = {"kind": "stairs", "pos": [cell.x, cell.y], "destination": int(state.floor) + 1}
 		"down":
 			state.pending = {"kind": "stairs", "pos": [cell.x, cell.y], "destination": int(state.floor) - 1}
 		"potion":
@@ -195,9 +193,13 @@ func confirm_interaction(confirm_lethal: bool = false) -> String:
 	if not active() or state.pending.is_empty():
 		return "没有待确认的交互。"
 	if state.pending.kind == "stairs":
+		if not state.floors.has(str(int(state.pending.destination))):
+			return enter_next_floor()
 		return _travel(int(state.pending.destination))
+	if state.pending.kind == "floor_choice":
+		return enter_next_floor()
 	if state.pending.kind != "entity":
-		return "请先选择下一层类型。"
+		return "没有可确认的交互。"
 	var cell := pending_cell()
 	var entity := entity_at(cell)
 	match str(entity.get("type", "")):
@@ -236,6 +238,20 @@ func confirm_interaction(confirm_lethal: bool = false) -> String:
 	state.pending = {}
 	save_game()
 	return ""
+
+func automatic_floor_theme(destination: int) -> String:
+	# Independent of gameplay RNG: cancelling, saving and backtracking cannot reroll it.
+	return THEMES[(str(state.seed) + ":floor-theme:" + str(destination)).hash() % THEMES.size()]
+
+func enter_next_floor() -> String:
+	if not active() or state.pending.get("kind", "") not in ["stairs", "floor_choice"]:
+		return "请先到达上行楼梯。"
+	var previous: Dictionary = state.pending.duplicate(true)
+	state.pending.kind = "floor_choice"
+	var error := choose_floor(automatic_floor_theme(int(state.floor) + 1))
+	if not error.is_empty():
+		state.pending = previous
+	return error
 
 func choose_floor(theme_id: String) -> String:
 	if not active() or state.pending.get("kind", "") != "floor_choice":
@@ -302,6 +318,19 @@ func choose_reward(index: int) -> String:
 	save_game()
 	return ""
 
+func shop_offer_sold(entity: Dictionary, offer_id: String) -> bool:
+	# Old saves only recorded whole-shop closure; preserve that exhausted stock.
+	if not entity.has("purchased_ids"):
+		return bool(entity.get("purchased", false))
+	return offer_id in entity.purchased_ids
+
+func _mark_shop_purchase(entity: Dictionary, offer_id: String) -> void:
+	if not entity.has("purchased_ids"):
+		entity.purchased_ids = []
+	entity.purchased_ids.append(offer_id)
+	entity.purchased_id = offer_id
+	entity.purchased = entity.purchased_ids.size() == entity.offers.size()
+
 func buy(index: int) -> String:
 	if not active() or state.pending.get("kind", "") != "entity":
 		return "请先靠近商人。"
@@ -310,15 +339,15 @@ func buy(index: int) -> String:
 		return "这位商人本局的交易已经结束。"
 	if index < 0 or index >= entity.offers.size():
 		return "无效商品。"
+	if shop_offer_sold(entity, str(entity.offers[index])):
+		return "这件商品已售罄。"
 	var offer: Dictionary = shop_offer(str(entity.offers[index]))
 	var result := shop_preview(str(entity.offers[index]))
 	if not result.ok:
 		return result.error
 	state.player = result.player
-	entity.purchased = true
-	entity.purchased_id = str(entity.offers[index])
-	state.last_message = "购买了 %s。这位商人本局不再补货。" % offer.name
-	state.pending = {}
+	_mark_shop_purchase(entity, str(entity.offers[index]))
+	state.last_message = "购买了 %s。%s" % [offer.name, "商品已全部售罄。" if entity.purchased else "还可以继续选购其他商品。"]
 	save_game()
 	return ""
 
@@ -370,6 +399,9 @@ func _collect(cell: Vector2i, entity: Dictionary) -> String:
 				state.objective_complete = true
 				state.last_message = "回溯试炼完成！你绕过强敌、上楼变强，回头拿到了王权指环。仍可继续探索。"
 	floor_data().entities.erase(cell_key(cell))
+	if entity.type == "chest":
+		# Presentation waits for save success before showing this receipt.
+		chest_collected.emit({"item_id":str(entity.item_id), "gold":int(result.gold_delta)})
 	return ""
 
 func _grant_item(id: String) -> void:

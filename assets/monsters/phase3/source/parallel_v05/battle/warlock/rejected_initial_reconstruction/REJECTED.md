@@ -1,0 +1,1 @@
+Explicit reconstruction of initial failed source after its output had been overwritten by the correction. Preserves the original incorrect skirt parent and staff release parameters. Never approved or production referenced. Original failed bake log/metrics remain in base_c evidence.

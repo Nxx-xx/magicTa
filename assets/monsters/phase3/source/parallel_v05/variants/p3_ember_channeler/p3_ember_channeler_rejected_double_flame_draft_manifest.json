@@ -1,0 +1,82 @@
+{
+	"actions": {
+		"charge": {
+			"combined_frames": [
+				"p3_ember_channeler_rejected_double_flame_frames/charge/00_combined.png",
+				"p3_ember_channeler_rejected_double_flame_frames/charge/01_combined.png",
+				"p3_ember_channeler_rejected_double_flame_frames/charge/02_combined.png",
+				"p3_ember_channeler_rejected_double_flame_frames/charge/03_combined.png"
+			],
+			"effects_frames": [
+				"p3_ember_channeler_rejected_double_flame_frames/charge/00_effect.png",
+				"p3_ember_channeler_rejected_double_flame_frames/charge/01_effect.png",
+				"p3_ember_channeler_rejected_double_flame_frames/charge/02_effect.png",
+				"p3_ember_channeler_rejected_double_flame_frames/charge/03_effect.png"
+			],
+			"events": {
+				"charge_peak": 2.0
+			},
+			"fps": 8.0,
+			"frames": [
+				"p3_ember_channeler_rejected_double_flame_frames/charge/00.png",
+				"p3_ember_channeler_rejected_double_flame_frames/charge/01.png",
+				"p3_ember_channeler_rejected_double_flame_frames/charge/02.png",
+				"p3_ember_channeler_rejected_double_flame_frames/charge/03.png"
+			],
+			"loop": false,
+			"metrics": [
+				{
+					"bounds": [
+						86,
+						53,
+						112,
+						183
+					],
+					"edge_touch": false,
+					"frame": 0
+				},
+				{
+					"bounds": [
+						75,
+						55,
+						123,
+						181
+					],
+					"edge_touch": false,
+					"frame": 1
+				},
+				{
+					"bounds": [
+						76,
+						52,
+						122,
+						184
+					],
+					"edge_touch": false,
+					"frame": 2
+				},
+				{
+					"bounds": [
+						83,
+						52,
+						115,
+						184
+					],
+					"edge_touch": false,
+					"frame": 3
+				}
+			],
+			"pose_holds": {}
+		}
+	},
+	"anchor": [
+		128.0,
+		224.0
+	],
+	"size": [
+		256.0,
+		256.0
+	],
+	"source": "res://assets/monsters/phase3/source/parallel_v05/variants/p3_ember_channeler/rejected_double_flame_rig.json",
+	"status": "draft"
+}

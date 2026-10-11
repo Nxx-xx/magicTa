@@ -1,0 +1,161 @@
+{
+  "entity": "p3_ember_channeler",
+  "date": "2026-10-02",
+  "review_method": "contact sheets plus native/browser playback; agent visual review",
+  "human_signoff": false,
+  "new_imagegen_originals": 1,
+  "scope": "battle only; map_idle authored by separate map group",
+  "source_status": "draft",
+  "publication_owner": "coordinator; review is not production publication",
+  "source_rig_sha256": "15e92f815fa1e8238ce35069a7fe47d1a03ea466e6be8905dd335683bd193fae",
+  "draft_manifest_sha256": "4f0295f81d1c49e5012390b1b4ff9db84b8d1c5f633c7bd3d1694a5be8ded6a0",
+  "native_scene_sha256": "f50b07cd6f1f65c705ca9f51f1ed7cca3da188007eb74d9b733750a0648fc6b8",
+  "original_accessories_sha256": "0c24af110dd92ee4d58d41caa0c731290da81ce4a6b07a4683d1a3b9a576bfcd",
+  "base_provenance": {
+    "base_entity": "warlock",
+    "base_rig": "assets/monsters/phase3/source/parallel_v05/battle/warlock/warlock_rig.json",
+    "base_rig_sha256": "04fbcd8e15b308135ca775698060efa96bea69ca6d03058698b5685d4cf2bd6d",
+    "originals": {
+      "components.png": "0568a1801cce4b8e744d1a8d641d46d089285090a2aa3199f08c92b27517a10a"
+    }
+  },
+  "review_observation": "All exact frames inspected in contact sheets. Browser controls exercised at original and 0.25 speeds, paused/stepped and effect toggled; screenshots and counters inspected at key poses. Every action also inspected at 26/33/47px. This is agent visual inspection, not continuous human motion signoff.",
+  "actions": {
+    "idle": {
+      "decision": "accepted",
+      "draft_manifest": "p3_ember_channeler_draft_manifest.json",
+      "source_action": "idle",
+      "frame_slots": 4,
+      "pose_holds": {},
+      "notes": "Hood/cloth breathe, trident head stays with staff and open triangular furnace ring with torso; optional palm flame isolated.",
+      "frame_sha256": [
+        "6e622a86f92619d2bbfc86d60d1b229bb1364cad75b92dac1c8cc3021e5a5dcd",
+        "6a7abeb24184bdc73e44cf42cb2b188109c03d70486e21b972705b26a0810269",
+        "263c91b4599c1cd58280d9de8d48c2c16d71f4c460d9b3fc6d848bd00a649cbf",
+        "d9f7429e28c67b3be1802d3f4b7dfa0568ae0bd9a9138326c1089d447bbe24a7"
+      ],
+      "effects_sha256": [
+        "d1da9f3e7eedbddfe5e14e830806dc71e720bbea78745e5b33d296590daab613",
+        "4b249c91a7859eda56b3c59ddbcf474f49b548452a1809c5f4e4c1cf980dd37a",
+        "791586f532112a6919ad881929b550b3879d00402d84814e3d81521a8909b335",
+        "a5698d6fdb93b1bae29b4eda26e4945e003b4356f1a34fb8741e9c9d922e28c1"
+      ],
+      "combined_sha256": [
+        "11b9d6c6082c1549e4f1527fb534c0654cb644dceb71c965ad95552e111fb934",
+        "b795b70aa45d52f94ab7d348936642f87f331c1749ac2d3601f85876bc31dfad",
+        "3c02a48487003f101c815d5d96787f3a38d2ef331ee3a4996a795253c3994a94",
+        "4f9e66c69991c9d9d8b595402bccd26a4be211e08cef8b6a3faff3fa63bbc369"
+      ]
+    },
+    "attack": {
+      "decision": "accepted",
+      "draft_manifest": "p3_ember_channeler_draft_manifest.json",
+      "source_action": "attack",
+      "frame_slots": 6,
+      "pose_holds": {},
+      "notes": "Shoulder/elbow cast toward left at frame 3; staff grip solved, full trident socket and furnace collar/ring remain registered.",
+      "frame_sha256": [
+        "eb7745ccf16803a71100cd940f7a49d35f1b24b23ece7bf7d37a2f9f31ff16f5",
+        "54907c80edc0c6cd36f21bfb185f2ed93a27b4b8821c6ae7c2e8c1251b744074",
+        "24a50ce7235f582a368a388474c06127d4a811a75a4f44e69d92f8d2c23682f2",
+        "e6387123d579da241a001e3b53c3587148ea7a252aa77cda61998d67120e1729",
+        "19e6ddeb25ddc8b2dcfb62bc0fd2c44657dc94f9237b406bd801a515ff4fee67",
+        "6e622a86f92619d2bbfc86d60d1b229bb1364cad75b92dac1c8cc3021e5a5dcd"
+      ],
+      "effects_sha256": [
+        "2d658c453004e34fd616a6e901477dfcdb41d60400838441ad17294f638148ed",
+        "283d05388e5a740037bed4434434167c166c17187dcd4fa4dccfb18afd1c3578",
+        "5899b29dc66b055f4a240a6814d850b2ed4ffc6c7e2786f1c5403b421c585b37",
+        "d88453dd3ccc773032dd52b14e9243acf8890d763cbe66df0e285e1ac1ce28c2",
+        "edbc6a76abf04779e5009e0ac4a43e14ce779c18ca01373c657cd364dc7192ad",
+        "d1da9f3e7eedbddfe5e14e830806dc71e720bbea78745e5b33d296590daab613"
+      ],
+      "combined_sha256": [
+        "a9e19c77d4c349d6d64aafd1f40441966ab67a29f8f3bd68cff75565c7b57df6",
+        "7998f96f85f30362d87e782735131d00ac1d3c091d0d083071fc2ada4dd75277",
+        "6e5a658a8aab3cc23cf521c2b9dc555709a5e78473e68e4d387ad649e38aff55",
+        "b88a12eabb57cd22e659b7b39f0e7a869c5cba49b7e909ea9cc868dc4c7d6fcd",
+        "83f02510a78be686ff2b7c8253a3b389981d90bdc1bbf2cd5c4b322188d61d59",
+        "11b9d6c6082c1549e4f1527fb534c0654cb644dceb71c965ad95552e111fb934"
+      ]
+    },
+    "hit": {
+      "decision": "accepted",
+      "draft_manifest": "p3_ember_channeler_draft_manifest.json",
+      "source_action": "hit",
+      "frame_slots": 2,
+      "pose_holds": {},
+      "notes": "Hood and shoulders recoil and recover; halo and trident follow without detached crop fragments.",
+      "frame_sha256": [
+        "ba20e41dc13670e00cb095e0b478762ca282c34c2e8dc72a501e248cec54a7bd",
+        "597fb0d2cbc20fb0dfa5c3478c93a6bc7e077004488dca910486865ec1e6b642"
+      ],
+      "effects_sha256": [
+        "b7354c74a0193e4e6bc33d5bc5d002dbe421402efcdecbe3c769d6a5397f2f5f",
+        "874a9f61c07b21783c1d20d7ffda902634be2c9e91fa7ecc8c6dcc51725fad82"
+      ],
+      "combined_sha256": [
+        "be3f4e0ebcf482a3c20e368dc27480d4aca4d896a42bd6a6ebf0b48c231ceebb",
+        "de044e36940371c0c3ec8ad659d484ec5dacf5f8e9276bde53883713dab3c823"
+      ]
+    },
+    "defeat": {
+      "decision": "accepted",
+      "draft_manifest": "p3_ember_channeler_draft_manifest.json",
+      "source_action": "defeat",
+      "frame_slots": 6,
+      "pose_holds": {},
+      "notes": "Hood bows, upper body drops and staff releases at 3; palm flame extinguishes at 3. Copper hardware remains physical ornament, not optional bloom.",
+      "frame_sha256": [
+        "e1add8743fbd24470e6ae93c2074bff72d4c044870da3d27c3215ae66ffcfb55",
+        "b919c6026d54d7f8fbdef2abede3ecabdb85888177a3e728b4a1973980b037b4",
+        "7345e94c6b30cdb0059e9425ab20852ab1d216ef213bfba5ae01e66cba856c65",
+        "12fc9120c491ad51f498c6a2cf7e23a1b8162046b5f4a2ac2fd32097eb6916cc",
+        "bfab80900693a3b276d09ef15d0dc8ff9a7efd8ec2030227ce28b1b3fc42af41",
+        "7e0475fe5244108fd1fe2401c2495aafa8771c30d7b313511f7e221e4ae0ffbf"
+      ],
+      "effects_sha256": [
+        "cea715f407ab13888c2fe5ee63a83e70ac0d8a8da9d2e572c290ed2f1aa842de",
+        "3ab1b484419f814ed127ef6998bbd4fa2d323f2c53c0d924e311503df5d3dd4b",
+        "86915f4ac86165dee992f1c9abc416db90d10808be3d1a0671ea84e7bf6bdb84",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de"
+      ],
+      "combined_sha256": [
+        "55aebd5efab1da51830456d8fd1f4423dde2bf6d8c9d385c840b37cceb2e6401",
+        "781f38f736f56db7740f8a23bfdf5af705459f44907d75f38649275b79b679e4",
+        "2f2a551b1e3c777e7990de8c20fce0626cd8a45e5187863e7af20f7ed4759e79",
+        "12fc9120c491ad51f498c6a2cf7e23a1b8162046b5f4a2ac2fd32097eb6916cc",
+        "bfab80900693a3b276d09ef15d0dc8ff9a7efd8ec2030227ce28b1b3fc42af41",
+        "7e0475fe5244108fd1fe2401c2495aafa8771c30d7b313511f7e221e4ae0ffbf"
+      ]
+    },
+    "charge": {
+      "decision": "accepted",
+      "draft_manifest": "p3_ember_channeler_draft_manifest.json",
+      "source_action": "charge",
+      "frame_slots": 4,
+      "pose_holds": {},
+      "notes": "Arms gather, hood bows and furnace ring turns; single grip-bound flame intensifies at 2, then relaxes. Rejected double-flame design corrected.",
+      "frame_sha256": [
+        "713d34b18cb604d2144864a500eadeb40bd6402352bcfaf56f83b1d778fa0357",
+        "87c9882d21cd0c9eb41012dbad2cb7dcebb5830d6578826f3d3f51a15a25d707",
+        "07df2c4a36d9817fa1ae634a6aebc2064b1bf3d4e91c1156fd251227fa22a7d4",
+        "40d0a4f3749b55bbfa00223815f1219962a0795cc91790ff5db4a210f7ec4b74"
+      ],
+      "effects_sha256": [
+        "bd7acaecdcee9806bbf0e04cd7882386dd09bbfc1695e557d86674d2a7175a3d",
+        "0162b44fe8fb3311c8b48e3c0e278b1722055d66e3068990d768196623ff983c",
+        "f30ded77814fe766ddf6df80ceb7eddb1e568991a8e17cd7cf69168e08e21e2f",
+        "4c96f3f1f3207508e57c988e677fe6b834359ab7f23d972a8e119aeb5e640a02"
+      ],
+      "combined_sha256": [
+        "50636c729a45b7f3a2f61bbb63593704279c490878ed2ba26765736708225ed7",
+        "03dcf906531ca98ae6fcb27cfbe422ad0f35df36cc693c6a3580f74d7a5078d4",
+        "27c50acdde9078dc35c4eb29f672d66fd492d5a2532e411e8fa38c264041bfca",
+        "e8ad24d587b3d607674171230769c92099c353fe9ec212596040b2e7354570fc"
+      ]
+    }
+  }
+}

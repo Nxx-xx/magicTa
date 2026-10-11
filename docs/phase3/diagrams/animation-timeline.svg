@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1560" height="1200" viewBox="0 0 1560 1200" role="img">
+<title>模型与动画 / 先提交结果，再呈现动作</title>
+<desc>2D 分层母版 → 透明 PNG 帧 → SpriteFrames / 现有自绘组件；保持右剑左灯与四向独立视图。</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#72d4c4"/></marker></defs>
+<rect width="1560" height="1200" fill="#101923"/>
+<text x="48" y="58" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="32" text-anchor="start">模型与动画 / 先提交结果，再呈现动作</text>
+<text x="48" y="94" fill="#a9bfcc" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="17" text-anchor="start">2D 分层母版 → 透明 PNG 帧 → SpriteFrames / 现有自绘组件；保持右剑左灯与四向独立视图。</text>
+<rect x="48" y="138" width="460" height="202" rx="12" fill="#1b2937" stroke="#344a5a"/>
+<rect x="48" y="138" width="5" height="202" rx="2" fill="#72d4c4" stroke="#72d4c4"/>
+<text x="70" y="174" fill="#72d4c4" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="23" text-anchor="start">公主地图模型</text>
+<text x="70" y="208" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">128×128 运行帧，脚底 (64,116)</text>
+<text x="70" y="238" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">四向 idle 16帧 / walk 24帧</text>
+<text x="70" y="268" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">四向 interact 16帧；合计 56帧</text>
+<text x="70" y="298" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">禁止水平镜像造成左右手交换</text>
+<rect x="550" y="138" width="460" height="202" rx="12" fill="#1b2937" stroke="#344a5a"/>
+<rect x="550" y="138" width="5" height="202" rx="2" fill="#72d4c4" stroke="#72d4c4"/>
+<text x="572" y="174" fill="#72d4c4" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="23" text-anchor="start">公主战斗模型</text>
+<text x="572" y="208" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">384×384 运行帧，脚底 (192,348)</text>
+<text x="572" y="238" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">idle 6 / attack 8 / guard 4 / hit 3</text>
+<text x="572" y="268" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">victory 8 / defeat 6；合计 35帧</text>
+<text x="572" y="298" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">骨架只用于制作，运行优先烘焙帧</text>
+<rect x="1052" y="138" width="460" height="202" rx="12" fill="#1b2937" stroke="#344a5a"/>
+<rect x="1052" y="138" width="5" height="202" rx="2" fill="#edca85" stroke="#edca85"/>
+<text x="1074" y="174" fill="#edca85" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="23" text-anchor="start">怪物与场景</text>
+<text x="1074" y="208" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">普通怪 / 精英 / Boss：236战斗帧位</text>
+<text x="1074" y="238" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">地图视角待机烘焙需单独计量</text>
+<text x="1074" y="268" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">三遗迹 35帧；六新遗物图标</text>
+<text x="1074" y="298" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">地图敌人不巡逻，无通用行走需求</text>
+<text x="48" y="393" fill="#72d4c4" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="24" text-anchor="start">单次战斗事务</text>
+<rect x="48" y="422" width="268" height="122" rx="12" fill="#1b2937" stroke="#344a5a"/>
+<rect x="48" y="422" width="5" height="122" rx="2" fill="#72d4c4" stroke="#72d4c4"/>
+<text x="70" y="458" fill="#72d4c4" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="23" text-anchor="start">确认</text>
+<text x="70" y="492" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">校验当前输入</text>
+<polyline points="316,481 344,481" fill="none" stroke="#72d4c4" stroke-width="2.4" marker-end="url(#arrow)"/>
+<rect x="348" y="422" width="268" height="122" rx="12" fill="#1b2937" stroke="#344a5a"/>
+<rect x="348" y="422" width="5" height="122" rx="2" fill="#72d4c4" stroke="#72d4c4"/>
+<text x="370" y="458" fill="#72d4c4" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="23" text-anchor="start">模拟</text>
+<text x="370" y="492" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">完整真实战报</text>
+<polyline points="616,481 644,481" fill="none" stroke="#72d4c4" stroke-width="2.4" marker-end="url(#arrow)"/>
+<rect x="648" y="422" width="268" height="122" rx="12" fill="#1b2937" stroke="#344a5a"/>
+<rect x="648" y="422" width="5" height="122" rx="2" fill="#72d4c4" stroke="#72d4c4"/>
+<text x="670" y="458" fill="#72d4c4" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="23" text-anchor="start">保存</text>
+<text x="670" y="492" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">run / meta 原子提交</text>
+<polyline points="916,481 944,481" fill="none" stroke="#72d4c4" stroke-width="2.4" marker-end="url(#arrow)"/>
+<rect x="948" y="422" width="268" height="122" rx="12" fill="#1b2937" stroke="#344a5a"/>
+<rect x="948" y="422" width="5" height="122" rx="2" fill="#72d4c4" stroke="#72d4c4"/>
+<text x="970" y="458" fill="#72d4c4" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="23" text-anchor="start">演出</text>
+<text x="970" y="492" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">只读回放，可跳过</text>
+<polyline points="1216,481 1244,481" fill="none" stroke="#72d4c4" stroke-width="2.4" marker-end="url(#arrow)"/>
+<rect x="1248" y="422" width="268" height="122" rx="12" fill="#1b2937" stroke="#344a5a"/>
+<rect x="1248" y="422" width="5" height="122" rx="2" fill="#72d4c4" stroke="#72d4c4"/>
+<text x="1270" y="458" fill="#72d4c4" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="23" text-anchor="start">结果</text>
+<text x="1270" y="492" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">探索或剧情衔接</text>
+<text x="648" y="579" fill="#efa59d" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">保存失败停留此处 → 同一候选重试；不先播领取成功。</text>
+<text x="48" y="638" fill="#edca85" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="24" text-anchor="start">攻击源动作 / 8 帧 @16 FPS / 0.50 秒</text>
+<rect x="48" y="668" width="167" height="95" rx="12" fill="#1b2937" stroke="#72d4c4"/>
+<text x="66" y="702" fill="#72d4c4" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="22" text-anchor="start">帧 0</text>
+<text x="66" y="735" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">蓄力</text>
+<rect x="231" y="668" width="167" height="95" rx="12" fill="#1b2937" stroke="#72d4c4"/>
+<text x="249" y="702" fill="#72d4c4" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="22" text-anchor="start">帧 1</text>
+<text x="249" y="735" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">蓄力</text>
+<rect x="414" y="668" width="167" height="95" rx="12" fill="#1b2937" stroke="#72d4c4"/>
+<text x="432" y="702" fill="#72d4c4" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="22" text-anchor="start">帧 2</text>
+<text x="432" y="735" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">蓄力</text>
+<rect x="597" y="668" width="167" height="95" rx="12" fill="#1b2937" stroke="#edca85"/>
+<text x="615" y="702" fill="#edca85" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="22" text-anchor="start">帧 3</text>
+<text x="615" y="735" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">命中</text>
+<rect x="780" y="668" width="167" height="95" rx="12" fill="#1b2937" stroke="#edca85"/>
+<text x="798" y="702" fill="#edca85" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="22" text-anchor="start">帧 4</text>
+<text x="798" y="735" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">命中</text>
+<rect x="963" y="668" width="167" height="95" rx="12" fill="#1b2937" stroke="#72d4c4"/>
+<text x="981" y="702" fill="#72d4c4" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="22" text-anchor="start">帧 5</text>
+<text x="981" y="735" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">回收</text>
+<rect x="1146" y="668" width="167" height="95" rx="12" fill="#1b2937" stroke="#72d4c4"/>
+<text x="1164" y="702" fill="#72d4c4" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="22" text-anchor="start">帧 6</text>
+<text x="1164" y="735" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">回收</text>
+<rect x="1329" y="668" width="167" height="95" rx="12" fill="#1b2937" stroke="#72d4c4"/>
+<text x="1347" y="702" fill="#72d4c4" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="22" text-anchor="start">帧 7</text>
+<text x="1347" y="735" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">回收</text>
+<text x="48" y="800" fill="#a9bfcc" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="20" text-anchor="start">命中点为帧 3；只在此显示数字和特效，不在帧回调中扣血或发奖。</text>
+<rect x="48" y="847" width="714" height="220" rx="12" fill="#1b2937" stroke="#344a5a"/>
+<rect x="48" y="847" width="5" height="220" rx="2" fill="#72d4c4" stroke="#72d4c4"/>
+<text x="70" y="883" fill="#72d4c4" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="23" text-anchor="start">战报到画面的对应</text>
+<text x="70" y="917" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">保留最后一击、首次机制触发与阶段阈值</text>
+<text x="70" y="947" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">长战斗最多展示六个真实回合；完整战报不截断</text>
+<text x="70" y="977" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">反伤击杀必须表现为反击后的反伤，不能伪造挥剑</text>
+<text x="70" y="1007" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">目标时长：普通1.2–3秒 / 精英≤4秒 / Boss首次≤6秒</text>
+<text x="70" y="1037" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">减动效：静态结果与文字；静音：信息仍然完整</text>
+<rect x="798" y="847" width="714" height="220" rx="12" fill="#1b2937" stroke="#344a5a"/>
+<rect x="798" y="847" width="5" height="220" rx="2" fill="#edca85" stroke="#edca85"/>
+<text x="820" y="883" fill="#edca85" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="23" text-anchor="start">验收不是只看一张关键帧</text>
+<text x="820" y="917" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">行走必须左右脚交替；接触帧脚底偏差≤1像素</text>
+<text x="820" y="947" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">26 / 33 / 47px 地图格检查轮廓和方向</text>
+<text x="820" y="977" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">提供逐帧联系图、原速录屏、小尺寸实机渲染图</text>
+<text x="820" y="1007" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">跳过、重进、保存重试均与战报数值一致</text>
+<text x="820" y="1037" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">新增动画驻留目标≤48 MiB，实施后实测</text>
+<text x="48" y="1176" fill="#a9bfcc" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="15" text-anchor="start">第三阶段设计稿 v0.1 · 2026-10-01 · 规划图，不代表功能已实现；详细规则以对应正文为准。</text>
+</svg>

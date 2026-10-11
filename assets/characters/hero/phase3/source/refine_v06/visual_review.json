@@ -1,0 +1,1145 @@
+{
+  "date": "2026-10-02",
+  "reviewer": "Codex visual inspection in hero refinement chat",
+  "human_signoff": false,
+  "approved_for_publish": true,
+  "draft_sha256": "f4576531d8cc8c3feedde464a96429376e410b2973d2ede22ab1ae7f69164fe3",
+  "native_timing_sha256": "29a6b4b4c8d10d54b664587008bc300b2ca62c6b747e5e372c3ce46473d4e631",
+  "scenes": {
+    "res://assets/characters/hero/phase3/source/refine_v06/hero_down_editable.tscn": "b2a84618ca02fa2a6079683c43cc2531de7459faf0c6b9fecde85661a0b4beba",
+    "res://assets/characters/hero/phase3/source/refine_v06/hero_left_editable.tscn": "93479b267a8894ede248a75b3d10c0e20eb7d5e341806c1c1aa79fdea0d6e544",
+    "res://assets/characters/hero/phase3/source/refine_v06/hero_right_editable.tscn": "a05453c00b5e7f8a14b0c32534a07e18ff89e43eb56d97942c274ab2198627ee",
+    "res://assets/characters/hero/phase3/source/refine_v06/hero_up_editable.tscn": "bf89e49f9adeaedcacc8c8f31aec7e5043a134ccf86b293abad000087123e99b"
+  },
+  "scope": "Final body/effect contact sheets, 26/33/47px, actual timed AnimationPlayer samples at 1x and 0.25x inspected. No continuous-video perception, human playtest or device acceptance claimed.",
+  "actions": {
+    "combat_attack": {
+      "fps": 16,
+      "loop": false,
+      "size": [
+        384,
+        384
+      ],
+      "anchor": [
+        192,
+        348
+      ],
+      "events": {
+        "hit": 3
+      },
+      "pose_holds": {},
+      "source": "source/refine_v06/hero_right_editable.tscn",
+      "review": "source/refine_v06/REVIEW.md",
+      "frames": [
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/combat_attack/00.png",
+          "sha256": "e45e04b75390c889159a4807ad2b6027ab599a7cd15aa9bbec9254c79e2a46ce"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/combat_attack/01.png",
+          "sha256": "e410dfc4bd7a325fdf96592968c59b9ae859abe94c7638bbe7b8ae35da036a40"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/combat_attack/02.png",
+          "sha256": "d1e1604907c1f9e39f97163151b17ae0d9c68c5d365ff8bf03758b8737a9b443"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/combat_attack/03.png",
+          "sha256": "7a74d553741c9af26c5e4396ac92df0163cfd2daa15d060cd977dcdded36e460"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/combat_attack/04.png",
+          "sha256": "33d0953d1fa42fcf7d7f1f6e68b7a04477a04976586a16854b73ae3d5c5ca5f2"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/combat_attack/05.png",
+          "sha256": "e1418c1ceddef68742bdec133ac5343ea155fac14b1603ed9e471f02adcdc226"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/combat_attack/06.png",
+          "sha256": "fa67559fb9dd50bc63588f5a236782f643536c82744330f0f0f2b0030e7844c6"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/combat_attack/07.png",
+          "sha256": "9cdd23725eced23dc005a3e44a82bfa8d72a6138993a732711477d8952557b34"
+        }
+      ],
+      "effects_frames": [
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/combat_attack/00.png",
+          "sha256": "71c42654c5ee20131d0441fc06c5a0b7fced5867cd39d61f4056976661e2f710"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/combat_attack/01.png",
+          "sha256": "2ed2bdf320886ba4adbccc8c15d83ccc0d948553e9582a512d0950c11d02c567"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/combat_attack/02.png",
+          "sha256": "07ed4d98751189dfb8e67d58f0f99642dd6971a56c69c2b08c2b2ef3aabae29e"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/combat_attack/03.png",
+          "sha256": "62a73578090341167a6071213d8ba04af511a8d0e3c50596365bfe004549fd46"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/combat_attack/04.png",
+          "sha256": "00e1ef595baa6b365958f99d1f9de966690974f1e31d7e16d4545cc49d1466e1"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/combat_attack/05.png",
+          "sha256": "384a19d05eec258f3686006ad5fb64ee3a6dfa3680009bfbeb18479be48aecbf"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/combat_attack/06.png",
+          "sha256": "3e5705ecf9a6996118c8fff1a96dc003a5c58324c6cd05fb7ad7b628984c242c"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/combat_attack/07.png",
+          "sha256": "1228e8476647c6455694fc056084e943540f28d08edce2a1d9339d9dac8b0364"
+        }
+      ]
+    },
+    "combat_defeat": {
+      "fps": 10,
+      "loop": false,
+      "size": [
+        384,
+        384
+      ],
+      "anchor": [
+        192,
+        348
+      ],
+      "events": {},
+      "pose_holds": {},
+      "source": "source/refine_v06/hero_right_editable.tscn",
+      "review": "source/refine_v06/REVIEW.md",
+      "frames": [
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/combat_defeat/00.png",
+          "sha256": "37d3bc6beb2636adbeb708b1e448360fff13a13502e13b3e8a836ca65a27f95c"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/combat_defeat/01.png",
+          "sha256": "de99205b60b78bdcc0ca67e73643e2ea05c535a511f565be154d00d2c9d81a1a"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/combat_defeat/02.png",
+          "sha256": "706c3f086b7edefd3c26360756bccb12c40b7fc8fe0918ad305937232b65c308"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/combat_defeat/03.png",
+          "sha256": "4944e26ae88820c7622b179fd190463fd581aaf18dcc8a50b7b43a4b4ea78734"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/combat_defeat/04.png",
+          "sha256": "4a1284bce4708d4aa94e8d36df1d0e45b0e00590a23e169d8d8d5f2b5319e96c"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/combat_defeat/05.png",
+          "sha256": "4e425a91df01bf3e504604eb812b27f5e0abd89fc32d24a3e61d4e284024c2d3"
+        }
+      ],
+      "effects_frames": [
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/combat_defeat/00.png",
+          "sha256": "17c6547ad4d47ee4187194330e9c6aa23fa214c284e721adff2c374bbd76db66"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/combat_defeat/01.png",
+          "sha256": "108ea4d8f0f069fe2aa5b4db6b332ca73d7150264ca58c71b88337eb7c2369bd"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/combat_defeat/02.png",
+          "sha256": "6d27f0e052bf5902fa6730a0129987f57de5cec3c6b51763c80a72ea2e030b20"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/combat_defeat/03.png",
+          "sha256": "4618d8faf9dca9837396cbbc510cbc9675b9591d45e9f5638336b55933aa1c23"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/combat_defeat/04.png",
+          "sha256": "c9f5ec6126ce5a2c860a8da6855e1cf3b3542a44d89685c7cea58f6712fa5526"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/combat_defeat/05.png",
+          "sha256": "028bd7a137005407adb98f005d1b837659871d72ad88449160b2d32927409da8"
+        }
+      ]
+    },
+    "combat_guard": {
+      "fps": 12,
+      "loop": false,
+      "size": [
+        384,
+        384
+      ],
+      "anchor": [
+        192,
+        348
+      ],
+      "events": {},
+      "pose_holds": {},
+      "source": "source/refine_v06/hero_right_editable.tscn",
+      "review": "source/refine_v06/REVIEW.md",
+      "frames": [
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/combat_guard/00.png",
+          "sha256": "90f5e2408408e6a0ba1f3cd7790e0d4456bbdd60eb7652f15eb6d954e71b45a3"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/combat_guard/01.png",
+          "sha256": "a12e52ca22c78087f1fddf763dfeb44e3f166b823f83ccece2d31fbdbd58b45a"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/combat_guard/02.png",
+          "sha256": "2fca78efd236c328ee9cf9d32540a1b35ded3f8a64b30ff1f7f65d984ce7bd41"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/combat_guard/03.png",
+          "sha256": "3bec3d0d0aea509297c08bb1d4d8d4848f09c398b48a47b61e309e8fbc213fcd"
+        }
+      ],
+      "effects_frames": [
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/combat_guard/00.png",
+          "sha256": "71c42654c5ee20131d0441fc06c5a0b7fced5867cd39d61f4056976661e2f710"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/combat_guard/01.png",
+          "sha256": "1e5df73a58fd600024a108d9cca1bb129bb510caf8c928b4cf34130d2edaa629"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/combat_guard/02.png",
+          "sha256": "9814b0b1eea2d4f33ff8ac289bb577c74e5f9670b7e74976bad1da3db35d8375"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/combat_guard/03.png",
+          "sha256": "1e8f1d4ffd1cfb834803552bca5343febe1957c5f5d239dc542cbe41503fd742"
+        }
+      ]
+    },
+    "combat_hit": {
+      "fps": 12,
+      "loop": false,
+      "size": [
+        384,
+        384
+      ],
+      "anchor": [
+        192,
+        348
+      ],
+      "events": {},
+      "pose_holds": {},
+      "source": "source/refine_v06/hero_right_editable.tscn",
+      "review": "source/refine_v06/REVIEW.md",
+      "frames": [
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/combat_hit/00.png",
+          "sha256": "90f5e2408408e6a0ba1f3cd7790e0d4456bbdd60eb7652f15eb6d954e71b45a3"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/combat_hit/01.png",
+          "sha256": "c2ecc002b5fa2cc58e41c4de9936aaf420af4557b5dc9bc0339994bef34a01b8"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/combat_hit/02.png",
+          "sha256": "245b30594ce68eae16fd328d3b070259736350ae6fb677b5b2a4fc64ba7d682c"
+        }
+      ],
+      "effects_frames": [
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/combat_hit/00.png",
+          "sha256": "71c42654c5ee20131d0441fc06c5a0b7fced5867cd39d61f4056976661e2f710"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/combat_hit/01.png",
+          "sha256": "b7ed4d4e1338fe1de3d6c1671548c4b926aaad99e4d4ef8a71bcc7838097b74e"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/combat_hit/02.png",
+          "sha256": "3f9c385b85eda54d9b054d036ab482d05535a6f63eaee764d60ed909bff3a45d"
+        }
+      ]
+    },
+    "combat_idle": {
+      "fps": 6,
+      "loop": true,
+      "size": [
+        384,
+        384
+      ],
+      "anchor": [
+        192,
+        348
+      ],
+      "events": {},
+      "pose_holds": {},
+      "source": "source/refine_v06/hero_right_editable.tscn",
+      "review": "source/refine_v06/REVIEW.md",
+      "frames": [
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/combat_idle/00.png",
+          "sha256": "90f5e2408408e6a0ba1f3cd7790e0d4456bbdd60eb7652f15eb6d954e71b45a3"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/combat_idle/01.png",
+          "sha256": "67cb83e85dd8ef7ce63bdd2dea27c22f1506b56f3da9c69244be21c4ac6b8d33"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/combat_idle/02.png",
+          "sha256": "9290d178c1edc535d61b6f09a60020439a059ea9448faf8f8836fcdf564158c6"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/combat_idle/03.png",
+          "sha256": "4e5172851de65a290cf3581e1db5cab7bb65d07cd815326507b013754b3151ba"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/combat_idle/04.png",
+          "sha256": "2dbf469c111af76fc30d59ce25036f7015cb2330eccd6c2f803a124da7eef82e"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/combat_idle/05.png",
+          "sha256": "f51933db922805188898c7693810e66aa717ff1cb5db207856828662b40bc4bc"
+        }
+      ],
+      "effects_frames": [
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/combat_idle/00.png",
+          "sha256": "71c42654c5ee20131d0441fc06c5a0b7fced5867cd39d61f4056976661e2f710"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/combat_idle/01.png",
+          "sha256": "83e72f932111a897ef220e98a651f436736a0297a140b3f956120eea8b9ba502"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/combat_idle/02.png",
+          "sha256": "3ca670cb5f05a3c15d50555f7577917f8232b10ff77be475b905fbf6071f8e93"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/combat_idle/03.png",
+          "sha256": "abe650ff6b31bb4724cc765f563bce0208cb0600c9acef6732f5332b6a3835d5"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/combat_idle/04.png",
+          "sha256": "d7db95d07c137048a7c726958c174aac1a3242d91c8da0ed5bf70c6f19493661"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/combat_idle/05.png",
+          "sha256": "bf0927a13019d8db65cce291906c431f7c60c6897e258553f1619bf97b93f0b9"
+        }
+      ]
+    },
+    "combat_victory": {
+      "fps": 12,
+      "loop": false,
+      "size": [
+        384,
+        384
+      ],
+      "anchor": [
+        192,
+        348
+      ],
+      "events": {},
+      "pose_holds": {},
+      "source": "source/refine_v06/hero_right_editable.tscn",
+      "review": "source/refine_v06/REVIEW.md",
+      "frames": [
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/combat_victory/00.png",
+          "sha256": "90f5e2408408e6a0ba1f3cd7790e0d4456bbdd60eb7652f15eb6d954e71b45a3"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/combat_victory/01.png",
+          "sha256": "19291189276dfa7edadf71b1b19848ccee74a850f4e5a3927c861f24d07434af"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/combat_victory/02.png",
+          "sha256": "45e7879dec7ee69b98d9bdb9067c1103ccb600b502dbd15f6a67987dde9a9947"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/combat_victory/03.png",
+          "sha256": "4e1de965d57c0104079e09258a07ba119e16ddbf9615d0b7b365556c9c46c884"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/combat_victory/04.png",
+          "sha256": "f22cbdcb773c7448ba18032bb0d8f7eee321e3ec3e454117c7273e857f95cc98"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/combat_victory/05.png",
+          "sha256": "0565f8ccacac2da7a4c3f20025fb25673086eb0038b3b501708e7529843a59ca"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/combat_victory/06.png",
+          "sha256": "885696b92da11b02d0bf10193dea3a6a34ea4e32d2d6d2467be16294536a0f42"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/combat_victory/07.png",
+          "sha256": "4ccf4a56134f410592d3387e25abf3ce499128d60704e4b158de115a830ec6b9"
+        }
+      ],
+      "effects_frames": [
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/combat_victory/00.png",
+          "sha256": "71c42654c5ee20131d0441fc06c5a0b7fced5867cd39d61f4056976661e2f710"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/combat_victory/01.png",
+          "sha256": "c50d4cf38fd48b5b727c1e0f5d351e7b60df69e16c5bde69ec5d8a85c2e3d0d3"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/combat_victory/02.png",
+          "sha256": "778c33b1e7e11956fbf01a02bc6dc2fd4269df1254f6e76d4623c38c83ab0dd4"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/combat_victory/03.png",
+          "sha256": "cf3824b1c20648817f18e7db2c85c62c46c2e30c92750c5d89cf7f92605d37e6"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/combat_victory/04.png",
+          "sha256": "65958fc113a33900619ce16cac08d309e8af432e257631577a174a62721bdd76"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/combat_victory/05.png",
+          "sha256": "21d33aa872474cfa24c4fbb90bce3a7a93aa8bade34f2455e02b2c07aa3812de"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/combat_victory/06.png",
+          "sha256": "3331076fa753dbd7364f04417c3f2cb133e69e4ddac5386de3ea0dfeaada45c6"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/combat_victory/07.png",
+          "sha256": "6366bde7a2150a4c89f2a8039e8f2e5a0df90bee583e4a3e52a78a23a05be1ec"
+        }
+      ]
+    },
+    "map_idle_down": {
+      "fps": 6,
+      "loop": true,
+      "size": [
+        128,
+        128
+      ],
+      "anchor": [
+        64,
+        116
+      ],
+      "events": {},
+      "pose_holds": {},
+      "source": "source/refine_v06/hero_down_editable.tscn",
+      "review": "source/refine_v06/REVIEW.md",
+      "frames": [
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/map_idle_down/00.png",
+          "sha256": "88963f844467cbacc1406fd6d2bf1133e1f736abaea52138495a5aceb52036e9"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/map_idle_down/01.png",
+          "sha256": "965db0efdc54488a970c1f8d24594a20c570009f59119002782930a2fd64219e"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/map_idle_down/02.png",
+          "sha256": "51f2c8037ef2a1d4d47c005dd753e123917962b49f4e1e2553f4e254d2d59bc7"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/map_idle_down/03.png",
+          "sha256": "3175fe0658e8f716eee7d1fab289621b25a222fd536fc5bea80f8361c23b7ddc"
+        }
+      ],
+      "effects_frames": [
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/map_idle_down/00.png",
+          "sha256": "1ea1d7e26b9b0804f81783527fd755b8534534b7f702ae2cc1e408956e006347"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/map_idle_down/01.png",
+          "sha256": "8909ef5dc174310f88bf8f0f88837679b965b138d545cf5ab1c8d4f659f6a417"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/map_idle_down/02.png",
+          "sha256": "b7dc9b39d8c394e70f86a2c05df7537d2af5c576d9869f8366863512fb334c56"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/map_idle_down/03.png",
+          "sha256": "5b7c40f44f6ebc1d2d53003e1ce56db2cfd163102e57dea5fa2cde9288ebb8c3"
+        }
+      ]
+    },
+    "map_idle_left": {
+      "fps": 6,
+      "loop": true,
+      "size": [
+        128,
+        128
+      ],
+      "anchor": [
+        64,
+        116
+      ],
+      "events": {},
+      "pose_holds": {},
+      "source": "source/refine_v06/hero_left_editable.tscn",
+      "review": "source/refine_v06/REVIEW.md",
+      "frames": [
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/map_idle_left/00.png",
+          "sha256": "e167d66bf69fdcfb1d5b01c675e619f3fb42d9fecc5461fc9a14b0df646007d9"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/map_idle_left/01.png",
+          "sha256": "c3296d294212034a2073c9faa42fca2c40c7753c7ed1181e12245238cfb2ab55"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/map_idle_left/02.png",
+          "sha256": "de918e5a10494d2e6db19878dbc0d87bd5aee1c46ca36b785097b9a0ab1db9e6"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/map_idle_left/03.png",
+          "sha256": "c2ace023b41bc0bb7a34ea755a92576a8bbd6a90b40b5c421c9c27b8c02b7001"
+        }
+      ],
+      "effects_frames": [
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/map_idle_left/00.png",
+          "sha256": "c492c6c656282bd3dc7c762b7834f2dc3fd1ebf38cb3be9541670500c962a560"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/map_idle_left/01.png",
+          "sha256": "b8269287efb42f93090d86b534470b5c9cebd9f3eb63192737c1f1f1b1b04a05"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/map_idle_left/02.png",
+          "sha256": "b5d0cb18331365563d84f552ac29582b5b005d7dc457aa54e7a1657f29a6e636"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/map_idle_left/03.png",
+          "sha256": "55a35df0c91cd818524e9b48cbe00114a3dab5b69b4977788191dcba3170830b"
+        }
+      ]
+    },
+    "map_idle_right": {
+      "fps": 6,
+      "loop": true,
+      "size": [
+        128,
+        128
+      ],
+      "anchor": [
+        64,
+        116
+      ],
+      "events": {},
+      "pose_holds": {},
+      "source": "source/refine_v06/hero_right_editable.tscn",
+      "review": "source/refine_v06/REVIEW.md",
+      "frames": [
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/map_idle_right/00.png",
+          "sha256": "986d4d17bcb1fab17e13f39c15af02d39df8a3e257619c5a77359c349ae49f12"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/map_idle_right/01.png",
+          "sha256": "02f5997267f56fd077f0eeb7f3e752c45cb964385c271e8a320082f801108e90"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/map_idle_right/02.png",
+          "sha256": "69ff958ed89aa715d0e9af1ca961c3c26c1029b820864d19d146a53aad304995"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/map_idle_right/03.png",
+          "sha256": "846b45800f4f00ea3188a1ab19d57e28ab5495ad3c15b8c337cf165faeb09a99"
+        }
+      ],
+      "effects_frames": [
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/map_idle_right/00.png",
+          "sha256": "ba2cd912a84fb803c9bdf11fe9587064f776e3b4e6f1c55d22046096e5eaf55e"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/map_idle_right/01.png",
+          "sha256": "5bbcf0d0075a74992d86364e8a5c22d8be10c138d569c04e2ca4d61dce1854d7"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/map_idle_right/02.png",
+          "sha256": "91bc6ffc66a39093b9c570bb7c9f2eb63949dd84595ed3e072f1ee8201a6b746"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/map_idle_right/03.png",
+          "sha256": "c50228054f6b9c9cfd9d0145ff7c494aa2c422fc12a8d5a273add309a17ca9fc"
+        }
+      ]
+    },
+    "map_idle_up": {
+      "fps": 6,
+      "loop": true,
+      "size": [
+        128,
+        128
+      ],
+      "anchor": [
+        64,
+        116
+      ],
+      "events": {},
+      "pose_holds": {},
+      "source": "source/refine_v06/hero_up_editable.tscn",
+      "review": "source/refine_v06/REVIEW.md",
+      "frames": [
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/map_idle_up/00.png",
+          "sha256": "d79964ea4b4237931305a22651cb361c2ebde9a8841e5ecc9bbb55f48a93ae22"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/map_idle_up/01.png",
+          "sha256": "6e3af297d880a7b7923f6e19d6a75988741d1e56c9a97afc4771c95e9fe25559"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/map_idle_up/02.png",
+          "sha256": "151db0b8651b6e23d20b6e344b79646513e56ef2a32f36220f158ea4cde38b1e"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/map_idle_up/03.png",
+          "sha256": "88210895d18e2773142fee1400da3f17c1770678102915bbd2cd2a1482090e23"
+        }
+      ],
+      "effects_frames": [
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/map_idle_up/00.png",
+          "sha256": "3702039024153dcd951ce7d7f0c264f0bc616e9dbf702c86c1e66e318ca462ff"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/map_idle_up/01.png",
+          "sha256": "f88d7cbe448df84489db5259edc80b0cd40685dfa734e85aa533f2c3d0dd413e"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/map_idle_up/02.png",
+          "sha256": "f5d2414e61358f2dfc54684aa07f9d641d1a662bfec80882d472abfc91cd6f39"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/map_idle_up/03.png",
+          "sha256": "85adff979488ded9ba17a092f53feb1c662773190618743befaeab0a247a4f93"
+        }
+      ]
+    },
+    "map_interact_down": {
+      "fps": 10,
+      "loop": false,
+      "size": [
+        128,
+        128
+      ],
+      "anchor": [
+        64,
+        116
+      ],
+      "events": {},
+      "pose_holds": {},
+      "source": "source/refine_v06/hero_down_editable.tscn",
+      "review": "source/refine_v06/REVIEW.md",
+      "frames": [
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/map_interact_down/00.png",
+          "sha256": "88963f844467cbacc1406fd6d2bf1133e1f736abaea52138495a5aceb52036e9"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/map_interact_down/01.png",
+          "sha256": "9ff144c3fbe92e7c549cc74108732be0081702a3340d6a7eab87cfebc8fead56"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/map_interact_down/02.png",
+          "sha256": "cf56250ab039079fd522bf4a98e8eee9c09eef494c3972177ab72ead7c75c780"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/map_interact_down/03.png",
+          "sha256": "edf67e4837c089a7fc8ad7569eb0cd2e470a4d1e48ecc671c5b37f7c30207d02"
+        }
+      ],
+      "effects_frames": [
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/map_interact_down/00.png",
+          "sha256": "1ea1d7e26b9b0804f81783527fd755b8534534b7f702ae2cc1e408956e006347"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/map_interact_down/01.png",
+          "sha256": "cedc7695cabad78d8a730c86b35e4633a330d8722dc3ba323040cd9b9260582d"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/map_interact_down/02.png",
+          "sha256": "9e290dc57e04c8b7386d1b1e36dd562d990fd749c36b3723e53c96903a562c81"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/map_interact_down/03.png",
+          "sha256": "9d07ae12a2d3a67b88a022752be141eae192ad645ec5f772723ff29491933b28"
+        }
+      ]
+    },
+    "map_interact_left": {
+      "fps": 10,
+      "loop": false,
+      "size": [
+        128,
+        128
+      ],
+      "anchor": [
+        64,
+        116
+      ],
+      "events": {},
+      "pose_holds": {},
+      "source": "source/refine_v06/hero_left_editable.tscn",
+      "review": "source/refine_v06/REVIEW.md",
+      "frames": [
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/map_interact_left/00.png",
+          "sha256": "e167d66bf69fdcfb1d5b01c675e619f3fb42d9fecc5461fc9a14b0df646007d9"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/map_interact_left/01.png",
+          "sha256": "41b2d9a6738408cc1e6609a3fa81ba680e4a831fa5f073385909de8d40084c08"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/map_interact_left/02.png",
+          "sha256": "1ced9dce53f035d76fa2a340f38b3adff2f92d73af24463a730de14a2af34f2a"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/map_interact_left/03.png",
+          "sha256": "27a4def3381680be0dc347b452e0a9d0c193871335c235d0ee29a353579ef717"
+        }
+      ],
+      "effects_frames": [
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/map_interact_left/00.png",
+          "sha256": "c492c6c656282bd3dc7c762b7834f2dc3fd1ebf38cb3be9541670500c962a560"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/map_interact_left/01.png",
+          "sha256": "9a1bff28e280eaa958940dbccceb29df5770d3217abbb063114c34af72c249e9"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/map_interact_left/02.png",
+          "sha256": "cf1890759596d2b169e8d3bec9324c661b1adb9d8bcf4c75bc33e511a1a69195"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/map_interact_left/03.png",
+          "sha256": "2915d699e10e739b9ef644eedf0761d4b00ee01e0d03a160c79c81ecf723fdd0"
+        }
+      ]
+    },
+    "map_interact_right": {
+      "fps": 10,
+      "loop": false,
+      "size": [
+        128,
+        128
+      ],
+      "anchor": [
+        64,
+        116
+      ],
+      "events": {},
+      "pose_holds": {},
+      "source": "source/refine_v06/hero_right_editable.tscn",
+      "review": "source/refine_v06/REVIEW.md",
+      "frames": [
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/map_interact_right/00.png",
+          "sha256": "986d4d17bcb1fab17e13f39c15af02d39df8a3e257619c5a77359c349ae49f12"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/map_interact_right/01.png",
+          "sha256": "0a540e45268d4f0505bddade457f5771f9c7f9427117cbdd98db8521ed6da06d"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/map_interact_right/02.png",
+          "sha256": "829c5c0f4adfdf3487565263644958c0096ae42cbdcc4abb89e0735daa209620"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/map_interact_right/03.png",
+          "sha256": "99d51591c7f9e5c3d9eca688a36b7d1728caf4d17d44773abfd5db76637287b2"
+        }
+      ],
+      "effects_frames": [
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/map_interact_right/00.png",
+          "sha256": "ba2cd912a84fb803c9bdf11fe9587064f776e3b4e6f1c55d22046096e5eaf55e"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/map_interact_right/01.png",
+          "sha256": "67220b5f2de8942b193031153d6912a58d22983f7042c72abd59938e29652360"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/map_interact_right/02.png",
+          "sha256": "43803fae0612ff11c37db82c276d2d0399d0253b54aa5dc23badf1b6b7b00487"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/map_interact_right/03.png",
+          "sha256": "a85c7b642c0c93c02f5f4aabe8c30f11c5e4ab9aa00cbf90ec2f40ff3b226ed2"
+        }
+      ]
+    },
+    "map_interact_up": {
+      "fps": 10,
+      "loop": false,
+      "size": [
+        128,
+        128
+      ],
+      "anchor": [
+        64,
+        116
+      ],
+      "events": {},
+      "pose_holds": {},
+      "source": "source/refine_v06/hero_up_editable.tscn",
+      "review": "source/refine_v06/REVIEW.md",
+      "frames": [
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/map_interact_up/00.png",
+          "sha256": "d79964ea4b4237931305a22651cb361c2ebde9a8841e5ecc9bbb55f48a93ae22"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/map_interact_up/01.png",
+          "sha256": "f55db04db87801bc34c2379d927c1c8c15889b081d7a8eb7daba62ef55025258"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/map_interact_up/02.png",
+          "sha256": "13ba43ab11d604ebdaa0198608d4a5c5dff231ba819067de31b17cdf60ab7cc1"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/map_interact_up/03.png",
+          "sha256": "b006fb6b77f7d0f99a9b48fb817c7466809f56bef02e04d030c8c3308442f12b"
+        }
+      ],
+      "effects_frames": [
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/map_interact_up/00.png",
+          "sha256": "3702039024153dcd951ce7d7f0c264f0bc616e9dbf702c86c1e66e318ca462ff"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/map_interact_up/01.png",
+          "sha256": "a0700bd9a42c65b97a281df72f17a3971ee49aced5c5fd66c96c6200ac98bf9e"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/map_interact_up/02.png",
+          "sha256": "9188963ab7668dc55fab3b10e571cfd791055cb3371e2bde6514cd50e5a80aec"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/map_interact_up/03.png",
+          "sha256": "4a470bf4ee17bbc5408a01eec5f0c84060abb79759423400e86f0e8fb8b3b9dd"
+        }
+      ]
+    },
+    "map_walk_down": {
+      "fps": 12,
+      "loop": true,
+      "size": [
+        128,
+        128
+      ],
+      "anchor": [
+        64,
+        116
+      ],
+      "events": {},
+      "pose_holds": {},
+      "source": "source/refine_v06/hero_down_editable.tscn",
+      "review": "source/refine_v06/REVIEW.md",
+      "frames": [
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/map_walk_down/00.png",
+          "sha256": "38a67128982efd6c8f59e60db828db863d92f338d85451f75c7206d39272b9ea"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/map_walk_down/01.png",
+          "sha256": "88761d58531b17381f14ca0eceee333429f0f102d30b6f8fd106617cafd30ea4"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/map_walk_down/02.png",
+          "sha256": "5716f47ee01290786015c361b97f4eec4021de9b7ac4231602b5c0db141d25ed"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/map_walk_down/03.png",
+          "sha256": "611baaff586d3f3184e622717c684b9d1cc21c230544f83c98d94fd888a316f6"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/map_walk_down/04.png",
+          "sha256": "f864d73799bfdfc0dd1229b8dc07cee80438c35a3c373a5d059f2c6b2561aac1"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/map_walk_down/05.png",
+          "sha256": "4c968d7f94d934943919de71172674e81f87ae55c83a599fc8a2fbcbeb9d9770"
+        }
+      ],
+      "effects_frames": [
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/map_walk_down/00.png",
+          "sha256": "1ea1d7e26b9b0804f81783527fd755b8534534b7f702ae2cc1e408956e006347"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/map_walk_down/01.png",
+          "sha256": "81912d9a5ece696e51e9857d83f499514100b6568eb067403d863d11532ca1ea"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/map_walk_down/02.png",
+          "sha256": "06c414218a9602f9ec53def0930e60eecffe6edd170b3d09bc80a158a37bf822"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/map_walk_down/03.png",
+          "sha256": "b7dc9b39d8c394e70f86a2c05df7537d2af5c576d9869f8366863512fb334c56"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/map_walk_down/04.png",
+          "sha256": "d758c44c213f7c3c2bd15b2f83f02861c4faa4c5c7f09c9747efc291437f7913"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/map_walk_down/05.png",
+          "sha256": "c0fb9d034620bda62f063521ef276683ca9eff258c5611714c7c8f32a346ea80"
+        }
+      ]
+    },
+    "map_walk_left": {
+      "fps": 12,
+      "loop": true,
+      "size": [
+        128,
+        128
+      ],
+      "anchor": [
+        64,
+        116
+      ],
+      "events": {},
+      "pose_holds": {},
+      "source": "source/refine_v06/hero_left_editable.tscn",
+      "review": "source/refine_v06/REVIEW.md",
+      "frames": [
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/map_walk_left/00.png",
+          "sha256": "6c64af56de18f6650b1ed340a2823bb87bd0a0402a93d79539ba09b352f198c1"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/map_walk_left/01.png",
+          "sha256": "3378a23ccb18bd7e7153354f9fb28bb7bcc469b43eac2194fd93dab8d496af10"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/map_walk_left/02.png",
+          "sha256": "73fd4917bcf968283ec460d95d9629dd40ed821fc2b28f7c82d3c3e1809f5cbe"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/map_walk_left/03.png",
+          "sha256": "e93171be991d8c09cb92766ae66fd6aa0e31e7872266402876a8f425d908a95c"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/map_walk_left/04.png",
+          "sha256": "f332188191209fb8a97f59df92eafb041ccebc70b1660bf7a9b46c5e7f7f2ae2"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/map_walk_left/05.png",
+          "sha256": "5c840129ac397fde386d44c5762fd6d9dad9db59a76a810969ca57d8a48d404c"
+        }
+      ],
+      "effects_frames": [
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/map_walk_left/00.png",
+          "sha256": "c492c6c656282bd3dc7c762b7834f2dc3fd1ebf38cb3be9541670500c962a560"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/map_walk_left/01.png",
+          "sha256": "13822b8f7cd752b572700a7b197bb23dc37d3599d7fe66815d43dc817fc5b8e6"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/map_walk_left/02.png",
+          "sha256": "f3a9d6d080a3d2c01c22249e367d47665ad8307a6ea30af1292e118d784e24e0"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/map_walk_left/03.png",
+          "sha256": "b5d0cb18331365563d84f552ac29582b5b005d7dc457aa54e7a1657f29a6e636"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/map_walk_left/04.png",
+          "sha256": "6969ef1eda0395e47bbe7cf0f42f616bb5cf41e318368015f083d9112cfc13be"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/map_walk_left/05.png",
+          "sha256": "01fdbb6e57f85a3225780fa7237411e8c0f67e3c5f98a17ea25e9ad3312c17b2"
+        }
+      ]
+    },
+    "map_walk_right": {
+      "fps": 12,
+      "loop": true,
+      "size": [
+        128,
+        128
+      ],
+      "anchor": [
+        64,
+        116
+      ],
+      "events": {},
+      "pose_holds": {},
+      "source": "source/refine_v06/hero_right_editable.tscn",
+      "review": "source/refine_v06/REVIEW.md",
+      "frames": [
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/map_walk_right/00.png",
+          "sha256": "fcc08645b270678f7b60f1e760d704cacafe99a6d54dc1019aee69cbb7a3f306"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/map_walk_right/01.png",
+          "sha256": "64e95530d8cf9eb7dc8e9b93b264bb0183e86f7cf9d8e48fc37ffd8294eedd8f"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/map_walk_right/02.png",
+          "sha256": "e3b01a308499285605d761d2bd9354be7ff108023cb6ce06e0dc01a7d3eddf52"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/map_walk_right/03.png",
+          "sha256": "01cd145dd285b4f9f672496153334fc94eafba000a13548099b9b6a9e34231e7"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/map_walk_right/04.png",
+          "sha256": "4e274aa0448b18efa002b2af626212c2574c4f079a19fb363d267125df9c8198"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/map_walk_right/05.png",
+          "sha256": "0dfd97fef3f9da93711d6c2a3f5e2f3126f3830c9a20cd2eeb754869402a8d16"
+        }
+      ],
+      "effects_frames": [
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/map_walk_right/00.png",
+          "sha256": "ba2cd912a84fb803c9bdf11fe9587064f776e3b4e6f1c55d22046096e5eaf55e"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/map_walk_right/01.png",
+          "sha256": "0d9620874f2514ad3e1508f5e5041dd88a6ea66ecbedb8924ed9acef14956d95"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/map_walk_right/02.png",
+          "sha256": "9718679486a961d026bb29851762abd759f9d49619e417a5ed3cdc7caddf2195"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/map_walk_right/03.png",
+          "sha256": "91bc6ffc66a39093b9c570bb7c9f2eb63949dd84595ed3e072f1ee8201a6b746"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/map_walk_right/04.png",
+          "sha256": "0ea477afea4c717ca47b714cd514e4e5f2bc0d080825c6f9c647abcf127254e4"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/map_walk_right/05.png",
+          "sha256": "e20984803a26e9b66eaf23bc0a0f6ecca0cee4cc49506b68dc36383c01c9af78"
+        }
+      ]
+    },
+    "map_walk_up": {
+      "fps": 12,
+      "loop": true,
+      "size": [
+        128,
+        128
+      ],
+      "anchor": [
+        64,
+        116
+      ],
+      "events": {},
+      "pose_holds": {},
+      "source": "source/refine_v06/hero_up_editable.tscn",
+      "review": "source/refine_v06/REVIEW.md",
+      "frames": [
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/map_walk_up/00.png",
+          "sha256": "37129e7c31cb21d926bd8e9fc9e972f0a54d64d7f60e03137767f25ca101b4ba"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/map_walk_up/01.png",
+          "sha256": "0d15119f22b62cdce2e8e0f11a1af6e6befc820c65f685651c114ac15d473085"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/map_walk_up/02.png",
+          "sha256": "30ab58b39dd389981b617a0eae69313c3f280f4e4ebc1ede69a6e7c3b4d0f1f4"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/map_walk_up/03.png",
+          "sha256": "200bd296e48c3fd11bdeb34bc4bd1f07686ec6dcd6a990d8cbb2c68e58d2b549"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/map_walk_up/04.png",
+          "sha256": "b8d5541120486f9b80407d6347a0e46b234fe346c7a16d114dcfaa76c9b3d412"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/frames/map_walk_up/05.png",
+          "sha256": "dd9e4cf6d3d631abe2b58d3e86a021ab9d74e14fdf9931af19e957710b746f38"
+        }
+      ],
+      "effects_frames": [
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/map_walk_up/00.png",
+          "sha256": "3702039024153dcd951ce7d7f0c264f0bc616e9dbf702c86c1e66e318ca462ff"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/map_walk_up/01.png",
+          "sha256": "4271eb2cce263cb40d0f239540370e139bdafdcff782a3e954dbce9018dca2b3"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/map_walk_up/02.png",
+          "sha256": "1d6d2d17e1c4b6fce5697e64d830ac58cb80a3811bea111be4221ec10db78313"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/map_walk_up/03.png",
+          "sha256": "f5d2414e61358f2dfc54684aa07f9d641d1a662bfec80882d472abfc91cd6f39"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/map_walk_up/04.png",
+          "sha256": "19744439bed3be0fbc0468d1cf250141424796c119f63e75a75a3074a0d3b9a6"
+        },
+        {
+          "path": "res://assets/characters/hero/phase3/source/refine_v06/effects/map_walk_up/05.png",
+          "sha256": "e9bd0fe878035f6fc518fb67836a46d8b66e2700c0856f026e226c076af03b55"
+        }
+      ]
+    }
+  },
+  "evidence": {
+    "build/verification/phase3/09-refinement/hero/combat_attack_contact.png": "a09ad4eef1dc9d65377b0e50ace8c206c5b1a90ee7fd8b4fa0fb65c77fb8e2e2",
+    "build/verification/phase3/09-refinement/hero/combat_contact.png": "d8f0f85391dbf0109158c8702158bb74ae9ce7ee6fa99a86f5e691a0f026a5f3",
+    "build/verification/phase3/09-refinement/hero/combat_defeat_contact.png": "9cb4b52d8c031f6c6a6cf263c6aa8a75d2bad9f31a74cbc491d646d05c2ab37b",
+    "build/verification/phase3/09-refinement/hero/combat_guard_contact.png": "40228069fa77f742e6bbb1522ac63231d99e4ecffd4b95f187e54732a6b8b437",
+    "build/verification/phase3/09-refinement/hero/combat_hit_contact.png": "9a35da68b06ad184081086a24bcdf72e6572ad3eca4bfd25073359b2d549feba",
+    "build/verification/phase3/09-refinement/hero/combat_idle_contact.png": "573889160aedf170b867ddd463fa8071318112f5a457a8c336cf59062f6cbb1a",
+    "build/verification/phase3/09-refinement/hero/combat_victory_contact.png": "3058b62168d34f3761d6205970a0f58f222a2af832e14d8983c9f0f7c09f07ea",
+    "build/verification/phase3/09-refinement/hero/map_contact.png": "9dd68b803ec188e38a022ea80689d66bfcd544361cd50958372bbd1d0abbe195",
+    "build/verification/phase3/09-refinement/hero/map_idle_down_contact.png": "6c5978cee261b985d88e87a47b6a5b425ba5d8689ddebd636ca214c514d29b91",
+    "build/verification/phase3/09-refinement/hero/map_idle_left_contact.png": "649671bef38d9438b6f16b38168d6e18291336514e413cc9213fc367ce8b3aae",
+    "build/verification/phase3/09-refinement/hero/map_idle_right_contact.png": "00a306cdda95402211a440949f320c4c05681d453967bb9abbd8609adb8e7edb",
+    "build/verification/phase3/09-refinement/hero/map_idle_up_contact.png": "535f5673a99731d35f63d45871a7b1c1aeebb26d50b25e141399e599b2f21305",
+    "build/verification/phase3/09-refinement/hero/map_interact_down_contact.png": "3afd0532cbeaf2fcb7c9d1a1094616d1024e250268c531fc8047807bf0bc8427",
+    "build/verification/phase3/09-refinement/hero/map_interact_left_contact.png": "fb61fd02ba2557e44c771865929f642d075aae2d9a835a677e1bc561d7b3b7cf",
+    "build/verification/phase3/09-refinement/hero/map_interact_right_contact.png": "8b9408cde3d6043b4c6501d6c235db1e94e0dd40f93627fecb3b6ec4ee1b74de",
+    "build/verification/phase3/09-refinement/hero/map_interact_up_contact.png": "57cb62c8cd5b2fda9d7db3fd5929359d26aff324cce1c3e8673e90870b1f9823",
+    "build/verification/phase3/09-refinement/hero/map_walk_down_contact.png": "8f9a8db1a067ec1da4157393587647f1b7e52436ba73528d0ceaa16bcecd30c9",
+    "build/verification/phase3/09-refinement/hero/map_walk_left_contact.png": "33199a065e5fd5a960e959d2f623f3bca433bff42507d632c52c6aa8e96e988c",
+    "build/verification/phase3/09-refinement/hero/map_walk_right_contact.png": "7a9a1c68882e28b4ffaa876a701ff44e3babc2608ce25a160e22d714705544d6",
+    "build/verification/phase3/09-refinement/hero/map_walk_up_contact.png": "394286db8feb3bc24518bc79f509bcb7f0683e61b15d064f316fb9c33f77df7a",
+    "build/verification/phase3/09-refinement/hero/combat_effects.png": "2492c093293b89d014c202aaf76ad79f0e1c1124bacb29b5562e8f1d1e2591e0",
+    "build/verification/phase3/09-refinement/hero/map_effects.png": "0f47a15359b5207000b73bb72060494af54beeab1cfa4f8afd8e354e6b0fc965",
+    "build/verification/phase3/09-refinement/hero/combat_small.png": "94a7304a2a0d56546df7f28d876682e3229735a234cc2ad1d2019230bad498e5",
+    "build/verification/phase3/09-refinement/hero/map_small.png": "36be96a46f0cd053ef5729a806da7cd742cb05c05961617202dc7e571cd21703",
+    "build/verification/phase3/09-refinement/hero/native/combat_0.25x_contact.png": "07a11f810deb6f2445a412de39f7c25c4874efd7eee8197a0aabbdb35e7f01ed",
+    "build/verification/phase3/09-refinement/hero/native/combat_1x_contact.png": "86bd69c961a3e7b099e83d59d131ca121df229b29666b83ac847276359045bd5",
+    "build/verification/phase3/09-refinement/hero/native/map_0.25x_contact.png": "b818e2131fd3833d0a6dd478c27218157a3fffdea1651ddeb36ad659004cbbec",
+    "build/verification/phase3/09-refinement/hero/native/map_1x_contact.png": "e14dd31bb28a51349ff09bca430c978bfa1b4b6318caefd97daa068bee433dd3",
+    "build/verification/phase3/09-refinement/hero/native/map_down_0.25x_contact.png": "72b91b9d06a2f1ce9aa30b0ab240950b61e322b25155dacb30d0223aba08c257",
+    "build/verification/phase3/09-refinement/hero/native/map_down_1x_contact.png": "14be140734899a5c4de4b6805227f19e0b1332541630d32db70938de8378cfee",
+    "build/verification/phase3/09-refinement/hero/native/map_left_0.25x_contact.png": "1aa82bc0b86b44d6a0446e3b205553e47e97ec9f46b1e3c5e1c31ab281c2c508",
+    "build/verification/phase3/09-refinement/hero/native/map_left_1x_contact.png": "68b33220c61d1c190ab7a475e973740958512395d88f0c7fe344e353ec169897",
+    "build/verification/phase3/09-refinement/hero/native/map_right_0.25x_contact.png": "1aa967246687ba0edf78caa22246a7e1864b9269974f72c5d756f415b184321c",
+    "build/verification/phase3/09-refinement/hero/native/map_right_1x_contact.png": "d8eba1bbcafc3aa2b572d3ab6091a83a0db6d7fdbba18ee05a785c30255f0837",
+    "build/verification/phase3/09-refinement/hero/native/map_up_0.25x_contact.png": "8938b59dfe50fc822b79456c294933e18e5659ee8efd91a4f8cfebe6083aa496",
+    "build/verification/phase3/09-refinement/hero/native/map_up_1x_contact.png": "1a696fd507bc5da5189721744f0cd0d43f8d49498cc8ced3d5d1f178165c113c"
+  }
+}

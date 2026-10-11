@@ -1,0 +1,7 @@
+# p3_ember_channeler actual imagegen prompt
+
+2026-10-01. Built-in image_gen, transparent_background=true. Original output: exec-3041752b-1f67-429a-aa4e-3d7c4d778ae6.png. Project copy: p3_ember_channeler_accessories.png. No referenced input image; existing formal sprites were visually inspected for palette and materials before prompt authoring.
+
+Use case: stylized-concept. Asset type: TRUE TRANSPARENT fantasy RPG equipment articulation atlas for p3_ember_channeler. Four separately isolated components in 2x2 cells with wide clear transparent gutters: top left a dark copper three-pronged ritual staff head with large hooked trident prongs and amber ember socket, without shaft; top right a complete circular open metal furnace halo ring with three outward triangular copper vents, viewed three-quarter LEFT combat camera; bottom left a single short copper collar clasp shaped as an angular furnace mouth, no fabric; bottom right a small contained amber flame and sparks effect alone. Same painterly muted dark fantasy RPG style as hooded charcoal/burgundy ember warlock with old gold trim. Hardware must have crisp dark copper silhouettes readable without flame glow; ring hollow center transparent. No character/body, no assembled staff, no hands, no ground shadows, no text/grid/border/checkerboard or backdrop. Every object whole and inside its cell with margin. True transparent alpha. Highest native square resolution.
+
+Source remains draft. Attachment crops and articulation registration do not repaint the image.

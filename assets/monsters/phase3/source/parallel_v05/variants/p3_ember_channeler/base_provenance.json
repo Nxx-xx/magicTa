@@ -1,0 +1,8 @@
+{
+  "base_entity": "warlock",
+  "base_rig": "assets/monsters/phase3/source/parallel_v05/battle/warlock/warlock_rig.json",
+  "base_rig_sha256": "04fbcd8e15b308135ca775698060efa96bea69ca6d03058698b5685d4cf2bd6d",
+  "originals": {
+    "components.png": "0568a1801cce4b8e744d1a8d641d46d089285090a2aa3199f08c92b27517a10a"
+  }
+}

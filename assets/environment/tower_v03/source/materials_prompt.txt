@@ -1,0 +1,9 @@
+Use case: stylized-concept
+Asset type: production material atlas for a top-down dark fantasy tower grid game.
+Primary request: ONE square 1024x1024 opaque texture atlas, EXACTLY four equal 512x512 square quadrants, no margins, no dividers. Flat orthographic surfaces, hand-painted refined 2D game material, cold cyan slate stone, weathered masonry.
+Top left quadrant: large worn blue-grey flagstones, staggered rectangular slabs (roughly 3 slabs wide, 4 rows), subtle thin dark seams, softly bevelled worn edges, restrained fine granular texture, no big cracks, no moss, no objects.
+Top right quadrant: solid continuous dark blue teal rough-cut bedrock wall-top surface, very low contrast broad stone planes, subtle weathering, NO tile grid, no bright veins, no distinct corner markings, no objects.
+Bottom left quadrant: straight-on grey cyan ashlar masonry wall facade, 3 staggered courses of large rectangular blocks, warm grey edge wear, dark recessed mortar, top and bottom edges straight and horizontally tileable. No perspective, no arch, no objects.
+Bottom right quadrant: finer pale desaturated teal ceremonial limestone paving, very large offset rectangular slabs, thin joints, restrained wear, no symbols, no gold, no lighting gradient.
+Lighting: even ambient soft light, readable medium-dark textures with subtle relief, no directional cast shadows. Material values: floor medium slate; wall top darker; facade intermediate.
+Constraints: all four panels fill exactly their quarter to the edges. No text, labels, palette swatches, borders, scenery, characters, doors, vegetation, paths or holes. Not pixel art. Quiet backgrounds to keep 40px characters clear. This is a texture source sheet, not a concept scene.

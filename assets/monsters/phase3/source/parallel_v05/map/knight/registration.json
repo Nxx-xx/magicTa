@@ -1,0 +1,64 @@
+{
+  "original_size": [
+    1254,
+    1254
+  ],
+  "crops": {
+    "head": [
+      114,
+      33,
+      237,
+      360
+    ],
+    "torso": [
+      474,
+      4,
+      307,
+      406
+    ],
+    "cape": [
+      875,
+      31,
+      360,
+      378
+    ],
+    "right_arm": [
+      144,
+      428,
+      151,
+      387
+    ],
+    "weapon": [
+      554,
+      426,
+      148,
+      393
+    ],
+    "left_arm": [
+      961,
+      428,
+      149,
+      387
+    ],
+    "right_leg": [
+      163,
+      835,
+      144,
+      397
+    ],
+    "left_leg": [
+      553,
+      835,
+      145,
+      397
+    ],
+    "ornament": [
+      927,
+      828,
+      253,
+      400
+    ]
+  },
+  "handedness": "right weapon = image left",
+  "camera": "front elevated orthographic"
+}

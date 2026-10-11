@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-01",
+  "tool": "built-in image_gen.imagegen",
+  "transparent_background": true,
+  "status": "draft",
+  "images": [
+    {
+      "sheet": "minotaur_attack",
+      "file": "source/minotaur_attack.png",
+      "prompt": "source/minotaur_attack.prompt.txt",
+      "generated_filename": "exec-99a44f4d-055c-4417-a993-36fecb746c72.png",
+      "reference": "assets/monsters/phase2/textures/minotaur.png",
+      "sha256": "12E5B2A37028ED6B672A2B5C958252B3436C029914B75FC1139DF9D1F9F20F54"
+    },
+    {
+      "sheet": "minotaur_defeat",
+      "file": "source/minotaur_defeat.png",
+      "prompt": "source/minotaur_defeat.prompt.txt",
+      "generated_filename": "exec-3b75b169-dd9d-4655-bb2a-7e33f3d4ef7b.png",
+      "reference": "assets/monsters/phase2/textures/minotaur.png",
+      "sha256": "9B719BE75F6A06E1A65ABBC6130D5A9BA187591CCA960AA9C2491C2F88DF3A2F"
+    },
+    {
+      "sheet": "minotaur_hit",
+      "file": "source/minotaur_hit.png",
+      "prompt": "source/minotaur_hit.prompt.txt",
+      "generated_filename": "exec-b0c648f3-9b02-4995-aea4-63ac66cd8896.png",
+      "reference": "assets/monsters/phase2/textures/minotaur.png",
+      "sha256": "80133F818D0CA7F856EB3BAD4B9E8ECACFC877CFCAA6FF45014EAAF1B6FBECCD"
+    },
+    {
+      "sheet": "minotaur_idle_rage",
+      "file": "source/minotaur_idle_rage.png",
+      "prompt": "source/minotaur_idle_rage.prompt.txt",
+      "generated_filename": "exec-d479211d-3e3f-4465-adf7-0291124f4194.png",
+      "reference": "assets/monsters/phase2/textures/minotaur.png",
+      "sha256": "F34ECAD034A4F28D9826A21F8C3DDCFD6AD0D786409A5B40340C183FD6BB635A"
+    },
+    {
+      "sheet": "slime_all",
+      "file": "source/slime_all.png",
+      "prompt": "source/slime_all.prompt.txt",
+      "generated_filename": "exec-f1033d04-0500-4364-9062-374c977d900a.png",
+      "reference": "assets/monsters/v01/textures/slime.png",
+      "sha256": "BA2E2A86BB86CC7204063AE23CB23F19945217A25C00FAB4BACA45EEDC3BAD03"
+    }
+  ]
+}

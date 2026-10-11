@@ -1,0 +1,397 @@
+{
+  "version": 1,
+  "status": "draft",
+  "entity": "golem_map",
+  "canvas": 512,
+  "runtime_size": 256,
+  "anchor": [
+    256,
+    448
+  ],
+  "rest_scale": 1,
+  "source": "golem_map_components.png",
+  "layers": [
+    {
+      "name": "torso",
+      "parent": "root",
+      "pivot": [
+        256,
+        346
+      ],
+      "crop": [
+        485,
+        54,
+        285,
+        379
+      ],
+      "image_pivot": [
+        141,
+        266
+      ],
+      "scale": 0.62,
+      "z": 0,
+      "art_scale": [
+        1.045,
+        1.0
+      ],
+      "art_material": {
+        "shadow_lift": 0.015,
+        "cool_mix": 0.07
+      }
+    },
+    {
+      "name": "head",
+      "parent": "torso",
+      "pivot": [
+        256,
+        179
+      ],
+      "crop": [
+        77,
+        76,
+        316,
+        317
+      ],
+      "image_pivot": [
+        131,
+        249
+      ],
+      "scale": 0.42,
+      "z": 5,
+      "art_scale": [
+        1.035,
+        1.0
+      ],
+      "art_material": {
+        "shadow_lift": 0.015,
+        "cool_mix": 0.07
+      }
+    },
+    {
+      "name": "far_arm",
+      "parent": "torso",
+      "pivot": [
+        342,
+        213
+      ],
+      "crop": [
+        121,
+        793,
+        211,
+        404
+      ],
+      "image_pivot": [
+        100,
+        62
+      ],
+      "scale": 0.44,
+      "z": -3,
+      "art_scale": [
+        1.0,
+        1.0
+      ],
+      "art_material": {
+        "shadow_lift": 0.015,
+        "cool_mix": 0.07
+      }
+    },
+    {
+      "name": "near_upper_arm",
+      "parent": "torso",
+      "pivot": [
+        171,
+        214
+      ],
+      "crop": [
+        515,
+        448,
+        218,
+        326
+      ],
+      "image_pivot": [
+        78,
+        50
+      ],
+      "scale": 0.4,
+      "z": 1,
+      "art_scale": [
+        1.055,
+        1.0
+      ],
+      "art_material": {
+        "shadow_lift": 0.015,
+        "cool_mix": 0.07
+      }
+    },
+    {
+      "name": "near_forearm",
+      "parent": "near_upper_arm",
+      "pivot": [
+        156,
+        290
+      ],
+      "crop": [
+        929,
+        440,
+        200,
+        333
+      ],
+      "image_pivot": [
+        92,
+        83
+      ],
+      "scale": 0.42,
+      "z": 3,
+      "art_scale": [
+        1.055,
+        1.0
+      ],
+      "art_material": {
+        "shadow_lift": 0.015,
+        "cool_mix": 0.07
+      }
+    },
+    {
+      "name": "near_shoulder",
+      "parent": "torso",
+      "pivot": [
+        170,
+        211
+      ],
+      "crop": [
+        900,
+        75,
+        285,
+        315
+      ],
+      "image_pivot": [
+        136,
+        110
+      ],
+      "scale": 0.38,
+      "z": 4,
+      "art_scale": [
+        1.0,
+        1.0
+      ],
+      "art_material": {
+        "shadow_lift": 0.015,
+        "cool_mix": 0.07
+      }
+    },
+    {
+      "name": "far_shoulder",
+      "parent": "torso",
+      "pivot": [
+        341,
+        211
+      ],
+      "crop": [
+        72,
+        448,
+        277,
+        310
+      ],
+      "image_pivot": [
+        136,
+        150
+      ],
+      "scale": 0.38,
+      "z": 2,
+      "art_scale": [
+        1.0,
+        1.0
+      ],
+      "art_material": {
+        "shadow_lift": 0.015,
+        "cool_mix": 0.07
+      }
+    },
+    {
+      "name": "near_leg",
+      "parent": "root",
+      "pivot": [
+        210,
+        341
+      ],
+      "crop": [
+        515,
+        800,
+        186,
+        404
+      ],
+      "image_pivot": [
+        92,
+        68
+      ],
+      "scale": 0.31,
+      "z": -1,
+      "art_scale": [
+        1.0,
+        1.0
+      ],
+      "art_material": {
+        "shadow_lift": 0.015,
+        "cool_mix": 0.07
+      }
+    },
+    {
+      "name": "far_leg",
+      "parent": "root",
+      "pivot": [
+        298,
+        341
+      ],
+      "crop": [
+        938,
+        800,
+        188,
+        400
+      ],
+      "image_pivot": [
+        92,
+        68
+      ],
+      "scale": 0.31,
+      "z": -2,
+      "art_scale": [
+        1.0,
+        1.0
+      ],
+      "art_material": {
+        "shadow_lift": 0.015,
+        "cool_mix": 0.07
+      }
+    }
+  ],
+  "actions": {
+    "idle": {
+      "fps": 6,
+      "loop": true,
+      "events": {},
+      "poses": [
+        {
+          "torso": {
+            "p": [
+              0,
+              0
+            ]
+          },
+          "head": {
+            "r": 0
+          },
+          "near_upper_arm": {
+            "r": 0
+          },
+          "near_forearm": {
+            "r": 0.0
+          },
+          "far_arm": {
+            "r": 0.0
+          },
+          "near_shoulder": {
+            "r": 0.0
+          },
+          "far_shoulder": {
+            "r": 0.0
+          }
+        },
+        {
+          "torso": {
+            "p": [
+              0,
+              -2
+            ]
+          },
+          "head": {
+            "r": -0.6
+          },
+          "near_upper_arm": {
+            "r": 1
+          },
+          "near_forearm": {
+            "r": -0.6
+          },
+          "far_arm": {
+            "r": -0.7
+          },
+          "near_shoulder": {
+            "r": 0.3
+          },
+          "far_shoulder": {
+            "r": -0.2
+          }
+        },
+        {
+          "torso": {
+            "p": [
+              0,
+              -3
+            ]
+          },
+          "head": {
+            "r": -1
+          },
+          "near_upper_arm": {
+            "r": 1.5
+          },
+          "near_forearm": {
+            "r": -0.8999999999999999
+          },
+          "far_arm": {
+            "r": -1.0499999999999998
+          },
+          "near_shoulder": {
+            "r": 0.44999999999999996
+          },
+          "far_shoulder": {
+            "r": -0.30000000000000004
+          }
+        },
+        {
+          "torso": {
+            "p": [
+              0,
+              -1
+            ]
+          },
+          "head": {
+            "r": 0.3
+          },
+          "near_upper_arm": {
+            "r": -0.5
+          },
+          "near_forearm": {
+            "r": 0.3
+          },
+          "far_arm": {
+            "r": 0.35
+          },
+          "near_shoulder": {
+            "r": -0.15
+          },
+          "far_shoulder": {
+            "r": 0.1
+          }
+        }
+      ]
+    }
+  },
+  "acceptance": "Independent map camera, stable feet. Review shoulders and closed torso seams.",
+  "art_polish": {
+    "baseline_source": "res://assets/monsters/phase3/source/golem_v06/golem_map_rig.json",
+    "description": "Local painted component width and material separation; unchanged bone pivots, contact paths, root, action poses/events/timing and physical accessories.",
+    "changed_components": [
+      "torso",
+      "head",
+      "far_arm",
+      "near_upper_arm",
+      "near_forearm",
+      "near_shoulder",
+      "far_shoulder",
+      "near_leg",
+      "far_leg"
+    ],
+    "human_signoff": false
+  }
+}

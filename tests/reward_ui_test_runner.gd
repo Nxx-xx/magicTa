@@ -1,5 +1,5 @@
 extends SceneTree
-const Screen = preload("res://scripts/ui/map_screen.gd")
+const Screen = preload("res://tests/legacy_map_screen_fixture.gd")
 const Core = preload("res://scripts/core/map_engine.gd")
 var failures := 0
 var checks := 0
@@ -50,7 +50,8 @@ func _run() -> void:
 	screen.game.persistence_enabled = false
 	root.add_child(screen)
 	screen.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
-	screen._start("42")
+	screen.game.start("42")
+	screen._open_map()
 	screen.game.state.player.hp = 80
 	_fixture(screen, {"type": "potion", "name": "疗愈药剂", "amount": 45})
 	await _frames()
@@ -61,18 +62,24 @@ func _run() -> void:
 	screen.game._grant_item("merchant_seal")
 	_fixture(screen, {"type": "shop", "name": "烛火商人", "offers": ["buy_steel", "buy_plate", "buy_potion"], "purchased": false})
 	await _frames()
+	screen.find_child("RewardChoices", true, false).option_button("0").pressed.emit()
+	await _frames()
 	_check(_text(screen).contains("购买后：攻击 20（+4）") and _text(screen).contains("金币 58"), "shop displays gold-aware final attack and balance")
 	await _capture("reward_shop")
+	screen._act(func(): return screen.game.buy(0))
+	await _frames()
+	_check(_text(screen).contains("已售罄") and _text(screen).contains("骑士板甲") and _text(screen).contains("持有金币 · 58"), "purchase keeps other offers and updates balance")
+	await _capture("reward_shop_partial")
 	_fixture(screen, {"type": "choice", "name": "遗物二选一", "choices": ["blood_sword", "stone_heart"], "gold": 25})
 	await _frames()
-	_check(_text(screen).contains("选择 · 嗜血剑") and _text(screen).contains("选择 · 岩心") and _text(screen).contains("另获 25 金币"), "choice shows both items and attached gold")
+	_check(_text(screen).contains("嗜血剑") and _text(screen).contains("岩心") and _text(screen).contains("另获 25 金币"), "choice shows both items and attached gold")
 	await _capture("reward_choice")
 	_fixture(screen, {"type": "event", "name": "血色祭坛", "event_id": "altar"})
 	await _frames()
-	_check(_text(screen).contains("选择 · 献祭") and _text(screen).contains("选择 · 绕行"), "event options render")
+	_check(_text(screen).contains("献祭") and _text(screen).contains("绕行"), "event options render")
 	_fixture(screen, {"type": "rest", "name": "旅人休息点", "options": screen.game.generator.reward_config.rest_options.duplicate(true)})
 	await _frames()
-	_check(_text(screen).contains("选择 · 休息") and _text(screen).contains("选择 · 磨砺"), "rest options render")
+	_check(_text(screen).contains("休息") and _text(screen).contains("磨砺"), "rest options render")
 	screen.game.cancel_pending()
 	screen.game._grant_item("iron_sword")
 	screen.game._grant_item("iron_sword")
@@ -88,6 +95,10 @@ func _run() -> void:
 		_check(screen.body.size.x <= screen.scroll.size.x, "content fits viewport width %d" % width)
 		if width == 320:
 			await _capture("reward_mobile")
+	screen.game.state.pending = {"kind":"floor_choice"}
+	screen._render(true)
+	await _frames()
+	_check(_text(screen).contains("通过楼梯") and not _text(screen).contains("选择地图主题") and not _text(screen).contains("进入战斗层"), "legacy floor prompt has only stair action")
 	root.remove_child(screen)
 	screen.free()
 	print("Reward UI tests: %d checks, %d failures" % [checks, failures])

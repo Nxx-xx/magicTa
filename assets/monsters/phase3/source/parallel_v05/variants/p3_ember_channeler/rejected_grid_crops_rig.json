@@ -1,0 +1,1507 @@
+{
+  "version": 1,
+  "status": "draft",
+  "entity": "p3_ember_channeler",
+  "camera": "three-quarter facing left",
+  "canvas": 512,
+  "runtime_size": 256,
+  "anchor": [
+    256,
+    448
+  ],
+  "rest_scale": 0.87,
+  "source": "base_components.png",
+  "layers": [
+    {
+      "name": "skirt",
+      "parent": "root",
+      "pivot": [
+        299,
+        325
+      ],
+      "z": -2,
+      "crop": [
+        850,
+        50,
+        365,
+        365
+      ],
+      "image_pivot": [
+        185,
+        20
+      ],
+      "scale": 0.43,
+      "source": "base_components.png"
+    },
+    {
+      "name": "torso",
+      "parent": "root",
+      "pivot": [
+        299,
+        213
+      ],
+      "z": 0,
+      "crop": [
+        495,
+        43,
+        257,
+        378
+      ],
+      "image_pivot": [
+        125,
+        25
+      ],
+      "scale": 0.43,
+      "source": "base_components.png"
+    },
+    {
+      "name": "hood",
+      "parent": "torso",
+      "pivot": [
+        287,
+        215
+      ],
+      "z": 4,
+      "crop": [
+        85,
+        65,
+        310,
+        350
+      ],
+      "image_pivot": [
+        162,
+        292
+      ],
+      "scale": 0.43,
+      "source": "base_components.png"
+    },
+    {
+      "name": "far_upper_arm",
+      "parent": "torso",
+      "pivot": [
+        330,
+        240
+      ],
+      "z": -3,
+      "crop": [
+        120,
+        460,
+        205,
+        365
+      ],
+      "image_pivot": [
+        108,
+        35
+      ],
+      "scale": 0.23,
+      "source": "base_components.png"
+    },
+    {
+      "name": "far_forearm",
+      "parent": "far_upper_arm",
+      "pivot": [
+        344,
+        297
+      ],
+      "z": -2,
+      "crop": [
+        540,
+        450,
+        180,
+        375
+      ],
+      "image_pivot": [
+        80,
+        40
+      ],
+      "scale": 0.25,
+      "source": "base_components.png"
+    },
+    {
+      "name": "near_upper_arm",
+      "parent": "torso",
+      "pivot": [
+        259,
+        237
+      ],
+      "z": 3,
+      "crop": [
+        145,
+        850,
+        220,
+        365
+      ],
+      "image_pivot": [
+        85,
+        37
+      ],
+      "scale": 0.23,
+      "source": "base_components.png"
+    },
+    {
+      "name": "near_forearm",
+      "parent": "near_upper_arm",
+      "pivot": [
+        237,
+        296
+      ],
+      "z": 5,
+      "crop": [
+        465,
+        850,
+        285,
+        360
+      ],
+      "image_pivot": [
+        205,
+        40
+      ],
+      "scale": 0.26,
+      "source": "base_components.png"
+    },
+    {
+      "name": "staff_grip",
+      "parent": "far_forearm",
+      "pivot": [
+        332,
+        359
+      ],
+      "z": 6,
+      "joint_only": true
+    },
+    {
+      "name": "cast_grip",
+      "parent": "near_forearm",
+      "pivot": [
+        190,
+        352
+      ],
+      "z": 7,
+      "joint_only": true
+    },
+    {
+      "name": "staff",
+      "parent": "root",
+      "pivot": [
+        332,
+        359
+      ],
+      "z": 2,
+      "crop": [
+        985,
+        425,
+        100,
+        410
+      ],
+      "image_pivot": [
+        49,
+        282
+      ],
+      "scale": 0.75,
+      "source": "base_components.png"
+    },
+    {
+      "name": "flame",
+      "parent": "root",
+      "pivot": [
+        185,
+        340
+      ],
+      "z": 7,
+      "crop": [
+        900,
+        850,
+        250,
+        365
+      ],
+      "image_pivot": [
+        125,
+        255
+      ],
+      "scale": 0.25,
+      "source": "base_components.png"
+    },
+    {
+      "name": "trident_head",
+      "parent": "staff",
+      "pivot": [
+        332,
+        150
+      ],
+      "crop": [
+        0,
+        0,
+        627,
+        627
+      ],
+      "image_pivot": [
+        313.5,
+        595.65
+      ],
+      "scale": 0.1419457735247209,
+      "z": 6,
+      "source": "p3_ember_channeler_accessories.png"
+    },
+    {
+      "name": "furnace_ring",
+      "parent": "torso",
+      "pivot": [
+        344,
+        221
+      ],
+      "crop": [
+        642,
+        0,
+        605,
+        627
+      ],
+      "image_pivot": [
+        302.5,
+        313.5
+      ],
+      "scale": 0.2231404958677686,
+      "z": -4,
+      "source": "p3_ember_channeler_accessories.png"
+    },
+    {
+      "name": "furnace_collar",
+      "parent": "torso",
+      "pivot": [
+        296,
+        238
+      ],
+      "crop": [
+        0,
+        627,
+        627,
+        627
+      ],
+      "image_pivot": [
+        313.5,
+        313.5
+      ],
+      "scale": 0.12121212121212122,
+      "z": 5,
+      "source": "p3_ember_channeler_accessories.png"
+    },
+    {
+      "name": "charge_flame",
+      "parent": "cast_grip",
+      "pivot": [
+        190,
+        327
+      ],
+      "crop": [
+        628,
+        627,
+        612,
+        627
+      ],
+      "image_pivot": [
+        306.0,
+        501.6
+      ],
+      "scale": 0.10947712418300654,
+      "z": 8,
+      "source": "p3_ember_channeler_accessories.png"
+    }
+  ],
+  "actions": {
+    "idle": {
+      "fps": 6,
+      "loop": true,
+      "events": {},
+      "poses": [
+        {
+          "torso": {
+            "p": [
+              0,
+              0
+            ],
+            "r": 0
+          },
+          "hood": {
+            "r": 0
+          },
+          "skirt": {
+            "r": 0.0,
+            "p": [
+              0,
+              0.0
+            ]
+          },
+          "near_upper_arm": {
+            "r": 0
+          },
+          "near_forearm": {
+            "r": 0
+          },
+          "far_upper_arm": {
+            "r": 0
+          },
+          "far_forearm": {
+            "r": 0.0
+          },
+          "staff": {
+            "p": [
+              0.0,
+              0.0
+            ],
+            "r": 0.0
+          },
+          "flame": {
+            "p": [
+              5.0,
+              12.0
+            ],
+            "r": 0.0,
+            "a": 0.65
+          },
+          "charge_flame": {
+            "a": 0
+          }
+        },
+        {
+          "torso": {
+            "p": [
+              0,
+              -1
+            ],
+            "r": 0
+          },
+          "hood": {
+            "r": -1
+          },
+          "skirt": {
+            "r": 0.0,
+            "p": [
+              0,
+              -0.02
+            ]
+          },
+          "near_upper_arm": {
+            "r": 1
+          },
+          "near_forearm": {
+            "r": 1
+          },
+          "far_upper_arm": {
+            "r": 0
+          },
+          "far_forearm": {
+            "r": 0.0
+          },
+          "staff": {
+            "p": [
+              0.0,
+              -1.0
+            ],
+            "r": 0.0
+          },
+          "flame": {
+            "p": [
+              2.0479180415221094,
+              8.932671040658647
+            ],
+            "r": 0.6,
+            "a": 0.72
+          },
+          "charge_flame": {
+            "a": 0
+          }
+        },
+        {
+          "torso": {
+            "p": [
+              0,
+              -2
+            ],
+            "r": 0
+          },
+          "hood": {
+            "r": -2
+          },
+          "skirt": {
+            "r": 0.0,
+            "p": [
+              0,
+              -0.04
+            ]
+          },
+          "near_upper_arm": {
+            "r": 2
+          },
+          "near_forearm": {
+            "r": 2
+          },
+          "far_upper_arm": {
+            "r": 0
+          },
+          "far_forearm": {
+            "r": 0.0
+          },
+          "staff": {
+            "p": [
+              0.0,
+              -2.0
+            ],
+            "r": 0.0
+          },
+          "flame": {
+            "p": [
+              -0.8375413917504204,
+              5.781302415247865
+            ],
+            "r": 1.2,
+            "a": 0.8
+          },
+          "charge_flame": {
+            "a": 0
+          }
+        },
+        {
+          "torso": {
+            "p": [
+              0,
+              -1
+            ],
+            "r": 0
+          },
+          "hood": {
+            "r": -1
+          },
+          "skirt": {
+            "r": 0.0,
+            "p": [
+              0,
+              -0.02
+            ]
+          },
+          "near_upper_arm": {
+            "r": 0.5
+          },
+          "near_forearm": {
+            "r": 0
+          },
+          "far_upper_arm": {
+            "r": 0
+          },
+          "far_forearm": {
+            "r": 0.0
+          },
+          "staff": {
+            "p": [
+              0.0,
+              -1.0
+            ],
+            "r": 0.0
+          },
+          "flame": {
+            "p": [
+              3.9990757262591785,
+              10.39349020299187
+            ],
+            "r": 0.15,
+            "a": 0.7
+          },
+          "charge_flame": {
+            "a": 0
+          }
+        }
+      ]
+    },
+    "attack": {
+      "fps": 12,
+      "loop": false,
+      "events": {
+        "hit": 3,
+        "cast": 2
+      },
+      "poses": [
+        {
+          "torso": {
+            "p": [
+              0,
+              2
+            ],
+            "r": 0
+          },
+          "hood": {
+            "r": 0
+          },
+          "skirt": {
+            "r": 0.0,
+            "p": [
+              0,
+              0.04
+            ]
+          },
+          "near_upper_arm": {
+            "r": -8
+          },
+          "near_forearm": {
+            "r": 12
+          },
+          "far_upper_arm": {
+            "r": 0
+          },
+          "far_forearm": {
+            "r": 0.0
+          },
+          "staff": {
+            "p": [
+              0.0,
+              2.0
+            ],
+            "r": 0.0
+          },
+          "flame": {
+            "p": [
+              9.633442552446553,
+              13.072656825450395
+            ],
+            "r": 1.2,
+            "a": 0.5
+          },
+          "charge_flame": {
+            "a": 0
+          }
+        },
+        {
+          "torso": {
+            "p": [
+              0,
+              5
+            ],
+            "r": 3
+          },
+          "hood": {
+            "r": -3
+          },
+          "skirt": {
+            "r": 0.36,
+            "p": [
+              0,
+              0.1
+            ]
+          },
+          "near_upper_arm": {
+            "r": 20
+          },
+          "near_forearm": {
+            "r": 35
+          },
+          "far_upper_arm": {
+            "r": 0
+          },
+          "far_forearm": {
+            "r": 0.0
+          },
+          "staff": {
+            "p": [
+              -7.686274964568838,
+              6.526998630184892
+            ],
+            "r": 3.0
+          },
+          "flame": {
+            "p": [
+              -42.90238650055494,
+              -64.59540961097053
+            ],
+            "r": 17.4,
+            "a": 0.7
+          },
+          "charge_flame": {
+            "a": 0
+          }
+        },
+        {
+          "torso": {
+            "p": [
+              0,
+              3
+            ],
+            "r": -3
+          },
+          "hood": {
+            "r": 1
+          },
+          "skirt": {
+            "r": -0.36,
+            "p": [
+              0,
+              0.06
+            ]
+          },
+          "near_upper_arm": {
+            "r": 35
+          },
+          "near_forearm": {
+            "r": 40
+          },
+          "far_upper_arm": {
+            "r": -5
+          },
+          "far_forearm": {
+            "r": 3.0
+          },
+          "staff": {
+            "p": [
+              14.61652578631083,
+              -0.35262050566905145
+            ],
+            "r": -5.0
+          },
+          "flame": {
+            "p": [
+              -42.394376793703884,
+              -86.95754363694903
+            ],
+            "r": 21.599999999999998,
+            "a": 1
+          },
+          "charge_flame": {
+            "a": 0
+          }
+        },
+        {
+          "torso": {
+            "p": [
+              0,
+              2
+            ],
+            "r": -7
+          },
+          "hood": {
+            "r": 3
+          },
+          "skirt": {
+            "r": -0.84,
+            "p": [
+              0,
+              0.04
+            ]
+          },
+          "near_upper_arm": {
+            "r": 58
+          },
+          "near_forearm": {
+            "r": -5
+          },
+          "far_upper_arm": {
+            "r": -8
+          },
+          "far_forearm": {
+            "r": 4.8
+          },
+          "staff": {
+            "p": [
+              28.50395671589382,
+              -6.399753506274237
+            ],
+            "r": -10.2
+          },
+          "flame": {
+            "p": [
+              -55.40561438352438,
+              -71.17952857472807
+            ],
+            "r": 13.799999999999999,
+            "a": 0.9
+          },
+          "charge_flame": {
+            "a": 0
+          }
+        },
+        {
+          "torso": {
+            "p": [
+              0,
+              1
+            ],
+            "r": -3
+          },
+          "hood": {
+            "r": 0
+          },
+          "skirt": {
+            "r": -0.36,
+            "p": [
+              0,
+              0.02
+            ]
+          },
+          "near_upper_arm": {
+            "r": 25
+          },
+          "near_forearm": {
+            "r": 10
+          },
+          "far_upper_arm": {
+            "r": 0
+          },
+          "far_forearm": {
+            "r": 0.0
+          },
+          "staff": {
+            "p": [
+              7.595824258370726,
+              -0.927174481849363
+            ],
+            "r": -3.0
+          },
+          "flame": {
+            "p": [
+              -36.72269156877198,
+              -30.8924625860829
+            ],
+            "r": 9.6,
+            "a": 0.55
+          },
+          "charge_flame": {
+            "a": 0
+          }
+        },
+        {
+          "torso": {
+            "p": [
+              0,
+              0
+            ],
+            "r": 0
+          },
+          "hood": {
+            "r": 0
+          },
+          "skirt": {
+            "r": 0.0,
+            "p": [
+              0,
+              0.0
+            ]
+          },
+          "near_upper_arm": {
+            "r": 0
+          },
+          "near_forearm": {
+            "r": 0
+          },
+          "far_upper_arm": {
+            "r": 0
+          },
+          "far_forearm": {
+            "r": 0.0
+          },
+          "staff": {
+            "p": [
+              0.0,
+              0.0
+            ],
+            "r": 0.0
+          },
+          "flame": {
+            "p": [
+              5.0,
+              12.0
+            ],
+            "r": 0.0,
+            "a": 0.65
+          },
+          "charge_flame": {
+            "a": 0
+          }
+        }
+      ]
+    },
+    "hit": {
+      "fps": 12,
+      "loop": false,
+      "events": {},
+      "poses": [
+        {
+          "torso": {
+            "p": [
+              0,
+              7
+            ],
+            "r": 9
+          },
+          "hood": {
+            "r": 7
+          },
+          "skirt": {
+            "r": 1.08,
+            "p": [
+              0,
+              0.14
+            ]
+          },
+          "near_upper_arm": {
+            "r": -12
+          },
+          "near_forearm": {
+            "r": 8
+          },
+          "far_upper_arm": {
+            "r": 8
+          },
+          "far_forearm": {
+            "r": -4.8
+          },
+          "staff": {
+            "p": [
+              -34.71344069501771,
+              9.183516456600444
+            ],
+            "r": 12.2
+          },
+          "flame": {
+            "p": [
+              0.15413846478111282,
+              9.208258344536546
+            ],
+            "r": 1.5,
+            "a": 0.4
+          },
+          "charge_flame": {
+            "a": 0
+          }
+        },
+        {
+          "torso": {
+            "p": [
+              0,
+              2
+            ],
+            "r": 3
+          },
+          "hood": {
+            "r": 2
+          },
+          "skirt": {
+            "r": 0.36,
+            "p": [
+              0,
+              0.04
+            ]
+          },
+          "near_upper_arm": {
+            "r": -3
+          },
+          "near_forearm": {
+            "r": 3
+          },
+          "far_upper_arm": {
+            "r": 0
+          },
+          "far_forearm": {
+            "r": 0.0
+          },
+          "staff": {
+            "p": [
+              -7.686274964568838,
+              3.5269986301848917
+            ],
+            "r": 3.0
+          },
+          "flame": {
+            "p": [
+              0.9323539769165734,
+              9.337134587229798
+            ],
+            "r": 0.8999999999999999,
+            "a": 0.6
+          },
+          "charge_flame": {
+            "a": 0
+          }
+        }
+      ]
+    },
+    "defeat": {
+      "fps": 10,
+      "loop": false,
+      "events": {
+        "release": 3,
+        "extinguish": 3
+      },
+      "poses": [
+        {
+          "torso": {
+            "p": [
+              0,
+              7
+            ],
+            "r": 5
+          },
+          "hood": {
+            "r": -5
+          },
+          "skirt": {
+            "r": 0.6,
+            "p": [
+              0,
+              0.14
+            ]
+          },
+          "near_upper_arm": {
+            "r": -8
+          },
+          "near_forearm": {
+            "r": 0
+          },
+          "far_upper_arm": {
+            "r": 0
+          },
+          "far_forearm": {
+            "r": 0.0
+          },
+          "staff": {
+            "p": [
+              -12.850313404130475,
+              9.320565432067554
+            ],
+            "r": 5.0
+          },
+          "flame": {
+            "p": [
+              9.17367132025936,
+              18.876020521834675
+            ],
+            "r": -0.8999999999999999,
+            "a": 0.45
+          },
+          "charge_flame": {
+            "a": 0
+          }
+        },
+        {
+          "torso": {
+            "p": [
+              0,
+              18
+            ],
+            "r": 3
+          },
+          "hood": {
+            "r": -10
+          },
+          "skirt": {
+            "r": 0.36,
+            "p": [
+              0,
+              0.36
+            ]
+          },
+          "near_upper_arm": {
+            "r": -10
+          },
+          "near_forearm": {
+            "r": 8
+          },
+          "far_upper_arm": {
+            "r": 0
+          },
+          "far_forearm": {
+            "r": 0.0
+          },
+          "staff": {
+            "p": [
+              -7.686274964568838,
+              19.52699863018489
+            ],
+            "r": 3.0
+          },
+          "flame": {
+            "p": [
+              10.18285515194276,
+              29.286226912348866
+            ],
+            "r": 0.3,
+            "a": 0.25
+          },
+          "charge_flame": {
+            "a": 0
+          }
+        },
+        {
+          "torso": {
+            "p": [
+              0,
+              35
+            ],
+            "r": -5
+          },
+          "hood": {
+            "r": -15
+          },
+          "skirt": {
+            "r": -0.6,
+            "p": [
+              0,
+              0.7000000000000001
+            ]
+          },
+          "near_upper_arm": {
+            "r": 8
+          },
+          "near_forearm": {
+            "r": 10
+          },
+          "far_upper_arm": {
+            "r": 0
+          },
+          "far_forearm": {
+            "r": 0.0
+          },
+          "staff": {
+            "p": [
+              12.599163478185687,
+              31.568286410722123
+            ],
+            "r": -5.0
+          },
+          "flame": {
+            "p": [
+              -7.206373368822824,
+              37.154678051094834
+            ],
+            "r": 3.9,
+            "a": 0.1
+          },
+          "charge_flame": {
+            "a": 0
+          }
+        },
+        {
+          "torso": {
+            "p": [
+              0,
+              52
+            ],
+            "r": -10
+          },
+          "hood": {
+            "r": -20
+          },
+          "skirt": {
+            "r": -1.2,
+            "p": [
+              0,
+              1.04
+            ]
+          },
+          "near_upper_arm": {
+            "r": 18
+          },
+          "near_forearm": {
+            "r": 20
+          },
+          "far_upper_arm": {
+            "r": 12
+          },
+          "far_forearm": {
+            "r": -7.199999999999999
+          },
+          "staff": {
+            "p": [
+              -26.399999999999977,
+              31.19999999999999
+            ],
+            "r": -30.0
+          },
+          "flame": {
+            "p": [
+              -19.01080870581984,
+              38.32522276276444
+            ],
+            "r": 8.4,
+            "a": 0
+          },
+          "charge_flame": {
+            "a": 0
+          }
+        },
+        {
+          "torso": {
+            "p": [
+              0,
+              65
+            ],
+            "r": -14
+          },
+          "hood": {
+            "r": -25
+          },
+          "skirt": {
+            "r": -1.68,
+            "p": [
+              0,
+              1.3
+            ]
+          },
+          "near_upper_arm": {
+            "r": 25
+          },
+          "near_forearm": {
+            "r": 25
+          },
+          "far_upper_arm": {
+            "r": 18
+          },
+          "far_forearm": {
+            "r": -10.799999999999999
+          },
+          "staff": {
+            "p": [
+              -57.19999999999999,
+              67.60000000000002
+            ],
+            "r": -65.0
+          },
+          "flame": {
+            "p": [
+              -22.799005183713632,
+              42.36122400698963
+            ],
+            "r": 10.799999999999999,
+            "a": 0
+          },
+          "charge_flame": {
+            "a": 0
+          }
+        },
+        {
+          "torso": {
+            "p": [
+              0,
+              68
+            ],
+            "r": -15
+          },
+          "hood": {
+            "r": -26
+          },
+          "skirt": {
+            "r": -1.7999999999999998,
+            "p": [
+              0,
+              1.36
+            ]
+          },
+          "near_upper_arm": {
+            "r": 26
+          },
+          "near_forearm": {
+            "r": 26
+          },
+          "far_upper_arm": {
+            "r": 19
+          },
+          "far_forearm": {
+            "r": -11.4
+          },
+          "staff": {
+            "p": [
+              -61.60000000000002,
+              72.80000000000001
+            ],
+            "r": -70.0
+          },
+          "flame": {
+            "p": [
+              -22.51641500090443,
+              44.69147003466884
+            ],
+            "r": 11.1,
+            "a": 0
+          },
+          "charge_flame": {
+            "a": 0
+          }
+        }
+      ]
+    },
+    "charge": {
+      "fps": 8,
+      "loop": false,
+      "events": {
+        "charge_peak": 2
+      },
+      "poses": [
+        {
+          "torso": {
+            "p": [
+              0,
+              2
+            ],
+            "r": 0
+          },
+          "hood": {
+            "r": 0
+          },
+          "skirt": {
+            "r": 0.0,
+            "p": [
+              0,
+              0.0
+            ]
+          },
+          "near_upper_arm": {
+            "r": 8
+          },
+          "near_forearm": {
+            "r": 10
+          },
+          "far_upper_arm": {
+            "r": 0
+          },
+          "far_forearm": {
+            "r": 0
+          },
+          "staff": {
+            "p": [
+              0.0,
+              2.0
+            ],
+            "r": 0
+          },
+          "flame": {
+            "p": [
+              5.0,
+              12.0
+            ],
+            "r": 0.0,
+            "a": 0
+          },
+          "charge_flame": {
+            "a": 0.25,
+            "r": 0
+          },
+          "furnace_ring": {
+            "r": 0
+          }
+        },
+        {
+          "torso": {
+            "p": [
+              0,
+              8
+            ],
+            "r": 3
+          },
+          "hood": {
+            "r": -5
+          },
+          "skirt": {
+            "r": 0.0,
+            "p": [
+              0,
+              0.0
+            ]
+          },
+          "near_upper_arm": {
+            "r": 20
+          },
+          "near_forearm": {
+            "r": 25
+          },
+          "far_upper_arm": {
+            "r": -8
+          },
+          "far_forearm": {
+            "r": 5
+          },
+          "staff": {
+            "p": [
+              3.4590478687332507,
+              8.148329474667037
+            ],
+            "r": 0
+          },
+          "flame": {
+            "p": [
+              5.0,
+              12.0
+            ],
+            "r": 0.0,
+            "a": 0
+          },
+          "charge_flame": {
+            "a": 0.6,
+            "r": -7
+          },
+          "furnace_ring": {
+            "r": -8
+          }
+        },
+        {
+          "torso": {
+            "p": [
+              0,
+              4
+            ],
+            "r": -2
+          },
+          "hood": {
+            "r": -8
+          },
+          "skirt": {
+            "r": 0.0,
+            "p": [
+              0,
+              0.0
+            ]
+          },
+          "near_upper_arm": {
+            "r": 28
+          },
+          "near_forearm": {
+            "r": 32
+          },
+          "far_upper_arm": {
+            "r": -12
+          },
+          "far_forearm": {
+            "r": 8
+          },
+          "staff": {
+            "p": [
+              20.843592243779767,
+              -1.2636831368806725
+            ],
+            "r": -6
+          },
+          "flame": {
+            "p": [
+              5.0,
+              12.0
+            ],
+            "r": 0.0,
+            "a": 0
+          },
+          "charge_flame": {
+            "a": 1,
+            "r": 10
+          },
+          "furnace_ring": {
+            "r": -15
+          }
+        },
+        {
+          "torso": {
+            "p": [
+              0,
+              1
+            ],
+            "r": 0
+          },
+          "hood": {
+            "r": -1
+          },
+          "skirt": {
+            "r": 0.0,
+            "p": [
+              0,
+              0.0
+            ]
+          },
+          "near_upper_arm": {
+            "r": 10
+          },
+          "near_forearm": {
+            "r": 15
+          },
+          "far_upper_arm": {
+            "r": -3
+          },
+          "far_forearm": {
+            "r": 2
+          },
+          "staff": {
+            "p": [
+              4.047839849646721,
+              0.3891660705531308
+            ],
+            "r": -1
+          },
+          "flame": {
+            "p": [
+              5.0,
+              12.0
+            ],
+            "r": 0.0,
+            "a": 0
+          },
+          "charge_flame": {
+            "a": 0.4,
+            "r": 3
+          },
+          "furnace_ring": {
+            "r": -4
+          }
+        }
+      ]
+    }
+  },
+  "pose_holds": {},
+  "effect_layers": [
+    "flame",
+    "charge_flame"
+  ],
+  "effect_actions": [
+    "idle",
+    "attack",
+    "hit",
+    "defeat",
+    "charge"
+  ],
+  "acceptance": "Draft, explicit visual review required; human_signoff=false",
+  "base_provenance": {
+    "base_entity": "warlock",
+    "base_rig": "assets/monsters/phase3/source/parallel_v05/battle/warlock/warlock_rig.json",
+    "base_rig_sha256": "04fbcd8e15b308135ca775698060efa96bea69ca6d03058698b5685d4cf2bd6d",
+    "originals": {
+      "components.png": "0568a1801cce4b8e744d1a8d641d46d089285090a2aa3199f08c92b27517a10a"
+    }
+  },
+  "scene": "battle",
+  "attachment_registration": {
+    "image_size": [
+      1254,
+      1254
+    ],
+    "alpha_bbox_crops": [
+      [
+        0,
+        0,
+        627,
+        627
+      ],
+      [
+        642,
+        0,
+        605,
+        627
+      ],
+      [
+        0,
+        627,
+        627,
+        627
+      ],
+      [
+        628,
+        627,
+        612,
+        627
+      ]
+    ],
+    "non_effect_identity_layers": [
+      "trident_head",
+      "furnace_ring",
+      "furnace_collar"
+    ]
+  }
+}

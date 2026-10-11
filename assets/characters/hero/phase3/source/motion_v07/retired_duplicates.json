@@ -1,0 +1,29 @@
+{
+  "reason": "Byte-identical body PNGs: map interact frame0 shares corresponding idle frame0; no pixel or animation changes. No direct runtime refs; manifest is sole consumer.",
+  "records": [
+    {
+      "old": "res://assets/characters/hero/phase3/textures/v06/map_interact_down/body/00.png",
+      "shared": "res://assets/characters/hero/phase3/textures/v06/map_idle_down/body/00.png",
+      "sha256": "88963f844467cbacc1406fd6d2bf1133e1f736abaea52138495a5aceb52036e9",
+      "archive": "source/motion_v07/retired_duplicates/textures/v06/map_interact_down/body/00.png"
+    },
+    {
+      "old": "res://assets/characters/hero/phase3/textures/v06/map_interact_left/body/00.png",
+      "shared": "res://assets/characters/hero/phase3/textures/v06/map_idle_left/body/00.png",
+      "sha256": "e167d66bf69fdcfb1d5b01c675e619f3fb42d9fecc5461fc9a14b0df646007d9",
+      "archive": "source/motion_v07/retired_duplicates/textures/v06/map_interact_left/body/00.png"
+    },
+    {
+      "old": "res://assets/characters/hero/phase3/textures/v06/map_interact_up/body/00.png",
+      "shared": "res://assets/characters/hero/phase3/textures/v06/map_idle_up/body/00.png",
+      "sha256": "d79964ea4b4237931305a22651cb361c2ebde9a8841e5ecc9bbb55f48a93ae22",
+      "archive": "source/motion_v07/retired_duplicates/textures/v06/map_interact_up/body/00.png"
+    },
+    {
+      "old": "res://assets/characters/hero/phase3/textures/v06/map_interact_right/body/00.png",
+      "shared": "res://assets/characters/hero/phase3/textures/v06/map_idle_right/body/00.png",
+      "sha256": "986d4d17bcb1fab17e13f39c15af02d39df8a3e257619c5a77359c349ae49f12",
+      "archive": "source/motion_v07/retired_duplicates/textures/v06/map_interact_right/body/00.png"
+    }
+  ]
+}

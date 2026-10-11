@@ -3,8 +3,13 @@ extends RefCounted
 ## Pure, deterministic simulation. Preview and resolution both call this function.
 ## The enemy's third-attack rage applies before that turn's counterattack.
 ## Golem armor updates after every hit, including hits crossing multiple thresholds.
+const Phase3Combat = preload("res://scripts/core/phase3_combat.gd")
 
-static func simulate(player: Dictionary, enemy: Dictionary, stats: Dictionary) -> Dictionary:
+static func simulate(player: Dictionary, enemy: Dictionary, stats: Dictionary, rules_version: int = 1) -> Dictionary:
+	if rules_version == 2:
+		return Phase3Combat.simulate(player, enemy, stats)
+	if rules_version != 1:
+		return {"ok": false, "error": "不支持的战斗规则版本：%d" % rules_version}
 	var hp := int(player.hp)
 	var start_hp := hp
 	var enemy_hp := int(enemy.hp)

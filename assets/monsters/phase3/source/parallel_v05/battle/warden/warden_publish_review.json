@@ -1,0 +1,87 @@
+{
+  "entity": "warden",
+  "date": "2026-10-01",
+  "review_method": "Agent actual contact sheets, browser original and quarter speed, step frames and 26/33/47px review; not automatic technical approval",
+  "human_signoff": false,
+  "new_imagegen_originals": 2,
+  "shared_effect_original": "effects_original.png reused by both elites",
+  "actions": {
+    "attack": {
+      "decision": "accepted",
+      "draft_manifest": "warden_draft_manifest.json",
+      "source_action": "attack",
+      "frame_slots": 8,
+      "pose_holds": {
+        "7": 0.0
+      },
+      "notes": "Actual four contact sheets, original/.25 browser, paused hit4/final7, 26/33/47px and spark toggle reviewed. Left-facing helmet, shield bash drives left; far mace partly shield-occluded. Kneeling defeat and separate mace release. Short belt chain stays below text; native 23-frame chain-mask test zero overlap in reserved rect80,10,105,53. Holds attack7=0 defeat7=6; human signoff false.",
+      "frame_sha256": [
+        "48392db76ed2a0a3b25608fef930befa09b3c2478a9aa8884982c46206d8c919",
+        "87f11c7d5ca4de209c13ac857ea2c88c79067e358db87525204d02ce9f0013c6",
+        "87bc4f05a3de1742df38c4bef916fe088f78acc8785a68b747c4ad748a97f31c",
+        "e4fd08f89ce2b1b9361f8b05de8d93bd14db9b7270c7fc6cc55ea6c32b42c187",
+        "09631a4fd8175cfbee44473534956e6b6736df06e59b8c8f1088ea42377f0e23",
+        "7b4462addde6884340c737907f34fa1d472d39143ae037b87cbbb02a6049244d",
+        "3c240bd3b27290384654700680b393c1c4abbb1c0fc0bea279d788795d4b03b3",
+        "48392db76ed2a0a3b25608fef930befa09b3c2478a9aa8884982c46206d8c919"
+      ],
+      "effects_sha256": [
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "07d8dcec85a792f50857f4b2151ed1fe2540ff84bbeea64b76fcd04c1080b1f8",
+        "661383ba081ad5dcf84dc395512255431946c09ddc1d43a775ddf1125f706faf",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de"
+      ]
+    },
+    "defeat": {
+      "decision": "accepted",
+      "draft_manifest": "warden_draft_manifest.json",
+      "source_action": "defeat",
+      "frame_slots": 8,
+      "pose_holds": {
+        "7": 6.0
+      },
+      "notes": "Actual four contact sheets, original/.25 browser, paused hit4/final7, 26/33/47px and spark toggle reviewed. Left-facing helmet, shield bash drives left; far mace partly shield-occluded. Kneeling defeat and separate mace release. Short belt chain stays below text; native 23-frame chain-mask test zero overlap in reserved rect80,10,105,53. Holds attack7=0 defeat7=6; human signoff false.",
+      "frame_sha256": [
+        "9a1830cebc67d52b0b2abb52373afa3033bc388224ff4da57a73b834295223aa",
+        "0f2a91b63d8d54eb4b43ec39d925d680c31847d7ef96f87580f05e9781caacf3",
+        "0ba520488955b36aff122c0bc7bfa1b6b17d121e8927b8e35d20aa2af809acbf",
+        "0907196b45350a0b8fe169c02ec144a867c0427b6310da14fbb7b8d7008353e8",
+        "70086f8c83a080da96c2f858289aadde9d79cf1c2c2dcd05dcec976351212ded",
+        "9eb8f4a5f71a0afde1cb1dfd56d089eea96142c9b942afb25c6ed0afa2a1d1af",
+        "8a78ca4e8a21c6fe16de61e9e1174030fd13f9a9d743ba647b4c9b37ae7dd3ee",
+        "8a78ca4e8a21c6fe16de61e9e1174030fd13f9a9d743ba647b4c9b37ae7dd3ee"
+      ]
+    },
+    "hit": {
+      "decision": "accepted",
+      "draft_manifest": "warden_draft_manifest.json",
+      "source_action": "hit",
+      "frame_slots": 3,
+      "pose_holds": {},
+      "notes": "Actual four contact sheets, original/.25 browser, paused hit4/final7, 26/33/47px and spark toggle reviewed. Left-facing helmet, shield bash drives left; far mace partly shield-occluded. Kneeling defeat and separate mace release. Short belt chain stays below text; native 23-frame chain-mask test zero overlap in reserved rect80,10,105,53. Holds attack7=0 defeat7=6; human signoff false.",
+      "frame_sha256": [
+        "4930c1a039c1ca7c5d560a3cac4f8b075852a27b18583786c75f526c398a33c8",
+        "41308bd527dada335acdded294b71ced2fa34fee08f66e30bde1c3b5e8629559",
+        "48392db76ed2a0a3b25608fef930befa09b3c2478a9aa8884982c46206d8c919"
+      ]
+    },
+    "idle": {
+      "decision": "accepted",
+      "draft_manifest": "warden_draft_manifest.json",
+      "source_action": "idle",
+      "frame_slots": 4,
+      "pose_holds": {},
+      "notes": "Actual four contact sheets, original/.25 browser, paused hit4/final7, 26/33/47px and spark toggle reviewed. Left-facing helmet, shield bash drives left; far mace partly shield-occluded. Kneeling defeat and separate mace release. Short belt chain stays below text; native 23-frame chain-mask test zero overlap in reserved rect80,10,105,53. Holds attack7=0 defeat7=6; human signoff false.",
+      "frame_sha256": [
+        "48392db76ed2a0a3b25608fef930befa09b3c2478a9aa8884982c46206d8c919",
+        "8a79f4e1f9c73058a8336507e261dd22f5b6dae43b47f28ed93bb8c387710222",
+        "c295a26ba5ecf42e1075374918dbfa6a643b7979978e8e02206c81847ce402ce",
+        "d2a46a8b8fe73a5b5968f144380bbe9d3e89976579e5240d2448aecde7409e94"
+      ]
+    }
+  }
+}

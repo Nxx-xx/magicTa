@@ -1,0 +1,314 @@
+{
+  "actions": {
+    "attack": {
+      "combined_frames": [
+        "warlock_frames/attack/00_combined.png",
+        "warlock_frames/attack/01_combined.png",
+        "warlock_frames/attack/02_combined.png",
+        "warlock_frames/attack/03_combined.png",
+        "warlock_frames/attack/04_combined.png",
+        "warlock_frames/attack/05_combined.png"
+      ],
+      "effects_frames": [
+        "warlock_frames/attack/00_effect.png",
+        "warlock_frames/attack/01_effect.png",
+        "warlock_frames/attack/02_effect.png",
+        "warlock_frames/attack/03_effect.png",
+        "warlock_frames/attack/04_effect.png",
+        "warlock_frames/attack/05_effect.png"
+      ],
+      "events": {
+        "cast": 2.0,
+        "hit": 3.0
+      },
+      "fps": 12.0,
+      "frames": [
+        "warlock_frames/attack/00.png",
+        "warlock_frames/attack/01.png",
+        "warlock_frames/attack/02.png",
+        "warlock_frames/attack/03.png",
+        "warlock_frames/attack/04.png",
+        "warlock_frames/attack/05.png"
+      ],
+      "loop": false,
+      "metrics": [
+        {
+          "bounds": [
+            98,
+            69,
+            82,
+            167
+          ],
+          "edge_touch": false,
+          "frame": 0
+        },
+        {
+          "bounds": [
+            76,
+            70,
+            103,
+            166
+          ],
+          "edge_touch": false,
+          "frame": 1
+        },
+        {
+          "bounds": [
+            73,
+            69,
+            113,
+            167
+          ],
+          "edge_touch": false,
+          "frame": 2
+        },
+        {
+          "bounds": [
+            70,
+            69,
+            122,
+            167
+          ],
+          "edge_touch": false,
+          "frame": 3
+        },
+        {
+          "bounds": [
+            78,
+            68,
+            105,
+            168
+          ],
+          "edge_touch": false,
+          "frame": 4
+        },
+        {
+          "bounds": [
+            95,
+            68,
+            85,
+            168
+          ],
+          "edge_touch": false,
+          "frame": 5
+        }
+      ],
+      "pose_holds": {}
+    },
+    "defeat": {
+      "combined_frames": [
+        "warlock_frames/defeat/00_combined.png",
+        "warlock_frames/defeat/01_combined.png",
+        "warlock_frames/defeat/02_combined.png",
+        "warlock_frames/defeat/03_combined.png",
+        "warlock_frames/defeat/04_combined.png",
+        "warlock_frames/defeat/05_combined.png"
+      ],
+      "effects_frames": [
+        "warlock_frames/defeat/00_effect.png",
+        "warlock_frames/defeat/01_effect.png",
+        "warlock_frames/defeat/02_effect.png",
+        "warlock_frames/defeat/03_effect.png",
+        "warlock_frames/defeat/04_effect.png",
+        "warlock_frames/defeat/05_effect.png"
+      ],
+      "events": {
+        "extinguish": 3.0,
+        "release": 3.0
+      },
+      "fps": 10.0,
+      "frames": [
+        "warlock_frames/defeat/00.png",
+        "warlock_frames/defeat/01.png",
+        "warlock_frames/defeat/02.png",
+        "warlock_frames/defeat/03.png",
+        "warlock_frames/defeat/04.png",
+        "warlock_frames/defeat/05.png"
+      ],
+      "loop": false,
+      "metrics": [
+        {
+          "bounds": [
+            97,
+            71,
+            82,
+            166
+          ],
+          "edge_touch": false,
+          "frame": 0
+        },
+        {
+          "bounds": [
+            98,
+            75,
+            81,
+            162
+          ],
+          "edge_touch": false,
+          "frame": 1
+        },
+        {
+          "bounds": [
+            91,
+            84,
+            94,
+            156
+          ],
+          "edge_touch": false,
+          "frame": 2
+        },
+        {
+          "bounds": [
+            86,
+            94,
+            97,
+            143
+          ],
+          "edge_touch": false,
+          "frame": 3
+        },
+        {
+          "bounds": [
+            52,
+            103,
+            133,
+            135
+          ],
+          "edge_touch": false,
+          "frame": 4
+        },
+        {
+          "bounds": [
+            47,
+            105,
+            139,
+            134
+          ],
+          "edge_touch": false,
+          "frame": 5
+        }
+      ],
+      "pose_holds": {}
+    },
+    "hit": {
+      "combined_frames": [
+        "warlock_frames/hit/00_combined.png",
+        "warlock_frames/hit/01_combined.png"
+      ],
+      "effects_frames": [
+        "warlock_frames/hit/00_effect.png",
+        "warlock_frames/hit/01_effect.png"
+      ],
+      "events": {},
+      "fps": 12.0,
+      "frames": [
+        "warlock_frames/hit/00.png",
+        "warlock_frames/hit/01.png"
+      ],
+      "loop": false,
+      "metrics": [
+        {
+          "bounds": [
+            94,
+            74,
+            85,
+            163
+          ],
+          "edge_touch": false,
+          "frame": 0
+        },
+        {
+          "bounds": [
+            94,
+            69,
+            85,
+            167
+          ],
+          "edge_touch": false,
+          "frame": 1
+        }
+      ],
+      "pose_holds": {}
+    },
+    "idle": {
+      "combined_frames": [
+        "warlock_frames/idle/00_combined.png",
+        "warlock_frames/idle/01_combined.png",
+        "warlock_frames/idle/02_combined.png",
+        "warlock_frames/idle/03_combined.png"
+      ],
+      "effects_frames": [
+        "warlock_frames/idle/00_effect.png",
+        "warlock_frames/idle/01_effect.png",
+        "warlock_frames/idle/02_effect.png",
+        "warlock_frames/idle/03_effect.png"
+      ],
+      "events": {},
+      "fps": 6.0,
+      "frames": [
+        "warlock_frames/idle/00.png",
+        "warlock_frames/idle/01.png",
+        "warlock_frames/idle/02.png",
+        "warlock_frames/idle/03.png"
+      ],
+      "loop": true,
+      "metrics": [
+        {
+          "bounds": [
+            95,
+            68,
+            85,
+            168
+          ],
+          "edge_touch": false,
+          "frame": 0
+        },
+        {
+          "bounds": [
+            94,
+            67,
+            86,
+            169
+          ],
+          "edge_touch": false,
+          "frame": 1
+        },
+        {
+          "bounds": [
+            93,
+            67,
+            87,
+            169
+          ],
+          "edge_touch": false,
+          "frame": 2
+        },
+        {
+          "bounds": [
+            95,
+            67,
+            85,
+            169
+          ],
+          "edge_touch": false,
+          "frame": 3
+        }
+      ],
+      "pose_holds": {}
+    }
+  },
+  "anchor": [
+    128.0,
+    224.0
+  ],
+  "size": [
+    256.0,
+    256.0
+  ],
+  "source": "res://assets/monsters/phase3/source/parallel_v05/battle/warlock/warlock_rig.json",
+  "status": "draft",
+  "entity": "warlock",
+  "camera": "battle_left",
+  "map_actions": {},
+  "map_scope": "Independent map camera assigned to map_b; not present in this battle draft."
+}

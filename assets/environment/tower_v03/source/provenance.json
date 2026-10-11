@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-04",
+  "method": "built-in image_gen",
+  "assets": [
+    {
+      "asset": "materials",
+      "source": "assets/environment/tower_v03/source/materials_generated.png",
+      "runtime": "assets/environment/tower_v03/materials.png",
+      "prompt": "assets/environment/tower_v03/source/materials_prompt.txt",
+      "size": [
+        1254,
+        1254
+      ],
+      "bytes": 3229095,
+      "sha256": "ec509146121815db5665910aed2cf2e3cfc0a5a8b8bb6e87d5e02b1401536626",
+      "runtime_is_unmodified_copy": true,
+      "runtime_source": "assets/environment/tower_v03/source/materials_refined_generated.png"
+    },
+    {
+      "asset": "stairs",
+      "source": "assets/environment/tower_v03/source/stairs_generated.png",
+      "runtime": "assets/environment/tower_v03/stairs.png",
+      "prompt": "assets/environment/tower_v03/source/stairs_prompt.txt",
+      "size": [
+        1774,
+        887
+      ],
+      "bytes": 2010488,
+      "sha256": "7508810bf0b80a6a3fd084102fef29596f05891bc803a7b0cc73b42dfedc1ebd",
+      "runtime_is_unmodified_copy": true
+    }
+  ],
+  "refinement": {
+    "source": "assets\\environment\\tower_v03\\source\\materials_refined_generated.png",
+    "prompt": "assets\\environment\\tower_v03\\source\\materials_refinement_prompt.txt",
+    "method": "built-in image_gen edit",
+    "purpose": "quieter wall-top stone after in-game review",
+    "sha256": "265c42d34c4ddd6d0e6d785b1b81849d9769deecaf829c2a0784c528b6c447e6"
+  }
+}

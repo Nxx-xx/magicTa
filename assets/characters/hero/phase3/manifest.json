@@ -1,0 +1,590 @@
+{
+  "version": 1,
+  "handedness": "right_sword_left_lantern",
+  "mirrored": false,
+  "status": "accepted_v06_motion_v07",
+  "actions": {
+    "combat_attack": {
+      "fps": 16,
+      "loop": false,
+      "size": [
+        384,
+        384
+      ],
+      "anchor": [
+        192,
+        348
+      ],
+      "events": {
+        "hit": 3
+      },
+      "status": "accepted",
+      "frames": [
+        "res://assets/characters/hero/phase3/textures/v06/combat_attack/body/00.png",
+        "res://assets/characters/hero/phase3/textures/v06/combat_attack/body/01.png",
+        "res://assets/characters/hero/phase3/textures/v06/combat_attack/body/02.png",
+        "res://assets/characters/hero/phase3/textures/v06/combat_attack/body/03.png",
+        "res://assets/characters/hero/phase3/textures/v06/combat_attack/body/04.png",
+        "res://assets/characters/hero/phase3/textures/v06/combat_attack/body/05.png",
+        "res://assets/characters/hero/phase3/textures/v06/combat_attack/body/06.png",
+        "res://assets/characters/hero/phase3/textures/v06/combat_attack/body/07.png"
+      ],
+      "source": "source/motion_v07/hero_right_editable.tscn",
+      "review": "source/motion_v07/REVIEW.md",
+      "pose_holds": {},
+      "review_sha256": "81541fe792c431668df45d22226654d05391fbfe8ab7b196247bf0a0d968a12e",
+      "effects_frames": [
+        "res://assets/characters/hero/phase3/textures/v06/combat_attack/effects/00.png",
+        "res://assets/characters/hero/phase3/textures/v06/combat_attack/effects/01.png",
+        "res://assets/characters/hero/phase3/textures/v06/combat_attack/effects/02.png",
+        "res://assets/characters/hero/phase3/textures/v06/combat_attack/effects/03.png",
+        "res://assets/characters/hero/phase3/textures/v06/combat_attack/effects/04.png",
+        "res://assets/characters/hero/phase3/textures/v06/combat_attack/effects/05.png",
+        "res://assets/characters/hero/phase3/textures/v06/combat_attack/effects/06.png",
+        "res://assets/characters/hero/phase3/textures/v06/combat_attack/effects/07.png"
+      ]
+    },
+    "combat_defeat": {
+      "fps": 10,
+      "loop": false,
+      "size": [
+        384,
+        384
+      ],
+      "anchor": [
+        192,
+        348
+      ],
+      "events": {},
+      "status": "accepted",
+      "frames": [
+        "res://assets/characters/hero/phase3/textures/v06/combat_defeat/body/00.png",
+        "res://assets/characters/hero/phase3/textures/v06/combat_defeat/body/01.png",
+        "res://assets/characters/hero/phase3/textures/v06/combat_defeat/body/02.png",
+        "res://assets/characters/hero/phase3/textures/v06/combat_defeat/body/03.png",
+        "res://assets/characters/hero/phase3/textures/v06/combat_defeat/body/04.png",
+        "res://assets/characters/hero/phase3/textures/v06/combat_defeat/body/05.png"
+      ],
+      "source": "source/refine_v06/hero_right_editable.tscn",
+      "review": "source/refine_v06/REVIEW.md",
+      "pose_holds": {},
+      "review_sha256": "3af464dd61d0b6baf475a6b280cdcee4b58c2fc26b73ef58c8fcc7a9c947df31",
+      "effects_frames": [
+        "res://assets/characters/hero/phase3/textures/v06/combat_defeat/effects/00.png",
+        "res://assets/characters/hero/phase3/textures/v06/combat_defeat/effects/01.png",
+        "res://assets/characters/hero/phase3/textures/v06/combat_defeat/effects/02.png",
+        "res://assets/characters/hero/phase3/textures/v06/combat_defeat/effects/03.png",
+        "res://assets/characters/hero/phase3/textures/v06/combat_defeat/effects/04.png",
+        "res://assets/characters/hero/phase3/textures/v06/combat_defeat/effects/05.png"
+      ]
+    },
+    "combat_guard": {
+      "fps": 12,
+      "loop": false,
+      "size": [
+        384,
+        384
+      ],
+      "anchor": [
+        192,
+        348
+      ],
+      "events": {},
+      "status": "accepted",
+      "frames": [
+        "res://assets/characters/hero/phase3/textures/v06/combat_guard/body/00.png",
+        "res://assets/characters/hero/phase3/textures/v06/combat_guard/body/01.png",
+        "res://assets/characters/hero/phase3/textures/v06/combat_guard/body/02.png",
+        "res://assets/characters/hero/phase3/textures/v06/combat_guard/body/03.png"
+      ],
+      "source": "source/motion_v07/hero_right_editable.tscn",
+      "review": "source/motion_v07/REVIEW.md",
+      "pose_holds": {},
+      "review_sha256": "81541fe792c431668df45d22226654d05391fbfe8ab7b196247bf0a0d968a12e",
+      "effects_frames": [
+        "res://assets/characters/hero/phase3/textures/v06/combat_guard/effects/00.png",
+        "res://assets/characters/hero/phase3/textures/v06/combat_guard/effects/01.png",
+        "res://assets/characters/hero/phase3/textures/v06/combat_guard/effects/02.png",
+        "res://assets/characters/hero/phase3/textures/v06/combat_guard/effects/03.png"
+      ]
+    },
+    "combat_hit": {
+      "fps": 12,
+      "loop": false,
+      "size": [
+        384,
+        384
+      ],
+      "anchor": [
+        192,
+        348
+      ],
+      "events": {},
+      "status": "accepted",
+      "frames": [
+        "res://assets/characters/hero/phase3/textures/v06/combat_hit/body/00.png",
+        "res://assets/characters/hero/phase3/textures/v06/combat_hit/body/01.png",
+        "res://assets/characters/hero/phase3/textures/v06/combat_hit/body/02.png"
+      ],
+      "source": "source/motion_v07/hero_right_editable.tscn",
+      "review": "source/motion_v07/REVIEW.md",
+      "pose_holds": {},
+      "review_sha256": "81541fe792c431668df45d22226654d05391fbfe8ab7b196247bf0a0d968a12e",
+      "effects_frames": [
+        "res://assets/characters/hero/phase3/textures/v06/combat_hit/effects/00.png",
+        "res://assets/characters/hero/phase3/textures/v06/combat_hit/effects/01.png",
+        "res://assets/characters/hero/phase3/textures/v06/combat_hit/effects/02.png"
+      ]
+    },
+    "combat_idle": {
+      "fps": 6,
+      "loop": true,
+      "size": [
+        384,
+        384
+      ],
+      "anchor": [
+        192,
+        348
+      ],
+      "events": {},
+      "status": "accepted",
+      "frames": [
+        "res://assets/characters/hero/phase3/textures/v06/combat_idle/body/00.png",
+        "res://assets/characters/hero/phase3/textures/v06/combat_idle/body/01.png",
+        "res://assets/characters/hero/phase3/textures/v06/combat_idle/body/02.png",
+        "res://assets/characters/hero/phase3/textures/v06/combat_idle/body/03.png",
+        "res://assets/characters/hero/phase3/textures/v06/combat_idle/body/04.png",
+        "res://assets/characters/hero/phase3/textures/v06/combat_idle/body/05.png"
+      ],
+      "source": "source/refine_v06/hero_right_editable.tscn",
+      "review": "source/refine_v06/REVIEW.md",
+      "pose_holds": {},
+      "review_sha256": "3af464dd61d0b6baf475a6b280cdcee4b58c2fc26b73ef58c8fcc7a9c947df31",
+      "effects_frames": [
+        "res://assets/characters/hero/phase3/textures/v06/combat_idle/effects/00.png",
+        "res://assets/characters/hero/phase3/textures/v06/combat_idle/effects/01.png",
+        "res://assets/characters/hero/phase3/textures/v06/combat_idle/effects/02.png",
+        "res://assets/characters/hero/phase3/textures/v06/combat_idle/effects/03.png",
+        "res://assets/characters/hero/phase3/textures/v06/combat_idle/effects/04.png",
+        "res://assets/characters/hero/phase3/textures/v06/combat_idle/effects/05.png"
+      ]
+    },
+    "combat_victory": {
+      "fps": 12,
+      "loop": false,
+      "size": [
+        384,
+        384
+      ],
+      "anchor": [
+        192,
+        348
+      ],
+      "events": {},
+      "status": "accepted",
+      "frames": [
+        "res://assets/characters/hero/phase3/textures/v06/combat_victory/body/00.png",
+        "res://assets/characters/hero/phase3/textures/v06/combat_victory/body/01.png",
+        "res://assets/characters/hero/phase3/textures/v06/combat_victory/body/02.png",
+        "res://assets/characters/hero/phase3/textures/v06/combat_victory/body/03.png",
+        "res://assets/characters/hero/phase3/textures/v06/combat_victory/body/04.png",
+        "res://assets/characters/hero/phase3/textures/v06/combat_victory/body/05.png",
+        "res://assets/characters/hero/phase3/textures/v06/combat_victory/body/06.png",
+        "res://assets/characters/hero/phase3/textures/v06/combat_victory/body/07.png"
+      ],
+      "source": "source/motion_v07/hero_right_editable.tscn",
+      "review": "source/motion_v07/REVIEW.md",
+      "pose_holds": {},
+      "review_sha256": "81541fe792c431668df45d22226654d05391fbfe8ab7b196247bf0a0d968a12e",
+      "effects_frames": [
+        "res://assets/characters/hero/phase3/textures/v06/combat_victory/effects/00.png",
+        "res://assets/characters/hero/phase3/textures/v06/combat_victory/effects/01.png",
+        "res://assets/characters/hero/phase3/textures/v06/combat_victory/effects/02.png",
+        "res://assets/characters/hero/phase3/textures/v06/combat_victory/effects/03.png",
+        "res://assets/characters/hero/phase3/textures/v06/combat_victory/effects/04.png",
+        "res://assets/characters/hero/phase3/textures/v06/combat_victory/effects/05.png",
+        "res://assets/characters/hero/phase3/textures/v06/combat_victory/effects/06.png",
+        "res://assets/characters/hero/phase3/textures/v06/combat_victory/effects/07.png"
+      ]
+    },
+    "map_idle_down": {
+      "fps": 6,
+      "loop": true,
+      "size": [
+        128,
+        128
+      ],
+      "anchor": [
+        64,
+        116
+      ],
+      "events": {},
+      "status": "accepted",
+      "frames": [
+        "res://assets/characters/hero/phase3/textures/v06/map_idle_down/body/00.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_idle_down/body/01.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_idle_down/body/02.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_idle_down/body/03.png"
+      ],
+      "source": "source/refine_v06/hero_down_editable.tscn",
+      "review": "source/refine_v06/REVIEW.md",
+      "pose_holds": {},
+      "review_sha256": "3af464dd61d0b6baf475a6b280cdcee4b58c2fc26b73ef58c8fcc7a9c947df31",
+      "effects_frames": [
+        "res://assets/characters/hero/phase3/textures/v06/map_idle_down/effects/00.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_idle_down/effects/01.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_idle_down/effects/02.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_idle_down/effects/03.png"
+      ]
+    },
+    "map_idle_left": {
+      "fps": 6,
+      "loop": true,
+      "size": [
+        128,
+        128
+      ],
+      "anchor": [
+        64,
+        116
+      ],
+      "events": {},
+      "status": "accepted",
+      "frames": [
+        "res://assets/characters/hero/phase3/textures/v06/map_idle_left/body/00.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_idle_left/body/01.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_idle_left/body/02.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_idle_left/body/03.png"
+      ],
+      "source": "source/refine_v06/hero_left_editable.tscn",
+      "review": "source/refine_v06/REVIEW.md",
+      "pose_holds": {},
+      "review_sha256": "3af464dd61d0b6baf475a6b280cdcee4b58c2fc26b73ef58c8fcc7a9c947df31",
+      "effects_frames": [
+        "res://assets/characters/hero/phase3/textures/v06/map_idle_left/effects/00.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_idle_left/effects/01.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_idle_left/effects/02.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_idle_left/effects/03.png"
+      ]
+    },
+    "map_idle_right": {
+      "fps": 6,
+      "loop": true,
+      "size": [
+        128,
+        128
+      ],
+      "anchor": [
+        64,
+        116
+      ],
+      "events": {},
+      "status": "accepted",
+      "frames": [
+        "res://assets/characters/hero/phase3/textures/v06/map_idle_right/body/00.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_idle_right/body/01.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_idle_right/body/02.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_idle_right/body/03.png"
+      ],
+      "source": "source/refine_v06/hero_right_editable.tscn",
+      "review": "source/refine_v06/REVIEW.md",
+      "pose_holds": {},
+      "review_sha256": "3af464dd61d0b6baf475a6b280cdcee4b58c2fc26b73ef58c8fcc7a9c947df31",
+      "effects_frames": [
+        "res://assets/characters/hero/phase3/textures/v06/map_idle_right/effects/00.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_idle_right/effects/01.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_idle_right/effects/02.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_idle_right/effects/03.png"
+      ]
+    },
+    "map_idle_up": {
+      "fps": 6,
+      "loop": true,
+      "size": [
+        128,
+        128
+      ],
+      "anchor": [
+        64,
+        116
+      ],
+      "events": {},
+      "status": "accepted",
+      "frames": [
+        "res://assets/characters/hero/phase3/textures/v06/map_idle_up/body/00.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_idle_up/body/01.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_idle_up/body/02.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_idle_up/body/03.png"
+      ],
+      "source": "source/refine_v06/hero_up_editable.tscn",
+      "review": "source/refine_v06/REVIEW.md",
+      "pose_holds": {},
+      "review_sha256": "3af464dd61d0b6baf475a6b280cdcee4b58c2fc26b73ef58c8fcc7a9c947df31",
+      "effects_frames": [
+        "res://assets/characters/hero/phase3/textures/v06/map_idle_up/effects/00.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_idle_up/effects/01.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_idle_up/effects/02.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_idle_up/effects/03.png"
+      ]
+    },
+    "map_interact_down": {
+      "fps": 10,
+      "loop": false,
+      "size": [
+        128,
+        128
+      ],
+      "anchor": [
+        64,
+        116
+      ],
+      "events": {},
+      "status": "accepted",
+      "frames": [
+        "res://assets/characters/hero/phase3/textures/v06/map_idle_down/body/00.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_interact_down/body/01.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_interact_down/body/02.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_interact_down/body/03.png"
+      ],
+      "source": "source/refine_v06/hero_down_editable.tscn",
+      "review": "source/refine_v06/REVIEW.md",
+      "pose_holds": {},
+      "review_sha256": "3af464dd61d0b6baf475a6b280cdcee4b58c2fc26b73ef58c8fcc7a9c947df31",
+      "effects_frames": [
+        "res://assets/characters/hero/phase3/textures/v06/map_interact_down/effects/00.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_interact_down/effects/01.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_interact_down/effects/02.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_interact_down/effects/03.png"
+      ]
+    },
+    "map_interact_left": {
+      "fps": 10,
+      "loop": false,
+      "size": [
+        128,
+        128
+      ],
+      "anchor": [
+        64,
+        116
+      ],
+      "events": {},
+      "status": "accepted",
+      "frames": [
+        "res://assets/characters/hero/phase3/textures/v06/map_idle_left/body/00.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_interact_left/body/01.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_interact_left/body/02.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_interact_left/body/03.png"
+      ],
+      "source": "source/refine_v06/hero_left_editable.tscn",
+      "review": "source/refine_v06/REVIEW.md",
+      "pose_holds": {},
+      "review_sha256": "3af464dd61d0b6baf475a6b280cdcee4b58c2fc26b73ef58c8fcc7a9c947df31",
+      "effects_frames": [
+        "res://assets/characters/hero/phase3/textures/v06/map_interact_left/effects/00.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_interact_left/effects/01.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_interact_left/effects/02.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_interact_left/effects/03.png"
+      ]
+    },
+    "map_interact_right": {
+      "fps": 10,
+      "loop": false,
+      "size": [
+        128,
+        128
+      ],
+      "anchor": [
+        64,
+        116
+      ],
+      "events": {},
+      "status": "accepted",
+      "frames": [
+        "res://assets/characters/hero/phase3/textures/v06/map_idle_right/body/00.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_interact_right/body/01.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_interact_right/body/02.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_interact_right/body/03.png"
+      ],
+      "source": "source/refine_v06/hero_right_editable.tscn",
+      "review": "source/refine_v06/REVIEW.md",
+      "pose_holds": {},
+      "review_sha256": "3af464dd61d0b6baf475a6b280cdcee4b58c2fc26b73ef58c8fcc7a9c947df31",
+      "effects_frames": [
+        "res://assets/characters/hero/phase3/textures/v06/map_interact_right/effects/00.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_interact_right/effects/01.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_interact_right/effects/02.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_interact_right/effects/03.png"
+      ]
+    },
+    "map_interact_up": {
+      "fps": 10,
+      "loop": false,
+      "size": [
+        128,
+        128
+      ],
+      "anchor": [
+        64,
+        116
+      ],
+      "events": {},
+      "status": "accepted",
+      "frames": [
+        "res://assets/characters/hero/phase3/textures/v06/map_idle_up/body/00.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_interact_up/body/01.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_interact_up/body/02.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_interact_up/body/03.png"
+      ],
+      "source": "source/refine_v06/hero_up_editable.tscn",
+      "review": "source/refine_v06/REVIEW.md",
+      "pose_holds": {},
+      "review_sha256": "3af464dd61d0b6baf475a6b280cdcee4b58c2fc26b73ef58c8fcc7a9c947df31",
+      "effects_frames": [
+        "res://assets/characters/hero/phase3/textures/v06/map_interact_up/effects/00.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_interact_up/effects/01.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_interact_up/effects/02.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_interact_up/effects/03.png"
+      ]
+    },
+    "map_walk_down": {
+      "fps": 12,
+      "loop": true,
+      "size": [
+        128,
+        128
+      ],
+      "anchor": [
+        64,
+        116
+      ],
+      "events": {},
+      "status": "accepted",
+      "frames": [
+        "res://assets/characters/hero/phase3/textures/v06/map_walk_down/body/00.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_walk_down/body/01.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_walk_down/body/02.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_walk_down/body/03.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_walk_down/body/04.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_walk_down/body/05.png"
+      ],
+      "source": "source/refine_v06/hero_down_editable.tscn",
+      "review": "source/refine_v06/REVIEW.md",
+      "pose_holds": {},
+      "review_sha256": "3af464dd61d0b6baf475a6b280cdcee4b58c2fc26b73ef58c8fcc7a9c947df31",
+      "effects_frames": [
+        "res://assets/characters/hero/phase3/textures/v06/map_walk_down/effects/00.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_walk_down/effects/01.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_walk_down/effects/02.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_walk_down/effects/03.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_walk_down/effects/04.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_walk_down/effects/05.png"
+      ]
+    },
+    "map_walk_left": {
+      "fps": 12,
+      "loop": true,
+      "size": [
+        128,
+        128
+      ],
+      "anchor": [
+        64,
+        116
+      ],
+      "events": {},
+      "status": "accepted",
+      "frames": [
+        "res://assets/characters/hero/phase3/textures/v06/map_walk_left/body/00.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_walk_left/body/01.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_walk_left/body/02.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_walk_left/body/03.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_walk_left/body/04.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_walk_left/body/05.png"
+      ],
+      "source": "source/refine_v06/hero_left_editable.tscn",
+      "review": "source/refine_v06/REVIEW.md",
+      "pose_holds": {},
+      "review_sha256": "3af464dd61d0b6baf475a6b280cdcee4b58c2fc26b73ef58c8fcc7a9c947df31",
+      "effects_frames": [
+        "res://assets/characters/hero/phase3/textures/v06/map_walk_left/effects/00.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_walk_left/effects/01.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_walk_left/effects/02.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_walk_left/effects/03.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_walk_left/effects/04.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_walk_left/effects/05.png"
+      ]
+    },
+    "map_walk_right": {
+      "fps": 12,
+      "loop": true,
+      "size": [
+        128,
+        128
+      ],
+      "anchor": [
+        64,
+        116
+      ],
+      "events": {},
+      "status": "accepted",
+      "frames": [
+        "res://assets/characters/hero/phase3/textures/v06/map_walk_right/body/00.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_walk_right/body/01.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_walk_right/body/02.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_walk_right/body/03.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_walk_right/body/04.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_walk_right/body/05.png"
+      ],
+      "source": "source/refine_v06/hero_right_editable.tscn",
+      "review": "source/refine_v06/REVIEW.md",
+      "pose_holds": {},
+      "review_sha256": "3af464dd61d0b6baf475a6b280cdcee4b58c2fc26b73ef58c8fcc7a9c947df31",
+      "effects_frames": [
+        "res://assets/characters/hero/phase3/textures/v06/map_walk_right/effects/00.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_walk_right/effects/01.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_walk_right/effects/02.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_walk_right/effects/03.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_walk_right/effects/04.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_walk_right/effects/05.png"
+      ]
+    },
+    "map_walk_up": {
+      "fps": 12,
+      "loop": true,
+      "size": [
+        128,
+        128
+      ],
+      "anchor": [
+        64,
+        116
+      ],
+      "events": {},
+      "status": "accepted",
+      "frames": [
+        "res://assets/characters/hero/phase3/textures/v06/map_walk_up/body/00.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_walk_up/body/01.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_walk_up/body/02.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_walk_up/body/03.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_walk_up/body/04.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_walk_up/body/05.png"
+      ],
+      "source": "source/refine_v06/hero_up_editable.tscn",
+      "review": "source/refine_v06/REVIEW.md",
+      "pose_holds": {},
+      "review_sha256": "3af464dd61d0b6baf475a6b280cdcee4b58c2fc26b73ef58c8fcc7a9c947df31",
+      "effects_frames": [
+        "res://assets/characters/hero/phase3/textures/v06/map_walk_up/effects/00.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_walk_up/effects/01.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_walk_up/effects/02.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_walk_up/effects/03.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_walk_up/effects/04.png",
+        "res://assets/characters/hero/phase3/textures/v06/map_walk_up/effects/05.png"
+      ]
+    }
+  },
+  "fallback": "Existing approved four-direction idle textures; visible fallback labels required.",
+  "source": "source/refine_v06/REVIEW.md"
+}

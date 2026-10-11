@@ -60,7 +60,7 @@ func _other_panels(screen, suffix: String) -> void:
 	screen.game.state.objective_complete = true
 	screen._render()
 	await _frames()
-	_check(screen.game.active() and not screen.direction_buttons[0].disabled, "objective completion permits continued exploration " + suffix)
+	_check(screen.game.active() and screen._can_walk(), "objective completion permits continued exploration " + suffix)
 	await _capture("objective_complete_" + suffix)
 
 func _visual_states() -> void:
@@ -177,6 +177,9 @@ func _visual_states() -> void:
 		_button_named(screen.hud, "营地").pressed.emit()
 		await _frames()
 		await _capture("menu_" + suffix)
+		# Departure options now belong to the camp's tower entrance.
+		screen._camp_interact("tower")
+		await _frames()
 		if not screen.seed_input.is_visible_in_tree():
 			_button_named(screen.body, "出发选项").pressed.emit()
 		_check(screen.seed_input.is_visible_in_tree(), "departure options expose seed " + suffix)
@@ -202,13 +205,13 @@ func _visual_states() -> void:
 		await _other_panels(screen, suffix)
 		if dimensions.x == 360:
 			await _frames()
-			var button: Button = screen.direction_buttons[2]
+			var button: Button = screen.overview_button
 			button.grab_focus()
 			var motion := InputEventMouseMotion.new()
 			motion.position = button.get_global_rect().get_center()
 			root.push_input(motion)
 			await _frames()
-			_check(button.is_hovered(), "direction hover from pointer event")
+			_check(button.is_hovered(), "toolbar hover from pointer event")
 			await _capture("button_hover_focus_" + suffix)
 			var click := InputEventMouseButton.new()
 			click.position = motion.position
@@ -216,7 +219,7 @@ func _visual_states() -> void:
 			click.pressed = true
 			root.push_input(click)
 			await _frames()
-			_check(button.is_pressed(), "direction pressed state from pointer event")
+			_check(button.is_pressed(), "toolbar pressed state from pointer event")
 			await _capture("button_pressed_" + suffix)
 			click = click.duplicate()
 			click.pressed = false

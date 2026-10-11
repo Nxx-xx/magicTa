@@ -1,0 +1,343 @@
+{
+  "version": 1,
+  "status": "draft",
+  "entity": "minotaur",
+  "canvas": 768,
+  "runtime_size": 384,
+  "anchor": [
+    384,
+    672
+  ],
+  "rest_scale": 0.8,
+  "source": "minotaur_components_joint_fix_draft.png",
+  "layers": [
+    {
+      "name": "far_leg",
+      "parent": "root",
+      "pivot": [
+        420,
+        470
+      ],
+      "crop": [
+        500,
+        810,
+        310,
+        435
+      ],
+      "image_pivot": [
+        145,
+        45
+      ],
+      "scale": 0.53,
+      "z": -4
+    },
+    {
+      "name": "far_arm",
+      "parent": "torso",
+      "pivot": [
+        462,
+        298
+      ],
+      "crop": [
+        915,
+        465,
+        315,
+        375
+      ],
+      "image_pivot": [
+        118,
+        70
+      ],
+      "scale": 0.55,
+      "z": -3
+    },
+    {
+      "name": "near_leg",
+      "parent": "root",
+      "pivot": [
+        333,
+        470
+      ],
+      "crop": [
+        40,
+        810,
+        300,
+        430
+      ],
+      "image_pivot": [
+        180,
+        45
+      ],
+      "scale": 0.55,
+      "z": -2
+    },
+    {
+      "name": "torso",
+      "parent": "root",
+      "pivot": [
+        384,
+        478
+      ],
+      "crop": [
+        420,
+        0,
+        420,
+        495
+      ],
+      "image_pivot": [
+        208,
+        365
+      ],
+      "scale": 0.76,
+      "z": 0
+    },
+    {
+      "name": "head",
+      "parent": "torso",
+      "pivot": [
+        365,
+        278
+      ],
+      "crop": [
+        10,
+        0,
+        400,
+        425
+      ],
+      "image_pivot": [
+        235,
+        330
+      ],
+      "scale": 0.61,
+      "z": 2
+    },
+    {
+      "name": "upper_arm",
+      "parent": "torso",
+      "pivot": [
+        307,
+        315
+      ],
+      "crop": [
+        70,
+        470,
+        340,
+        345
+      ],
+      "image_pivot": [
+        160,
+        90
+      ],
+      "scale": 0.59,
+      "z": 3
+    },
+    {
+      "name": "forearm",
+      "parent": "upper_arm",
+      "pivot": [
+        324,
+        438
+      ],
+      "crop": [
+        440,
+        498,
+        350,
+        312
+      ],
+      "image_pivot": [
+        265,
+        37
+      ],
+      "scale": 0.58,
+      "z": 4
+    },
+    {
+      "name": "axe",
+      "parent": "forearm",
+      "pivot": [
+        219,
+        555
+      ],
+      "crop": [
+        840,
+        0,
+        405,
+        460
+      ],
+      "image_pivot": [
+        235,
+        170
+      ],
+      "scale": 0.55,
+      "z": 3
+    },
+    {
+      "name": "rage_rune",
+      "parent": "torso",
+      "pivot": [
+        378,
+        386
+      ],
+      "crop": [
+        830,
+        840,
+        410,
+        400
+      ],
+      "image_pivot": [
+        210,
+        200
+      ],
+      "scale": 0.23,
+      "z": 5
+    }
+  ],
+  "actions": {
+    "idle": {
+      "fps": 6,
+      "loop": true,
+      "poses": [
+        {},
+        {
+          "head": {
+            "r": -1
+          }
+        },
+        {
+          "head": {
+            "r": -2
+          }
+        },
+        {
+          "head": {
+            "r": -1
+          }
+        },
+        {},
+        {
+          "head": {
+            "r": 1
+          }
+        }
+      ],
+      "events": {}
+    },
+    "attack": {
+      "fps": 12,
+      "loop": false,
+      "poses": [
+        {},
+        {
+          "upper_arm": {
+            "r": 25
+          }
+        },
+        {
+          "upper_arm": {
+            "r": 65
+          },
+          "forearm": {
+            "r": 30
+          }
+        },
+        {
+          "upper_arm": {
+            "r": 90
+          },
+          "forearm": {
+            "r": 35
+          }
+        },
+        {
+          "upper_arm": {
+            "r": -35
+          },
+          "forearm": {
+            "r": -15
+          }
+        },
+        {
+          "upper_arm": {
+            "r": -25
+          }
+        },
+        {
+          "upper_arm": {
+            "r": -10
+          }
+        },
+        {}
+      ],
+      "events": {
+        "hit": 4
+      }
+    },
+    "hit": {
+      "fps": 12,
+      "loop": false,
+      "poses": [
+        {
+          "torso": {
+            "r": 5
+          },
+          "head": {
+            "r": 8
+          }
+        },
+        {
+          "torso": {
+            "r": 2
+          }
+        },
+        {}
+      ],
+      "events": {}
+    },
+    "rage": {
+      "fps": 12,
+      "loop": false,
+      "poses": [
+        {
+          "rage_rune": {
+            "a": 0.2
+          }
+        },
+        {
+          "rage_rune": {
+            "a": 0.5
+          },
+          "head": {
+            "r": -3
+          }
+        },
+        {
+          "rage_rune": {
+            "a": 1
+          },
+          "head": {
+            "r": -6
+          }
+        },
+        {
+          "rage_rune": {
+            "a": 0.7
+          },
+          "head": {
+            "r": -4
+          }
+        },
+        {
+          "rage_rune": {
+            "a": 0.3
+          },
+          "head": {
+            "r": -1
+          }
+        },
+        {}
+      ],
+      "events": {}
+    }
+  },
+  "acceptance": "NOT ACCEPTED: articulated source prototype, not production animation"
+}

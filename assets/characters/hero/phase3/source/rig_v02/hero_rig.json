@@ -1,0 +1,413 @@
+{
+  "version": 1,
+  "status": "draft",
+  "entity": "hero",
+  "canvas": 768,
+  "runtime_size": 384,
+  "anchor": [
+    384,
+    696
+  ],
+  "rest_scale": 0.8,
+  "source": "components_boot_fix_draft.png",
+  "layers": [
+    {
+      "name": "cape_back",
+      "parent": "root",
+      "pivot": [
+        364,
+        280
+      ],
+      "crop": [
+        650,
+        0,
+        310,
+        395
+      ],
+      "image_pivot": [
+        150,
+        60
+      ],
+      "scale": 0.9,
+      "z": -8
+    },
+    {
+      "name": "left_thigh",
+      "parent": "root",
+      "pivot": [
+        355,
+        470
+      ],
+      "crop": [
+        60,
+        960,
+        220,
+        260
+      ],
+      "image_pivot": [
+        100,
+        35
+      ],
+      "scale": 0.62,
+      "z": -5
+    },
+    {
+      "name": "left_boot",
+      "parent": "left_thigh",
+      "pivot": [
+        355,
+        564
+      ],
+      "crop": [
+        365,
+        960,
+        220,
+        280
+      ],
+      "image_pivot": [
+        100,
+        25
+      ],
+      "scale": 0.52,
+      "z": -5
+    },
+    {
+      "name": "left_upper_arm",
+      "parent": "torso",
+      "pivot": [
+        380,
+        310
+      ],
+      "crop": [
+        1030,
+        415,
+        190,
+        260
+      ],
+      "image_pivot": [
+        65,
+        55
+      ],
+      "scale": 0.7,
+      "z": -4
+    },
+    {
+      "name": "left_forearm",
+      "parent": "left_upper_arm",
+      "pivot": [
+        410,
+        380
+      ],
+      "crop": [
+        65,
+        700,
+        210,
+        250
+      ],
+      "image_pivot": [
+        140,
+        30
+      ],
+      "scale": 0.7,
+      "z": -3
+    },
+    {
+      "name": "lantern",
+      "parent": "left_forearm",
+      "pivot": [
+        370,
+        492
+      ],
+      "crop": [
+        410,
+        700,
+        160,
+        260
+      ],
+      "image_pivot": [
+        75,
+        35
+      ],
+      "scale": 0.55,
+      "z": -3
+    },
+    {
+      "name": "right_thigh",
+      "parent": "root",
+      "pivot": [
+        392,
+        470
+      ],
+      "crop": [
+        690,
+        690,
+        230,
+        255
+      ],
+      "image_pivot": [
+        110,
+        35
+      ],
+      "scale": 0.64,
+      "z": -2
+    },
+    {
+      "name": "right_boot",
+      "parent": "right_thigh",
+      "pivot": [
+        392,
+        565
+      ],
+      "crop": [
+        1020,
+        685,
+        220,
+        275
+      ],
+      "image_pivot": [
+        92,
+        25
+      ],
+      "scale": 0.53,
+      "z": -2
+    },
+    {
+      "name": "torso",
+      "parent": "root",
+      "pivot": [
+        384,
+        470
+      ],
+      "crop": [
+        400,
+        40,
+        230,
+        350
+      ],
+      "image_pivot": [
+        130,
+        290
+      ],
+      "scale": 0.78,
+      "z": 0
+    },
+    {
+      "name": "head",
+      "parent": "torso",
+      "pivot": [
+        398,
+        275
+      ],
+      "crop": [
+        15,
+        10,
+        310,
+        365
+      ],
+      "image_pivot": [
+        190,
+        310
+      ],
+      "scale": 0.72,
+      "z": 3
+    },
+    {
+      "name": "right_upper_arm",
+      "parent": "torso",
+      "pivot": [
+        377,
+        320
+      ],
+      "crop": [
+        80,
+        410,
+        185,
+        250
+      ],
+      "image_pivot": [
+        92,
+        65
+      ],
+      "scale": 0.7,
+      "z": 4
+    },
+    {
+      "name": "right_forearm",
+      "parent": "right_upper_arm",
+      "pivot": [
+        358,
+        420
+      ],
+      "crop": [
+        390,
+        415,
+        225,
+        255
+      ],
+      "image_pivot": [
+        60,
+        50
+      ],
+      "scale": 0.7,
+      "z": 5
+    },
+    {
+      "name": "sword",
+      "parent": "right_forearm",
+      "pivot": [
+        447,
+        528
+      ],
+      "crop": [
+        660,
+        405,
+        310,
+        290
+      ],
+      "image_pivot": [
+        82,
+        73
+      ],
+      "scale": 0.72,
+      "z": 4
+    },
+    {
+      "name": "cape_front",
+      "parent": "torso",
+      "pivot": [
+        370,
+        290
+      ],
+      "crop": [
+        1020,
+        70,
+        225,
+        285
+      ],
+      "image_pivot": [
+        100,
+        40
+      ],
+      "scale": 0.68,
+      "z": 6
+    }
+  ],
+  "actions": {
+    "idle": {
+      "fps": 6,
+      "loop": true,
+      "poses": [
+        {},
+        {
+          "head": {
+            "r": -1
+          },
+          "lantern": {
+            "r": 2
+          }
+        },
+        {
+          "head": {
+            "r": 0
+          },
+          "lantern": {
+            "r": 0
+          }
+        },
+        {
+          "head": {
+            "r": 1
+          },
+          "lantern": {
+            "r": -2
+          }
+        }
+      ],
+      "events": {}
+    },
+    "attack": {
+      "fps": 16,
+      "loop": false,
+      "poses": [
+        {},
+        {
+          "right_upper_arm": {
+            "r": -28
+          },
+          "right_forearm": {
+            "r": -25
+          }
+        },
+        {
+          "right_upper_arm": {
+            "r": -65
+          },
+          "right_forearm": {
+            "r": -38
+          },
+          "sword": {
+            "r": -15
+          }
+        },
+        {
+          "right_upper_arm": {
+            "r": -80
+          },
+          "right_forearm": {
+            "r": 15
+          },
+          "sword": {
+            "r": -10
+          }
+        },
+        {
+          "right_upper_arm": {
+            "r": -65
+          },
+          "right_forearm": {
+            "r": 22
+          }
+        },
+        {
+          "right_upper_arm": {
+            "r": -30
+          },
+          "right_forearm": {
+            "r": 10
+          }
+        },
+        {
+          "right_upper_arm": {
+            "r": -10
+          }
+        },
+        {}
+      ],
+      "events": {
+        "hit": 3
+      }
+    },
+    "hit": {
+      "fps": 12,
+      "loop": false,
+      "poses": [
+        {
+          "torso": {
+            "r": -5
+          },
+          "head": {
+            "r": -4
+          }
+        },
+        {
+          "torso": {
+            "r": -3
+          }
+        },
+        {}
+      ],
+      "events": {}
+    }
+  },
+  "acceptance": "NOT ACCEPTED: articulated source prototype, not production animation"
+}

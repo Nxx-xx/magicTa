@@ -2,6 +2,7 @@ extends RefCounted
 ## Small, distinct silhouettes in the board's 44-unit tile coordinates.
 const FONT = preload("res://assets/fonts/ui_font.tres")
 const Enemies = preload("res://scripts/core/enemy_rules.gd")
+const Art = preload("res://scripts/ui/runtime_art.gd")
 const INK := Color("14212d")
 const COLORS := {
 	"slime": Color("87c998"), "skeleton": Color("e4d5ba"),
@@ -13,6 +14,16 @@ const COLORS := {
 
 static func draw(canvas: CanvasItem, enemy: Dictionary, entity: Dictionary) -> void:
 	var id := str(enemy.get("id", ""))
+	if Art.VARIANT_BASE.has(id):
+		var texture := Art.enemy_static(id)
+		if texture != null:
+			canvas.draw_texture_rect(texture, Rect2(-22, -22, 44, 44), false)
+			canvas.draw_rect(Rect2(-22, -22, 17, 18), INK)
+			canvas.draw_string(FONT, Vector2(-21, -8), Art.VARIANT_BADGE[id], HORIZONTAL_ALIGNMENT_LEFT, -1, 14, Color("ffcf83"))
+			canvas.draw_rect(Rect2(6, 5, 15, 17), INK)
+			canvas.draw_string(FONT, Vector2(7,18), Enemies.badge(enemy, entity), HORIZONTAL_ALIGNMENT_LEFT, -1, 13, Color("f3deaa"))
+			return
+		id = Art.VARIANT_BASE[id]
 	var tint: Color = COLORS.get(id, Color("df797e"))
 	match id:
 		"slime":

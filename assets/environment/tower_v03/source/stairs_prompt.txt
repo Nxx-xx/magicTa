@@ -1,0 +1,7 @@
+Use case: stylized-concept
+Asset type: transparent sprite sheet for an orthographic top-down 2D dark fantasy tower exploration map.
+Primary request: exactly TWO separate square staircase sprites, arranged left and right in a wide 2:1 sheet. Both same outer size and perspective, centered in their respective half with generous 7% transparent margin.
+Left sprite: ascending stone stairway, seven broad stone treads ascending toward the TOP of the image, enclosed by stout cold blue-grey stone side curbs. Highest landing at the top bright enough to read, bottom tread forward. Restrained weathered old iron brackets on sides.
+Right sprite: descending stairwell, square dark opening with six visible steps receding DOWN into a dark recess toward the TOP of image, thick stone frame at top and sides, low stone threshold at bottom. Clearly darker recessed interior than the upward staircase.
+Style: polished hand painted game asset, orthographic view slightly from above/front, grey blue cyan limestone, gently worn edge highlights, warm grey old metal accents. Strong broad shapes readable at 36px. No exaggerated perspective or isometric diamond.
+Constraints: no surrounding floor, no background, genuine transparent alpha around BOTH sprites, no shadows outside bounds, no gold glow, no arrows, no text, no icons, no characters, no vegetation, no lanterns. Straight aligned square footprints, both completely contained within their half, separated by empty transparent space.

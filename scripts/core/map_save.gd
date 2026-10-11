@@ -3,12 +3,19 @@ extends "res://scripts/core/save_store.gd"
 const Keys = preload("res://scripts/core/map_keys.gd")
 const DB = preload("res://scripts/core/content_db.gd")
 const EnemyRulesData = preload("res://scripts/core/enemy_rules.gd")
+const Phase3Validation = preload("res://scripts/core/phase3_save_validation.gd")
 const MAX_COUNT := 1000000000
 
 func _valid(value: Variant) -> bool:
-	return value is Dictionary and value.get("version", 0) == 1 and value.get("meta") is Dictionary and value.get("run") is Dictionary and value.run.get("mode", "") == "grid_prototype_v1" and _valid_state(value.run, 2)
+	if not value is Dictionary or not _integer(value.get("version"), 1, 1) or not value.get("meta") is Dictionary or not value.get("run") is Dictionary: return false
+	if value.run.get("mode", "") != "grid_prototype_v1" or value.run.has("phase3_contract_version"): return false
+	for field in ["combat_rules_version", "reward_rules_version"]:
+		if value.run.has(field) and not _integer(value.run[field], 1, 1): return false
+	return _valid_state(value.run, 2)
 
-func _valid_state(state: Dictionary, limit: int) -> bool:
+func _valid_state(state: Dictionary, limit: int, rules_version: int = 1) -> bool:
+	for field in ["combat_rules_version", "reward_rules_version"]:
+		if state.has(field) and not _integer(state[field], rules_version, rules_version): return false
 	for field in ["seed", "rng_state"]:
 		if not _decimal64(state.get(field)):
 			return false
@@ -24,20 +31,20 @@ func _valid_state(state: Dictionary, limit: int) -> bool:
 		return false
 	var content: Dictionary = DB.new().data
 	if state.has("reward_content"):
-		if not _valid_content(state.reward_content):
+		if not _valid_content(state.reward_content, rules_version):
 			return false
 		for category in state.reward_content:
 			content[category] = state.reward_content[category]
-	if not _valid_player(state.player, content):
+	if not _valid_player(state.player, content, rules_version):
 		return false
 	if int(state.player.hp) == 0 and not state.completed: return false
-	if not _valid_report(state.last_report): return false
+	if not _valid_report(state.last_report, rules_version, content): return false
 	if not _position_valid(state.get("position")) or not state.floors.has(str(int(state.floor))) or not state.floors.has("1"):
 		return false
 	for floor_id in state.floors:
 		if not floor_id is String or not floor_id.is_valid_int() or str(int(floor_id)) != floor_id or int(floor_id) < 1 or int(floor_id) > limit:
 			return false
-		if not _valid_floor(state.floors[floor_id], content):
+		if not _valid_floor(state.floors[floor_id], content, rules_version):
 			return false
 	var active_floor: Dictionary = state.floors[str(int(state.floor))]
 	if not _walkable(active_floor, state.position):
@@ -58,14 +65,16 @@ func _valid_state(state: Dictionary, limit: int) -> bool:
 				if entity.type not in ["up", "down"] or not _integer(pending.get("destination"), 1, limit):
 					return false
 				var expected := int(state.floor) + (1 if entity.type == "up" else -1)
-				if int(pending.destination) != expected or not state.floors.has(str(expected)):
+				if int(pending.destination) != expected or (entity.type == "down" and not state.floors.has(str(expected))):
 					return false
 			"floor_choice":
 				if entity.type != "up" or int(state.floor) >= limit or state.floors.has(str(int(state.floor) + 1)):
 					return false
 	return true
 
-func _valid_player(player: Dictionary, content: Dictionary) -> bool:
+func _valid_player(player: Dictionary, content: Dictionary, rules_version: int = 1) -> bool:
+	if not preload("res://scripts/core/function_codes.gd").valid(player): return false
+	if rules_version == 2 and not Phase3Validation.valid_player(player, content): return false
 	for field in ["hp", "max_hp", "attack", "defense", "gold", "keys"]:
 		if not _valid_count(player.get(field)):
 			return false
@@ -84,10 +93,13 @@ func _valid_player(player: Dictionary, content: Dictionary) -> bool:
 			if content.items[id].kind != ("equipment" if field == "equipment_ids" else "relic"):
 				return false
 			maximum += int(content.items[id].effects.get("max_hp", 0))
+	maximum = maxi(1, maximum - int(player.get("function_code_offsets", {}).get("max_hp", 0)))
 	return int(player.hp) <= maximum
 
-func _valid_report(report: Dictionary) -> bool:
+func _valid_report(report: Dictionary, rules_version: int = 1, content: Dictionary = {}) -> bool:
 	if report.is_empty(): return true
+	if rules_version == 1 and report.has("combat_rules_version") and not _integer(report.combat_rules_version,1,1): return false
+	if rules_version == 2 and not Phase3Validation.valid_report(report, content): return false
 	for key in ["turns","counterattacks","incoming","healing","hp_after","enemy_hp_after","gold_reward"]:
 		if not _valid_count(report.get(key)): return false
 	if not _integer(report.get("loss"),-MAX_COUNT,MAX_COUNT) or not report.get("won") is bool or not report.get("lethal") is bool or report.won == report.lethal: return false
@@ -101,7 +113,7 @@ func _valid_report(report: Dictionary) -> bool:
 		if not entry.get("note") is String: return false
 	return true
 
-func _valid_floor(value: Variant, content: Dictionary) -> bool:
+func _valid_floor(value: Variant, content: Dictionary, rules_version: int = 1) -> bool:
 	if not value is Dictionary:
 		return false
 	for field in ["theme", "name"]:
@@ -139,7 +151,7 @@ func _valid_floor(value: Variant, content: Dictionary) -> bool:
 			"event":
 				if not _reference(entity, "event_id", content.events): return false
 			"rest":
-				if not _valid_options(entity.get("options"), content.items): return false
+				if not _valid_options(entity.get("options"), content.items, rules_version): return false
 			"gold", "key", "potion":
 				if not _integer(entity.get("amount"), 1, MAX_COUNT): return false
 			"door":
@@ -149,21 +161,30 @@ func _valid_floor(value: Variant, content: Dictionary) -> bool:
 				for id in entity.offers:
 					if not id is String or not content.shop.has(id): return false
 				if entity.get("purchased", false) and entity.get("purchased_id", "") not in entity.offers: return false
+				if entity.has("purchased_ids"):
+					if not entity.purchased_ids is Array: return false
+					var sold := {}
+					for id in entity.purchased_ids:
+						if not id is String or id not in entity.offers or sold.has(id): return false
+						sold[id] = true
+					if entity.purchased != (sold.size() == entity.offers.size()): return false
+					if not sold.is_empty() and entity.get("purchased_id", "") not in sold: return false
 			"camp", "summit":
 				if not entity.get("description") is String: return false
 			"up", "down": pass
 			_: return false
 	return true
 
-func _valid_content(value: Variant) -> bool:
+func _valid_content(value: Variant, rules_version: int = 1) -> bool:
 	if not value is Dictionary: return false
+	if rules_version == 2: return Phase3Validation.valid_content(value)
 	for category in ["items", "shop", "events"]:
 		if not value.get(category) is Dictionary or value[category].is_empty(): return false
 	for id in value.items:
 		var item = value.items[id]
 		if not id is String or not item is Dictionary or item.get("kind", "") not in ["equipment", "relic"] or not item.get("name") is String or not _effects(item.get("effects"), ["attack", "defense", "max_hp", "kill_heal", "gold_bonus", "gold_attack_step"]): return false
 		if not item.get("description") is String: return false
-		if item.get("id", "") != id or not _integer(item.get("tier"),1,3): return false
+		if not item.get("id") is String or item.id != id or not _integer(item.get("tier"),1,3): return false
 		if item.has("price") and not _valid_count(item.price): return false
 	for id in value.shop:
 		var offer = value.shop[id]
@@ -179,20 +200,21 @@ func _valid_content(value: Variant) -> bool:
 		for id in value.enemies:
 			var enemy = value.enemies[id]
 			if not id is String or not enemy is Dictionary or not enemy.get("name") is String or not EnemyRulesData.valid_definition(enemy): return false
-			if enemy.get("id", "") != id or not enemy.get("description") is String: return false
+			if not enemy.get("id") is String or enemy.id != id or not enemy.get("description") is String: return false
 			for field in ["hp", "attack", "defense", "gold_reward"]:
 				if not _valid_count(enemy.get(field)): return false
 			if int(enemy.hp) == 0 or enemy.get("ability_id", "") not in ["", "rage", "stone_armor"]: return false
 	return true
 
-func _valid_options(value: Variant, items: Dictionary) -> bool:
+func _valid_options(value: Variant, items: Dictionary, rules_version: int = 1) -> bool:
 	if not value is Array or value.size() != 2: return false
 	for option in value:
-		if not option is Dictionary or not option.get("name") is String or not _reward(option, items): return false
+		if not option is Dictionary or not option.get("name") is String or not _reward(option, items, rules_version): return false
 	return true
 
-func _reward(value: Dictionary, items: Dictionary) -> bool:
+func _reward(value: Dictionary, items: Dictionary, rules_version: int = 1) -> bool:
 	if value.has("item_id") and not _reference(value, "item_id", items): return false
+	if rules_version == 2: return Phase3Validation.valid_reward(value, items)
 	return _effects(value.get("cost", {}), ["hp", "gold", "keys", "silver_keys", "gold_keys"]) and _effects(value.get("effects", {}), ["attack", "defense", "max_hp", "gold", "keys", "silver_keys", "gold_keys", "heal"])
 
 func _effects(value: Variant, allowed: Array) -> bool:

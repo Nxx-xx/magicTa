@@ -1,0 +1,9 @@
+# Berserker battle draft review
+
+23 battle frame slots: idle 4/6 loop, attack 8/12 (hit 4), hit 3/12, defeat 8/12 (release 3, ground 5, knee contact 6). 512 master to 256 RGBA; combat anchor (128,237). Attack 7→0 is a deliberate return hold; defeat 7→6 is a deliberate terminal kneeling hold. 21 non-hold body poses. Map camera is assigned to map_b and is outside this battle draft.
+
+Imagegen generated one sixteen-part identity sheet, plus one shared slash/spark sheet reused by both elites. Originals and actual prompts are saved locally. Six independently painted leg segments, four arm segments, separate head/chest/waist/pauldrons/axe, named wrists and weapon_grip. Fixed root and two-bone leg contact solver; axe follows the near hand before its separate release trajectory. Red-gold slash overlay is independently switchable and exported only for attack.
+
+Agent actually inspected all four contact sheets, browser original and 0.25 speed, paused/stepped attack frame 4 and terminal frame 7, effects off, and 26/33/47px silhouettes. Helmet faces left; shoulder/elbow windup leads into leftward axe sweep then return; both hands remain attached. Defeat lowers knees, retracts hand while axe settles horizontally down-left. Final release height corrected to avoid bottom clipping; first failed defeat frames/source/manifest are retained in rejected_first_bake. Final technical JSON and native scene reload report no clipping or lost animations.
+
+Previews/contact sheets/WebP original and quarter speed/small strips: build/verification/phase3/08-parallel/base_c/berserker_*. Approved draft hashes are in berserker_publish_review.json. Fine armor trim is unreadable at 26px, but helmet/axe/red tabard and attack direction remain identifiable. This is agent visual acceptance for coordinator review; native source remains draft, human_signoff=false, production and real game UI review belong to coordinator.

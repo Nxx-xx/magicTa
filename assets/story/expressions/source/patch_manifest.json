@@ -1,0 +1,72 @@
+[
+  {
+    "name": "hero_guarded",
+    "base": "assets/characters/hero/dialogue/textures/hero_dialogue_neutral_v01.png",
+    "box": [
+      470,
+      246,
+      720,
+      465
+    ],
+    "size": [
+      250,
+      219
+    ]
+  },
+  {
+    "name": "hero_shock",
+    "base": "assets/characters/hero/dialogue/textures/hero_dialogue_neutral_v01.png",
+    "box": [
+      470,
+      246,
+      720,
+      465
+    ],
+    "size": [
+      250,
+      219
+    ]
+  },
+  {
+    "name": "prince_weary",
+    "base": "assets/story/phase2/prince_dialogue.png",
+    "box": [
+      480,
+      204,
+      704,
+      414
+    ],
+    "size": [
+      224,
+      210
+    ]
+  },
+  {
+    "name": "prince_sneer",
+    "base": "assets/story/phase2/prince_dialogue.png",
+    "box": [
+      480,
+      204,
+      704,
+      414
+    ],
+    "size": [
+      224,
+      210
+    ]
+  },
+  {
+    "name": "demon_stern",
+    "base": "assets/story/phase2/demon_dialogue.png",
+    "box": [
+      514,
+      208,
+      690,
+      396
+    ],
+    "size": [
+      176,
+      188
+    ]
+  }
+]

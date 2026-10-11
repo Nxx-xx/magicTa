@@ -1,0 +1,2988 @@
+{
+  "accepted_entities": [
+    "bat",
+    "berserker",
+    "golem",
+    "knight",
+    "minotaur",
+    "p3_ember_channeler",
+    "p3_shield_sentinel",
+    "p3_vault_knight",
+    "sentinel",
+    "skeleton",
+    "slime",
+    "warden",
+    "warlock"
+  ],
+  "actions": {
+    "golem_armor": {
+      "fps": 12.0,
+      "loop": false,
+      "events": {
+        "closed": 4.0
+      },
+      "pose_holds": {},
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/golem/battle/golem_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/armor/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/armor/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/armor/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/armor/frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/armor/frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/armor/frames/05.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/armor/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/armor/effects_frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/armor/effects_frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/armor/effects_frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/armor/effects_frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/armor/effects_frames/05.png"
+      ]
+    },
+    "golem_attack": {
+      "fps": 12.0,
+      "loop": false,
+      "events": {
+        "hit": 5.0
+      },
+      "pose_holds": {
+        "9": 0.0
+      },
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/golem/battle/golem_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack/frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack/frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack/frames/05.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack/frames/06.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack/frames/07.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack/frames/08.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack/frames/09.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack/effects_frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack/effects_frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack/effects_frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack/effects_frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack/effects_frames/05.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack/effects_frames/06.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack/effects_frames/07.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack/effects_frames/08.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack/effects_frames/09.png"
+      ]
+    },
+    "golem_defeat": {
+      "fps": 12.0,
+      "loop": false,
+      "events": {
+        "core_dark": 8.0,
+        "fracture": 3.0,
+        "ground": 10.0
+      },
+      "pose_holds": {
+        "11": 10.0
+      },
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/golem/battle/golem_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat/frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat/frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat/frames/05.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat/frames/06.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat/frames/07.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat/frames/08.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat/frames/09.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat/frames/10.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat/frames/11.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat/effects_frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat/effects_frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat/effects_frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat/effects_frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat/effects_frames/05.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat/effects_frames/06.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat/effects_frames/07.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat/effects_frames/08.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat/effects_frames/09.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat/effects_frames/10.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat/effects_frames/11.png"
+      ]
+    },
+    "golem_hit": {
+      "fps": 12.0,
+      "loop": false,
+      "events": {},
+      "pose_holds": {},
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/golem/battle/golem_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/hit/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/hit/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/hit/frames/02.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/hit/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/hit/effects_frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/hit/effects_frames/02.png"
+      ]
+    },
+    "golem_idle": {
+      "fps": 6.0,
+      "loop": true,
+      "events": {},
+      "pose_holds": {},
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/golem/battle/golem_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/idle/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/idle/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/idle/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/idle/frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/idle/frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/idle/frames/05.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/idle/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/idle/effects_frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/idle/effects_frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/idle/effects_frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/idle/effects_frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/idle/effects_frames/05.png"
+      ]
+    },
+    "golem_map_idle": {
+      "fps": 6.0,
+      "loop": true,
+      "events": {},
+      "pose_holds": {},
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/golem/map/golem_map_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/map_idle/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/map_idle/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/map_idle/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/map_idle/frames/03.png"
+      ]
+    },
+    "minotaur_attack": {
+      "anchor": [
+        192.0,
+        336.0
+      ],
+      "events": {
+        "hit": 4.0
+      },
+      "fps": 12.0,
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/minotaur/attack/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/minotaur/attack/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/minotaur/attack/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/minotaur/attack/frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/minotaur/attack/frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/minotaur/attack/frames/05.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/minotaur/attack/frames/06.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/minotaur/attack/frames/07.png"
+      ],
+      "loop": false,
+      "pose_holds": {
+        "7": 0.0
+      },
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "size": [
+        384.0,
+        384.0
+      ],
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/minotaur/battle/minotaur_rig.json",
+      "status": "draft"
+    },
+    "minotaur_defeat": {
+      "anchor": [
+        192.0,
+        336.0
+      ],
+      "events": {
+        "ground": 6.0,
+        "knee_contact": 7.0,
+        "release": 3.0
+      },
+      "fps": 12.0,
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/minotaur/defeat/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/minotaur/defeat/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/minotaur/defeat/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/minotaur/defeat/frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/minotaur/defeat/frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/minotaur/defeat/frames/05.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/minotaur/defeat/frames/06.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/minotaur/defeat/frames/07.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/minotaur/defeat/frames/08.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/minotaur/defeat/frames/09.png"
+      ],
+      "loop": false,
+      "pose_holds": {
+        "9": 8.0
+      },
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "size": [
+        384.0,
+        384.0
+      ],
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/minotaur/battle/minotaur_rig.json",
+      "status": "draft"
+    },
+    "minotaur_hit": {
+      "anchor": [
+        192.0,
+        336.0
+      ],
+      "events": {},
+      "fps": 12.0,
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/minotaur/hit/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/minotaur/hit/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/minotaur/hit/frames/02.png"
+      ],
+      "loop": false,
+      "pose_holds": {},
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "size": [
+        384.0,
+        384.0
+      ],
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/minotaur/battle/minotaur_rig.json",
+      "status": "draft"
+    },
+    "minotaur_idle": {
+      "anchor": [
+        192.0,
+        336.0
+      ],
+      "events": {},
+      "fps": 6.0,
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/minotaur/idle/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/minotaur/idle/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/minotaur/idle/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/minotaur/idle/frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/minotaur/idle/frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/minotaur/idle/frames/05.png"
+      ],
+      "loop": true,
+      "pose_holds": {},
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "size": [
+        384.0,
+        384.0
+      ],
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/minotaur/battle/minotaur_rig.json",
+      "status": "draft"
+    },
+    "minotaur_map_idle": {
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "events": {},
+      "fps": 6.0,
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/minotaur/map_idle/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/minotaur/map_idle/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/minotaur/map_idle/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/minotaur/map_idle/frames/03.png"
+      ],
+      "loop": true,
+      "pose_holds": {},
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "size": [
+        256.0,
+        256.0
+      ],
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/minotaur/map/minotaur_map_rig.json",
+      "status": "draft"
+    },
+    "minotaur_rage": {
+      "anchor": [
+        192.0,
+        336.0
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/minotaur/rage/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/minotaur/rage/effects_frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/minotaur/rage/effects_frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/minotaur/rage/effects_frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/minotaur/rage/effects_frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/minotaur/rage/effects_frames/05.png"
+      ],
+      "events": {},
+      "fps": 12.0,
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/minotaur/rage/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/minotaur/rage/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/minotaur/rage/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/minotaur/rage/frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/minotaur/rage/frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/minotaur/rage/frames/05.png"
+      ],
+      "loop": false,
+      "pose_holds": {},
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "size": [
+        384.0,
+        384.0
+      ],
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/minotaur/battle/minotaur_rig.json",
+      "status": "draft"
+    },
+    "slime_attack": {
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "events": {
+        "hit": 3.0
+      },
+      "fps": 12.0,
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/slime/attack/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/slime/attack/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/slime/attack/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/slime/attack/frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/slime/attack/frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/slime/attack/frames/05.png"
+      ],
+      "loop": false,
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "size": [
+        256.0,
+        256.0
+      ],
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/slime/battle/slime_rig.json",
+      "status": "draft"
+    },
+    "slime_defeat": {
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "events": {},
+      "fps": 10.0,
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/slime/defeat/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/slime/defeat/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/slime/defeat/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/slime/defeat/frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/slime/defeat/frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/slime/defeat/frames/05.png"
+      ],
+      "loop": false,
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "size": [
+        256.0,
+        256.0
+      ],
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/slime/battle/slime_rig.json",
+      "status": "draft"
+    },
+    "slime_hit": {
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "events": {},
+      "fps": 12.0,
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/slime/hit/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/slime/hit/frames/01.png"
+      ],
+      "loop": false,
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "size": [
+        256.0,
+        256.0
+      ],
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/slime/battle/slime_rig.json",
+      "status": "draft"
+    },
+    "slime_idle": {
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "events": {},
+      "fps": 6.0,
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/slime/idle/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/slime/idle/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/slime/idle/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/slime/idle/frames/03.png"
+      ],
+      "loop": true,
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "size": [
+        256.0,
+        256.0
+      ],
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/slime/battle/slime_rig.json",
+      "status": "draft"
+    },
+    "skeleton_attack": {
+      "fps": 12.0,
+      "loop": false,
+      "events": {
+        "hit": 3.0
+      },
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/skeleton/battle/skeleton_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {
+        "5": 0.0
+      },
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/skeleton/attack/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/skeleton/attack/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/skeleton/attack/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/skeleton/attack/frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/skeleton/attack/frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/skeleton/attack/frames/05.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/skeleton/attack/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/skeleton/attack/effects_frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/skeleton/attack/effects_frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/skeleton/attack/effects_frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/skeleton/attack/effects_frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/skeleton/attack/effects_frames/05.png"
+      ]
+    },
+    "skeleton_defeat": {
+      "fps": 10.0,
+      "loop": false,
+      "events": {
+        "ground": 4.0,
+        "release": 2.0
+      },
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/skeleton/battle/skeleton_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {
+        "5": 4.0
+      },
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/skeleton/defeat/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/skeleton/defeat/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/skeleton/defeat/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/skeleton/defeat/frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/skeleton/defeat/frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/skeleton/defeat/frames/05.png"
+      ]
+    },
+    "skeleton_hit": {
+      "fps": 12.0,
+      "loop": false,
+      "events": {
+        "recoil": 0.0
+      },
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/skeleton/battle/skeleton_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {},
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/skeleton/hit/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/skeleton/hit/frames/01.png"
+      ]
+    },
+    "skeleton_idle": {
+      "fps": 6.0,
+      "loop": true,
+      "events": {},
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/skeleton/battle/skeleton_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {},
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/skeleton/idle/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/skeleton/idle/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/skeleton/idle/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/skeleton/idle/frames/03.png"
+      ]
+    },
+    "sentinel_attack": {
+      "fps": 12.0,
+      "loop": false,
+      "events": {
+        "hit": 3.0
+      },
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/sentinel/battle/sentinel_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {
+        "5": 0.0
+      },
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/sentinel/attack/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/sentinel/attack/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/sentinel/attack/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/sentinel/attack/frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/sentinel/attack/frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/sentinel/attack/frames/05.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/sentinel/attack/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/sentinel/attack/effects_frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/sentinel/attack/effects_frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/sentinel/attack/effects_frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/sentinel/attack/effects_frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/sentinel/attack/effects_frames/05.png"
+      ]
+    },
+    "sentinel_defeat": {
+      "fps": 10.0,
+      "loop": false,
+      "events": {
+        "fracture": 2.0,
+        "ground": 5.0
+      },
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/sentinel/battle/sentinel_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {},
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/sentinel/defeat/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/sentinel/defeat/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/sentinel/defeat/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/sentinel/defeat/frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/sentinel/defeat/frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/sentinel/defeat/frames/05.png"
+      ]
+    },
+    "sentinel_hit": {
+      "fps": 12.0,
+      "loop": false,
+      "events": {
+        "recoil": 0.0
+      },
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/sentinel/battle/sentinel_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {},
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/sentinel/hit/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/sentinel/hit/frames/01.png"
+      ]
+    },
+    "sentinel_idle": {
+      "fps": 6.0,
+      "loop": true,
+      "events": {},
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/sentinel/battle/sentinel_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {},
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/sentinel/idle/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/sentinel/idle/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/sentinel/idle/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/sentinel/idle/frames/03.png"
+      ]
+    },
+    "knight_attack": {
+      "fps": 12.0,
+      "loop": false,
+      "events": {
+        "hit": 3.0
+      },
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/knight/battle/knight_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {
+        "5": 0.0
+      },
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/knight/attack/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/knight/attack/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/knight/attack/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/knight/attack/frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/knight/attack/frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/knight/attack/frames/05.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/knight/attack/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/knight/attack/effects_frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/knight/attack/effects_frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/knight/attack/effects_frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/knight/attack/effects_frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/knight/attack/effects_frames/05.png"
+      ]
+    },
+    "knight_defeat": {
+      "fps": 10.0,
+      "loop": false,
+      "events": {
+        "ground": 5.0,
+        "release": 2.0
+      },
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/knight/battle/knight_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {},
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/knight/defeat/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/knight/defeat/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/knight/defeat/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/knight/defeat/frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/knight/defeat/frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/knight/defeat/frames/05.png"
+      ]
+    },
+    "knight_hit": {
+      "fps": 12.0,
+      "loop": false,
+      "events": {
+        "recoil": 0.0
+      },
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/knight/battle/knight_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {},
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/knight/hit/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/knight/hit/frames/01.png"
+      ]
+    },
+    "knight_idle": {
+      "fps": 6.0,
+      "loop": true,
+      "events": {},
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/knight/battle/knight_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {},
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/knight/idle/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/knight/idle/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/knight/idle/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/knight/idle/frames/03.png"
+      ]
+    },
+    "bat_attack": {
+      "fps": 12.0,
+      "loop": false,
+      "events": {
+        "hit": 3.0
+      },
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/bat/battle/bat_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {
+        "5": 0.0
+      },
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/bat/attack/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/bat/attack/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/bat/attack/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/bat/attack/frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/bat/attack/frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/bat/attack/frames/05.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/bat/attack/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/bat/attack/effects_frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/bat/attack/effects_frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/bat/attack/effects_frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/bat/attack/effects_frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/bat/attack/effects_frames/05.png"
+      ]
+    },
+    "bat_defeat": {
+      "fps": 10.0,
+      "loop": false,
+      "events": {
+        "ground": 3.0,
+        "settle": 4.0
+      },
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/bat/battle/bat_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {
+        "5": 4.0
+      },
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/bat/defeat/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/bat/defeat/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/bat/defeat/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/bat/defeat/frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/bat/defeat/frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/bat/defeat/frames/05.png"
+      ]
+    },
+    "bat_hit": {
+      "fps": 12.0,
+      "loop": false,
+      "events": {
+        "recoil": 0.0
+      },
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/bat/battle/bat_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {},
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/bat/hit/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/bat/hit/frames/01.png"
+      ]
+    },
+    "bat_idle": {
+      "fps": 8.0,
+      "loop": true,
+      "events": {},
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/bat/battle/bat_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {},
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/bat/idle/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/bat/idle/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/bat/idle/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/bat/idle/frames/03.png"
+      ]
+    },
+    "warlock_attack": {
+      "fps": 12.0,
+      "loop": false,
+      "events": {
+        "cast": 2.0,
+        "hit": 3.0
+      },
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/warlock/battle/warlock_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {},
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/attack/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/attack/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/attack/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/attack/frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/attack/frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/attack/frames/05.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/attack/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/attack/effects_frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/attack/effects_frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/attack/effects_frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/attack/effects_frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/attack/effects_frames/05.png"
+      ]
+    },
+    "warlock_defeat": {
+      "fps": 10.0,
+      "loop": false,
+      "events": {
+        "extinguish": 3.0,
+        "release": 3.0
+      },
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/warlock/battle/warlock_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {},
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/defeat/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/defeat/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/defeat/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/defeat/frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/defeat/frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/defeat/frames/05.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/defeat/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/defeat/effects_frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/defeat/effects_frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/defeat/effects_frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/defeat/effects_frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/defeat/effects_frames/05.png"
+      ]
+    },
+    "warlock_hit": {
+      "fps": 12.0,
+      "loop": false,
+      "events": {},
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/warlock/battle/warlock_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {},
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/hit/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/hit/frames/01.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/hit/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/hit/effects_frames/01.png"
+      ]
+    },
+    "warlock_idle": {
+      "fps": 6.0,
+      "loop": true,
+      "events": {},
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/warlock/battle/warlock_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {},
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/idle/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/idle/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/idle/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/idle/frames/03.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/idle/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/idle/effects_frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/idle/effects_frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/idle/effects_frames/03.png"
+      ]
+    },
+    "slime_map_idle": {
+      "fps": 6.0,
+      "loop": true,
+      "events": {},
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/slime/map/slime_map_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {},
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/slime/map_idle/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/slime/map_idle/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/slime/map_idle/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/slime/map_idle/frames/03.png"
+      ]
+    },
+    "warlock_map_idle": {
+      "fps": 6.0,
+      "loop": true,
+      "events": {},
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/warlock/map/warlock_map_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {},
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/map_idle/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/map_idle/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/map_idle/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/map_idle/frames/03.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/map_idle/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/map_idle/effects_frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/map_idle/effects_frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/map_idle/effects_frames/03.png"
+      ]
+    },
+    "berserker_attack": {
+      "fps": 12.0,
+      "loop": false,
+      "events": {
+        "hit": 4.0
+      },
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        237.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/berserker/battle/berserker_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {
+        "7": 0.0
+      },
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/berserker/attack/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/berserker/attack/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/berserker/attack/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/berserker/attack/frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/berserker/attack/frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/berserker/attack/frames/05.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/berserker/attack/frames/06.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/berserker/attack/frames/07.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/berserker/attack/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/berserker/attack/effects_frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/berserker/attack/effects_frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/berserker/attack/effects_frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/berserker/attack/effects_frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/berserker/attack/effects_frames/05.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/berserker/attack/effects_frames/06.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/berserker/attack/effects_frames/07.png"
+      ]
+    },
+    "berserker_defeat": {
+      "fps": 12.0,
+      "loop": false,
+      "events": {
+        "ground": 5.0,
+        "knee_contact": 6.0,
+        "release": 3.0
+      },
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        237.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/berserker/battle/berserker_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {
+        "7": 6.0
+      },
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/berserker/defeat/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/berserker/defeat/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/berserker/defeat/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/berserker/defeat/frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/berserker/defeat/frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/berserker/defeat/frames/05.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/berserker/defeat/frames/06.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/berserker/defeat/frames/07.png"
+      ]
+    },
+    "berserker_hit": {
+      "fps": 12.0,
+      "loop": false,
+      "events": {},
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        237.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/berserker/battle/berserker_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {},
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/berserker/hit/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/berserker/hit/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/berserker/hit/frames/02.png"
+      ]
+    },
+    "berserker_idle": {
+      "fps": 6.0,
+      "loop": true,
+      "events": {},
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        237.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/berserker/battle/berserker_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {},
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/berserker/idle/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/berserker/idle/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/berserker/idle/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/berserker/idle/frames/03.png"
+      ]
+    },
+    "warden_attack": {
+      "fps": 12.0,
+      "loop": false,
+      "events": {
+        "hit": 4.0,
+        "shield_bash": 3.0
+      },
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        237.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/warden/battle/warden_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {
+        "7": 0.0
+      },
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warden/attack/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warden/attack/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warden/attack/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warden/attack/frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warden/attack/frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warden/attack/frames/05.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warden/attack/frames/06.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warden/attack/frames/07.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warden/attack/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warden/attack/effects_frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warden/attack/effects_frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warden/attack/effects_frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warden/attack/effects_frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warden/attack/effects_frames/05.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warden/attack/effects_frames/06.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warden/attack/effects_frames/07.png"
+      ]
+    },
+    "warden_defeat": {
+      "fps": 12.0,
+      "loop": false,
+      "events": {
+        "ground": 5.0,
+        "knee_contact": 6.0,
+        "release": 3.0
+      },
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        237.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/warden/battle/warden_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {
+        "7": 6.0
+      },
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warden/defeat/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warden/defeat/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warden/defeat/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warden/defeat/frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warden/defeat/frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warden/defeat/frames/05.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warden/defeat/frames/06.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warden/defeat/frames/07.png"
+      ]
+    },
+    "warden_hit": {
+      "fps": 12.0,
+      "loop": false,
+      "events": {},
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        237.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/warden/battle/warden_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {},
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warden/hit/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warden/hit/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warden/hit/frames/02.png"
+      ]
+    },
+    "warden_idle": {
+      "fps": 6.0,
+      "loop": true,
+      "events": {},
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        237.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/warden/battle/warden_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {},
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warden/idle/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warden/idle/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warden/idle/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warden/idle/frames/03.png"
+      ]
+    },
+    "knight_map_idle": {
+      "fps": 6.0,
+      "loop": true,
+      "events": {},
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/knight/map/knight_map_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {},
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/knight/map_idle/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/knight/map_idle/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/knight/map_idle/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/knight/map_idle/frames/03.png"
+      ]
+    },
+    "berserker_map_idle": {
+      "fps": 6.0,
+      "loop": true,
+      "events": {},
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/berserker/map/berserker_map_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {},
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/berserker/map_idle/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/berserker/map_idle/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/berserker/map_idle/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/berserker/map_idle/frames/03.png"
+      ]
+    },
+    "skeleton_map_idle": {
+      "fps": 6.0,
+      "loop": true,
+      "events": {},
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/skeleton/map/skeleton_map_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {},
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/skeleton/map_idle/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/skeleton/map_idle/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/skeleton/map_idle/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/skeleton/map_idle/frames/03.png"
+      ]
+    },
+    "warden_map_idle": {
+      "fps": 6.0,
+      "loop": true,
+      "events": {},
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/warden/map/warden_map_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {},
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warden/map_idle/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warden/map_idle/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warden/map_idle/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warden/map_idle/frames/03.png"
+      ]
+    },
+    "p3_ember_channeler_map_idle": {
+      "fps": 6.0,
+      "loop": true,
+      "events": {},
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/p3_ember_channeler/map/p3_ember_channeler_map_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {},
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/map_idle/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/map_idle/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/map_idle/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/map_idle/frames/03.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/map_idle/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/map_idle/effects_frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/map_idle/effects_frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/map_idle/effects_frames/03.png"
+      ]
+    },
+    "sentinel_map_idle": {
+      "fps": 6.0,
+      "loop": true,
+      "events": {},
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/sentinel/map/sentinel_map_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {},
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/sentinel/map_idle/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/sentinel/map_idle/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/sentinel/map_idle/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/sentinel/map_idle/frames/03.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/sentinel/map_idle/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/sentinel/map_idle/effects_frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/sentinel/map_idle/effects_frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/sentinel/map_idle/effects_frames/03.png"
+      ]
+    },
+    "p3_shield_sentinel_idle": {
+      "fps": 6.0,
+      "loop": true,
+      "events": {},
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/p3_shield_sentinel/battle/p3_shield_sentinel_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {},
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_shield_sentinel/idle/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_shield_sentinel/idle/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_shield_sentinel/idle/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_shield_sentinel/idle/frames/03.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_shield_sentinel/idle/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_shield_sentinel/idle/effects_frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_shield_sentinel/idle/effects_frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_shield_sentinel/idle/effects_frames/03.png"
+      ]
+    },
+    "p3_shield_sentinel_attack": {
+      "fps": 12.0,
+      "loop": false,
+      "events": {
+        "hit": 3.0
+      },
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/p3_shield_sentinel/battle/p3_shield_sentinel_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {
+        "5": 0.0
+      },
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_shield_sentinel/attack/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_shield_sentinel/attack/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_shield_sentinel/attack/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_shield_sentinel/attack/frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_shield_sentinel/attack/frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_shield_sentinel/attack/frames/05.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_shield_sentinel/attack/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_shield_sentinel/attack/effects_frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_shield_sentinel/attack/effects_frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_shield_sentinel/attack/effects_frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_shield_sentinel/attack/effects_frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_shield_sentinel/attack/effects_frames/05.png"
+      ]
+    },
+    "p3_shield_sentinel_hit": {
+      "fps": 12.0,
+      "loop": false,
+      "events": {
+        "recoil": 0.0
+      },
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/p3_shield_sentinel/battle/p3_shield_sentinel_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {},
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_shield_sentinel/hit/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_shield_sentinel/hit/frames/01.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_shield_sentinel/hit/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_shield_sentinel/hit/effects_frames/01.png"
+      ]
+    },
+    "p3_shield_sentinel_defeat": {
+      "fps": 10.0,
+      "loop": false,
+      "events": {
+        "fracture": 2.0,
+        "ground": 5.0
+      },
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/p3_shield_sentinel/battle/p3_shield_sentinel_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {},
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_shield_sentinel/defeat/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_shield_sentinel/defeat/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_shield_sentinel/defeat/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_shield_sentinel/defeat/frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_shield_sentinel/defeat/frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_shield_sentinel/defeat/frames/05.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_shield_sentinel/defeat/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_shield_sentinel/defeat/effects_frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_shield_sentinel/defeat/effects_frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_shield_sentinel/defeat/effects_frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_shield_sentinel/defeat/effects_frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_shield_sentinel/defeat/effects_frames/05.png"
+      ]
+    },
+    "p3_shield_sentinel_guard": {
+      "fps": 12.0,
+      "loop": false,
+      "events": {
+        "guard_contact": 2.0
+      },
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/p3_shield_sentinel/battle/p3_shield_sentinel_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {},
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_shield_sentinel/guard/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_shield_sentinel/guard/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_shield_sentinel/guard/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_shield_sentinel/guard/frames/03.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_shield_sentinel/guard/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_shield_sentinel/guard/effects_frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_shield_sentinel/guard/effects_frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_shield_sentinel/guard/effects_frames/03.png"
+      ]
+    },
+    "p3_ember_channeler_idle": {
+      "fps": 6.0,
+      "loop": true,
+      "events": {},
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/p3_ember_channeler/battle/p3_ember_channeler_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {},
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/idle/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/idle/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/idle/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/idle/frames/03.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/idle/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/idle/effects_frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/idle/effects_frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/idle/effects_frames/03.png"
+      ]
+    },
+    "p3_ember_channeler_attack": {
+      "fps": 12.0,
+      "loop": false,
+      "events": {
+        "cast": 2.0,
+        "hit": 3.0
+      },
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/p3_ember_channeler/battle/p3_ember_channeler_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {},
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/attack/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/attack/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/attack/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/attack/frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/attack/frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/attack/frames/05.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/attack/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/attack/effects_frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/attack/effects_frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/attack/effects_frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/attack/effects_frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/attack/effects_frames/05.png"
+      ]
+    },
+    "p3_ember_channeler_hit": {
+      "fps": 12.0,
+      "loop": false,
+      "events": {},
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/p3_ember_channeler/battle/p3_ember_channeler_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {},
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/hit/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/hit/frames/01.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/hit/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/hit/effects_frames/01.png"
+      ]
+    },
+    "p3_ember_channeler_defeat": {
+      "fps": 10.0,
+      "loop": false,
+      "events": {
+        "extinguish": 3.0,
+        "release": 3.0
+      },
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/p3_ember_channeler/battle/p3_ember_channeler_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {},
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/defeat/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/defeat/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/defeat/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/defeat/frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/defeat/frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/defeat/frames/05.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/defeat/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/defeat/effects_frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/defeat/effects_frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/defeat/effects_frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/defeat/effects_frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/defeat/effects_frames/05.png"
+      ]
+    },
+    "p3_ember_channeler_charge": {
+      "fps": 8.0,
+      "loop": false,
+      "events": {
+        "charge_peak": 2.0
+      },
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/p3_ember_channeler/battle/p3_ember_channeler_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {},
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/charge/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/charge/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/charge/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/charge/frames/03.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/charge/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/charge/effects_frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/charge/effects_frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/charge/effects_frames/03.png"
+      ]
+    },
+    "p3_vault_knight_idle": {
+      "fps": 6.0,
+      "loop": true,
+      "events": {},
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/p3_vault_knight/battle/p3_vault_knight_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {},
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/idle/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/idle/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/idle/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/idle/frames/03.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/idle/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/idle/effects_frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/idle/effects_frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/idle/effects_frames/03.png"
+      ]
+    },
+    "p3_vault_knight_attack": {
+      "fps": 12.0,
+      "loop": false,
+      "events": {
+        "hit": 3.0
+      },
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/p3_vault_knight/battle/p3_vault_knight_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {
+        "5": 0.0
+      },
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/attack/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/attack/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/attack/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/attack/frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/attack/frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/attack/frames/05.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/attack/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/attack/effects_frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/attack/effects_frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/attack/effects_frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/attack/effects_frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/attack/effects_frames/05.png"
+      ]
+    },
+    "p3_vault_knight_hit": {
+      "fps": 12.0,
+      "loop": false,
+      "events": {
+        "recoil": 0.0
+      },
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/p3_vault_knight/battle/p3_vault_knight_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {},
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/hit/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/hit/frames/01.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/hit/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/hit/effects_frames/01.png"
+      ]
+    },
+    "p3_vault_knight_defeat": {
+      "fps": 10.0,
+      "loop": false,
+      "events": {
+        "ground": 5.0,
+        "release": 2.0
+      },
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/p3_vault_knight/battle/p3_vault_knight_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {},
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/defeat/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/defeat/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/defeat/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/defeat/frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/defeat/frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/defeat/frames/05.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/defeat/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/defeat/effects_frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/defeat/effects_frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/defeat/effects_frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/defeat/effects_frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/defeat/effects_frames/05.png"
+      ]
+    },
+    "p3_vault_knight_threat": {
+      "fps": 8.0,
+      "loop": false,
+      "events": {
+        "threat_peak": 2.0
+      },
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/p3_vault_knight/battle/p3_vault_knight_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {},
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/threat/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/threat/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/threat/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/threat/frames/03.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/threat/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/threat/effects_frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/threat/effects_frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/threat/effects_frames/03.png"
+      ]
+    },
+    "p3_vault_knight_map_idle": {
+      "fps": 6.0,
+      "loop": true,
+      "events": {},
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/p3_vault_knight/map/p3_vault_knight_map_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {},
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/map_idle/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/map_idle/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/map_idle/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/map_idle/frames/03.png"
+      ]
+    },
+    "p3_shield_sentinel_map_idle": {
+      "fps": 6.0,
+      "loop": true,
+      "events": {},
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/p3_shield_sentinel/map/p3_shield_sentinel_map_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {},
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_shield_sentinel/map_idle/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_shield_sentinel/map_idle/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_shield_sentinel/map_idle/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_shield_sentinel/map_idle/frames/03.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_shield_sentinel/map_idle/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_shield_sentinel/map_idle/effects_frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_shield_sentinel/map_idle/effects_frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_shield_sentinel/map_idle/effects_frames/03.png"
+      ]
+    },
+    "bat_map_idle": {
+      "fps": 8.0,
+      "loop": true,
+      "events": {},
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/bat/map/bat_map_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {},
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/bat/map_idle/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/bat/map_idle/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/bat/map_idle/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/bat/map_idle/frames/03.png"
+      ]
+    },
+    "golem_armor_armor_1": {
+      "fps": 12.0,
+      "loop": false,
+      "events": {
+        "closed": 4.0
+      },
+      "pose_holds": {},
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/golem/battle/golem_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/armor_armor_1/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/armor_armor_1/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/armor_armor_1/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/armor_armor_1/frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/armor_armor_1/frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/armor_armor_1/frames/05.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/armor_armor_1/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/armor_armor_1/effects_frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/armor_armor_1/effects_frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/armor_armor_1/effects_frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/armor_armor_1/effects_frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/armor_armor_1/effects_frames/05.png"
+      ]
+    },
+    "golem_armor_armor_2": {
+      "fps": 12.0,
+      "loop": false,
+      "events": {
+        "closed": 4.0
+      },
+      "pose_holds": {},
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/golem/battle/golem_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/armor_armor_2/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/armor_armor_2/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/armor_armor_2/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/armor_armor_2/frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/armor_armor_2/frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/armor_armor_2/frames/05.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/armor_armor_2/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/armor_armor_2/effects_frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/armor_armor_2/effects_frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/armor_armor_2/effects_frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/armor_armor_2/effects_frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/armor_armor_2/effects_frames/05.png"
+      ]
+    },
+    "golem_armor_armor_3": {
+      "fps": 12.0,
+      "loop": false,
+      "events": {
+        "closed": 4.0
+      },
+      "pose_holds": {},
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/golem/battle/golem_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/armor_armor_3/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/armor_armor_3/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/armor_armor_3/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/armor_armor_3/frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/armor_armor_3/frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/armor_armor_3/frames/05.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/armor_armor_3/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/armor_armor_3/effects_frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/armor_armor_3/effects_frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/armor_armor_3/effects_frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/armor_armor_3/effects_frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/armor_armor_3/effects_frames/05.png"
+      ]
+    },
+    "golem_armor_armor_4": {
+      "fps": 12.0,
+      "loop": false,
+      "events": {
+        "closed": 4.0
+      },
+      "pose_holds": {},
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/golem/battle/golem_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/armor_armor_4/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/armor_armor_4/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/armor_armor_4/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/armor_armor_4/frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/armor_armor_4/frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/armor_armor_4/frames/05.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/armor_armor_4/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/armor_armor_4/effects_frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/armor_armor_4/effects_frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/armor_armor_4/effects_frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/armor_armor_4/effects_frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/armor_armor_4/effects_frames/05.png"
+      ]
+    },
+    "golem_attack_armor_1": {
+      "fps": 12.0,
+      "loop": false,
+      "events": {
+        "hit": 5.0
+      },
+      "pose_holds": {
+        "9": 0.0
+      },
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/golem/battle/golem_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_1/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_1/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_1/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_1/frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_1/frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_1/frames/05.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_1/frames/06.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_1/frames/07.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_1/frames/08.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_1/frames/09.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_1/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_1/effects_frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_1/effects_frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_1/effects_frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_1/effects_frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_1/effects_frames/05.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_1/effects_frames/06.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_1/effects_frames/07.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_1/effects_frames/08.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_1/effects_frames/09.png"
+      ]
+    },
+    "golem_attack_armor_2": {
+      "fps": 12.0,
+      "loop": false,
+      "events": {
+        "hit": 5.0
+      },
+      "pose_holds": {
+        "9": 0.0
+      },
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/golem/battle/golem_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_2/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_2/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_2/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_2/frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_2/frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_2/frames/05.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_2/frames/06.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_2/frames/07.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_2/frames/08.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_2/frames/09.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_2/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_2/effects_frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_2/effects_frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_2/effects_frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_2/effects_frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_2/effects_frames/05.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_2/effects_frames/06.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_2/effects_frames/07.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_2/effects_frames/08.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_2/effects_frames/09.png"
+      ]
+    },
+    "golem_attack_armor_3": {
+      "fps": 12.0,
+      "loop": false,
+      "events": {
+        "hit": 5.0
+      },
+      "pose_holds": {
+        "9": 0.0
+      },
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/golem/battle/golem_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_3/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_3/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_3/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_3/frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_3/frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_3/frames/05.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_3/frames/06.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_3/frames/07.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_3/frames/08.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_3/frames/09.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_3/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_3/effects_frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_3/effects_frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_3/effects_frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_3/effects_frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_3/effects_frames/05.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_3/effects_frames/06.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_3/effects_frames/07.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_3/effects_frames/08.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_3/effects_frames/09.png"
+      ]
+    },
+    "golem_attack_armor_4": {
+      "fps": 12.0,
+      "loop": false,
+      "events": {
+        "hit": 5.0
+      },
+      "pose_holds": {
+        "9": 0.0
+      },
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/golem/battle/golem_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_4/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_4/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_4/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_4/frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_4/frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_4/frames/05.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_4/frames/06.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_4/frames/07.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_4/frames/08.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_4/frames/09.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_4/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_4/effects_frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_4/effects_frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_4/effects_frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_4/effects_frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_4/effects_frames/05.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_4/effects_frames/06.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_4/effects_frames/07.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_4/effects_frames/08.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/attack_armor_4/effects_frames/09.png"
+      ]
+    },
+    "golem_defeat_armor_1": {
+      "fps": 12.0,
+      "loop": false,
+      "events": {
+        "core_dark": 8.0,
+        "fracture": 3.0,
+        "ground": 10.0
+      },
+      "pose_holds": {
+        "11": 10.0
+      },
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/golem/battle/golem_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_1/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_1/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_1/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_1/frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_1/frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_1/frames/05.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_1/frames/06.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_1/frames/07.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_1/frames/08.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_1/frames/09.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_1/frames/10.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_1/frames/11.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_1/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_1/effects_frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_1/effects_frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_1/effects_frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_1/effects_frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_1/effects_frames/05.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_1/effects_frames/06.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_1/effects_frames/07.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_1/effects_frames/08.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_1/effects_frames/09.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_1/effects_frames/10.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_1/effects_frames/11.png"
+      ]
+    },
+    "golem_defeat_armor_2": {
+      "fps": 12.0,
+      "loop": false,
+      "events": {
+        "core_dark": 8.0,
+        "fracture": 3.0,
+        "ground": 10.0
+      },
+      "pose_holds": {
+        "11": 10.0
+      },
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/golem/battle/golem_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_2/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_2/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_2/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_2/frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_2/frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_2/frames/05.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_2/frames/06.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_2/frames/07.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_2/frames/08.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_2/frames/09.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_2/frames/10.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_2/frames/11.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_2/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_2/effects_frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_2/effects_frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_2/effects_frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_2/effects_frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_2/effects_frames/05.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_2/effects_frames/06.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_2/effects_frames/07.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_2/effects_frames/08.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_2/effects_frames/09.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_2/effects_frames/10.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_2/effects_frames/11.png"
+      ]
+    },
+    "golem_defeat_armor_3": {
+      "fps": 12.0,
+      "loop": false,
+      "events": {
+        "core_dark": 8.0,
+        "fracture": 3.0,
+        "ground": 10.0
+      },
+      "pose_holds": {
+        "11": 10.0
+      },
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/golem/battle/golem_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_3/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_3/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_3/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_3/frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_3/frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_3/frames/05.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_3/frames/06.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_3/frames/07.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_3/frames/08.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_3/frames/09.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_3/frames/10.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_3/frames/11.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_3/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_3/effects_frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_3/effects_frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_3/effects_frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_3/effects_frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_3/effects_frames/05.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_3/effects_frames/06.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_3/effects_frames/07.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_3/effects_frames/08.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_3/effects_frames/09.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_3/effects_frames/10.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_3/effects_frames/11.png"
+      ]
+    },
+    "golem_defeat_armor_4": {
+      "fps": 12.0,
+      "loop": false,
+      "events": {
+        "core_dark": 8.0,
+        "fracture": 3.0,
+        "ground": 10.0
+      },
+      "pose_holds": {
+        "11": 10.0
+      },
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/golem/battle/golem_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_4/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_4/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_4/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_4/frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_4/frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_4/frames/05.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_4/frames/06.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_4/frames/07.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_4/frames/08.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_4/frames/09.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_4/frames/10.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_4/frames/11.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_4/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_4/effects_frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_4/effects_frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_4/effects_frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_4/effects_frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_4/effects_frames/05.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_4/effects_frames/06.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_4/effects_frames/07.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_4/effects_frames/08.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_4/effects_frames/09.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_4/effects_frames/10.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/defeat_armor_4/effects_frames/11.png"
+      ]
+    },
+    "golem_hit_armor_1": {
+      "fps": 12.0,
+      "loop": false,
+      "events": {},
+      "pose_holds": {},
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/golem/battle/golem_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/hit_armor_1/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/hit_armor_1/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/hit_armor_1/frames/02.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/hit_armor_1/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/hit_armor_1/effects_frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/hit_armor_1/effects_frames/02.png"
+      ]
+    },
+    "golem_hit_armor_2": {
+      "fps": 12.0,
+      "loop": false,
+      "events": {},
+      "pose_holds": {},
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/golem/battle/golem_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/hit_armor_2/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/hit_armor_2/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/hit_armor_2/frames/02.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/hit_armor_2/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/hit_armor_2/effects_frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/hit_armor_2/effects_frames/02.png"
+      ]
+    },
+    "golem_hit_armor_3": {
+      "fps": 12.0,
+      "loop": false,
+      "events": {},
+      "pose_holds": {},
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/golem/battle/golem_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/hit_armor_3/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/hit_armor_3/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/hit_armor_3/frames/02.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/hit_armor_3/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/hit_armor_3/effects_frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/hit_armor_3/effects_frames/02.png"
+      ]
+    },
+    "golem_hit_armor_4": {
+      "fps": 12.0,
+      "loop": false,
+      "events": {},
+      "pose_holds": {},
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/golem/battle/golem_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/hit_armor_4/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/hit_armor_4/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/hit_armor_4/frames/02.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/hit_armor_4/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/hit_armor_4/effects_frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/hit_armor_4/effects_frames/02.png"
+      ]
+    },
+    "golem_idle_armor_1": {
+      "fps": 6.0,
+      "loop": true,
+      "events": {},
+      "pose_holds": {},
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/golem/battle/golem_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/idle_armor_1/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/idle_armor_1/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/idle_armor_1/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/idle_armor_1/frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/idle_armor_1/frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/idle_armor_1/frames/05.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/idle_armor_1/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/idle_armor_1/effects_frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/idle_armor_1/effects_frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/idle_armor_1/effects_frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/idle_armor_1/effects_frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/idle_armor_1/effects_frames/05.png"
+      ]
+    },
+    "golem_idle_armor_2": {
+      "fps": 6.0,
+      "loop": true,
+      "events": {},
+      "pose_holds": {},
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/golem/battle/golem_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/idle_armor_2/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/idle_armor_2/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/idle_armor_2/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/idle_armor_2/frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/idle_armor_2/frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/idle_armor_2/frames/05.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/idle_armor_2/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/idle_armor_2/effects_frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/idle_armor_2/effects_frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/idle_armor_2/effects_frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/idle_armor_2/effects_frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/idle_armor_2/effects_frames/05.png"
+      ]
+    },
+    "golem_idle_armor_3": {
+      "fps": 6.0,
+      "loop": true,
+      "events": {},
+      "pose_holds": {},
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/golem/battle/golem_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/idle_armor_3/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/idle_armor_3/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/idle_armor_3/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/idle_armor_3/frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/idle_armor_3/frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/idle_armor_3/frames/05.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/idle_armor_3/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/idle_armor_3/effects_frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/idle_armor_3/effects_frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/idle_armor_3/effects_frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/idle_armor_3/effects_frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/idle_armor_3/effects_frames/05.png"
+      ]
+    },
+    "golem_idle_armor_4": {
+      "fps": 6.0,
+      "loop": true,
+      "events": {},
+      "pose_holds": {},
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "draft",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/golem/battle/golem_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/idle_armor_4/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/idle_armor_4/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/idle_armor_4/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/idle_armor_4/frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/idle_armor_4/frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/idle_armor_4/frames/05.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/idle_armor_4/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/idle_armor_4/effects_frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/idle_armor_4/effects_frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/idle_armor_4/effects_frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/idle_armor_4/effects_frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/golem/idle_armor_4/effects_frames/05.png"
+      ]
+    }
+  },
+  "effects": {
+    "p3_ambush": {
+      "anchor": [
+        192,
+        336
+      ],
+      "fps": 12,
+      "frames": [
+        "res://assets/monsters/phase3/effects/p3_ambush_00.png",
+        "res://assets/monsters/phase3/effects/p3_ambush_01.png",
+        "res://assets/monsters/phase3/effects/p3_ambush_02.png",
+        "res://assets/monsters/phase3/effects/p3_ambush_03.png"
+      ],
+      "loop": false,
+      "size": [
+        384,
+        384
+      ],
+      "source": "original code-native SVG paths in effects/; no external assets",
+      "status": "technical_preview"
+    },
+    "p3_ember": {
+      "anchor": [
+        192,
+        336
+      ],
+      "fps": 8,
+      "frames": [
+        "res://assets/monsters/phase3/effects/p3_ember_00.png",
+        "res://assets/monsters/phase3/effects/p3_ember_01.png",
+        "res://assets/monsters/phase3/effects/p3_ember_02.png",
+        "res://assets/monsters/phase3/effects/p3_ember_03.png"
+      ],
+      "loop": false,
+      "size": [
+        384,
+        384
+      ],
+      "source": "original code-native SVG paths in effects/; no external assets",
+      "status": "technical_preview"
+    },
+    "p3_shield": {
+      "anchor": [
+        192,
+        336
+      ],
+      "fps": 12,
+      "frames": [
+        "res://assets/monsters/phase3/effects/p3_shield_00.png",
+        "res://assets/monsters/phase3/effects/p3_shield_01.png",
+        "res://assets/monsters/phase3/effects/p3_shield_02.png",
+        "res://assets/monsters/phase3/effects/p3_shield_03.png"
+      ],
+      "loop": false,
+      "size": [
+        384,
+        384
+      ],
+      "source": "original code-native SVG paths in effects/; no external assets",
+      "status": "technical_preview"
+    },
+    "rage": {
+      "anchor": [
+        192,
+        336
+      ],
+      "fps": 12,
+      "frames": [
+        "res://assets/monsters/phase3/effects/rage_00.png",
+        "res://assets/monsters/phase3/effects/rage_01.png",
+        "res://assets/monsters/phase3/effects/rage_02.png",
+        "res://assets/monsters/phase3/effects/rage_03.png",
+        "res://assets/monsters/phase3/effects/rage_04.png",
+        "res://assets/monsters/phase3/effects/rage_05.png"
+      ],
+      "loop": false,
+      "size": [
+        384,
+        384
+      ],
+      "source": "original code-native SVG paths in effects/; no external assets",
+      "status": "technical_preview"
+    },
+    "retaliation": {
+      "anchor": [
+        192,
+        336
+      ],
+      "fps": 12,
+      "frames": [
+        "res://assets/monsters/phase3/effects/retaliation_00.png",
+        "res://assets/monsters/phase3/effects/retaliation_01.png",
+        "res://assets/monsters/phase3/effects/retaliation_02.png",
+        "res://assets/monsters/phase3/effects/retaliation_03.png"
+      ],
+      "loop": false,
+      "size": [
+        384,
+        384
+      ],
+      "source": "original code-native SVG paths in effects/; no external assets",
+      "status": "technical_preview"
+    },
+    "stone_armor": {
+      "anchor": [
+        192,
+        336
+      ],
+      "fps": 12,
+      "frames": [
+        "res://assets/monsters/phase3/effects/stone_armor_00.png",
+        "res://assets/monsters/phase3/effects/stone_armor_01.png",
+        "res://assets/monsters/phase3/effects/stone_armor_02.png",
+        "res://assets/monsters/phase3/effects/stone_armor_03.png",
+        "res://assets/monsters/phase3/effects/stone_armor_04.png",
+        "res://assets/monsters/phase3/effects/stone_armor_05.png"
+      ],
+      "loop": false,
+      "size": [
+        384,
+        384
+      ],
+      "source": "original code-native SVG paths in effects/; no external assets",
+      "status": "technical_preview"
+    }
+  },
+  "missing_creatures": [],
+  "missing_deliverables": [
+    "human motion review and target-device acceptance"
+  ],
+  "production_ready": false,
+  "source_method": "Reviewed native rigs; worker and coordinator exact-frame hashes gate v05 publication",
+  "status": "partially_accepted",
+  "version": 1,
+  "view": "combat_and_independent_map",
+  "golem_stone_armor": {
+    "includes_base": true,
+    "reachable_enhancements": 4,
+    "defense": [
+      14,
+      16,
+      18,
+      20,
+      22
+    ],
+    "event_increment": 2,
+    "stage_count": 5,
+    "selection": "sum of committed ordered stone_armor event amounts only",
+    "idle_actions": [
+      "idle",
+      "idle_armor_1",
+      "idle_armor_2",
+      "idle_armor_3",
+      "idle_armor_4"
+    ],
+    "human_signoff": false,
+    "review": "source/golem_v06/golem_publish_review.json"
+  },
+  "art_polish_b": {
+    "status": "draft_explicit_preview_only",
+    "human_signoff": false,
+    "production_publication": "Requires coordinator exact-SHA review; original manifest remains unchanged."
+  }
+}

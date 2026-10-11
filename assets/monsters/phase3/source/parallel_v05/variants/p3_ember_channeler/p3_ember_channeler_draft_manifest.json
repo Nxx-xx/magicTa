@@ -1,0 +1,382 @@
+{
+  "actions": {
+    "attack": {
+      "combined_frames": [
+        "p3_ember_channeler_frames/attack/00_combined.png",
+        "p3_ember_channeler_frames/attack/01_combined.png",
+        "p3_ember_channeler_frames/attack/02_combined.png",
+        "p3_ember_channeler_frames/attack/03_combined.png",
+        "p3_ember_channeler_frames/attack/04_combined.png",
+        "p3_ember_channeler_frames/attack/05_combined.png"
+      ],
+      "effects_frames": [
+        "p3_ember_channeler_frames/attack/00_effect.png",
+        "p3_ember_channeler_frames/attack/01_effect.png",
+        "p3_ember_channeler_frames/attack/02_effect.png",
+        "p3_ember_channeler_frames/attack/03_effect.png",
+        "p3_ember_channeler_frames/attack/04_effect.png",
+        "p3_ember_channeler_frames/attack/05_effect.png"
+      ],
+      "events": {
+        "cast": 2.0,
+        "hit": 3.0
+      },
+      "fps": 12.0,
+      "frames": [
+        "p3_ember_channeler_frames/attack/00.png",
+        "p3_ember_channeler_frames/attack/01.png",
+        "p3_ember_channeler_frames/attack/02.png",
+        "p3_ember_channeler_frames/attack/03.png",
+        "p3_ember_channeler_frames/attack/04.png",
+        "p3_ember_channeler_frames/attack/05.png"
+      ],
+      "loop": false,
+      "metrics": [
+        {
+          "bounds": [
+            98,
+            53,
+            100,
+            183
+          ],
+          "edge_touch": false,
+          "frame": 0
+        },
+        {
+          "bounds": [
+            76,
+            55,
+            121,
+            181
+          ],
+          "edge_touch": false,
+          "frame": 1
+        },
+        {
+          "bounds": [
+            73,
+            52,
+            125,
+            184
+          ],
+          "edge_touch": false,
+          "frame": 2
+        },
+        {
+          "bounds": [
+            70,
+            52,
+            129,
+            184
+          ],
+          "edge_touch": false,
+          "frame": 3
+        },
+        {
+          "bounds": [
+            78,
+            52,
+            120,
+            184
+          ],
+          "edge_touch": false,
+          "frame": 4
+        },
+        {
+          "bounds": [
+            95,
+            52,
+            103,
+            184
+          ],
+          "edge_touch": false,
+          "frame": 5
+        }
+      ],
+      "pose_holds": {}
+    },
+    "charge": {
+      "combined_frames": [
+        "p3_ember_channeler_frames/charge/00_combined.png",
+        "p3_ember_channeler_frames/charge/01_combined.png",
+        "p3_ember_channeler_frames/charge/02_combined.png",
+        "p3_ember_channeler_frames/charge/03_combined.png"
+      ],
+      "effects_frames": [
+        "p3_ember_channeler_frames/charge/00_effect.png",
+        "p3_ember_channeler_frames/charge/01_effect.png",
+        "p3_ember_channeler_frames/charge/02_effect.png",
+        "p3_ember_channeler_frames/charge/03_effect.png"
+      ],
+      "events": {
+        "charge_peak": 2.0
+      },
+      "fps": 8.0,
+      "frames": [
+        "p3_ember_channeler_frames/charge/00.png",
+        "p3_ember_channeler_frames/charge/01.png",
+        "p3_ember_channeler_frames/charge/02.png",
+        "p3_ember_channeler_frames/charge/03.png"
+      ],
+      "loop": false,
+      "metrics": [
+        {
+          "bounds": [
+            86,
+            53,
+            112,
+            183
+          ],
+          "edge_touch": false,
+          "frame": 0
+        },
+        {
+          "bounds": [
+            75,
+            55,
+            123,
+            181
+          ],
+          "edge_touch": false,
+          "frame": 1
+        },
+        {
+          "bounds": [
+            76,
+            52,
+            122,
+            184
+          ],
+          "edge_touch": false,
+          "frame": 2
+        },
+        {
+          "bounds": [
+            83,
+            52,
+            115,
+            184
+          ],
+          "edge_touch": false,
+          "frame": 3
+        }
+      ],
+      "pose_holds": {}
+    },
+    "defeat": {
+      "combined_frames": [
+        "p3_ember_channeler_frames/defeat/00_combined.png",
+        "p3_ember_channeler_frames/defeat/01_combined.png",
+        "p3_ember_channeler_frames/defeat/02_combined.png",
+        "p3_ember_channeler_frames/defeat/03_combined.png",
+        "p3_ember_channeler_frames/defeat/04_combined.png",
+        "p3_ember_channeler_frames/defeat/05_combined.png"
+      ],
+      "effects_frames": [
+        "p3_ember_channeler_frames/defeat/00_effect.png",
+        "p3_ember_channeler_frames/defeat/01_effect.png",
+        "p3_ember_channeler_frames/defeat/02_effect.png",
+        "p3_ember_channeler_frames/defeat/03_effect.png",
+        "p3_ember_channeler_frames/defeat/04_effect.png",
+        "p3_ember_channeler_frames/defeat/05_effect.png"
+      ],
+      "events": {
+        "extinguish": 3.0,
+        "release": 3.0
+      },
+      "fps": 10.0,
+      "frames": [
+        "p3_ember_channeler_frames/defeat/00.png",
+        "p3_ember_channeler_frames/defeat/01.png",
+        "p3_ember_channeler_frames/defeat/02.png",
+        "p3_ember_channeler_frames/defeat/03.png",
+        "p3_ember_channeler_frames/defeat/04.png",
+        "p3_ember_channeler_frames/defeat/05.png"
+      ],
+      "loop": false,
+      "metrics": [
+        {
+          "bounds": [
+            97,
+            58,
+            99,
+            179
+          ],
+          "edge_touch": false,
+          "frame": 0
+        },
+        {
+          "bounds": [
+            98,
+            61,
+            99,
+            176
+          ],
+          "edge_touch": false,
+          "frame": 1
+        },
+        {
+          "bounds": [
+            91,
+            66,
+            108,
+            174
+          ],
+          "edge_touch": false,
+          "frame": 2
+        },
+        {
+          "bounds": [
+            74,
+            82,
+            125,
+            155
+          ],
+          "edge_touch": false,
+          "frame": 3
+        },
+        {
+          "bounds": [
+            15,
+            103,
+            183,
+            135
+          ],
+          "edge_touch": false,
+          "frame": 4
+        },
+        {
+          "bounds": [
+            9,
+            105,
+            190,
+            134
+          ],
+          "edge_touch": false,
+          "frame": 5
+        }
+      ],
+      "pose_holds": {}
+    },
+    "hit": {
+      "combined_frames": [
+        "p3_ember_channeler_frames/hit/00_combined.png",
+        "p3_ember_channeler_frames/hit/01_combined.png"
+      ],
+      "effects_frames": [
+        "p3_ember_channeler_frames/hit/00_effect.png",
+        "p3_ember_channeler_frames/hit/01_effect.png"
+      ],
+      "events": {},
+      "fps": 12.0,
+      "frames": [
+        "p3_ember_channeler_frames/hit/00.png",
+        "p3_ember_channeler_frames/hit/01.png"
+      ],
+      "loop": false,
+      "metrics": [
+        {
+          "bounds": [
+            94,
+            61,
+            101,
+            176
+          ],
+          "edge_touch": false,
+          "frame": 0
+        },
+        {
+          "bounds": [
+            94,
+            54,
+            103,
+            182
+          ],
+          "edge_touch": false,
+          "frame": 1
+        }
+      ],
+      "pose_holds": {}
+    },
+    "idle": {
+      "combined_frames": [
+        "p3_ember_channeler_frames/idle/00_combined.png",
+        "p3_ember_channeler_frames/idle/01_combined.png",
+        "p3_ember_channeler_frames/idle/02_combined.png",
+        "p3_ember_channeler_frames/idle/03_combined.png"
+      ],
+      "effects_frames": [
+        "p3_ember_channeler_frames/idle/00_effect.png",
+        "p3_ember_channeler_frames/idle/01_effect.png",
+        "p3_ember_channeler_frames/idle/02_effect.png",
+        "p3_ember_channeler_frames/idle/03_effect.png"
+      ],
+      "events": {},
+      "fps": 6.0,
+      "frames": [
+        "p3_ember_channeler_frames/idle/00.png",
+        "p3_ember_channeler_frames/idle/01.png",
+        "p3_ember_channeler_frames/idle/02.png",
+        "p3_ember_channeler_frames/idle/03.png"
+      ],
+      "loop": true,
+      "metrics": [
+        {
+          "bounds": [
+            95,
+            52,
+            103,
+            184
+          ],
+          "edge_touch": false,
+          "frame": 0
+        },
+        {
+          "bounds": [
+            94,
+            51,
+            104,
+            185
+          ],
+          "edge_touch": false,
+          "frame": 1
+        },
+        {
+          "bounds": [
+            93,
+            51,
+            104,
+            185
+          ],
+          "edge_touch": false,
+          "frame": 2
+        },
+        {
+          "bounds": [
+            95,
+            51,
+            103,
+            185
+          ],
+          "edge_touch": false,
+          "frame": 3
+        }
+      ],
+      "pose_holds": {}
+    }
+  },
+  "anchor": [
+    128.0,
+    224.0
+  ],
+  "size": [
+    256.0,
+    256.0
+  ],
+  "source": "res://assets/monsters/phase3/source/parallel_v05/variants/p3_ember_channeler/p3_ember_channeler_rig.json",
+  "status": "draft",
+  "entity": "p3_ember_channeler",
+  "scene": "battle",
+  "camera": "three-quarter facing left",
+  "human_signoff": false
+}

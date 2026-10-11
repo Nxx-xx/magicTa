@@ -1,0 +1,20 @@
+[
+  {
+    "id": "salvage",
+    "prompt": "Use case: stylized-concept. Asset type: production inventory icon for a dark hand-painted fantasy mobile game. Single isolated object, genuine transparent background. Painterly tactile materials, broad deliberate brushwork, cool teal shadows and aged gold accents, soft bright upper-left key light, crisp strong outer silhouette and concentrated highlights. NOT flat vector art, NOT photorealistic product photography. Front three-quarter view, object fills 78% of square canvas, centered with 11% transparent safety margin. Must read clearly at 32px and 48px: bold masses, minimal tiny ornaments. No ground, backdrop, frame, border, text, letters, watermarks, hands or extra objects. Preserve transparent antialiased edges.\nSubject: A small rounded drawstring supply pouch of worn brown leather, open just enough to show two old gold coins and the corner of a grey metal scrap, thick tied cord and a simple brass clasp. Compact low broad silhouette. This represents taking stored supplies, not buying a specific relic.",
+    "tool": "built-in image_gen",
+    "version": "painted_v02"
+  },
+  {
+    "id": "temper",
+    "prompt": "Use case: stylized-concept. Asset type: production inventory icon for a dark hand-painted fantasy mobile game. Single isolated object, genuine transparent background. Painterly tactile materials, broad deliberate brushwork, cool teal shadows and aged gold accents, soft bright upper-left key light, crisp strong outer silhouette and concentrated highlights. NOT flat vector art, NOT photorealistic product photography. Front three-quarter view, object fills 78% of square canvas, centered with 11% transparent safety margin. Must read clearly at 32px and 48px: bold masses, minimal tiny ornaments. No ground, backdrop, frame, border, text, letters, watermarks, hands or extra objects. Preserve transparent antialiased edges.\nSubject: A small blue-grey blacksmith anvil with one bright silver sword-steel billet laid across it and a short wood-handled steel hammer leaning against the side. Compact single grouped forge tool icon, broad masses. No fire or environment.",
+    "tool": "built-in image_gen",
+    "version": "painted_v02"
+  },
+  {
+    "id": "sacrifice",
+    "prompt": "Use case: stylized-concept. Asset type: production inventory icon for a dark hand-painted fantasy mobile game. Single isolated object, genuine transparent background. Painterly tactile materials, broad deliberate brushwork, cool teal shadows and aged gold accents, soft bright upper-left key light, crisp strong outer silhouette and concentrated highlights. NOT flat vector art, NOT photorealistic product photography. Front three-quarter view, object fills 78% of square canvas, centered with 11% transparent safety margin. Must read clearly at 32px and 48px: bold masses, minimal tiny ornaments. No ground, backdrop, frame, border, text, letters, watermarks, hands or extra objects. Preserve transparent antialiased edges.\nSubject: A dark slate rectangular whetstone in a short old-brass holder, diagonal front three-quarter view, glowing deep crimson fissure shaped like a droplet on its top. A small silver blade edge touches its upper left corner. Symbolizes sharpening by sacrificing vitality. No gore, no hand.",
+    "tool": "built-in image_gen",
+    "version": "painted_v02"
+  }
+]

@@ -1,0 +1,26 @@
+{
+	"anchor": [
+		128,
+		217.389022827148
+	],
+	"events": {},
+	"fps": 4,
+	"frames": [
+		"source/draft/idle_00.png",
+		"source/draft/idle_01.png",
+		"source/draft/idle_02.png",
+		"source/draft/idle_03.png",
+		"source/draft/idle_04.png",
+		"source/draft/idle_05.png",
+		"source/draft/idle_06.png",
+		"source/draft/idle_07.png"
+	],
+	"human_signoff": false,
+	"loop": true,
+	"size": [
+		256,
+		256
+	],
+	"source": "source/art_polish_a_knight_editable.tscn",
+	"status": "draft"
+}

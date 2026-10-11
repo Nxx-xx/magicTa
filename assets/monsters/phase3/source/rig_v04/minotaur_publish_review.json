@@ -1,0 +1,118 @@
+{
+  "entity": "minotaur",
+  "date": "2026-10-01",
+  "review_method": "contact sheets plus native/browser playback; agent visual review",
+  "human_signoff": false,
+  "new_imagegen_originals": 2,
+  "actions": {
+    "idle": {
+      "decision": "accepted",
+      "draft_manifest": "minotaur_draft_manifest.json",
+      "source_action": "idle",
+      "frame_slots": 6,
+      "pose_holds": {},
+      "notes": "Planted hooves; head/arm breathing; fixed root.",
+      "frame_sha256": [
+        "352d2075cd678bd312a8f5508797ad411af8c44b0ac4ddf74b40746b0f7a3ac2",
+        "6d5066ae3700b085942fa430d2ffa5d4c9edfbd8a7e0b8d57c2b04f67e87956c",
+        "229df8abb16adb554bac4ffbc752baec4fe9b4a709893b07ee362878337ec7fa",
+        "c389e973fa8a38213d75af2c441eeda15ffeeca1589fe5e857756db3068463e6",
+        "496f646bced69c95c09b3250c3b4b14b7ca920ab6fe8bbcf8bffdd8e02c26e50",
+        "4fab3dabdb49b4a40fcc218c4fcba47d2d5769a9981179c5b4f507534faa1e74"
+      ]
+    },
+    "attack": {
+      "decision": "accepted",
+      "draft_manifest": "minotaur_draft_manifest.json",
+      "source_action": "attack",
+      "frame_slots": 8,
+      "pose_holds": {
+        "7": 0
+      },
+      "notes": "Windup, left contact frame 4, recovery; no clipping; final return is explicit hold.",
+      "frame_sha256": [
+        "352d2075cd678bd312a8f5508797ad411af8c44b0ac4ddf74b40746b0f7a3ac2",
+        "023b0390744d745f1864a036b1a3d4a5875e290262ba0661178682ae9a044cf8",
+        "b34d109daab6c64d2f82415276b05dc3e064e3479d0a63d2d66f0fd52fa0cb9c",
+        "1363d60e5c984ace003928e15d789582b000a1076f0173f012d4e386dfbd7a58",
+        "1e196956c7e980d09c7c23d74cc4959a6134085cefa5c5312a0b7e6c7f162b75",
+        "ce0fdf32924b3436d4762689cdcb20a8e0c678edfd1941d446ae8e7209861368",
+        "29096dac3a8164497b682e08a55a57ddc9611a616fd9181a1754974fefe7dc9f",
+        "352d2075cd678bd312a8f5508797ad411af8c44b0ac4ddf74b40746b0f7a3ac2"
+      ]
+    },
+    "hit": {
+      "decision": "accepted",
+      "draft_manifest": "minotaur_draft_manifest.json",
+      "source_action": "hit",
+      "frame_slots": 3,
+      "pose_holds": {},
+      "notes": "Chest/head recoil and recovery; no detached joints.",
+      "frame_sha256": [
+        "6ddaeebe6cdd728cc3231bd0bf0b27114e8713a755f52103ba1c15fd34d25c92",
+        "edccdeda28b4d259c48d8224dc2c3ba156848db6adb42d996d65d977200c46fd",
+        "352d2075cd678bd312a8f5508797ad411af8c44b0ac4ddf74b40746b0f7a3ac2"
+      ]
+    },
+    "rage": {
+      "decision": "accepted",
+      "draft_manifest": "minotaur_draft_manifest.json",
+      "source_action": "rage",
+      "frame_slots": 6,
+      "pose_holds": {},
+      "notes": "Crouch and chest opening; body and independently switchable rune checked at frame 3.",
+      "frame_sha256": [
+        "b20b1fab45d3558937034b1a7f42a84cb12b4e2e098ceddf65a9350599c02535",
+        "4fc0c1a8e5a6dee2e8f96f313b4c490c82485d573ff7649fce3310bb7d245877",
+        "c4a1d5c4df1ea0bc8569d7320ef9cf1412b11cddcce5830d7be5096007685d09",
+        "a0ee4669ce9104ac688ebe05c4f47ab1d9957ad27f27e1e14c9b45d610a002fb",
+        "88b1a95379054fb333a1c10be0645ce3f7d9780cd0c8fe0708f852005f687939",
+        "6702aeaa8e8b34b49950fda7906b7fe0062858d911b4de8bcf16e3c44b3df97d"
+      ],
+      "effects_sha256": [
+        "4af57284799ec9bede1f18cd8c79592844a9d92f12be6e7450132702b1cf7283",
+        "7fde499f44f68c3da3c7bb4bac8531130df2412f76f0372c7e0df15ff3ffd4c8",
+        "9aa3f702dafe92cd27747247c183a3ecd6db4d921114485e4888a657efbfb2fd",
+        "acb601509337d2d2e5cd99b717f040ca48137c351f88f3c01896cd1837699f38",
+        "a7624fa8412d9ceed80f1e3df5e3c030b80429b0d0062462c7b5fbb833cae858",
+        "552e3ea8f718a2a625f3583913aa9aca1048f2427c8f95b92285b362a9f2b43a"
+      ]
+    },
+    "defeat": {
+      "decision": "accepted",
+      "draft_manifest": "minotaur_draft_manifest.json",
+      "source_action": "defeat",
+      "frame_slots": 10,
+      "pose_holds": {
+        "9": 8
+      },
+      "notes": "Re-reviewed contact sheet, native bake and browser 0.25x/terminal small silhouettes: independent axe falls visibly to the left; open forearm withdraws after release; planted far hoof; two-bone knee lowering; declared terminal hold.",
+      "frame_sha256": [
+        "c80e5aee351dd7a50b082d81d9b5ff086d75e184df0df179f360a6b8494661f4",
+        "47ccc3ba98fb25f213920645bf9d93ae4985f63b4491336485d2a8feccf797c2",
+        "e1ecafee7c3e5486288c21ef3925bf0f8cf6ac30c23eac9df18e8b000794ba7d",
+        "ed96ba99cb3d53d674d670ed259b3d9b2937946d9d858b8ccc8003f68202e6e3",
+        "84908e41a3c8c4f4f352cbed47a70a39f65504d9be1ac30abab06cb07c71115e",
+        "ac476d8e26be9049c3c18d30dfd62addbce8d9e111a4fe9e443df0f33bda859f",
+        "3ceafac5416d060035b519ef8f9f51fae61ef111118825e3b8e3572dda69c0a6",
+        "3f8014ff18faa7daf5c7b4e34597231fdb5a1e5a26f48a0173c18c19e9416001",
+        "38642c2faaf676aa69036a59a1114a5248cea10959488dcfc18d37830ae9ca2a",
+        "38642c2faaf676aa69036a59a1114a5248cea10959488dcfc18d37830ae9ca2a"
+      ]
+    },
+    "map_idle": {
+      "decision": "accepted",
+      "draft_manifest": "minotaur_map_draft_manifest.json",
+      "source_action": "idle",
+      "frame_slots": 4,
+      "pose_holds": {},
+      "notes": "Independent elevated/front camera; no mirrored combat art; neck and pauldrons overlap correctly.",
+      "frame_sha256": [
+        "eefed59211da787e86c14e0664afc97f4dc3984a208894cc49c413f3bcf5fc0a",
+        "ece21e77cd82fbfb4c3f72b144dade16004fcf507a59e9d681e6210f8506c547",
+        "9c2bbbc3b02fad116e0a0514f51ec0e3dbca6cd0981c4fc41a12d86af6d5a04b",
+        "5cc630907b9e3e011eb694cde22ba074eee2e97214e810cc44d0cd7371c800e1"
+      ]
+    }
+  }
+}

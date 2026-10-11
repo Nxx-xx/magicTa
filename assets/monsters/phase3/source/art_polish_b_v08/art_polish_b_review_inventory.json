@@ -1,0 +1,1609 @@
+{
+  "knight_attack": {
+    "baseline": {
+      "fps": 12.0,
+      "loop": false,
+      "events": {
+        "hit": 3.0
+      },
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "accepted",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/knight/battle/knight_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {
+        "5": 0.0
+      },
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/knight/attack/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/knight/attack/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/knight/attack/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/knight/attack/frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/knight/attack/frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/knight/attack/frames/05.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/knight/attack/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/knight/attack/effects_frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/knight/attack/effects_frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/knight/attack/effects_frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/knight/attack/effects_frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/knight/attack/effects_frames/05.png"
+      ],
+      "publish_review": "assets/monsters/phase3/source/art_polish_b_v07/art_polish_b_publish_review.json",
+      "coordinator_review": "assets/monsters/phase3/source/art_polish_b_v07/art_polish_b_coordinator_review.json"
+    },
+    "draft_manifest": "assets/monsters/phase3/source/art_polish_b_v08/knight/battle/knight_draft_manifest.json",
+    "source_action": "attack",
+    "rig_sha256": "00e071c34f376e21121d5cddce5292c7b5ccaaeed0b919e06cf213600e26dd79",
+    "draft_sha256": "056da81f55b06a44a2e306eb628dede784bd8771195c7969431627db6d74b9df",
+    "channels": {
+      "frames": [
+        "c6510e66d30b6a2aa10b5e6cdbd843080e44260a02f392957b5db28fd14ddfd8",
+        "e4cc91b0d302381e3b8833b23a0f2f884568b7df7aaf7e42e5bcb472841fdc0e",
+        "f21c6f65b836f212039e7ca3e5249ca03a155ea0ed2e933ab4239a41cbc6f329",
+        "942ea173f03899d36b5686e68dbe00210556ca71cdbeaefc9bae83984d4d86ec",
+        "0560337bf6c5773c316df20b4b07fd2fa94b9db243dca001a4d1beb19661868b",
+        "c6510e66d30b6a2aa10b5e6cdbd843080e44260a02f392957b5db28fd14ddfd8"
+      ],
+      "effects_frames": [
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "bcc48a1ce88f674a8e99094912e2ca87b7b4132437d34ae809403441c1ab0aa7",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de"
+      ]
+    }
+  },
+  "knight_defeat": {
+    "baseline": {
+      "fps": 10.0,
+      "loop": false,
+      "events": {
+        "ground": 5.0,
+        "release": 2.0
+      },
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "accepted",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/knight/battle/knight_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {},
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/knight/defeat/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/knight/defeat/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/knight/defeat/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/knight/defeat/frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/knight/defeat/frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/knight/defeat/frames/05.png"
+      ],
+      "publish_review": "assets/monsters/phase3/source/art_polish_b_v07/art_polish_b_publish_review.json",
+      "coordinator_review": "assets/monsters/phase3/source/art_polish_b_v07/art_polish_b_coordinator_review.json"
+    },
+    "draft_manifest": "assets/monsters/phase3/source/art_polish_b_v08/knight/battle/knight_draft_manifest.json",
+    "source_action": "defeat",
+    "rig_sha256": "00e071c34f376e21121d5cddce5292c7b5ccaaeed0b919e06cf213600e26dd79",
+    "draft_sha256": "056da81f55b06a44a2e306eb628dede784bd8771195c7969431627db6d74b9df",
+    "channels": {
+      "frames": [
+        "06f9a0a88506dd561809c2a8c9a8ff836ee2826742f161a5bf76ebbb6edf0fc7",
+        "d7b4dc96e9f69e601ef5e646e2c6a903d34186a6f21fe948323bf071f50e7850",
+        "1b7d05503c96f55af5f441e7eede2de71f4ee265845e481024055f40aefeb4e9",
+        "d35aa54807f48523a26ca776aa5b98fd472040d46b6ad0c03a422a591be7b104",
+        "73f74db977be985259f02974b24507fe563aabbdc2ab9043f25e29764a2e22ce",
+        "5f962f822b4ee2b0f3fbba533debdd436954f66cd950208bd6e8894929517180"
+      ]
+    }
+  },
+  "knight_hit": {
+    "baseline": {
+      "fps": 12.0,
+      "loop": false,
+      "events": {
+        "recoil": 0.0
+      },
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "accepted",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/knight/battle/knight_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {},
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/knight/hit/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/knight/hit/frames/01.png"
+      ],
+      "publish_review": "assets/monsters/phase3/source/art_polish_b_v07/art_polish_b_publish_review.json",
+      "coordinator_review": "assets/monsters/phase3/source/art_polish_b_v07/art_polish_b_coordinator_review.json"
+    },
+    "draft_manifest": "assets/monsters/phase3/source/art_polish_b_v08/knight/battle/knight_draft_manifest.json",
+    "source_action": "hit",
+    "rig_sha256": "00e071c34f376e21121d5cddce5292c7b5ccaaeed0b919e06cf213600e26dd79",
+    "draft_sha256": "056da81f55b06a44a2e306eb628dede784bd8771195c7969431627db6d74b9df",
+    "channels": {
+      "frames": [
+        "a09dcf9c4f96670357c1b8f4c37b1bdc55e908ad5568de3563cafbf394e9e844",
+        "6238f1c8ac22a514a1b2f376a2aedfd96c3c79a97f5ab491f6713313ed87cfb4"
+      ]
+    }
+  },
+  "knight_idle": {
+    "baseline": {
+      "fps": 6.0,
+      "loop": true,
+      "events": {},
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "accepted",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/knight/battle/knight_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {},
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/knight/idle/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/knight/idle/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/knight/idle/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/knight/idle/frames/03.png"
+      ],
+      "publish_review": "assets/monsters/phase3/source/art_polish_b_v07/art_polish_b_publish_review.json",
+      "coordinator_review": "assets/monsters/phase3/source/art_polish_b_v07/art_polish_b_coordinator_review.json"
+    },
+    "draft_manifest": "assets/monsters/phase3/source/art_polish_b_v08/knight/battle/knight_draft_manifest.json",
+    "source_action": "idle",
+    "rig_sha256": "00e071c34f376e21121d5cddce5292c7b5ccaaeed0b919e06cf213600e26dd79",
+    "draft_sha256": "056da81f55b06a44a2e306eb628dede784bd8771195c7969431627db6d74b9df",
+    "channels": {
+      "frames": [
+        "c6510e66d30b6a2aa10b5e6cdbd843080e44260a02f392957b5db28fd14ddfd8",
+        "e609364c321034cdfd2bf6443c8e98326ab2e06cec9aba437b9462f77a001474",
+        "6675177816930ed4a87e0bd1b20d01bf326d3626f261aac80ec302ea4ae93cb8",
+        "99a409fdd569511dd111cb3925361f30e638bafd6136c3e2027be27616d0aa30"
+      ]
+    }
+  },
+  "warlock_attack": {
+    "baseline": {
+      "fps": 12.0,
+      "loop": false,
+      "events": {
+        "cast": 2.0,
+        "hit": 3.0
+      },
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "accepted",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/warlock/battle/warlock_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {},
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/attack/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/attack/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/attack/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/attack/frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/attack/frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/attack/frames/05.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/attack/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/attack/effects_frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/attack/effects_frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/attack/effects_frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/attack/effects_frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/attack/effects_frames/05.png"
+      ],
+      "publish_review": "assets/monsters/phase3/source/art_polish_b_v07/art_polish_b_publish_review.json",
+      "coordinator_review": "assets/monsters/phase3/source/art_polish_b_v07/art_polish_b_coordinator_review.json"
+    },
+    "draft_manifest": "assets/monsters/phase3/source/art_polish_b_v08/warlock/battle/warlock_draft_manifest.json",
+    "source_action": "attack",
+    "rig_sha256": "2cc337bda29bb71d5375c66d3eb2c8cab8dea450273cc28aab90b03a589ad233",
+    "draft_sha256": "308af37c5ac48364a85b67bf97f12e6603ac5809391c81d3a5f09817da35ef69",
+    "channels": {
+      "frames": [
+        "c649cbf9b1630679e7036c8cc368a4b273e4e4cf4c638ebf47dbe411942bf5df",
+        "350e95114838e3d4fa052df8c9101f0b17ff159071aacdcb327cbba8bc212690",
+        "f5fbf21c6e35c94948daa04e3d3026024fb26f6b958321e7dc14891bea3baa6b",
+        "ff5e800e328bdb8159f0f2b1e0570cc168e85cb3f6857b474176fa991d6d375f",
+        "87d7bb91ab9543f705ed85f190ece1e936fdde573b747c2f87a28c4c4de66f2d",
+        "570da7ba73a899755e30990a5db6bb17a3c0bdbc9196697d09b4d51e6310b62f"
+      ],
+      "effects_frames": [
+        "2d658c453004e34fd616a6e901477dfcdb41d60400838441ad17294f638148ed",
+        "283d05388e5a740037bed4434434167c166c17187dcd4fa4dccfb18afd1c3578",
+        "5899b29dc66b055f4a240a6814d850b2ed4ffc6c7e2786f1c5403b421c585b37",
+        "d88453dd3ccc773032dd52b14e9243acf8890d763cbe66df0e285e1ac1ce28c2",
+        "edbc6a76abf04779e5009e0ac4a43e14ce779c18ca01373c657cd364dc7192ad",
+        "d1da9f3e7eedbddfe5e14e830806dc71e720bbea78745e5b33d296590daab613"
+      ]
+    }
+  },
+  "warlock_defeat": {
+    "baseline": {
+      "fps": 10.0,
+      "loop": false,
+      "events": {
+        "extinguish": 3.0,
+        "release": 3.0
+      },
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "accepted",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/warlock/battle/warlock_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {},
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/defeat/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/defeat/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/defeat/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/defeat/frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/defeat/frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/defeat/frames/05.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/defeat/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/defeat/effects_frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/defeat/effects_frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/defeat/effects_frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/defeat/effects_frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/defeat/effects_frames/05.png"
+      ],
+      "publish_review": "assets/monsters/phase3/source/art_polish_b_v07/art_polish_b_publish_review.json",
+      "coordinator_review": "assets/monsters/phase3/source/art_polish_b_v07/art_polish_b_coordinator_review.json"
+    },
+    "draft_manifest": "assets/monsters/phase3/source/art_polish_b_v08/warlock/battle/warlock_draft_manifest.json",
+    "source_action": "defeat",
+    "rig_sha256": "2cc337bda29bb71d5375c66d3eb2c8cab8dea450273cc28aab90b03a589ad233",
+    "draft_sha256": "308af37c5ac48364a85b67bf97f12e6603ac5809391c81d3a5f09817da35ef69",
+    "channels": {
+      "frames": [
+        "4862e0c64d8fbd73f0cf87e6d1e8dfdd9f471e804b024104f30e7e455bb1a9aa",
+        "0a88e49e5e91d6c92ab20283b4a710c9d0aae49d02860f56f821208fe946c1a6",
+        "1eee1e007c74113a9fe8ba8a00cba555202434ac7ac7d7325166fd4b453b5c5e",
+        "2694bec2b8b213a3850bc198ce3c7f709b449b43c16ad622d049953cff95249e",
+        "93b44a24a9e3b21f0ac7fb0f3820d08aab69a5d4ff2a510f6bf29522cd75835c",
+        "730cf01534286ed79fa23e644f7972558946be6f11f8829db0dfebbb814e262d"
+      ],
+      "effects_frames": [
+        "cea715f407ab13888c2fe5ee63a83e70ac0d8a8da9d2e572c290ed2f1aa842de",
+        "3ab1b484419f814ed127ef6998bbd4fa2d323f2c53c0d924e311503df5d3dd4b",
+        "86915f4ac86165dee992f1c9abc416db90d10808be3d1a0671ea84e7bf6bdb84",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de"
+      ]
+    }
+  },
+  "warlock_hit": {
+    "baseline": {
+      "fps": 12.0,
+      "loop": false,
+      "events": {},
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "accepted",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/warlock/battle/warlock_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {},
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/hit/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/hit/frames/01.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/hit/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/hit/effects_frames/01.png"
+      ],
+      "publish_review": "assets/monsters/phase3/source/art_polish_b_v07/art_polish_b_publish_review.json",
+      "coordinator_review": "assets/monsters/phase3/source/art_polish_b_v07/art_polish_b_coordinator_review.json"
+    },
+    "draft_manifest": "assets/monsters/phase3/source/art_polish_b_v08/warlock/battle/warlock_draft_manifest.json",
+    "source_action": "hit",
+    "rig_sha256": "2cc337bda29bb71d5375c66d3eb2c8cab8dea450273cc28aab90b03a589ad233",
+    "draft_sha256": "308af37c5ac48364a85b67bf97f12e6603ac5809391c81d3a5f09817da35ef69",
+    "channels": {
+      "frames": [
+        "1f48c7dcd08d9c2d3177ce5e2ac527497ed7c4bb5becc89832e977737dc62c5e",
+        "99cd61b162b7e36f7ea924e2432cc92a4583f36a57dc64854939eb4e6d9128c4"
+      ],
+      "effects_frames": [
+        "b7354c74a0193e4e6bc33d5bc5d002dbe421402efcdecbe3c769d6a5397f2f5f",
+        "874a9f61c07b21783c1d20d7ffda902634be2c9e91fa7ecc8c6dcc51725fad82"
+      ]
+    }
+  },
+  "warlock_idle": {
+    "baseline": {
+      "fps": 6.0,
+      "loop": true,
+      "events": {},
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "accepted",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/warlock/battle/warlock_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {},
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/idle/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/idle/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/idle/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/idle/frames/03.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/idle/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/idle/effects_frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/idle/effects_frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/idle/effects_frames/03.png"
+      ],
+      "publish_review": "assets/monsters/phase3/source/art_polish_b_v07/art_polish_b_publish_review.json",
+      "coordinator_review": "assets/monsters/phase3/source/art_polish_b_v07/art_polish_b_coordinator_review.json"
+    },
+    "draft_manifest": "assets/monsters/phase3/source/art_polish_b_v08/warlock/battle/warlock_draft_manifest.json",
+    "source_action": "idle",
+    "rig_sha256": "2cc337bda29bb71d5375c66d3eb2c8cab8dea450273cc28aab90b03a589ad233",
+    "draft_sha256": "308af37c5ac48364a85b67bf97f12e6603ac5809391c81d3a5f09817da35ef69",
+    "channels": {
+      "frames": [
+        "570da7ba73a899755e30990a5db6bb17a3c0bdbc9196697d09b4d51e6310b62f",
+        "2972a92051a195bb9f2718884d406eeb8c0ccd029eed33ad6a5e53babc462ab0",
+        "4d9a25aa2fd2033f97878e5c51505276196c105cb727b64bccc0e42ddb23f206",
+        "a18ff4b5d49fb29a4ad634054187f409eb0bfb11e24bf550f8777577b757f565"
+      ],
+      "effects_frames": [
+        "d1da9f3e7eedbddfe5e14e830806dc71e720bbea78745e5b33d296590daab613",
+        "4b249c91a7859eda56b3c59ddbcf474f49b548452a1809c5f4e4c1cf980dd37a",
+        "791586f532112a6919ad881929b550b3879d00402d84814e3d81521a8909b335",
+        "a5698d6fdb93b1bae29b4eda26e4945e003b4356f1a34fb8741e9c9d922e28c1"
+      ]
+    }
+  },
+  "warlock_map_idle": {
+    "baseline": {
+      "fps": 6.0,
+      "loop": true,
+      "events": {},
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "accepted",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/warlock/map/warlock_map_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {},
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/map_idle/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/map_idle/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/map_idle/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/map_idle/frames/03.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/map_idle/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/map_idle/effects_frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/map_idle/effects_frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warlock/map_idle/effects_frames/03.png"
+      ],
+      "publish_review": "assets/monsters/phase3/source/art_polish_b_v07/art_polish_b_publish_review.json",
+      "coordinator_review": "assets/monsters/phase3/source/art_polish_b_v07/art_polish_b_coordinator_review.json"
+    },
+    "draft_manifest": "assets/monsters/phase3/source/art_polish_b_v08/warlock/map/warlock_map_draft_manifest.json",
+    "source_action": "idle",
+    "rig_sha256": "d79eabbeee38f7e5f0bf1a3abdb8c629ec2346e94af43ade4ca7f7f51e1804c1",
+    "draft_sha256": "d0d75723f661c0cdddfe2ba56cb5790aac3d4bdbcc4ce3b076e86d3b52752724",
+    "channels": {
+      "frames": [
+        "ef251a40ee4dbd5f6bcebe9cb0a46a5789881e983ca134fd758a6ac758db9d60",
+        "dfa4f3e33743cb742741804e036443d450b36454304d3805ea7d35ffdb1e156e",
+        "1609264887608c61ff213692877a1a6b7608a28cced4862b3c6ae60ecc658fce",
+        "8bf2ea853ecb516e2243f0127396630e609d0af079e420bb4b263ac586fbf135"
+      ],
+      "effects_frames": [
+        "a0bd9b0da11009e51a0a96649f7f3acadcb3cd48ae8e73fae4e7bc78ef15792e",
+        "e40ba3a692e2f941160a44e53da4fd6589e0a3a8483e9ddbda8d777ea369ab10",
+        "bec144deaf0ff4ec9fb46b691497f108bf1ba4b06256bd95a4a9f06e2e1fabb7",
+        "227b31a9e715791b29cfd5a30605535d6520396935da5522af9d58330da3355e"
+      ]
+    }
+  },
+  "berserker_attack": {
+    "baseline": {
+      "fps": 12.0,
+      "loop": false,
+      "events": {
+        "hit": 4.0
+      },
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        237.0
+      ],
+      "status": "accepted",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/berserker/battle/berserker_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {
+        "7": 0.0
+      },
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/berserker/attack/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/berserker/attack/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/berserker/attack/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/berserker/attack/frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/berserker/attack/frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/berserker/attack/frames/05.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/berserker/attack/frames/06.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/berserker/attack/frames/07.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/berserker/attack/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/berserker/attack/effects_frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/berserker/attack/effects_frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/berserker/attack/effects_frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/berserker/attack/effects_frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/berserker/attack/effects_frames/05.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/berserker/attack/effects_frames/06.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/berserker/attack/effects_frames/07.png"
+      ],
+      "publish_review": "assets/monsters/phase3/source/art_polish_b_v07/art_polish_b_publish_review.json",
+      "coordinator_review": "assets/monsters/phase3/source/art_polish_b_v07/art_polish_b_coordinator_review.json"
+    },
+    "draft_manifest": "assets/monsters/phase3/source/art_polish_b_v08/berserker/battle/berserker_draft_manifest.json",
+    "source_action": "attack",
+    "rig_sha256": "d716cc3be1e6176c88495601b60f4392521ffdfb97e1398d7fb3e382e5cbe414",
+    "draft_sha256": "031d32d14dbaafb59809afdf51f646a6e548b430f9b9ff396fdca9fba013f0dc",
+    "channels": {
+      "frames": [
+        "bae37c73c093ecab061f7ab846f7b2e58739b52a500a1e0127ed5234b524e791",
+        "3f314ad1e585bd6ed17c9c01ec808a400d314d51c4d9f318e888a0fda76d027a",
+        "cd61657a8dff8890483965140be3ab3981794277f818bd500e9853ebe14b40b0",
+        "deeaa83e14007897b668b5decef9215045a573c20d044eddd699afce18843ada",
+        "ea59e9d9febae58c04be91a71d485a805ba11715d18b3b29b048d8294dee0cf4",
+        "7a3a0e1610284d45fdbfd7c30cd0d5f7e5f622cec858d77b3d9fdbcf622864ee",
+        "2b1695330fa0e6e744db8960cef8dada149e3b0a8007ad24120e8083da4be330",
+        "bae37c73c093ecab061f7ab846f7b2e58739b52a500a1e0127ed5234b524e791"
+      ],
+      "effects_frames": [
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "ba9734d4c9c3a4bfbb340c600c4d46d65f0d13b318b798dbe4b8bc58a6985de6",
+        "c8e615106986760bcf8d997ec11ce5e82dc387bc0cb379142bcaef6f0f8d67f0",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de"
+      ]
+    }
+  },
+  "berserker_defeat": {
+    "baseline": {
+      "fps": 12.0,
+      "loop": false,
+      "events": {
+        "ground": 5.0,
+        "knee_contact": 6.0,
+        "release": 3.0
+      },
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        237.0
+      ],
+      "status": "accepted",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/berserker/battle/berserker_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {
+        "7": 6.0
+      },
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/berserker/defeat/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/berserker/defeat/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/berserker/defeat/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/berserker/defeat/frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/berserker/defeat/frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/berserker/defeat/frames/05.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/berserker/defeat/frames/06.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/berserker/defeat/frames/07.png"
+      ],
+      "publish_review": "assets/monsters/phase3/source/art_polish_b_v07/art_polish_b_publish_review.json",
+      "coordinator_review": "assets/monsters/phase3/source/art_polish_b_v07/art_polish_b_coordinator_review.json"
+    },
+    "draft_manifest": "assets/monsters/phase3/source/art_polish_b_v08/berserker/battle/berserker_draft_manifest.json",
+    "source_action": "defeat",
+    "rig_sha256": "d716cc3be1e6176c88495601b60f4392521ffdfb97e1398d7fb3e382e5cbe414",
+    "draft_sha256": "031d32d14dbaafb59809afdf51f646a6e548b430f9b9ff396fdca9fba013f0dc",
+    "channels": {
+      "frames": [
+        "545684d6f07d95658fac968f4f34c4f0801c7427061f80f547f0e565d06151b2",
+        "eb62b2d4742747e1586f5a65da4badde0aef1a3b85852d91b258fc9f4a0768ab",
+        "9e97c4d0079f7e92cf870b6636c29b4b51267d6309cc068deba3e08d55f6eb9a",
+        "e1cf4449e42ce5c33d41ffe4a2b08091d78ec5f776f2eb3a7d4cf7228cc0a77b",
+        "1e9dcf801e6d01d56d0aa6ad98d7b1d3f77dcdda85342b396df684a3ecec59d1",
+        "69d1334afc9de5d138dd91b48df1cba2020c2b50cf2a6a66f66611c9115ff788",
+        "cdc095d7f17b558061311035e95fc10f35ac44cb57a27ac1569526993b723c69",
+        "cdc095d7f17b558061311035e95fc10f35ac44cb57a27ac1569526993b723c69"
+      ]
+    }
+  },
+  "berserker_hit": {
+    "baseline": {
+      "fps": 12.0,
+      "loop": false,
+      "events": {},
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        237.0
+      ],
+      "status": "accepted",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/berserker/battle/berserker_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {},
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/berserker/hit/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/berserker/hit/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/berserker/hit/frames/02.png"
+      ],
+      "publish_review": "assets/monsters/phase3/source/art_polish_b_v07/art_polish_b_publish_review.json",
+      "coordinator_review": "assets/monsters/phase3/source/art_polish_b_v07/art_polish_b_coordinator_review.json"
+    },
+    "draft_manifest": "assets/monsters/phase3/source/art_polish_b_v08/berserker/battle/berserker_draft_manifest.json",
+    "source_action": "hit",
+    "rig_sha256": "d716cc3be1e6176c88495601b60f4392521ffdfb97e1398d7fb3e382e5cbe414",
+    "draft_sha256": "031d32d14dbaafb59809afdf51f646a6e548b430f9b9ff396fdca9fba013f0dc",
+    "channels": {
+      "frames": [
+        "8b47fdbf8ffd185b8e7dca159d5bbd214a4aa718293906d228868bc191a6d908",
+        "3bffb30e6ec380289dbf3e61719935670ce3d097fad9d8de099da6eb55213f7a",
+        "bae37c73c093ecab061f7ab846f7b2e58739b52a500a1e0127ed5234b524e791"
+      ]
+    }
+  },
+  "berserker_idle": {
+    "baseline": {
+      "fps": 6.0,
+      "loop": true,
+      "events": {},
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        237.0
+      ],
+      "status": "accepted",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/berserker/battle/berserker_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {},
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/berserker/idle/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/berserker/idle/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/berserker/idle/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/berserker/idle/frames/03.png"
+      ],
+      "publish_review": "assets/monsters/phase3/source/art_polish_b_v07/art_polish_b_publish_review.json",
+      "coordinator_review": "assets/monsters/phase3/source/art_polish_b_v07/art_polish_b_coordinator_review.json"
+    },
+    "draft_manifest": "assets/monsters/phase3/source/art_polish_b_v08/berserker/battle/berserker_draft_manifest.json",
+    "source_action": "idle",
+    "rig_sha256": "d716cc3be1e6176c88495601b60f4392521ffdfb97e1398d7fb3e382e5cbe414",
+    "draft_sha256": "031d32d14dbaafb59809afdf51f646a6e548b430f9b9ff396fdca9fba013f0dc",
+    "channels": {
+      "frames": [
+        "bae37c73c093ecab061f7ab846f7b2e58739b52a500a1e0127ed5234b524e791",
+        "c0110c44100f583d234d8fe6378db3df2eced6e4cb0a4540ea613a39e38356b7",
+        "09df4b2c6b32194f8ac96bbc5fbc57474e8ff496631972864644581a427e8a05",
+        "a305a37173fd9f893cbf4472e1567d4e742315cebd171aee56d31866b68271db"
+      ]
+    }
+  },
+  "warden_attack": {
+    "baseline": {
+      "fps": 12.0,
+      "loop": false,
+      "events": {
+        "hit": 4.0,
+        "shield_bash": 3.0
+      },
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        237.0
+      ],
+      "status": "accepted",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/warden/battle/warden_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {
+        "7": 0.0
+      },
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warden/attack/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warden/attack/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warden/attack/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warden/attack/frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warden/attack/frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warden/attack/frames/05.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warden/attack/frames/06.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warden/attack/frames/07.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warden/attack/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warden/attack/effects_frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warden/attack/effects_frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warden/attack/effects_frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warden/attack/effects_frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warden/attack/effects_frames/05.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warden/attack/effects_frames/06.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warden/attack/effects_frames/07.png"
+      ],
+      "publish_review": "assets/monsters/phase3/source/art_polish_b_v07/art_polish_b_publish_review.json",
+      "coordinator_review": "assets/monsters/phase3/source/art_polish_b_v07/art_polish_b_coordinator_review.json"
+    },
+    "draft_manifest": "assets/monsters/phase3/source/art_polish_b_v08/warden/battle/warden_draft_manifest.json",
+    "source_action": "attack",
+    "rig_sha256": "a1ec142c4dc94dc60f22aa944c35f18cb3b50ac053bfb55141a5b134eff6a2cc",
+    "draft_sha256": "919515b1ec2a56e6ade18e6f5c0d1b6a95515460258de1efe4dd04f617285ad2",
+    "channels": {
+      "frames": [
+        "3824007301b79a4666369013b343208f001c9e7ea56cefc418c47d0748ff8692",
+        "8213acc1abf21d9572597908e2d79547f173c44859eb193f65d9e4230339785f",
+        "8ac65c2ca13f48b1ea955e004b9a8f7cf9527424a69429591878b9fcda115970",
+        "360f9fe609dc715fabd4aaa25c44fcc7e5fbe768f4a7342466b628f450dbe599",
+        "b4b30e93ea1207acc8a8f2e010a02b446abc3d5df6495fb3bf45763e878a1343",
+        "bd3e57a8e0343678425d85b1e0a9340f1bcfdac56106560ef82a023ff1673c7a",
+        "fa4411b0433a93fac3830f9287f9a0609423345ecfb3a5f03f7751ab791d69f5",
+        "3824007301b79a4666369013b343208f001c9e7ea56cefc418c47d0748ff8692"
+      ],
+      "effects_frames": [
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "07d8dcec85a792f50857f4b2151ed1fe2540ff84bbeea64b76fcd04c1080b1f8",
+        "661383ba081ad5dcf84dc395512255431946c09ddc1d43a775ddf1125f706faf",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de"
+      ]
+    }
+  },
+  "warden_defeat": {
+    "baseline": {
+      "fps": 12.0,
+      "loop": false,
+      "events": {
+        "ground": 5.0,
+        "knee_contact": 6.0,
+        "release": 3.0
+      },
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        237.0
+      ],
+      "status": "accepted",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/warden/battle/warden_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {
+        "7": 6.0
+      },
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warden/defeat/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warden/defeat/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warden/defeat/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warden/defeat/frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warden/defeat/frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warden/defeat/frames/05.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warden/defeat/frames/06.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warden/defeat/frames/07.png"
+      ],
+      "publish_review": "assets/monsters/phase3/source/art_polish_b_v07/art_polish_b_publish_review.json",
+      "coordinator_review": "assets/monsters/phase3/source/art_polish_b_v07/art_polish_b_coordinator_review.json"
+    },
+    "draft_manifest": "assets/monsters/phase3/source/art_polish_b_v08/warden/battle/warden_draft_manifest.json",
+    "source_action": "defeat",
+    "rig_sha256": "a1ec142c4dc94dc60f22aa944c35f18cb3b50ac053bfb55141a5b134eff6a2cc",
+    "draft_sha256": "919515b1ec2a56e6ade18e6f5c0d1b6a95515460258de1efe4dd04f617285ad2",
+    "channels": {
+      "frames": [
+        "c4b00cda511e11623cd22ea11cf96d3b3623de17b1ccab4839329e75dcdd802f",
+        "6681ddad918ef376ad02b3477833a74f7338eb576f0bb9781fe5e7cefc0d0b9a",
+        "01f6c2851e4b33dc8dbc303fff446e42877fa5b433ca449d70acc93c9ee3721f",
+        "023fb2c0ed2c6a50a75063e0a6fd5ef7ab54457730ef44e9d9f89284a1ada64b",
+        "625f2dd4ae7cc2dff23b5c4c6ea7f92704b3837df29a3d859340dcb78354578e",
+        "8af681f118f9f4db9120c1bde9e78a7f1bbdcd969725a938cad80bc3ea31c7cf",
+        "d64259239653bbd7343a9a731acce1a0ccc0e54459dd5b5e89cc12bfeb2b59f3",
+        "d64259239653bbd7343a9a731acce1a0ccc0e54459dd5b5e89cc12bfeb2b59f3"
+      ]
+    }
+  },
+  "warden_hit": {
+    "baseline": {
+      "fps": 12.0,
+      "loop": false,
+      "events": {},
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        237.0
+      ],
+      "status": "accepted",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/warden/battle/warden_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {},
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warden/hit/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warden/hit/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warden/hit/frames/02.png"
+      ],
+      "publish_review": "assets/monsters/phase3/source/art_polish_b_v07/art_polish_b_publish_review.json",
+      "coordinator_review": "assets/monsters/phase3/source/art_polish_b_v07/art_polish_b_coordinator_review.json"
+    },
+    "draft_manifest": "assets/monsters/phase3/source/art_polish_b_v08/warden/battle/warden_draft_manifest.json",
+    "source_action": "hit",
+    "rig_sha256": "a1ec142c4dc94dc60f22aa944c35f18cb3b50ac053bfb55141a5b134eff6a2cc",
+    "draft_sha256": "919515b1ec2a56e6ade18e6f5c0d1b6a95515460258de1efe4dd04f617285ad2",
+    "channels": {
+      "frames": [
+        "d5a385db1483a181a74d401d72f2cdc4f7ca7e9d2a842a5b849375dcbbeb16ee",
+        "045829457bf69da8bc50c033518741ba0a2faa75d1c1e37b1f1be3010411f497",
+        "3824007301b79a4666369013b343208f001c9e7ea56cefc418c47d0748ff8692"
+      ]
+    }
+  },
+  "warden_idle": {
+    "baseline": {
+      "fps": 6.0,
+      "loop": true,
+      "events": {},
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        237.0
+      ],
+      "status": "accepted",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/warden/battle/warden_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {},
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warden/idle/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warden/idle/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warden/idle/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warden/idle/frames/03.png"
+      ],
+      "publish_review": "assets/monsters/phase3/source/art_polish_b_v07/art_polish_b_publish_review.json",
+      "coordinator_review": "assets/monsters/phase3/source/art_polish_b_v07/art_polish_b_coordinator_review.json"
+    },
+    "draft_manifest": "assets/monsters/phase3/source/art_polish_b_v08/warden/battle/warden_draft_manifest.json",
+    "source_action": "idle",
+    "rig_sha256": "a1ec142c4dc94dc60f22aa944c35f18cb3b50ac053bfb55141a5b134eff6a2cc",
+    "draft_sha256": "919515b1ec2a56e6ade18e6f5c0d1b6a95515460258de1efe4dd04f617285ad2",
+    "channels": {
+      "frames": [
+        "3824007301b79a4666369013b343208f001c9e7ea56cefc418c47d0748ff8692",
+        "68771b4cf5fbcc2593df902753c391f467b3a9876685d7157933c82916f2a547",
+        "71782b9080353a45cf98184b2b3b8cdd98fccb99e5f8ac24c89be00d71726b5e",
+        "c3e056f116b02e7f616c4d38900b4c4d093ecb621bff95a9b7b39d9f41901618"
+      ]
+    }
+  },
+  "knight_map_idle": {
+    "baseline": {
+      "fps": 6.0,
+      "loop": true,
+      "events": {},
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "accepted",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/knight/map/knight_map_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {},
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/knight/map_idle/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/knight/map_idle/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/knight/map_idle/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/knight/map_idle/frames/03.png"
+      ],
+      "publish_review": "assets/monsters/phase3/source/art_polish_b_v07/art_polish_b_publish_review.json",
+      "coordinator_review": "assets/monsters/phase3/source/art_polish_b_v07/art_polish_b_coordinator_review.json"
+    },
+    "draft_manifest": "assets/monsters/phase3/source/art_polish_b_v08/knight/map/knight_map_draft_manifest.json",
+    "source_action": "idle",
+    "rig_sha256": "785e749598d70ca472f3b4e797f761b2d6bc905551d0f631146916da3148866b",
+    "draft_sha256": "4629bc19efd17333854fe12b8a94dc9ac5fd6cd4dc55c98267484aa20abfe643",
+    "channels": {
+      "frames": [
+        "4f4bd3050077e58c2b525c406d32b86ce2f6d03aac73011cbf0d308835ba5c3a",
+        "938fa815a79e6a9db0a29a025903247094eb3f412df0ea6dd6414ebd624f3eee",
+        "a317e10caba76c753edac5da4e47650f8864705cd235105290440ba72f9f62b8",
+        "808e031afef81af8e4edbe3e150ea1953a8882debd6d5e3bb381bc12115edb5b"
+      ]
+    }
+  },
+  "berserker_map_idle": {
+    "baseline": {
+      "fps": 6.0,
+      "loop": true,
+      "events": {},
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "accepted",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/berserker/map/berserker_map_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {},
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/berserker/map_idle/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/berserker/map_idle/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/berserker/map_idle/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/berserker/map_idle/frames/03.png"
+      ],
+      "publish_review": "assets/monsters/phase3/source/art_polish_b_v07/art_polish_b_publish_review.json",
+      "coordinator_review": "assets/monsters/phase3/source/art_polish_b_v07/art_polish_b_coordinator_review.json"
+    },
+    "draft_manifest": "assets/monsters/phase3/source/art_polish_b_v08/berserker/map/berserker_map_draft_manifest.json",
+    "source_action": "idle",
+    "rig_sha256": "85e41633d70413d73aa7acb188013c463bba309d0ee3d289f09e4c6e51570149",
+    "draft_sha256": "4be23640679135a4c338ae14247a84ffdbb496d169147920efdca3e569dd4ea9",
+    "channels": {
+      "frames": [
+        "3bccd936d6486b3d949926d9ce2009a7a001fdba2848a3b6227ab2ea5254fe8d",
+        "79ba235cb9cb7d33561f2fc8a532ba11896740111b766f8abe795ff9d7af38d0",
+        "8be0ea9714d9c016cdca8796129cfe206deddf266f8f3d701bae03a182b9a77b",
+        "aa8f0e97fcbf128721de13ae7c8dea6349838b10d68522cdd2f0cda60b1fc148"
+      ]
+    }
+  },
+  "warden_map_idle": {
+    "baseline": {
+      "fps": 6.0,
+      "loop": true,
+      "events": {},
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "accepted",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/warden/map/warden_map_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {},
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warden/map_idle/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warden/map_idle/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warden/map_idle/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/warden/map_idle/frames/03.png"
+      ],
+      "publish_review": "assets/monsters/phase3/source/art_polish_b_v07/art_polish_b_publish_review.json",
+      "coordinator_review": "assets/monsters/phase3/source/art_polish_b_v07/art_polish_b_coordinator_review.json"
+    },
+    "draft_manifest": "assets/monsters/phase3/source/art_polish_b_v08/warden/map/warden_map_draft_manifest.json",
+    "source_action": "idle",
+    "rig_sha256": "afeb930f545cd355148efdd60299be2121c4831309aaa0495a2e23a7a18c91f4",
+    "draft_sha256": "02c63dccddfbdad32ed41652196a2272c268c927646381a3731887b09260e1b9",
+    "channels": {
+      "frames": [
+        "28f5960cbb81804cdd04d8d9929e1ad2fd77735e98b49f736a30444ea6d3cfad",
+        "f81a3eda44e2de3362ee443f75c46546277e68c2dc9231ea4ca44bdaf9318afa",
+        "bb93f31a0e1ebec01cc20d5909847f07b9877656f3ddf453d7d0ba60a992eef8",
+        "02b2895f6acf552befb6ec04596e86479236a3dba9d00af00e8808c8b9d444bd"
+      ]
+    }
+  },
+  "p3_ember_channeler_map_idle": {
+    "baseline": {
+      "fps": 6.0,
+      "loop": true,
+      "events": {},
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "accepted",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/p3_ember_channeler/map/p3_ember_channeler_map_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {},
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/map_idle/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/map_idle/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/map_idle/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/map_idle/frames/03.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/map_idle/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/map_idle/effects_frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/map_idle/effects_frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/map_idle/effects_frames/03.png"
+      ],
+      "publish_review": "assets/monsters/phase3/source/art_polish_b_v07/art_polish_b_publish_review.json",
+      "coordinator_review": "assets/monsters/phase3/source/art_polish_b_v07/art_polish_b_coordinator_review.json"
+    },
+    "draft_manifest": "assets/monsters/phase3/source/art_polish_b_v08/p3_ember_channeler/map/p3_ember_channeler_map_draft_manifest.json",
+    "source_action": "idle",
+    "rig_sha256": "b4aaea6097d8cfd9fc1185652bac8ef50104bfbcde1eb964948af947d07c3250",
+    "draft_sha256": "3b6aa36d169be69740f08f67b6ac2009ab81a8fa865e36caefa7e099f997573e",
+    "channels": {
+      "frames": [
+        "006d62757a3262d010f35401ca253b329dc12c12329c2dfce1da34fa15c9e3d6",
+        "bbdcbf78dbed6f3f32a9211ecf9b01dbd5d9a170bec249b935b98016c0b85e4b",
+        "e526fc29f6aeeb99bb48acaa24d0cbd9d709b2d20ef759c4d7e9104df9a93861",
+        "b53e0bdda6954a78ca7089cb9c89fc751ad773c06b905ce45461041ad83ab551"
+      ],
+      "effects_frames": [
+        "0b2a23a34177b9be3d9ae492c38a0124f2bdda0a77022294e29633f820300b45",
+        "abb07a21283eed8a01c500014b286bb5d8cc8a1ec7db25f7a2965e970397e608",
+        "3edbff82e62cb2c6babc4ec7b3c34e814a71f1d71c4f04c603806cafc828d456",
+        "b24bfb92442cc614c61a7d86fb6e4f166d084165e267b9e53c7fa3bcab100619"
+      ]
+    }
+  },
+  "p3_ember_channeler_idle": {
+    "baseline": {
+      "fps": 6.0,
+      "loop": true,
+      "events": {},
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "accepted",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/p3_ember_channeler/battle/p3_ember_channeler_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {},
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/idle/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/idle/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/idle/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/idle/frames/03.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/idle/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/idle/effects_frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/idle/effects_frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/idle/effects_frames/03.png"
+      ],
+      "publish_review": "assets/monsters/phase3/source/art_polish_b_v07/art_polish_b_publish_review.json",
+      "coordinator_review": "assets/monsters/phase3/source/art_polish_b_v07/art_polish_b_coordinator_review.json"
+    },
+    "draft_manifest": "assets/monsters/phase3/source/art_polish_b_v08/p3_ember_channeler/battle/p3_ember_channeler_draft_manifest.json",
+    "source_action": "idle",
+    "rig_sha256": "bfbea25f794e00ca982015f6be0638d42c0de786af1fffc5dc2a50d6611b11f8",
+    "draft_sha256": "9e90cedbbad0ddc661c5377b82e8500d4a44c41724075fb538bbcd6710dad932",
+    "channels": {
+      "frames": [
+        "442b35a91da4711df0a32ca9949c6e4305d15a4ef5d2745a9e2cb542924e3650",
+        "ba7f3269f9523750e936946757afbb2c4cbc0c6d66db5f8443a0f64ec1b33a98",
+        "08a6ed291515b0026ab3cf4e3d5055942de328d76a57de4fe2c477c0e974a54d",
+        "ca888c5e4658617afdcbfd0a006d85f68ec56f08aabd5cbd22b6ace70b9d8c28"
+      ],
+      "effects_frames": [
+        "d1da9f3e7eedbddfe5e14e830806dc71e720bbea78745e5b33d296590daab613",
+        "4b249c91a7859eda56b3c59ddbcf474f49b548452a1809c5f4e4c1cf980dd37a",
+        "791586f532112a6919ad881929b550b3879d00402d84814e3d81521a8909b335",
+        "a5698d6fdb93b1bae29b4eda26e4945e003b4356f1a34fb8741e9c9d922e28c1"
+      ]
+    }
+  },
+  "p3_ember_channeler_attack": {
+    "baseline": {
+      "fps": 12.0,
+      "loop": false,
+      "events": {
+        "cast": 2.0,
+        "hit": 3.0
+      },
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "accepted",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/p3_ember_channeler/battle/p3_ember_channeler_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {},
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/attack/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/attack/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/attack/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/attack/frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/attack/frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/attack/frames/05.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/attack/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/attack/effects_frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/attack/effects_frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/attack/effects_frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/attack/effects_frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/attack/effects_frames/05.png"
+      ],
+      "publish_review": "assets/monsters/phase3/source/art_polish_b_v07/art_polish_b_publish_review.json",
+      "coordinator_review": "assets/monsters/phase3/source/art_polish_b_v07/art_polish_b_coordinator_review.json"
+    },
+    "draft_manifest": "assets/monsters/phase3/source/art_polish_b_v08/p3_ember_channeler/battle/p3_ember_channeler_draft_manifest.json",
+    "source_action": "attack",
+    "rig_sha256": "bfbea25f794e00ca982015f6be0638d42c0de786af1fffc5dc2a50d6611b11f8",
+    "draft_sha256": "9e90cedbbad0ddc661c5377b82e8500d4a44c41724075fb538bbcd6710dad932",
+    "channels": {
+      "frames": [
+        "2704103b8878c82349980411a9973cb4414ab082d017b1096099b164202d0f5a",
+        "5a4dfd4272fb2ecfc53225e385600d51a3757aa63015d318efee18e0d3b48a09",
+        "4527a0c72b40081952946b6fc606ab392f694ef712e02626711fffcfdd8ee019",
+        "ebb8641805fe65c9b54a37febf881b5b0fe51381204e38556c7614c47cabe182",
+        "7fb082d42587533abbb0b0776e9b76dfbb71a047429e8e58de60caee40bfe73c",
+        "442b35a91da4711df0a32ca9949c6e4305d15a4ef5d2745a9e2cb542924e3650"
+      ],
+      "effects_frames": [
+        "2d658c453004e34fd616a6e901477dfcdb41d60400838441ad17294f638148ed",
+        "283d05388e5a740037bed4434434167c166c17187dcd4fa4dccfb18afd1c3578",
+        "5899b29dc66b055f4a240a6814d850b2ed4ffc6c7e2786f1c5403b421c585b37",
+        "d88453dd3ccc773032dd52b14e9243acf8890d763cbe66df0e285e1ac1ce28c2",
+        "edbc6a76abf04779e5009e0ac4a43e14ce779c18ca01373c657cd364dc7192ad",
+        "d1da9f3e7eedbddfe5e14e830806dc71e720bbea78745e5b33d296590daab613"
+      ]
+    }
+  },
+  "p3_ember_channeler_hit": {
+    "baseline": {
+      "fps": 12.0,
+      "loop": false,
+      "events": {},
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "accepted",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/p3_ember_channeler/battle/p3_ember_channeler_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {},
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/hit/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/hit/frames/01.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/hit/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/hit/effects_frames/01.png"
+      ],
+      "publish_review": "assets/monsters/phase3/source/art_polish_b_v07/art_polish_b_publish_review.json",
+      "coordinator_review": "assets/monsters/phase3/source/art_polish_b_v07/art_polish_b_coordinator_review.json"
+    },
+    "draft_manifest": "assets/monsters/phase3/source/art_polish_b_v08/p3_ember_channeler/battle/p3_ember_channeler_draft_manifest.json",
+    "source_action": "hit",
+    "rig_sha256": "bfbea25f794e00ca982015f6be0638d42c0de786af1fffc5dc2a50d6611b11f8",
+    "draft_sha256": "9e90cedbbad0ddc661c5377b82e8500d4a44c41724075fb538bbcd6710dad932",
+    "channels": {
+      "frames": [
+        "c64e416d02edc83b03fb08cb8a38b03d19e7392a59e96f3dc44db125cad6b587",
+        "e853086dc3208d88e63c1b06266f4b0c977dc46df8b1cdca31018a49a5563f7f"
+      ],
+      "effects_frames": [
+        "b7354c74a0193e4e6bc33d5bc5d002dbe421402efcdecbe3c769d6a5397f2f5f",
+        "874a9f61c07b21783c1d20d7ffda902634be2c9e91fa7ecc8c6dcc51725fad82"
+      ]
+    }
+  },
+  "p3_ember_channeler_defeat": {
+    "baseline": {
+      "fps": 10.0,
+      "loop": false,
+      "events": {
+        "extinguish": 3.0,
+        "release": 3.0
+      },
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "accepted",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/p3_ember_channeler/battle/p3_ember_channeler_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {},
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/defeat/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/defeat/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/defeat/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/defeat/frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/defeat/frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/defeat/frames/05.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/defeat/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/defeat/effects_frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/defeat/effects_frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/defeat/effects_frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/defeat/effects_frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/defeat/effects_frames/05.png"
+      ],
+      "publish_review": "assets/monsters/phase3/source/art_polish_b_v07/art_polish_b_publish_review.json",
+      "coordinator_review": "assets/monsters/phase3/source/art_polish_b_v07/art_polish_b_coordinator_review.json"
+    },
+    "draft_manifest": "assets/monsters/phase3/source/art_polish_b_v08/p3_ember_channeler/battle/p3_ember_channeler_draft_manifest.json",
+    "source_action": "defeat",
+    "rig_sha256": "bfbea25f794e00ca982015f6be0638d42c0de786af1fffc5dc2a50d6611b11f8",
+    "draft_sha256": "9e90cedbbad0ddc661c5377b82e8500d4a44c41724075fb538bbcd6710dad932",
+    "channels": {
+      "frames": [
+        "9551218a17caf610c60b0e436c719ca09498dd53c7dfaeac72c0145a0126b8df",
+        "bc2b72067a9adc71924695df9205699243610428aa77d0d0cc6f365b70aebb86",
+        "b00c734f7fe7785fe1a04c8cb99dc116c3b69c034e90b5d277492dc3c9f6ae42",
+        "aff05414d3a5c9855f93151a5cc4525f7d16d9f0ad24ecbb6953c0367cd41e66",
+        "efff9c62f71c3b82490e4d50aef73125ff45c381176c0d3d6716d28d611371b7",
+        "a7d1e45aae4f70b4a1f969662e88fb38ca8d5bf0c54c8f5ef3efeb7cbfcdb5be"
+      ],
+      "effects_frames": [
+        "cea715f407ab13888c2fe5ee63a83e70ac0d8a8da9d2e572c290ed2f1aa842de",
+        "3ab1b484419f814ed127ef6998bbd4fa2d323f2c53c0d924e311503df5d3dd4b",
+        "86915f4ac86165dee992f1c9abc416db90d10808be3d1a0671ea84e7bf6bdb84",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de"
+      ]
+    }
+  },
+  "p3_ember_channeler_charge": {
+    "baseline": {
+      "fps": 8.0,
+      "loop": false,
+      "events": {
+        "charge_peak": 2.0
+      },
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "accepted",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/p3_ember_channeler/battle/p3_ember_channeler_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {},
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/charge/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/charge/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/charge/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/charge/frames/03.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/charge/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/charge/effects_frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/charge/effects_frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_ember_channeler/charge/effects_frames/03.png"
+      ],
+      "publish_review": "assets/monsters/phase3/source/art_polish_b_v07/art_polish_b_publish_review.json",
+      "coordinator_review": "assets/monsters/phase3/source/art_polish_b_v07/art_polish_b_coordinator_review.json"
+    },
+    "draft_manifest": "assets/monsters/phase3/source/art_polish_b_v08/p3_ember_channeler/battle/p3_ember_channeler_draft_manifest.json",
+    "source_action": "charge",
+    "rig_sha256": "bfbea25f794e00ca982015f6be0638d42c0de786af1fffc5dc2a50d6611b11f8",
+    "draft_sha256": "9e90cedbbad0ddc661c5377b82e8500d4a44c41724075fb538bbcd6710dad932",
+    "channels": {
+      "frames": [
+        "07defb853ea0927c96b7af13cc441aa103c8fb96530c30a26ef16a8e5a53b294",
+        "2b5a73691d8b7127522f35a1942baf4e35d6f8cdc4f76d9f34597ee065038438",
+        "ca4f94cb1d8d0e732ff39c87cd6a67fdf43015e102ca6d576005ab02e24a886f",
+        "fc41a0fc25b0c999139b3f66624e382795572c71e5fdf1c27143b9c015dc1add"
+      ],
+      "effects_frames": [
+        "bd7acaecdcee9806bbf0e04cd7882386dd09bbfc1695e557d86674d2a7175a3d",
+        "0162b44fe8fb3311c8b48e3c0e278b1722055d66e3068990d768196623ff983c",
+        "f30ded77814fe766ddf6df80ceb7eddb1e568991a8e17cd7cf69168e08e21e2f",
+        "4c96f3f1f3207508e57c988e677fe6b834359ab7f23d972a8e119aeb5e640a02"
+      ]
+    }
+  },
+  "p3_vault_knight_idle": {
+    "baseline": {
+      "fps": 6.0,
+      "loop": true,
+      "events": {},
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "accepted",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/p3_vault_knight/battle/p3_vault_knight_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {},
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/idle/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/idle/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/idle/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/idle/frames/03.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/idle/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/idle/effects_frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/idle/effects_frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/idle/effects_frames/03.png"
+      ],
+      "publish_review": "assets/monsters/phase3/source/art_polish_b_v07/art_polish_b_publish_review.json",
+      "coordinator_review": "assets/monsters/phase3/source/art_polish_b_v07/art_polish_b_coordinator_review.json"
+    },
+    "draft_manifest": "assets/monsters/phase3/source/art_polish_b_v08/p3_vault_knight/battle/p3_vault_knight_draft_manifest.json",
+    "source_action": "idle",
+    "rig_sha256": "ee95abe7bba200d9387727af2f7fae7fbb6b025cc2b165cb869bf6acd1959618",
+    "draft_sha256": "ce66c792ef0ebc5f480e5aefdf1d4e65adfd2d067bb70a7aad2f74e4e980332f",
+    "channels": {
+      "frames": [
+        "6d030bf4e10fbd49f4ce6aef4f0bf2609342131c16209c58316a0f5cfe183843",
+        "491c3bf02fab32bb36e6d4ad45174ebcc0c6719b3ae3e3c8cae9c52c5ee27638",
+        "75d3e6e8eca5b20f42b218b5811e5e9406f7bf0171ca9de52ec0a9e227b3dcbf",
+        "ca2a12b6f7cbdc8554d595c174eedcebba79dd35cb81b21202ad33c409d0a3b5"
+      ],
+      "effects_frames": [
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de"
+      ]
+    }
+  },
+  "p3_vault_knight_attack": {
+    "baseline": {
+      "fps": 12.0,
+      "loop": false,
+      "events": {
+        "hit": 3.0
+      },
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "accepted",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/p3_vault_knight/battle/p3_vault_knight_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {
+        "5": 0.0
+      },
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/attack/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/attack/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/attack/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/attack/frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/attack/frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/attack/frames/05.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/attack/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/attack/effects_frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/attack/effects_frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/attack/effects_frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/attack/effects_frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/attack/effects_frames/05.png"
+      ],
+      "publish_review": "assets/monsters/phase3/source/art_polish_b_v07/art_polish_b_publish_review.json",
+      "coordinator_review": "assets/monsters/phase3/source/art_polish_b_v07/art_polish_b_coordinator_review.json"
+    },
+    "draft_manifest": "assets/monsters/phase3/source/art_polish_b_v08/p3_vault_knight/battle/p3_vault_knight_draft_manifest.json",
+    "source_action": "attack",
+    "rig_sha256": "ee95abe7bba200d9387727af2f7fae7fbb6b025cc2b165cb869bf6acd1959618",
+    "draft_sha256": "ce66c792ef0ebc5f480e5aefdf1d4e65adfd2d067bb70a7aad2f74e4e980332f",
+    "channels": {
+      "frames": [
+        "6d030bf4e10fbd49f4ce6aef4f0bf2609342131c16209c58316a0f5cfe183843",
+        "d270e100ec1daac80b1b288fc5581815c574ecd5f9717c8a24747be900ab726e",
+        "80f1f091c196c4e95839679d6d4eb697e4a95e8a4b0c360ae80377c58a81e708",
+        "632b6e2b96c5ff4cabcddbb1b9907cd338a3fa7d905ddf2ca2e39a7825bc8fb1",
+        "ec790e961e85a362ea6aad88e60e63333cf01da2939d7217c821465cbd46b24c",
+        "6d030bf4e10fbd49f4ce6aef4f0bf2609342131c16209c58316a0f5cfe183843"
+      ],
+      "effects_frames": [
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "bcc48a1ce88f674a8e99094912e2ca87b7b4132437d34ae809403441c1ab0aa7",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de"
+      ]
+    }
+  },
+  "p3_vault_knight_hit": {
+    "baseline": {
+      "fps": 12.0,
+      "loop": false,
+      "events": {
+        "recoil": 0.0
+      },
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "accepted",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/p3_vault_knight/battle/p3_vault_knight_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {},
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/hit/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/hit/frames/01.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/hit/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/hit/effects_frames/01.png"
+      ],
+      "publish_review": "assets/monsters/phase3/source/art_polish_b_v07/art_polish_b_publish_review.json",
+      "coordinator_review": "assets/monsters/phase3/source/art_polish_b_v07/art_polish_b_coordinator_review.json"
+    },
+    "draft_manifest": "assets/monsters/phase3/source/art_polish_b_v08/p3_vault_knight/battle/p3_vault_knight_draft_manifest.json",
+    "source_action": "hit",
+    "rig_sha256": "ee95abe7bba200d9387727af2f7fae7fbb6b025cc2b165cb869bf6acd1959618",
+    "draft_sha256": "ce66c792ef0ebc5f480e5aefdf1d4e65adfd2d067bb70a7aad2f74e4e980332f",
+    "channels": {
+      "frames": [
+        "be794b74362cabd1e3dd18e9c8b830dc70e76a4e02d76aa7643fa8f966a792ea",
+        "1df0af466e576d74ad268cfae8aaf85aa282613f11d3bf8dd93a44fb569c4bbd"
+      ],
+      "effects_frames": [
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de"
+      ]
+    }
+  },
+  "p3_vault_knight_defeat": {
+    "baseline": {
+      "fps": 10.0,
+      "loop": false,
+      "events": {
+        "ground": 5.0,
+        "release": 2.0
+      },
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "accepted",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/p3_vault_knight/battle/p3_vault_knight_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {},
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/defeat/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/defeat/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/defeat/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/defeat/frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/defeat/frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/defeat/frames/05.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/defeat/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/defeat/effects_frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/defeat/effects_frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/defeat/effects_frames/03.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/defeat/effects_frames/04.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/defeat/effects_frames/05.png"
+      ],
+      "publish_review": "assets/monsters/phase3/source/art_polish_b_v07/art_polish_b_publish_review.json",
+      "coordinator_review": "assets/monsters/phase3/source/art_polish_b_v07/art_polish_b_coordinator_review.json"
+    },
+    "draft_manifest": "assets/monsters/phase3/source/art_polish_b_v08/p3_vault_knight/battle/p3_vault_knight_draft_manifest.json",
+    "source_action": "defeat",
+    "rig_sha256": "ee95abe7bba200d9387727af2f7fae7fbb6b025cc2b165cb869bf6acd1959618",
+    "draft_sha256": "ce66c792ef0ebc5f480e5aefdf1d4e65adfd2d067bb70a7aad2f74e4e980332f",
+    "channels": {
+      "frames": [
+        "93e63bbc04bb8ad15e22731ec95d2af0122bdc6fb06b8aab49141b011ae7b7a2",
+        "ecde07976fada5a3af90bdae96d484ea260192926d23a20d062dfc72494847fe",
+        "de0a70008308ac936f77cf0193951b99796861307ae6becbc72beda53e8b7dbb",
+        "426aa9eb02b10724badb7aafbe5ce80373bda37fc777700a6e6b59ae2eac93d0",
+        "9dbc7649132d6e9f28e8f0d6223b9f0ce1aa87a63a6dfd44db5ee6f43ee50585",
+        "12223a4724fe51416367de89d2a1b549a18a549555f539b72f3ed85873967383"
+      ],
+      "effects_frames": [
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de"
+      ]
+    }
+  },
+  "p3_vault_knight_threat": {
+    "baseline": {
+      "fps": 8.0,
+      "loop": false,
+      "events": {
+        "threat_peak": 2.0
+      },
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "accepted",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/p3_vault_knight/battle/p3_vault_knight_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {},
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/threat/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/threat/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/threat/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/threat/frames/03.png"
+      ],
+      "effects_frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/threat/effects_frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/threat/effects_frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/threat/effects_frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/threat/effects_frames/03.png"
+      ],
+      "publish_review": "assets/monsters/phase3/source/art_polish_b_v07/art_polish_b_publish_review.json",
+      "coordinator_review": "assets/monsters/phase3/source/art_polish_b_v07/art_polish_b_coordinator_review.json"
+    },
+    "draft_manifest": "assets/monsters/phase3/source/art_polish_b_v08/p3_vault_knight/battle/p3_vault_knight_draft_manifest.json",
+    "source_action": "threat",
+    "rig_sha256": "ee95abe7bba200d9387727af2f7fae7fbb6b025cc2b165cb869bf6acd1959618",
+    "draft_sha256": "ce66c792ef0ebc5f480e5aefdf1d4e65adfd2d067bb70a7aad2f74e4e980332f",
+    "channels": {
+      "frames": [
+        "de2203cb0c3dc8ef6cd27a0207333502ae076e4c84fdf26084446b74110fe985",
+        "e08128a0c175811ab9a83663360f059cfcb706290ed4edfa8a67cac3e5bf45ef",
+        "36c6515593fe27b3f0047197c3ab7567da40386175cefefe31a34cbbb4cf4080",
+        "4c0df7c380e81e410ff9ce54625def9a98764541033129bd97d73b6fe7d8b7da"
+      ],
+      "effects_frames": [
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "bf320df692ec1946e05129d9ff2b354866cd4a3679f5942d9d8a8eff1105bb7a",
+        "f73fd8e71241350d7e9533c0062f0c675dec3a426ed2d8d2f853ef03d8f7bcb3",
+        "73e6e667fb24779138aa106d88283c4ed14d771d1424337f67cbb6dd3232f6ed"
+      ]
+    }
+  },
+  "p3_vault_knight_map_idle": {
+    "baseline": {
+      "fps": 6.0,
+      "loop": true,
+      "events": {},
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "status": "accepted",
+      "source": "res://assets/monsters/phase3/source/art_polish_b_v07/p3_vault_knight/map/p3_vault_knight_map_rig.json",
+      "review": "source/art_polish_b_v07/REVIEW.md",
+      "pose_holds": {},
+      "frames": [
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/map_idle/frames/00.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/map_idle/frames/01.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/map_idle/frames/02.png",
+        "res://assets/monsters/phase3/textures/art_polish_b_v07/p3_vault_knight/map_idle/frames/03.png"
+      ],
+      "publish_review": "assets/monsters/phase3/source/art_polish_b_v07/art_polish_b_publish_review.json",
+      "coordinator_review": "assets/monsters/phase3/source/art_polish_b_v07/art_polish_b_coordinator_review.json"
+    },
+    "draft_manifest": "assets/monsters/phase3/source/art_polish_b_v08/p3_vault_knight/map/p3_vault_knight_map_draft_manifest.json",
+    "source_action": "idle",
+    "rig_sha256": "2b2869acbb414940da70af8d865ae559d1e3a280b3c79c8faf2564cba22e0f87",
+    "draft_sha256": "10dcc6c21ceb4d71fdec7973219270c793271c77f61159ce9e39e8af20d6c2eb",
+    "channels": {
+      "frames": [
+        "a1ead0504babccf63ac1a691f6a795270eb14206104b2b585379686fed6ad123",
+        "a2f91cf8d0420a7752a6d1cf13fb992b350b216ca6ebe93e1001088de69b9029",
+        "e1c3035c7590325ec3e367fe158bc2f83cc4fc5333e91da4b24561ea2e7ee55e",
+        "e519d80482fb649e840f286c488e977e7934d39cf196ecfa21ebc31df75f0d39"
+      ]
+    }
+  }
+}

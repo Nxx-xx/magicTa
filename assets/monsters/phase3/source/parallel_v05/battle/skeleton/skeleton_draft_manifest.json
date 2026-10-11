@@ -1,0 +1,279 @@
+{
+	"actions": {
+		"attack": {
+			"combined_frames": [
+				"skeleton_frames/attack/00_combined.png",
+				"skeleton_frames/attack/01_combined.png",
+				"skeleton_frames/attack/02_combined.png",
+				"skeleton_frames/attack/03_combined.png",
+				"skeleton_frames/attack/04_combined.png",
+				"skeleton_frames/attack/05_combined.png"
+			],
+			"effects_frames": [
+				"skeleton_frames/attack/00_effect.png",
+				"skeleton_frames/attack/01_effect.png",
+				"skeleton_frames/attack/02_effect.png",
+				"skeleton_frames/attack/03_effect.png",
+				"skeleton_frames/attack/04_effect.png",
+				"skeleton_frames/attack/05_effect.png"
+			],
+			"events": {
+				"hit": 3.0
+			},
+			"fps": 12.0,
+			"frames": [
+				"skeleton_frames/attack/00.png",
+				"skeleton_frames/attack/01.png",
+				"skeleton_frames/attack/02.png",
+				"skeleton_frames/attack/03.png",
+				"skeleton_frames/attack/04.png",
+				"skeleton_frames/attack/05.png"
+			],
+			"loop": false,
+			"metrics": [
+				{
+					"bounds": [
+						99,
+						60,
+						90,
+						173
+					],
+					"edge_touch": false,
+					"frame": 0
+				},
+				{
+					"bounds": [
+						68,
+						61,
+						127,
+						172
+					],
+					"edge_touch": false,
+					"frame": 1
+				},
+				{
+					"bounds": [
+						73,
+						63,
+						125,
+						170
+					],
+					"edge_touch": false,
+					"frame": 2
+				},
+				{
+					"bounds": [
+						88,
+						67,
+						87,
+						166
+					],
+					"edge_touch": false,
+					"frame": 3
+				},
+				{
+					"bounds": [
+						90,
+						63,
+						92,
+						170
+					],
+					"edge_touch": false,
+					"frame": 4
+				},
+				{
+					"bounds": [
+						99,
+						60,
+						90,
+						173
+					],
+					"edge_touch": false,
+					"frame": 5
+				}
+			],
+			"pose_holds": {
+				"5": 0.0
+			}
+		},
+		"defeat": {
+			"events": {
+				"ground": 4.0,
+				"release": 2.0
+			},
+			"fps": 10.0,
+			"frames": [
+				"skeleton_frames/defeat/00.png",
+				"skeleton_frames/defeat/01.png",
+				"skeleton_frames/defeat/02.png",
+				"skeleton_frames/defeat/03.png",
+				"skeleton_frames/defeat/04.png",
+				"skeleton_frames/defeat/05.png"
+			],
+			"loop": false,
+			"metrics": [
+				{
+					"bounds": [
+						107,
+						62,
+						82,
+						171
+					],
+					"edge_touch": false,
+					"frame": 0
+				},
+				{
+					"bounds": [
+						94,
+						75,
+						89,
+						158
+					],
+					"edge_touch": false,
+					"frame": 1
+				},
+				{
+					"bounds": [
+						48,
+						94,
+						127,
+						139
+					],
+					"edge_touch": false,
+					"frame": 2
+				},
+				{
+					"bounds": [
+						19,
+						120,
+						158,
+						113
+					],
+					"edge_touch": false,
+					"frame": 3
+				},
+				{
+					"bounds": [
+						12,
+						132,
+						166,
+						101
+					],
+					"edge_touch": false,
+					"frame": 4
+				},
+				{
+					"bounds": [
+						12,
+						132,
+						166,
+						101
+					],
+					"edge_touch": false,
+					"frame": 5
+				}
+			],
+			"pose_holds": {
+				"5": 4.0
+			}
+		},
+		"hit": {
+			"events": {
+				"recoil": 0.0
+			},
+			"fps": 12.0,
+			"frames": [
+				"skeleton_frames/hit/00.png",
+				"skeleton_frames/hit/01.png"
+			],
+			"loop": false,
+			"metrics": [
+				{
+					"bounds": [
+						108,
+						62,
+						93,
+						171
+					],
+					"edge_touch": false,
+					"frame": 0
+				},
+				{
+					"bounds": [
+						99,
+						60,
+						90,
+						173
+					],
+					"edge_touch": false,
+					"frame": 1
+				}
+			],
+			"pose_holds": {}
+		},
+		"idle": {
+			"events": {},
+			"fps": 6.0,
+			"frames": [
+				"skeleton_frames/idle/00.png",
+				"skeleton_frames/idle/01.png",
+				"skeleton_frames/idle/02.png",
+				"skeleton_frames/idle/03.png"
+			],
+			"loop": true,
+			"metrics": [
+				{
+					"bounds": [
+						99,
+						60,
+						90,
+						173
+					],
+					"edge_touch": false,
+					"frame": 0
+				},
+				{
+					"bounds": [
+						99,
+						59,
+						90,
+						174
+					],
+					"edge_touch": false,
+					"frame": 1
+				},
+				{
+					"bounds": [
+						99,
+						58,
+						91,
+						175
+					],
+					"edge_touch": false,
+					"frame": 2
+				},
+				{
+					"bounds": [
+						99,
+						59,
+						89,
+						174
+					],
+					"edge_touch": false,
+					"frame": 3
+				}
+			],
+			"pose_holds": {}
+		}
+	},
+	"anchor": [
+		128.0,
+		224.0
+	],
+	"size": [
+		256.0,
+		256.0
+	],
+	"source": "res://assets/monsters/phase3/source/parallel_v05/battle/skeleton/skeleton_rig.json",
+	"status": "draft"
+}

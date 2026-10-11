@@ -1,0 +1,17 @@
+--- a/scripts/ui/campaign_panels.gd
++++ b/scripts/ui/campaign_panels.gd
+@@ -138,13 +138,8 @@
+ static func phase3_departure(ui, parent: Node) -> void:
+ 	var heading := HBoxContainer.new()
+ 	parent.add_child(heading)
+-	var portrait := TextureRect.new()
+-	portrait.texture = preload("res://scripts/ui/camp_death_art.gd").TEXTURE
+-	portrait.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+-	portrait.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+-	portrait.custom_minimum_size = Vector2(48,48)
+-	portrait.mouse_filter = Control.MOUSE_FILTER_IGNORE
++	var portrait = preload("res://scripts/ui/camp_death_art.gd").portrait(ui.settings)
+ 	heading.add_child(portrait)
+ 	var title = ui._text(heading,"死神 · 旅程准备",19,ui.GOLD)
+ 	title.size_flags_vertical = Control.SIZE_SHRINK_CENTER
+ 	var choices := P3Challenges.new()

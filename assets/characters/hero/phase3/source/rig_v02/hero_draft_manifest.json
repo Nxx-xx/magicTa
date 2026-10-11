@@ -1,0 +1,208 @@
+{
+	"actions": {
+		"attack": {
+			"events": {
+				"hit": 3.0
+			},
+			"fps": 16.0,
+			"frames": [
+				"hero_frames/attack/00.png",
+				"hero_frames/attack/01.png",
+				"hero_frames/attack/02.png",
+				"hero_frames/attack/03.png",
+				"hero_frames/attack/04.png",
+				"hero_frames/attack/05.png",
+				"hero_frames/attack/06.png",
+				"hero_frames/attack/07.png"
+			],
+			"loop": false,
+			"metrics": [
+				{
+					"bounds": [
+						137,
+						101,
+						143,
+						246
+					],
+					"edge_touch": false,
+					"frame": 0
+				},
+				{
+					"bounds": [
+						137,
+						101,
+						205,
+						246
+					],
+					"edge_touch": false,
+					"frame": 1
+				},
+				{
+					"bounds": [
+						137,
+						93,
+						154,
+						254
+					],
+					"edge_touch": false,
+					"frame": 2
+				},
+				{
+					"bounds": [
+						137,
+						101,
+						220,
+						246
+					],
+					"edge_touch": false,
+					"frame": 3
+				},
+				{
+					"bounds": [
+						137,
+						101,
+						228,
+						246
+					],
+					"edge_touch": false,
+					"frame": 4
+				},
+				{
+					"bounds": [
+						137,
+						101,
+						194,
+						246
+					],
+					"edge_touch": false,
+					"frame": 5
+				},
+				{
+					"bounds": [
+						137,
+						101,
+						167,
+						246
+					],
+					"edge_touch": false,
+					"frame": 6
+				},
+				{
+					"bounds": [
+						137,
+						101,
+						143,
+						246
+					],
+					"edge_touch": false,
+					"frame": 7
+				}
+			]
+		},
+		"hit": {
+			"events": {},
+			"fps": 12.0,
+			"frames": [
+				"hero_frames/hit/00.png",
+				"hero_frames/hit/01.png",
+				"hero_frames/hit/02.png"
+			],
+			"loop": false,
+			"metrics": [
+				{
+					"bounds": [
+						136,
+						104,
+						151,
+						243
+					],
+					"edge_touch": false,
+					"frame": 0
+				},
+				{
+					"bounds": [
+						137,
+						102,
+						148,
+						245
+					],
+					"edge_touch": false,
+					"frame": 1
+				},
+				{
+					"bounds": [
+						137,
+						101,
+						143,
+						246
+					],
+					"edge_touch": false,
+					"frame": 2
+				}
+			]
+		},
+		"idle": {
+			"events": {},
+			"fps": 6.0,
+			"frames": [
+				"hero_frames/idle/00.png",
+				"hero_frames/idle/01.png",
+				"hero_frames/idle/02.png",
+				"hero_frames/idle/03.png"
+			],
+			"loop": true,
+			"metrics": [
+				{
+					"bounds": [
+						137,
+						101,
+						143,
+						246
+					],
+					"edge_touch": false,
+					"frame": 0
+				},
+				{
+					"bounds": [
+						137,
+						102,
+						143,
+						245
+					],
+					"edge_touch": false,
+					"frame": 1
+				},
+				{
+					"bounds": [
+						137,
+						101,
+						143,
+						246
+					],
+					"edge_touch": false,
+					"frame": 2
+				},
+				{
+					"bounds": [
+						137,
+						101,
+						143,
+						246
+					],
+					"edge_touch": false,
+					"frame": 3
+				}
+			]
+		}
+	},
+	"anchor": [
+		192.0,
+		348.0
+	],
+	"size": [
+		384.0,
+		384.0
+	],
+	"source": "res://assets/characters/hero/phase3/source/rig_v02/hero_rig.json",
+	"status": "draft"
+}

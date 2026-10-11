@@ -2,9 +2,13 @@ class_name ContentDB
 extends RefCounted
 ## Content is immutable; callers duplicate enemy/room dictionaries before modifying them.
 const Enemies = preload("res://scripts/core/enemy_rules.gd")
+const Phase3Items = preload("res://scripts/core/phase3_items.gd")
+const FunctionCodes = preload("res://scripts/core/function_codes.gd")
 
 var data: Dictionary = {}
 var errors: Array[String] = []
+## Set explicitly from the validated run version; never infer it from item IDs.
+var rules_version: int = 1
 
 func _init() -> void:
 	var file := FileAccess.open("res://data/content.json", FileAccess.READ)
@@ -45,6 +49,10 @@ func items_of_kind(kind: String, tier: int) -> Array:
 	return result
 
 func player_stats(player: Dictionary) -> Dictionary:
+	if rules_version == 2:
+		return Phase3Items.player_stats(player, data)
+	if rules_version != 1:
+		return {"ok": false, "error": "不支持的物品规则版本：%d" % rules_version}
 	var stats := {
 		"attack": int(player.attack), "defense": int(player.defense),
 		"max_hp": int(player.max_hp), "kill_heal": 0, "gold_bonus": 0
@@ -56,6 +64,7 @@ func player_stats(player: Dictionary) -> Dictionary:
 		var ratio := int(effects.get("gold_attack_step", 0))
 		if ratio > 0:
 			stats.attack += int(int(player.gold) / ratio)
+	FunctionCodes.apply_stats(player, stats)
 	stats.attack = maxi(1, stats.attack)
 	stats.defense = maxi(0, stats.defense)
 	return stats

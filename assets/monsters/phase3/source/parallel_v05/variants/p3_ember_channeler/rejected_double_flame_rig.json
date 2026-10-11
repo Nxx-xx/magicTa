@@ -1,0 +1,588 @@
+{
+  "version": 1,
+  "status": "draft",
+  "entity": "p3_ember_channeler_rejected_double_flame",
+  "camera": "three-quarter facing left",
+  "canvas": 512,
+  "runtime_size": 256,
+  "anchor": [
+    256,
+    448
+  ],
+  "rest_scale": 0.87,
+  "source": "base_components.png",
+  "layers": [
+    {
+      "name": "skirt",
+      "parent": "root",
+      "pivot": [
+        299,
+        325
+      ],
+      "z": -2,
+      "crop": [
+        850,
+        50,
+        365,
+        365
+      ],
+      "image_pivot": [
+        185,
+        20
+      ],
+      "scale": 0.43,
+      "source": "base_components.png"
+    },
+    {
+      "name": "torso",
+      "parent": "root",
+      "pivot": [
+        299,
+        213
+      ],
+      "z": 0,
+      "crop": [
+        495,
+        43,
+        257,
+        378
+      ],
+      "image_pivot": [
+        125,
+        25
+      ],
+      "scale": 0.43,
+      "source": "base_components.png"
+    },
+    {
+      "name": "hood",
+      "parent": "torso",
+      "pivot": [
+        287,
+        215
+      ],
+      "z": 4,
+      "crop": [
+        85,
+        65,
+        310,
+        350
+      ],
+      "image_pivot": [
+        162,
+        292
+      ],
+      "scale": 0.43,
+      "source": "base_components.png"
+    },
+    {
+      "name": "far_upper_arm",
+      "parent": "torso",
+      "pivot": [
+        330,
+        240
+      ],
+      "z": -3,
+      "crop": [
+        120,
+        460,
+        205,
+        365
+      ],
+      "image_pivot": [
+        108,
+        35
+      ],
+      "scale": 0.23,
+      "source": "base_components.png"
+    },
+    {
+      "name": "far_forearm",
+      "parent": "far_upper_arm",
+      "pivot": [
+        344,
+        297
+      ],
+      "z": -2,
+      "crop": [
+        540,
+        450,
+        180,
+        375
+      ],
+      "image_pivot": [
+        80,
+        40
+      ],
+      "scale": 0.25,
+      "source": "base_components.png"
+    },
+    {
+      "name": "near_upper_arm",
+      "parent": "torso",
+      "pivot": [
+        259,
+        237
+      ],
+      "z": 3,
+      "crop": [
+        145,
+        850,
+        220,
+        365
+      ],
+      "image_pivot": [
+        85,
+        37
+      ],
+      "scale": 0.23,
+      "source": "base_components.png"
+    },
+    {
+      "name": "near_forearm",
+      "parent": "near_upper_arm",
+      "pivot": [
+        237,
+        296
+      ],
+      "z": 5,
+      "crop": [
+        465,
+        850,
+        285,
+        360
+      ],
+      "image_pivot": [
+        205,
+        40
+      ],
+      "scale": 0.26,
+      "source": "base_components.png"
+    },
+    {
+      "name": "staff_grip",
+      "parent": "far_forearm",
+      "pivot": [
+        332,
+        359
+      ],
+      "z": 6,
+      "joint_only": true
+    },
+    {
+      "name": "cast_grip",
+      "parent": "near_forearm",
+      "pivot": [
+        190,
+        352
+      ],
+      "z": 7,
+      "joint_only": true
+    },
+    {
+      "name": "staff",
+      "parent": "root",
+      "pivot": [
+        332,
+        359
+      ],
+      "z": 2,
+      "crop": [
+        985,
+        425,
+        100,
+        410
+      ],
+      "image_pivot": [
+        49,
+        282
+      ],
+      "scale": 0.75,
+      "source": "base_components.png"
+    },
+    {
+      "name": "flame",
+      "parent": "root",
+      "pivot": [
+        185,
+        340
+      ],
+      "z": 7,
+      "crop": [
+        900,
+        850,
+        250,
+        365
+      ],
+      "image_pivot": [
+        125,
+        255
+      ],
+      "scale": 0.25,
+      "source": "base_components.png"
+    },
+    {
+      "name": "trident_head",
+      "parent": "staff",
+      "pivot": [
+        332,
+        150
+      ],
+      "crop": [
+        0,
+        0,
+        635,
+        710
+      ],
+      "image_pivot": [
+        317.5,
+        674.5
+      ],
+      "scale": 0.14015748031496064,
+      "z": 6,
+      "source": "p3_ember_channeler_accessories.png"
+    },
+    {
+      "name": "furnace_ring",
+      "parent": "torso",
+      "pivot": [
+        344,
+        221
+      ],
+      "crop": [
+        642,
+        0,
+        605,
+        660
+      ],
+      "image_pivot": [
+        302.5,
+        330.0
+      ],
+      "scale": 0.2231404958677686,
+      "z": -4,
+      "source": "p3_ember_channeler_accessories.png"
+    },
+    {
+      "name": "furnace_collar",
+      "parent": "torso",
+      "pivot": [
+        296,
+        238
+      ],
+      "crop": [
+        0,
+        720,
+        650,
+        534
+      ],
+      "image_pivot": [
+        325.0,
+        267.0
+      ],
+      "scale": 0.11692307692307692,
+      "z": 5,
+      "source": "p3_ember_channeler_accessories.png"
+    },
+    {
+      "name": "charge_flame",
+      "parent": "cast_grip",
+      "pivot": [
+        190,
+        327
+      ],
+      "crop": [
+        660,
+        660,
+        580,
+        594
+      ],
+      "image_pivot": [
+        290.0,
+        475.20000000000005
+      ],
+      "scale": 0.11551724137931034,
+      "z": 8,
+      "source": "p3_ember_channeler_accessories.png"
+    }
+  ],
+  "actions": {
+    "charge": {
+      "fps": 8,
+      "loop": false,
+      "events": {
+        "charge_peak": 2
+      },
+      "poses": [
+        {
+          "torso": {
+            "p": [
+              0,
+              2
+            ],
+            "r": 0
+          },
+          "hood": {
+            "r": 0
+          },
+          "skirt": {
+            "r": 0.0,
+            "p": [
+              0,
+              0.0
+            ]
+          },
+          "near_upper_arm": {
+            "r": 8
+          },
+          "near_forearm": {
+            "r": 10
+          },
+          "far_upper_arm": {
+            "r": 0
+          },
+          "far_forearm": {
+            "r": 0
+          },
+          "staff": {
+            "p": [
+              0.0,
+              2.0
+            ],
+            "r": 0
+          },
+          "flame": {
+            "p": [
+              5.0,
+              12.0
+            ],
+            "r": 0.0,
+            "a": 0.4
+          },
+          "charge_flame": {
+            "a": 0.25,
+            "r": 0
+          },
+          "furnace_ring": {
+            "r": 0
+          }
+        },
+        {
+          "torso": {
+            "p": [
+              0,
+              8
+            ],
+            "r": 3
+          },
+          "hood": {
+            "r": -5
+          },
+          "skirt": {
+            "r": 0.0,
+            "p": [
+              0,
+              0.0
+            ]
+          },
+          "near_upper_arm": {
+            "r": 20
+          },
+          "near_forearm": {
+            "r": 25
+          },
+          "far_upper_arm": {
+            "r": -8
+          },
+          "far_forearm": {
+            "r": 5
+          },
+          "staff": {
+            "p": [
+              3.4590478687332507,
+              8.148329474667037
+            ],
+            "r": 0
+          },
+          "flame": {
+            "p": [
+              5.0,
+              12.0
+            ],
+            "r": 0.0,
+            "a": 0.7
+          },
+          "charge_flame": {
+            "a": 0.6,
+            "r": -7
+          },
+          "furnace_ring": {
+            "r": -8
+          }
+        },
+        {
+          "torso": {
+            "p": [
+              0,
+              4
+            ],
+            "r": -2
+          },
+          "hood": {
+            "r": -8
+          },
+          "skirt": {
+            "r": 0.0,
+            "p": [
+              0,
+              0.0
+            ]
+          },
+          "near_upper_arm": {
+            "r": 28
+          },
+          "near_forearm": {
+            "r": 32
+          },
+          "far_upper_arm": {
+            "r": -12
+          },
+          "far_forearm": {
+            "r": 8
+          },
+          "staff": {
+            "p": [
+              20.843592243779767,
+              -1.2636831368806725
+            ],
+            "r": -6
+          },
+          "flame": {
+            "p": [
+              5.0,
+              12.0
+            ],
+            "r": 0.0,
+            "a": 0.9
+          },
+          "charge_flame": {
+            "a": 1,
+            "r": 10
+          },
+          "furnace_ring": {
+            "r": -15
+          }
+        },
+        {
+          "torso": {
+            "p": [
+              0,
+              1
+            ],
+            "r": 0
+          },
+          "hood": {
+            "r": -1
+          },
+          "skirt": {
+            "r": 0.0,
+            "p": [
+              0,
+              0.0
+            ]
+          },
+          "near_upper_arm": {
+            "r": 10
+          },
+          "near_forearm": {
+            "r": 15
+          },
+          "far_upper_arm": {
+            "r": -3
+          },
+          "far_forearm": {
+            "r": 2
+          },
+          "staff": {
+            "p": [
+              4.047839849646721,
+              0.3891660705531308
+            ],
+            "r": -1
+          },
+          "flame": {
+            "p": [
+              5.0,
+              12.0
+            ],
+            "r": 0.0,
+            "a": 0.45
+          },
+          "charge_flame": {
+            "a": 0.4,
+            "r": 3
+          },
+          "furnace_ring": {
+            "r": -4
+          }
+        }
+      ]
+    }
+  },
+  "pose_holds": {},
+  "effect_layers": [
+    "flame",
+    "charge_flame"
+  ],
+  "effect_actions": [
+    "charge"
+  ],
+  "acceptance": "Draft, explicit visual review required; human_signoff=false",
+  "base_provenance": {
+    "base_entity": "warlock",
+    "base_rig": "assets/monsters/phase3/source/parallel_v05/battle/warlock/warlock_rig.json",
+    "base_rig_sha256": "04fbcd8e15b308135ca775698060efa96bea69ca6d03058698b5685d4cf2bd6d",
+    "originals": {
+      "components.png": "0568a1801cce4b8e744d1a8d641d46d089285090a2aa3199f08c92b27517a10a"
+    }
+  },
+  "scene": "battle",
+  "attachment_registration": {
+    "image_size": [
+      1254,
+      1254
+    ],
+    "alpha_bbox_crops": [
+      [
+        0,
+        0,
+        635,
+        710
+      ],
+      [
+        642,
+        0,
+        605,
+        660
+      ],
+      [
+        0,
+        720,
+        650,
+        534
+      ],
+      [
+        660,
+        660,
+        580,
+        594
+      ]
+    ],
+    "non_effect_identity_layers": [
+      "trident_head",
+      "furnace_ring",
+      "furnace_collar"
+    ]
+  },
+  "rejection_reason": "Reconstructed rejected double-flame charge poses for inspectable history; not a final delivery or approval."
+}

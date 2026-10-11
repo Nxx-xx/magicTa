@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "enemies": {
+    "p3_shield_sentinel": {
+      "id": "p3_shield_sentinel", "name": "盾壳卫兵", "rank": "normal", "tier": 2,
+      "hp": 48, "attack": 13, "defense": 8, "gold_reward": 34, "ability_id": "p3_shield",
+      "combat_hint": "前两次玩家攻击最终伤害减3，最低1；提高攻击或准备续航。",
+      "description": "双层盾壳覆盖核心，受击两次后露出裂口。", "mechanic_badge": "盾",
+      "base_enemy_id": "sentinel", "variant_floors": [3, 4], "max_per_run": 1,
+      "placement": "optional_theme_branch", "static_fallback_id": "sentinel"
+    },
+    "p3_ember_channeler": {
+      "id": "p3_ember_channeler", "name": "蓄焰术士", "rank": "normal", "tier": 2,
+      "hp": 52, "attack": 17, "defense": 5, "gold_reward": 40, "ability_id": "p3_ember",
+      "combat_hint": "第三、六、九次反击加5伤害，受防御和护符影响；减少反击次数。",
+      "description": "三环火炉悬在掌心，每蓄满三次便倾出烈焰。", "mechanic_badge": "焰",
+      "base_enemy_id": "warlock", "variant_floors": [6, 7], "max_per_run": 1,
+      "placement": "optional_theme_branch", "static_fallback_id": "warlock"
+    },
+    "p3_vault_knight": {
+      "id": "p3_vault_knight", "name": "金库骑士", "rank": "normal", "tier": 3,
+      "hp": 72, "attack": 20, "defense": 10, "gold_reward": 48, "ability_id": "p3_ambush",
+      "combat_hint": "本场首次实际反击加4伤害；护符可抵消部分首击，避免低血挑战。",
+      "description": "钥匙形长剑与金库门盾昭示着第一击的威胁。", "mechanic_badge": "袭",
+      "base_enemy_id": "knight", "variant_floors": [8, 9], "max_per_run": 1,
+      "placement": "optional_theme_branch", "static_fallback_id": "knight"
+    }
+  }
+}

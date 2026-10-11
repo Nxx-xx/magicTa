@@ -1,0 +1,80 @@
+{
+	"actions": {
+		"idle": {
+			"combined_frames": [
+				"warlock_map_frames/idle/00_combined.png",
+				"warlock_map_frames/idle/01_combined.png",
+				"warlock_map_frames/idle/02_combined.png",
+				"warlock_map_frames/idle/03_combined.png"
+			],
+			"effects_frames": [
+				"warlock_map_frames/idle/00_effect.png",
+				"warlock_map_frames/idle/01_effect.png",
+				"warlock_map_frames/idle/02_effect.png",
+				"warlock_map_frames/idle/03_effect.png"
+			],
+			"events": {},
+			"fps": 6.0,
+			"frames": [
+				"warlock_map_frames/idle/00.png",
+				"warlock_map_frames/idle/01.png",
+				"warlock_map_frames/idle/02.png",
+				"warlock_map_frames/idle/03.png"
+			],
+			"loop": true,
+			"metrics": [
+				{
+					"bounds": [
+						63,
+						32,
+						145,
+						194
+					],
+					"edge_touch": false,
+					"frame": 0
+				},
+				{
+					"bounds": [
+						63,
+						31,
+						145,
+						195
+					],
+					"edge_touch": false,
+					"frame": 1
+				},
+				{
+					"bounds": [
+						63,
+						30,
+						145,
+						196
+					],
+					"edge_touch": false,
+					"frame": 2
+				},
+				{
+					"bounds": [
+						63,
+						31,
+						145,
+						195
+					],
+					"edge_touch": false,
+					"frame": 3
+				}
+			],
+			"pose_holds": {}
+		}
+	},
+	"anchor": [
+		128.0,
+		224.0
+	],
+	"size": [
+		256.0,
+		256.0
+	],
+	"source": "res://assets/monsters/phase3/source/art_polish_b_v07/warlock/map/warlock_map_rig.json",
+	"status": "draft"
+}

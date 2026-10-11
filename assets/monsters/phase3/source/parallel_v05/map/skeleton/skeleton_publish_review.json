@@ -1,0 +1,28 @@
+{
+  "entity": "skeleton",
+  "date": "2026-10-02",
+  "review_method": "Agent visual review: final contact plus browser original, quarter speed, all four selected frames and 26/33/47px",
+  "human_signoff": false,
+  "new_imagegen_originals": 1,
+  "actions": {
+    "map_idle": {
+      "decision": "accepted",
+      "draft_manifest": "skeleton_map_draft_manifest.json",
+      "source_action": "idle",
+      "frame_slots": 4,
+      "fps": 6,
+      "loop": true,
+      "size": [256,256],
+      "anchor": [128,224],
+      "events": {},
+      "pose_holds": {},
+      "notes": "Independent elevated/front map components, fixed foot contact. Skull and ribcage breathing with independent arms; sword aligned to closed hand grip and fingers painted in front of handle. Wooden shield remains attached. All four final poses and small silhouettes checked; rejected initial grip alignment retained. Map legs are complete independent layers with editable contact/knee markers, not a walking rig.",
+      "frame_sha256": [
+        "e602e9fd0b7923192d970aa682948667b847cfaad55802759a25bcb87491ee3e",
+        "c317b2774c9cd72af3c365f91c6fc8984992b3055905407adfb685e95e338747",
+        "fb95df1c8a3b97e6636bab2c6645704ac8210ffb4c6ea9ae0743d87306f6ac30",
+        "b754928d4306178da1d6ce69333037828fadb4c489b50a2bad9b458f9ecb1dce"
+      ]
+    }
+  }
+}

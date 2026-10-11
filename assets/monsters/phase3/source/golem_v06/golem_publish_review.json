@@ -1,0 +1,1043 @@
+{
+  "entity": "golem",
+  "date": "2026-10-02",
+  "human_signoff": false,
+  "review_method": "all frame sheets, effects-off 26/33/47 silhouettes and actual native timed original/.25 samples; agent visual review",
+  "actions": {
+    "armor": {
+      "decision": "accepted",
+      "draft_manifest": "golem_draft_manifest.json",
+      "source_action": "armor",
+      "frame_slots": 6,
+      "frame_sha256": [
+        "256d03be2bcffd3dfa0206198208bf0fd8561553dba9a7331311e5ac4fbdd609",
+        "dfcfff7460a78b8c28ac0555535f9bafc0e30199f5eda7b30b2f9c90b6b29d7a",
+        "7ef2d73491a64871629e75b934b449fc03491c82501fa7cc16ecdb71aa0b221f",
+        "f4c346dd3bc5748eb49981d21b347632a5ae5518bc2d4cb96224d9995f30b60d",
+        "a4b79e859bcdb2f6432b9737d645417dffbab7c5f9f5bfd342feaf152a9bdfc2",
+        "f44daac70f2729ebd94a6e83dccd8113247e6cac988a2d03cd07548b73b1acdf"
+      ],
+      "effects_sha256": [
+        "3c6a59d4fcc0ab55c43650b29ed7c28a58d38b11d3fcd2d987f07ae578fa201b",
+        "f2e830d21d5829361f3d8c530d84dd8079c94b000801315cf8b349c847b76091",
+        "4ed872cfdac81494ea3eedade9d5df711cb89478a81e9f826e6505eef6519438",
+        "cf8da0a5b5e628fd90f13333b1259edfdd8a39ba13591064a79b820089b0a333",
+        "7e8e4a48e25afe13cd0537a5239d0a69212572d42841f61c73ded2f54e319f68",
+        "e021956f1cd45620539af1bf83866330ba691ca94969552f9a2b99383c204796"
+      ],
+      "fps": 12.0,
+      "loop": false,
+      "events": {
+        "closed": 4.0
+      },
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "pose_holds": {},
+      "human_signoff": false
+    },
+    "armor_armor_1": {
+      "decision": "accepted",
+      "draft_manifest": "golem_draft_manifest.json",
+      "source_action": "armor_armor_1",
+      "frame_slots": 6,
+      "frame_sha256": [
+        "0864e09aefedddff09c544acb26247f87d279a4378c791f53983db42cdba0561",
+        "268670e16fb521149da9a1d9d1e4fd84f170d0378508b98510eecf113740bfba",
+        "02c4bd04f3d733a72d08c8ccdd8cf814b1ab4216e17a3b304fe6702b5e0a6b07",
+        "ddc737022b651ad6bb1f211987447e921fec66c737d95597b3cef80e3ec2a615",
+        "80a681b3edf0baa85171e8624e8ec70f902951318c1bedbc74403370b25e2685",
+        "73327d3dd672dcc526af8bcdc11d46e2af67c36deedb58b473ddf60bab11ffd3"
+      ],
+      "effects_sha256": [
+        "3c6a59d4fcc0ab55c43650b29ed7c28a58d38b11d3fcd2d987f07ae578fa201b",
+        "f2e830d21d5829361f3d8c530d84dd8079c94b000801315cf8b349c847b76091",
+        "4ed872cfdac81494ea3eedade9d5df711cb89478a81e9f826e6505eef6519438",
+        "cf8da0a5b5e628fd90f13333b1259edfdd8a39ba13591064a79b820089b0a333",
+        "7e8e4a48e25afe13cd0537a5239d0a69212572d42841f61c73ded2f54e319f68",
+        "e021956f1cd45620539af1bf83866330ba691ca94969552f9a2b99383c204796"
+      ],
+      "fps": 12.0,
+      "loop": false,
+      "events": {
+        "closed": 4.0
+      },
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "pose_holds": {},
+      "human_signoff": false
+    },
+    "armor_armor_2": {
+      "decision": "accepted",
+      "draft_manifest": "golem_draft_manifest.json",
+      "source_action": "armor_armor_2",
+      "frame_slots": 6,
+      "frame_sha256": [
+        "52aab9351b2ee848e15bd4727d2f1c7ed0ee0c37f0b925d25adc7c1bc0519e5e",
+        "59232bf20e7fbc8ad76eacf3bd6c5b974049f8b69d8ee7dc4dcf1a449288d370",
+        "44f288aac54335dc30ba9d61880e83fded55d6b8bce1d8978a86e2684ffb63dc",
+        "9e4a2ca7fd3ea88d010c7e0e8ff579899f5912e8ff2dfbe0b9dbe8f7477e054f",
+        "a801a59e1b6757a57fd919afc487d27956f76e15f9bf05bdd5e556702d5f9b22",
+        "7b7d988956da2aab8541b78cc5085fd8745ce7a0f9a80da6b91d81203ece237d"
+      ],
+      "effects_sha256": [
+        "3c6a59d4fcc0ab55c43650b29ed7c28a58d38b11d3fcd2d987f07ae578fa201b",
+        "f2e830d21d5829361f3d8c530d84dd8079c94b000801315cf8b349c847b76091",
+        "4ed872cfdac81494ea3eedade9d5df711cb89478a81e9f826e6505eef6519438",
+        "cf8da0a5b5e628fd90f13333b1259edfdd8a39ba13591064a79b820089b0a333",
+        "7e8e4a48e25afe13cd0537a5239d0a69212572d42841f61c73ded2f54e319f68",
+        "e021956f1cd45620539af1bf83866330ba691ca94969552f9a2b99383c204796"
+      ],
+      "fps": 12.0,
+      "loop": false,
+      "events": {
+        "closed": 4.0
+      },
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "pose_holds": {},
+      "human_signoff": false
+    },
+    "armor_armor_3": {
+      "decision": "accepted",
+      "draft_manifest": "golem_draft_manifest.json",
+      "source_action": "armor_armor_3",
+      "frame_slots": 6,
+      "frame_sha256": [
+        "528b9d040546315c22e80b71c4556af280d7298d9e65524cb628ba7b297aa179",
+        "cfdb3941dbdad9236704053529890172ccd992291c8c7ea51707ac43aed625a5",
+        "6e9339fb6572c1d4531e9faf2f955c472192abf9ac5855856aa47bf43fcc6c7f",
+        "30c2125414f1265ca43e9bccf5285f00ec4089ad7b87f217e93758adc9121815",
+        "7aa968f4a9b8243f6a68be30e4581f42a352b5fac179caca92198affbdcb0e38",
+        "113d2cc86bbe2a64c70abd47278fc23fd0417d50e4cec00cd66d5a6303922a8b"
+      ],
+      "effects_sha256": [
+        "a9f3b20b4a71ee3fbeaca3e346851ef0156e579f419bea129112bccd7500516b",
+        "283f7ec0db8609167c6f1f4468ac1b115e6bdcc6b611c23884e5178f2648f315",
+        "33d5e3d1722eea31da7a27564e0486322ed06fd095316cde79a19d686a8786b9",
+        "e960501357748feaa545cb929693d838a251859ed505caddadedf8cf6599c4d4",
+        "70d7ff86cab91e3ac7ea293abeb8ccc9535355745eeeeb08a4d918972ade9d57",
+        "0c1f2234812a2e3d98e530c0797d5bf3f9953801687ed619b3cb3c942fc2063b"
+      ],
+      "fps": 12.0,
+      "loop": false,
+      "events": {
+        "closed": 4.0
+      },
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "pose_holds": {},
+      "human_signoff": false
+    },
+    "armor_armor_4": {
+      "decision": "accepted",
+      "draft_manifest": "golem_draft_manifest.json",
+      "source_action": "armor_armor_4",
+      "frame_slots": 6,
+      "frame_sha256": [
+        "9698d2b610f92c77e0a90a7c67f7a9550ee8be834ba0b7a3d81aef1e04e22a2d",
+        "e3ccf040e9f3effaa78e84adba04b9227903d13eaf1ecca0c04e808928d7a115",
+        "5d7df3f865cfcf26c803a98a7f9e0d11b452ffdf671d40565fadda1ae000b6f0",
+        "8f03e037b020a87aed94fc458c5d1efd724fab3c9ec4ae10fef6da599b4207a4",
+        "f752b64918b7a8d387189542e4c2024fc18d0f2329dac4edf4dec99d07c4dc31",
+        "08257aea98a1bf19bb0b48fbec0ff73a0a207d0a5e67b148e4eb2582c2756b48"
+      ],
+      "effects_sha256": [
+        "a69bba84fd713b9c2d6995e03583bdaaa927dab9bebecb7531c20562fbd4deac",
+        "2fd73e775090534b97cc9f4715788eee45fc69806099f3fc2ca63edeff3f0475",
+        "4e267af5e3dd3264c2e7b3e7eb69a7074fff3805df35813ff1209c8510601fe9",
+        "c990d92c8c970ee285afd78ee39ad5c8db2cf4e9b0b015e521975afb37554cc1",
+        "068fe4518c6cf277e6f0c5889f192ff099ca370433cc5f944c70d2cc2755a196",
+        "94ec347680bacb71f4424150151b9ce17d064cd0ac2d18d930f8af007bc9ebfb"
+      ],
+      "fps": 12.0,
+      "loop": false,
+      "events": {
+        "closed": 4.0
+      },
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "pose_holds": {},
+      "human_signoff": false
+    },
+    "attack": {
+      "decision": "accepted",
+      "draft_manifest": "golem_draft_manifest.json",
+      "source_action": "attack",
+      "frame_slots": 10,
+      "frame_sha256": [
+        "d62ab5f84d1cebdd514441802c595aab2e9d3421c16eb824321e06161bf94dc6",
+        "596063fc2f569a3e0359caf1ad8d4a79d7908551daad980ab25b5b3ccb21bc92",
+        "7762d9849ae686f8484d0e5d34357b786aba622e0f7653987de924e9609f1d63",
+        "b9cbb8fc034352504674cef144f0d40f7445e404a9ab4c5667a41dc9869eb673",
+        "21020c0a556a67ed3f16d8fee3d4c9bedb0eef13cf2d5ee48ebba89e3a7fb8bb",
+        "53faec45d05e777755ee677ddfd39675f1fee28b6e23c3e143fd9b89835a17dc",
+        "1fca43b845649535d437c89c60c58db4666eeb56dc65a08198d53c5a9be1134c",
+        "bbd4f5c09749f2eea3d247fc622b81e9db2b3b8be018d7796ae3a3cc3a222bb4",
+        "9c9c1398f01e507271e95848ae2b7d6e8d616840f147685dc83d001916525ae6",
+        "d62ab5f84d1cebdd514441802c595aab2e9d3421c16eb824321e06161bf94dc6"
+      ],
+      "effects_sha256": [
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de"
+      ],
+      "fps": 12.0,
+      "loop": false,
+      "events": {
+        "hit": 5.0
+      },
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "pose_holds": {
+        "9": 0.0
+      },
+      "human_signoff": false
+    },
+    "attack_armor_1": {
+      "decision": "accepted",
+      "draft_manifest": "golem_draft_manifest.json",
+      "source_action": "attack_armor_1",
+      "frame_slots": 10,
+      "frame_sha256": [
+        "688b4769fbd2d7f69521a189e58154657eef0a71b7c5781b2abda087e733d427",
+        "788c21d6024911590d7755c1641db308a80af6c6708d93bfc3192b1e8e62e512",
+        "7b545dd65fce2b9ebc162903fed6eda3c8dc652132c47574c06704d127ad67ed",
+        "825a7259a76664c092c7ac92d99e76e814eabd7eb3a8bc3020da312d4539fd64",
+        "1d3aa425145c163f16041d70adb6ba48aeedb7c18da30e7ec551ca4fcc622025",
+        "342f733a5518905134806394cc35df5deeb5429b53b441c43635f027f0c2e461",
+        "e7c6e7d1d40e0be63ffb6731a42e8de2cf69dd8cf44ac612539aaace068729e9",
+        "490a024196114c727acf30b44893c3eede78aec8faba4c8819695e32abf3bb6c",
+        "a7386b35e2df4fdd6f67df79cb2ef83f8052b5a8c0a941538335cdb43cee8240",
+        "688b4769fbd2d7f69521a189e58154657eef0a71b7c5781b2abda087e733d427"
+      ],
+      "effects_sha256": [
+        "e021956f1cd45620539af1bf83866330ba691ca94969552f9a2b99383c204796",
+        "1e48b1fae58a6216c411ab30a7dba106a56f767e7d524cf58d6cbd2c649c3dd5",
+        "07a462b15e0702acb2a84030b1c7f5be9376c3db98d16c2def7feddcfe6659bc",
+        "ffcf1b5a84048fd2138550c8d2f134d409b9d632bb4c17295dac3102e924557a",
+        "c9d5b6f48da296dbe0497a7f0052e259331dc83b97df5777bae60561de0688ac",
+        "9abfc7b716dc0fa5269a37cf3f58a5814e9457d05c131ad18bf874a8c26ef496",
+        "563981029822ccf4da4ac9ecf652fa0fc5e3124ecb7c77b85a92dcc945fac536",
+        "7a2c591c83fec9808f2aecd6a35e7f2b71638f500088a57a16e338f43a230c21",
+        "6f8cc558b4537b9ee4effb4b607bb4f1854a45bc4b68531a3fd55ede327344d3",
+        "e021956f1cd45620539af1bf83866330ba691ca94969552f9a2b99383c204796"
+      ],
+      "fps": 12.0,
+      "loop": false,
+      "events": {
+        "hit": 5.0
+      },
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "pose_holds": {
+        "9": 0.0
+      },
+      "human_signoff": false
+    },
+    "attack_armor_2": {
+      "decision": "accepted",
+      "draft_manifest": "golem_draft_manifest.json",
+      "source_action": "attack_armor_2",
+      "frame_slots": 10,
+      "frame_sha256": [
+        "720f9038fff46fe2a050ac598c626c7caf69e9f1903c4724e75bc29ecc60cfa0",
+        "9a6225cf651f6365861108a69621f3f0b56b857d30e09c35b486b55e429c7223",
+        "87af393bbd5a5a96aff530bb733e43593c1640baf8887b4e54c0d4503a10c0bc",
+        "23fe54240262d4f5cc718ed44b87538c1175842175d0258f59e703d3037e35eb",
+        "e20fbe66763de88e008c9b589b741dcddac02f043c7f0c553c60198e99a5a2da",
+        "e0e9d755ff6b87e68a748a71589d02b3c1f46e4996cb6b9d8577e31bd485b7ac",
+        "564a23147e84b6cd8b07736e87ba585e9f66182d1c8a6064f486ee54458cfa40",
+        "10081b57a8173ed50674fb2d928049d48ea1a2697290c1da988fdd5aef1c04ae",
+        "eee5791a4a44b0d6ede6b8e6677b92227863a923b46677ba3f3617c986bed94f",
+        "720f9038fff46fe2a050ac598c626c7caf69e9f1903c4724e75bc29ecc60cfa0"
+      ],
+      "effects_sha256": [
+        "8102c0d8d21aa5231758116cc48e9411139df6c5dca429171e7615e9e4fb0518",
+        "cf9528f3caa79cbd33375b7c95776ba91aec234fcb4fccc79d24be2fe81cd4b5",
+        "cbd2a7bdf1f585030992222a0bd7e42ff4f6fdd12a17fcb5e26c2733f6f4667b",
+        "5f74b9b29b9056cfa5f712a82d0974bce5341f016de2984185e090cf218759fd",
+        "b5166b063fdc921b38d63ae12a89a078e35bc09b6042b6d4be3029ef7ebf6a60",
+        "36fcedc1ec908f7377fce67fb97c74094485f48f5215f55e2eeb0cc09a4c55f3",
+        "89b7dce5ab2563832481d7e8a27d56866a73770c8f056fe5438c8f4e212b5238",
+        "5627f69e43563e1a607a528779d1e68057c9f7c6fc9ac379e2ada295f6cd0397",
+        "385ea2393e70d0d06826ee5d37877b80f03ea3df4059bbb8401cb5acab0c7f1e",
+        "8102c0d8d21aa5231758116cc48e9411139df6c5dca429171e7615e9e4fb0518"
+      ],
+      "fps": 12.0,
+      "loop": false,
+      "events": {
+        "hit": 5.0
+      },
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "pose_holds": {
+        "9": 0.0
+      },
+      "human_signoff": false
+    },
+    "attack_armor_3": {
+      "decision": "accepted",
+      "draft_manifest": "golem_draft_manifest.json",
+      "source_action": "attack_armor_3",
+      "frame_slots": 10,
+      "frame_sha256": [
+        "ce2b9781f92545f7085a34cfeead6e932b8d60d29e29c05db1a17f80a1f837a6",
+        "882ca9a71d467507c3358b46ec8dc8783798cd74a25fc5b79161d189ec3eb1eb",
+        "3a103d93605d29479b96a54c1d19495dbe4069c79065b4f31db14c5140a0da24",
+        "ec6b7c2e7a79587e17e0db526bbbfa78a692029c1a24c187d046dcbd33ac8342",
+        "28e24f85dbc3f438076d34e09eb972b687400fcf4db7d90f0ad3bb054d4c7446",
+        "889757131f346c5eb8d681a09c11033da565f27b5fd0cb5342a221dbb0bb524e",
+        "d0106ea30e0ff5124cf66994a32d68fe44ea3c3b6d536be7ac41be32ca768e93",
+        "17bce3a33be2798e422e0e0dcec16831c7989c3f416e86c6ad22c24f04f1b72c",
+        "7e2b62bb13735af775fbb182fbac68fd9ed4c9f3a1028997e0cb47a8d1896788",
+        "ce2b9781f92545f7085a34cfeead6e932b8d60d29e29c05db1a17f80a1f837a6"
+      ],
+      "effects_sha256": [
+        "aa4d9f6a3d2402b08fb4bfc911cb37b7ca2fce94c18da0ed890f619a09adb8ba",
+        "8faa2261be23ae69d9233339487180c2cefde0f4334bde6ec4fcaad690e698a0",
+        "4119eede97febc7dd7588a27384799d2b49796606a8b398e7cc76851352cfb82",
+        "9ecdbe8e0cb0c906d03bf5e992febb8c75edba68b274f86e8def25eb1fecf3a4",
+        "a48c2990dc9b467cd28fb8899e91c6e6ed39849c9fc028a3398859f0703acf9b",
+        "e3bfdb8cee88ba5986c886b626ea3b4134fc26b64a4fe5663fd416538fe35adc",
+        "a7807094f16a8f718c19a50aeb2dd974b24bf1f36fe45d06c34a56d0d9989577",
+        "a7e0e3b446d5751b4f2ec81648a6bea3b5bff3da8987e06581eaf5ed2db254f2",
+        "6826bc88b209a34d0a5f545f8b39792e4bf3aa3f03a0573f0a808cef400d3a56",
+        "aa4d9f6a3d2402b08fb4bfc911cb37b7ca2fce94c18da0ed890f619a09adb8ba"
+      ],
+      "fps": 12.0,
+      "loop": false,
+      "events": {
+        "hit": 5.0
+      },
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "pose_holds": {
+        "9": 0.0
+      },
+      "human_signoff": false
+    },
+    "attack_armor_4": {
+      "decision": "accepted",
+      "draft_manifest": "golem_draft_manifest.json",
+      "source_action": "attack_armor_4",
+      "frame_slots": 10,
+      "frame_sha256": [
+        "647097da71ee760147164cca5551c6b510b4b801c3f3acc0a82096b753ddc22c",
+        "de8e0f5f4ab5cfe9d4f054c2105fe9df560b2112bccb1a75ab6b86147624b19c",
+        "cc6ee551f0b081ae8b3b0908150baa7e2bfda32b4724831c967fcfb374097253",
+        "9a6c8ae730212ece1fe5943475bae3ba5f128ef1c44e3d44c8c3bc94b6f16cc2",
+        "6c3b11ffbc21da479b3f85027871b4c5ae271c2b6530860f0878a0ca03a736d5",
+        "c7a4c2a9b7f56bca0cbd5a513fef4bb21515edea1988ee4da9c09f8f683e5973",
+        "96dfa75c21006544b7b202fb196512ad5ee45ec1185590fc66d9028023c053e7",
+        "dd5626aa8e5242950ba3f76281e1f26d235205a20ea5f757e073202d05faf447",
+        "befbe6d23a24acaa5eb7b7133c04a925314d25312c5fb968cab58d50133c5624",
+        "647097da71ee760147164cca5551c6b510b4b801c3f3acc0a82096b753ddc22c"
+      ],
+      "effects_sha256": [
+        "051f60706ef964bd9a186be3288aff1376f7a96962635b13f1bf2d194766277e",
+        "d62f2d803702f83e3bf7396fc2edfe8d60ef6bedf272f1d844cb69fba2c6faa9",
+        "c3c69dc974f1ec4d09b31a7983bf9e2b7fb6e2f79e6f5a4f1120b077f8982181",
+        "e57be1c0eb871e48dcd1afa76e6b3b3e26feaf350afcab3c2c43dcc7995a35c4",
+        "1d417a493064fe59fd78081fdb53b0516a7e2019f579c01df17101ac0b2e2ef3",
+        "d17b972be205606ee52079dadab1d82743ba5fc33297794207672d9630de1c3d",
+        "e1f11694e4bef72e36209427d5a54e09e200d16877a4e5111fe14fefc7b9353d",
+        "104123bcddeaf649e378e45a46b34e932a7ff89da6b72319b5a47bd99effa94b",
+        "4a678ff6e02ebcff4acd8d429601a6a96b4cd17588fd86f081bd52ccd762c9b3",
+        "051f60706ef964bd9a186be3288aff1376f7a96962635b13f1bf2d194766277e"
+      ],
+      "fps": 12.0,
+      "loop": false,
+      "events": {
+        "hit": 5.0
+      },
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "pose_holds": {
+        "9": 0.0
+      },
+      "human_signoff": false
+    },
+    "defeat": {
+      "decision": "accepted",
+      "draft_manifest": "golem_draft_manifest.json",
+      "source_action": "defeat",
+      "frame_slots": 12,
+      "frame_sha256": [
+        "5c379a8f7ce93d9e35325a2bf3905a1e68040f06b953f6484d3d594a5e8f416a",
+        "7021c4528fc3afc91a458a105afa53c1edba94067b76e0a745600643cbc92e5c",
+        "ac25f4f2fb1332eee262ea093d7ebb27d9bc0eeec678c133a61164e9ccd2dee1",
+        "eeea0c120fec65bc471861504d1b5ad57c8f03282d188445ac8ec8bf4cb5d56f",
+        "29830eedf2fe72fc07dd91720e332639d233588973137f1de20dd541d2955cd9",
+        "6cb25e6504dc1f3196075f7170c8790a7224311f1143654163d1239788dd12bb",
+        "e37e75031aae9e6ed752c12ef16d514e5f3be29fee7226cc7699ba561c219185",
+        "baeb6689773fd9ff9037e5c9659c0f47a695608ab3ed2646fe5b2bad2d481776",
+        "fe338a5f69cffe1d8ae1464de411f107d5ae9b1a78bcdd1a6784cb56f271ca60",
+        "80367a0f7a604cc6541fd4f93cc44d4dc87ac8b6388663cd3a0fa73f3aaacbf5",
+        "7c14269be879ccf2355d23099099ac008afbdf713998600f17eebc3a4289d03f",
+        "7c14269be879ccf2355d23099099ac008afbdf713998600f17eebc3a4289d03f"
+      ],
+      "effects_sha256": [
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de"
+      ],
+      "fps": 12.0,
+      "loop": false,
+      "events": {
+        "core_dark": 8.0,
+        "fracture": 3.0,
+        "ground": 10.0
+      },
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "pose_holds": {
+        "11": 10.0
+      },
+      "human_signoff": false
+    },
+    "defeat_armor_1": {
+      "decision": "accepted",
+      "draft_manifest": "golem_draft_manifest.json",
+      "source_action": "defeat_armor_1",
+      "frame_slots": 12,
+      "frame_sha256": [
+        "9735e42492e3422a271de539e6eff034cc922005fd641814cf6aa2d9b8a3fa18",
+        "8093e376f8014443ef59524916c698ede0c5a8cfa0b960a579e82cc3ae5ac566",
+        "8279896a554b367afed6e3c63e656a14e2363b33fc20ce61f49185517c0e80a9",
+        "15d514854671066dde0380d07ada59673f77f8dec1ea588a061fc02e21e8d963",
+        "e69d006b03bf29838c700a4773d3b653bac42d0e8fe7aa944d1285bea4dd54a6",
+        "6c2a0a5691342c3b452b19659387932a7001810dd492f7395368f90c9f8dca00",
+        "6d39bf386a1897a713279cfcfeaa179c3119e7c80dc3fcd02f92b9bdab96cfd6",
+        "8b0dcc4034aa07be9507f5400dd6be844b78c00476121042674c557eef22bae2",
+        "20f4038efc943629fd6f1b977957cb2719e4389639837eebc013ce1c02505ca3",
+        "37e9441521bf079858fa7ef6172942647ffb788456dec294e512817c75df33ea",
+        "7c14269be879ccf2355d23099099ac008afbdf713998600f17eebc3a4289d03f",
+        "7c14269be879ccf2355d23099099ac008afbdf713998600f17eebc3a4289d03f"
+      ],
+      "effects_sha256": [
+        "467b3fc41bebf5c66c61e832d338b1d1faa3b9f70396353dc7c6693e5e1d2069",
+        "3cb81fa08d207ecd1d094806a8cab556d94ede4acd0db2c67e2e1c36a3bf3d50",
+        "469d26064a6d2675dbf81bd7ec9913562a71a092cd64e040b897f1f808858618",
+        "d491836f052cd0bb3442ea10456d2e794ca635893309f2f7a6b9922eb8daa2ff",
+        "aa9b3d8afa17ec12003b6cb48546d7bbec901f0b0eef92cb31131b559dfb2c33",
+        "506311545c6999bd7ec33a710dedafc5f334302c0f4c559d7e08e3cac7b85d14",
+        "a1f8f50af8646cc02157ff67fb956a25fd6ec1e68f3dd80a2ddc2aac3acc9126",
+        "07beff56c9aafabb6bd1c3f143a33e0f4318b6eb17c87736e3fd5d1f24d42666",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de"
+      ],
+      "fps": 12.0,
+      "loop": false,
+      "events": {
+        "core_dark": 8.0,
+        "fracture": 3.0,
+        "ground": 10.0
+      },
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "pose_holds": {
+        "11": 10.0
+      },
+      "human_signoff": false
+    },
+    "defeat_armor_2": {
+      "decision": "accepted",
+      "draft_manifest": "golem_draft_manifest.json",
+      "source_action": "defeat_armor_2",
+      "frame_slots": 12,
+      "frame_sha256": [
+        "294ab8902dc193d2037534892eab566c4658eb04202408b9d934b963e1defd38",
+        "221fb53ee0040d403def5a252b7f38a20c1d6ef32818632b64cf7132577068b3",
+        "478c6ee5a07812ff767aa8d2d18117813299686fbc41d7cc01c5a520329dceee",
+        "4195376ab9e1bbba491eafb7a037c985ca6f92a94be6be05713a19b86bc97562",
+        "e5737710798cf97746df3f9cffd7974063df6eea6f77e4931b578419aa374c42",
+        "b86ce69f959c4756385f03a0c25a12690ecf50285744e5eb1d814cc0b08ea704",
+        "3e2c8976b15b4b2d5f901b160e8caba99b8caec59373863b9365f7ebec74a380",
+        "6509f10f042f74fe7880d0d37919e35f8d847c2b58283f3757b3697db41a51b0",
+        "5c760f19aa5cd4cbd4e3594d0b2096a579fb868584cdaae2e487c8bd1091c037",
+        "c4d7a2a3343cfcd72e60668efe036889ba9eeccdfa0be42536c50c78442ed0e9",
+        "073d5ccea171b54c16e46bb3f981ebc7b3e4c60a2de7f4f8b859c59a19c4c531",
+        "073d5ccea171b54c16e46bb3f981ebc7b3e4c60a2de7f4f8b859c59a19c4c531"
+      ],
+      "effects_sha256": [
+        "ec33e802e2fd66afec670679316ff781198e70474650d207a08eb57a4db8cb58",
+        "8d8d0a264b6ec1941a3de829cf8d5c54508c8111d73e38ef871d1794ec245880",
+        "c09ce26c53bff48728c46bc7a8cba05adf5f6c61562ba5e53e7e6b8096cf1f16",
+        "fbc997665421ef4c45dc1c47e17c5fb6d4ab9c7f9c4311171c849a4abcc768b1",
+        "ece3a0f5480eb6995caf9ed23708f4ec552b896775eb12a47a3cf0a0ff928d83",
+        "d9a92a5acaa4c13753f1d82c31c4ece46173411fc5fcb189ca1cc7fa7f340d1f",
+        "e1320a58589772f05577a25fa2b7ba06f5ce8c15e09c6f1f1ec3f57eb5769c2c",
+        "8a17603b707ac2a4697a01689eca763d2b519cb5b6047d972d1ebc096a69ef7f",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de"
+      ],
+      "fps": 12.0,
+      "loop": false,
+      "events": {
+        "core_dark": 8.0,
+        "fracture": 3.0,
+        "ground": 10.0
+      },
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "pose_holds": {
+        "11": 10.0
+      },
+      "human_signoff": false
+    },
+    "defeat_armor_3": {
+      "decision": "accepted",
+      "draft_manifest": "golem_draft_manifest.json",
+      "source_action": "defeat_armor_3",
+      "frame_slots": 12,
+      "frame_sha256": [
+        "fe361b117752a0a4351f7e875d88ca7c915f7229d48f07dd8fdca7148750300c",
+        "39ad6fa60e23c63c42bde780f9c45c4c517ce41eb26fcac363be603630ec310d",
+        "2ef38b2d19bf3718c3e5065b3409c50aae00b01e15d07d485e902d985636b499",
+        "aab4cff865f55bd3bb9effb52ec6cf9cf8c5bfa9b8b177b343a1d9b72df4463f",
+        "1f363f8d98f4705aa6be15787f8985eeaa32405101ab8f806942027691d77c9e",
+        "8adf190aaee7f0d3234ce9edf99a7cd40b34adb37e7f5d354caa874e66bc6d33",
+        "4c8f8ae4edfdfbc23921f5c886939d13be25b54b3178594a23ee6353dfbe14ca",
+        "b4a2e7623f6c8ad414e4558a8def8b3af26a9309afe5d0451c4f276d121714e0",
+        "30ec3031dbe09da809aecc5fc366884cd862f0f62826e8f80e538b14d7014925",
+        "fee2d7257cfd337b768be349efca05181191ca63df23bf16e9788f76c5c0ffd5",
+        "3437fe26d7fa4810d38e0765ffca0892520111b05e8a7231a87de962b3674f36",
+        "3437fe26d7fa4810d38e0765ffca0892520111b05e8a7231a87de962b3674f36"
+      ],
+      "effects_sha256": [
+        "a7565cfefb592f5875c53fdc82e1015d9222e105655aa6a0ce15a7482227cae9",
+        "e21234b74f8d30e9fe434b9ee0c30e70ede7f91edfe73a3062d7e160214bac1d",
+        "4c7701b1b7958515a7e35f959a51c4bdb36f36c655356605a7ca03e627a9db73",
+        "5b045c914043dbbfd86b3ca993abb90078ec85faebe230d68e54b7acfe62af0c",
+        "3f378a01513c04ead6b30d81a78ea315ee155e2617834cd0712b89730e65da2c",
+        "913ff387fe13745c128df0f7a785c243844fcc37b2cf7141b6f434f5925b5881",
+        "f36ad16343f964681278ac895aec450e75cd186e343cf1b0d3b5be2a27c2af37",
+        "c6c0af600eb23c7829b4faed6529edd21e752d66fb1767ca0797e3764b881813",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de"
+      ],
+      "fps": 12.0,
+      "loop": false,
+      "events": {
+        "core_dark": 8.0,
+        "fracture": 3.0,
+        "ground": 10.0
+      },
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "pose_holds": {
+        "11": 10.0
+      },
+      "human_signoff": false
+    },
+    "defeat_armor_4": {
+      "decision": "accepted",
+      "draft_manifest": "golem_draft_manifest.json",
+      "source_action": "defeat_armor_4",
+      "frame_slots": 12,
+      "frame_sha256": [
+        "e004ad6b85a18d1f46bc83f961aecd105bfe644153af39ad21173552f62599da",
+        "91b6d52648cb73456bbc872605e4d038ce71d8d69d0a2b8f68ce9411be6b580a",
+        "5b43da521fc3c53e9b26c2b67359dfaa95d9574ad7809e1a6275f0596b7092da",
+        "912b14d967d089f1989023d96b51bbe341b17fa83a62592928e3ae945e87d3e5",
+        "6b3e5eae1485c588b13b3bc7effd4adc53158ed86362893d0f57309a203ef148",
+        "5b6a4514e22fb1ea38a6a3f27e2ad333bf0ff4434a7c3e59ab1c760916e20b19",
+        "b08556252645520ae11de89304f53f8107d4777411298c43f34f36cb281f03e3",
+        "13938e2862cc4d00f3e74d05792fb52f1051c47da512f3713d780b8b258a0aca",
+        "368b1d7527404b62484a3687cf205492141e2ab2724f58aa40859422d9c060b0",
+        "8ec5256719fb3703c25d5e585204be4908266cf9c48e7f3349250a9a5907587d",
+        "f0a12be85663de924233baf723f08310c2910b3cb02a9ee78ac58e266451b401",
+        "f0a12be85663de924233baf723f08310c2910b3cb02a9ee78ac58e266451b401"
+      ],
+      "effects_sha256": [
+        "a720b3a56219f40cb6417b091bdb5c49d6d87b8d1592e0168f156eba199f433f",
+        "1894f6f40b5499fe5a5481853ff8cb963f788d9a00542646af58dd15926bd2cf",
+        "ff88557b9590c92bdbe1a5f1bda9827b2b1c5a2ae9b6559f1149fedabe10d15d",
+        "77f3d489fa49fe9315559abb523aaacfd8d60bf10a1a45073e12c3bf09222bee",
+        "045ddfc13c035fc7698430905ff7c6a7c01b681488e774d1c99ab62ef2693763",
+        "cb4ad67f77a4531b85e6512e2a337f0153168b08c79afba7cae0a5034529221f",
+        "2312dede88b6b632a73c150cfafd20ff6d8228af07ddea129a261f8253bb89a5",
+        "92b00f7f160455d319fdd5c4fa65901915247f65b37e0cd65f4d892cfa0c026d",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de"
+      ],
+      "fps": 12.0,
+      "loop": false,
+      "events": {
+        "core_dark": 8.0,
+        "fracture": 3.0,
+        "ground": 10.0
+      },
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "pose_holds": {
+        "11": 10.0
+      },
+      "human_signoff": false
+    },
+    "hit": {
+      "decision": "accepted",
+      "draft_manifest": "golem_draft_manifest.json",
+      "source_action": "hit",
+      "frame_slots": 3,
+      "frame_sha256": [
+        "685195e5c941fb547840697b016bb3bba7050691b07a93e559cf7c83b5e5ba0a",
+        "3fdb32b90f2e770cbd8446be2fa2071243e028afb6a8ca2cb4b00d7aa7878346",
+        "d62ab5f84d1cebdd514441802c595aab2e9d3421c16eb824321e06161bf94dc6"
+      ],
+      "effects_sha256": [
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de"
+      ],
+      "fps": 12.0,
+      "loop": false,
+      "events": {},
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "pose_holds": {},
+      "human_signoff": false
+    },
+    "hit_armor_1": {
+      "decision": "accepted",
+      "draft_manifest": "golem_draft_manifest.json",
+      "source_action": "hit_armor_1",
+      "frame_slots": 3,
+      "frame_sha256": [
+        "c8af6f9d2b4844cf8acaa3a45ac1f74c85ead22334fcf766d9e4a06f870a796e",
+        "8ebff3676b5c79813d92cedc836aa3f770b4c3a476405631337a025d65e1bb7c",
+        "688b4769fbd2d7f69521a189e58154657eef0a71b7c5781b2abda087e733d427"
+      ],
+      "effects_sha256": [
+        "4c34c12a4cd5ae570ae862c6c01bb624966a4f192f96a5e1fc9e7e9d3c805208",
+        "3c7f04f687be889230e6ca37f279cacc903d89106fd6a960813f9bf8ccf9fea7",
+        "3a70a6a727d1b4a6960bea7a85121aac7d2ae2fbae6eeb21b837d9101c3cbe6d"
+      ],
+      "fps": 12.0,
+      "loop": false,
+      "events": {},
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "pose_holds": {},
+      "human_signoff": false
+    },
+    "hit_armor_2": {
+      "decision": "accepted",
+      "draft_manifest": "golem_draft_manifest.json",
+      "source_action": "hit_armor_2",
+      "frame_slots": 3,
+      "frame_sha256": [
+        "132bc71263c303fef64b069de3729c4332c14f96574522395ea1be8ff581d9bc",
+        "9780f9a9051a1b3cc53b3d4745bb373b5cf21b6583af17902fc8813df3eb9552",
+        "720f9038fff46fe2a050ac598c626c7caf69e9f1903c4724e75bc29ecc60cfa0"
+      ],
+      "effects_sha256": [
+        "527a49a3340e75bc6cb345167cc2ff9224e170e7c604db32bb5830586363f16c",
+        "ec646eca373b28566a5cc1adf3fe4d173a16228d58dd5784a929d48cdde1d3c4",
+        "bb0d28da4077a63529868026e34863c6a4e42329ae5da55b37f695f85dd03349"
+      ],
+      "fps": 12.0,
+      "loop": false,
+      "events": {},
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "pose_holds": {},
+      "human_signoff": false
+    },
+    "hit_armor_3": {
+      "decision": "accepted",
+      "draft_manifest": "golem_draft_manifest.json",
+      "source_action": "hit_armor_3",
+      "frame_slots": 3,
+      "frame_sha256": [
+        "d21f12d3e2a86f3ab9c112551454cae6cbd19f961549186a72ee444721607b40",
+        "b283a5e79324cd05e6015fbe174217dea6b4793d423007256d08e283e6f3cd06",
+        "ce2b9781f92545f7085a34cfeead6e932b8d60d29e29c05db1a17f80a1f837a6"
+      ],
+      "effects_sha256": [
+        "15cad6509118b25735d5dd60725dd917d9c3998082478fe5fabaf349c247b877",
+        "ac881972620967a6df91e4b4e5b998d7c81a54ca6b8010ed442ff64dbfe0416f",
+        "ed66a0b0d5e50627a873487b59505b281ed95affcb717b56812d41bf411ceccc"
+      ],
+      "fps": 12.0,
+      "loop": false,
+      "events": {},
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "pose_holds": {},
+      "human_signoff": false
+    },
+    "hit_armor_4": {
+      "decision": "accepted",
+      "draft_manifest": "golem_draft_manifest.json",
+      "source_action": "hit_armor_4",
+      "frame_slots": 3,
+      "frame_sha256": [
+        "c454e43a1a577e367d1f6bbcf3f1fc303a7a91eddba9b7f98623f5b5f26797bb",
+        "0e77d6bc12d9821628c4fa46d655fd91385eee22bb29ba38524a9c697b7ebb91",
+        "647097da71ee760147164cca5551c6b510b4b801c3f3acc0a82096b753ddc22c"
+      ],
+      "effects_sha256": [
+        "05819cf4fbb90f5f7cc0372eb172e23a66e472f498872d25bf372f1cb113900a",
+        "6d4f6c41698798455c215a036a9ac53d8ca788b24c7dd587407473262914e4ef",
+        "a414518cfd87fbebb92ab79fc2e1942dec1a31f196f8b5a28c85aefdce65dab6"
+      ],
+      "fps": 12.0,
+      "loop": false,
+      "events": {},
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "pose_holds": {},
+      "human_signoff": false
+    },
+    "idle": {
+      "decision": "accepted",
+      "draft_manifest": "golem_draft_manifest.json",
+      "source_action": "idle",
+      "frame_slots": 6,
+      "frame_sha256": [
+        "d62ab5f84d1cebdd514441802c595aab2e9d3421c16eb824321e06161bf94dc6",
+        "945644d2fffa54afd6617d8ad2ee7643383c9a3eb2cb8f7bd0907c5a0994cc95",
+        "3945f9bd20c6d6d708c68b0a9d22938dad6c825e8c2b307c5e0c6c9c0399175f",
+        "43a48e6f93107108e35683e499cab109c5a20c5cb80d6fc98f03423e7578f237",
+        "d15741939e20c52bc0bdcc358e81534bca59ed2e9996e080d7b8bf754fc31d88",
+        "3b6b92fff499bfe27a42802aa5a279ca19b5b7c6931bd9adb28a43ee9a151468"
+      ],
+      "effects_sha256": [
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de"
+      ],
+      "fps": 6.0,
+      "loop": true,
+      "events": {},
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "pose_holds": {},
+      "human_signoff": false
+    },
+    "idle_armor_1": {
+      "decision": "accepted",
+      "draft_manifest": "golem_draft_manifest.json",
+      "source_action": "idle_armor_1",
+      "frame_slots": 6,
+      "frame_sha256": [
+        "688b4769fbd2d7f69521a189e58154657eef0a71b7c5781b2abda087e733d427",
+        "7f2d842579fb26e349535f7bd3dae3c649994fc0bdac128eda2f091b7b7f30c3",
+        "dc3be0bde9990fbf2abb9833a043d5d48c63980b99a5f900d514af373d909afb",
+        "83656a0621d600811de3223a0ca9d26e4b947947caa031f9cb5d6ae3f031c674",
+        "c65b3c9e3799560d4a1cc249c87dc34bf5b7c1f33852e7691cbaac0b7f849088",
+        "dc29069c1c8f70c9a994907094275f91700ad3b92713b17ca1bc73c0d53f282f"
+      ],
+      "effects_sha256": [
+        "e021956f1cd45620539af1bf83866330ba691ca94969552f9a2b99383c204796",
+        "ef69655c707f4c05b0698105aa044a343c526d1375d3b42e40e004636494f526",
+        "bcc049b1315790d2bb6bdbaf845116cf80b34e0e706e13e047561dc07aa3b5c5",
+        "9e3d92d20856d8489763044b40cf5d2cde3d792d77ac7b101df394a99b581a05",
+        "07bbbadf76db2005115919806ff073a6fe09dd68e9c164d8a3a0e8c6e44a2ad6",
+        "07bbbadf76db2005115919806ff073a6fe09dd68e9c164d8a3a0e8c6e44a2ad6"
+      ],
+      "fps": 6.0,
+      "loop": true,
+      "events": {},
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "pose_holds": {},
+      "human_signoff": false
+    },
+    "idle_armor_2": {
+      "decision": "accepted",
+      "draft_manifest": "golem_draft_manifest.json",
+      "source_action": "idle_armor_2",
+      "frame_slots": 6,
+      "frame_sha256": [
+        "720f9038fff46fe2a050ac598c626c7caf69e9f1903c4724e75bc29ecc60cfa0",
+        "b593bbabf4ba97e4cf5d8363173ec0e2ef1af57de029320f302bf42ebb5bd78f",
+        "941d352814c5a865d1974016a4598805f404eb1662447b1b0005aaa50e4d4fb9",
+        "586244d47ba5741823b85952bd2fa971c05d3c38410f6649bf167fb4e2b636f6",
+        "3a03152f14bb18af5e3b15d6356ff3c7360b13d53ebc66d49da025b6424142ce",
+        "16660a4b1ad8bddd545bc1b07d73153f282fbd375eb43323a4615106ad9e949b"
+      ],
+      "effects_sha256": [
+        "8102c0d8d21aa5231758116cc48e9411139df6c5dca429171e7615e9e4fb0518",
+        "afa886699b596688d69a21d0ce6753e051604ab2731e01a19739e9408116253e",
+        "379f01b3ae7a3b2303608e5572eb47af94443a1778444a9dde3e17b14729a214",
+        "70dc2c1ee4958c1205bd38caa63fff1bb2ef1ce7a6e7f601647c75d1e448cc09",
+        "7a2c274456b1a2be66300ba9349b9e99ae85a59f72738f3c433ef78f6f1a3d89",
+        "7a2c274456b1a2be66300ba9349b9e99ae85a59f72738f3c433ef78f6f1a3d89"
+      ],
+      "fps": 6.0,
+      "loop": true,
+      "events": {},
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "pose_holds": {},
+      "human_signoff": false
+    },
+    "idle_armor_3": {
+      "decision": "accepted",
+      "draft_manifest": "golem_draft_manifest.json",
+      "source_action": "idle_armor_3",
+      "frame_slots": 6,
+      "frame_sha256": [
+        "ce2b9781f92545f7085a34cfeead6e932b8d60d29e29c05db1a17f80a1f837a6",
+        "98efdfea4bf2c8e333f7ef693151317731f86d8e3b104c7f6b2d2513b750682e",
+        "fafdf009a1d8624888afbe0a7c09ef8816d33e2e1485900b9f38842603df8edb",
+        "8283cc10ee72cb925b70119d8d6284dddfc42522f9085d4661cc461cda82a134",
+        "707c4978f91f6082299e938419f8eefd659ca8fbbc8f54a42a85e6a03f456926",
+        "5e031a6330ef89ea33d3da1f8e79fb26698c4a607e0171f28f6258dfd1870d06"
+      ],
+      "effects_sha256": [
+        "aa4d9f6a3d2402b08fb4bfc911cb37b7ca2fce94c18da0ed890f619a09adb8ba",
+        "46ae0faeb478f79f438b86df52f7b7dbca26a22cc244e84beb24e167cd63984c",
+        "13be74b1252d2f790d86f899ee9564cc30d5cd639377bb99e62063b7cd250a39",
+        "ace0723343f8b807403e24851a53e188f2b34978d4964313b5107df55cbf70dd",
+        "c23570ff8a05585696ca4291c28ce0a94faff609174fa6cdf2a89bafb80dcf1d",
+        "c23570ff8a05585696ca4291c28ce0a94faff609174fa6cdf2a89bafb80dcf1d"
+      ],
+      "fps": 6.0,
+      "loop": true,
+      "events": {},
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "pose_holds": {},
+      "human_signoff": false
+    },
+    "idle_armor_4": {
+      "decision": "accepted",
+      "draft_manifest": "golem_draft_manifest.json",
+      "source_action": "idle_armor_4",
+      "frame_slots": 6,
+      "frame_sha256": [
+        "647097da71ee760147164cca5551c6b510b4b801c3f3acc0a82096b753ddc22c",
+        "b3ba818f9d067985c81405aaeb49241cba74d9c25a175164c305b9c2d0302b58",
+        "844c706dc4ea61195254cca7cff1ed0e26d56e1f062abf64af73a9b6ef5f8ed8",
+        "cfa6a733a4d4e2abc78ee1b6fd873ca33aa9cffc21731470d3af01c8953fe0dd",
+        "0d2f75dc40cdaf72a886e15c357621afe239446e868f96bb23c2632b54e35ce4",
+        "7a7ca73bd23cfb6e793acef56e7e764151431867313ed71defae4d31d6570d29"
+      ],
+      "effects_sha256": [
+        "051f60706ef964bd9a186be3288aff1376f7a96962635b13f1bf2d194766277e",
+        "ac31d16a72e272e81f599bfc87f2a07415e24dd132edebd66a97938a3e7b8ba9",
+        "bd95f9582a147ff709b92a028d37a3bb962a1bd7b138a3ae5e16501f1f9ed1ae",
+        "fc6c5fed7978cc9aa89cd4f4b9195552298d0b0177f16c4c423be53388d09f3e",
+        "90d6b97f0c1125a9331e449e30024d0c8e08f29449a5cc8d1a1336dea72e06a1",
+        "90d6b97f0c1125a9331e449e30024d0c8e08f29449a5cc8d1a1336dea72e06a1"
+      ],
+      "fps": 6.0,
+      "loop": true,
+      "events": {},
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "pose_holds": {},
+      "human_signoff": false
+    },
+    "map_idle": {
+      "decision": "accepted",
+      "draft_manifest": "golem_map_draft_manifest.json",
+      "source_action": "idle",
+      "frame_slots": 4,
+      "frame_sha256": [
+        "64cdaa972f6e3bfc363e0b9a2bb1cc46292495e1c46590d63f077991bbbb23d2",
+        "eb70f7d42471680cd48fbe473e51571a62ff7a9e86fc49e157ca4f66cd7eba3e",
+        "795c30932a2937c38b9ae11f56728ca243011cb8bb41fb9ee7e9638a249447de",
+        "bf9849b054b0d471225123f8b17a8a4c8a066272bf906f2bd39e75c2b5c6bdc3"
+      ],
+      "effects_sha256": [],
+      "fps": 6.0,
+      "loop": true,
+      "events": {},
+      "size": [
+        256.0,
+        256.0
+      ],
+      "anchor": [
+        128.0,
+        224.0
+      ],
+      "pose_holds": {},
+      "human_signoff": false
+    }
+  },
+  "native_evidence_sha256": {
+    "battle": "5cdab4ac5c8f43a12a7eb4a8cd85a1f2c767e116405d93a319bec22e3651b5c5",
+    "map": "01eaa2b5c44dbb6be660088af9bd1a5650a9b46ca42377bc002a502393036aa0"
+  }
+}

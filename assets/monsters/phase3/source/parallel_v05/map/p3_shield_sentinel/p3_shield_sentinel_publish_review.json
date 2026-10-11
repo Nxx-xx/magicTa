@@ -1,0 +1,34 @@
+{
+  "entity": "p3_shield_sentinel",
+  "date": "2026-10-02",
+  "human_signoff": false,
+  "new_imagegen_originals": 2,
+  "review_method": "Agent viewed final body/combined contact sheets, browser original/quarter, four selected poses and 26/33/47px with optional amber layer off/on",
+  "actions": {
+    "map_idle": {
+      "decision": "accepted",
+      "draft_manifest": "p3_shield_sentinel_map_draft_manifest.json",
+      "source_action": "idle",
+      "frame_slots": 4,
+      "fps": 6,
+      "loop": true,
+      "size": [256,256],
+      "anchor": [128,224],
+      "events": {},
+      "pose_holds": {},
+      "notes": "Independent front/elevated map painting coordinated with variant group: tall gray shell shield with two horizontal raised ribs, amber diamond and stepped shoulder battlements. Physical silhouette remains distinct with optional amber glint off. Repaired clipped source battlement, atlas crumbs, neck registration and glint alignment. All final body/overlay poses inspected; feet stay planted and shield follows right-arm grip.",
+      "frame_sha256": [
+        "496754e65fb21ddabff80345fd78a428321b41318b845b6625304651af4d3ee8",
+        "681734e4c863f549c21f2278df69033d877eb3510de8c2ff2111c41ddcbe3921",
+        "962295fed2d566f4e8d287286d8076d2a75c7911555d5a4140fd101f43eb1dda",
+        "94c9874e4cdd73b1aae3ae80dc41a9fcf851c7041007ecfe1bcef670affcbe6b"
+      ],
+      "effects_sha256": [
+        "119e4bdecbf3c6adb5be524be191a95cd5b91c7e3eeb203c620ec4f367531e64",
+        "801ad049ba1a3e533d297d05e3e539ca7eabdcfac25cf7aa286e96ce452f8fd9",
+        "889146ac03f2016ff1a85ddd8bbe20c05258da2ca7439f202e7a8a0b8fd6dc1e",
+        "ec9a3f8680645f4caf109a6d3a99c479f47b334a3ea9aa0a361ca3eb8a3e8718"
+      ]
+    }
+  }
+}

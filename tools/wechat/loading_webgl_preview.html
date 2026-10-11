@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><title>加载页 WebGL 验证</title>
+<style>html,body{margin:0;background:#06131b;overflow:hidden}canvas{display:block}#result{display:none}</style>
+<canvas id="screen"></canvas><pre id="result"></pre>
+<script type="module">
+// Use the production Loader, real Canvas2D texture and real WebGL framebuffer.
+// Only native WeChat IO / Godot are stubbed. ?complete verifies engine handoff;
+// ?nativeBufferScale=3 simulates native drawingBuffer reporting physical units.
+import {drawLoadingScreen} from './loading_screen.js';
+const query = new URLSearchParams(location.search);
+const width = 390, height = 844, dpr = Number(query.get('dpr') || 3);
+const canvas = document.getElementById('screen');
+canvas.style.width = width + 'px'; canvas.style.height = height + 'px';
+const nativeGetContext = canvas.getContext.bind(canvas);
+const nativeBufferScale = Number(query.get('nativeBufferScale') || 1);
+let wrappedGL;
+canvas.getContext = (type, ...args) => {
+  const gl = nativeGetContext(type, ...args);
+  if (type !== 'webgl2' || !gl) return gl;
+  if (!wrappedGL) wrappedGL = new Proxy(gl, {get(target, name) {
+    if (name === 'drawingBufferWidth') return target.drawingBufferWidth * nativeBufferScale;
+    if (name === 'drawingBufferHeight') return target.drawingBufferHeight * nativeBufferScale;
+    const value = Reflect.get(target, name, target);
+    return typeof value === 'function' ? value.bind(target) : value;
+  }});
+  return wrappedGL;
+};
+const result = document.getElementById('result');
+let loader, loadingSize;
+const host = {__adapter: {canvas, window: {
+  innerWidth: width, innerHeight: height,
+  setInterval: window.setInterval.bind(window), clearInterval: window.clearInterval.bind(window),
+  setTimeout: window.setTimeout.bind(window), clearTimeout: window.clearTimeout.bind(window),
+}}, __towerStartup: {mark() {}}, __towerPersistence: {flush() {}}};
+class Engine {
+  constructor(config) {this.config = config;}
+  async init() {this.config.onProgress(1, 1);}
+  async preloadFile() {}
+  async start() {
+    if (canvas.width !== width || canvas.height !== height) throw Error('Gameplay dimensions not restored');
+    const gl = canvas.getContext('webgl2');
+    // Simulate the first game frame; a late loading callback must not erase it.
+    gl.clearColor(0.1, 0.4, 0.2, 1); gl.clear(gl.COLOR_BUFFER_BIT);
+  }
+}
+host.Engine = Engine; globalThis.GameGlobal = host;
+const api = {
+  createCanvas: () => document.createElement('canvas'), createImage: () => new Image(),
+  loadSubpackage(options) {
+    return {onProgressUpdate(fn) {
+      fn({progress: 90});
+      const gl = canvas.getContext('webgl2');
+      loadingSize = [canvas.width, canvas.height, gl.drawingBufferWidth, gl.drawingBufferHeight];
+      if (query.has('complete')) options.success();
+      else {
+        loader._stopLoadingTimer();
+        if (canvas.width !== width || canvas.height !== height) throw Error('Native screen dimensions changed');
+        const viewport = Array.from(gl.getParameter(gl.VIEWPORT));
+        if (viewport.join(',') !== [0,0,width,height].join(',')) throw Error('Loading viewport clipped');
+        result.textContent = JSON.stringify({status:'PASS', loadingSize, viewport, texture:[loader.loadingCanvas.width,loader.loadingCanvas.height]});
+        document.title = 'PASS';
+      }
+    }};
+  },
+};
+try {
+  const source = (await (await fetch('./loader.js')).text()).replace(/^import .*;\r?\n/gm, '').replace('export default Loader;', 'return Loader;');
+  const Loader = new Function('PlatformRuntime', 'GodotSDK', 'BRIDGE_GLOBAL_NAME', 'drawLoadingScreen', source)(
+    {global:host, requireCapabilities:()=>api, getSystemInfo:()=>({pixelRatio:dpr,safeArea:{top:47,bottom:810}})},
+    class {set_engine() {}}, '__bridge', drawLoadingScreen);
+  loader = new Loader({background:'./assets/loading-background.jpg'});
+  loader.load().then(() => {
+    loader._setProgress(50); loader._drawLoading();
+    const gl = canvas.getContext('webgl2'), pixel = new Uint8Array(4);
+    gl.readPixels(0,0,1,1,gl.RGBA,gl.UNSIGNED_BYTE,pixel);
+    if (pixel[1] < 80 || pixel[1] > 120) throw Error('Game frame was overwritten');
+    result.textContent = JSON.stringify({status:'PASS', loadingSize, gameSize:[canvas.width,canvas.height],firstFrame:Array.from(pixel)});
+    document.title = 'PASS'; loader._stopLoadingTimer();
+  }).catch(fail);
+} catch(e) {fail(e);}
+function fail(e) {result.textContent = 'FAIL: ' + e.stack; document.title = 'FAIL';}
+</script></html>

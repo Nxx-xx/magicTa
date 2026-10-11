@@ -1,0 +1,87 @@
+{
+  "entity": "berserker",
+  "date": "2026-10-01",
+  "review_method": "Agent actual contact sheets, browser original and quarter speed, step frames and 26/33/47px review; not automatic technical approval",
+  "human_signoff": false,
+  "new_imagegen_originals": 2,
+  "shared_effect_original": "effects_original.png reused by both elites",
+  "actions": {
+    "attack": {
+      "decision": "accepted",
+      "draft_manifest": "berserker_draft_manifest.json",
+      "source_action": "attack",
+      "frame_slots": 8,
+      "pose_holds": {
+        "7": 0.0
+      },
+      "notes": "Actually reviewed four contact sheets, browser original/.25, paused step hit frame4 and final frame7, 26/33/47px and effect toggle. Shoulder/elbow sweep toward left, planted foot solver, released axe settles at ground; corrected first bake bottom clipping. Attack7=0 and defeat7=6 holds declared. Human signoff false.",
+      "frame_sha256": [
+        "9670224c8ead8909aa2d52e9d9fea67e15d4d258e92c9cc65c46ee80a7aff5f3",
+        "f1d2d5455e3572a3f6745adf12a6a1f7647309da967a2af6fb8bc0196a63c1fe",
+        "9c1e0b4e3f69576f9e4de37abb41ca6e41c01307dd3ab95202c122522dad6882",
+        "422a302d1d6282276b4ecbeacdf0f5f50dc5dff1d7d2c1bd78f9507b191b8371",
+        "91333412142cb95d8feebb3d9af1de1e06d0b59f76366ed79f0b2b97efcfdbab",
+        "708acb55786cc35192382ceb7b835ce93189364225de52da5398423c1c773ce2",
+        "c261c5c3fac83f6ccc6177ae7921d63fe4b58d54a71b57d30b1415f758f192af",
+        "9670224c8ead8909aa2d52e9d9fea67e15d4d258e92c9cc65c46ee80a7aff5f3"
+      ],
+      "effects_sha256": [
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "ba9734d4c9c3a4bfbb340c600c4d46d65f0d13b318b798dbe4b8bc58a6985de6",
+        "c8e615106986760bcf8d997ec11ce5e82dc387bc0cb379142bcaef6f0f8d67f0",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de"
+      ]
+    },
+    "defeat": {
+      "decision": "accepted",
+      "draft_manifest": "berserker_draft_manifest.json",
+      "source_action": "defeat",
+      "frame_slots": 8,
+      "pose_holds": {
+        "7": 6.0
+      },
+      "notes": "Actually reviewed four contact sheets, browser original/.25, paused step hit frame4 and final frame7, 26/33/47px and effect toggle. Shoulder/elbow sweep toward left, planted foot solver, released axe settles at ground; corrected first bake bottom clipping. Attack7=0 and defeat7=6 holds declared. Human signoff false.",
+      "frame_sha256": [
+        "dafdbec3f24b38d3f382b89133d370e5afd83f4f4d5268a919c9ba934c3995c5",
+        "21784969a9649e0296962fbd4d4ded3ffd0928e2fe7c51f6c0507c6b91c31681",
+        "27fc545b370c63416515b1dfdda1f5f92edf892744023b68a4c4a7b5a3b59c8b",
+        "1cfbb1607ead212a9f58176f862ef7e14db5c89ce3b6e1b0e28595b1e5a26d9d",
+        "36f8bb488a8ba13bbb5886083c105c8a78aead3f51186d215d377b56e2d8ee91",
+        "b1748f3118a0337d18465ceb77f27a8a12d213b27d8de8eb10a33401a8c85f7a",
+        "df72763c18e901d77e1517dc37600bd705f60bc5b35c0ceceb30de9642ffbcdd",
+        "df72763c18e901d77e1517dc37600bd705f60bc5b35c0ceceb30de9642ffbcdd"
+      ]
+    },
+    "hit": {
+      "decision": "accepted",
+      "draft_manifest": "berserker_draft_manifest.json",
+      "source_action": "hit",
+      "frame_slots": 3,
+      "pose_holds": {},
+      "notes": "Actually reviewed four contact sheets, browser original/.25, paused step hit frame4 and final frame7, 26/33/47px and effect toggle. Shoulder/elbow sweep toward left, planted foot solver, released axe settles at ground; corrected first bake bottom clipping. Attack7=0 and defeat7=6 holds declared. Human signoff false.",
+      "frame_sha256": [
+        "b701fe9147c14c30031a469226247d883301b09efc51e1f5011219abb5899cab",
+        "1d1e0a24070abbdcea1188d4714c5faa317e4145081969c23058fd5be5fbeebe",
+        "9670224c8ead8909aa2d52e9d9fea67e15d4d258e92c9cc65c46ee80a7aff5f3"
+      ]
+    },
+    "idle": {
+      "decision": "accepted",
+      "draft_manifest": "berserker_draft_manifest.json",
+      "source_action": "idle",
+      "frame_slots": 4,
+      "pose_holds": {},
+      "notes": "Actually reviewed four contact sheets, browser original/.25, paused step hit frame4 and final frame7, 26/33/47px and effect toggle. Shoulder/elbow sweep toward left, planted foot solver, released axe settles at ground; corrected first bake bottom clipping. Attack7=0 and defeat7=6 holds declared. Human signoff false.",
+      "frame_sha256": [
+        "9670224c8ead8909aa2d52e9d9fea67e15d4d258e92c9cc65c46ee80a7aff5f3",
+        "9256915c3e3f2bedfca57386fed620492b45eba4402b746c5b79241a85ac21e5",
+        "7e5ece8642509fb91ff69e1ccb6f62e5bf68f773d33c36e82771d8badf3b836b",
+        "57f6b2f23f805c5865244de20f6e65c7f36c86496b2af5665bb707823c601cbb"
+      ]
+    }
+  }
+}

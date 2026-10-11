@@ -1,0 +1,29 @@
+{
+  "entity": "bat",
+  "date": "2026-10-02",
+  "human_signoff": false,
+  "new_imagegen_originals": 1,
+  "review_method": "Agent viewed final contact, browser original/quarter playback, all four numbered poses and 26/33/47px previews",
+  "actions": {
+    "map_idle": {
+      "decision": "accepted",
+      "draft_manifest": "bat_map_draft_manifest.json",
+      "source_action": "idle",
+      "frame_slots": 4,
+      "fps": 8,
+      "loop": true,
+      "size": [256,256],
+      "anchor": [128,224],
+      "events": {},
+      "pose_holds": {},
+      "notes": "Independent elevated front map painting. Both wings retain separately painted source pixels and articulate through shoulder and overlapping wingtip joints. Both claws attach to the body, hover stays centered, and four flap poses remain legible at 26/33/47px. No optional effect layer. Anchor is ground projection beneath the hovering body, not a toe contact.",
+      "frame_sha256": [
+        "4df7864adff295f33ea1888499f4216befcaea3e4e41faebdb19c9e41d499352",
+        "b048d611076f296020ed826c5ce87c3f6e4695021b61ec6c03ae70347dca7f95",
+        "2713fdb38bf92b4d4da4f88b78c8cc1b40759afa3331bb99340574235a662f4b",
+        "b0cd840099c72c5a80665730a87bd00006a57c1714cc3a238aac0cb4fb854ce3"
+      ],
+      "effects_sha256": []
+    }
+  }
+}

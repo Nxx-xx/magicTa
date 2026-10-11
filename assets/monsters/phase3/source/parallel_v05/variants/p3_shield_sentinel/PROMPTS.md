@@ -1,0 +1,7 @@
+# p3_shield_sentinel actual imagegen prompt
+
+2026-10-01. Built-in image_gen, transparent_background=true. Original output: exec-2f7a326b-d046-480f-853d-66699049692f.png. Project copy: p3_shield_sentinel_accessories.png. No referenced input image; existing formal sprites were visually inspected for palette and materials before prompt authoring.
+
+Use case: stylized-concept. Asset type: transparent painted fantasy RPG articulation accessory atlas, p3_shield_sentinel. Create NEW equipment matching gray angular stone sentinel with moss seams and muted antique gold: a massive crenellated stone tower shield with TWO clearly raised horizontal stone ribs and a central amber diamond, a separate single shoulder bastion plate, and a separate small amber diamond rune light overlay. Three isolated complete objects in one horizontal row, generous transparent gutters, no overlap. Shield in LEFT-facing three-quarter combat camera, front face visible, grip on back, angular chipped rock matching painterly fantasy game sprites. Shoulder plate is a tall stepped battlement silhouette, no attached arm. Rune light separate from equipment. Each item fully inside its own equal cell. True transparent alpha, no background, no checkerboard, no text, no character, no shadows, no grid, no border. Crisp large shapes readable at 26px. Highest native landscape resolution.
+
+Source remains draft. Attachment crops and articulation registration do not repaint the image.

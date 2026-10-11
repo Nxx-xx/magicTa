@@ -1,0 +1,68 @@
+{
+	"actions": {
+		"idle": {
+			"events": {},
+			"fps": 6.0,
+			"frames": [
+				"golem_map_frames/idle/00.png",
+				"golem_map_frames/idle/01.png",
+				"golem_map_frames/idle/02.png",
+				"golem_map_frames/idle/03.png"
+			],
+			"loop": true,
+			"metrics": [
+				{
+					"bounds": [
+						56,
+						36,
+						143,
+						188
+					],
+					"edge_touch": false,
+					"frame": 0
+				},
+				{
+					"bounds": [
+						55,
+						34,
+						144,
+						190
+					],
+					"edge_touch": false,
+					"frame": 1
+				},
+				{
+					"bounds": [
+						55,
+						34,
+						144,
+						190
+					],
+					"edge_touch": false,
+					"frame": 2
+				},
+				{
+					"bounds": [
+						56,
+						35,
+						143,
+						189
+					],
+					"edge_touch": false,
+					"frame": 3
+				}
+			],
+			"pose_holds": {}
+		}
+	},
+	"anchor": [
+		128.0,
+		224.0
+	],
+	"size": [
+		256.0,
+		256.0
+	],
+	"source": "res://assets/monsters/phase3/source/art_polish_b_v07/golem/map/golem_map_rig.json",
+	"status": "draft"
+}

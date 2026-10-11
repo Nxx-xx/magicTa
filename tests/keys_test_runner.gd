@@ -89,7 +89,7 @@ func _test_colored_save() -> void:
 	core.state.player.silver_keys = 3
 	core.state.player.gold_keys = 2
 	_activate(core, _find(core, "exit"))
-	core.choose_floor("treasure")
+	_enter_fixture_theme(core, "treasure")
 	var silver_gate := _find(core, "armor_trial_gate")
 	_activate(core, silver_gate)
 	var before: Dictionary = core.state.player.duplicate(true)
@@ -147,7 +147,7 @@ func _test_v1_generation_compatibility() -> void:
 	var loaded = Core.new(path)
 	loaded.load_game()
 	_activate(loaded, _find(loaded, "exit"))
-	_check(loaded.choose_floor("treasure").is_empty(), "v1 save can still generate its unvisited second floor")
+	_check(loaded.confirm_interaction().is_empty(), "v1 save can still generate its unvisited second floor")
 	_check(loaded.floor_data().generator.version == 1, "v1 save retains generator version")
 	for entity in loaded.floor_data().entities.values():
 		if entity.type in ["key", "door"]:

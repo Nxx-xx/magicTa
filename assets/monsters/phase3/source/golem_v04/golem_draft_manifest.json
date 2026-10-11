@@ -1,0 +1,499 @@
+{
+	"actions": {
+		"armor": {
+			"combined_frames": [
+				"golem_frames/armor/00_combined.png",
+				"golem_frames/armor/01_combined.png",
+				"golem_frames/armor/02_combined.png",
+				"golem_frames/armor/03_combined.png",
+				"golem_frames/armor/04_combined.png",
+				"golem_frames/armor/05_combined.png"
+			],
+			"effects_frames": [
+				"golem_frames/armor/00_effect.png",
+				"golem_frames/armor/01_effect.png",
+				"golem_frames/armor/02_effect.png",
+				"golem_frames/armor/03_effect.png",
+				"golem_frames/armor/04_effect.png",
+				"golem_frames/armor/05_effect.png"
+			],
+			"events": {
+				"closed": 4.0
+			},
+			"fps": 12.0,
+			"frames": [
+				"golem_frames/armor/00.png",
+				"golem_frames/armor/01.png",
+				"golem_frames/armor/02.png",
+				"golem_frames/armor/03.png",
+				"golem_frames/armor/04.png",
+				"golem_frames/armor/05.png"
+			],
+			"loop": false,
+			"metrics": [
+				{
+					"bounds": [
+						87,
+						69,
+						185,
+						272
+					],
+					"edge_touch": false,
+					"frame": 0
+				},
+				{
+					"bounds": [
+						79,
+						72,
+						194,
+						269
+					],
+					"edge_touch": false,
+					"frame": 1
+				},
+				{
+					"bounds": [
+						62,
+						69,
+						213,
+						272
+					],
+					"edge_touch": false,
+					"frame": 2
+				},
+				{
+					"bounds": [
+						66,
+						67,
+						209,
+						274
+					],
+					"edge_touch": false,
+					"frame": 3
+				},
+				{
+					"bounds": [
+						80,
+						66,
+						192,
+						275
+					],
+					"edge_touch": false,
+					"frame": 4
+				},
+				{
+					"bounds": [
+						92,
+						66,
+						178,
+						275
+					],
+					"edge_touch": false,
+					"frame": 5
+				}
+			],
+			"pose_holds": {}
+		},
+		"attack": {
+			"events": {
+				"hit": 5.0
+			},
+			"fps": 12.0,
+			"frames": [
+				"golem_frames/attack/00.png",
+				"golem_frames/attack/01.png",
+				"golem_frames/attack/02.png",
+				"golem_frames/attack/03.png",
+				"golem_frames/attack/04.png",
+				"golem_frames/attack/05.png",
+				"golem_frames/attack/06.png",
+				"golem_frames/attack/07.png",
+				"golem_frames/attack/08.png",
+				"golem_frames/attack/09.png"
+			],
+			"loop": false,
+			"metrics": [
+				{
+					"bounds": [
+						94,
+						66,
+						176,
+						275
+					],
+					"edge_touch": false,
+					"frame": 0
+				},
+				{
+					"bounds": [
+						56,
+						69,
+						219,
+						272
+					],
+					"edge_touch": false,
+					"frame": 1
+				},
+				{
+					"bounds": [
+						21,
+						72,
+						259,
+						269
+					],
+					"edge_touch": false,
+					"frame": 2
+				},
+				{
+					"bounds": [
+						16,
+						75,
+						269,
+						266
+					],
+					"edge_touch": false,
+					"frame": 3
+				},
+				{
+					"bounds": [
+						21,
+						71,
+						263,
+						270
+					],
+					"edge_touch": false,
+					"frame": 4
+				},
+				{
+					"bounds": [
+						84,
+						75,
+						174,
+						266
+					],
+					"edge_touch": false,
+					"frame": 5
+				},
+				{
+					"bounds": [
+						101,
+						73,
+						158,
+						268
+					],
+					"edge_touch": false,
+					"frame": 6
+				},
+				{
+					"bounds": [
+						104,
+						70,
+						160,
+						271
+					],
+					"edge_touch": false,
+					"frame": 7
+				},
+				{
+					"bounds": [
+						97,
+						67,
+						171,
+						274
+					],
+					"edge_touch": false,
+					"frame": 8
+				},
+				{
+					"bounds": [
+						94,
+						66,
+						176,
+						275
+					],
+					"edge_touch": false,
+					"frame": 9
+				}
+			],
+			"pose_holds": {
+				"9": 0.0
+			}
+		},
+		"defeat": {
+			"events": {
+				"core_dark": 8.0,
+				"fracture": 3.0,
+				"ground": 10.0
+			},
+			"fps": 12.0,
+			"frames": [
+				"golem_frames/defeat/00.png",
+				"golem_frames/defeat/01.png",
+				"golem_frames/defeat/02.png",
+				"golem_frames/defeat/03.png",
+				"golem_frames/defeat/04.png",
+				"golem_frames/defeat/05.png",
+				"golem_frames/defeat/06.png",
+				"golem_frames/defeat/07.png",
+				"golem_frames/defeat/08.png",
+				"golem_frames/defeat/09.png",
+				"golem_frames/defeat/10.png",
+				"golem_frames/defeat/11.png"
+			],
+			"loop": false,
+			"metrics": [
+				{
+					"bounds": [
+						93,
+						69,
+						178,
+						272
+					],
+					"edge_touch": false,
+					"frame": 0
+				},
+				{
+					"bounds": [
+						90,
+						73,
+						180,
+						268
+					],
+					"edge_touch": false,
+					"frame": 1
+				},
+				{
+					"bounds": [
+						87,
+						76,
+						182,
+						265
+					],
+					"edge_touch": false,
+					"frame": 2
+				},
+				{
+					"bounds": [
+						84,
+						79,
+						183,
+						264
+					],
+					"edge_touch": false,
+					"frame": 3
+				},
+				{
+					"bounds": [
+						75,
+						95,
+						189,
+						255
+					],
+					"edge_touch": false,
+					"frame": 4
+				},
+				{
+					"bounds": [
+						65,
+						116,
+						203,
+						239
+					],
+					"edge_touch": false,
+					"frame": 5
+				},
+				{
+					"bounds": [
+						55,
+						135,
+						218,
+						225
+					],
+					"edge_touch": false,
+					"frame": 6
+				},
+				{
+					"bounds": [
+						47,
+						157,
+						231,
+						205
+					],
+					"edge_touch": false,
+					"frame": 7
+				},
+				{
+					"bounds": [
+						39,
+						183,
+						249,
+						178
+					],
+					"edge_touch": false,
+					"frame": 8
+				},
+				{
+					"bounds": [
+						33,
+						215,
+						268,
+						146
+					],
+					"edge_touch": false,
+					"frame": 9
+				},
+				{
+					"bounds": [
+						28,
+						244,
+						288,
+						114
+					],
+					"edge_touch": false,
+					"frame": 10
+				},
+				{
+					"bounds": [
+						28,
+						244,
+						288,
+						114
+					],
+					"edge_touch": false,
+					"frame": 11
+				}
+			],
+			"pose_holds": {
+				"11": 10.0
+			}
+		},
+		"hit": {
+			"events": {},
+			"fps": 12.0,
+			"frames": [
+				"golem_frames/hit/00.png",
+				"golem_frames/hit/01.png",
+				"golem_frames/hit/02.png"
+			],
+			"loop": false,
+			"metrics": [
+				{
+					"bounds": [
+						92,
+						73,
+						186,
+						268
+					],
+					"edge_touch": false,
+					"frame": 0
+				},
+				{
+					"bounds": [
+						94,
+						70,
+						180,
+						271
+					],
+					"edge_touch": false,
+					"frame": 1
+				},
+				{
+					"bounds": [
+						94,
+						66,
+						176,
+						275
+					],
+					"edge_touch": false,
+					"frame": 2
+				}
+			],
+			"pose_holds": {}
+		},
+		"idle": {
+			"events": {},
+			"fps": 6.0,
+			"frames": [
+				"golem_frames/idle/00.png",
+				"golem_frames/idle/01.png",
+				"golem_frames/idle/02.png",
+				"golem_frames/idle/03.png",
+				"golem_frames/idle/04.png",
+				"golem_frames/idle/05.png"
+			],
+			"loop": true,
+			"metrics": [
+				{
+					"bounds": [
+						94,
+						66,
+						176,
+						275
+					],
+					"edge_touch": false,
+					"frame": 0
+				},
+				{
+					"bounds": [
+						92,
+						65,
+						178,
+						275
+					],
+					"edge_touch": false,
+					"frame": 1
+				},
+				{
+					"bounds": [
+						91,
+						64,
+						180,
+						276
+					],
+					"edge_touch": false,
+					"frame": 2
+				},
+				{
+					"bounds": [
+						93,
+						65,
+						177,
+						275
+					],
+					"edge_touch": false,
+					"frame": 3
+				},
+				{
+					"bounds": [
+						95,
+						66,
+						175,
+						275
+					],
+					"edge_touch": false,
+					"frame": 4
+				},
+				{
+					"bounds": [
+						96,
+						66,
+						173,
+						275
+					],
+					"edge_touch": false,
+					"frame": 5
+				}
+			],
+			"pose_holds": {}
+		}
+	},
+	"anchor": [
+		192.0,
+		336.0
+	],
+	"size": [
+		384.0,
+		384.0
+	],
+	"source": "res://assets/monsters/phase3/source/golem_v04/golem_rig.json",
+	"status": "draft"
+}

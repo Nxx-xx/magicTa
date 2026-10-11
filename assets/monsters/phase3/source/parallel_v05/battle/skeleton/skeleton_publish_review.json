@@ -1,0 +1,103 @@
+{
+  "entity": "skeleton",
+  "date": "2026-10-02",
+  "review_method": "Agent visual review of all contact sheets, 26/33/47px poses and actual native AnimationPlayer timed samples at 1x/.25x; not continuous-video viewing",
+  "human_signoff": false,
+  "new_imagegen_originals": 1,
+  "view": "battle_left",
+  "playback_review_complete": true,
+  "actions": {
+    "attack": {
+      "decision": "accepted",
+      "static_visual_decision": "passed",
+      "draft_manifest": "skeleton_draft_manifest.json",
+      "source_action": "attack",
+      "frame_slots": 6,
+      "pose_holds": {
+        "5": 0.0
+      },
+      "notes": "Shoulder and elbow windup then left swing, fixed grip, separate optional slash; final return explicit hold.",
+      "frame_sha256": [
+        "8dca56a5694ed7cac47c91189ec2e4e46c4f7d06c94943e28b130245e1f95907",
+        "160683322f4192cda53ce172aaaf21f6bb9b5dfc0fb63359420bb4c9f7ac3295",
+        "b78ed7cf9b3e6ca5cb308483d381c0dee4250ca1d1d72d7c97e7840b699f083c",
+        "2350822db8e8f51fd9afb59e6a0873286c64337ef2f501f65c8bc495e83f051b",
+        "d8d37ce741509c6b86cdbce9490b0aa9549c010ff89358d14a18e0050da853db",
+        "8dca56a5694ed7cac47c91189ec2e4e46c4f7d06c94943e28b130245e1f95907"
+      ],
+      "effects_sha256": [
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "725b639a145e03caf669ab1947579425d0239cde48b3ccdbc4763dee8e102d49",
+        "b89ae7079fd7b6d2d7e017e549c4f674397ebc1450bad3ead38d87ad49d698c4",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de"
+      ],
+      "native_review_evidence": [
+        "build/verification/phase3/08-parallel/base_a/skeleton_native_1x_contact.png",
+        "build/verification/phase3/08-parallel/base_a/skeleton_native_0.25x_contact.png"
+      ]
+    },
+    "defeat": {
+      "decision": "accepted",
+      "static_visual_decision": "passed",
+      "draft_manifest": "skeleton_draft_manifest.json",
+      "source_action": "defeat",
+      "frame_slots": 6,
+      "pose_holds": {
+        "5": 4.0
+      },
+      "notes": "Knees bend, head bows, sword release frame 2 and ground frame 4; final settling explicit hold.",
+      "frame_sha256": [
+        "9419370118a9bd5bc5f5f07e9e31781311a962af1dd553545197b05603b5c15a",
+        "ae321e9f56cbca37970aaf09d95ba987baab6466525ffaf65733f69768dcb189",
+        "427193f581654394ee9e833b061b7dafe676fb33c2ce2838d970875be8b187ad",
+        "73eb793a611b1a7ac0e008866e558cea5bb4c1b1229278e795c6b5cc4f341512",
+        "aa5b613ba8c80afd20285e188622e3f4d7e57090cf79eecbe34432f5953908ac",
+        "aa5b613ba8c80afd20285e188622e3f4d7e57090cf79eecbe34432f5953908ac"
+      ],
+      "native_review_evidence": [
+        "build/verification/phase3/08-parallel/base_a/skeleton_native_1x_contact.png",
+        "build/verification/phase3/08-parallel/base_a/skeleton_native_0.25x_contact.png"
+      ]
+    },
+    "hit": {
+      "decision": "accepted",
+      "static_visual_decision": "passed",
+      "draft_manifest": "skeleton_draft_manifest.json",
+      "source_action": "hit",
+      "frame_slots": 2,
+      "pose_holds": {},
+      "notes": "Head/chest recoil followed by rest skeleton pose.",
+      "frame_sha256": [
+        "fb39e39cf27a642a0e33595ba200888153410fcee84584fa1b171a702ea8be18",
+        "8dca56a5694ed7cac47c91189ec2e4e46c4f7d06c94943e28b130245e1f95907"
+      ],
+      "native_review_evidence": [
+        "build/verification/phase3/08-parallel/base_a/skeleton_native_1x_contact.png",
+        "build/verification/phase3/08-parallel/base_a/skeleton_native_0.25x_contact.png"
+      ]
+    },
+    "idle": {
+      "decision": "accepted",
+      "static_visual_decision": "passed",
+      "draft_manifest": "skeleton_draft_manifest.json",
+      "source_action": "idle",
+      "frame_slots": 4,
+      "pose_holds": {},
+      "notes": "Head-neck gap corrected; planted feet, chest/head and sword breathing.",
+      "frame_sha256": [
+        "8dca56a5694ed7cac47c91189ec2e4e46c4f7d06c94943e28b130245e1f95907",
+        "844fb4626c1068db498e4019b122f74ece4c3c8dda0299fffe950555835663ff",
+        "c87599c1029af5c0172806e8b96ec7ef6bc675d1a144520ed5e0f2fa8ffac818",
+        "7c03e70efa752511efc5d0b0a9dc1f690547f0e9f7d575764c5a75f5d8be86e6"
+      ],
+      "native_review_evidence": [
+        "build/verification/phase3/08-parallel/base_a/skeleton_native_1x_contact.png",
+        "build/verification/phase3/08-parallel/base_a/skeleton_native_0.25x_contact.png"
+      ]
+    }
+  },
+  "playback_review_scope": "timestamped native samples",
+  "rejected_imagegen_attempts": 2
+}

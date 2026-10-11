@@ -1,0 +1,8 @@
+--- a/scripts/ui/campaign_panels.gd
++++ b/scripts/ui/campaign_panels.gd
+@@ -33,1 +33,1 @@
+-			path = "res://assets/characters/mysterious_knight/textures/portrait.png"
++			path = CampKnightArt.PORTRAIT.resource_path
+@@ -75,1 +75,1 @@
+-	conversation.image = "res://assets/characters/mysterious_knight/textures/portrait.png"
++	conversation.image = CampKnightArt.PORTRAIT.resource_path

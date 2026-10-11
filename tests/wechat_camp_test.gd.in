@@ -1,0 +1,40 @@
+extends SceneTree
+var failed := false
+
+func _initialize() -> void:
+	call_deferred("_run")
+
+func _run() -> void:
+	root.size = Vector2i(390, 700)
+	var scene = load("res://scenes/wechat_entry.tscn").instantiate()
+	root.add_child(scene)
+	for i in 6: await process_frame
+	var game = scene.get_node("Game")
+	game._show_camp()
+	for i in 6: await process_frame
+	var area: Rect2 = game.scroll.get_global_rect()
+	var point := area.position + Vector2(area.size.x / 2, area.size.y - 60)
+	var press := InputEventMouseButton.new()
+	press.button_index = MOUSE_BUTTON_LEFT
+	press.pressed = true
+	press.position = point
+	root.push_input(press)
+	var move := InputEventMouseMotion.new()
+	move.button_mask = MOUSE_BUTTON_MASK_LEFT
+	move.position = point - Vector2(0, 160)
+	move.relative = Vector2(0, -160)
+	root.push_input(move)
+	var release := InputEventMouseButton.new()
+	release.button_index = MOUSE_BUTTON_LEFT
+	release.pressed = false
+	release.position = move.position
+	root.push_input(release)
+	for i in 3: await process_frame
+	if game.scroll.scroll_vertical <= 0:
+		push_error("Camp drag did not scroll")
+		failed = true
+	if game.page != "menu" or game.game.active():
+		push_error("Camp drag activated a journey")
+		failed = true
+	print("WECHAT CAMP: scroll=", game.scroll.scroll_vertical, ", accidental activation=", game.game.active())
+	quit(1 if failed else 0)

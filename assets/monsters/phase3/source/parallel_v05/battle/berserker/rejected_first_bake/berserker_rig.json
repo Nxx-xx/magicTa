@@ -1,0 +1,2236 @@
+{
+  "version": 1,
+  "status": "draft",
+  "entity": "berserker",
+  "camera": "battle_left",
+  "canvas": 512,
+  "runtime_size": 256,
+  "anchor": [
+    256,
+    474
+  ],
+  "rest_scale": 0.88,
+  "source": "components.png",
+  "layers": [
+    {
+      "name": "torso",
+      "parent": "root",
+      "pivot": [
+        300,
+        215
+      ],
+      "z": 0,
+      "crop": [
+        327,
+        50,
+        293,
+        282
+      ],
+      "image_pivot": [
+        145,
+        35
+      ],
+      "scale": 0.4,
+      "source": "components.png"
+    },
+    {
+      "name": "helmet",
+      "parent": "torso",
+      "pivot": [
+        287,
+        225
+      ],
+      "z": 5,
+      "crop": [
+        60,
+        15,
+        220,
+        323
+      ],
+      "image_pivot": [
+        129,
+        285
+      ],
+      "scale": 0.34,
+      "source": "components.png"
+    },
+    {
+      "name": "waist",
+      "parent": "torso",
+      "pivot": [
+        300,
+        318
+      ],
+      "z": 3,
+      "crop": [
+        647,
+        65,
+        300,
+        288
+      ],
+      "image_pivot": [
+        151,
+        30
+      ],
+      "scale": 0.36,
+      "source": "components.png"
+    },
+    {
+      "name": "near_upper_arm",
+      "parent": "torso",
+      "pivot": [
+        254,
+        249
+      ],
+      "z": 4,
+      "crop": [
+        78,
+        366,
+        173,
+        270
+      ],
+      "image_pivot": [
+        89,
+        40
+      ],
+      "scale": 0.27,
+      "source": "components.png"
+    },
+    {
+      "name": "near_forearm",
+      "parent": "near_upper_arm",
+      "pivot": [
+        268,
+        309
+      ],
+      "z": 5,
+      "crop": [
+        393,
+        371,
+        160,
+        263
+      ],
+      "image_pivot": [
+        78,
+        38
+      ],
+      "scale": 0.27,
+      "source": "components.png"
+    },
+    {
+      "name": "far_upper_arm",
+      "parent": "torso",
+      "pivot": [
+        345,
+        249
+      ],
+      "z": -3,
+      "crop": [
+        698,
+        367,
+        190,
+        273
+      ],
+      "image_pivot": [
+        98,
+        38
+      ],
+      "scale": 0.25,
+      "source": "components.png"
+    },
+    {
+      "name": "far_forearm",
+      "parent": "far_upper_arm",
+      "pivot": [
+        354,
+        304
+      ],
+      "z": -2,
+      "crop": [
+        1014,
+        375,
+        153,
+        260
+      ],
+      "image_pivot": [
+        89,
+        38
+      ],
+      "scale": 0.26,
+      "source": "components.png"
+    },
+    {
+      "name": "near_wrist",
+      "parent": "near_forearm",
+      "pivot": [
+        275,
+        365
+      ],
+      "z": 7,
+      "joint_only": true
+    },
+    {
+      "name": "far_wrist",
+      "parent": "far_forearm",
+      "pivot": [
+        352,
+        360
+      ],
+      "z": 1,
+      "joint_only": true
+    },
+    {
+      "name": "near_thigh",
+      "parent": "root",
+      "pivot": [
+        271,
+        350
+      ],
+      "z": 1,
+      "crop": [
+        79,
+        650,
+        170,
+        278
+      ],
+      "image_pivot": [
+        83,
+        32
+      ],
+      "scale": 0.27,
+      "source": "components.png"
+    },
+    {
+      "name": "near_shin",
+      "parent": "near_thigh",
+      "pivot": [
+        259,
+        398
+      ],
+      "z": 1,
+      "crop": [
+        385,
+        650,
+        165,
+        278
+      ],
+      "image_pivot": [
+        80,
+        33
+      ],
+      "scale": 0.25,
+      "source": "components.png"
+    },
+    {
+      "name": "near_boot",
+      "parent": "near_shin",
+      "pivot": [
+        255,
+        450
+      ],
+      "z": 1,
+      "crop": [
+        635,
+        706,
+        244,
+        210
+      ],
+      "image_pivot": [
+        150,
+        55
+      ],
+      "scale": 0.21,
+      "source": "components.png"
+    },
+    {
+      "name": "far_thigh",
+      "parent": "root",
+      "pivot": [
+        332,
+        347
+      ],
+      "z": -4,
+      "crop": [
+        79,
+        942,
+        170,
+        278
+      ],
+      "image_pivot": [
+        83,
+        32
+      ],
+      "scale": 0.27,
+      "source": "components.png"
+    },
+    {
+      "name": "far_shin",
+      "parent": "far_thigh",
+      "pivot": [
+        336,
+        396
+      ],
+      "z": -4,
+      "crop": [
+        385,
+        942,
+        165,
+        278
+      ],
+      "image_pivot": [
+        80,
+        33
+      ],
+      "scale": 0.25,
+      "source": "components.png"
+    },
+    {
+      "name": "far_boot",
+      "parent": "far_shin",
+      "pivot": [
+        345,
+        447
+      ],
+      "z": -4,
+      "crop": [
+        635,
+        994,
+        244,
+        210
+      ],
+      "image_pivot": [
+        150,
+        55
+      ],
+      "scale": 0.21,
+      "source": "components.png"
+    },
+    {
+      "name": "near_pauldron",
+      "parent": "torso",
+      "pivot": [
+        254,
+        249
+      ],
+      "z": 6,
+      "crop": [
+        985,
+        665,
+        248,
+        250
+      ],
+      "image_pivot": [
+        125,
+        85
+      ],
+      "scale": 0.21,
+      "source": "components.png"
+    },
+    {
+      "name": "far_pauldron",
+      "parent": "torso",
+      "pivot": [
+        345,
+        249
+      ],
+      "z": -1,
+      "crop": [
+        977,
+        949,
+        245,
+        260
+      ],
+      "image_pivot": [
+        124,
+        85
+      ],
+      "scale": 0.19,
+      "source": "components.png"
+    },
+    {
+      "name": "weapon_grip",
+      "parent": "near_wrist",
+      "pivot": [
+        275,
+        365
+      ],
+      "z": 7,
+      "joint_only": true
+    },
+    {
+      "name": "axe",
+      "parent": "root",
+      "pivot": [
+        275,
+        365
+      ],
+      "z": 7,
+      "crop": [
+        1000,
+        5,
+        210,
+        354
+      ],
+      "image_pivot": [
+        155,
+        270
+      ],
+      "scale": 0.55,
+      "source": "components.png"
+    },
+    {
+      "name": "weapon_trail",
+      "parent": "root",
+      "pivot": [
+        165,
+        292
+      ],
+      "z": 10,
+      "crop": [
+        103,
+        20,
+        1110,
+        680
+      ],
+      "image_pivot": [
+        555,
+        340
+      ],
+      "scale": 0.22,
+      "source": "effects_original.png"
+    }
+  ],
+  "actions": {
+    "idle": {
+      "fps": 6,
+      "loop": true,
+      "events": {},
+      "poses": [
+        {
+          "torso": {
+            "p": [
+              0,
+              0
+            ],
+            "r": 0
+          },
+          "helmet": {
+            "r": 0
+          },
+          "waist": {
+            "r": 0.0
+          },
+          "near_upper_arm": {
+            "r": 0
+          },
+          "near_forearm": {
+            "r": 0
+          },
+          "far_upper_arm": {
+            "r": 0
+          },
+          "far_forearm": {
+            "r": 0
+          },
+          "near_thigh": {
+            "p": [
+              0,
+              0
+            ],
+            "r": 0.0
+          },
+          "near_shin": {
+            "r": 0.0
+          },
+          "near_boot": {
+            "r": -0.0
+          },
+          "far_thigh": {
+            "p": [
+              0,
+              0
+            ],
+            "r": -5.480107514112603
+          },
+          "far_shin": {
+            "r": 10.682242860004934
+          },
+          "far_boot": {
+            "r": -5.20213534589233
+          },
+          "weapon_grip": {
+            "r": 0
+          },
+          "axe": {
+            "p": [
+              0.0,
+              0.0
+            ],
+            "r": 0
+          },
+          "weapon_trail": {
+            "a": 0,
+            "r": -10.0
+          }
+        },
+        {
+          "torso": {
+            "p": [
+              0,
+              -1
+            ],
+            "r": 0
+          },
+          "helmet": {
+            "r": -0.7
+          },
+          "waist": {
+            "r": 0.0
+          },
+          "near_upper_arm": {
+            "r": 1
+          },
+          "near_forearm": {
+            "r": 0
+          },
+          "far_upper_arm": {
+            "r": -1
+          },
+          "far_forearm": {
+            "r": 0
+          },
+          "near_thigh": {
+            "p": [
+              0,
+              -1
+            ],
+            "r": -4.20927081081723
+          },
+          "near_shin": {
+            "r": 8.038922659796654
+          },
+          "near_boot": {
+            "r": -3.829651848979424
+          },
+          "far_thigh": {
+            "p": [
+              0,
+              -1
+            ],
+            "r": -3.4952378951216474
+          },
+          "far_shin": {
+            "r": 6.941291312657782
+          },
+          "far_boot": {
+            "r": -3.4460534175361346
+          },
+          "weapon_grip": {
+            "r": 0
+          },
+          "axe": {
+            "p": [
+              -2.0276775484406357,
+              -0.6511668266757056
+            ],
+            "r": 1
+          },
+          "weapon_trail": {
+            "a": 0,
+            "r": -9.8
+          }
+        },
+        {
+          "torso": {
+            "p": [
+              0,
+              -2
+            ],
+            "r": 0
+          },
+          "helmet": {
+            "r": -1.2
+          },
+          "waist": {
+            "r": 0.0
+          },
+          "near_upper_arm": {
+            "r": 2
+          },
+          "near_forearm": {
+            "r": -1
+          },
+          "far_upper_arm": {
+            "r": -2
+          },
+          "far_forearm": {
+            "r": 0
+          },
+          "near_thigh": {
+            "p": [
+              0,
+              -2
+            ],
+            "r": -4.29609897623061
+          },
+          "near_shin": {
+            "r": 8.05312762206205
+          },
+          "near_boot": {
+            "r": -3.75702864583144
+          },
+          "far_thigh": {
+            "p": [
+              0,
+              -2
+            ],
+            "r": -3.4241038342894683
+          },
+          "far_shin": {
+            "r": 6.927016248313066
+          },
+          "far_boot": {
+            "r": -3.502912414023598
+          },
+          "weapon_grip": {
+            "r": 0
+          },
+          "axe": {
+            "p": [
+              -3.080899118275852,
+              -1.4343196512003829
+            ],
+            "r": 1
+          },
+          "weapon_trail": {
+            "a": 0,
+            "r": -9.6
+          }
+        },
+        {
+          "torso": {
+            "p": [
+              0,
+              -0.7
+            ],
+            "r": 0
+          },
+          "helmet": {
+            "r": 0.3
+          },
+          "waist": {
+            "r": 0.0
+          },
+          "near_upper_arm": {
+            "r": 0.6
+          },
+          "near_forearm": {
+            "r": 0.3
+          },
+          "far_upper_arm": {
+            "r": -0.4
+          },
+          "far_forearm": {
+            "r": 0
+          },
+          "near_thigh": {
+            "p": [
+              0,
+              -0.7
+            ],
+            "r": -4.182894323315395
+          },
+          "near_shin": {
+            "r": 8.034557623839618
+          },
+          "near_boot": {
+            "r": -3.8516633005242227
+          },
+          "far_thigh": {
+            "p": [
+              0,
+              -0.7
+            ],
+            "r": -3.5168491149350274
+          },
+          "far_shin": {
+            "r": 6.945678782670754
+          },
+          "far_boot": {
+            "r": -3.4288296677357266
+          },
+          "weapon_grip": {
+            "r": 0
+          },
+          "axe": {
+            "p": [
+              -1.5095480179479068,
+              -0.4536422202860422
+            ],
+            "r": 0.8999999999999999
+          },
+          "weapon_trail": {
+            "a": 0,
+            "r": -9.88
+          }
+        }
+      ]
+    },
+    "attack": {
+      "fps": 12,
+      "loop": false,
+      "events": {
+        "hit": 4
+      },
+      "poses": [
+        {
+          "torso": {
+            "p": [
+              0,
+              0
+            ],
+            "r": 0
+          },
+          "helmet": {
+            "r": 0
+          },
+          "waist": {
+            "r": 0.0
+          },
+          "near_upper_arm": {
+            "r": 0
+          },
+          "near_forearm": {
+            "r": 0
+          },
+          "far_upper_arm": {
+            "r": 0
+          },
+          "far_forearm": {
+            "r": 0
+          },
+          "near_thigh": {
+            "p": [
+              0,
+              0
+            ],
+            "r": 0.0
+          },
+          "near_shin": {
+            "r": 0.0
+          },
+          "near_boot": {
+            "r": -0.0
+          },
+          "far_thigh": {
+            "p": [
+              0,
+              0
+            ],
+            "r": -5.480107514112603
+          },
+          "far_shin": {
+            "r": 10.682242860004934
+          },
+          "far_boot": {
+            "r": -5.20213534589233
+          },
+          "weapon_grip": {
+            "r": 0
+          },
+          "axe": {
+            "p": [
+              0.0,
+              0.0
+            ],
+            "r": 0
+          },
+          "weapon_trail": {
+            "a": 0,
+            "r": -10.0
+          }
+        },
+        {
+          "torso": {
+            "p": [
+              4,
+              5
+            ],
+            "r": 3
+          },
+          "helmet": {
+            "r": -2
+          },
+          "waist": {
+            "r": -0.8999999999999999
+          },
+          "near_upper_arm": {
+            "r": -22
+          },
+          "near_forearm": {
+            "r": -15
+          },
+          "far_upper_arm": {
+            "r": -6
+          },
+          "far_forearm": {
+            "r": 0
+          },
+          "near_thigh": {
+            "p": [
+              4,
+              5
+            ],
+            "r": 15.532363689065505
+          },
+          "near_shin": {
+            "r": -24.78753586747459
+          },
+          "near_boot": {
+            "r": 9.255172178409083
+          },
+          "far_thigh": {
+            "p": [
+              4,
+              5
+            ],
+            "r": -20.31094589958016
+          },
+          "far_shin": {
+            "r": 43.44402179987837
+          },
+          "far_boot": {
+            "r": -23.13307590029821
+          },
+          "weapon_grip": {
+            "r": 10
+          },
+          "axe": {
+            "p": [
+              51.173033817096496,
+              -18.769135693174007
+            ],
+            "r": -24
+          },
+          "weapon_trail": {
+            "a": 0,
+            "r": -14.4
+          }
+        },
+        {
+          "torso": {
+            "p": [
+              5,
+              10
+            ],
+            "r": 4
+          },
+          "helmet": {
+            "r": -4
+          },
+          "waist": {
+            "r": -1.2
+          },
+          "near_upper_arm": {
+            "r": -45
+          },
+          "near_forearm": {
+            "r": -20
+          },
+          "far_upper_arm": {
+            "r": -10
+          },
+          "far_forearm": {
+            "r": 0
+          },
+          "near_thigh": {
+            "p": [
+              5,
+              10
+            ],
+            "r": 24.382467350862157
+          },
+          "near_shin": {
+            "r": -39.5506888286091
+          },
+          "near_boot": {
+            "r": 15.16822147774694
+          },
+          "far_thigh": {
+            "p": [
+              5,
+              10
+            ],
+            "r": -27.651947478007223
+          },
+          "far_shin": {
+            "r": 58.33418670910286
+          },
+          "far_boot": {
+            "r": -30.682239231095636
+          },
+          "weapon_grip": {
+            "r": 30
+          },
+          "axe": {
+            "p": [
+              84.04218038482753,
+              -52.166870892077384
+            ],
+            "r": -31
+          },
+          "weapon_trail": {
+            "a": 0,
+            "r": -19.0
+          }
+        },
+        {
+          "torso": {
+            "p": [
+              2,
+              7
+            ],
+            "r": 1
+          },
+          "helmet": {
+            "r": -2
+          },
+          "waist": {
+            "r": -0.3
+          },
+          "near_upper_arm": {
+            "r": -30
+          },
+          "near_forearm": {
+            "r": -20
+          },
+          "far_upper_arm": {
+            "r": -15
+          },
+          "far_forearm": {
+            "r": 0
+          },
+          "near_thigh": {
+            "p": [
+              2,
+              7
+            ],
+            "r": 18.75428161503234
+          },
+          "near_shin": {
+            "r": -32.86194035285466
+          },
+          "near_boot": {
+            "r": 14.10765873782232
+          },
+          "far_thigh": {
+            "p": [
+              2,
+              7
+            ],
+            "r": -24.613454708508982
+          },
+          "far_shin": {
+            "r": 49.2106862690234
+          },
+          "far_boot": {
+            "r": -24.597231560514416
+          },
+          "weapon_grip": {
+            "r": 35
+          },
+          "axe": {
+            "p": [
+              68.60302701407886,
+              -32.66180275397369
+            ],
+            "r": -14
+          },
+          "weapon_trail": {
+            "a": 0,
+            "r": -16.0
+          }
+        },
+        {
+          "torso": {
+            "p": [
+              -7,
+              12
+            ],
+            "r": -7
+          },
+          "helmet": {
+            "r": 3
+          },
+          "waist": {
+            "r": 2.1
+          },
+          "near_upper_arm": {
+            "r": 60
+          },
+          "near_forearm": {
+            "r": -15
+          },
+          "far_upper_arm": {
+            "r": 10
+          },
+          "far_forearm": {
+            "r": 0
+          },
+          "near_thigh": {
+            "p": [
+              -7,
+              12
+            ],
+            "r": 22.163725966332635
+          },
+          "near_shin": {
+            "r": -49.37577077477749
+          },
+          "near_boot": {
+            "r": 27.21204480844486
+          },
+          "far_thigh": {
+            "p": [
+              -7,
+              12
+            ],
+            "r": -35.521818410148185
+          },
+          "far_shin": {
+            "r": 58.615470610812935
+          },
+          "far_boot": {
+            "r": -23.09365220066475
+          },
+          "weapon_grip": {
+            "r": -105
+          },
+          "axe": {
+            "p": [
+              -91.96725292142452,
+              -2.919409988517259
+            ],
+            "r": -67
+          },
+          "weapon_trail": {
+            "a": 0.8,
+            "r": 2.0
+          }
+        },
+        {
+          "torso": {
+            "p": [
+              -4,
+              9
+            ],
+            "r": -5
+          },
+          "helmet": {
+            "r": 2
+          },
+          "waist": {
+            "r": 1.5
+          },
+          "near_upper_arm": {
+            "r": 42
+          },
+          "near_forearm": {
+            "r": -10
+          },
+          "far_upper_arm": {
+            "r": 8
+          },
+          "far_forearm": {
+            "r": 0
+          },
+          "near_thigh": {
+            "p": [
+              -4,
+              9
+            ],
+            "r": 19.627785670320748
+          },
+          "near_shin": {
+            "r": -41.231198467599086
+          },
+          "near_boot": {
+            "r": 21.603412797278338
+          },
+          "far_thigh": {
+            "p": [
+              -4,
+              9
+            ],
+            "r": -30.076913075498226
+          },
+          "far_shin": {
+            "r": 52.36896376482537
+          },
+          "far_boot": {
+            "r": -22.29205068932714
+          },
+          "weapon_grip": {
+            "r": -70
+          },
+          "axe": {
+            "p": [
+              -65.97608742335677,
+              6.297623681203277
+            ],
+            "r": -43
+          },
+          "weapon_trail": {
+            "a": 0.35,
+            "r": -1.5999999999999996
+          }
+        },
+        {
+          "torso": {
+            "p": [
+              -2,
+              4
+            ],
+            "r": -2
+          },
+          "helmet": {
+            "r": 1
+          },
+          "waist": {
+            "r": 0.6
+          },
+          "near_upper_arm": {
+            "r": 12
+          },
+          "near_forearm": {
+            "r": -3
+          },
+          "far_upper_arm": {
+            "r": 3
+          },
+          "far_forearm": {
+            "r": 0
+          },
+          "near_thigh": {
+            "p": [
+              -2,
+              4
+            ],
+            "r": 12.071761650551778
+          },
+          "near_shin": {
+            "r": -25.04200892217061
+          },
+          "near_boot": {
+            "r": 12.970247271618831
+          },
+          "far_thigh": {
+            "p": [
+              -2,
+              4
+            ],
+            "r": -20.381065188404577
+          },
+          "far_shin": {
+            "r": 36.835453380236814
+          },
+          "far_boot": {
+            "r": -16.454388191832237
+          },
+          "weapon_grip": {
+            "r": -20
+          },
+          "axe": {
+            "p": [
+              -18.293837442037272,
+              7.539874530783891
+            ],
+            "r": -13
+          },
+          "weapon_trail": {
+            "a": 0,
+            "r": -7.6
+          }
+        },
+        {
+          "torso": {
+            "p": [
+              0,
+              0
+            ],
+            "r": 0
+          },
+          "helmet": {
+            "r": 0
+          },
+          "waist": {
+            "r": 0.0
+          },
+          "near_upper_arm": {
+            "r": 0
+          },
+          "near_forearm": {
+            "r": 0
+          },
+          "far_upper_arm": {
+            "r": 0
+          },
+          "far_forearm": {
+            "r": 0
+          },
+          "near_thigh": {
+            "p": [
+              0,
+              0
+            ],
+            "r": 0.0
+          },
+          "near_shin": {
+            "r": 0.0
+          },
+          "near_boot": {
+            "r": -0.0
+          },
+          "far_thigh": {
+            "p": [
+              0,
+              0
+            ],
+            "r": -5.480107514112603
+          },
+          "far_shin": {
+            "r": 10.682242860004934
+          },
+          "far_boot": {
+            "r": -5.20213534589233
+          },
+          "weapon_grip": {
+            "r": 0
+          },
+          "axe": {
+            "p": [
+              0.0,
+              0.0
+            ],
+            "r": 0
+          },
+          "weapon_trail": {
+            "a": 0,
+            "r": -10.0
+          }
+        }
+      ]
+    },
+    "hit": {
+      "fps": 12,
+      "loop": false,
+      "events": {},
+      "poses": [
+        {
+          "torso": {
+            "p": [
+              5,
+              8
+            ],
+            "r": 8
+          },
+          "helmet": {
+            "r": 6
+          },
+          "waist": {
+            "r": -2.4
+          },
+          "near_upper_arm": {
+            "r": -8
+          },
+          "near_forearm": {
+            "r": 7
+          },
+          "far_upper_arm": {
+            "r": -10
+          },
+          "far_forearm": {
+            "r": 6
+          },
+          "near_thigh": {
+            "p": [
+              5,
+              8
+            ],
+            "r": 21.228075558377142
+          },
+          "near_shin": {
+            "r": -33.967823148851025
+          },
+          "near_boot": {
+            "r": 12.739747590473883
+          },
+          "far_thigh": {
+            "p": [
+              5,
+              8
+            ],
+            "r": -24.79624405490528
+          },
+          "far_shin": {
+            "r": 53.011498213592226
+          },
+          "far_boot": {
+            "r": -28.215254158686946
+          },
+          "weapon_grip": {
+            "r": 0
+          },
+          "axe": {
+            "p": [
+              -6.161076763953474,
+              1.7028215888004752
+            ],
+            "r": 7
+          },
+          "weapon_trail": {
+            "a": 0,
+            "r": -11.6
+          }
+        },
+        {
+          "torso": {
+            "p": [
+              2,
+              4
+            ],
+            "r": 4
+          },
+          "helmet": {
+            "r": 3
+          },
+          "waist": {
+            "r": -1.2
+          },
+          "near_upper_arm": {
+            "r": -4
+          },
+          "near_forearm": {
+            "r": 3
+          },
+          "far_upper_arm": {
+            "r": -5
+          },
+          "far_forearm": {
+            "r": 3
+          },
+          "near_thigh": {
+            "p": [
+              2,
+              4
+            ],
+            "r": 13.065955924945513
+          },
+          "near_shin": {
+            "r": -22.459500835584834
+          },
+          "near_boot": {
+            "r": 9.39354491063932
+          },
+          "far_thigh": {
+            "p": [
+              2,
+              4
+            ],
+            "r": -19.154323689659407
+          },
+          "far_shin": {
+            "r": 39.008685685026805
+          },
+          "far_boot": {
+            "r": -19.854361995367398
+          },
+          "weapon_grip": {
+            "r": 0
+          },
+          "axe": {
+            "p": [
+              -3.200073225575011,
+              0.997985556560991
+            ],
+            "r": 3
+          },
+          "weapon_trail": {
+            "a": 0,
+            "r": -10.8
+          }
+        },
+        {
+          "torso": {
+            "p": [
+              0,
+              0
+            ],
+            "r": 0
+          },
+          "helmet": {
+            "r": 0
+          },
+          "waist": {
+            "r": 0.0
+          },
+          "near_upper_arm": {
+            "r": 0
+          },
+          "near_forearm": {
+            "r": 0
+          },
+          "far_upper_arm": {
+            "r": 0
+          },
+          "far_forearm": {
+            "r": 0
+          },
+          "near_thigh": {
+            "p": [
+              0,
+              0
+            ],
+            "r": 0.0
+          },
+          "near_shin": {
+            "r": 0.0
+          },
+          "near_boot": {
+            "r": -0.0
+          },
+          "far_thigh": {
+            "p": [
+              0,
+              0
+            ],
+            "r": -5.480107514112603
+          },
+          "far_shin": {
+            "r": 10.682242860004934
+          },
+          "far_boot": {
+            "r": -5.20213534589233
+          },
+          "weapon_grip": {
+            "r": 0
+          },
+          "axe": {
+            "p": [
+              0.0,
+              0.0
+            ],
+            "r": 0
+          },
+          "weapon_trail": {
+            "a": 0,
+            "r": -10.0
+          }
+        }
+      ]
+    },
+    "defeat": {
+      "fps": 12,
+      "loop": false,
+      "events": {
+        "release": 3,
+        "ground": 5,
+        "knee_contact": 6
+      },
+      "poses": [
+        {
+          "torso": {
+            "p": [
+              3,
+              7
+            ],
+            "r": 4
+          },
+          "helmet": {
+            "r": -4
+          },
+          "waist": {
+            "r": -1.2
+          },
+          "near_upper_arm": {
+            "r": -8
+          },
+          "near_forearm": {
+            "r": 6
+          },
+          "far_upper_arm": {
+            "r": 0
+          },
+          "far_forearm": {
+            "r": 0
+          },
+          "near_thigh": {
+            "p": [
+              3,
+              7
+            ],
+            "r": 19.03185667700427
+          },
+          "near_shin": {
+            "r": -32.250336135365785
+          },
+          "near_boot": {
+            "r": 13.218479458361514
+          },
+          "far_thigh": {
+            "p": [
+              3,
+              7
+            ],
+            "r": -24.180227494882985
+          },
+          "far_shin": {
+            "r": 49.5505960015155
+          },
+          "far_boot": {
+            "r": -25.370368506632516
+          },
+          "weapon_grip": {
+            "r": 0
+          },
+          "axe": {
+            "p": [
+              2.932982682826548,
+              2.7958150897628116
+            ],
+            "r": 2
+          },
+          "weapon_trail": {
+            "a": 0,
+            "r": -11.6
+          }
+        },
+        {
+          "torso": {
+            "p": [
+              1,
+              15
+            ],
+            "r": 2
+          },
+          "helmet": {
+            "r": -8
+          },
+          "waist": {
+            "r": -0.6
+          },
+          "near_upper_arm": {
+            "r": -10
+          },
+          "near_forearm": {
+            "r": 8
+          },
+          "far_upper_arm": {
+            "r": 8
+          },
+          "far_forearm": {
+            "r": 0
+          },
+          "near_thigh": {
+            "p": [
+              1,
+              15
+            ],
+            "r": 29.678663395024472
+          },
+          "near_shin": {
+            "r": -53.3247143099309
+          },
+          "near_boot": {
+            "r": 23.646050914906425
+          },
+          "far_thigh": {
+            "p": [
+              1,
+              15
+            ],
+            "r": -36.05432586745074
+          },
+          "far_shin": {
+            "r": 68.86737035030033
+          },
+          "far_boot": {
+            "r": -32.81304448284959
+          },
+          "weapon_grip": {
+            "r": 0
+          },
+          "axe": {
+            "p": [
+              8.055578089222479,
+              10.841571981387517
+            ],
+            "r": 0
+          },
+          "weapon_trail": {
+            "a": 0,
+            "r": -12.0
+          }
+        },
+        {
+          "torso": {
+            "p": [
+              -2,
+              25
+            ],
+            "r": -4
+          },
+          "helmet": {
+            "r": -12
+          },
+          "waist": {
+            "r": 1.2
+          },
+          "near_upper_arm": {
+            "r": 2
+          },
+          "near_forearm": {
+            "r": 12
+          },
+          "far_upper_arm": {
+            "r": 12
+          },
+          "far_forearm": {
+            "r": 0
+          },
+          "near_thigh": {
+            "p": [
+              -2,
+              25
+            ],
+            "r": 39.23108149993652
+          },
+          "near_shin": {
+            "r": -73.09335004524134
+          },
+          "near_boot": {
+            "r": 33.862268545304815
+          },
+          "far_thigh": {
+            "p": [
+              -2,
+              25
+            ],
+            "r": -48.68648965571561
+          },
+          "far_shin": {
+            "r": 86.86002541337888
+          },
+          "far_boot": {
+            "r": -38.17353575766327
+          },
+          "weapon_grip": {
+            "r": 0
+          },
+          "axe": {
+            "p": [
+              -7.261428502496869,
+              27.965603580726736
+            ],
+            "r": 10
+          },
+          "weapon_trail": {
+            "a": 0,
+            "r": -9.6
+          }
+        },
+        {
+          "torso": {
+            "p": [
+              -3,
+              35
+            ],
+            "r": -10
+          },
+          "helmet": {
+            "r": -16
+          },
+          "waist": {
+            "r": 3.0
+          },
+          "near_upper_arm": {
+            "r": 12
+          },
+          "near_forearm": {
+            "r": 16
+          },
+          "far_upper_arm": {
+            "r": 18
+          },
+          "far_forearm": {
+            "r": 0
+          },
+          "near_thigh": {
+            "p": [
+              -3,
+              35
+            ],
+            "r": 41.798704192572814
+          },
+          "near_shin": {
+            "r": -90.67228902002086
+          },
+          "near_boot": {
+            "r": 48.87358482744804
+          },
+          "far_thigh": {
+            "p": [
+              -3,
+              35
+            ],
+            "r": -59.32985399799129
+          },
+          "far_shin": {
+            "r": 102.31196514269794
+          },
+          "far_boot": {
+            "r": -42.98211114470665
+          },
+          "weapon_grip": {
+            "r": 0
+          },
+          "axe": {
+            "p": [
+              -22,
+              27
+            ],
+            "r": -30
+          },
+          "weapon_trail": {
+            "a": 0,
+            "r": -7.6
+          }
+        },
+        {
+          "torso": {
+            "p": [
+              -5,
+              45
+            ],
+            "r": -15
+          },
+          "helmet": {
+            "r": -20
+          },
+          "waist": {
+            "r": 4.5
+          },
+          "near_upper_arm": {
+            "r": 20
+          },
+          "near_forearm": {
+            "r": 22
+          },
+          "far_upper_arm": {
+            "r": 22
+          },
+          "far_forearm": {
+            "r": 0
+          },
+          "near_thigh": {
+            "p": [
+              -5,
+              45
+            ],
+            "r": 36.48269894593312
+          },
+          "near_shin": {
+            "r": -104.04901017141857
+          },
+          "near_boot": {
+            "r": 67.56631122548545
+          },
+          "far_thigh": {
+            "p": [
+              -5,
+              45
+            ],
+            "r": -70.63603023170872
+          },
+          "far_shin": {
+            "r": 115.44168829449623
+          },
+          "far_boot": {
+            "r": -44.805658062787515
+          },
+          "weapon_grip": {
+            "r": 0
+          },
+          "axe": {
+            "p": [
+              -30,
+              55
+            ],
+            "r": -55
+          },
+          "weapon_trail": {
+            "a": 0,
+            "r": -6.0
+          }
+        },
+        {
+          "torso": {
+            "p": [
+              -5,
+              55
+            ],
+            "r": -19
+          },
+          "helmet": {
+            "r": -23
+          },
+          "waist": {
+            "r": 5.7
+          },
+          "near_upper_arm": {
+            "r": 24
+          },
+          "near_forearm": {
+            "r": 25
+          },
+          "far_upper_arm": {
+            "r": 25
+          },
+          "far_forearm": {
+            "r": 0
+          },
+          "near_thigh": {
+            "p": [
+              -5,
+              55
+            ],
+            "r": 24.09147357064529
+          },
+          "near_shin": {
+            "r": -111.79617710500906
+          },
+          "near_boot": {
+            "r": 87.70470353436377
+          },
+          "far_thigh": {
+            "p": [
+              -5,
+              55
+            ],
+            "r": -81.2022747230447
+          },
+          "far_shin": {
+            "r": 128.02825004882354
+          },
+          "far_boot": {
+            "r": -46.82597532577884
+          },
+          "weapon_grip": {
+            "r": 0
+          },
+          "axe": {
+            "p": [
+              -35,
+              81
+            ],
+            "r": -90
+          },
+          "weapon_trail": {
+            "a": 0,
+            "r": -5.199999999999999
+          }
+        },
+        {
+          "torso": {
+            "p": [
+              -5,
+              60
+            ],
+            "r": -22
+          },
+          "helmet": {
+            "r": -25
+          },
+          "waist": {
+            "r": 6.6
+          },
+          "near_upper_arm": {
+            "r": 26
+          },
+          "near_forearm": {
+            "r": 27
+          },
+          "far_upper_arm": {
+            "r": 27
+          },
+          "far_forearm": {
+            "r": 0
+          },
+          "near_thigh": {
+            "p": [
+              -5,
+              60
+            ],
+            "r": 9.658306533341658
+          },
+          "near_shin": {
+            "r": -109.89668114168208
+          },
+          "near_boot": {
+            "r": 100.23837460834042
+          },
+          "far_thigh": {
+            "p": [
+              -5,
+              60
+            ],
+            "r": -86.93833491887708
+          },
+          "far_shin": {
+            "r": 133.91430365390397
+          },
+          "far_boot": {
+            "r": -46.975968735026896
+          },
+          "weapon_grip": {
+            "r": 0
+          },
+          "axe": {
+            "p": [
+              -35,
+              81
+            ],
+            "r": -90
+          },
+          "weapon_trail": {
+            "a": 0,
+            "r": -4.8
+          }
+        },
+        {
+          "torso": {
+            "p": [
+              -5,
+              60
+            ],
+            "r": -22
+          },
+          "helmet": {
+            "r": -25
+          },
+          "waist": {
+            "r": 6.6
+          },
+          "near_upper_arm": {
+            "r": 26
+          },
+          "near_forearm": {
+            "r": 27
+          },
+          "far_upper_arm": {
+            "r": 27
+          },
+          "far_forearm": {
+            "r": 0
+          },
+          "near_thigh": {
+            "p": [
+              -5,
+              60
+            ],
+            "r": 9.658306533341658
+          },
+          "near_shin": {
+            "r": -109.89668114168208
+          },
+          "near_boot": {
+            "r": 100.23837460834042
+          },
+          "far_thigh": {
+            "p": [
+              -5,
+              60
+            ],
+            "r": -86.93833491887708
+          },
+          "far_shin": {
+            "r": 133.91430365390397
+          },
+          "far_boot": {
+            "r": -46.975968735026896
+          },
+          "weapon_grip": {
+            "r": 0
+          },
+          "axe": {
+            "p": [
+              -35,
+              81
+            ],
+            "r": -90
+          },
+          "weapon_trail": {
+            "a": 0,
+            "r": -4.8
+          }
+        }
+      ]
+    }
+  },
+  "pose_holds": {
+    "attack": {
+      "7": 0
+    },
+    "defeat": {
+      "7": 6
+    }
+  },
+  "contacts": {
+    "idle": [
+      {
+        "near": [
+          255.0,
+          450.0
+        ],
+        "far": [
+          345.0,
+          447.0
+        ]
+      },
+      {
+        "near": [
+          255.09138538610122,
+          449.36804506571434
+        ],
+        "far": [
+          344.8980545282818,
+          446.1137534044582
+        ]
+      },
+      {
+        "near": [
+          255.23070552709981,
+          448.39020558369407
+        ],
+        "far": [
+          344.7865709722465,
+          445.1282293042422
+        ]
+      },
+      {
+        "near": [
+          255.04911412727836,
+          449.66128110766664
+        ],
+        "far": [
+          344.93187563411175,
+          446.40933582987185
+        ]
+      }
+    ],
+    "attack": [
+      {
+        "near": [
+          255.0,
+          450.0
+        ],
+        "far": [
+          345.0,
+          447.0
+        ]
+      },
+      {
+        "near": [
+          254.99999999999997,
+          450.0
+        ],
+        "far": [
+          345.0,
+          447.00000000000006
+        ]
+      },
+      {
+        "near": [
+          254.99999999999997,
+          450.0
+        ],
+        "far": [
+          345.0,
+          447.00000000000006
+        ]
+      },
+      {
+        "near": [
+          255.0,
+          450.0
+        ],
+        "far": [
+          345.0,
+          447.0
+        ]
+      },
+      {
+        "near": [
+          254.99999999999997,
+          450.0
+        ],
+        "far": [
+          345.0,
+          447.0
+        ]
+      },
+      {
+        "near": [
+          255.0,
+          450.0
+        ],
+        "far": [
+          345.0,
+          447.00000000000006
+        ]
+      },
+      {
+        "near": [
+          255.0,
+          450.0
+        ],
+        "far": [
+          345.0,
+          447.0
+        ]
+      },
+      {
+        "near": [
+          255.0,
+          450.0
+        ],
+        "far": [
+          345.0,
+          447.0
+        ]
+      }
+    ],
+    "hit": [
+      {
+        "near": [
+          254.99999999999997,
+          450.0
+        ],
+        "far": [
+          345.0,
+          447.0
+        ]
+      },
+      {
+        "near": [
+          255.00000000000006,
+          450.00000000000006
+        ],
+        "far": [
+          345.0,
+          447.0
+        ]
+      },
+      {
+        "near": [
+          255.0,
+          450.0
+        ],
+        "far": [
+          345.0,
+          447.0
+        ]
+      }
+    ],
+    "defeat": [
+      {
+        "near": [
+          255.0,
+          450.0
+        ],
+        "far": [
+          345.0,
+          447.00000000000006
+        ]
+      },
+      {
+        "near": [
+          254.99999999999997,
+          450.00000000000006
+        ],
+        "far": [
+          345.0,
+          447.0
+        ]
+      },
+      {
+        "near": [
+          255.0,
+          450.0
+        ],
+        "far": [
+          345.0,
+          447.0
+        ]
+      },
+      {
+        "near": [
+          263.6,
+          450.0
+        ],
+        "far": [
+          345.00000000000006,
+          447.0
+        ]
+      },
+      {
+        "near": [
+          274.35,
+          450.0
+        ],
+        "far": [
+          344.99999999999994,
+          447.0
+        ]
+      },
+      {
+        "near": [
+          287.24999999999994,
+          450.00000000000006
+        ],
+        "far": [
+          345.00000000000006,
+          447.00000000000006
+        ]
+      },
+      {
+        "near": [
+          297.99999999999994,
+          449.99999999999994
+        ],
+        "far": [
+          344.99999999999994,
+          447.0
+        ]
+      },
+      {
+        "near": [
+          297.99999999999994,
+          449.99999999999994
+        ],
+        "far": [
+          344.99999999999994,
+          447.0
+        ]
+      }
+    ]
+  },
+  "effect_layers": [
+    "weapon_trail"
+  ],
+  "effect_actions": [
+    "attack"
+  ],
+  "acceptance": "Draft; actual visual review then coordinator release",
+  "damage_text_reserved_rect": null
+}

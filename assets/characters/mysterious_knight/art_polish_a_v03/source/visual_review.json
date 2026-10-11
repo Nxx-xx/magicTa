@@ -1,0 +1,30 @@
+{
+  "approved_for_publish": true,
+  "human_signoff": false,
+  "reviewer": "Codex A visual review",
+  "date": "2026-10-03",
+  "draft_sha256": "6c25eb093279441d9ffa887eb24cc8a92418c9af3160bc29d4a33d573cfaf09b",
+  "timing_sha256": "8be2dd4e82aaadcfeedd8a90f5f274c8277c265f58f208d08e91d516568a502d",
+  "files": {
+    "source/art_polish_a_BodySwordHandsFeet.res": "e2e99addaa7bf6c8b55559f61d85e800b56e6dee23ca441f5f7cdccaaae6eeaa",
+    "source/art_polish_a_Cape.res": "7dec40810a547849d7691d4b4b01a8db2b6f83624be2599067b0b77b31da82c7",
+    "source/art_polish_a_components.png": "b56cd4afc6c1f1c32bbeec74d71dc9e586074bd4d1fa30baad329cfcac050533",
+    "source/art_polish_a_components.png.import": "5029b8b1675224f2f06a9393983f1d926bd3eec4b4e5fce7474489ad20aa6b8b",
+    "source/art_polish_a_Head.res": "77957f3eba8e7edd846417bc787b19c56511888229cf23a7579f9ab864c841ab",
+    "source/art_polish_a_knight_editable.tscn": "33c6db7d99d50d7fc196d8863f34ddf5c2fbf1e4af1619699e79da3fa227bdd7",
+    "source/draft_manifest.json": "6c25eb093279441d9ffa887eb24cc8a92418c9af3160bc29d4a33d573cfaf09b",
+    "source/draft/idle_00.png": "fa71f992f31ab727293bb164b4a3cd28a4119d6d33b623c905c2ed8ddb12aa4d",
+    "source/draft/idle_01.png": "dbdc0b3013015d780aeb29ae8a29ef34ff4d53bcbef5cb7d014feca1458748f2",
+    "source/draft/idle_02.png": "575101fcf8bea46b9e846f596cf52a952dc188b8bdff02d8739c124044bef085",
+    "source/draft/idle_03.png": "c1317bd20bb1a593ff31da0f3170b133dae411a1b9a53b970a5790230c2981b8",
+    "source/draft/idle_04.png": "fa5963a6b4e0dd78d57e6a2eaac86b9c6169420922b3bb4f94753e1f88f78f94",
+    "source/draft/idle_05.png": "acfa648ff639d886ec82b1a5aafa4d89b4fef2d76d73f671a56e135d4418120a",
+    "source/draft/idle_06.png": "2cab3cea656b4f192c0d23447ccacbe64f0ac0695f5bc3f725cd2b4f2a11462b",
+    "source/draft/idle_07.png": "a4857bb2d5d85c547a9c23b29c065b3e06846632e4e27e26374b4997da528440",
+    "source/draft/portrait.png": "fc51c91c2ef99eebb6a7540ce57d046688774c435e754be226b676a0204b78b0"
+  },
+  "evidence": {
+    "knight_contact.png": "818698169f23d92ad0866d8b6027ba62c5ae53dbc56686ee927ce649f91c271f"
+  },
+  "scope": "Painted native layers, feet and sword planted, original and quarter speed samples and 26/33/47px contact sheet. Final coordinator/client approval remains separate."
+}

@@ -1,0 +1,8 @@
+{
+  "base_entity": "sentinel",
+  "base_rig": "assets/monsters/phase3/source/parallel_v05/battle/sentinel/sentinel_rig.json",
+  "base_rig_sha256": "5c2c7ebc189e19b3453c83b980036d8f333832b593e133d3a93ef49a7119fa68",
+  "originals": {
+    "sentinel_components.png": "8fdf0abc95621b1b1d35334fe9e9586a8bc2a040398963bc8e76e061cce035a8"
+  }
+}

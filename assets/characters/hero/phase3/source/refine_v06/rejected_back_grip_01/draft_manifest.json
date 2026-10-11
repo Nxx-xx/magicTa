@@ -1,0 +1,2503 @@
+{
+	"actions": {
+		"combat_attack": {
+			"anchor": [
+				192,
+				348
+			],
+			"bounds": [
+				[
+					136,
+					56,
+					249,
+					353
+				],
+				[
+					123,
+					53,
+					242,
+					352
+				],
+				[
+					79,
+					49,
+					229,
+					349
+				],
+				[
+					144,
+					53,
+					358,
+					348
+				],
+				[
+					142,
+					54,
+					330,
+					350
+				],
+				[
+					133,
+					56,
+					264,
+					352
+				],
+				[
+					138,
+					55,
+					251,
+					353
+				],
+				[
+					131,
+					56,
+					249,
+					353
+				]
+			],
+			"effects_frames": [
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/combat_attack/00.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/combat_attack/01.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/combat_attack/02.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/combat_attack/03.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/combat_attack/04.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/combat_attack/05.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/combat_attack/06.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/combat_attack/07.png"
+			],
+			"events": {
+				"hit": 3
+			},
+			"foot_contacts_map_px": [
+				{
+					"left": [
+						61.5000190734863,
+						115.998329162598
+					],
+					"right": [
+						66.5000228881836,
+						115.998329162598
+					]
+				},
+				{
+					"left": [
+						61.4931030273438,
+						115.567718505859
+					],
+					"right": [
+						66.4931030273438,
+						115.567718505859
+					]
+				},
+				{
+					"left": [
+						61.4170341491699,
+						114.716133117676
+					],
+					"right": [
+						66.4170303344727,
+						114.716133117676
+					]
+				},
+				{
+					"left": [
+						61.6675262451172,
+						114.37572479248
+					],
+					"right": [
+						69.5071640014648,
+						114.497985839844
+					]
+				},
+				{
+					"left": [
+						61.5898780822754,
+						114.852813720703
+					],
+					"right": [
+						68.6670684814453,
+						114.918182373047
+					]
+				},
+				{
+					"left": [
+						61.5206604003906,
+						115.504859924316
+					],
+					"right": [
+						67.4644088745117,
+						115.518341064453
+					]
+				},
+				{
+					"left": [
+						61.5023345947266,
+						115.877479553223
+					],
+					"right": [
+						66.7413101196289,
+						115.878349304199
+					]
+				},
+				{
+					"left": [
+						61.5000190734863,
+						115.998329162598
+					],
+					"right": [
+						66.5000228881836,
+						115.998329162598
+					]
+				}
+			],
+			"fps": 16,
+			"frames": [
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/combat_attack/00.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/combat_attack/01.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/combat_attack/02.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/combat_attack/03.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/combat_attack/04.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/combat_attack/05.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/combat_attack/06.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/combat_attack/07.png"
+			],
+			"grip_errors_source_px": [
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				}
+			],
+			"loop": false,
+			"pose_holds": {},
+			"review": "source/refine_v06/REVIEW.md",
+			"size": [
+				384,
+				384
+			],
+			"source": "source/refine_v06/hero_right_editable.tscn",
+			"status": "draft"
+		},
+		"combat_defeat": {
+			"anchor": [
+				192,
+				348
+			],
+			"bounds": [
+				[
+					136,
+					56,
+					249,
+					353
+				],
+				[
+					134,
+					66,
+					259,
+					353
+				],
+				[
+					132,
+					76,
+					269,
+					353
+				],
+				[
+					130,
+					85,
+					279,
+					353
+				],
+				[
+					139,
+					94,
+					288,
+					355
+				],
+				[
+					142,
+					106,
+					298,
+					363
+				]
+			],
+			"effects_frames": [
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/combat_defeat/00.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/combat_defeat/01.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/combat_defeat/02.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/combat_defeat/03.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/combat_defeat/04.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/combat_defeat/05.png"
+			],
+			"events": {},
+			"foot_contacts_map_px": [
+				{
+					"left": [
+						61.5000190734863,
+						115.998329162598
+					],
+					"right": [
+						66.5000228881836,
+						115.998329162598
+					]
+				},
+				{
+					"left": [
+						60.9333343505859,
+						116.0
+					],
+					"right": [
+						67.7333297729492,
+						116.0
+					]
+				},
+				{
+					"left": [
+						60.3666687011719,
+						116.0
+					],
+					"right": [
+						68.966667175293,
+						116.0
+					]
+				},
+				{
+					"left": [
+						59.799991607666,
+						116.0
+					],
+					"right": [
+						70.2000045776367,
+						116.0
+					]
+				},
+				{
+					"left": [
+						59.2333335876465,
+						116.0
+					],
+					"right": [
+						71.4333343505859,
+						116.0
+					]
+				},
+				{
+					"left": [
+						58.6666679382324,
+						116.0
+					],
+					"right": [
+						72.6666641235352,
+						116.0
+					]
+				}
+			],
+			"fps": 10,
+			"frames": [
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/combat_defeat/00.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/combat_defeat/01.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/combat_defeat/02.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/combat_defeat/03.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/combat_defeat/04.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/combat_defeat/05.png"
+			],
+			"grip_errors_source_px": [
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				}
+			],
+			"loop": false,
+			"pose_holds": {},
+			"review": "source/refine_v06/REVIEW.md",
+			"size": [
+				384,
+				384
+			],
+			"source": "source/refine_v06/hero_right_editable.tscn",
+			"status": "draft"
+		},
+		"combat_guard": {
+			"anchor": [
+				192,
+				348
+			],
+			"bounds": [
+				[
+					136,
+					56,
+					249,
+					353
+				],
+				[
+					123,
+					57,
+					239,
+					353
+				],
+				[
+					122,
+					59,
+					243,
+					353
+				],
+				[
+					129,
+					56,
+					248,
+					353
+				]
+			],
+			"effects_frames": [
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/combat_guard/00.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/combat_guard/01.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/combat_guard/02.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/combat_guard/03.png"
+			],
+			"events": {},
+			"foot_contacts_map_px": [
+				{
+					"left": [
+						61.5000190734863,
+						115.998329162598
+					],
+					"right": [
+						66.5000228881836,
+						115.998329162598
+					]
+				},
+				{
+					"left": [
+						61.5,
+						116.0
+					],
+					"right": [
+						66.5,
+						116.0
+					]
+				},
+				{
+					"left": [
+						61.5,
+						116.0
+					],
+					"right": [
+						66.5,
+						116.0
+					]
+				},
+				{
+					"left": [
+						61.5,
+						116.0
+					],
+					"right": [
+						66.5,
+						116.0
+					]
+				}
+			],
+			"fps": 12,
+			"frames": [
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/combat_guard/00.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/combat_guard/01.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/combat_guard/02.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/combat_guard/03.png"
+			],
+			"grip_errors_source_px": [
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				}
+			],
+			"loop": false,
+			"pose_holds": {},
+			"review": "source/refine_v06/REVIEW.md",
+			"size": [
+				384,
+				384
+			],
+			"source": "source/refine_v06/hero_right_editable.tscn",
+			"status": "draft"
+		},
+		"combat_hit": {
+			"anchor": [
+				192,
+				348
+			],
+			"bounds": [
+				[
+					136,
+					56,
+					249,
+					353
+				],
+				[
+					102,
+					58,
+					224,
+					353
+				],
+				[
+					132,
+					55,
+					245,
+					353
+				]
+			],
+			"effects_frames": [
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/combat_hit/00.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/combat_hit/01.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/combat_hit/02.png"
+			],
+			"events": {},
+			"foot_contacts_map_px": [
+				{
+					"left": [
+						61.5000190734863,
+						115.998329162598
+					],
+					"right": [
+						66.5000228881836,
+						115.998329162598
+					]
+				},
+				{
+					"left": [
+						61.5,
+						116.0
+					],
+					"right": [
+						66.5,
+						116.0
+					]
+				},
+				{
+					"left": [
+						61.5,
+						116.0
+					],
+					"right": [
+						66.5,
+						116.0
+					]
+				}
+			],
+			"fps": 12,
+			"frames": [
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/combat_hit/00.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/combat_hit/01.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/combat_hit/02.png"
+			],
+			"grip_errors_source_px": [
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				}
+			],
+			"loop": false,
+			"pose_holds": {},
+			"review": "source/refine_v06/REVIEW.md",
+			"size": [
+				384,
+				384
+			],
+			"source": "source/refine_v06/hero_right_editable.tscn",
+			"status": "draft"
+		},
+		"combat_idle": {
+			"anchor": [
+				192,
+				348
+			],
+			"bounds": [
+				[
+					136,
+					56,
+					249,
+					353
+				],
+				[
+					127,
+					55,
+					249,
+					352
+				],
+				[
+					131,
+					55,
+					249,
+					352
+				],
+				[
+					132,
+					56,
+					249,
+					353
+				],
+				[
+					129,
+					56,
+					249,
+					353
+				],
+				[
+					131,
+					56,
+					249,
+					353
+				]
+			],
+			"effects_frames": [
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/combat_idle/00.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/combat_idle/01.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/combat_idle/02.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/combat_idle/03.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/combat_idle/04.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/combat_idle/05.png"
+			],
+			"events": {},
+			"foot_contacts_map_px": [
+				{
+					"left": [
+						61.5000190734863,
+						115.998329162598
+					],
+					"right": [
+						66.5000228881836,
+						115.998329162598
+					]
+				},
+				{
+					"left": [
+						61.5022773742676,
+						115.796287536621
+					],
+					"right": [
+						66.5022811889648,
+						115.796287536621
+					]
+				},
+				{
+					"left": [
+						61.5022773742676,
+						115.796287536621
+					],
+					"right": [
+						66.5022811889648,
+						115.796287536621
+					]
+				},
+				{
+					"left": [
+						61.5000190734863,
+						115.998329162598
+					],
+					"right": [
+						66.5000228881836,
+						115.998329162598
+					]
+				},
+				{
+					"left": [
+						61.5,
+						116.0
+					],
+					"right": [
+						66.5,
+						116.0
+					]
+				},
+				{
+					"left": [
+						61.5,
+						116.0
+					],
+					"right": [
+						66.5,
+						116.0
+					]
+				}
+			],
+			"fps": 6,
+			"frames": [
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/combat_idle/00.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/combat_idle/01.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/combat_idle/02.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/combat_idle/03.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/combat_idle/04.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/combat_idle/05.png"
+			],
+			"grip_errors_source_px": [
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				}
+			],
+			"loop": true,
+			"pose_holds": {},
+			"review": "source/refine_v06/REVIEW.md",
+			"size": [
+				384,
+				384
+			],
+			"source": "source/refine_v06/hero_right_editable.tscn",
+			"status": "draft"
+		},
+		"combat_victory": {
+			"anchor": [
+				192,
+				348
+			],
+			"bounds": [
+				[
+					136,
+					56,
+					249,
+					353
+				],
+				[
+					134,
+					55,
+					248,
+					353
+				],
+				[
+					131,
+					54,
+					247,
+					352
+				],
+				[
+					130,
+					53,
+					247,
+					351
+				],
+				[
+					124,
+					52,
+					253,
+					351
+				],
+				[
+					133,
+					53,
+					251,
+					351
+				],
+				[
+					129,
+					53,
+					249,
+					351
+				],
+				[
+					130,
+					53,
+					247,
+					351
+				]
+			],
+			"effects_frames": [
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/combat_victory/00.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/combat_victory/01.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/combat_victory/02.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/combat_victory/03.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/combat_victory/04.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/combat_victory/05.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/combat_victory/06.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/combat_victory/07.png"
+			],
+			"events": {},
+			"foot_contacts_map_px": [
+				{
+					"left": [
+						61.5000190734863,
+						115.998329162598
+					],
+					"right": [
+						66.5000228881836,
+						115.998329162598
+					]
+				},
+				{
+					"left": [
+						61.5013694763184,
+						115.878349304199
+					],
+					"right": [
+						66.5013656616211,
+						115.878349304199
+					]
+				},
+				{
+					"left": [
+						61.5037117004395,
+						115.6650390625
+					],
+					"right": [
+						66.5037155151367,
+						115.6650390625
+					]
+				},
+				{
+					"left": [
+						61.506404876709,
+						115.411735534668
+					],
+					"right": [
+						66.5064010620117,
+						115.411735534668
+					]
+				},
+				{
+					"left": [
+						61.5072326660156,
+						115.331748962402
+					],
+					"right": [
+						66.5072326660156,
+						115.331748962402
+					]
+				},
+				{
+					"left": [
+						61.5068206787109,
+						115.371742248535
+					],
+					"right": [
+						66.5068206787109,
+						115.371742248535
+					]
+				},
+				{
+					"left": [
+						61.5064735412598,
+						115.405067443848
+					],
+					"right": [
+						66.506477355957,
+						115.405067443848
+					]
+				},
+				{
+					"left": [
+						61.5061950683594,
+						115.431732177734
+					],
+					"right": [
+						66.5061950683594,
+						115.431732177734
+					]
+				}
+			],
+			"fps": 12,
+			"frames": [
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/combat_victory/00.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/combat_victory/01.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/combat_victory/02.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/combat_victory/03.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/combat_victory/04.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/combat_victory/05.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/combat_victory/06.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/combat_victory/07.png"
+			],
+			"grip_errors_source_px": [
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				}
+			],
+			"loop": false,
+			"pose_holds": {},
+			"review": "source/refine_v06/REVIEW.md",
+			"size": [
+				384,
+				384
+			],
+			"source": "source/refine_v06/hero_right_editable.tscn",
+			"status": "draft"
+		},
+		"map_idle_down": {
+			"anchor": [
+				64,
+				116
+			],
+			"bounds": [
+				[
+					40,
+					16,
+					89,
+					119
+				],
+				[
+					39,
+					16,
+					88,
+					119
+				],
+				[
+					39,
+					16,
+					88,
+					119
+				],
+				[
+					41,
+					16,
+					89,
+					119
+				]
+			],
+			"effects_frames": [
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/map_idle_down/00.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/map_idle_down/01.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/map_idle_down/02.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/map_idle_down/03.png"
+			],
+			"events": {},
+			"foot_contacts_map_px": [
+				{
+					"left": [
+						68.3333511352539,
+						115.998329162598
+					],
+					"right": [
+						59.6666870117188,
+						115.998329162598
+					]
+				},
+				{
+					"left": [
+						68.3359603881836,
+						115.765022277832
+					],
+					"right": [
+						59.6692924499512,
+						115.765022277832
+					]
+				},
+				{
+					"left": [
+						68.3333511352539,
+						115.998329162598
+					],
+					"right": [
+						59.6666870117188,
+						115.998329162598
+					]
+				},
+				{
+					"left": [
+						68.3333358764648,
+						116.0
+					],
+					"right": [
+						59.6666679382324,
+						116.0
+					]
+				}
+			],
+			"fps": 6,
+			"frames": [
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/map_idle_down/00.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/map_idle_down/01.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/map_idle_down/02.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/map_idle_down/03.png"
+			],
+			"grip_errors_source_px": [
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				}
+			],
+			"loop": true,
+			"pose_holds": {},
+			"review": "source/refine_v06/REVIEW.md",
+			"size": [
+				128,
+				128
+			],
+			"source": "source/refine_v06/hero_down_editable.tscn",
+			"status": "draft"
+		},
+		"map_idle_left": {
+			"anchor": [
+				64,
+				116
+			],
+			"bounds": [
+				[
+					44,
+					17,
+					85,
+					119
+				],
+				[
+					44,
+					16,
+					84,
+					119
+				],
+				[
+					44,
+					17,
+					84,
+					119
+				],
+				[
+					44,
+					17,
+					86,
+					119
+				]
+			],
+			"effects_frames": [
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/map_idle_left/00.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/map_idle_left/01.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/map_idle_left/02.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/map_idle_left/03.png"
+			],
+			"events": {},
+			"foot_contacts_map_px": [
+				{
+					"left": [
+						61.4999809265137,
+						115.998329162598
+					],
+					"right": [
+						66.4999771118164,
+						115.998329162598
+					]
+				},
+				{
+					"left": [
+						61.4973754882813,
+						115.765022277832
+					],
+					"right": [
+						66.4973754882813,
+						115.765022277832
+					]
+				},
+				{
+					"left": [
+						61.4999809265137,
+						115.998329162598
+					],
+					"right": [
+						66.4999771118164,
+						115.998329162598
+					]
+				},
+				{
+					"left": [
+						61.5,
+						116.0
+					],
+					"right": [
+						66.5,
+						116.0
+					]
+				}
+			],
+			"fps": 6,
+			"frames": [
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/map_idle_left/00.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/map_idle_left/01.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/map_idle_left/02.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/map_idle_left/03.png"
+			],
+			"grip_errors_source_px": [
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				}
+			],
+			"loop": true,
+			"pose_holds": {},
+			"review": "source/refine_v06/REVIEW.md",
+			"size": [
+				128,
+				128
+			],
+			"source": "source/refine_v06/hero_left_editable.tscn",
+			"status": "draft"
+		},
+		"map_idle_right": {
+			"anchor": [
+				64,
+				116
+			],
+			"bounds": [
+				[
+					44,
+					17,
+					84,
+					120
+				],
+				[
+					42,
+					17,
+					83,
+					119
+				],
+				[
+					43,
+					17,
+					83,
+					120
+				],
+				[
+					44,
+					18,
+					84,
+					120
+				]
+			],
+			"effects_frames": [
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/map_idle_right/00.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/map_idle_right/01.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/map_idle_right/02.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/map_idle_right/03.png"
+			],
+			"events": {},
+			"foot_contacts_map_px": [
+				{
+					"left": [
+						61.5000190734863,
+						115.998329162598
+					],
+					"right": [
+						66.5000228881836,
+						115.998329162598
+					]
+				},
+				{
+					"left": [
+						61.5026245117188,
+						115.765022277832
+					],
+					"right": [
+						66.5026245117188,
+						115.765022277832
+					]
+				},
+				{
+					"left": [
+						61.5000190734863,
+						115.998329162598
+					],
+					"right": [
+						66.5000228881836,
+						115.998329162598
+					]
+				},
+				{
+					"left": [
+						61.5,
+						116.0
+					],
+					"right": [
+						66.5,
+						116.0
+					]
+				}
+			],
+			"fps": 6,
+			"frames": [
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/map_idle_right/00.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/map_idle_right/01.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/map_idle_right/02.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/map_idle_right/03.png"
+			],
+			"grip_errors_source_px": [
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				}
+			],
+			"loop": true,
+			"pose_holds": {},
+			"review": "source/refine_v06/REVIEW.md",
+			"size": [
+				128,
+				128
+			],
+			"source": "source/refine_v06/hero_right_editable.tscn",
+			"status": "draft"
+		},
+		"map_idle_up": {
+			"anchor": [
+				64,
+				116
+			],
+			"bounds": [
+				[
+					41,
+					19,
+					88,
+					119
+				],
+				[
+					40,
+					19,
+					87,
+					119
+				],
+				[
+					40,
+					19,
+					87,
+					119
+				],
+				[
+					42,
+					19,
+					88,
+					119
+				]
+			],
+			"effects_frames": [
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/map_idle_up/00.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/map_idle_up/01.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/map_idle_up/02.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/map_idle_up/03.png"
+			],
+			"events": {},
+			"foot_contacts_map_px": [
+				{
+					"left": [
+						59.6666870117188,
+						115.998329162598
+					],
+					"right": [
+						68.3333511352539,
+						115.998329162598
+					]
+				},
+				{
+					"left": [
+						59.6692924499512,
+						115.765022277832
+					],
+					"right": [
+						68.3359603881836,
+						115.765022277832
+					]
+				},
+				{
+					"left": [
+						59.6666870117188,
+						115.998329162598
+					],
+					"right": [
+						68.3333511352539,
+						115.998329162598
+					]
+				},
+				{
+					"left": [
+						59.6666679382324,
+						116.0
+					],
+					"right": [
+						68.3333358764648,
+						116.0
+					]
+				}
+			],
+			"fps": 6,
+			"frames": [
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/map_idle_up/00.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/map_idle_up/01.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/map_idle_up/02.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/map_idle_up/03.png"
+			],
+			"grip_errors_source_px": [
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				}
+			],
+			"loop": true,
+			"pose_holds": {},
+			"review": "source/refine_v06/REVIEW.md",
+			"size": [
+				128,
+				128
+			],
+			"source": "source/refine_v06/hero_up_editable.tscn",
+			"status": "draft"
+		},
+		"map_interact_down": {
+			"anchor": [
+				64,
+				116
+			],
+			"bounds": [
+				[
+					40,
+					16,
+					89,
+					119
+				],
+				[
+					39,
+					16,
+					91,
+					119
+				],
+				[
+					40,
+					16,
+					98,
+					119
+				],
+				[
+					41,
+					16,
+					90,
+					119
+				]
+			],
+			"effects_frames": [
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/map_interact_down/00.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/map_interact_down/01.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/map_interact_down/02.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/map_interact_down/03.png"
+			],
+			"events": {},
+			"foot_contacts_map_px": [
+				{
+					"left": [
+						68.3333511352539,
+						115.998329162598
+					],
+					"right": [
+						59.6666870117188,
+						115.998329162598
+					]
+				},
+				{
+					"left": [
+						68.3381958007813,
+						115.763771057129
+					],
+					"right": [
+						59.6715278625488,
+						115.763771057129
+					]
+				},
+				{
+					"left": [
+						68.3335037231445,
+						115.994026184082
+					],
+					"right": [
+						59.6668395996094,
+						115.994026184082
+					]
+				},
+				{
+					"left": [
+						68.3333358764648,
+						115.999992370605
+					],
+					"right": [
+						59.6666679382324,
+						115.999992370605
+					]
+				}
+			],
+			"fps": 10,
+			"frames": [
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/map_interact_down/00.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/map_interact_down/01.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/map_interact_down/02.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/map_interact_down/03.png"
+			],
+			"grip_errors_source_px": [
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				}
+			],
+			"loop": false,
+			"pose_holds": {},
+			"review": "source/refine_v06/REVIEW.md",
+			"size": [
+				128,
+				128
+			],
+			"source": "source/refine_v06/hero_down_editable.tscn",
+			"status": "draft"
+		},
+		"map_interact_left": {
+			"anchor": [
+				64,
+				116
+			],
+			"bounds": [
+				[
+					44,
+					17,
+					85,
+					119
+				],
+				[
+					43,
+					17,
+					83,
+					119
+				],
+				[
+					40,
+					17,
+					83,
+					119
+				],
+				[
+					44,
+					17,
+					85,
+					119
+				]
+			],
+			"effects_frames": [
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/map_interact_left/00.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/map_interact_left/01.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/map_interact_left/02.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/map_interact_left/03.png"
+			],
+			"events": {},
+			"foot_contacts_map_px": [
+				{
+					"left": [
+						61.4999809265137,
+						115.998329162598
+					],
+					"right": [
+						66.4999771118164,
+						115.998329162598
+					]
+				},
+				{
+					"left": [
+						61.4951438903809,
+						115.763771057129
+					],
+					"right": [
+						66.4951400756836,
+						115.763771057129
+					]
+				},
+				{
+					"left": [
+						61.4998321533203,
+						115.994026184082
+					],
+					"right": [
+						66.4998321533203,
+						115.994026184082
+					]
+				},
+				{
+					"left": [
+						61.5,
+						115.999992370605
+					],
+					"right": [
+						66.5,
+						115.999992370605
+					]
+				}
+			],
+			"fps": 10,
+			"frames": [
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/map_interact_left/00.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/map_interact_left/01.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/map_interact_left/02.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/map_interact_left/03.png"
+			],
+			"grip_errors_source_px": [
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				}
+			],
+			"loop": false,
+			"pose_holds": {},
+			"review": "source/refine_v06/REVIEW.md",
+			"size": [
+				128,
+				128
+			],
+			"source": "source/refine_v06/hero_left_editable.tscn",
+			"status": "draft"
+		},
+		"map_interact_right": {
+			"anchor": [
+				64,
+				116
+			],
+			"bounds": [
+				[
+					44,
+					17,
+					84,
+					120
+				],
+				[
+					43,
+					17,
+					84,
+					119
+				],
+				[
+					44,
+					17,
+					88,
+					120
+				],
+				[
+					44,
+					18,
+					84,
+					120
+				]
+			],
+			"effects_frames": [
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/map_interact_right/00.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/map_interact_right/01.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/map_interact_right/02.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/map_interact_right/03.png"
+			],
+			"events": {},
+			"foot_contacts_map_px": [
+				{
+					"left": [
+						61.5000190734863,
+						115.998329162598
+					],
+					"right": [
+						66.5000228881836,
+						115.998329162598
+					]
+				},
+				{
+					"left": [
+						61.5048637390137,
+						115.763771057129
+					],
+					"right": [
+						66.5048599243164,
+						115.763771057129
+					]
+				},
+				{
+					"left": [
+						61.500171661377,
+						115.994026184082
+					],
+					"right": [
+						66.5001754760742,
+						115.994026184082
+					]
+				},
+				{
+					"left": [
+						61.5,
+						115.999992370605
+					],
+					"right": [
+						66.5,
+						115.999992370605
+					]
+				}
+			],
+			"fps": 10,
+			"frames": [
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/map_interact_right/00.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/map_interact_right/01.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/map_interact_right/02.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/map_interact_right/03.png"
+			],
+			"grip_errors_source_px": [
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				}
+			],
+			"loop": false,
+			"pose_holds": {},
+			"review": "source/refine_v06/REVIEW.md",
+			"size": [
+				128,
+				128
+			],
+			"source": "source/refine_v06/hero_right_editable.tscn",
+			"status": "draft"
+		},
+		"map_interact_up": {
+			"anchor": [
+				64,
+				116
+			],
+			"bounds": [
+				[
+					41,
+					19,
+					88,
+					119
+				],
+				[
+					40,
+					19,
+					87,
+					119
+				],
+				[
+					41,
+					19,
+					88,
+					119
+				],
+				[
+					42,
+					19,
+					89,
+					119
+				]
+			],
+			"effects_frames": [
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/map_interact_up/00.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/map_interact_up/01.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/map_interact_up/02.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/map_interact_up/03.png"
+			],
+			"events": {},
+			"foot_contacts_map_px": [
+				{
+					"left": [
+						59.6666870117188,
+						115.998329162598
+					],
+					"right": [
+						68.3333511352539,
+						115.998329162598
+					]
+				},
+				{
+					"left": [
+						59.6715278625488,
+						115.763771057129
+					],
+					"right": [
+						68.3381958007813,
+						115.763771057129
+					]
+				},
+				{
+					"left": [
+						59.6668395996094,
+						115.994026184082
+					],
+					"right": [
+						68.3335037231445,
+						115.994026184082
+					]
+				},
+				{
+					"left": [
+						59.6666679382324,
+						115.999992370605
+					],
+					"right": [
+						68.3333358764648,
+						115.999992370605
+					]
+				}
+			],
+			"fps": 10,
+			"frames": [
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/map_interact_up/00.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/map_interact_up/01.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/map_interact_up/02.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/map_interact_up/03.png"
+			],
+			"grip_errors_source_px": [
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				}
+			],
+			"loop": false,
+			"pose_holds": {},
+			"review": "source/refine_v06/REVIEW.md",
+			"size": [
+				128,
+				128
+			],
+			"source": "source/refine_v06/hero_up_editable.tscn",
+			"status": "draft"
+		},
+		"map_walk_down": {
+			"anchor": [
+				64,
+				116
+			],
+			"bounds": [
+				[
+					40,
+					16,
+					89,
+					119
+				],
+				[
+					40,
+					15,
+					88,
+					118
+				],
+				[
+					39,
+					15,
+					88,
+					118
+				],
+				[
+					39,
+					16,
+					88,
+					119
+				],
+				[
+					40,
+					15,
+					88,
+					118
+				],
+				[
+					40,
+					15,
+					89,
+					118
+				]
+			],
+			"effects_frames": [
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/map_walk_down/00.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/map_walk_down/01.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/map_walk_down/02.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/map_walk_down/03.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/map_walk_down/04.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/map_walk_down/05.png"
+			],
+			"events": {},
+			"foot_contacts_map_px": [
+				{
+					"left": [
+						67.5005416870117,
+						115.986366271973
+					],
+					"right": [
+						60.4997673034668,
+						115.986366271973
+					]
+				},
+				{
+					"left": [
+						67.9166641235352,
+						111.525535583496
+					],
+					"right": [
+						60.0872840881348,
+						114.987373352051
+					]
+				},
+				{
+					"left": [
+						68.75,
+						111.525535583496
+					],
+					"right": [
+						59.2822456359863,
+						114.981872558594
+					]
+				},
+				{
+					"left": [
+						69.1664352416992,
+						115.986366271973
+					],
+					"right": [
+						58.8338775634766,
+						115.986366271973
+					]
+				},
+				{
+					"left": [
+						68.7392807006836,
+						114.981407165527
+					],
+					"right": [
+						59.2500038146973,
+						111.525520324707
+					]
+				},
+				{
+					"left": [
+						67.9341201782227,
+						114.987510681152
+					],
+					"right": [
+						60.0833320617676,
+						111.525535583496
+					]
+				}
+			],
+			"fps": 12,
+			"frames": [
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/map_walk_down/00.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/map_walk_down/01.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/map_walk_down/02.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/map_walk_down/03.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/map_walk_down/04.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/map_walk_down/05.png"
+			],
+			"grip_errors_source_px": [
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				}
+			],
+			"loop": true,
+			"pose_holds": {},
+			"review": "source/refine_v06/REVIEW.md",
+			"size": [
+				128,
+				128
+			],
+			"source": "source/refine_v06/hero_down_editable.tscn",
+			"status": "draft"
+		},
+		"map_walk_left": {
+			"anchor": [
+				64,
+				116
+			],
+			"bounds": [
+				[
+					44,
+					17,
+					85,
+					119
+				],
+				[
+					45,
+					15,
+					84,
+					118
+				],
+				[
+					45,
+					15,
+					84,
+					118
+				],
+				[
+					44,
+					17,
+					84,
+					119
+				],
+				[
+					43,
+					16,
+					85,
+					118
+				],
+				[
+					43,
+					16,
+					86,
+					118
+				]
+			],
+			"effects_frames": [
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/map_walk_left/00.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/map_walk_left/01.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/map_walk_left/02.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/map_walk_left/03.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/map_walk_left/04.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/map_walk_left/05.png"
+			],
+			"events": {},
+			"foot_contacts_map_px": [
+				{
+					"left": [
+						65.9427185058594,
+						115.656028747559
+					],
+					"right": [
+						62.0496520996094,
+						115.654846191406
+					]
+				},
+				{
+					"left": [
+						63.75,
+						111.525535583496
+					],
+					"right": [
+						64.3204574584961,
+						114.906074523926
+					]
+				},
+				{
+					"left": [
+						59.25,
+						111.525535583496
+					],
+					"right": [
+						68.6565551757813,
+						114.90779876709
+					]
+				},
+				{
+					"left": [
+						57.0496520996094,
+						115.654846191406
+					],
+					"right": [
+						70.9427185058594,
+						115.656028747559
+					]
+				},
+				{
+					"left": [
+						59.3204612731934,
+						114.906074523926
+					],
+					"right": [
+						68.75,
+						111.525535583496
+					]
+				},
+				{
+					"left": [
+						63.6565551757813,
+						114.90779876709
+					],
+					"right": [
+						64.25,
+						111.525535583496
+					]
+				}
+			],
+			"fps": 12,
+			"frames": [
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/map_walk_left/00.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/map_walk_left/01.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/map_walk_left/02.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/map_walk_left/03.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/map_walk_left/04.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/map_walk_left/05.png"
+			],
+			"grip_errors_source_px": [
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				}
+			],
+			"loop": true,
+			"pose_holds": {},
+			"review": "source/refine_v06/REVIEW.md",
+			"size": [
+				128,
+				128
+			],
+			"source": "source/refine_v06/hero_left_editable.tscn",
+			"status": "draft"
+		},
+		"map_walk_right": {
+			"anchor": [
+				64,
+				116
+			],
+			"bounds": [
+				[
+					44,
+					17,
+					84,
+					119
+				],
+				[
+					43,
+					16,
+					84,
+					118
+				],
+				[
+					42,
+					16,
+					84,
+					118
+				],
+				[
+					43,
+					17,
+					83,
+					119
+				],
+				[
+					43,
+					16,
+					83,
+					118
+				],
+				[
+					43,
+					16,
+					84,
+					118
+				]
+			],
+			"effects_frames": [
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/map_walk_right/00.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/map_walk_right/01.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/map_walk_right/02.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/map_walk_right/03.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/map_walk_right/04.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/map_walk_right/05.png"
+			],
+			"events": {},
+			"foot_contacts_map_px": [
+				{
+					"left": [
+						57.0572814941406,
+						115.656028747559
+					],
+					"right": [
+						70.9503479003906,
+						115.654846191406
+					]
+				},
+				{
+					"left": [
+						59.25,
+						111.525535583496
+					],
+					"right": [
+						68.6795425415039,
+						114.906074523926
+					]
+				},
+				{
+					"left": [
+						63.75,
+						111.525535583496
+					],
+					"right": [
+						64.3434448242188,
+						114.90779876709
+					]
+				},
+				{
+					"left": [
+						65.9503479003906,
+						115.654846191406
+					],
+					"right": [
+						62.0572814941406,
+						115.656028747559
+					]
+				},
+				{
+					"left": [
+						63.6795387268066,
+						114.906074523926
+					],
+					"right": [
+						64.25,
+						111.525535583496
+					]
+				},
+				{
+					"left": [
+						59.3434448242188,
+						114.90779876709
+					],
+					"right": [
+						68.75,
+						111.525535583496
+					]
+				}
+			],
+			"fps": 12,
+			"frames": [
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/map_walk_right/00.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/map_walk_right/01.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/map_walk_right/02.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/map_walk_right/03.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/map_walk_right/04.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/map_walk_right/05.png"
+			],
+			"grip_errors_source_px": [
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				}
+			],
+			"loop": true,
+			"pose_holds": {},
+			"review": "source/refine_v06/REVIEW.md",
+			"size": [
+				128,
+				128
+			],
+			"source": "source/refine_v06/hero_right_editable.tscn",
+			"status": "draft"
+		},
+		"map_walk_up": {
+			"anchor": [
+				64,
+				116
+			],
+			"bounds": [
+				[
+					41,
+					19,
+					88,
+					119
+				],
+				[
+					41,
+					18,
+					88,
+					117
+				],
+				[
+					40,
+					18,
+					87,
+					117
+				],
+				[
+					40,
+					19,
+					87,
+					119
+				],
+				[
+					41,
+					18,
+					87,
+					118
+				],
+				[
+					41,
+					18,
+					88,
+					118
+				]
+			],
+			"effects_frames": [
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/map_walk_up/00.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/map_walk_up/01.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/map_walk_up/02.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/map_walk_up/03.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/map_walk_up/04.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/effects/map_walk_up/05.png"
+			],
+			"events": {},
+			"foot_contacts_map_px": [
+				{
+					"left": [
+						58.8338775634766,
+						115.986366271973
+					],
+					"right": [
+						69.1664352416992,
+						115.986366271973
+					]
+				},
+				{
+					"left": [
+						59.25,
+						111.525535583496
+					],
+					"right": [
+						68.7539520263672,
+						114.987373352051
+					]
+				},
+				{
+					"left": [
+						60.0833320617676,
+						111.525535583496
+					],
+					"right": [
+						67.9489135742188,
+						114.981872558594
+					]
+				},
+				{
+					"left": [
+						60.4997673034668,
+						115.986366271973
+					],
+					"right": [
+						67.5005416870117,
+						115.986366271973
+					]
+				},
+				{
+					"left": [
+						60.0726127624512,
+						114.981407165527
+					],
+					"right": [
+						67.9166717529297,
+						111.525520324707
+					]
+				},
+				{
+					"left": [
+						59.2674560546875,
+						114.987510681152
+					],
+					"right": [
+						68.75,
+						111.525535583496
+					]
+				}
+			],
+			"fps": 12,
+			"frames": [
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/map_walk_up/00.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/map_walk_up/01.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/map_walk_up/02.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/map_walk_up/03.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/map_walk_up/04.png",
+				"res://assets/characters/hero/phase3/source/refine_v06/frames/map_walk_up/05.png"
+			],
+			"grip_errors_source_px": [
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				},
+				{
+					"lamp_error": 0.0,
+					"sword_error": 0.0
+				}
+			],
+			"loop": true,
+			"pose_holds": {},
+			"review": "source/refine_v06/REVIEW.md",
+			"size": [
+				128,
+				128
+			],
+			"source": "source/refine_v06/hero_up_editable.tscn",
+			"status": "draft"
+		}
+	},
+	"handedness": "right_sword_left_lantern",
+	"human_signoff": false,
+	"mirrored": false,
+	"source_canvas": [
+		768,
+		768
+	],
+	"status": "draft",
+	"version": 1
+}

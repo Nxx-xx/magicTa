@@ -1,0 +1,163 @@
+{
+  "entity": "p3_vault_knight",
+  "date": "2026-10-02",
+  "review_method": "contact sheets plus native/browser playback; agent visual review",
+  "human_signoff": false,
+  "new_imagegen_originals": 1,
+  "scope": "battle only; map_idle authored by separate map group",
+  "source_status": "draft",
+  "publication_owner": "coordinator; review is not production publication",
+  "source_rig_sha256": "571a77c47af63b4135f1177c96ff80a4a22a6af0447a8ba587f62969c30fc5bd",
+  "draft_manifest_sha256": "0b9c01b5a58bdcc4475de84c973dd94ee556309546e80fcdb4975dde58a32973",
+  "native_scene_sha256": "be11d2993aa147946dc4807ccbd2e757a6851f4ef74e5f8db24acbbb86bed49f",
+  "original_accessories_sha256": "44420bbe223793ab480d0b476f0ceab571362112ffa2ad81335c23d00249956b",
+  "base_provenance": {
+    "base_entity": "knight",
+    "base_rig": "assets/monsters/phase3/source/parallel_v05/battle/knight/knight_rig.json",
+    "base_rig_sha256": "8778e3e3d2159a41ce9458beb8139d70db74a95f09c2eec15b18fd84c4e9bbd9",
+    "originals": {
+      "knight_components.png": "570c4f7ff2295b5f3561c998e982ce6d64252dd891a94cdc44d3b9b20221ef99"
+    }
+  },
+  "review_observation": "All exact frames inspected in contact sheets. Browser controls exercised at original and 0.25 speeds, paused/stepped and effect toggled; screenshots and counters inspected at key poses. Every action also inspected at 26/33/47px. This is agent visual inspection, not continuous human motion signoff.",
+  "actions": {
+    "idle": {
+      "decision": "accepted",
+      "draft_manifest": "p3_vault_knight_draft_manifest.json",
+      "source_action": "idle",
+      "frame_slots": 4,
+      "pose_holds": {},
+      "notes": "Independent three-key crown, lock pauldron and vault shield retain identity with glints disabled; cape/cloth secondary movement.",
+      "frame_sha256": [
+        "4bbb1f0d406f40a0050c23aa5d36883089969241b70e40ed77babaf8b18b81b6",
+        "60801b66f963df87d15d31099cc9410db66647053e5af7aef9d482c33aa0bb90",
+        "3e949d14b0211d562f8934cedc5d12fff5a44d74664f3bf479cc12cd7bc1ca04",
+        "0dd5e348d0cdb4fecdcacda8b3f3dc61d4eb779c446f31fa38ee0431dd02978d"
+      ],
+      "effects_sha256": [
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de"
+      ],
+      "combined_sha256": [
+        "4bbb1f0d406f40a0050c23aa5d36883089969241b70e40ed77babaf8b18b81b6",
+        "60801b66f963df87d15d31099cc9410db66647053e5af7aef9d482c33aa0bb90",
+        "3e949d14b0211d562f8934cedc5d12fff5a44d74664f3bf479cc12cd7bc1ca04",
+        "0dd5e348d0cdb4fecdcacda8b3f3dc61d4eb779c446f31fa38ee0431dd02978d"
+      ]
+    },
+    "attack": {
+      "decision": "accepted",
+      "draft_manifest": "p3_vault_knight_draft_manifest.json",
+      "source_action": "attack",
+      "frame_slots": 6,
+      "pose_holds": {
+        "5": 0.0
+      },
+      "notes": "Shoulder/elbow and sword wrist raise then strike left at 3; crown/lock shoulder follow; final frame 5 to 0 return hold declared.",
+      "frame_sha256": [
+        "4bbb1f0d406f40a0050c23aa5d36883089969241b70e40ed77babaf8b18b81b6",
+        "6a98d9da105922d886d3c025f3e19cc5eacdb7934a7f6c94d80cc23a1d02ebe5",
+        "29931cbfe47c8a8ff0d76438efa7842ca6bce23e335d28f4293464d1046e50c4",
+        "cb7a3072491b38a5faa67ad6370692e83b9b12c91e9c378a6b37dbfe32969894",
+        "3f0cb19b88f4f43a654bbb002321acc93ebb5ad144f6ae719ce66c441654b086",
+        "4bbb1f0d406f40a0050c23aa5d36883089969241b70e40ed77babaf8b18b81b6"
+      ],
+      "effects_sha256": [
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "bcc48a1ce88f674a8e99094912e2ca87b7b4132437d34ae809403441c1ab0aa7",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de"
+      ],
+      "combined_sha256": [
+        "4bbb1f0d406f40a0050c23aa5d36883089969241b70e40ed77babaf8b18b81b6",
+        "6a98d9da105922d886d3c025f3e19cc5eacdb7934a7f6c94d80cc23a1d02ebe5",
+        "29931cbfe47c8a8ff0d76438efa7842ca6bce23e335d28f4293464d1046e50c4",
+        "4930fc3f477dbe754e638908f260df18bd7f49e6a9391b33036bcca81914f7cd",
+        "3f0cb19b88f4f43a654bbb002321acc93ebb5ad144f6ae719ce66c441654b086",
+        "4bbb1f0d406f40a0050c23aa5d36883089969241b70e40ed77babaf8b18b81b6"
+      ]
+    },
+    "hit": {
+      "decision": "accepted",
+      "draft_manifest": "p3_vault_knight_draft_manifest.json",
+      "source_action": "hit",
+      "frame_slots": 2,
+      "pose_holds": {},
+      "notes": "Helmet/chest recoil and recover while crown and lock shoulder remain attached.",
+      "frame_sha256": [
+        "2edc3a7962875591c4ee50c631b3eb86dcc59a08b7f1d9d1fdf86fc664a8c1d9",
+        "23cea7a7ffa5474f30473f423e5c34a7c616ba1d571b7b48105988794cddf117"
+      ],
+      "effects_sha256": [
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de"
+      ],
+      "combined_sha256": [
+        "2edc3a7962875591c4ee50c631b3eb86dcc59a08b7f1d9d1fdf86fc664a8c1d9",
+        "23cea7a7ffa5474f30473f423e5c34a7c616ba1d571b7b48105988794cddf117"
+      ]
+    },
+    "defeat": {
+      "decision": "accepted",
+      "draft_manifest": "p3_vault_knight_draft_manifest.json",
+      "source_action": "defeat",
+      "frame_slots": 6,
+      "pose_holds": {},
+      "notes": "Body kneels and sword lowers/releases at 2, ground 5; crown/lock shoulder and vault shield persist without clipping.",
+      "frame_sha256": [
+        "c4e142e05811438c6821324cc10534eccd21f32924ef7069ce9684009cc71ffa",
+        "ff2349fec39e354f402ef819f02bb959095c206664d20342c459661b6ae12cf3",
+        "49247300fab3e2205dca1df82b2557342e68bb3caf82e98ed9a8517343000880",
+        "70b19a848dad613e076dc8c9783be70b54f2afd89d26660b4260e568474de2d8",
+        "4433e53f8c812f3742fe7ee62a458c8811042310a410fc7ed263e3b5a9766fd6",
+        "e08c94f6f34461868354ff401d07e178c475c719a6cd0bc543f539b0bda8e6bf"
+      ],
+      "effects_sha256": [
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de"
+      ],
+      "combined_sha256": [
+        "c4e142e05811438c6821324cc10534eccd21f32924ef7069ce9684009cc71ffa",
+        "ff2349fec39e354f402ef819f02bb959095c206664d20342c459661b6ae12cf3",
+        "49247300fab3e2205dca1df82b2557342e68bb3caf82e98ed9a8517343000880",
+        "70b19a848dad613e076dc8c9783be70b54f2afd89d26660b4260e568474de2d8",
+        "4433e53f8c812f3742fe7ee62a458c8811042310a410fc7ed263e3b5a9766fd6",
+        "e08c94f6f34461868354ff401d07e178c475c719a6cd0bc543f539b0bda8e6bf"
+      ]
+    },
+    "threat": {
+      "decision": "accepted",
+      "draft_manifest": "p3_vault_knight_draft_manifest.json",
+      "source_action": "threat",
+      "frame_slots": 4,
+      "pose_holds": {},
+      "notes": "Sword arm folds then presents raised threat posture at 2; head inclines and cape counter-swings; independent gold glint optional.",
+      "frame_sha256": [
+        "2a269aa8e819212ff0b86c823ace0d4e258bc37349fa326c917a14e79a524112",
+        "b42b1ebec1d3a0a8ee8a5ea0ed83744350c641d93bbdd55f12e477147d10cf3e",
+        "0cb353b07a45fc9995793203bce8818fe259028fa8a5e1ca63b514682d9a942a",
+        "907ab680cc103137fccc8ab48b201ae0deeefb4037c6e33d9aa42aae97b73585"
+      ],
+      "effects_sha256": [
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "bf320df692ec1946e05129d9ff2b354866cd4a3679f5942d9d8a8eff1105bb7a",
+        "f73fd8e71241350d7e9533c0062f0c675dec3a426ed2d8d2f853ef03d8f7bcb3",
+        "73e6e667fb24779138aa106d88283c4ed14d771d1424337f67cbb6dd3232f6ed"
+      ],
+      "combined_sha256": [
+        "2a269aa8e819212ff0b86c823ace0d4e258bc37349fa326c917a14e79a524112",
+        "5d5b6aefc0e5be430c45b043d6866f68abf8cf66a86396a20cddcb95f45b4bf3",
+        "9f021a1aa066b9e380f75369a93df7ca3502da2a61654e445c47dbbfd9ded789",
+        "5adc3f3d35f990c6247c317fbe35b3be82eb8b6bfd0c829cd122a7163baacc2a"
+      ]
+    }
+  }
+}

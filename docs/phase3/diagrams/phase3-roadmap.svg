@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1560" height="1120" viewBox="0 0 1560 1120" role="img">
+<title>第三阶段 / 从构筑选择到完整重玩循环</title>
+<desc>五份设计文档 · 保留十层与确定性预览 · 首个交付切片：前三种机制遗物＋前五层＋誓约遗迹</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#72d4c4"/></marker></defs>
+<rect width="1560" height="1120" fill="#101923"/>
+<text x="48" y="58" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="32" text-anchor="start">第三阶段 / 从构筑选择到完整重玩循环</text>
+<text x="48" y="94" fill="#a9bfcc" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="17" text-anchor="start">五份设计文档 · 保留十层与确定性预览 · 首个交付切片：前三种机制遗物＋前五层＋誓约遗迹</text>
+<rect x="48" y="140" width="440" height="190" rx="12" fill="#1b2937" stroke="#344a5a"/>
+<rect x="48" y="140" width="5" height="190" rx="2" fill="#72d4c4" stroke="#72d4c4"/>
+<text x="70" y="176" fill="#72d4c4" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="23" text-anchor="start">01 构筑与物品</text>
+<text x="70" y="210" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">22 件现有物品作为基线</text>
+<text x="70" y="240" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">6 件新增机制遗物，分两批开放</text>
+<text x="70" y="270" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">先检查阈值收益，再调投放与价格</text>
+<rect x="560" y="140" width="440" height="190" rx="12" fill="#1b2937" stroke="#344a5a"/>
+<rect x="560" y="140" width="5" height="190" rx="2" fill="#72d4c4" stroke="#72d4c4"/>
+<text x="582" y="176" fill="#72d4c4" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="23" text-anchor="start">02 探索与遗迹</text>
+<text x="582" y="210" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">三事件槽 → 三座可回访遗迹</text>
+<text x="582" y="240" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">清晰成本 / 互斥收益 / 免费离开</text>
+<text x="582" y="270" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">固定成长、钥匙与安全主路保留</text>
+<rect x="1072" y="140" width="440" height="190" rx="12" fill="#1b2937" stroke="#344a5a"/>
+<rect x="1072" y="140" width="5" height="190" rx="2" fill="#72d4c4" stroke="#72d4c4"/>
+<text x="1094" y="176" fill="#72d4c4" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="23" text-anchor="start">03 敌人与首领</text>
+<text x="1094" y="210" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">十种敌人基线＋三种可选变体</text>
+<text x="1094" y="240" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">狂怒、石甲与新遗物共用时序</text>
+<text x="1094" y="270" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">攻击、受击、机制、击败动作</text>
+<rect x="305" y="390" width="440" height="190" rx="12" fill="#1b2937" stroke="#344a5a"/>
+<rect x="305" y="390" width="5" height="190" rx="2" fill="#72d4c4" stroke="#72d4c4"/>
+<text x="327" y="426" fill="#72d4c4" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="23" text-anchor="start">04 挑战与解锁</text>
+<text x="327" y="460" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">C0 / C1 / C2 与四种起点</text>
+<text x="327" y="490" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">成就开放新玩法，不无限堆数值</text>
+<text x="327" y="520" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">图鉴、只读复盘、局末一次提交</text>
+<rect x="815" y="390" width="440" height="190" rx="12" fill="#1b2937" stroke="#344a5a"/>
+<rect x="815" y="390" width="5" height="190" rx="2" fill="#72d4c4" stroke="#72d4c4"/>
+<text x="837" y="426" fill="#72d4c4" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="23" text-anchor="start">05 教学与模型动画</text>
+<text x="837" y="460" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">八个操作触发教学节点</text>
+<text x="837" y="490" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">公主四向行走与战斗分层母版</text>
+<text x="837" y="520" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">动画读战报；跳过不影响奖励</text>
+<polyline points="268,330 268,355 525,355 525,390" fill="none" stroke="#72d4c4" stroke-width="2.4" marker-end="url(#arrow)"/>
+<polyline points="780,330 780,365 525,365 525,390" fill="none" stroke="#72d4c4" stroke-width="2.4" marker-end="url(#arrow)"/>
+<polyline points="1292,330 1292,355 1035,355 1035,390" fill="none" stroke="#72d4c4" stroke-width="2.4" marker-end="url(#arrow)"/>
+<polyline points="780,330 780,365 1035,365 1035,390" fill="none" stroke="#72d4c4" stroke-width="2.4" marker-end="url(#arrow)"/>
+<text x="48" y="638" fill="#edca85" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="24" text-anchor="start">开发门槛 / 按结果验收推进</text>
+<rect x="48" y="676" width="268" height="155" rx="12" fill="#1b2937" stroke="#344a5a"/>
+<rect x="48" y="676" width="5" height="155" rx="2" fill="#edca85" stroke="#edca85"/>
+<text x="70" y="712" fill="#edca85" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="23" text-anchor="start">A 规则与兼容</text>
+<text x="70" y="746" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">旧局不改数值</text>
+<text x="70" y="776" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">新效果可追溯</text>
+<polyline points="316,751 344,751" fill="none" stroke="#72d4c4" stroke-width="2.4" marker-end="url(#arrow)"/>
+<rect x="348" y="676" width="268" height="155" rx="12" fill="#1b2937" stroke="#344a5a"/>
+<rect x="348" y="676" width="5" height="155" rx="2" fill="#edca85" stroke="#edca85"/>
+<text x="370" y="712" fill="#edca85" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="23" text-anchor="start">B 前五层闭环</text>
+<text x="370" y="746" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">三路线可过牛头</text>
+<text x="370" y="776" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">R1 可选择可回访</text>
+<polyline points="616,751 644,751" fill="none" stroke="#72d4c4" stroke-width="2.4" marker-end="url(#arrow)"/>
+<rect x="648" y="676" width="268" height="155" rx="12" fill="#1b2937" stroke="#344a5a"/>
+<rect x="648" y="676" width="5" height="155" rx="2" fill="#edca85" stroke="#edca85"/>
+<text x="670" y="712" fill="#edca85" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="23" text-anchor="start">C 动画样板</text>
+<text x="670" y="746" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">四向步态正确</text>
+<text x="670" y="776" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">牛头机制可读</text>
+<polyline points="916,751 944,751" fill="none" stroke="#72d4c4" stroke-width="2.4" marker-end="url(#arrow)"/>
+<rect x="948" y="676" width="268" height="155" rx="12" fill="#1b2937" stroke="#344a5a"/>
+<rect x="948" y="676" width="5" height="155" rx="2" fill="#edca85" stroke="#edca85"/>
+<text x="970" y="712" fill="#edca85" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="23" text-anchor="start">D 十层扩展</text>
+<text x="970" y="746" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">R2 / R3 与后段怪</text>
+<text x="970" y="776" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">零火种完整通关</text>
+<polyline points="1216,751 1244,751" fill="none" stroke="#72d4c4" stroke-width="2.4" marker-end="url(#arrow)"/>
+<rect x="1248" y="676" width="268" height="155" rx="12" fill="#1b2937" stroke="#344a5a"/>
+<rect x="1248" y="676" width="5" height="155" rx="2" fill="#edca85" stroke="#edca85"/>
+<text x="1270" y="712" fill="#edca85" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="23" text-anchor="start">E–G 解锁与验收</text>
+<text x="1270" y="746" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">挑战、教学、图鉴</text>
+<text x="1270" y="776" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">整塔平衡与试玩</text>
+<rect x="48" y="875" width="714" height="156" rx="12" fill="#1b2937" stroke="#344a5a"/>
+<rect x="48" y="875" width="5" height="156" rx="2" fill="#72d4c4" stroke="#72d4c4"/>
+<text x="70" y="911" fill="#72d4c4" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="23" text-anchor="start">交付约束</text>
+<text x="70" y="945" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">装备机会 ≤14，遗物机会 ≤17；三遗迹替换原事件</text>
+<text x="70" y="975" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">所有新数值为初值；不将设计文档视为测试证据</text>
+<rect x="798" y="875" width="714" height="156" rx="12" fill="#1b2937" stroke="#344a5a"/>
+<rect x="798" y="875" width="5" height="156" rx="2" fill="#edca85" stroke="#edca85"/>
+<text x="820" y="911" fill="#edca85" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="23" text-anchor="start">完成证据</text>
+<text x="820" y="945" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">生产接口的参考路线、资源曲线、旧局兼容日志</text>
+<text x="820" y="975" fill="#eef4f7" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" text-anchor="start">逐帧联系图、小尺寸预览、真实界面与试玩记录</text>
+<text x="48" y="1096" fill="#a9bfcc" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="15" text-anchor="start">第三阶段设计稿 v0.1 · 2026-10-01 · 规划图，不代表功能已实现；详细规则以对应正文为准。</text>
+</svg>

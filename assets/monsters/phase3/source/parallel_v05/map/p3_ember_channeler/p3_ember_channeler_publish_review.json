@@ -1,0 +1,40 @@
+{
+  "entity": "p3_ember_channeler",
+  "date": "2026-10-02",
+  "review_method": "contact sheets plus native/browser playback; agent visual review",
+  "human_signoff": false,
+  "new_imagegen_originals": 2,
+  "actions": {
+    "map_idle": {
+      "decision": "accepted",
+      "draft_manifest": "p3_ember_channeler_map_draft_manifest.json",
+      "source_action": "idle",
+      "frame_slots": 4,
+      "pose_holds": {},
+      "notes": "已实际看四姿态contact、原速/.25、暂停逐帧0-3与26/33/47px，检查关闭火焰后仍保留三叉铜法器与三三角炉环实体轮廓。首版四支架炉环为rejected组件，另生原画修为三支架；环为身体层，火焰独立，双脚固定、颈肩连续、无裁切。",
+      "frame_sha256": [
+        "771b29b607b79d868efdcab845b20e09424b76c340f5e8236d03faf065d9d0b0",
+        "723be5da420e680c992287b51badbdee278057e05aa410b3afe9c465ddf19352",
+        "3f4fdcd407acce571c6be3aaa426b05768c73e05c044a9e6f6bd1b8fd7751748",
+        "aa8b527ffb32cf85eaf7f7859807ecac0fa57d76fc7ff2b84968360b043f95f7"
+      ],
+      "effects_sha256": [
+        "0b2a23a34177b9be3d9ae492c38a0124f2bdda0a77022294e29633f820300b45",
+        "abb07a21283eed8a01c500014b286bb5d8cc8a1ec7db25f7a2965e970397e608",
+        "3edbff82e62cb2c6babc4ec7b3c34e814a71f1d71c4f04c603806cafc828d456",
+        "b24bfb92442cc614c61a7d86fb6e4f166d084165e267b9e53c7fa3bcab100619"
+      ]
+    }
+  },
+  "visual_checks": [
+    "all four contact-sheet poses",
+    "browser original speed",
+    "browser 0.25 speed",
+    "paused next-frame 0 through 3",
+    "26px / 33px / 47px silhouettes",
+    "independent effect off if present"
+  ],
+  "source_status": "draft",
+  "publication_owner": "coordinator",
+  "battle_actions_reviewed": []
+}

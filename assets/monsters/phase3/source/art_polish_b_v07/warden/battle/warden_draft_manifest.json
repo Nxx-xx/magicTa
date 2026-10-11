@@ -1,0 +1,338 @@
+{
+	"actions": {
+		"attack": {
+			"combined_frames": [
+				"warden_frames/attack/00_combined.png",
+				"warden_frames/attack/01_combined.png",
+				"warden_frames/attack/02_combined.png",
+				"warden_frames/attack/03_combined.png",
+				"warden_frames/attack/04_combined.png",
+				"warden_frames/attack/05_combined.png",
+				"warden_frames/attack/06_combined.png",
+				"warden_frames/attack/07_combined.png"
+			],
+			"effects_frames": [
+				"warden_frames/attack/00_effect.png",
+				"warden_frames/attack/01_effect.png",
+				"warden_frames/attack/02_effect.png",
+				"warden_frames/attack/03_effect.png",
+				"warden_frames/attack/04_effect.png",
+				"warden_frames/attack/05_effect.png",
+				"warden_frames/attack/06_effect.png",
+				"warden_frames/attack/07_effect.png"
+			],
+			"events": {
+				"hit": 4.0,
+				"shield_bash": 3.0
+			},
+			"fps": 12.0,
+			"frames": [
+				"warden_frames/attack/00.png",
+				"warden_frames/attack/01.png",
+				"warden_frames/attack/02.png",
+				"warden_frames/attack/03.png",
+				"warden_frames/attack/04.png",
+				"warden_frames/attack/05.png",
+				"warden_frames/attack/06.png",
+				"warden_frames/attack/07.png"
+			],
+			"loop": false,
+			"metrics": [
+				{
+					"bounds": [
+						97,
+						88,
+						91,
+						154
+					],
+					"edge_touch": false,
+					"frame": 0
+				},
+				{
+					"bounds": [
+						101,
+						90,
+						95,
+						152
+					],
+					"edge_touch": false,
+					"frame": 1
+				},
+				{
+					"bounds": [
+						94,
+						92,
+						109,
+						150
+					],
+					"edge_touch": false,
+					"frame": 2
+				},
+				{
+					"bounds": [
+						80,
+						91,
+						99,
+						151
+					],
+					"edge_touch": false,
+					"frame": 3
+				},
+				{
+					"bounds": [
+						71,
+						93,
+						109,
+						149
+					],
+					"edge_touch": false,
+					"frame": 4
+				},
+				{
+					"bounds": [
+						85,
+						91,
+						93,
+						151
+					],
+					"edge_touch": false,
+					"frame": 5
+				},
+				{
+					"bounds": [
+						95,
+						89,
+						84,
+						153
+					],
+					"edge_touch": false,
+					"frame": 6
+				},
+				{
+					"bounds": [
+						97,
+						88,
+						91,
+						154
+					],
+					"edge_touch": false,
+					"frame": 7
+				}
+			],
+			"pose_holds": {
+				"7": 0.0
+			}
+		},
+		"defeat": {
+			"events": {
+				"ground": 5.0,
+				"knee_contact": 6.0,
+				"release": 3.0
+			},
+			"fps": 12.0,
+			"frames": [
+				"warden_frames/defeat/00.png",
+				"warden_frames/defeat/01.png",
+				"warden_frames/defeat/02.png",
+				"warden_frames/defeat/03.png",
+				"warden_frames/defeat/04.png",
+				"warden_frames/defeat/05.png",
+				"warden_frames/defeat/06.png",
+				"warden_frames/defeat/07.png"
+			],
+			"loop": false,
+			"metrics": [
+				{
+					"bounds": [
+						100,
+						91,
+						87,
+						151
+					],
+					"edge_touch": false,
+					"frame": 0
+				},
+				{
+					"bounds": [
+						101,
+						95,
+						84,
+						147
+					],
+					"edge_touch": false,
+					"frame": 1
+				},
+				{
+					"bounds": [
+						101,
+						102,
+						85,
+						140
+					],
+					"edge_touch": false,
+					"frame": 2
+				},
+				{
+					"bounds": [
+						101,
+						109,
+						87,
+						134
+					],
+					"edge_touch": false,
+					"frame": 3
+				},
+				{
+					"bounds": [
+						99,
+						117,
+						90,
+						126
+					],
+					"edge_touch": false,
+					"frame": 4
+				},
+				{
+					"bounds": [
+						100,
+						125,
+						93,
+						117
+					],
+					"edge_touch": false,
+					"frame": 5
+				},
+				{
+					"bounds": [
+						101,
+						129,
+						95,
+						114
+					],
+					"edge_touch": false,
+					"frame": 6
+				},
+				{
+					"bounds": [
+						101,
+						129,
+						95,
+						114
+					],
+					"edge_touch": false,
+					"frame": 7
+				}
+			],
+			"pose_holds": {
+				"7": 6.0
+			}
+		},
+		"hit": {
+			"events": {},
+			"fps": 12.0,
+			"frames": [
+				"warden_frames/hit/00.png",
+				"warden_frames/hit/01.png",
+				"warden_frames/hit/02.png"
+			],
+			"loop": false,
+			"metrics": [
+				{
+					"bounds": [
+						100,
+						92,
+						90,
+						150
+					],
+					"edge_touch": false,
+					"frame": 0
+				},
+				{
+					"bounds": [
+						98,
+						90,
+						91,
+						152
+					],
+					"edge_touch": false,
+					"frame": 1
+				},
+				{
+					"bounds": [
+						97,
+						88,
+						91,
+						154
+					],
+					"edge_touch": false,
+					"frame": 2
+				}
+			],
+			"pose_holds": {}
+		},
+		"idle": {
+			"events": {},
+			"fps": 6.0,
+			"frames": [
+				"warden_frames/idle/00.png",
+				"warden_frames/idle/01.png",
+				"warden_frames/idle/02.png",
+				"warden_frames/idle/03.png"
+			],
+			"loop": true,
+			"metrics": [
+				{
+					"bounds": [
+						97,
+						88,
+						91,
+						154
+					],
+					"edge_touch": false,
+					"frame": 0
+				},
+				{
+					"bounds": [
+						97,
+						88,
+						92,
+						154
+					],
+					"edge_touch": false,
+					"frame": 1
+				},
+				{
+					"bounds": [
+						97,
+						87,
+						92,
+						155
+					],
+					"edge_touch": false,
+					"frame": 2
+				},
+				{
+					"bounds": [
+						97,
+						88,
+						92,
+						154
+					],
+					"edge_touch": false,
+					"frame": 3
+				}
+			],
+			"pose_holds": {}
+		}
+	},
+	"anchor": [
+		128.0,
+		237.0
+	],
+	"size": [
+		256.0,
+		256.0
+	],
+	"source": "res://assets/monsters/phase3/source/art_polish_b_v07/warden/battle/warden_rig.json",
+	"status": "draft"
+}

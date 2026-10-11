@@ -1,0 +1,337 @@
+{
+	"actions": {
+		"attack": {
+			"combined_frames": [
+				"berserker_frames/attack/00_combined.png",
+				"berserker_frames/attack/01_combined.png",
+				"berserker_frames/attack/02_combined.png",
+				"berserker_frames/attack/03_combined.png",
+				"berserker_frames/attack/04_combined.png",
+				"berserker_frames/attack/05_combined.png",
+				"berserker_frames/attack/06_combined.png",
+				"berserker_frames/attack/07_combined.png"
+			],
+			"effects_frames": [
+				"berserker_frames/attack/00_effect.png",
+				"berserker_frames/attack/01_effect.png",
+				"berserker_frames/attack/02_effect.png",
+				"berserker_frames/attack/03_effect.png",
+				"berserker_frames/attack/04_effect.png",
+				"berserker_frames/attack/05_effect.png",
+				"berserker_frames/attack/06_effect.png",
+				"berserker_frames/attack/07_effect.png"
+			],
+			"events": {
+				"hit": 4.0
+			},
+			"fps": 12.0,
+			"frames": [
+				"berserker_frames/attack/00.png",
+				"berserker_frames/attack/01.png",
+				"berserker_frames/attack/02.png",
+				"berserker_frames/attack/03.png",
+				"berserker_frames/attack/04.png",
+				"berserker_frames/attack/05.png",
+				"berserker_frames/attack/06.png",
+				"berserker_frames/attack/07.png"
+			],
+			"loop": false,
+			"metrics": [
+				{
+					"bounds": [
+						97,
+						84,
+						84,
+						157
+					],
+					"edge_touch": false,
+					"frame": 0
+				},
+				{
+					"bounds": [
+						106,
+						86,
+						78,
+						155
+					],
+					"edge_touch": false,
+					"frame": 1
+				},
+				{
+					"bounds": [
+						113,
+						88,
+						79,
+						153
+					],
+					"edge_touch": false,
+					"frame": 2
+				},
+				{
+					"bounds": [
+						113,
+						87,
+						76,
+						154
+					],
+					"edge_touch": false,
+					"frame": 3
+				},
+				{
+					"bounds": [
+						31,
+						91,
+						150,
+						150
+					],
+					"edge_touch": false,
+					"frame": 4
+				},
+				{
+					"bounds": [
+						47,
+						89,
+						133,
+						152
+					],
+					"edge_touch": false,
+					"frame": 5
+				},
+				{
+					"bounds": [
+						81,
+						86,
+						100,
+						155
+					],
+					"edge_touch": false,
+					"frame": 6
+				},
+				{
+					"bounds": [
+						97,
+						84,
+						84,
+						157
+					],
+					"edge_touch": false,
+					"frame": 7
+				}
+			],
+			"pose_holds": {
+				"7": 0.0
+			}
+		},
+		"defeat": {
+			"events": {
+				"ground": 5.0,
+				"knee_contact": 6.0,
+				"release": 3.0
+			},
+			"fps": 12.0,
+			"frames": [
+				"berserker_frames/defeat/00.png",
+				"berserker_frames/defeat/01.png",
+				"berserker_frames/defeat/02.png",
+				"berserker_frames/defeat/03.png",
+				"berserker_frames/defeat/04.png",
+				"berserker_frames/defeat/05.png",
+				"berserker_frames/defeat/06.png",
+				"berserker_frames/defeat/07.png"
+			],
+			"loop": false,
+			"metrics": [
+				{
+					"bounds": [
+						100,
+						87,
+						81,
+						154
+					],
+					"edge_touch": false,
+					"frame": 0
+				},
+				{
+					"bounds": [
+						101,
+						91,
+						82,
+						150
+					],
+					"edge_touch": false,
+					"frame": 1
+				},
+				{
+					"bounds": [
+						101,
+						98,
+						84,
+						143
+					],
+					"edge_touch": false,
+					"frame": 2
+				},
+				{
+					"bounds": [
+						71,
+						106,
+						115,
+						135
+					],
+					"edge_touch": false,
+					"frame": 3
+				},
+				{
+					"bounds": [
+						60,
+						115,
+						130,
+						126
+					],
+					"edge_touch": false,
+					"frame": 4
+				},
+				{
+					"bounds": [
+						55,
+						123,
+						140,
+						120
+					],
+					"edge_touch": false,
+					"frame": 5
+				},
+				{
+					"bounds": [
+						55,
+						128,
+						143,
+						115
+					],
+					"edge_touch": false,
+					"frame": 6
+				},
+				{
+					"bounds": [
+						55,
+						128,
+						143,
+						115
+					],
+					"edge_touch": false,
+					"frame": 7
+				}
+			],
+			"pose_holds": {
+				"7": 6.0
+			}
+		},
+		"hit": {
+			"events": {},
+			"fps": 12.0,
+			"frames": [
+				"berserker_frames/hit/00.png",
+				"berserker_frames/hit/01.png",
+				"berserker_frames/hit/02.png"
+			],
+			"loop": false,
+			"metrics": [
+				{
+					"bounds": [
+						99,
+						87,
+						83,
+						154
+					],
+					"edge_touch": false,
+					"frame": 0
+				},
+				{
+					"bounds": [
+						98,
+						85,
+						84,
+						156
+					],
+					"edge_touch": false,
+					"frame": 1
+				},
+				{
+					"bounds": [
+						97,
+						84,
+						84,
+						157
+					],
+					"edge_touch": false,
+					"frame": 2
+				}
+			],
+			"pose_holds": {}
+		},
+		"idle": {
+			"events": {},
+			"fps": 6.0,
+			"frames": [
+				"berserker_frames/idle/00.png",
+				"berserker_frames/idle/01.png",
+				"berserker_frames/idle/02.png",
+				"berserker_frames/idle/03.png"
+			],
+			"loop": true,
+			"metrics": [
+				{
+					"bounds": [
+						97,
+						84,
+						84,
+						157
+					],
+					"edge_touch": false,
+					"frame": 0
+				},
+				{
+					"bounds": [
+						97,
+						84,
+						85,
+						157
+					],
+					"edge_touch": false,
+					"frame": 1
+				},
+				{
+					"bounds": [
+						97,
+						83,
+						85,
+						158
+					],
+					"edge_touch": false,
+					"frame": 2
+				},
+				{
+					"bounds": [
+						97,
+						84,
+						85,
+						157
+					],
+					"edge_touch": false,
+					"frame": 3
+				}
+			],
+			"pose_holds": {}
+		}
+	},
+	"anchor": [
+		128.0,
+		237.0
+	],
+	"size": [
+		256.0,
+		256.0
+	],
+	"source": "res://assets/monsters/phase3/source/art_polish_b_v08/berserker/battle/berserker_rig.json",
+	"status": "draft"
+}

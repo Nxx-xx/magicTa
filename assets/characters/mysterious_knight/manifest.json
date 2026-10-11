@@ -1,0 +1,22 @@
+{
+	"anchor": [
+		128.000015258789,
+		217.389022827148
+	],
+	"fps": 4,
+	"frames": [
+		"textures/idle_00.png",
+		"textures/idle_01.png",
+		"textures/idle_02.png",
+		"textures/idle_03.png",
+		"textures/idle_04.png",
+		"textures/idle_05.png",
+		"textures/idle_06.png",
+		"textures/idle_07.png"
+	],
+	"map_size": [
+		256,
+		256
+	],
+	"source": "source/mysterious_old_knight.tscn"
+}

@@ -1,0 +1,93 @@
+{
+  "entity": "warlock",
+  "date": "2026-10-01",
+  "review_method": "Agent actual contact sheets, browser original and quarter speed, step frames and 26/33/47px review; not automatic technical approval",
+  "human_signoff": false,
+  "new_imagegen_originals": 1,
+  "actions": {
+    "attack": {
+      "decision": "accepted",
+      "draft_manifest": "warlock_draft_manifest.json",
+      "source_action": "attack",
+      "frame_slots": 6,
+      "pose_holds": {},
+      "notes": "Actual four contact sheets, original and .25 browser playback, paused step frames 1/3/5, 26/33/47px and independent flame toggle reviewed. Left casting sleeve overlaps; fixed skirt hem; staff release downward-left; corrected initial defeat clipping. Fine embroidery not readable at 26px; human signoff false.",
+      "frame_sha256": [
+        "98faf7dc33241999b56f9effdd6a0920b97985de5d589174d71587ac60efcd65",
+        "db0cb3991ea486537ce00234da46db91a28835b463652933d1dd0966bc0dbe75",
+        "bb415bee1cdf42c4f3f325231eac2ce906e19229845a6d4b88ca3e4e73b0d230",
+        "a394026f72ffb382bbad12333dcb327cb9e2a155b2119e41bdc42935b6bef299",
+        "7318706f560d4f3877ffa11be63875abf09c57ca969d11aad5d367d5ca8f6636",
+        "73b325c28eacb9a72ff1c3f6ae8d5133bf080cec13b30ac26a4dc12d77b3def4"
+      ],
+      "effects_sha256": [
+        "2d658c453004e34fd616a6e901477dfcdb41d60400838441ad17294f638148ed",
+        "283d05388e5a740037bed4434434167c166c17187dcd4fa4dccfb18afd1c3578",
+        "5899b29dc66b055f4a240a6814d850b2ed4ffc6c7e2786f1c5403b421c585b37",
+        "d88453dd3ccc773032dd52b14e9243acf8890d763cbe66df0e285e1ac1ce28c2",
+        "edbc6a76abf04779e5009e0ac4a43e14ce779c18ca01373c657cd364dc7192ad",
+        "d1da9f3e7eedbddfe5e14e830806dc71e720bbea78745e5b33d296590daab613"
+      ]
+    },
+    "defeat": {
+      "decision": "accepted",
+      "draft_manifest": "warlock_draft_manifest.json",
+      "source_action": "defeat",
+      "frame_slots": 6,
+      "pose_holds": {},
+      "notes": "Actual four contact sheets, original and .25 browser playback, paused step frames 1/3/5, 26/33/47px and independent flame toggle reviewed. Left casting sleeve overlaps; fixed skirt hem; staff release downward-left; corrected initial defeat clipping. Fine embroidery not readable at 26px; human signoff false.",
+      "frame_sha256": [
+        "02d94c4df62b156f0df4ee3abc8f6ed52d42997a30c34802f3385e2bb4de3edb",
+        "685f168d3d4c98a066631dc5a66848e87e5b8c13c871eaa20a9cd1df208e946f",
+        "cbca0581b2384f0f7c4e7cc82468d4d58ea1843401694c0555898f55516e70fc",
+        "d1a6bde4c263448f914c1ef2ca174446cfe390bc67d87306f85620f3613a2173",
+        "e6ba966f74e5d53ca4ca67dee925b958cf4dbb27c48b4a089da616f7de94a1ab",
+        "77dda4e40f3c63a44ecdc74d0bf007af4614ba630af1a8aa464c9e39424992ab"
+      ],
+      "effects_sha256": [
+        "cea715f407ab13888c2fe5ee63a83e70ac0d8a8da9d2e572c290ed2f1aa842de",
+        "3ab1b484419f814ed127ef6998bbd4fa2d323f2c53c0d924e311503df5d3dd4b",
+        "86915f4ac86165dee992f1c9abc416db90d10808be3d1a0671ea84e7bf6bdb84",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de",
+        "9b8c0fb55362cdcb2a04b7f52c99aeca590ed88f30b95821b36ec15e8ec819de"
+      ]
+    },
+    "hit": {
+      "decision": "accepted",
+      "draft_manifest": "warlock_draft_manifest.json",
+      "source_action": "hit",
+      "frame_slots": 2,
+      "pose_holds": {},
+      "notes": "Actual four contact sheets, original and .25 browser playback, paused step frames 1/3/5, 26/33/47px and independent flame toggle reviewed. Left casting sleeve overlaps; fixed skirt hem; staff release downward-left; corrected initial defeat clipping. Fine embroidery not readable at 26px; human signoff false.",
+      "frame_sha256": [
+        "1082ba7fa52bfa6fd59e75c2b15886fc32eaf344445b8951e1e1fb27c997037f",
+        "afa709bb19fbedb4d8b551d37a7d2bb57b2450469ade2d177b849931244246e9"
+      ],
+      "effects_sha256": [
+        "b7354c74a0193e4e6bc33d5bc5d002dbe421402efcdecbe3c769d6a5397f2f5f",
+        "874a9f61c07b21783c1d20d7ffda902634be2c9e91fa7ecc8c6dcc51725fad82"
+      ]
+    },
+    "idle": {
+      "decision": "accepted",
+      "draft_manifest": "warlock_draft_manifest.json",
+      "source_action": "idle",
+      "frame_slots": 4,
+      "pose_holds": {},
+      "notes": "Actual four contact sheets, original and .25 browser playback, paused step frames 1/3/5, 26/33/47px and independent flame toggle reviewed. Left casting sleeve overlaps; fixed skirt hem; staff release downward-left; corrected initial defeat clipping. Fine embroidery not readable at 26px; human signoff false.",
+      "frame_sha256": [
+        "73b325c28eacb9a72ff1c3f6ae8d5133bf080cec13b30ac26a4dc12d77b3def4",
+        "5897f8ef9bc74a4d7b37fc4d0828ffe238d71a8df6fc1f9689d5075c904e17a8",
+        "900cb10c861f01174a82107e15369813f0323b6078f37b45691b0263dd4d40a1",
+        "8a2946626264d9aa5d6c15c352b3ea12e175991d271e49613387accd9d09a760"
+      ],
+      "effects_sha256": [
+        "d1da9f3e7eedbddfe5e14e830806dc71e720bbea78745e5b33d296590daab613",
+        "4b249c91a7859eda56b3c59ddbcf474f49b548452a1809c5f4e4c1cf980dd37a",
+        "791586f532112a6919ad881929b550b3879d00402d84814e3d81521a8909b335",
+        "a5698d6fdb93b1bae29b4eda26e4945e003b4356f1a34fb8741e9c9d922e28c1"
+      ]
+    }
+  }
+}

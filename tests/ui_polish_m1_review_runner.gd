@@ -1,7 +1,7 @@
 extends SceneTree
 ## Independent M1 review. Deliberate failures remain failures; no product fixes.
 ## -- --write-saves / -- --read-saves run in separate Godot processes.
-const Screen = preload("res://scripts/ui/map_screen.gd")
+const Screen = preload("res://tests/legacy_map_screen_fixture.gd")
 const Core = preload("res://scripts/core/map_engine.gd")
 var checks := 0
 var failures := 0
@@ -46,7 +46,7 @@ func _capture(screen, name: String) -> void:
 	_check(result == OK, "capture " + name)
 	var entry := {"sample": name, "window": str(root.size), "viewport": str(root.get_visible_rect()), "scale_mode": root.content_scale_mode, "scale_size": str(root.content_scale_size)}
 	if screen.get_script() == Screen and is_instance_valid(screen.map_root):
-		entry.merge({"title": screen.detail_title.text, "title_lines": screen.detail_title.get_line_count(), "title_visible_lines": screen.detail_title.get_visible_line_count(), "title_rect": _rect(screen.detail_title), "title_font_size": screen.detail_title.get_theme_font_size("font_size"), "detail_rect": _rect(screen.detail_panel), "board_rect": _rect(screen.board), "controls_rect": _rect(screen.controls), "button_rect": _rect(screen.direction_buttons[0]), "overlay": screen.overlay_kind, "save_error": screen.game.save_error})
+		entry.merge({"title": screen.detail_title.text, "title_lines": screen.detail_title.get_line_count(), "title_visible_lines": screen.detail_title.get_visible_line_count(), "title_rect": _rect(screen.detail_title), "title_font_size": screen.detail_title.get_theme_font_size("font_size"), "detail_rect": _rect(screen.detail_panel), "board_rect": _rect(screen.board), "controls_rect": _rect(screen.controls), "button_rect": _rect(screen.overview_button), "overlay": screen.overlay_kind, "save_error": screen.game.save_error})
 	records.append(entry)
 
 func _new_screen(path: String, persistent: bool = false):
@@ -100,7 +100,7 @@ func _layout_and_focus() -> void:
 	screen._start("42")
 	await _capture(screen, "360_explore")
 	_check(root.get_visible_rect().size == Vector2(360, 640), "minimum window uses physical pixels")
-	_check(screen.direction_buttons[0].size.y >= 44, "minimum direction target at least 44px")
+	_check(screen.overview_button.size.y >= 44, "minimum toolbar target at least 44px")
 	# Actual seed-42 monster; no entity or attributes changed.
 	for entity in screen.game.floor_data().entities.values():
 		if entity.get("enemy_id", "") == "skeleton":
@@ -135,7 +135,7 @@ func _layout_and_focus() -> void:
 	# Pending shop has several focusable actions; Tab must scroll focused items into view.
 	var cell := _fixture(screen, {"type": "shop", "offers": ["buy_steel", "buy_plate", "buy_potion"], "purchased": false})
 	screen.game.state.player.gold = 100
-	screen.direction_buttons[0].grab_focus()
+	screen.overview_button.grab_focus()
 	screen._act(func(): return screen.game.interact(cell))
 	await _frames()
 	_check(screen.overlay_close.has_focus(), "pending interaction focuses close")
@@ -146,7 +146,7 @@ func _layout_and_focus() -> void:
 		_check(owner != null and screen.overlay.is_ancestor_of(owner), "shop Tab focus stays in sheet %d" % index)
 	await _capture(screen, "360_shop_keyboard_focus")
 	await _key(KEY_ESCAPE)
-	_check(screen.game.state.pending.is_empty() and screen.direction_buttons[0].has_focus(), "pending Escape cancels and restores initiating focus")
+	_check(screen.game.state.pending.is_empty() and screen.overview_button.has_focus(), "pending Escape cancels and restores initiating focus")
 	await _dispose(screen)
 
 func _has_visible_error(screen) -> bool:
@@ -186,7 +186,7 @@ func _final_focus() -> void:
 		else:
 			var cell := _fixture(screen, {"type": "shop", "offers": ["buy_steel", "buy_plate", "buy_potion"], "purchased": false})
 			screen.game.state.player.gold = 100
-			screen.direction_buttons[0].grab_focus()
+			screen.overview_button.grab_focus()
 			screen._act(func(): return screen.game.interact(cell))
 			await _frames()
 		_check(screen.overlay.visible and screen.overlay_close.has_focus(), str(kind) + " opening focuses visible close")
@@ -200,7 +200,7 @@ func _final_focus() -> void:
 			await _capture(screen, "360_" + str(kind) + "_" + direction)
 		await _key(KEY_ESCAPE)
 		_check(not screen.overlay.visible and screen.game.state.pending.is_empty(), str(kind) + " Escape closes and cancels pending")
-		_check(screen.detail_button.has_focus() if kind == "target" else screen.direction_buttons[0].has_focus(), str(kind) + " closing restores initiating focus")
+		_check(screen.detail_button.has_focus() if kind == "target" else screen.overview_button.has_focus(), str(kind) + " closing restores initiating focus")
 	await _dispose(screen)
 
 func _save_errors() -> void:

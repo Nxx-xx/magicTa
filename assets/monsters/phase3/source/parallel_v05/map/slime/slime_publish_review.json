@@ -1,0 +1,28 @@
+{
+  "entity": "slime",
+  "date": "2026-10-02",
+  "review_method": "Agent visual review: native contact sheet; browser original/0.25 speed, paused four-step cycle; all four 26/33/47px thumbnails",
+  "human_signoff": false,
+  "new_imagegen_originals": 2,
+  "actions": {
+    "map_idle": {
+      "decision": "accepted",
+      "draft_manifest": "slime_map_draft_manifest.json",
+      "source_action": "idle",
+      "frame_slots": 4,
+      "fps": 6,
+      "loop": true,
+      "events": {},
+      "size": [256,256],
+      "anchor": [128,224],
+      "pose_holds": {},
+      "notes": "Independent front/elevated map art. Painted inhale membrane changes organic silhouette; suspended core and face have independent tracks. Registered bottom does not drift. Full contact, four stepped browser poses and 26/33/47px shapes viewed. Large settling membrane was rejected; only rest/inhale membranes used in final idle. No optional effect is required for this idle.",
+      "frame_sha256": [
+        "b55e939f1ce76d1136326611762dd86e906080aa85c59ed92a3bff4c19685f86",
+        "624bfdb45357e347fec459d19040cd0efe71b75d13fc19bc170021bd44df6228",
+        "6a447a959a90a60cebb5e0be102902459bbbd143d61f267f31b520330147fbd8",
+        "f63f2509a9d67433c5a84a6e37594c2e0e5de813f20acbd0e50c3ba90f3048fd"
+      ]
+    }
+  }
+}

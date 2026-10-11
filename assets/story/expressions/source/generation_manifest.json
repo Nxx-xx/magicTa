@@ -1,0 +1,27 @@
+[
+  [
+    "hero_guarded",
+    "exec-cbabd58c-0061-448e-b508-9e25d5b4da2e.png",
+    "assets/characters/hero/dialogue/textures/hero_dialogue_neutral_v01.png"
+  ],
+  [
+    "hero_shock",
+    "exec-8f2c3992-0c81-49a4-babb-59b8ab654c2d.png",
+    "assets/characters/hero/dialogue/textures/hero_dialogue_neutral_v01.png"
+  ],
+  [
+    "prince_weary",
+    "exec-3193090b-0563-4818-b2e4-1ee2266e8ffc.png",
+    "assets/story/phase2/prince_dialogue.png"
+  ],
+  [
+    "prince_sneer",
+    "exec-b768dae4-8e87-4e39-bde0-e3e5d4ada29c.png",
+    "assets/story/phase2/prince_dialogue.png"
+  ],
+  [
+    "demon_stern",
+    "exec-7cf350d0-766a-4457-9b2f-7c08f800d596.png",
+    "assets/story/phase2/demon_dialogue.png"
+  ]
+]

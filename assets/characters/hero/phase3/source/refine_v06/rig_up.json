@@ -1,0 +1,529 @@
+{
+	"actions": {
+		"idle": [
+			4,
+			6,
+			true
+		],
+		"interact": [
+			4,
+			10,
+			false
+		],
+		"walk": [
+			6,
+			12,
+			true
+		]
+	},
+	"author": "res://tools/phase3_v06_hero_bake.gd",
+	"canvas": [
+		768,
+		768
+	],
+	"facing": "up",
+	"layers": {
+		"blade_glint": {
+			"crop": [
+				779.0,
+				1018.0,
+				214.0,
+				262.0
+			],
+			"joint_position": [
+				0.0,
+				82.0
+			],
+			"paint_height": 44.0,
+			"parent": "sword",
+			"pivot_uv": [
+				0.5,
+				0.5
+			],
+			"texture": "res://assets/characters/hero/phase3/source/refine_v06/up_layers/blade_glint.png",
+			"z": 13
+		},
+		"brooch": {
+			"crop": [
+				303.0,
+				1032.0,
+				195.0,
+				230.0
+			],
+			"joint_position": [
+				0.0,
+				29.0
+			],
+			"paint_height": 22.0,
+			"parent": "collar",
+			"pivot_uv": [
+				0.5,
+				0.5
+			],
+			"texture": "res://assets/characters/hero/phase3/source/refine_v06/up_layers/brooch.png",
+			"z": 12
+		},
+		"cape": {
+			"crop": [
+				990.0,
+				0.0,
+				290.0,
+				338.0
+			],
+			"joint_position": [
+				0.0,
+				-169.0
+			],
+			"paint_height": 326.0,
+			"parent": "torso",
+			"pivot_uv": [
+				0.5,
+				0.0799999982118607
+			],
+			"texture": "res://assets/characters/hero/phase3/source/refine_v06/up_layers/cape.png",
+			"z": 7
+		},
+		"cape_hem": {
+			"crop": [
+				1069.0,
+				1015.0,
+				171.0,
+				249.0
+			],
+			"joint_position": [
+				-14.0,
+				224.0
+			],
+			"paint_height": 94.0,
+			"parent": "cape",
+			"pivot_uv": [
+				0.5,
+				0.0199999995529652
+			],
+			"texture": "res://assets/characters/hero/phase3/source/refine_v06/up_layers/cape_hem.png",
+			"z": 8
+		},
+		"collar": {
+			"crop": [
+				12.0,
+				325.0,
+				270.0,
+				210.0
+			],
+			"joint_position": [
+				0.0,
+				-178.0
+			],
+			"paint_height": 95.0,
+			"parent": "torso",
+			"pivot_uv": [
+				0.5,
+				0.119999997317791
+			],
+			"texture": "res://assets/characters/hero/phase3/source/refine_v06/up_layers/collar.png",
+			"z": 3
+		},
+		"hair_back": {
+			"crop": [
+				518.0,
+				56.0,
+				248.0,
+				232.0
+			],
+			"joint_position": [
+				12.0,
+				-6.0
+			],
+			"paint_height": 42.0,
+			"parent": "head",
+			"pivot_uv": [
+				0.5,
+				0.0500000007450581
+			],
+			"texture": "res://assets/characters/hero/phase3/source/refine_v06/up_layers/hair_back.png",
+			"z": 8
+		},
+		"hair_front": {
+			"crop": [
+				296.0,
+				52.0,
+				214.0,
+				233.0
+			],
+			"joint_position": [
+				-12.0,
+				-8.0
+			],
+			"paint_height": 42.0,
+			"parent": "head",
+			"pivot_uv": [
+				0.5,
+				0.0500000007450581
+			],
+			"texture": "res://assets/characters/hero/phase3/source/refine_v06/up_layers/hair_front.png",
+			"z": 8
+		},
+		"head": {
+			"crop": [
+				13.0,
+				23.0,
+				266.0,
+				274.0
+			],
+			"joint_position": [
+				0.0,
+				-180.0
+			],
+			"paint_height": 213.0,
+			"parent": "torso",
+			"pivot_uv": [
+				0.5,
+				0.899999976158142
+			],
+			"texture": "res://assets/characters/hero/phase3/source/refine_v06/up_layers/head.png",
+			"z": 9
+		},
+		"lamp_light": {
+			"crop": [
+				488.0,
+				1018.0,
+				293.0,
+				262.0
+			],
+			"joint_position": [
+				0.0,
+				61.0
+			],
+			"paint_height": 65.0,
+			"parent": "lantern",
+			"pivot_uv": [
+				0.5,
+				0.5
+			],
+			"texture": "res://assets/characters/hero/phase3/source/refine_v06/up_layers/lamp_light.png",
+			"z": 13
+		},
+		"lantern": {
+			"crop": [
+				1060.0,
+				530.0,
+				156.0,
+				283.0
+			],
+			"joint_position": [
+				0.0,
+				0.0
+			],
+			"paint_height": 112.0,
+			"parent": "left_grip",
+			"pivot_uv": [
+				0.5,
+				0.0900000035762787
+			],
+			"texture": "res://assets/characters/hero/phase3/source/refine_v06/up_layers/lantern.png",
+			"z": 7
+		},
+		"left_foot": {
+			"crop": [
+				73.0,
+				1042.0,
+				147.0,
+				223.0
+			],
+			"joint_position": [
+				0.0,
+				82.0
+			],
+			"paint_height": 39.0,
+			"parent": "left_shin",
+			"pivot_uv": [
+				0.5,
+				0.170000001788139
+			],
+			"texture": "res://assets/characters/hero/phase3/source/refine_v06/up_layers/left_foot.png",
+			"z": 3
+		},
+		"left_forearm": {
+			"crop": [
+				331.0,
+				550.0,
+				145.0,
+				254.0
+			],
+			"joint_position": [
+				0.0,
+				86.0
+			],
+			"paint_height": 90.0,
+			"parent": "left_upper_arm",
+			"pivot_uv": [
+				0.5,
+				0.0700000002980232
+			],
+			"texture": "res://assets/characters/hero/phase3/source/refine_v06/up_layers/left_forearm.png",
+			"z": 6
+		},
+		"left_hand": {
+			"crop": [
+				572.0,
+				575.0,
+				169.0,
+				193.0
+			],
+			"joint_position": [
+				0.0,
+				77.0
+			],
+			"paint_height": 43.0,
+			"parent": "left_forearm",
+			"pivot_uv": [
+				0.5,
+				0.100000001490116
+			],
+			"texture": "res://assets/characters/hero/phase3/source/refine_v06/up_layers/left_hand.png",
+			"z": 8
+		},
+		"left_shin": {
+			"crop": [
+				1060.0,
+				784.0,
+				169.0,
+				268.0
+			],
+			"joint_position": [
+				0.0,
+				92.0
+			],
+			"paint_height": 99.0,
+			"parent": "left_thigh",
+			"pivot_uv": [
+				0.5,
+				0.0799999982118607
+			],
+			"texture": "res://assets/characters/hero/phase3/source/refine_v06/up_layers/left_shin.png",
+			"z": 2
+		},
+		"left_thigh": {
+			"crop": [
+				794.0,
+				784.0,
+				188.0,
+				269.0
+			],
+			"joint_position": [
+				-26.0,
+				4.0
+			],
+			"paint_height": 107.0,
+			"parent": "pelvis",
+			"pivot_uv": [
+				0.5,
+				0.100000001490116
+			],
+			"texture": "res://assets/characters/hero/phase3/source/refine_v06/up_layers/left_thigh.png",
+			"z": 1
+		},
+		"left_upper_arm": {
+			"crop": [
+				56.0,
+				532.0,
+				180.0,
+				267.0
+			],
+			"joint_position": [
+				-44.2000007629395,
+				-158.0
+			],
+			"paint_height": 109.0,
+			"parent": "torso",
+			"pivot_uv": [
+				0.5,
+				0.119999997317791
+			],
+			"texture": "res://assets/characters/hero/phase3/source/refine_v06/up_layers/left_upper_arm.png",
+			"z": 5
+		},
+		"right_foot": {
+			"crop": [
+				579.0,
+				824.0,
+				151.0,
+				220.0
+			],
+			"joint_position": [
+				0.0,
+				82.0
+			],
+			"paint_height": 39.0,
+			"parent": "right_shin",
+			"pivot_uv": [
+				0.5,
+				0.170000001788139
+			],
+			"texture": "res://assets/characters/hero/phase3/source/refine_v06/up_layers/right_foot.png",
+			"z": 3
+		},
+		"right_forearm": {
+			"crop": [
+				811.0,
+				319.0,
+				155.0,
+				240.0
+			],
+			"joint_position": [
+				0.0,
+				86.0
+			],
+			"paint_height": 90.0,
+			"parent": "right_upper_arm",
+			"pivot_uv": [
+				0.5,
+				0.0700000002980232
+			],
+			"texture": "res://assets/characters/hero/phase3/source/refine_v06/up_layers/right_forearm.png",
+			"z": 6
+		},
+		"right_hand": {
+			"crop": [
+				1061.0,
+				360.0,
+				171.0,
+				197.0
+			],
+			"joint_position": [
+				0.0,
+				77.0
+			],
+			"paint_height": 43.0,
+			"parent": "right_forearm",
+			"pivot_uv": [
+				0.5,
+				0.100000001490116
+			],
+			"texture": "res://assets/characters/hero/phase3/source/refine_v06/up_layers/right_hand.png",
+			"z": 8
+		},
+		"right_shin": {
+			"crop": [
+				310.0,
+				782.0,
+				171.0,
+				268.0
+			],
+			"joint_position": [
+				0.0,
+				92.0
+			],
+			"paint_height": 99.0,
+			"parent": "right_thigh",
+			"pivot_uv": [
+				0.5,
+				0.0799999982118607
+			],
+			"texture": "res://assets/characters/hero/phase3/source/refine_v06/up_layers/right_shin.png",
+			"z": 2
+		},
+		"right_thigh": {
+			"crop": [
+				55.0,
+				784.0,
+				171.0,
+				270.0
+			],
+			"joint_position": [
+				26.0,
+				4.0
+			],
+			"paint_height": 107.0,
+			"parent": "pelvis",
+			"pivot_uv": [
+				0.5,
+				0.100000001490116
+			],
+			"texture": "res://assets/characters/hero/phase3/source/refine_v06/up_layers/right_thigh.png",
+			"z": 1
+		},
+		"right_upper_arm": {
+			"crop": [
+				552.0,
+				313.0,
+				186.0,
+				244.0
+			],
+			"joint_position": [
+				44.2000007629395,
+				-158.0
+			],
+			"paint_height": 109.0,
+			"parent": "torso",
+			"pivot_uv": [
+				0.5,
+				0.119999997317791
+			],
+			"texture": "res://assets/characters/hero/phase3/source/refine_v06/up_layers/right_upper_arm.png",
+			"z": 5
+		},
+		"skirt": {
+			"crop": [
+				280.0,
+				321.0,
+				241.0,
+				237.0
+			],
+			"joint_position": [
+				0.0,
+				-18.0
+			],
+			"paint_height": 121.0,
+			"parent": "pelvis",
+			"pivot_uv": [
+				0.5,
+				0.0500000007450581
+			],
+			"texture": "res://assets/characters/hero/phase3/source/refine_v06/up_layers/skirt.png",
+			"z": 2
+		},
+		"sword": {
+			"crop": [
+				820.0,
+				529.0,
+				162.0,
+				287.0
+			],
+			"joint_position": [
+				0.0,
+				0.0
+			],
+			"paint_height": 160.0,
+			"parent": "right_grip",
+			"pivot_uv": [
+				0.5,
+				0.200000002980232
+			],
+			"texture": "res://assets/characters/hero/phase3/source/refine_v06/up_layers/sword.png",
+			"z": 7
+		},
+		"torso": {
+			"crop": [
+				780.0,
+				33.0,
+				218.0,
+				211.0
+			],
+			"joint_position": [
+				0.0,
+				-10.0
+			],
+			"paint_height": 176.0,
+			"parent": "pelvis",
+			"pivot_uv": [
+				0.5,
+				0.920000016689301
+			],
+			"texture": "res://assets/characters/hero/phase3/source/refine_v06/up_layers/torso.png",
+			"z": 0
+		}
+	},
+	"mirrored": false,
+	"solver": "two-bone IK; independent wrists and foot rotation; contact at sole, not ankle"
+}

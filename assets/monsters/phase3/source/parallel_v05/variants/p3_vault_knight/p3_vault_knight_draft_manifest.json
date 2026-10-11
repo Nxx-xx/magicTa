@@ -1,0 +1,385 @@
+{
+  "actions": {
+    "attack": {
+      "combined_frames": [
+        "p3_vault_knight_frames/attack/00_combined.png",
+        "p3_vault_knight_frames/attack/01_combined.png",
+        "p3_vault_knight_frames/attack/02_combined.png",
+        "p3_vault_knight_frames/attack/03_combined.png",
+        "p3_vault_knight_frames/attack/04_combined.png",
+        "p3_vault_knight_frames/attack/05_combined.png"
+      ],
+      "effects_frames": [
+        "p3_vault_knight_frames/attack/00_effect.png",
+        "p3_vault_knight_frames/attack/01_effect.png",
+        "p3_vault_knight_frames/attack/02_effect.png",
+        "p3_vault_knight_frames/attack/03_effect.png",
+        "p3_vault_knight_frames/attack/04_effect.png",
+        "p3_vault_knight_frames/attack/05_effect.png"
+      ],
+      "events": {
+        "hit": 3.0
+      },
+      "fps": 12.0,
+      "frames": [
+        "p3_vault_knight_frames/attack/00.png",
+        "p3_vault_knight_frames/attack/01.png",
+        "p3_vault_knight_frames/attack/02.png",
+        "p3_vault_knight_frames/attack/03.png",
+        "p3_vault_knight_frames/attack/04.png",
+        "p3_vault_knight_frames/attack/05.png"
+      ],
+      "loop": false,
+      "metrics": [
+        {
+          "bounds": [
+            61,
+            36,
+            145,
+            189
+          ],
+          "edge_touch": false,
+          "frame": 0
+        },
+        {
+          "bounds": [
+            104,
+            38,
+            103,
+            188
+          ],
+          "edge_touch": false,
+          "frame": 1
+        },
+        {
+          "bounds": [
+            102,
+            34,
+            106,
+            192
+          ],
+          "edge_touch": false,
+          "frame": 2
+        },
+        {
+          "bounds": [
+            4,
+            44,
+            215,
+            184
+          ],
+          "edge_touch": false,
+          "frame": 3
+        },
+        {
+          "bounds": [
+            29,
+            40,
+            186,
+            187
+          ],
+          "edge_touch": false,
+          "frame": 4
+        },
+        {
+          "bounds": [
+            61,
+            36,
+            145,
+            189
+          ],
+          "edge_touch": false,
+          "frame": 5
+        }
+      ],
+      "pose_holds": {
+        "5": 0.0
+      }
+    },
+    "defeat": {
+      "combined_frames": [
+        "p3_vault_knight_frames/defeat/00_combined.png",
+        "p3_vault_knight_frames/defeat/01_combined.png",
+        "p3_vault_knight_frames/defeat/02_combined.png",
+        "p3_vault_knight_frames/defeat/03_combined.png",
+        "p3_vault_knight_frames/defeat/04_combined.png",
+        "p3_vault_knight_frames/defeat/05_combined.png"
+      ],
+      "effects_frames": [
+        "p3_vault_knight_frames/defeat/00_effect.png",
+        "p3_vault_knight_frames/defeat/01_effect.png",
+        "p3_vault_knight_frames/defeat/02_effect.png",
+        "p3_vault_knight_frames/defeat/03_effect.png",
+        "p3_vault_knight_frames/defeat/04_effect.png",
+        "p3_vault_knight_frames/defeat/05_effect.png"
+      ],
+      "events": {
+        "ground": 5.0,
+        "release": 2.0
+      },
+      "fps": 10.0,
+      "frames": [
+        "p3_vault_knight_frames/defeat/00.png",
+        "p3_vault_knight_frames/defeat/01.png",
+        "p3_vault_knight_frames/defeat/02.png",
+        "p3_vault_knight_frames/defeat/03.png",
+        "p3_vault_knight_frames/defeat/04.png",
+        "p3_vault_knight_frames/defeat/05.png"
+      ],
+      "loop": false,
+      "metrics": [
+        {
+          "bounds": [
+            66,
+            37,
+            141,
+            188
+          ],
+          "edge_touch": false,
+          "frame": 0
+        },
+        {
+          "bounds": [
+            64,
+            42,
+            141,
+            185
+          ],
+          "edge_touch": false,
+          "frame": 1
+        },
+        {
+          "bounds": [
+            37,
+            47,
+            165,
+            181
+          ],
+          "edge_touch": false,
+          "frame": 2
+        },
+        {
+          "bounds": [
+            27,
+            54,
+            171,
+            175
+          ],
+          "edge_touch": false,
+          "frame": 3
+        },
+        {
+          "bounds": [
+            19,
+            60,
+            176,
+            170
+          ],
+          "edge_touch": false,
+          "frame": 4
+        },
+        {
+          "bounds": [
+            13,
+            67,
+            180,
+            163
+          ],
+          "edge_touch": false,
+          "frame": 5
+        }
+      ],
+      "pose_holds": {}
+    },
+    "hit": {
+      "combined_frames": [
+        "p3_vault_knight_frames/hit/00_combined.png",
+        "p3_vault_knight_frames/hit/01_combined.png"
+      ],
+      "effects_frames": [
+        "p3_vault_knight_frames/hit/00_effect.png",
+        "p3_vault_knight_frames/hit/01_effect.png"
+      ],
+      "events": {
+        "recoil": 0.0
+      },
+      "fps": 12.0,
+      "frames": [
+        "p3_vault_knight_frames/hit/00.png",
+        "p3_vault_knight_frames/hit/01.png"
+      ],
+      "loop": false,
+      "metrics": [
+        {
+          "bounds": [
+            74,
+            41,
+            142,
+            185
+          ],
+          "edge_touch": false,
+          "frame": 0
+        },
+        {
+          "bounds": [
+            63,
+            37,
+            145,
+            188
+          ],
+          "edge_touch": false,
+          "frame": 1
+        }
+      ],
+      "pose_holds": {}
+    },
+    "idle": {
+      "combined_frames": [
+        "p3_vault_knight_frames/idle/00_combined.png",
+        "p3_vault_knight_frames/idle/01_combined.png",
+        "p3_vault_knight_frames/idle/02_combined.png",
+        "p3_vault_knight_frames/idle/03_combined.png"
+      ],
+      "effects_frames": [
+        "p3_vault_knight_frames/idle/00_effect.png",
+        "p3_vault_knight_frames/idle/01_effect.png",
+        "p3_vault_knight_frames/idle/02_effect.png",
+        "p3_vault_knight_frames/idle/03_effect.png"
+      ],
+      "events": {},
+      "fps": 6.0,
+      "frames": [
+        "p3_vault_knight_frames/idle/00.png",
+        "p3_vault_knight_frames/idle/01.png",
+        "p3_vault_knight_frames/idle/02.png",
+        "p3_vault_knight_frames/idle/03.png"
+      ],
+      "loop": true,
+      "metrics": [
+        {
+          "bounds": [
+            61,
+            36,
+            145,
+            189
+          ],
+          "edge_touch": false,
+          "frame": 0
+        },
+        {
+          "bounds": [
+            60,
+            35,
+            147,
+            189
+          ],
+          "edge_touch": false,
+          "frame": 1
+        },
+        {
+          "bounds": [
+            60,
+            35,
+            147,
+            189
+          ],
+          "edge_touch": false,
+          "frame": 2
+        },
+        {
+          "bounds": [
+            61,
+            36,
+            145,
+            189
+          ],
+          "edge_touch": false,
+          "frame": 3
+        }
+      ],
+      "pose_holds": {}
+    },
+    "threat": {
+      "combined_frames": [
+        "p3_vault_knight_frames/threat/00_combined.png",
+        "p3_vault_knight_frames/threat/01_combined.png",
+        "p3_vault_knight_frames/threat/02_combined.png",
+        "p3_vault_knight_frames/threat/03_combined.png"
+      ],
+      "effects_frames": [
+        "p3_vault_knight_frames/threat/00_effect.png",
+        "p3_vault_knight_frames/threat/01_effect.png",
+        "p3_vault_knight_frames/threat/02_effect.png",
+        "p3_vault_knight_frames/threat/03_effect.png"
+      ],
+      "events": {
+        "threat_peak": 2.0
+      },
+      "fps": 8.0,
+      "frames": [
+        "p3_vault_knight_frames/threat/00.png",
+        "p3_vault_knight_frames/threat/01.png",
+        "p3_vault_knight_frames/threat/02.png",
+        "p3_vault_knight_frames/threat/03.png"
+      ],
+      "loop": false,
+      "metrics": [
+        {
+          "bounds": [
+            72,
+            37,
+            134,
+            188
+          ],
+          "edge_touch": false,
+          "frame": 0
+        },
+        {
+          "bounds": [
+            102,
+            40,
+            102,
+            186
+          ],
+          "edge_touch": false,
+          "frame": 1
+        },
+        {
+          "bounds": [
+            100,
+            40,
+            116,
+            186
+          ],
+          "edge_touch": false,
+          "frame": 2
+        },
+        {
+          "bounds": [
+            84,
+            36,
+            123,
+            189
+          ],
+          "edge_touch": false,
+          "frame": 3
+        }
+      ],
+      "pose_holds": {}
+    }
+  },
+  "anchor": [
+    128.0,
+    224.0
+  ],
+  "size": [
+    256.0,
+    256.0
+  ],
+  "source": "res://assets/monsters/phase3/source/parallel_v05/variants/p3_vault_knight/p3_vault_knight_rig.json",
+  "status": "draft",
+  "entity": "p3_vault_knight",
+  "scene": "battle",
+  "camera": "three-quarter facing left",
+  "human_signoff": false
+}
